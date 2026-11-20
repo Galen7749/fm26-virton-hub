@@ -190,7 +190,7 @@ def sync():
             if lt.competition_id == BEL_D2_CID:
                 rows_list = list(lt.rows)
                 for row in rows_list:
-                    if row.team_id == VIRTON_TEAM_ID and row.played > 0:
+                    if row.team_id == VIRTON_TEAM_ID and row.played > 0 and len(row.matches) > 0:
                         target_lt_rows = (lt, rows_list)
                         break
                 if target_lt_rows:
