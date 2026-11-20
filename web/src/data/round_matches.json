@@ -1,0 +1,28 @@
+{
+  "1": [
+    { "date": "2025-08-08", "home": "KRC亨克青年队", "score": "1-2", "away": "皇家比尔肖特安特卫普", "is_virton": false },
+    { "date": "2025-08-09", "home": "皇家马斯梅赫伦", "score": "0-1", "away": "皇家洛克伦滕瑟", "is_virton": false },
+    { "date": "2025-08-10", "home": "登德", "score": "1-1", "away": "维尔通精英", "is_virton": true },
+    { "date": "2025-08-10", "home": "皇家欧本", "score": "2-2", "away": "布鲁日青年", "is_virton": false },
+    { "date": "2025-08-10", "home": "皇家安德莱赫特未来", "score": "0-2", "away": "皇家法兰波垒斯", "is_virton": false },
+    { "date": "2025-08-10", "home": "根特青年", "score": "0-1", "away": "皇家利尔斯", "is_virton": false },
+    { "date": "2025-08-10", "home": "皇家列日", "score": "2-1", "away": "皇家瑟兰", "is_virton": false }
+  ],
+  "2": [
+    { "date": "2025-08-13", "home": "皇家瑟兰", "score": "1-0", "away": "登德", "is_virton": false },
+    { "date": "2025-08-13", "home": "维尔通精英", "score": "3-2", "away": "根特青年", "is_virton": true },
+    { "date": "2025-08-13", "home": "皇家比尔肖特安特卫普", "score": "2-0", "away": "皇家欧本", "is_virton": false },
+    { "date": "2025-08-13", "home": "皇家法兰波垒斯", "score": "4-1", "away": "皇家列日", "is_virton": false },
+    { "date": "2025-08-13", "home": "皇家洛克伦滕瑟", "score": "1-0", "away": "哈瑟尔特", "is_virton": false },
+    { "date": "2025-08-13", "home": "皇家利尔斯", "score": "0-1", "away": "皇家马斯梅赫伦", "is_virton": false },
+    { "date": "2025-08-13", "home": "布鲁日青年", "score": "1-0", "away": "皇家安德莱赫特未来", "is_virton": false }
+  ],
+  "3": [
+    { "date": "2025-08-16", "home": "登德", "score": "0-0", "away": "皇家法兰波垒斯", "is_virton": false },
+    { "date": "2025-08-17", "home": "哈瑟尔特", "score": "0-0", "away": "皇家利尔斯", "is_virton": false },
+    { "date": "2025-08-17", "home": "皇家马斯梅赫伦", "score": "2-1", "away": "维尔通精英", "is_virton": true },
+    { "date": "2025-08-17", "home": "皇家列日", "score": "0-2", "away": "布鲁日青年", "is_virton": false },
+    { "date": "2025-08-17", "home": "皇家安德莱赫特未来", "score": "0-1", "away": "皇家比尔肖特安特卫普", "is_virton": false },
+    { "date": "2025-08-17", "home": "根特青年", "score": "1-1", "away": "皇家瑟兰", "is_virton": false }
+  ]
+}

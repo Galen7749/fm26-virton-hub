@@ -1,0 +1,372 @@
+[
+  {
+    "id": 1,
+    "round": 1,
+    "date": "2025-08-10",
+    "home_team": "登德",
+    "away_team": "维尔通精英",
+    "score_home": 1,
+    "score_away": 1,
+    "venue": "away",
+    "stadium": "Florent Beeckmanstadion",
+    "result": "D",
+    "xg": 1.19,
+    "shots": 16,
+    "shots_on_target": 6,
+    "distance_km": 116.1,
+    "scorers": [
+      {
+        "player": "Paul Wade",
+        "minute": 38,
+        "assist": "Tyrone Tormin",
+        "player_zh": "保罗·韦德",
+        "assist_zh": "泰伦·托明"
+      }
+    ],
+    "lineup": [
+      {
+        "name": "Célestin De Schrevel",
+        "pos": "GK",
+        "rating": 6.9,
+        "min": 90,
+        "name_en": "Célestin De Schrevel",
+        "name_zh": "塞莱斯丁·德·施瑞沃"
+      },
+      {
+        "name": "Adama Diop",
+        "pos": "DR",
+        "rating": 6.9,
+        "min": 90,
+        "name_en": "Adama Diop",
+        "name_zh": "亚当穆斯·迪奥普"
+      },
+      {
+        "name": "Allan Tchaptchet",
+        "pos": "DC",
+        "rating": 6.7,
+        "min": 90,
+        "name_en": "Allan Tchaptchet",
+        "name_zh": "阿兰·特查普切特"
+      },
+      {
+        "name": "Teddy Mezague",
+        "pos": "DC (C)",
+        "rating": 6.6,
+        "min": 90,
+        "name_en": "Teddy Mezague",
+        "name_zh": "泰迪·梅扎古"
+      },
+      {
+        "name": "Yassine Ben Hamed",
+        "pos": "DL",
+        "rating": 6.5,
+        "min": 90,
+        "name_en": "Yassine Ben Hamed",
+        "name_zh": "亚塞尼·本·哈米德"
+      },
+      {
+        "name": "Antoine Valério",
+        "pos": "MC",
+        "rating": 6.5,
+        "min": 84,
+        "name_en": "Antoine Valério",
+        "name_zh": "安托万·瓦莱里亚"
+      },
+      {
+        "name": "Aliou Dembélé",
+        "pos": "MC",
+        "rating": 6.4,
+        "min": 90,
+        "name_en": "Aliou Dembélé",
+        "name_zh": "阿卢·登贝莱"
+      },
+      {
+        "name": "Tyrone Tormin",
+        "pos": "AMR",
+        "rating": 7.1,
+        "min": 90,
+        "assist": 1,
+        "name_en": "Tyrone Tormin",
+        "name_zh": "泰伦·托明"
+      },
+      {
+        "name": "Luca Maiorano",
+        "pos": "AMC",
+        "rating": 6.5,
+        "min": 90,
+        "name_en": "Luca Maiorano",
+        "name_zh": "卢卡·迈奥拉诺"
+      },
+      {
+        "name": "Marks Inchaud",
+        "pos": "AML",
+        "rating": 6.3,
+        "min": 84,
+        "name_en": "Marks Inchaud",
+        "name_zh": "马克斯·因查德"
+      },
+      {
+        "name": "Paul Wade",
+        "pos": "ST",
+        "rating": 7.0,
+        "min": 90,
+        "goal": 1,
+        "name_en": "Paul Wade",
+        "name_zh": "保罗·韦德"
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "round": 2,
+    "date": "2025-08-13",
+    "home_team": "维尔通精英",
+    "away_team": "根特青年",
+    "score_home": 3,
+    "score_away": 2,
+    "venue": "home",
+    "stadium": "伊万·乔治球场 (Stade Yvan Georges)",
+    "result": "W",
+    "xg": 1.64,
+    "shots": 17,
+    "shots_on_target": 8,
+    "distance_km": 124.4,
+    "scorers": [
+      {
+        "player": "Tyrone Tormin",
+        "minute": 19,
+        "assist": "Yassine Ben Hamed",
+        "player_zh": "泰伦·托明",
+        "assist_zh": "亚塞尼·本·哈米德"
+      },
+      {
+        "player": "Aliou Dembélé",
+        "minute": 44,
+        "assist": "Tyrone Tormin",
+        "player_zh": "阿卢·登贝莱",
+        "assist_zh": "泰伦·托明"
+      },
+      {
+        "player": "Abdelsamad Hachem",
+        "minute": 72,
+        "assist": "Paul Wade",
+        "player_zh": "阿卜杜勒萨马迪·哈切姆",
+        "assist_zh": "保罗·韦德"
+      }
+    ],
+    "lineup": [
+      {
+        "name": "Célestin De Schrevel",
+        "pos": "GK",
+        "rating": 6.4,
+        "min": 90,
+        "name_en": "Célestin De Schrevel",
+        "name_zh": "塞莱斯丁·德·施瑞沃"
+      },
+      {
+        "name": "Steeven Assengue",
+        "pos": "DR",
+        "rating": 6.7,
+        "min": 76,
+        "name_en": "Steeven Assengue",
+        "name_zh": "斯蒂文·阿森盖"
+      },
+      {
+        "name": "Allan Tchaptchet",
+        "pos": "DC",
+        "rating": 7.1,
+        "min": 76,
+        "name_en": "Allan Tchaptchet",
+        "name_zh": "阿兰·特查普切特"
+      },
+      {
+        "name": "Teddy Mezague",
+        "pos": "DC (C)",
+        "rating": 6.9,
+        "min": 90,
+        "name_en": "Teddy Mezague",
+        "name_zh": "泰迪·梅扎古"
+      },
+      {
+        "name": "Yassine Ben Hamed",
+        "pos": "DL",
+        "rating": 7.4,
+        "min": 90,
+        "assist": 1,
+        "name_en": "Yassine Ben Hamed",
+        "name_zh": "亚塞尼·本·哈米德"
+      },
+      {
+        "name": "Antoine Valério",
+        "pos": "MC",
+        "rating": 6.5,
+        "min": 85,
+        "name_en": "Antoine Valério",
+        "name_zh": "安托万·瓦莱里亚"
+      },
+      {
+        "name": "Aliou Dembélé",
+        "pos": "MC",
+        "rating": 7.4,
+        "min": 90,
+        "goal": 1,
+        "name_en": "Aliou Dembélé",
+        "name_zh": "阿卢·登贝莱"
+      },
+      {
+        "name": "Tyrone Tormin",
+        "pos": "AMR",
+        "rating": 7.8,
+        "min": 85,
+        "goal": 1,
+        "assist": 1,
+        "is_motm": true,
+        "name_en": "Tyrone Tormin",
+        "name_zh": "泰伦·托明"
+      },
+      {
+        "name": "Luca Maiorano",
+        "pos": "AMC",
+        "rating": 6.4,
+        "min": 68,
+        "name_en": "Luca Maiorano",
+        "name_zh": "卢卡·迈奥拉诺"
+      },
+      {
+        "name": "Abdelsamad Hachem",
+        "pos": "AML",
+        "rating": 6.8,
+        "min": 90,
+        "goal": 1,
+        "name_en": "Abdelsamad Hachem",
+        "name_zh": "阿卜杜勒萨马迪·哈切姆"
+      },
+      {
+        "name": "Paul Wade",
+        "pos": "ST",
+        "rating": 7.0,
+        "min": 90,
+        "assist": 1,
+        "name_en": "Paul Wade",
+        "name_zh": "保罗·韦德"
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "round": 3,
+    "date": "2025-08-17",
+    "home_team": "皇家马斯梅赫伦",
+    "away_team": "维尔通精英",
+    "score_home": 2,
+    "score_away": 1,
+    "venue": "away",
+    "stadium": "Patro Stadion",
+    "result": "L",
+    "xg": 0.61,
+    "shots": 6,
+    "shots_on_target": 3,
+    "distance_km": 125.9,
+    "scorers": [
+      {
+        "player": "Paul Wade",
+        "minute": 61,
+        "assist": "Aliou Dembélé",
+        "player_zh": "保罗·韦德",
+        "assist_zh": "阿卢·登贝莱"
+      }
+    ],
+    "lineup": [
+      {
+        "name": "Célestin De Schrevel",
+        "pos": "GK",
+        "rating": 6.5,
+        "min": 90,
+        "name_en": "Célestin De Schrevel",
+        "name_zh": "塞莱斯丁·德·施瑞沃"
+      },
+      {
+        "name": "Steeven Assengue",
+        "pos": "DR",
+        "rating": 6.3,
+        "min": 90,
+        "name_en": "Steeven Assengue",
+        "name_zh": "斯蒂文·阿森盖"
+      },
+      {
+        "name": "Allan Tchaptchet",
+        "pos": "DC",
+        "rating": 6.7,
+        "min": 90,
+        "name_en": "Allan Tchaptchet",
+        "name_zh": "阿兰·特查普切特"
+      },
+      {
+        "name": "Teddy Mezague",
+        "pos": "DC (C)",
+        "rating": 6.5,
+        "min": 90,
+        "name_en": "Teddy Mezague",
+        "name_zh": "泰迪·梅扎古"
+      },
+      {
+        "name": "Yassine Ben Hamed",
+        "pos": "DL",
+        "rating": 6.5,
+        "min": 90,
+        "name_en": "Yassine Ben Hamed",
+        "name_zh": "亚塞尼·本·哈米德"
+      },
+      {
+        "name": "Antoine Valério",
+        "pos": "MC",
+        "rating": 6.7,
+        "min": 90,
+        "name_en": "Antoine Valério",
+        "name_zh": "安托万·瓦莱里亚"
+      },
+      {
+        "name": "Aliou Dembélé",
+        "pos": "MC",
+        "rating": 7.1,
+        "min": 74,
+        "assist": 1,
+        "name_en": "Aliou Dembélé",
+        "name_zh": "阿卢·登贝莱"
+      },
+      {
+        "name": "Tyrone Tormin",
+        "pos": "AMR",
+        "rating": 6.6,
+        "min": 90,
+        "name_en": "Tyrone Tormin",
+        "name_zh": "泰伦·托明"
+      },
+      {
+        "name": "Luca Maiorano",
+        "pos": "AMC",
+        "rating": 6.4,
+        "min": 74,
+        "name_en": "Luca Maiorano",
+        "name_zh": "卢卡·迈奥拉诺"
+      },
+      {
+        "name": "Abdelsamad Hachem",
+        "pos": "AML",
+        "rating": 6.2,
+        "min": 74,
+        "name_en": "Abdelsamad Hachem",
+        "name_zh": "阿卜杜勒萨马迪·哈切姆"
+      },
+      {
+        "name": "Paul Wade",
+        "pos": "ST",
+        "rating": 7.0,
+        "min": 90,
+        "goal": 1,
+        "name_en": "Paul Wade",
+        "name_zh": "保罗·韦德"
+      }
+    ]
+  }
+]

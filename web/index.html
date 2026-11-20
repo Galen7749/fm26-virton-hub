@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" />
+    <title>FootHub · 懂球云 | 综合足球赛事与资讯中心</title>
+    <!-- PWA / 移动端桌面应用支持 -->
+    <link rel="manifest" href="/manifest.webmanifest" />
+    <link rel="icon" type="image/png" href="/favicon.png" />
+    <link rel="apple-touch-icon" href="/icon-192.png" />
+    <meta name="theme-color" content="#0b1120" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="apple-mobile-web-app-title" content="FootHub" />
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Alibaba Iconfont Symbol (已下载至本地 public/iconfont.js，离线高速加载) -->
+    <script src="/iconfont.js"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              dqd: {
+                DEFAULT: '#16b13a',
+                dark: '#0f8a2c',
+                light: '#e8f8ed'
+              },
+              hupu: {
+                DEFAULT: '#c01d24',
+                dark: '#99151b',
+                light: '#fdf2f2'
+              }
+            }
+          }
+        }
+      }
+    </script>
+    <style>
+      body {
+        background-color: #0b1120;
+        -webkit-tap-highlight-color: transparent;
+      }
+      /* Iconfont Symbol SVG 基础规范 */
+      .icon {
+        width: 1.15em;
+        height: 1.15em;
+        vertical-align: -0.18em;
+        fill: currentColor;
+        overflow: hidden;
+        display: inline-block;
+      }
+      /* 隐藏滚动条但保留滚动 */
+      .no-scrollbar::-webkit-scrollbar {
+        display: none;
+      }
+      .no-scrollbar {
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+      }
+    </style>
+  </head>
+  <body class="bg-slate-950 text-slate-100 font-sans antialiased">
+    <div id="app"></div>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>

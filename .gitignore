@@ -1,0 +1,25 @@
+# Python
+venv/
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+dist/
+build/
+
+# Node / Vite
+node_modules/
+web/node_modules/
+web/dist/
+.vite/
+web/.vite/
+
+# Local data dumps & test scripts
+data_raw/
+*.log
+*.tmp
+
+# Operating System files
+.DS_Store
+Thumbs.db
+desktop.ini
