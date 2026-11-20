@@ -190,7 +190,7 @@ def sync():
             if lt.competition_id == BEL_D2_CID:
                 rows_list = list(lt.rows)
                 for row in rows_list:
-                    if row.team_id == VIRTON_TEAM_ID and row.played > 0 and len(row.matches) > 0:
+                    if row.team_id == VIRTON_TEAM_ID and row.played > 0:
                         target_lt_rows = (lt, rows_list)
                         break
                 if target_lt_rows:
@@ -199,21 +199,6 @@ def sync():
         if target_lt_rows:
             lt, rows_list = target_lt_rows
             for row in rows_list:
-                if row.team_id == VIRTON_TEAM_ID:
-                    for m in row.matches:
-                        if m.outcome is not None:
-                            r_num = m.slot + 1
-                            opp_id = m.opponent_team_id
-                            opp_name = team_to_club.get(opp_id, f"队伍_{opp_id}")
-                            is_home = (m.home_or_away.value.lower() == "home")
-                            virton_matches_in_save.append({
-                                "round": r_num,
-                                "is_home": is_home,
-                                "opp_name": opp_name,
-                                "gf": m.goals_for,
-                                "ga": m.goals_against,
-                                "outcome": m.outcome.value
-                            })
                 cname = team_to_club.get(row.team_id, f"team_{row.team_id}")
                 bel_d2_table.append({
                     "position": row.position,
@@ -230,7 +215,30 @@ def sync():
                 })
             bel_d2_table.sort(key=lambda x: x["position"])
 
-        virton_matches_in_save.sort(key=lambda x: x["round"])
+        # 从 save.fixtures 提取全部已完赛的维尔通比乙联赛赛果
+        d2_fixtures = []
+        for f in save.fixtures():
+            if f.competition_id == BEL_D2_CID and (f.home_team_id == VIRTON_TEAM_ID or f.away_team_id == VIRTON_TEAM_ID) and f.home_goals is not None:
+                d2_fixtures.append(f)
+        d2_fixtures.sort(key=lambda x: x.date)
+
+        for idx, f in enumerate(d2_fixtures, 1):
+            is_home = (f.home_team_id == VIRTON_TEAM_ID)
+            opp_id = f.away_team_id if is_home else f.home_team_id
+            opp_name = team_to_club.get(opp_id, f"队伍_{opp_id}")
+            gf = f.home_goals if is_home else f.away_goals
+            ga = f.away_goals if is_home else f.home_goals
+            outcome = "win" if gf > ga else "draw" if gf == ga else "loss"
+            virton_matches_in_save.append({
+                "round": idx,
+                "is_home": is_home,
+                "opp_name": opp_name,
+                "gf": gf,
+                "ga": ga,
+                "outcome": outcome,
+                "date": str(f.date)
+            })
+
         total_played_in_save = len(virton_matches_in_save)
         print(f"[*] 存档中维尔通精英已完赛场次: 共 {total_played_in_save} 轮")
 

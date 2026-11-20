@@ -34,17 +34,22 @@
       <div class="bg-slate-900/90 border-b border-slate-800/80 px-4 py-2 flex items-center justify-between text-xs">
         <div class="flex items-center space-x-1.5 overflow-x-auto no-scrollbar">
           <button
-            v-for="r in [1, 2, 3]"
-            :key="r"
-            @click="currentRound = r"
+            v-for="m in matches"
+            :key="m.round"
+            @click="currentRound = m.round"
             :class="[
-              'px-3 py-1 rounded-full text-xs font-semibold shrink-0 transition',
-              currentRound === r
+              'px-3 py-1 rounded-full text-xs font-semibold shrink-0 transition flex items-center space-x-1',
+              currentRound === m.round
                 ? 'bg-emerald-600 text-white font-bold shadow-sm'
                 : 'bg-slate-800 text-slate-400 hover:bg-slate-700 hover:text-slate-200'
             ]"
           >
-            <span>比乙 第 {{ r }} 轮</span>
+            <span>{{ m.round_label || ('第 ' + m.round + ' 轮') }}</span>
+            <span v-if="m.result" :class="[
+              'text-[9px] px-1 py-0.2 rounded font-mono',
+              m.result === 'W' || m.result === '胜' ? 'bg-emerald-500/30 text-emerald-300' :
+              m.result === 'D' || m.result === '平' ? 'bg-amber-500/30 text-amber-300' : 'bg-rose-500/30 text-rose-300'
+            ]">{{ m.result }}</span>
           </button>
         </div>
         <span class="text-[10px] text-slate-400 shrink-0 ml-2">2025/26 赛季</span>
@@ -1208,8 +1213,8 @@ const availableLeagues = ref(multiLeaguesData.leagues || [])
 const teamAnalysis = ref(teamAnalysisData)
 const leaderboards = ref(leaderboardsData)
 
-// 选中的轮次 (默认最新第 3 轮)
-const currentRound = ref(3)
+// 选中的轮次 (默认最新轮次)
+const currentRound = ref(matches.value.length ? matches.value[matches.value.length - 1].round : 8)
 
 // 选中的公域主导航 Tab (6大功能模块)
 const activeTab = ref('matches')
