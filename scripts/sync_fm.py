@@ -384,12 +384,21 @@ def sync():
             
             remotes = subprocess.run(["git", "remote"], cwd=str(PROJECT_ROOT), shell=True, capture_output=True, text=True)
             if "origin" in remotes.stdout:
-                print("[*] 正在推送到 GitHub 远程仓库...")
-                push_res = subprocess.run(["git", "push"], cwd=str(PROJECT_ROOT), shell=True, capture_output=True, text=True)
+                print("[*] 正在推送到 GitHub main 源码分支...")
+                push_res = subprocess.run(["git", "push", "origin", "main"], cwd=str(PROJECT_ROOT), shell=True, capture_output=True, text=True)
                 if push_res.returncode == 0:
-                    print("[✓] 成功推送到 GitHub！Vercel/Cloudflare 已触发自动部署！")
+                    print("[✓] 源码分支 main 推送成功！")
+                
+                # 同步推送编译后的生产静态包到 gh-pages 分支
+                dist_dir = WEB_DIR / "dist"
+                (dist_dir / ".nojekyll").touch(exist_ok=True)
+                subprocess.run(["git", "add", "-A"], cwd=str(dist_dir), shell=True)
+                subprocess.run(["git", "commit", "-m", f"deploy: FM数据同步 (比乙战至第{total_played_in_save}轮)"], cwd=str(dist_dir), shell=True)
+                push_page = subprocess.run(["git", "push", "-f", "origin", "gh-pages"], cwd=str(dist_dir), shell=True, capture_output=True, text=True)
+                if push_page.returncode == 0:
+                    print("[✓] GitHub Pages 生产环境已同步更新上线！")
                 else:
-                    print(f"[!] 推送远程提示: {push_res.stderr.strip() or push_res.stdout.strip()}")
+                    print(f"[!] Pages 部署提示: {push_page.stderr.strip()[:100]}")
             else:
                 print("[i] 提示: 尚未配置远程 GitHub 仓库，已在本地安全版本控制保存。")
     except Exception as e:
