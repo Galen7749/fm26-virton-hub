@@ -30,7 +30,42 @@
         "rating": 6.9,
         "min": 90,
         "name_en": "Célestin De Schrevel",
-        "name_zh": "塞莱斯丁·德·施瑞沃"
+        "name_zh": "塞莱斯丁·德·施瑞沃",
+        "is_mvp": false,
+        "stats": {
+          "扑救次数": "5 次",
+          "高空摘球": "3 次",
+          "出击成功": "100%",
+          "传球成功率": "78.2%",
+          "长传到位": "14/19",
+          "跑动距离": "5.6 km"
+        },
+        "radar": [
+          {
+            "subject": "门线扑救",
+            "value": 92
+          },
+          {
+            "subject": "出击果断",
+            "value": 82
+          },
+          {
+            "subject": "高空控制",
+            "value": 85
+          },
+          {
+            "subject": "后场出球",
+            "value": 76
+          },
+          {
+            "subject": "门前反应",
+            "value": 87
+          },
+          {
+            "subject": "指挥防线",
+            "value": 80
+          }
+        ]
       },
       {
         "name": "Adama Diop",
@@ -38,7 +73,42 @@
         "rating": 6.9,
         "min": 90,
         "name_en": "Adama Diop",
-        "name_zh": "亚当穆斯·迪奥普"
+        "name_zh": "亚当穆斯·迪奥普",
+        "is_mvp": false,
+        "stats": {
+          "抢断成功": "6 次",
+          "关键拦截": "5 次",
+          "争顶胜率": "82.5%",
+          "解围次数": "7 次",
+          "传球成功率": "86.4%",
+          "跑动距离": "10.5 km"
+        },
+        "radar": [
+          {
+            "subject": "正面抢断",
+            "value": 87
+          },
+          {
+            "subject": "预判拦截",
+            "value": 84
+          },
+          {
+            "subject": "防空制空",
+            "value": 75
+          },
+          {
+            "subject": "出球组织",
+            "value": 78
+          },
+          {
+            "subject": "体能跑动",
+            "value": 79
+          },
+          {
+            "subject": "身体对抗",
+            "value": 85
+          }
+        ]
       },
       {
         "name": "Allan Tchaptchet",
@@ -46,7 +116,42 @@
         "rating": 6.7,
         "min": 90,
         "name_en": "Allan Tchaptchet",
-        "name_zh": "阿兰·特查普切特"
+        "name_zh": "阿兰·特查普切特",
+        "is_mvp": false,
+        "stats": {
+          "抢断成功": "6 次",
+          "关键拦截": "5 次",
+          "争顶胜率": "82.5%",
+          "解围次数": "7 次",
+          "传球成功率": "86.4%",
+          "跑动距离": "10.4 km"
+        },
+        "radar": [
+          {
+            "subject": "正面抢断",
+            "value": 85
+          },
+          {
+            "subject": "预判拦截",
+            "value": 82
+          },
+          {
+            "subject": "防空制空",
+            "value": 88
+          },
+          {
+            "subject": "出球组织",
+            "value": 78
+          },
+          {
+            "subject": "体能跑动",
+            "value": 77
+          },
+          {
+            "subject": "身体对抗",
+            "value": 83
+          }
+        ]
       },
       {
         "name": "Teddy Mezague",
@@ -54,7 +159,42 @@
         "rating": 6.6,
         "min": 90,
         "name_en": "Teddy Mezague",
-        "name_zh": "泰迪·梅扎古"
+        "name_zh": "泰迪·梅扎古",
+        "is_mvp": false,
+        "stats": {
+          "抢断成功": "6 次",
+          "关键拦截": "4 次",
+          "争顶胜率": "82.5%",
+          "解围次数": "7 次",
+          "传球成功率": "86.4%",
+          "跑动距离": "10.3 km"
+        },
+        "radar": [
+          {
+            "subject": "正面抢断",
+            "value": 84
+          },
+          {
+            "subject": "预判拦截",
+            "value": 81
+          },
+          {
+            "subject": "防空制空",
+            "value": 88
+          },
+          {
+            "subject": "出球组织",
+            "value": 78
+          },
+          {
+            "subject": "体能跑动",
+            "value": 76
+          },
+          {
+            "subject": "身体对抗",
+            "value": 82
+          }
+        ]
       },
       {
         "name": "Yassine Ben Hamed",
@@ -62,7 +202,42 @@
         "rating": 6.5,
         "min": 90,
         "name_en": "Yassine Ben Hamed",
-        "name_zh": "亚塞尼·本·哈米德"
+        "name_zh": "亚塞尼·本·哈米德",
+        "is_mvp": false,
+        "stats": {
+          "抢断成功": "6 次",
+          "关键拦截": "4 次",
+          "争顶胜率": "82.5%",
+          "解围次数": "7 次",
+          "传球成功率": "86.4%",
+          "跑动距离": "10.2 km"
+        },
+        "radar": [
+          {
+            "subject": "正面抢断",
+            "value": 83
+          },
+          {
+            "subject": "预判拦截",
+            "value": 80
+          },
+          {
+            "subject": "防空制空",
+            "value": 75
+          },
+          {
+            "subject": "出球组织",
+            "value": 78
+          },
+          {
+            "subject": "体能跑动",
+            "value": 75
+          },
+          {
+            "subject": "身体对抗",
+            "value": 81
+          }
+        ]
       },
       {
         "name": "Antoine Valério",
@@ -70,7 +245,42 @@
         "rating": 6.5,
         "min": 84,
         "name_en": "Antoine Valério",
-        "name_zh": "安托万·瓦莱里亚"
+        "name_zh": "安托万·瓦莱里亚",
+        "is_mvp": false,
+        "stats": {
+          "触球次数": "67 次",
+          "关键传球": "3 次",
+          "中场拦截": "5 次",
+          "抢断对抗": "6 次",
+          "传球成功率": "84.8%",
+          "跑动距离": "11.8 km"
+        },
+        "radar": [
+          {
+            "subject": "组织调度",
+            "value": 77
+          },
+          {
+            "subject": "防守绞杀",
+            "value": 85
+          },
+          {
+            "subject": "覆盖跑动",
+            "value": 88
+          },
+          {
+            "subject": "短传渗透",
+            "value": 84
+          },
+          {
+            "subject": "身体对抗",
+            "value": 82
+          },
+          {
+            "subject": "向前推进",
+            "value": 73
+          }
+        ]
       },
       {
         "name": "Aliou Dembélé",
@@ -78,7 +288,42 @@
         "rating": 6.4,
         "min": 90,
         "name_en": "Aliou Dembélé",
-        "name_zh": "阿卢·登贝莱"
+        "name_zh": "阿卢·登贝莱",
+        "is_mvp": false,
+        "stats": {
+          "触球次数": "66 次",
+          "关键传球": "3 次",
+          "中场拦截": "5 次",
+          "抢断对抗": "6 次",
+          "传球成功率": "84.8%",
+          "跑动距离": "11.7 km"
+        },
+        "radar": [
+          {
+            "subject": "组织调度",
+            "value": 76
+          },
+          {
+            "subject": "防守绞杀",
+            "value": 84
+          },
+          {
+            "subject": "覆盖跑动",
+            "value": 86
+          },
+          {
+            "subject": "短传渗透",
+            "value": 84
+          },
+          {
+            "subject": "身体对抗",
+            "value": 82
+          },
+          {
+            "subject": "向前推进",
+            "value": 72
+          }
+        ]
       },
       {
         "name": "Tyrone Tormin",
@@ -87,7 +332,42 @@
         "min": 90,
         "assist": 1,
         "name_en": "Tyrone Tormin",
-        "name_zh": "泰伦·托明"
+        "name_zh": "泰伦·托明",
+        "is_mvp": false,
+        "stats": {
+          "进球/助攻": "0 球 / 1 助",
+          "关键传球": "6 次",
+          "成功过人": "5 次",
+          "射门(射正)": "2 (1)",
+          "传球成功率": "82.5%",
+          "跑动距离": "11.9 km"
+        },
+        "radar": [
+          {
+            "subject": "边路突击",
+            "value": 93
+          },
+          {
+            "subject": "终结射门",
+            "value": 74
+          },
+          {
+            "subject": "传球创造",
+            "value": 88
+          },
+          {
+            "subject": "灵巧盘带",
+            "value": 91
+          },
+          {
+            "subject": "前场压迫",
+            "value": 80
+          },
+          {
+            "subject": "持球冲刺",
+            "value": 88
+          }
+        ]
       },
       {
         "name": "Luca Maiorano",
@@ -95,7 +375,42 @@
         "rating": 6.5,
         "min": 90,
         "name_en": "Luca Maiorano",
-        "name_zh": "卢卡·迈奥拉诺"
+        "name_zh": "卢卡·迈奥拉诺",
+        "is_mvp": false,
+        "stats": {
+          "进球/助攻": "0 球 / 0 助",
+          "关键传球": "6 次",
+          "成功过人": "5 次",
+          "射门(射正)": "2 (1)",
+          "传球成功率": "82.5%",
+          "跑动距离": "11.4 km"
+        },
+        "radar": [
+          {
+            "subject": "边路突击",
+            "value": 86
+          },
+          {
+            "subject": "终结射门",
+            "value": 74
+          },
+          {
+            "subject": "传球创造",
+            "value": 81
+          },
+          {
+            "subject": "灵巧盘带",
+            "value": 84
+          },
+          {
+            "subject": "前场压迫",
+            "value": 80
+          },
+          {
+            "subject": "持球冲刺",
+            "value": 81
+          }
+        ]
       },
       {
         "name": "Marks Inchaud",
@@ -103,7 +418,42 @@
         "rating": 6.3,
         "min": 84,
         "name_en": "Marks Inchaud",
-        "name_zh": "马克斯·因查德"
+        "name_zh": "马克斯·因查德",
+        "is_mvp": false,
+        "stats": {
+          "进球/助攻": "0 球 / 0 助",
+          "关键传球": "6 次",
+          "成功过人": "5 次",
+          "射门(射正)": "2 (1)",
+          "传球成功率": "82.5%",
+          "跑动距离": "11.2 km"
+        },
+        "radar": [
+          {
+            "subject": "边路突击",
+            "value": 83
+          },
+          {
+            "subject": "终结射门",
+            "value": 74
+          },
+          {
+            "subject": "传球创造",
+            "value": 79
+          },
+          {
+            "subject": "灵巧盘带",
+            "value": 81
+          },
+          {
+            "subject": "前场压迫",
+            "value": 80
+          },
+          {
+            "subject": "持球冲刺",
+            "value": 79
+          }
+        ]
       },
       {
         "name": "Paul Wade",
@@ -112,7 +462,42 @@
         "min": 90,
         "goal": 1,
         "name_en": "Paul Wade",
-        "name_zh": "保罗·韦德"
+        "name_zh": "保罗·韦德",
+        "is_mvp": false,
+        "stats": {
+          "进球/助攻": "1 球 / 0 助",
+          "射门(射正)": "3 (2)",
+          "关键争顶": "7 次",
+          "背身做球": "81.4%",
+          "预期进球(xG)": "0.9",
+          "跑动距离": "11.2 km"
+        },
+        "radar": [
+          {
+            "subject": "门前嗅觉",
+            "value": 94
+          },
+          {
+            "subject": "终结能力",
+            "value": 90
+          },
+          {
+            "subject": "空中争顶",
+            "value": 82
+          },
+          {
+            "subject": "背身支点",
+            "value": 80
+          },
+          {
+            "subject": "无球穿插",
+            "value": 83
+          },
+          {
+            "subject": "逼抢反抢",
+            "value": 78
+          }
+        ]
       }
     ]
   },
@@ -161,7 +546,42 @@
         "rating": 6.4,
         "min": 90,
         "name_en": "Célestin De Schrevel",
-        "name_zh": "塞莱斯丁·德·施瑞沃"
+        "name_zh": "塞莱斯丁·德·施瑞沃",
+        "is_mvp": false,
+        "stats": {
+          "扑救次数": "5 次",
+          "高空摘球": "3 次",
+          "出击成功": "100%",
+          "传球成功率": "78.2%",
+          "长传到位": "14/19",
+          "跑动距离": "5.6 km"
+        },
+        "radar": [
+          {
+            "subject": "门线扑救",
+            "value": 86
+          },
+          {
+            "subject": "出击果断",
+            "value": 82
+          },
+          {
+            "subject": "高空控制",
+            "value": 85
+          },
+          {
+            "subject": "后场出球",
+            "value": 76
+          },
+          {
+            "subject": "门前反应",
+            "value": 82
+          },
+          {
+            "subject": "指挥防线",
+            "value": 80
+          }
+        ]
       },
       {
         "name": "Steeven Assengue",
@@ -169,7 +589,42 @@
         "rating": 6.7,
         "min": 76,
         "name_en": "Steeven Assengue",
-        "name_zh": "斯蒂文·阿森盖"
+        "name_zh": "斯蒂文·阿森盖",
+        "is_mvp": false,
+        "stats": {
+          "抢断成功": "6 次",
+          "关键拦截": "5 次",
+          "争顶胜率": "82.5%",
+          "解围次数": "7 次",
+          "传球成功率": "86.4%",
+          "跑动距离": "10.4 km"
+        },
+        "radar": [
+          {
+            "subject": "正面抢断",
+            "value": 85
+          },
+          {
+            "subject": "预判拦截",
+            "value": 82
+          },
+          {
+            "subject": "防空制空",
+            "value": 75
+          },
+          {
+            "subject": "出球组织",
+            "value": 78
+          },
+          {
+            "subject": "体能跑动",
+            "value": 77
+          },
+          {
+            "subject": "身体对抗",
+            "value": 83
+          }
+        ]
       },
       {
         "name": "Allan Tchaptchet",
@@ -177,7 +632,42 @@
         "rating": 7.1,
         "min": 76,
         "name_en": "Allan Tchaptchet",
-        "name_zh": "阿兰·特查普切特"
+        "name_zh": "阿兰·特查普切特",
+        "is_mvp": false,
+        "stats": {
+          "抢断成功": "6 次",
+          "关键拦截": "5 次",
+          "争顶胜率": "82.5%",
+          "解围次数": "7 次",
+          "传球成功率": "86.4%",
+          "跑动距离": "10.7 km"
+        },
+        "radar": [
+          {
+            "subject": "正面抢断",
+            "value": 90
+          },
+          {
+            "subject": "预判拦截",
+            "value": 86
+          },
+          {
+            "subject": "防空制空",
+            "value": 88
+          },
+          {
+            "subject": "出球组织",
+            "value": 78
+          },
+          {
+            "subject": "体能跑动",
+            "value": 81
+          },
+          {
+            "subject": "身体对抗",
+            "value": 88
+          }
+        ]
       },
       {
         "name": "Teddy Mezague",
@@ -185,7 +675,42 @@
         "rating": 6.9,
         "min": 90,
         "name_en": "Teddy Mezague",
-        "name_zh": "泰迪·梅扎古"
+        "name_zh": "泰迪·梅扎古",
+        "is_mvp": false,
+        "stats": {
+          "抢断成功": "6 次",
+          "关键拦截": "5 次",
+          "争顶胜率": "82.5%",
+          "解围次数": "7 次",
+          "传球成功率": "86.4%",
+          "跑动距离": "10.5 km"
+        },
+        "radar": [
+          {
+            "subject": "正面抢断",
+            "value": 87
+          },
+          {
+            "subject": "预判拦截",
+            "value": 84
+          },
+          {
+            "subject": "防空制空",
+            "value": 88
+          },
+          {
+            "subject": "出球组织",
+            "value": 78
+          },
+          {
+            "subject": "体能跑动",
+            "value": 79
+          },
+          {
+            "subject": "身体对抗",
+            "value": 85
+          }
+        ]
       },
       {
         "name": "Yassine Ben Hamed",
@@ -194,7 +719,42 @@
         "min": 90,
         "assist": 1,
         "name_en": "Yassine Ben Hamed",
-        "name_zh": "亚塞尼·本·哈米德"
+        "name_zh": "亚塞尼·本·哈米德",
+        "is_mvp": false,
+        "stats": {
+          "抢断成功": "7 次",
+          "关键拦截": "5 次",
+          "争顶胜率": "82.5%",
+          "解围次数": "7 次",
+          "传球成功率": "86.4%",
+          "跑动距离": "10.9 km"
+        },
+        "radar": [
+          {
+            "subject": "正面抢断",
+            "value": 93
+          },
+          {
+            "subject": "预判拦截",
+            "value": 89
+          },
+          {
+            "subject": "防空制空",
+            "value": 75
+          },
+          {
+            "subject": "出球组织",
+            "value": 78
+          },
+          {
+            "subject": "体能跑动",
+            "value": 84
+          },
+          {
+            "subject": "身体对抗",
+            "value": 91
+          }
+        ]
       },
       {
         "name": "Antoine Valério",
@@ -202,7 +762,42 @@
         "rating": 6.5,
         "min": 85,
         "name_en": "Antoine Valério",
-        "name_zh": "安托万·瓦莱里亚"
+        "name_zh": "安托万·瓦莱里亚",
+        "is_mvp": false,
+        "stats": {
+          "触球次数": "67 次",
+          "关键传球": "3 次",
+          "中场拦截": "5 次",
+          "抢断对抗": "6 次",
+          "传球成功率": "84.8%",
+          "跑动距离": "11.8 km"
+        },
+        "radar": [
+          {
+            "subject": "组织调度",
+            "value": 77
+          },
+          {
+            "subject": "防守绞杀",
+            "value": 85
+          },
+          {
+            "subject": "覆盖跑动",
+            "value": 88
+          },
+          {
+            "subject": "短传渗透",
+            "value": 84
+          },
+          {
+            "subject": "身体对抗",
+            "value": 82
+          },
+          {
+            "subject": "向前推进",
+            "value": 73
+          }
+        ]
       },
       {
         "name": "Aliou Dembélé",
@@ -211,7 +806,42 @@
         "min": 90,
         "goal": 1,
         "name_en": "Aliou Dembélé",
-        "name_zh": "阿卢·登贝莱"
+        "name_zh": "阿卢·登贝莱",
+        "is_mvp": false,
+        "stats": {
+          "触球次数": "74 次",
+          "关键传球": "3 次",
+          "中场拦截": "6 次",
+          "抢断对抗": "7 次",
+          "传球成功率": "84.8%",
+          "跑动距离": "12.6 km"
+        },
+        "radar": [
+          {
+            "subject": "组织调度",
+            "value": 86
+          },
+          {
+            "subject": "防守绞杀",
+            "value": 94
+          },
+          {
+            "subject": "覆盖跑动",
+            "value": 96
+          },
+          {
+            "subject": "短传渗透",
+            "value": 84
+          },
+          {
+            "subject": "身体对抗",
+            "value": 82
+          },
+          {
+            "subject": "向前推进",
+            "value": 82
+          }
+        ]
       },
       {
         "name": "Tyrone Tormin",
@@ -222,7 +852,42 @@
         "assist": 1,
         "is_motm": true,
         "name_en": "Tyrone Tormin",
-        "name_zh": "泰伦·托明"
+        "name_zh": "泰伦·托明",
+        "is_mvp": true,
+        "stats": {
+          "进球/助攻": "1 球 / 1 助",
+          "关键传球": "7 次",
+          "成功过人": "6 次",
+          "射门(射正)": "3 (2)",
+          "传球成功率": "82.5%",
+          "跑动距离": "12.4 km"
+        },
+        "radar": [
+          {
+            "subject": "边路突击",
+            "value": 96
+          },
+          {
+            "subject": "终结射门",
+            "value": 85
+          },
+          {
+            "subject": "传球创造",
+            "value": 95
+          },
+          {
+            "subject": "灵巧盘带",
+            "value": 95
+          },
+          {
+            "subject": "前场压迫",
+            "value": 80
+          },
+          {
+            "subject": "持球冲刺",
+            "value": 94
+          }
+        ]
       },
       {
         "name": "Luca Maiorano",
@@ -230,7 +895,42 @@
         "rating": 6.4,
         "min": 68,
         "name_en": "Luca Maiorano",
-        "name_zh": "卢卡·迈奥拉诺"
+        "name_zh": "卢卡·迈奥拉诺",
+        "is_mvp": false,
+        "stats": {
+          "进球/助攻": "0 球 / 0 助",
+          "关键传球": "6 次",
+          "成功过人": "5 次",
+          "射门(射正)": "2 (1)",
+          "传球成功率": "82.5%",
+          "跑动距离": "11.3 km"
+        },
+        "radar": [
+          {
+            "subject": "边路突击",
+            "value": 84
+          },
+          {
+            "subject": "终结射门",
+            "value": 74
+          },
+          {
+            "subject": "传球创造",
+            "value": 80
+          },
+          {
+            "subject": "灵巧盘带",
+            "value": 82
+          },
+          {
+            "subject": "前场压迫",
+            "value": 80
+          },
+          {
+            "subject": "持球冲刺",
+            "value": 80
+          }
+        ]
       },
       {
         "name": "Abdelsamad Hachem",
@@ -239,7 +939,42 @@
         "min": 90,
         "goal": 1,
         "name_en": "Abdelsamad Hachem",
-        "name_zh": "阿卜杜勒萨马迪·哈切姆"
+        "name_zh": "阿卜杜勒萨马迪·哈切姆",
+        "is_mvp": false,
+        "stats": {
+          "进球/助攻": "1 球 / 0 助",
+          "关键传球": "6 次",
+          "成功过人": "5 次",
+          "射门(射正)": "3 (2)",
+          "传球成功率": "82.5%",
+          "跑动距离": "11.6 km"
+        },
+        "radar": [
+          {
+            "subject": "边路突击",
+            "value": 89
+          },
+          {
+            "subject": "终结射门",
+            "value": 85
+          },
+          {
+            "subject": "传球创造",
+            "value": 84
+          },
+          {
+            "subject": "灵巧盘带",
+            "value": 87
+          },
+          {
+            "subject": "前场压迫",
+            "value": 80
+          },
+          {
+            "subject": "持球冲刺",
+            "value": 84
+          }
+        ]
       },
       {
         "name": "Paul Wade",
@@ -248,7 +983,42 @@
         "min": 90,
         "assist": 1,
         "name_en": "Paul Wade",
-        "name_zh": "保罗·韦德"
+        "name_zh": "保罗·韦德",
+        "is_mvp": false,
+        "stats": {
+          "进球/助攻": "0 球 / 1 助",
+          "射门(射正)": "2 (1)",
+          "关键争顶": "7 次",
+          "背身做球": "81.4%",
+          "预期进球(xG)": "0.45",
+          "跑动距离": "11.2 km"
+        },
+        "radar": [
+          {
+            "subject": "门前嗅觉",
+            "value": 86
+          },
+          {
+            "subject": "终结能力",
+            "value": 75
+          },
+          {
+            "subject": "空中争顶",
+            "value": 82
+          },
+          {
+            "subject": "背身支点",
+            "value": 80
+          },
+          {
+            "subject": "无球穿插",
+            "value": 83
+          },
+          {
+            "subject": "逼抢反抢",
+            "value": 78
+          }
+        ]
       }
     ]
   },
@@ -283,7 +1053,42 @@
         "rating": 6.5,
         "min": 90,
         "name_en": "Célestin De Schrevel",
-        "name_zh": "塞莱斯丁·德·施瑞沃"
+        "name_zh": "塞莱斯丁·德·施瑞沃",
+        "is_mvp": false,
+        "stats": {
+          "扑救次数": "5 次",
+          "高空摘球": "3 次",
+          "出击成功": "100%",
+          "传球成功率": "78.2%",
+          "长传到位": "14/19",
+          "跑动距离": "5.6 km"
+        },
+        "radar": [
+          {
+            "subject": "门线扑救",
+            "value": 88
+          },
+          {
+            "subject": "出击果断",
+            "value": 82
+          },
+          {
+            "subject": "高空控制",
+            "value": 85
+          },
+          {
+            "subject": "后场出球",
+            "value": 76
+          },
+          {
+            "subject": "门前反应",
+            "value": 83
+          },
+          {
+            "subject": "指挥防线",
+            "value": 80
+          }
+        ]
       },
       {
         "name": "Steeven Assengue",
@@ -291,7 +1096,42 @@
         "rating": 6.3,
         "min": 90,
         "name_en": "Steeven Assengue",
-        "name_zh": "斯蒂文·阿森盖"
+        "name_zh": "斯蒂文·阿森盖",
+        "is_mvp": false,
+        "stats": {
+          "抢断成功": "6 次",
+          "关键拦截": "4 次",
+          "争顶胜率": "82.5%",
+          "解围次数": "7 次",
+          "传球成功率": "86.4%",
+          "跑动距离": "10.0 km"
+        },
+        "radar": [
+          {
+            "subject": "正面抢断",
+            "value": 81
+          },
+          {
+            "subject": "预判拦截",
+            "value": 78
+          },
+          {
+            "subject": "防空制空",
+            "value": 75
+          },
+          {
+            "subject": "出球组织",
+            "value": 78
+          },
+          {
+            "subject": "体能跑动",
+            "value": 73
+          },
+          {
+            "subject": "身体对抗",
+            "value": 79
+          }
+        ]
       },
       {
         "name": "Allan Tchaptchet",
@@ -299,7 +1139,42 @@
         "rating": 6.7,
         "min": 90,
         "name_en": "Allan Tchaptchet",
-        "name_zh": "阿兰·特查普切特"
+        "name_zh": "阿兰·特查普切特",
+        "is_mvp": false,
+        "stats": {
+          "抢断成功": "6 次",
+          "关键拦截": "5 次",
+          "争顶胜率": "82.5%",
+          "解围次数": "7 次",
+          "传球成功率": "86.4%",
+          "跑动距离": "10.4 km"
+        },
+        "radar": [
+          {
+            "subject": "正面抢断",
+            "value": 85
+          },
+          {
+            "subject": "预判拦截",
+            "value": 82
+          },
+          {
+            "subject": "防空制空",
+            "value": 88
+          },
+          {
+            "subject": "出球组织",
+            "value": 78
+          },
+          {
+            "subject": "体能跑动",
+            "value": 77
+          },
+          {
+            "subject": "身体对抗",
+            "value": 83
+          }
+        ]
       },
       {
         "name": "Teddy Mezague",
@@ -307,7 +1182,42 @@
         "rating": 6.5,
         "min": 90,
         "name_en": "Teddy Mezague",
-        "name_zh": "泰迪·梅扎古"
+        "name_zh": "泰迪·梅扎古",
+        "is_mvp": false,
+        "stats": {
+          "抢断成功": "6 次",
+          "关键拦截": "4 次",
+          "争顶胜率": "82.5%",
+          "解围次数": "7 次",
+          "传球成功率": "86.4%",
+          "跑动距离": "10.2 km"
+        },
+        "radar": [
+          {
+            "subject": "正面抢断",
+            "value": 83
+          },
+          {
+            "subject": "预判拦截",
+            "value": 80
+          },
+          {
+            "subject": "防空制空",
+            "value": 88
+          },
+          {
+            "subject": "出球组织",
+            "value": 78
+          },
+          {
+            "subject": "体能跑动",
+            "value": 75
+          },
+          {
+            "subject": "身体对抗",
+            "value": 81
+          }
+        ]
       },
       {
         "name": "Yassine Ben Hamed",
@@ -315,7 +1225,42 @@
         "rating": 6.5,
         "min": 90,
         "name_en": "Yassine Ben Hamed",
-        "name_zh": "亚塞尼·本·哈米德"
+        "name_zh": "亚塞尼·本·哈米德",
+        "is_mvp": false,
+        "stats": {
+          "抢断成功": "6 次",
+          "关键拦截": "4 次",
+          "争顶胜率": "82.5%",
+          "解围次数": "7 次",
+          "传球成功率": "86.4%",
+          "跑动距离": "10.2 km"
+        },
+        "radar": [
+          {
+            "subject": "正面抢断",
+            "value": 83
+          },
+          {
+            "subject": "预判拦截",
+            "value": 80
+          },
+          {
+            "subject": "防空制空",
+            "value": 75
+          },
+          {
+            "subject": "出球组织",
+            "value": 78
+          },
+          {
+            "subject": "体能跑动",
+            "value": 75
+          },
+          {
+            "subject": "身体对抗",
+            "value": 81
+          }
+        ]
       },
       {
         "name": "Antoine Valério",
@@ -323,7 +1268,42 @@
         "rating": 6.7,
         "min": 90,
         "name_en": "Antoine Valério",
-        "name_zh": "安托万·瓦莱里亚"
+        "name_zh": "安托万·瓦莱里亚",
+        "is_mvp": false,
+        "stats": {
+          "触球次数": "68 次",
+          "关键传球": "3 次",
+          "中场拦截": "6 次",
+          "抢断对抗": "6 次",
+          "传球成功率": "84.8%",
+          "跑动距离": "12.0 km"
+        },
+        "radar": [
+          {
+            "subject": "组织调度",
+            "value": 79
+          },
+          {
+            "subject": "防守绞杀",
+            "value": 87
+          },
+          {
+            "subject": "覆盖跑动",
+            "value": 90
+          },
+          {
+            "subject": "短传渗透",
+            "value": 84
+          },
+          {
+            "subject": "身体对抗",
+            "value": 82
+          },
+          {
+            "subject": "向前推进",
+            "value": 75
+          }
+        ]
       },
       {
         "name": "Aliou Dembélé",
@@ -332,7 +1312,42 @@
         "min": 74,
         "assist": 1,
         "name_en": "Aliou Dembélé",
-        "name_zh": "阿卢·登贝莱"
+        "name_zh": "阿卢·登贝莱",
+        "is_mvp": false,
+        "stats": {
+          "触球次数": "71 次",
+          "关键传球": "3 次",
+          "中场拦截": "6 次",
+          "抢断对抗": "6 次",
+          "传球成功率": "84.8%",
+          "跑动距离": "12.3 km"
+        },
+        "radar": [
+          {
+            "subject": "组织调度",
+            "value": 83
+          },
+          {
+            "subject": "防守绞杀",
+            "value": 92
+          },
+          {
+            "subject": "覆盖跑动",
+            "value": 95
+          },
+          {
+            "subject": "短传渗透",
+            "value": 84
+          },
+          {
+            "subject": "身体对抗",
+            "value": 82
+          },
+          {
+            "subject": "向前推进",
+            "value": 79
+          }
+        ]
       },
       {
         "name": "Tyrone Tormin",
@@ -340,7 +1355,42 @@
         "rating": 6.6,
         "min": 90,
         "name_en": "Tyrone Tormin",
-        "name_zh": "泰伦·托明"
+        "name_zh": "泰伦·托明",
+        "is_mvp": false,
+        "stats": {
+          "进球/助攻": "0 球 / 0 助",
+          "关键传球": "6 次",
+          "成功过人": "5 次",
+          "射门(射正)": "2 (1)",
+          "传球成功率": "82.5%",
+          "跑动距离": "11.5 km"
+        },
+        "radar": [
+          {
+            "subject": "边路突击",
+            "value": 87
+          },
+          {
+            "subject": "终结射门",
+            "value": 74
+          },
+          {
+            "subject": "传球创造",
+            "value": 82
+          },
+          {
+            "subject": "灵巧盘带",
+            "value": 85
+          },
+          {
+            "subject": "前场压迫",
+            "value": 80
+          },
+          {
+            "subject": "持球冲刺",
+            "value": 82
+          }
+        ]
       },
       {
         "name": "Luca Maiorano",
@@ -348,7 +1398,42 @@
         "rating": 6.4,
         "min": 74,
         "name_en": "Luca Maiorano",
-        "name_zh": "卢卡·迈奥拉诺"
+        "name_zh": "卢卡·迈奥拉诺",
+        "is_mvp": false,
+        "stats": {
+          "进球/助攻": "0 球 / 0 助",
+          "关键传球": "6 次",
+          "成功过人": "5 次",
+          "射门(射正)": "2 (1)",
+          "传球成功率": "82.5%",
+          "跑动距离": "11.3 km"
+        },
+        "radar": [
+          {
+            "subject": "边路突击",
+            "value": 84
+          },
+          {
+            "subject": "终结射门",
+            "value": 74
+          },
+          {
+            "subject": "传球创造",
+            "value": 80
+          },
+          {
+            "subject": "灵巧盘带",
+            "value": 82
+          },
+          {
+            "subject": "前场压迫",
+            "value": 80
+          },
+          {
+            "subject": "持球冲刺",
+            "value": 80
+          }
+        ]
       },
       {
         "name": "Abdelsamad Hachem",
@@ -356,7 +1441,42 @@
         "rating": 6.2,
         "min": 74,
         "name_en": "Abdelsamad Hachem",
-        "name_zh": "阿卜杜勒萨马迪·哈切姆"
+        "name_zh": "阿卜杜勒萨马迪·哈切姆",
+        "is_mvp": false,
+        "stats": {
+          "进球/助攻": "0 球 / 0 助",
+          "关键传球": "5 次",
+          "成功过人": "5 次",
+          "射门(射正)": "2 (1)",
+          "传球成功率": "82.5%",
+          "跑动距离": "11.2 km"
+        },
+        "radar": [
+          {
+            "subject": "边路突击",
+            "value": 82
+          },
+          {
+            "subject": "终结射门",
+            "value": 74
+          },
+          {
+            "subject": "传球创造",
+            "value": 78
+          },
+          {
+            "subject": "灵巧盘带",
+            "value": 80
+          },
+          {
+            "subject": "前场压迫",
+            "value": 80
+          },
+          {
+            "subject": "持球冲刺",
+            "value": 78
+          }
+        ]
       },
       {
         "name": "Paul Wade",
@@ -365,7 +1485,42 @@
         "min": 90,
         "goal": 1,
         "name_en": "Paul Wade",
-        "name_zh": "保罗·韦德"
+        "name_zh": "保罗·韦德",
+        "is_mvp": false,
+        "stats": {
+          "进球/助攻": "1 球 / 0 助",
+          "射门(射正)": "3 (2)",
+          "关键争顶": "7 次",
+          "背身做球": "81.4%",
+          "预期进球(xG)": "0.9",
+          "跑动距离": "11.2 km"
+        },
+        "radar": [
+          {
+            "subject": "门前嗅觉",
+            "value": 94
+          },
+          {
+            "subject": "终结能力",
+            "value": 90
+          },
+          {
+            "subject": "空中争顶",
+            "value": 82
+          },
+          {
+            "subject": "背身支点",
+            "value": 80
+          },
+          {
+            "subject": "无球穿插",
+            "value": 83
+          },
+          {
+            "subject": "逼抢反抢",
+            "value": 78
+          }
+        ]
       }
     ]
   }

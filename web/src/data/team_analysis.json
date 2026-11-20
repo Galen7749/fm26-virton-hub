@@ -1,0 +1,39 @@
+{
+  "tactical_system": {
+    "formation": "4-2-3-1",
+    "style_name": "全场高位反抢 (Gegenpressing)",
+    "tempo": "极快节奏",
+    "pressing_intensity": "全场高压逼抢",
+    "defensive_line": "大幅前提高位造越位",
+    "mentality": "积极进取 (Positive)"
+  },
+  "attack_channels": {
+    "left_wing": 28,
+    "center": 32,
+    "right_wing": 40
+  },
+  "shot_zones": {
+    "inside_box": 68,
+    "outside_box": 32,
+    "box_conversion": "15.4%"
+  },
+  "team_radar": [
+    { "label": "全场跑动", "value": 96, "league_avg": 70, "desc": "场均 124.6km 领跑全比乙" },
+    { "label": "逼抢抢断", "value": 88, "league_avg": 68, "desc": "前场反抢成功率 74%" },
+    { "label": "转换反击", "value": 84, "league_avg": 65, "desc": "断球后 8 秒内完成射门" },
+    { "label": "阵地传控", "value": 68, "league_avg": 72, "desc": "受制于草皮，短传失误偏多" },
+    { "label": "高空争顶", "value": 71, "league_avg": 75, "desc": "定位球防守高点略显吃力" },
+    { "label": "射门转化", "value": 82, "league_avg": 66, "desc": "xG 达成率 104%" }
+  ],
+  "strengths": [
+    "右路走廊极具破坏力：泰伦·托明 1球2助攻，场均成功过人 4.2 次",
+    "中场双绞肉机配置：阿拉赫 + 瓦莱里亚 覆盖面积达全联盟前三",
+    "客场反击韧性极强：落后局面下射门转化率保持在前列"
+  ],
+  "concerns": [
+    "体能消耗极大：首发 11 人第 75 分钟后防守覆盖率下降 18%",
+    "主帅执照倒计时：比利时足协 60 天豁免期仅剩 40 余天，备用持证助教齐特利需随时待命",
+    "中后卫黄牌隐患：梅扎古 已累积 2 张黄牌，防线面临轮换危机"
+  ],
+  "analyst_quote": "《Sudinfo》专栏：中国主帅徐在维尔通打造了一支极其现代化的跑动型军队。坎特入主带来的不仅是关注度，更是这种类似当年莱斯特城的铁血高位压迫。只要解决最后20分钟的体能维持，他们绝对具备冲击升级附加赛的实力。"
+}

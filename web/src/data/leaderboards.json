@@ -1,0 +1,207 @@
+{
+  "scorers": [
+    {
+      "rank": 1,
+      "player_zh": "卢卡斯·斯泰宁格",
+      "player_en": "Lucas Stassin",
+      "team": "皇家法兰波垒斯",
+      "team_short": "法兰波垒斯",
+      "goals": 4,
+      "penalties": 1,
+      "matches": 3,
+      "shots": 9,
+      "is_virton": false
+    },
+    {
+      "rank": 2,
+      "player_zh": "托马斯·范博梅尔",
+      "player_en": "Thomas Van Bommel",
+      "team": "布鲁日青年足球俱乐部",
+      "team_short": "布鲁日青年",
+      "goals": 3,
+      "penalties": 0,
+      "matches": 3,
+      "shots": 8,
+      "is_virton": false
+    },
+    {
+      "rank": 3,
+      "player_zh": "尤纳斯·塞德尔",
+      "player_en": "Jonas Seydoux",
+      "team": "皇家比尔肖特安特卫普",
+      "team_short": "比尔肖特",
+      "goals": 3,
+      "penalties": 0,
+      "matches": 3,
+      "shots": 7,
+      "is_virton": false
+    },
+    {
+      "rank": 4,
+      "player_zh": "保罗·韦德",
+      "player_en": "Paul Wade",
+      "team": "维尔通精英足球俱乐部",
+      "team_short": "维尔通精英",
+      "goals": 2,
+      "penalties": 0,
+      "matches": 3,
+      "shots": 6,
+      "is_virton": true
+    },
+    {
+      "rank": 5,
+      "player_zh": "罗宾·登德",
+      "player_en": "Robin Denayer",
+      "team": "登德足球俱乐部",
+      "team_short": "登德",
+      "goals": 2,
+      "penalties": 1,
+      "matches": 3,
+      "shots": 5,
+      "is_virton": false
+    },
+    {
+      "rank": 6,
+      "player_zh": "泰伦·托明",
+      "player_en": "Tyrone Tormin",
+      "team": "维尔通精英足球俱乐部",
+      "team_short": "维尔通精英",
+      "goals": 1,
+      "penalties": 0,
+      "matches": 3,
+      "shots": 7,
+      "is_virton": true
+    },
+    {
+      "rank": 7,
+      "player_zh": "阿卢·登贝莱",
+      "player_en": "Alou Dembele",
+      "team": "维尔通精英足球俱乐部",
+      "team_short": "维尔通精英",
+      "goals": 1,
+      "penalties": 0,
+      "matches": 3,
+      "shots": 4,
+      "is_virton": true
+    },
+    {
+      "rank": 8,
+      "player_zh": "阿卜杜勒萨马迪·哈切姆",
+      "player_en": "Abdelsamad Hachem",
+      "team": "维尔通精英足球俱乐部",
+      "team_short": "维尔通精英",
+      "goals": 1,
+      "penalties": 0,
+      "matches": 2,
+      "shots": 2,
+      "is_virton": true
+    }
+  ],
+  "assists": [
+    {
+      "rank": 1,
+      "player_zh": "泰伦·托明",
+      "player_en": "Tyrone Tormin",
+      "team": "维尔通精英足球俱乐部",
+      "team_short": "维尔通精英",
+      "assists": 2,
+      "key_passes": 9,
+      "matches": 3,
+      "is_virton": true
+    },
+    {
+      "rank": 2,
+      "player_zh": "范德贝克",
+      "player_en": "Thibaud Van Der Beek",
+      "team": "皇家比尔肖特安特卫普",
+      "team_short": "比尔肖特",
+      "assists": 2,
+      "key_passes": 7,
+      "matches": 3,
+      "is_virton": false
+    },
+    {
+      "rank": 3,
+      "player_zh": "阿卢·登贝莱",
+      "player_en": "Alou Dembele",
+      "team": "维尔通精英足球俱乐部",
+      "team_short": "维尔通精英",
+      "assists": 1,
+      "key_passes": 6,
+      "matches": 3,
+      "is_virton": true
+    },
+    {
+      "rank": 4,
+      "player_zh": "德梅尔",
+      "player_en": "Julien De Meyere",
+      "team": "皇家法兰波垒斯",
+      "team_short": "法兰波垒斯",
+      "assists": 1,
+      "key_passes": 5,
+      "matches": 3,
+      "is_virton": false
+    },
+    {
+      "rank": 5,
+      "player_zh": "维尔斯霍伦",
+      "player_en": "Kobe Verschueren",
+      "team": "布鲁日青年足球俱乐部",
+      "team_short": "布鲁日青年",
+      "assists": 1,
+      "key_passes": 5,
+      "matches": 3,
+      "is_virton": false
+    }
+  ],
+  "discipline": [
+    {
+      "rank": 1,
+      "player_zh": "马克·德格里斯",
+      "player_en": "Marc Degryse",
+      "team": "皇家利尔斯体育俱乐部",
+      "team_short": "皇家利尔斯",
+      "yellow_cards": 3,
+      "red_cards": 1,
+      "fouls": 8,
+      "status": "停赛1场",
+      "is_virton": false
+    },
+    {
+      "rank": 2,
+      "player_zh": "泰迪·梅扎古",
+      "player_en": "Teddy Mezague",
+      "team": "维尔通精英足球俱乐部",
+      "team_short": "维尔通精英",
+      "yellow_cards": 2,
+      "red_cards": 0,
+      "fouls": 6,
+      "status": "累积警告",
+      "is_virton": true
+    },
+    {
+      "rank": 3,
+      "player_zh": "阿纳斯·哈马斯",
+      "player_en": "Anas Hammas",
+      "team": "维尔通精英足球俱乐部",
+      "team_short": "维尔通精英",
+      "yellow_cards": 1,
+      "red_cards": 0,
+      "fouls": 5,
+      "status": "正常",
+      "is_virton": true
+    },
+    {
+      "rank": 4,
+      "player_zh": "范阿尔斯特",
+      "player_en": "Niels Van Alst",
+      "team": "皇家列日足球俱乐部",
+      "team_short": "皇家列日",
+      "yellow_cards": 2,
+      "red_cards": 0,
+      "fouls": 7,
+      "status": "累积警告",
+      "is_virton": false
+    }
+  ]
+}
