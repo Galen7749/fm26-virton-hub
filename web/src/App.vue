@@ -1031,15 +1031,15 @@
                     </div>
                     <div class="text-[10px] text-slate-500 truncate">{{ d.team_short }}</div>
                   </td>
-                  <td class="py-2 px-1 text-center text-amber-400 font-bold">{{ d.yellow_cards }}</td>
-                  <td class="py-2 px-1 text-center text-rose-500 font-bold">{{ d.red_cards }}</td>
+                  <td class="py-2 px-1 text-center text-amber-400 font-bold">{{ d.yellow_cards ?? d.yellow ?? 0 }}</td>
+                  <td class="py-2 px-1 text-center text-rose-500 font-bold">{{ d.red_cards ?? d.red ?? 0 }}</td>
                   <td class="py-2 px-2 text-center">
                     <span :class="[
                       'text-[9px] px-1.5 py-0.5 rounded font-bold',
-                      d.status.includes('停赛') ? 'bg-rose-950 text-rose-400 border border-rose-800' :
-                      d.status.includes('警告') ? 'bg-amber-950 text-amber-300 border border-amber-800' : 'bg-slate-800 text-slate-400'
+                      (d.status || d.suspension_warning || '').includes('停赛') ? 'bg-rose-950 text-rose-400 border border-rose-800' :
+                      (d.status || d.suspension_warning || '').includes('警告') ? 'bg-amber-950 text-amber-300 border border-amber-800' : 'bg-slate-800 text-slate-400'
                     ]">
-                      {{ d.status }}
+                      {{ d.status || d.suspension_warning || '正常' }}
                     </span>
                   </td>
                 </tr>
