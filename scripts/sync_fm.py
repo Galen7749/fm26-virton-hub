@@ -184,43 +184,51 @@ def sync():
         # 4. 精确查找维尔通所在的比乙常规赛积分表 (找 played > 0 的有效联赛表)
         virton_matches_in_save = []
         bel_d2_table = []
+        target_lt_rows = None
+
         for lt in save.league_tables():
-            if lt.competition_id == BEL_D2_CID and lt.club_count >= 14:
-                for row in lt.rows:
-                    if row.team_id == VIRTON_TEAM_ID:
-                        for m in row.matches:
-                            if m.outcome is not None:
-                                r_num = m.slot + 1
-                                opp_id = m.opponent_team_id
-                                opp_name = team_to_club.get(opp_id, f"队伍_{opp_id}")
-                                is_home = (m.home_or_away.value.lower() == "home")
-                                virton_matches_in_save.append({
-                                    "round": r_num,
-                                    "is_home": is_home,
-                                    "opp_name": opp_name,
-                                    "gf": m.goals_for,
-                                    "ga": m.goals_against,
-                                    "outcome": m.outcome.value
-                                })
-                # 记录该完整常规积分榜
-                for r in lt.rows:
-                    cname = team_to_club.get(r.team_id, f"team_{r.team_id}")
-                    bel_d2_table.append({
-                        "position": r.position,
-                        "team_name": cname,
-                        "played": r.played,
-                        "won": r.won,
-                        "drawn": r.drawn,
-                        "lost": r.lost,
-                        "gf": r.goals_for,
-                        "ga": r.goals_against,
-                        "gd": r.goals_for - r.goals_against,
-                        "points": r.points,
-                        "is_my_team": (r.team_id == VIRTON_TEAM_ID)
-                    })
-                bel_d2_table.sort(key=lambda x: x["position"])
-                if virton_matches_in_save:
+            if lt.competition_id == BEL_D2_CID:
+                rows_list = list(lt.rows)
+                for row in rows_list:
+                    if row.team_id == VIRTON_TEAM_ID and row.played > 0:
+                        target_lt_rows = (lt, rows_list)
+                        break
+                if target_lt_rows:
                     break
+
+        if target_lt_rows:
+            lt, rows_list = target_lt_rows
+            for row in rows_list:
+                if row.team_id == VIRTON_TEAM_ID:
+                    for m in row.matches:
+                        if m.outcome is not None:
+                            r_num = m.slot + 1
+                            opp_id = m.opponent_team_id
+                            opp_name = team_to_club.get(opp_id, f"队伍_{opp_id}")
+                            is_home = (m.home_or_away.value.lower() == "home")
+                            virton_matches_in_save.append({
+                                "round": r_num,
+                                "is_home": is_home,
+                                "opp_name": opp_name,
+                                "gf": m.goals_for,
+                                "ga": m.goals_against,
+                                "outcome": m.outcome.value
+                            })
+                cname = team_to_club.get(row.team_id, f"team_{row.team_id}")
+                bel_d2_table.append({
+                    "position": row.position,
+                    "team_name": cname,
+                    "played": row.played,
+                    "won": row.won,
+                    "drawn": row.drawn,
+                    "lost": row.lost,
+                    "gf": row.goals_for,
+                    "ga": row.goals_against,
+                    "gd": row.goals_for - row.goals_against,
+                    "points": row.points,
+                    "is_my_team": (row.team_id == VIRTON_TEAM_ID)
+                })
+            bel_d2_table.sort(key=lambda x: x["position"])
 
         virton_matches_in_save.sort(key=lambda x: x["round"])
         total_played_in_save = len(virton_matches_in_save)
