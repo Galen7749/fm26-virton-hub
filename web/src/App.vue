@@ -469,6 +469,30 @@
               </span>
             </div>
           </div>
+
+          <!-- 替补换人记录 (真实FM比赛换人记录) -->
+          <div v-if="currentMatch.bench_subs && currentMatch.bench_subs.length" class="space-y-1 pt-2">
+            <div class="text-[11px] font-bold text-slate-400 mb-1 flex items-center justify-between">
+              <span>🔄 真实赛场替补换人记录</span>
+              <span class="text-[10px] text-slate-500">共 {{ currentMatch.bench_subs.length }} 人替补登场</span>
+            </div>
+            <div
+              v-for="(sub, subIdx) in currentMatch.bench_subs"
+              :key="subIdx"
+              class="flex items-center justify-between p-2 rounded-lg bg-slate-950/70 border border-slate-800 text-xs"
+            >
+              <div class="flex items-center space-x-2">
+                <span class="text-[10px] bg-slate-800 text-amber-400 px-1.5 py-0.5 rounded font-mono font-bold">
+                  {{ sub.entered_minute }}' 换上
+                </span>
+                <span class="font-bold text-slate-200">{{ sub.name_zh }}</span>
+                <span class="text-[10px] text-slate-500 font-mono">({{ sub.pos }})</span>
+                <span v-if="sub.goals" class="text-[10px] text-emerald-400 font-bold">⚽ x{{ sub.goals }}</span>
+                <span v-if="sub.assists" class="text-[10px] text-teal-400 font-bold">🅰️ x{{ sub.assists }}</span>
+              </div>
+              <span class="text-[11px] font-mono text-emerald-400 font-bold">{{ sub.rating ? sub.rating + '分' : '登场' }}</span>
+            </div>
+          </div>
         </div>
 
       </section>
