@@ -25,477 +25,475 @@
     ],
     "lineup": [
       {
-        "name": "Célestin De Schrevel",
         "pos": "GK",
-        "rating": 6.9,
-        "min": 90,
+        "name": "Célestin De Schrevel",
         "name_en": "Célestin De Schrevel",
         "name_zh": "塞莱斯丁·德·施瑞沃",
+        "rating": 6.9,
+        "min": 90,
         "is_mvp": false,
         "stats": {
           "扑救次数": "5 次",
-          "高空摘球": "3 次",
           "出击成功": "100%",
-          "传球成功率": "78.2%",
-          "长传到位": "14/19",
+          "短传组织": "28/31",
+          "长传到位": "11/14",
+          "高空摘球": "3 次",
           "跑动距离": "5.6 km"
         },
         "radar": [
           {
             "subject": "门线扑救",
-            "value": 92
+            "value": 88
           },
           {
             "subject": "出击果断",
             "value": 82
           },
           {
-            "subject": "高空控制",
+            "subject": "短传脚法",
             "value": 85
           },
           {
             "subject": "后场出球",
-            "value": 76
-          },
-          {
-            "subject": "门前反应",
-            "value": 87
-          },
-          {
-            "subject": "指挥防线",
-            "value": 80
-          }
-        ]
-      },
-      {
-        "name": "Adama Diop",
-        "pos": "DR",
-        "rating": 6.9,
-        "min": 90,
-        "name_en": "Adama Diop",
-        "name_zh": "亚当穆斯·迪奥普",
-        "is_mvp": false,
-        "stats": {
-          "抢断成功": "6 次",
-          "关键拦截": "5 次",
-          "争顶胜率": "82.5%",
-          "解围次数": "7 次",
-          "传球成功率": "86.4%",
-          "跑动距离": "10.5 km"
-        },
-        "radar": [
-          {
-            "subject": "正面抢断",
-            "value": 87
-          },
-          {
-            "subject": "预判拦截",
             "value": 84
           },
           {
-            "subject": "防空制空",
-            "value": 75
-          },
-          {
-            "subject": "出球组织",
-            "value": 78
-          },
-          {
-            "subject": "体能跑动",
-            "value": 79
-          },
-          {
-            "subject": "身体对抗",
-            "value": 85
-          }
-        ]
-      },
-      {
-        "name": "Allan Tchaptchet",
-        "pos": "DC",
-        "rating": 6.7,
-        "min": 90,
-        "name_en": "Allan Tchaptchet",
-        "name_zh": "阿兰·特查普切特",
-        "is_mvp": false,
-        "stats": {
-          "抢断成功": "6 次",
-          "关键拦截": "5 次",
-          "争顶胜率": "82.5%",
-          "解围次数": "7 次",
-          "传球成功率": "86.4%",
-          "跑动距离": "10.4 km"
-        },
-        "radar": [
-          {
-            "subject": "正面抢断",
-            "value": 85
-          },
-          {
-            "subject": "预判拦截",
-            "value": 82
-          },
-          {
-            "subject": "防空制空",
-            "value": 88
-          },
-          {
-            "subject": "出球组织",
-            "value": 78
-          },
-          {
-            "subject": "体能跑动",
-            "value": 77
-          },
-          {
-            "subject": "身体对抗",
-            "value": 83
-          }
-        ]
-      },
-      {
-        "name": "Teddy Mezague",
-        "pos": "DC (C)",
-        "rating": 6.6,
-        "min": 90,
-        "name_en": "Teddy Mezague",
-        "name_zh": "泰迪·梅扎古",
-        "is_mvp": false,
-        "stats": {
-          "抢断成功": "6 次",
-          "关键拦截": "4 次",
-          "争顶胜率": "82.5%",
-          "解围次数": "7 次",
-          "传球成功率": "86.4%",
-          "跑动距离": "10.3 km"
-        },
-        "radar": [
-          {
-            "subject": "正面抢断",
-            "value": 84
-          },
-          {
-            "subject": "预判拦截",
-            "value": 81
-          },
-          {
-            "subject": "防空制空",
-            "value": 88
-          },
-          {
-            "subject": "出球组织",
-            "value": 78
-          },
-          {
-            "subject": "体能跑动",
-            "value": 76
-          },
-          {
-            "subject": "身体对抗",
-            "value": 82
-          }
-        ]
-      },
-      {
-        "name": "Yassine Ben Hamed",
-        "pos": "DL",
-        "rating": 6.5,
-        "min": 90,
-        "name_en": "Yassine Ben Hamed",
-        "name_zh": "亚塞尼·本·哈米德",
-        "is_mvp": false,
-        "stats": {
-          "抢断成功": "6 次",
-          "关键拦截": "4 次",
-          "争顶胜率": "82.5%",
-          "解围次数": "7 次",
-          "传球成功率": "86.4%",
-          "跑动距离": "10.2 km"
-        },
-        "radar": [
-          {
-            "subject": "正面抢断",
-            "value": 83
-          },
-          {
-            "subject": "预判拦截",
-            "value": 80
-          },
-          {
-            "subject": "防空制空",
-            "value": 75
-          },
-          {
-            "subject": "出球组织",
-            "value": 78
-          },
-          {
-            "subject": "体能跑动",
-            "value": 75
-          },
-          {
-            "subject": "身体对抗",
-            "value": 81
-          }
-        ]
-      },
-      {
-        "name": "Antoine Valério",
-        "pos": "MC",
-        "rating": 6.5,
-        "min": 84,
-        "name_en": "Antoine Valério",
-        "name_zh": "安托万·瓦莱里亚",
-        "is_mvp": false,
-        "stats": {
-          "触球次数": "67 次",
-          "关键传球": "3 次",
-          "中场拦截": "5 次",
-          "抢断对抗": "6 次",
-          "传球成功率": "84.8%",
-          "跑动距离": "11.8 km"
-        },
-        "radar": [
-          {
-            "subject": "组织调度",
-            "value": 77
-          },
-          {
-            "subject": "防守绞杀",
-            "value": 85
-          },
-          {
-            "subject": "覆盖跑动",
-            "value": 88
-          },
-          {
-            "subject": "短传渗透",
-            "value": 84
-          },
-          {
-            "subject": "身体对抗",
-            "value": 82
-          },
-          {
-            "subject": "向前推进",
-            "value": 73
-          }
-        ]
-      },
-      {
-        "name": "Aliou Dembélé",
-        "pos": "MC",
-        "rating": 6.4,
-        "min": 90,
-        "name_en": "Aliou Dembélé",
-        "name_zh": "阿卢·登贝莱",
-        "is_mvp": false,
-        "stats": {
-          "触球次数": "66 次",
-          "关键传球": "3 次",
-          "中场拦截": "5 次",
-          "抢断对抗": "6 次",
-          "传球成功率": "84.8%",
-          "跑动距离": "11.7 km"
-        },
-        "radar": [
-          {
-            "subject": "组织调度",
-            "value": 76
-          },
-          {
-            "subject": "防守绞杀",
-            "value": 84
-          },
-          {
-            "subject": "覆盖跑动",
+            "subject": "反应速度",
             "value": 86
           },
           {
-            "subject": "短传渗透",
-            "value": 84
-          },
-          {
-            "subject": "身体对抗",
-            "value": 82
-          },
-          {
-            "subject": "向前推进",
-            "value": 72
+            "subject": "防线指挥",
+            "value": 80
           }
         ]
       },
       {
-        "name": "Tyrone Tormin",
-        "pos": "AMR",
+        "pos": "DR",
+        "name": "Steeven Assengue",
+        "name_en": "Steeven Assengue",
+        "name_zh": "斯蒂文·阿森盖",
         "rating": 7.1,
         "min": 90,
-        "assist": 1,
-        "name_en": "Tyrone Tormin",
-        "name_zh": "泰伦·托明",
         "is_mvp": false,
         "stats": {
-          "进球/助攻": "0 球 / 1 助",
-          "关键传球": "6 次",
-          "成功过人": "5 次",
-          "射门(射正)": "2 (1)",
-          "传球成功率": "82.5%",
-          "跑动距离": "11.9 km"
+          "右路插上": "6 次",
+          "传中到位": "4 次",
+          "拦截抢断": "4/3 次",
+          "地面对抗": "7/9",
+          "短传渗透": "42/47",
+          "跑动距离": "11.6 km"
         },
         "radar": [
           {
-            "subject": "边路突击",
-            "value": 93
+            "subject": "右路套边",
+            "value": 88
           },
           {
-            "subject": "终结射门",
-            "value": 74
+            "subject": "短传配合",
+            "value": 84
           },
           {
-            "subject": "传球创造",
+            "subject": "防守拦截",
+            "value": 85
+          },
+          {
+            "subject": "传中脚法",
+            "value": 82
+          },
+          {
+            "subject": "前插助攻",
+            "value": 80
+          },
+          {
+            "subject": "缠斗断球",
+            "value": 86
+          }
+        ]
+      },
+      {
+        "pos": "DC1",
+        "name": "Teddy Mezague",
+        "name_en": "Teddy Mezague",
+        "name_zh": "泰迪·梅扎古",
+        "rating": 7.1,
+        "min": 90,
+        "is_mvp": false,
+        "stats": {
+          "后场倒脚": "56/60",
+          "关键拦截": "5 次",
+          "解围次数": "6 次",
+          "高空争顶": "6/8",
+          "造越位": "3 次",
+          "跑动距离": "9.8 km"
+        },
+        "radar": [
+          {
+            "subject": "短传组织",
+            "value": 86
+          },
+          {
+            "subject": "正面拦截",
+            "value": 88
+          },
+          {
+            "subject": "防线统帅",
+            "value": 89
+          },
+          {
+            "subject": "高空解围",
+            "value": 85
+          },
+          {
+            "subject": "沉着冷静",
+            "value": 87
+          },
+          {
+            "subject": "战术执行",
+            "value": 90
+          }
+        ]
+      },
+      {
+        "pos": "DC2",
+        "name": "Allan Tchaptchet",
+        "name_en": "Allan Tchaptchet",
+        "name_zh": "阿兰·特查普切特",
+        "rating": 7.2,
+        "min": 90,
+        "is_mvp": false,
+        "stats": {
+          "头球解围": "8 次",
+          "封堵射门": "3 次",
+          "身体对抗": "9/10",
+          "出球成功率": "89.2%",
+          "精准回传": "18 次",
+          "跑动距离": "10.0 km"
+        },
+        "radar": [
+          {
+            "subject": "硬碰硬对抗",
+            "value": 94
+          },
+          {
+            "subject": "高空争顶",
+            "value": 92
+          },
+          {
+            "subject": "后场出球",
+            "value": 84
+          },
+          {
+            "subject": "禁区保护",
+            "value": 90
+          },
+          {
+            "subject": "卡位抢断",
+            "value": 88
+          },
+          {
+            "subject": "位置感",
+            "value": 85
+          }
+        ]
+      },
+      {
+        "pos": "DL",
+        "name": "Yumeki Yoshinaga",
+        "name_en": "Yumeki Yoshinaga",
+        "name_zh": "吉永梦希",
+        "rating": 7.2,
+        "min": 90,
+        "is_mvp": false,
+        "stats": {
+          "左路助攻": "1 次",
+          "关键传球": "3 次",
+          "成功过人": "4 次",
+          "短传渗透": "45/50",
+          "抢断拦截": "3/2 次",
+          "跑动距离": "12.1 km"
+        },
+        "radar": [
+          {
+            "subject": "左翼飞奔",
+            "value": 92
+          },
+          {
+            "subject": "短传串联",
             "value": 88
           },
           {
             "subject": "灵巧盘带",
-            "value": 91
+            "value": 86
           },
           {
-            "subject": "前场压迫",
+            "subject": "传中创造",
+            "value": 85
+          },
+          {
+            "subject": "前场插上",
+            "value": 90
+          },
+          {
+            "subject": "回防补位",
             "value": 80
-          },
-          {
-            "subject": "持球冲刺",
-            "value": 88
           }
         ]
       },
       {
-        "name": "Luca Maiorano",
-        "pos": "AMC",
-        "rating": 6.5,
+        "pos": "DM",
+        "name": "Antoine Valério",
+        "name_en": "Antoine Valério",
+        "name_zh": "安托万·瓦莱里亚",
+        "rating": 7.3,
         "min": 90,
-        "name_en": "Luca Maiorano",
-        "name_zh": "卢卡·迈奥拉诺",
         "is_mvp": false,
         "stats": {
-          "进球/助攻": "0 球 / 0 助",
-          "关键传球": "6 次",
-          "成功过人": "5 次",
-          "射门(射正)": "2 (1)",
-          "传球成功率": "82.5%",
+          "中场节拍": "68/73",
+          "向前输送": "19 次",
+          "扫荡抢断": "5/3 次",
+          "战术犯规": "2 次",
+          "拦截反击": "4 次",
+          "跑动距离": "12.5 km"
+        },
+        "radar": [
+          {
+            "subject": "短传节拍",
+            "value": 92
+          },
+          {
+            "subject": "视野大局",
+            "value": 90
+          },
+          {
+            "subject": "单后腰扫荡",
+            "value": 88
+          },
+          {
+            "subject": "向前直塞",
+            "value": 87
+          },
+          {
+            "subject": "耐力覆盖",
+            "value": 94
+          },
+          {
+            "subject": "中场屏障",
+            "value": 86
+          }
+        ]
+      },
+      {
+        "pos": "MC",
+        "name": "Aliou Dembélé",
+        "name_en": "Aliou Dembélé",
+        "name_zh": "阿卢·登贝莱",
+        "rating": 7.4,
+        "min": 85,
+        "is_mvp": false,
+        "stats": {
+          "非对称游弋": "活跃",
+          "后插上射门": "3(2)",
+          "进球/助攻": "1球/0助",
+          "地面对抗": "8/10",
+          "关键传球": "2 次",
+          "跑动距离": "12.2 km"
+        },
+        "radar": [
+          {
+            "subject": "肋部穿插",
+            "value": 90
+          },
+          {
+            "subject": "后插上终结",
+            "value": 86
+          },
+          {
+            "subject": "地面对抗",
+            "value": 89
+          },
+          {
+            "subject": "短传接应",
+            "value": 88
+          },
+          {
+            "subject": "全能B2B",
+            "value": 91
+          },
+          {
+            "subject": "前场施压",
+            "value": 84
+          }
+        ]
+      },
+      {
+        "pos": "AMR",
+        "name": "Luca Maiorano",
+        "name_en": "Luca Maiorano",
+        "name_zh": "卢卡·迈奥拉诺",
+        "rating": 7.5,
+        "min": 80,
+        "is_mvp": false,
+        "stats": {
+          "进球/助攻": "1球/1助",
+          "关键传球": "4 次",
+          "突破过人": "4 次",
+          "射门(射正)": "3(2)",
+          "短传成功": "34/39",
+          "跑动距离": "11.5 km"
+        },
+        "radar": [
+          {
+            "subject": "右路突击",
+            "value": 88
+          },
+          {
+            "subject": "门前抢点",
+            "value": 87
+          },
+          {
+            "subject": "短传渗透",
+            "value": 89
+          },
+          {
+            "subject": "创造机会",
+            "value": 88
+          },
+          {
+            "subject": "灵巧摆脱",
+            "value": 85
+          },
+          {
+            "subject": "无球跑位",
+            "value": 90
+          }
+        ]
+      },
+      {
+        "pos": "AMC",
+        "name": "Paul Wade",
+        "name_en": "Paul Wade",
+        "name_zh": "保罗·韦德",
+        "rating": 7.8,
+        "min": 90,
+        "is_mvp": true,
+        "stats": {
+          "前腰做球": "12 次",
+          "关键传球": "5 次",
+          "进球/助攻": "1球/1助",
+          "高空摆渡": "8/10",
+          "禁区前沿回敲": "7 次",
           "跑动距离": "11.4 km"
         },
         "radar": [
           {
-            "subject": "边路突击",
-            "value": 86
+            "subject": "前腰支点策应",
+            "value": 95
           },
           {
-            "subject": "终结射门",
-            "value": 74
+            "subject": "致命直塞",
+            "value": 91
           },
           {
-            "subject": "传球创造",
-            "value": 81
+            "subject": "后插上射门",
+            "value": 88
           },
           {
-            "subject": "灵巧盘带",
-            "value": 84
+            "subject": "空中优势",
+            "value": 92
           },
           {
-            "subject": "前场压迫",
-            "value": 80
+            "subject": "身体护球",
+            "value": 93
           },
           {
-            "subject": "持球冲刺",
-            "value": 81
+            "subject": "短传串联",
+            "value": 89
           }
         ]
       },
       {
-        "name": "Marks Inchaud",
         "pos": "AML",
-        "rating": 6.3,
-        "min": 84,
-        "name_en": "Marks Inchaud",
-        "name_zh": "马克斯·因查德",
+        "name": "Park Seung-Soo",
+        "name_en": "Park Seung-Soo",
+        "name_zh": "朴昇秀",
+        "rating": 7.6,
+        "min": 85,
         "is_mvp": false,
         "stats": {
-          "进球/助攻": "0 球 / 0 助",
-          "关键传球": "6 次",
-          "成功过人": "5 次",
-          "射门(射正)": "2 (1)",
-          "传球成功率": "82.5%",
-          "跑动距离": "11.2 km"
+          "左路内切": "5 次",
+          "射门(射正)": "3(2)",
+          "进球/助攻": "1球/0助",
+          "突破成功": "4/5",
+          "短传到位": "31/35",
+          "跑动距离": "11.7 km"
         },
         "radar": [
           {
-            "subject": "边路突击",
-            "value": 83
+            "subject": "内切抽射",
+            "value": 91
           },
           {
-            "subject": "终结射门",
-            "value": 74
+            "subject": "灵巧变向",
+            "value": 93
+          },
+          {
+            "subject": "短传配合",
+            "value": 87
+          },
+          {
+            "subject": "速度冲刺",
+            "value": 92
+          },
+          {
+            "subject": "前插抢点",
+            "value": 85
           },
           {
             "subject": "传球创造",
-            "value": 79
-          },
-          {
-            "subject": "灵巧盘带",
-            "value": 81
-          },
-          {
-            "subject": "前场压迫",
-            "value": 80
-          },
-          {
-            "subject": "持球冲刺",
-            "value": 79
+            "value": 84
           }
         ]
       },
       {
-        "name": "Paul Wade",
         "pos": "ST",
-        "rating": 7.0,
+        "name": "Abdelsamad Hachem",
+        "name_en": "Abdelsamad Hachem",
+        "name_zh": "阿卜杜勒萨马迪·哈切姆",
+        "rating": 8.2,
         "min": 90,
-        "goal": 1,
-        "name_en": "Paul Wade",
-        "name_zh": "保罗·韦德",
-        "is_mvp": false,
+        "is_mvp": true,
         "stats": {
-          "进球/助攻": "1 球 / 0 助",
-          "射门(射正)": "3 (2)",
-          "关键争顶": "7 次",
-          "背身做球": "81.4%",
-          "预期进球(xG)": "0.9",
-          "跑动距离": "11.2 km"
+          "进球/助攻": "2球/0助",
+          "门前单刀": "3 次",
+          "射门(射正)": "5(4)",
+          "预期进球xG": "1.82",
+          "反越位冲刺": "7 次",
+          "跑动距离": "11.8 km"
         },
         "radar": [
+          {
+            "subject": "单前锋终结",
+            "value": 96
+          },
           {
             "subject": "门前嗅觉",
+            "value": 95
+          },
+          {
+            "subject": "反越位突刺",
             "value": 94
           },
           {
-            "subject": "终结能力",
-            "value": 90
+            "subject": "把握机会",
+            "value": 93
           },
           {
-            "subject": "空中争顶",
+            "subject": "禁区抢点",
+            "value": 92
+          },
+          {
+            "subject": "短传配合",
             "value": 82
-          },
-          {
-            "subject": "背身支点",
-            "value": 80
-          },
-          {
-            "subject": "无球穿插",
-            "value": 83
-          },
-          {
-            "subject": "逼抢反抢",
-            "value": 78
           }
         ]
       }
@@ -541,482 +539,475 @@
     ],
     "lineup": [
       {
-        "name": "Célestin De Schrevel",
         "pos": "GK",
-        "rating": 6.4,
-        "min": 90,
+        "name": "Célestin De Schrevel",
         "name_en": "Célestin De Schrevel",
         "name_zh": "塞莱斯丁·德·施瑞沃",
+        "rating": 6.9,
+        "min": 90,
         "is_mvp": false,
         "stats": {
           "扑救次数": "5 次",
-          "高空摘球": "3 次",
           "出击成功": "100%",
-          "传球成功率": "78.2%",
-          "长传到位": "14/19",
+          "短传组织": "28/31",
+          "长传到位": "11/14",
+          "高空摘球": "3 次",
           "跑动距离": "5.6 km"
         },
         "radar": [
           {
             "subject": "门线扑救",
-            "value": 86
+            "value": 88
           },
           {
             "subject": "出击果断",
             "value": 82
           },
           {
-            "subject": "高空控制",
+            "subject": "短传脚法",
             "value": 85
           },
           {
             "subject": "后场出球",
-            "value": 76
+            "value": 84
           },
           {
-            "subject": "门前反应",
-            "value": 82
+            "subject": "反应速度",
+            "value": 86
           },
           {
-            "subject": "指挥防线",
+            "subject": "防线指挥",
             "value": 80
           }
         ]
       },
       {
-        "name": "Steeven Assengue",
         "pos": "DR",
-        "rating": 6.7,
-        "min": 76,
+        "name": "Steeven Assengue",
         "name_en": "Steeven Assengue",
         "name_zh": "斯蒂文·阿森盖",
-        "is_mvp": false,
-        "stats": {
-          "抢断成功": "6 次",
-          "关键拦截": "5 次",
-          "争顶胜率": "82.5%",
-          "解围次数": "7 次",
-          "传球成功率": "86.4%",
-          "跑动距离": "10.4 km"
-        },
-        "radar": [
-          {
-            "subject": "正面抢断",
-            "value": 85
-          },
-          {
-            "subject": "预判拦截",
-            "value": 82
-          },
-          {
-            "subject": "防空制空",
-            "value": 75
-          },
-          {
-            "subject": "出球组织",
-            "value": 78
-          },
-          {
-            "subject": "体能跑动",
-            "value": 77
-          },
-          {
-            "subject": "身体对抗",
-            "value": 83
-          }
-        ]
-      },
-      {
-        "name": "Allan Tchaptchet",
-        "pos": "DC",
         "rating": 7.1,
-        "min": 76,
-        "name_en": "Allan Tchaptchet",
-        "name_zh": "阿兰·特查普切特",
-        "is_mvp": false,
-        "stats": {
-          "抢断成功": "6 次",
-          "关键拦截": "5 次",
-          "争顶胜率": "82.5%",
-          "解围次数": "7 次",
-          "传球成功率": "86.4%",
-          "跑动距离": "10.7 km"
-        },
-        "radar": [
-          {
-            "subject": "正面抢断",
-            "value": 90
-          },
-          {
-            "subject": "预判拦截",
-            "value": 86
-          },
-          {
-            "subject": "防空制空",
-            "value": 88
-          },
-          {
-            "subject": "出球组织",
-            "value": 78
-          },
-          {
-            "subject": "体能跑动",
-            "value": 81
-          },
-          {
-            "subject": "身体对抗",
-            "value": 88
-          }
-        ]
-      },
-      {
-        "name": "Teddy Mezague",
-        "pos": "DC (C)",
-        "rating": 6.9,
         "min": 90,
-        "name_en": "Teddy Mezague",
-        "name_zh": "泰迪·梅扎古",
         "is_mvp": false,
         "stats": {
-          "抢断成功": "6 次",
-          "关键拦截": "5 次",
-          "争顶胜率": "82.5%",
-          "解围次数": "7 次",
-          "传球成功率": "86.4%",
-          "跑动距离": "10.5 km"
-        },
-        "radar": [
-          {
-            "subject": "正面抢断",
-            "value": 87
-          },
-          {
-            "subject": "预判拦截",
-            "value": 84
-          },
-          {
-            "subject": "防空制空",
-            "value": 88
-          },
-          {
-            "subject": "出球组织",
-            "value": 78
-          },
-          {
-            "subject": "体能跑动",
-            "value": 79
-          },
-          {
-            "subject": "身体对抗",
-            "value": 85
-          }
-        ]
-      },
-      {
-        "name": "Yassine Ben Hamed",
-        "pos": "DL",
-        "rating": 7.4,
-        "min": 90,
-        "assist": 1,
-        "name_en": "Yassine Ben Hamed",
-        "name_zh": "亚塞尼·本·哈米德",
-        "is_mvp": false,
-        "stats": {
-          "抢断成功": "7 次",
-          "关键拦截": "5 次",
-          "争顶胜率": "82.5%",
-          "解围次数": "7 次",
-          "传球成功率": "86.4%",
-          "跑动距离": "10.9 km"
-        },
-        "radar": [
-          {
-            "subject": "正面抢断",
-            "value": 93
-          },
-          {
-            "subject": "预判拦截",
-            "value": 89
-          },
-          {
-            "subject": "防空制空",
-            "value": 75
-          },
-          {
-            "subject": "出球组织",
-            "value": 78
-          },
-          {
-            "subject": "体能跑动",
-            "value": 84
-          },
-          {
-            "subject": "身体对抗",
-            "value": 91
-          }
-        ]
-      },
-      {
-        "name": "Antoine Valério",
-        "pos": "MC",
-        "rating": 6.5,
-        "min": 85,
-        "name_en": "Antoine Valério",
-        "name_zh": "安托万·瓦莱里亚",
-        "is_mvp": false,
-        "stats": {
-          "触球次数": "67 次",
-          "关键传球": "3 次",
-          "中场拦截": "5 次",
-          "抢断对抗": "6 次",
-          "传球成功率": "84.8%",
-          "跑动距离": "11.8 km"
-        },
-        "radar": [
-          {
-            "subject": "组织调度",
-            "value": 77
-          },
-          {
-            "subject": "防守绞杀",
-            "value": 85
-          },
-          {
-            "subject": "覆盖跑动",
-            "value": 88
-          },
-          {
-            "subject": "短传渗透",
-            "value": 84
-          },
-          {
-            "subject": "身体对抗",
-            "value": 82
-          },
-          {
-            "subject": "向前推进",
-            "value": 73
-          }
-        ]
-      },
-      {
-        "name": "Aliou Dembélé",
-        "pos": "MC",
-        "rating": 7.4,
-        "min": 90,
-        "goal": 1,
-        "name_en": "Aliou Dembélé",
-        "name_zh": "阿卢·登贝莱",
-        "is_mvp": false,
-        "stats": {
-          "触球次数": "74 次",
-          "关键传球": "3 次",
-          "中场拦截": "6 次",
-          "抢断对抗": "7 次",
-          "传球成功率": "84.8%",
-          "跑动距离": "12.6 km"
-        },
-        "radar": [
-          {
-            "subject": "组织调度",
-            "value": 86
-          },
-          {
-            "subject": "防守绞杀",
-            "value": 94
-          },
-          {
-            "subject": "覆盖跑动",
-            "value": 96
-          },
-          {
-            "subject": "短传渗透",
-            "value": 84
-          },
-          {
-            "subject": "身体对抗",
-            "value": 82
-          },
-          {
-            "subject": "向前推进",
-            "value": 82
-          }
-        ]
-      },
-      {
-        "name": "Tyrone Tormin",
-        "pos": "AMR",
-        "rating": 7.8,
-        "min": 85,
-        "goal": 1,
-        "assist": 1,
-        "is_motm": true,
-        "name_en": "Tyrone Tormin",
-        "name_zh": "泰伦·托明",
-        "is_mvp": true,
-        "stats": {
-          "进球/助攻": "1 球 / 1 助",
-          "关键传球": "7 次",
-          "成功过人": "6 次",
-          "射门(射正)": "3 (2)",
-          "传球成功率": "82.5%",
-          "跑动距离": "12.4 km"
-        },
-        "radar": [
-          {
-            "subject": "边路突击",
-            "value": 96
-          },
-          {
-            "subject": "终结射门",
-            "value": 85
-          },
-          {
-            "subject": "传球创造",
-            "value": 95
-          },
-          {
-            "subject": "灵巧盘带",
-            "value": 95
-          },
-          {
-            "subject": "前场压迫",
-            "value": 80
-          },
-          {
-            "subject": "持球冲刺",
-            "value": 94
-          }
-        ]
-      },
-      {
-        "name": "Luca Maiorano",
-        "pos": "AMC",
-        "rating": 6.4,
-        "min": 68,
-        "name_en": "Luca Maiorano",
-        "name_zh": "卢卡·迈奥拉诺",
-        "is_mvp": false,
-        "stats": {
-          "进球/助攻": "0 球 / 0 助",
-          "关键传球": "6 次",
-          "成功过人": "5 次",
-          "射门(射正)": "2 (1)",
-          "传球成功率": "82.5%",
-          "跑动距离": "11.3 km"
-        },
-        "radar": [
-          {
-            "subject": "边路突击",
-            "value": 84
-          },
-          {
-            "subject": "终结射门",
-            "value": 74
-          },
-          {
-            "subject": "传球创造",
-            "value": 80
-          },
-          {
-            "subject": "灵巧盘带",
-            "value": 82
-          },
-          {
-            "subject": "前场压迫",
-            "value": 80
-          },
-          {
-            "subject": "持球冲刺",
-            "value": 80
-          }
-        ]
-      },
-      {
-        "name": "Abdelsamad Hachem",
-        "pos": "AML",
-        "rating": 6.8,
-        "min": 90,
-        "goal": 1,
-        "name_en": "Abdelsamad Hachem",
-        "name_zh": "阿卜杜勒萨马迪·哈切姆",
-        "is_mvp": false,
-        "stats": {
-          "进球/助攻": "1 球 / 0 助",
-          "关键传球": "6 次",
-          "成功过人": "5 次",
-          "射门(射正)": "3 (2)",
-          "传球成功率": "82.5%",
+          "右路插上": "6 次",
+          "传中到位": "4 次",
+          "拦截抢断": "4/3 次",
+          "地面对抗": "7/9",
+          "短传渗透": "42/47",
           "跑动距离": "11.6 km"
         },
         "radar": [
           {
-            "subject": "边路突击",
-            "value": 89
+            "subject": "右路套边",
+            "value": 88
           },
           {
-            "subject": "终结射门",
-            "value": 85
-          },
-          {
-            "subject": "传球创造",
+            "subject": "短传配合",
             "value": 84
           },
           {
-            "subject": "灵巧盘带",
-            "value": 87
+            "subject": "防守拦截",
+            "value": 85
           },
           {
-            "subject": "前场压迫",
+            "subject": "传中脚法",
+            "value": 82
+          },
+          {
+            "subject": "前插助攻",
             "value": 80
           },
           {
-            "subject": "持球冲刺",
+            "subject": "缠斗断球",
+            "value": 86
+          }
+        ]
+      },
+      {
+        "pos": "DC1",
+        "name": "Teddy Mezague",
+        "name_en": "Teddy Mezague",
+        "name_zh": "泰迪·梅扎古",
+        "rating": 7.1,
+        "min": 90,
+        "is_mvp": false,
+        "stats": {
+          "后场倒脚": "56/60",
+          "关键拦截": "5 次",
+          "解围次数": "6 次",
+          "高空争顶": "6/8",
+          "造越位": "3 次",
+          "跑动距离": "9.8 km"
+        },
+        "radar": [
+          {
+            "subject": "短传组织",
+            "value": 86
+          },
+          {
+            "subject": "正面拦截",
+            "value": 88
+          },
+          {
+            "subject": "防线统帅",
+            "value": 89
+          },
+          {
+            "subject": "高空解围",
+            "value": 85
+          },
+          {
+            "subject": "沉着冷静",
+            "value": 87
+          },
+          {
+            "subject": "战术执行",
+            "value": 90
+          }
+        ]
+      },
+      {
+        "pos": "DC2",
+        "name": "Allan Tchaptchet",
+        "name_en": "Allan Tchaptchet",
+        "name_zh": "阿兰·特查普切特",
+        "rating": 7.2,
+        "min": 90,
+        "is_mvp": false,
+        "stats": {
+          "头球解围": "8 次",
+          "封堵射门": "3 次",
+          "身体对抗": "9/10",
+          "出球成功率": "89.2%",
+          "精准回传": "18 次",
+          "跑动距离": "10.0 km"
+        },
+        "radar": [
+          {
+            "subject": "硬碰硬对抗",
+            "value": 94
+          },
+          {
+            "subject": "高空争顶",
+            "value": 92
+          },
+          {
+            "subject": "后场出球",
+            "value": 84
+          },
+          {
+            "subject": "禁区保护",
+            "value": 90
+          },
+          {
+            "subject": "卡位抢断",
+            "value": 88
+          },
+          {
+            "subject": "位置感",
+            "value": 85
+          }
+        ]
+      },
+      {
+        "pos": "DL",
+        "name": "Yumeki Yoshinaga",
+        "name_en": "Yumeki Yoshinaga",
+        "name_zh": "吉永梦希",
+        "rating": 7.2,
+        "min": 90,
+        "is_mvp": false,
+        "stats": {
+          "左路助攻": "1 次",
+          "关键传球": "3 次",
+          "成功过人": "4 次",
+          "短传渗透": "45/50",
+          "抢断拦截": "3/2 次",
+          "跑动距离": "12.1 km"
+        },
+        "radar": [
+          {
+            "subject": "左翼飞奔",
+            "value": 92
+          },
+          {
+            "subject": "短传串联",
+            "value": 88
+          },
+          {
+            "subject": "灵巧盘带",
+            "value": 86
+          },
+          {
+            "subject": "传中创造",
+            "value": 85
+          },
+          {
+            "subject": "前场插上",
+            "value": 90
+          },
+          {
+            "subject": "回防补位",
+            "value": 80
+          }
+        ]
+      },
+      {
+        "pos": "DM",
+        "name": "Antoine Valério",
+        "name_en": "Antoine Valério",
+        "name_zh": "安托万·瓦莱里亚",
+        "rating": 7.3,
+        "min": 90,
+        "is_mvp": false,
+        "stats": {
+          "中场节拍": "68/73",
+          "向前输送": "19 次",
+          "扫荡抢断": "5/3 次",
+          "战术犯规": "2 次",
+          "拦截反击": "4 次",
+          "跑动距离": "12.5 km"
+        },
+        "radar": [
+          {
+            "subject": "短传节拍",
+            "value": 92
+          },
+          {
+            "subject": "视野大局",
+            "value": 90
+          },
+          {
+            "subject": "单后腰扫荡",
+            "value": 88
+          },
+          {
+            "subject": "向前直塞",
+            "value": 87
+          },
+          {
+            "subject": "耐力覆盖",
+            "value": 94
+          },
+          {
+            "subject": "中场屏障",
+            "value": 86
+          }
+        ]
+      },
+      {
+        "pos": "MC",
+        "name": "Aliou Dembélé",
+        "name_en": "Aliou Dembélé",
+        "name_zh": "阿卢·登贝莱",
+        "rating": 7.4,
+        "min": 85,
+        "is_mvp": false,
+        "stats": {
+          "非对称游弋": "活跃",
+          "后插上射门": "3(2)",
+          "进球/助攻": "1球/0助",
+          "地面对抗": "8/10",
+          "关键传球": "2 次",
+          "跑动距离": "12.2 km"
+        },
+        "radar": [
+          {
+            "subject": "肋部穿插",
+            "value": 90
+          },
+          {
+            "subject": "后插上终结",
+            "value": 86
+          },
+          {
+            "subject": "地面对抗",
+            "value": 89
+          },
+          {
+            "subject": "短传接应",
+            "value": 88
+          },
+          {
+            "subject": "全能B2B",
+            "value": 91
+          },
+          {
+            "subject": "前场施压",
             "value": 84
           }
         ]
       },
       {
-        "name": "Paul Wade",
-        "pos": "ST",
-        "rating": 7.0,
-        "min": 90,
-        "assist": 1,
-        "name_en": "Paul Wade",
-        "name_zh": "保罗·韦德",
+        "pos": "AMR",
+        "name": "Luca Maiorano",
+        "name_en": "Luca Maiorano",
+        "name_zh": "卢卡·迈奥拉诺",
+        "rating": 7.5,
+        "min": 80,
         "is_mvp": false,
         "stats": {
-          "进球/助攻": "0 球 / 1 助",
-          "射门(射正)": "2 (1)",
-          "关键争顶": "7 次",
-          "背身做球": "81.4%",
-          "预期进球(xG)": "0.45",
-          "跑动距离": "11.2 km"
+          "进球/助攻": "1球/1助",
+          "关键传球": "4 次",
+          "突破过人": "4 次",
+          "射门(射正)": "3(2)",
+          "短传成功": "34/39",
+          "跑动距离": "11.5 km"
         },
         "radar": [
           {
+            "subject": "右路突击",
+            "value": 88
+          },
+          {
+            "subject": "门前抢点",
+            "value": 87
+          },
+          {
+            "subject": "短传渗透",
+            "value": 89
+          },
+          {
+            "subject": "创造机会",
+            "value": 88
+          },
+          {
+            "subject": "灵巧摆脱",
+            "value": 85
+          },
+          {
+            "subject": "无球跑位",
+            "value": 90
+          }
+        ]
+      },
+      {
+        "pos": "AMC",
+        "name": "Paul Wade",
+        "name_en": "Paul Wade",
+        "name_zh": "保罗·韦德",
+        "rating": 7.8,
+        "min": 90,
+        "is_mvp": true,
+        "stats": {
+          "前腰做球": "12 次",
+          "关键传球": "5 次",
+          "进球/助攻": "1球/1助",
+          "高空摆渡": "8/10",
+          "禁区前沿回敲": "7 次",
+          "跑动距离": "11.4 km"
+        },
+        "radar": [
+          {
+            "subject": "前腰支点策应",
+            "value": 95
+          },
+          {
+            "subject": "致命直塞",
+            "value": 91
+          },
+          {
+            "subject": "后插上射门",
+            "value": 88
+          },
+          {
+            "subject": "空中优势",
+            "value": 92
+          },
+          {
+            "subject": "身体护球",
+            "value": 93
+          },
+          {
+            "subject": "短传串联",
+            "value": 89
+          }
+        ]
+      },
+      {
+        "pos": "AML",
+        "name": "Park Seung-Soo",
+        "name_en": "Park Seung-Soo",
+        "name_zh": "朴昇秀",
+        "rating": 7.6,
+        "min": 85,
+        "is_mvp": false,
+        "stats": {
+          "左路内切": "5 次",
+          "射门(射正)": "3(2)",
+          "进球/助攻": "1球/0助",
+          "突破成功": "4/5",
+          "短传到位": "31/35",
+          "跑动距离": "11.7 km"
+        },
+        "radar": [
+          {
+            "subject": "内切抽射",
+            "value": 91
+          },
+          {
+            "subject": "灵巧变向",
+            "value": 93
+          },
+          {
+            "subject": "短传配合",
+            "value": 87
+          },
+          {
+            "subject": "速度冲刺",
+            "value": 92
+          },
+          {
+            "subject": "前插抢点",
+            "value": 85
+          },
+          {
+            "subject": "传球创造",
+            "value": 84
+          }
+        ]
+      },
+      {
+        "pos": "ST",
+        "name": "Abdelsamad Hachem",
+        "name_en": "Abdelsamad Hachem",
+        "name_zh": "阿卜杜勒萨马迪·哈切姆",
+        "rating": 8.2,
+        "min": 90,
+        "is_mvp": true,
+        "stats": {
+          "进球/助攻": "2球/0助",
+          "门前单刀": "3 次",
+          "射门(射正)": "5(4)",
+          "预期进球xG": "1.82",
+          "反越位冲刺": "7 次",
+          "跑动距离": "11.8 km"
+        },
+        "radar": [
+          {
+            "subject": "单前锋终结",
+            "value": 96
+          },
+          {
             "subject": "门前嗅觉",
-            "value": 86
+            "value": 95
           },
           {
-            "subject": "终结能力",
-            "value": 75
+            "subject": "反越位突刺",
+            "value": 94
           },
           {
-            "subject": "空中争顶",
+            "subject": "把握机会",
+            "value": 93
+          },
+          {
+            "subject": "禁区抢点",
+            "value": 92
+          },
+          {
+            "subject": "短传配合",
             "value": 82
-          },
-          {
-            "subject": "背身支点",
-            "value": 80
-          },
-          {
-            "subject": "无球穿插",
-            "value": 83
-          },
-          {
-            "subject": "逼抢反抢",
-            "value": 78
           }
         ]
       }
@@ -1048,19 +1039,19 @@
     ],
     "lineup": [
       {
-        "name": "Célestin De Schrevel",
         "pos": "GK",
-        "rating": 6.5,
-        "min": 90,
+        "name": "Célestin De Schrevel",
         "name_en": "Célestin De Schrevel",
         "name_zh": "塞莱斯丁·德·施瑞沃",
+        "rating": 6.9,
+        "min": 90,
         "is_mvp": false,
         "stats": {
           "扑救次数": "5 次",
-          "高空摘球": "3 次",
           "出击成功": "100%",
-          "传球成功率": "78.2%",
-          "长传到位": "14/19",
+          "短传组织": "28/31",
+          "长传到位": "11/14",
+          "高空摘球": "3 次",
           "跑动距离": "5.6 km"
         },
         "radar": [
@@ -1073,452 +1064,450 @@
             "value": 82
           },
           {
-            "subject": "高空控制",
+            "subject": "短传脚法",
             "value": 85
           },
           {
             "subject": "后场出球",
-            "value": 76
+            "value": 84
           },
           {
-            "subject": "门前反应",
-            "value": 83
+            "subject": "反应速度",
+            "value": 86
           },
           {
-            "subject": "指挥防线",
+            "subject": "防线指挥",
             "value": 80
           }
         ]
       },
       {
-        "name": "Steeven Assengue",
         "pos": "DR",
-        "rating": 6.3,
-        "min": 90,
+        "name": "Steeven Assengue",
         "name_en": "Steeven Assengue",
         "name_zh": "斯蒂文·阿森盖",
+        "rating": 7.1,
+        "min": 90,
         "is_mvp": false,
         "stats": {
-          "抢断成功": "6 次",
-          "关键拦截": "4 次",
-          "争顶胜率": "82.5%",
-          "解围次数": "7 次",
-          "传球成功率": "86.4%",
+          "右路插上": "6 次",
+          "传中到位": "4 次",
+          "拦截抢断": "4/3 次",
+          "地面对抗": "7/9",
+          "短传渗透": "42/47",
+          "跑动距离": "11.6 km"
+        },
+        "radar": [
+          {
+            "subject": "右路套边",
+            "value": 88
+          },
+          {
+            "subject": "短传配合",
+            "value": 84
+          },
+          {
+            "subject": "防守拦截",
+            "value": 85
+          },
+          {
+            "subject": "传中脚法",
+            "value": 82
+          },
+          {
+            "subject": "前插助攻",
+            "value": 80
+          },
+          {
+            "subject": "缠斗断球",
+            "value": 86
+          }
+        ]
+      },
+      {
+        "pos": "DC1",
+        "name": "Teddy Mezague",
+        "name_en": "Teddy Mezague",
+        "name_zh": "泰迪·梅扎古",
+        "rating": 7.1,
+        "min": 90,
+        "is_mvp": false,
+        "stats": {
+          "后场倒脚": "56/60",
+          "关键拦截": "5 次",
+          "解围次数": "6 次",
+          "高空争顶": "6/8",
+          "造越位": "3 次",
+          "跑动距离": "9.8 km"
+        },
+        "radar": [
+          {
+            "subject": "短传组织",
+            "value": 86
+          },
+          {
+            "subject": "正面拦截",
+            "value": 88
+          },
+          {
+            "subject": "防线统帅",
+            "value": 89
+          },
+          {
+            "subject": "高空解围",
+            "value": 85
+          },
+          {
+            "subject": "沉着冷静",
+            "value": 87
+          },
+          {
+            "subject": "战术执行",
+            "value": 90
+          }
+        ]
+      },
+      {
+        "pos": "DC2",
+        "name": "Allan Tchaptchet",
+        "name_en": "Allan Tchaptchet",
+        "name_zh": "阿兰·特查普切特",
+        "rating": 7.2,
+        "min": 90,
+        "is_mvp": false,
+        "stats": {
+          "头球解围": "8 次",
+          "封堵射门": "3 次",
+          "身体对抗": "9/10",
+          "出球成功率": "89.2%",
+          "精准回传": "18 次",
           "跑动距离": "10.0 km"
         },
         "radar": [
           {
-            "subject": "正面抢断",
-            "value": 81
+            "subject": "硬碰硬对抗",
+            "value": 94
           },
           {
-            "subject": "预判拦截",
-            "value": 78
-          },
-          {
-            "subject": "防空制空",
-            "value": 75
-          },
-          {
-            "subject": "出球组织",
-            "value": 78
-          },
-          {
-            "subject": "体能跑动",
-            "value": 73
-          },
-          {
-            "subject": "身体对抗",
-            "value": 79
-          }
-        ]
-      },
-      {
-        "name": "Allan Tchaptchet",
-        "pos": "DC",
-        "rating": 6.7,
-        "min": 90,
-        "name_en": "Allan Tchaptchet",
-        "name_zh": "阿兰·特查普切特",
-        "is_mvp": false,
-        "stats": {
-          "抢断成功": "6 次",
-          "关键拦截": "5 次",
-          "争顶胜率": "82.5%",
-          "解围次数": "7 次",
-          "传球成功率": "86.4%",
-          "跑动距离": "10.4 km"
-        },
-        "radar": [
-          {
-            "subject": "正面抢断",
-            "value": 85
-          },
-          {
-            "subject": "预判拦截",
-            "value": 82
-          },
-          {
-            "subject": "防空制空",
-            "value": 88
-          },
-          {
-            "subject": "出球组织",
-            "value": 78
-          },
-          {
-            "subject": "体能跑动",
-            "value": 77
-          },
-          {
-            "subject": "身体对抗",
-            "value": 83
-          }
-        ]
-      },
-      {
-        "name": "Teddy Mezague",
-        "pos": "DC (C)",
-        "rating": 6.5,
-        "min": 90,
-        "name_en": "Teddy Mezague",
-        "name_zh": "泰迪·梅扎古",
-        "is_mvp": false,
-        "stats": {
-          "抢断成功": "6 次",
-          "关键拦截": "4 次",
-          "争顶胜率": "82.5%",
-          "解围次数": "7 次",
-          "传球成功率": "86.4%",
-          "跑动距离": "10.2 km"
-        },
-        "radar": [
-          {
-            "subject": "正面抢断",
-            "value": 83
-          },
-          {
-            "subject": "预判拦截",
-            "value": 80
-          },
-          {
-            "subject": "防空制空",
-            "value": 88
-          },
-          {
-            "subject": "出球组织",
-            "value": 78
-          },
-          {
-            "subject": "体能跑动",
-            "value": 75
-          },
-          {
-            "subject": "身体对抗",
-            "value": 81
-          }
-        ]
-      },
-      {
-        "name": "Yassine Ben Hamed",
-        "pos": "DL",
-        "rating": 6.5,
-        "min": 90,
-        "name_en": "Yassine Ben Hamed",
-        "name_zh": "亚塞尼·本·哈米德",
-        "is_mvp": false,
-        "stats": {
-          "抢断成功": "6 次",
-          "关键拦截": "4 次",
-          "争顶胜率": "82.5%",
-          "解围次数": "7 次",
-          "传球成功率": "86.4%",
-          "跑动距离": "10.2 km"
-        },
-        "radar": [
-          {
-            "subject": "正面抢断",
-            "value": 83
-          },
-          {
-            "subject": "预判拦截",
-            "value": 80
-          },
-          {
-            "subject": "防空制空",
-            "value": 75
-          },
-          {
-            "subject": "出球组织",
-            "value": 78
-          },
-          {
-            "subject": "体能跑动",
-            "value": 75
-          },
-          {
-            "subject": "身体对抗",
-            "value": 81
-          }
-        ]
-      },
-      {
-        "name": "Antoine Valério",
-        "pos": "MC",
-        "rating": 6.7,
-        "min": 90,
-        "name_en": "Antoine Valério",
-        "name_zh": "安托万·瓦莱里亚",
-        "is_mvp": false,
-        "stats": {
-          "触球次数": "68 次",
-          "关键传球": "3 次",
-          "中场拦截": "6 次",
-          "抢断对抗": "6 次",
-          "传球成功率": "84.8%",
-          "跑动距离": "12.0 km"
-        },
-        "radar": [
-          {
-            "subject": "组织调度",
-            "value": 79
-          },
-          {
-            "subject": "防守绞杀",
-            "value": 87
-          },
-          {
-            "subject": "覆盖跑动",
-            "value": 90
-          },
-          {
-            "subject": "短传渗透",
-            "value": 84
-          },
-          {
-            "subject": "身体对抗",
-            "value": 82
-          },
-          {
-            "subject": "向前推进",
-            "value": 75
-          }
-        ]
-      },
-      {
-        "name": "Aliou Dembélé",
-        "pos": "MC",
-        "rating": 7.1,
-        "min": 74,
-        "assist": 1,
-        "name_en": "Aliou Dembélé",
-        "name_zh": "阿卢·登贝莱",
-        "is_mvp": false,
-        "stats": {
-          "触球次数": "71 次",
-          "关键传球": "3 次",
-          "中场拦截": "6 次",
-          "抢断对抗": "6 次",
-          "传球成功率": "84.8%",
-          "跑动距离": "12.3 km"
-        },
-        "radar": [
-          {
-            "subject": "组织调度",
-            "value": 83
-          },
-          {
-            "subject": "防守绞杀",
+            "subject": "高空争顶",
             "value": 92
           },
           {
-            "subject": "覆盖跑动",
-            "value": 95
-          },
-          {
-            "subject": "短传渗透",
+            "subject": "后场出球",
             "value": 84
           },
           {
-            "subject": "身体对抗",
-            "value": 82
+            "subject": "禁区保护",
+            "value": 90
           },
           {
-            "subject": "向前推进",
-            "value": 79
+            "subject": "卡位抢断",
+            "value": 88
+          },
+          {
+            "subject": "位置感",
+            "value": 85
           }
         ]
       },
       {
-        "name": "Tyrone Tormin",
-        "pos": "AMR",
-        "rating": 6.6,
+        "pos": "DL",
+        "name": "Yumeki Yoshinaga",
+        "name_en": "Yumeki Yoshinaga",
+        "name_zh": "吉永梦希",
+        "rating": 7.2,
         "min": 90,
-        "name_en": "Tyrone Tormin",
-        "name_zh": "泰伦·托明",
         "is_mvp": false,
         "stats": {
-          "进球/助攻": "0 球 / 0 助",
-          "关键传球": "6 次",
-          "成功过人": "5 次",
-          "射门(射正)": "2 (1)",
-          "传球成功率": "82.5%",
+          "左路助攻": "1 次",
+          "关键传球": "3 次",
+          "成功过人": "4 次",
+          "短传渗透": "45/50",
+          "抢断拦截": "3/2 次",
+          "跑动距离": "12.1 km"
+        },
+        "radar": [
+          {
+            "subject": "左翼飞奔",
+            "value": 92
+          },
+          {
+            "subject": "短传串联",
+            "value": 88
+          },
+          {
+            "subject": "灵巧盘带",
+            "value": 86
+          },
+          {
+            "subject": "传中创造",
+            "value": 85
+          },
+          {
+            "subject": "前场插上",
+            "value": 90
+          },
+          {
+            "subject": "回防补位",
+            "value": 80
+          }
+        ]
+      },
+      {
+        "pos": "DM",
+        "name": "Antoine Valério",
+        "name_en": "Antoine Valério",
+        "name_zh": "安托万·瓦莱里亚",
+        "rating": 7.3,
+        "min": 90,
+        "is_mvp": false,
+        "stats": {
+          "中场节拍": "68/73",
+          "向前输送": "19 次",
+          "扫荡抢断": "5/3 次",
+          "战术犯规": "2 次",
+          "拦截反击": "4 次",
+          "跑动距离": "12.5 km"
+        },
+        "radar": [
+          {
+            "subject": "短传节拍",
+            "value": 92
+          },
+          {
+            "subject": "视野大局",
+            "value": 90
+          },
+          {
+            "subject": "单后腰扫荡",
+            "value": 88
+          },
+          {
+            "subject": "向前直塞",
+            "value": 87
+          },
+          {
+            "subject": "耐力覆盖",
+            "value": 94
+          },
+          {
+            "subject": "中场屏障",
+            "value": 86
+          }
+        ]
+      },
+      {
+        "pos": "MC",
+        "name": "Aliou Dembélé",
+        "name_en": "Aliou Dembélé",
+        "name_zh": "阿卢·登贝莱",
+        "rating": 7.4,
+        "min": 85,
+        "is_mvp": false,
+        "stats": {
+          "非对称游弋": "活跃",
+          "后插上射门": "3(2)",
+          "进球/助攻": "1球/0助",
+          "地面对抗": "8/10",
+          "关键传球": "2 次",
+          "跑动距离": "12.2 km"
+        },
+        "radar": [
+          {
+            "subject": "肋部穿插",
+            "value": 90
+          },
+          {
+            "subject": "后插上终结",
+            "value": 86
+          },
+          {
+            "subject": "地面对抗",
+            "value": 89
+          },
+          {
+            "subject": "短传接应",
+            "value": 88
+          },
+          {
+            "subject": "全能B2B",
+            "value": 91
+          },
+          {
+            "subject": "前场施压",
+            "value": 84
+          }
+        ]
+      },
+      {
+        "pos": "AMR",
+        "name": "Luca Maiorano",
+        "name_en": "Luca Maiorano",
+        "name_zh": "卢卡·迈奥拉诺",
+        "rating": 7.5,
+        "min": 80,
+        "is_mvp": false,
+        "stats": {
+          "进球/助攻": "1球/1助",
+          "关键传球": "4 次",
+          "突破过人": "4 次",
+          "射门(射正)": "3(2)",
+          "短传成功": "34/39",
           "跑动距离": "11.5 km"
         },
         "radar": [
           {
-            "subject": "边路突击",
+            "subject": "右路突击",
+            "value": 88
+          },
+          {
+            "subject": "门前抢点",
             "value": 87
           },
           {
-            "subject": "终结射门",
-            "value": 74
+            "subject": "短传渗透",
+            "value": 89
           },
           {
-            "subject": "传球创造",
-            "value": 82
+            "subject": "创造机会",
+            "value": 88
           },
           {
-            "subject": "灵巧盘带",
+            "subject": "灵巧摆脱",
             "value": 85
           },
           {
-            "subject": "前场压迫",
-            "value": 80
-          },
-          {
-            "subject": "持球冲刺",
-            "value": 82
+            "subject": "无球跑位",
+            "value": 90
           }
         ]
       },
       {
-        "name": "Luca Maiorano",
         "pos": "AMC",
-        "rating": 6.4,
-        "min": 74,
-        "name_en": "Luca Maiorano",
-        "name_zh": "卢卡·迈奥拉诺",
-        "is_mvp": false,
-        "stats": {
-          "进球/助攻": "0 球 / 0 助",
-          "关键传球": "6 次",
-          "成功过人": "5 次",
-          "射门(射正)": "2 (1)",
-          "传球成功率": "82.5%",
-          "跑动距离": "11.3 km"
-        },
-        "radar": [
-          {
-            "subject": "边路突击",
-            "value": 84
-          },
-          {
-            "subject": "终结射门",
-            "value": 74
-          },
-          {
-            "subject": "传球创造",
-            "value": 80
-          },
-          {
-            "subject": "灵巧盘带",
-            "value": 82
-          },
-          {
-            "subject": "前场压迫",
-            "value": 80
-          },
-          {
-            "subject": "持球冲刺",
-            "value": 80
-          }
-        ]
-      },
-      {
-        "name": "Abdelsamad Hachem",
-        "pos": "AML",
-        "rating": 6.2,
-        "min": 74,
-        "name_en": "Abdelsamad Hachem",
-        "name_zh": "阿卜杜勒萨马迪·哈切姆",
-        "is_mvp": false,
-        "stats": {
-          "进球/助攻": "0 球 / 0 助",
-          "关键传球": "5 次",
-          "成功过人": "5 次",
-          "射门(射正)": "2 (1)",
-          "传球成功率": "82.5%",
-          "跑动距离": "11.2 km"
-        },
-        "radar": [
-          {
-            "subject": "边路突击",
-            "value": 82
-          },
-          {
-            "subject": "终结射门",
-            "value": 74
-          },
-          {
-            "subject": "传球创造",
-            "value": 78
-          },
-          {
-            "subject": "灵巧盘带",
-            "value": 80
-          },
-          {
-            "subject": "前场压迫",
-            "value": 80
-          },
-          {
-            "subject": "持球冲刺",
-            "value": 78
-          }
-        ]
-      },
-      {
         "name": "Paul Wade",
-        "pos": "ST",
-        "rating": 7.0,
-        "min": 90,
-        "goal": 1,
         "name_en": "Paul Wade",
         "name_zh": "保罗·韦德",
-        "is_mvp": false,
+        "rating": 7.8,
+        "min": 90,
+        "is_mvp": true,
         "stats": {
-          "进球/助攻": "1 球 / 0 助",
-          "射门(射正)": "3 (2)",
-          "关键争顶": "7 次",
-          "背身做球": "81.4%",
-          "预期进球(xG)": "0.9",
-          "跑动距离": "11.2 km"
+          "前腰做球": "12 次",
+          "关键传球": "5 次",
+          "进球/助攻": "1球/1助",
+          "高空摆渡": "8/10",
+          "禁区前沿回敲": "7 次",
+          "跑动距离": "11.4 km"
         },
         "radar": [
           {
+            "subject": "前腰支点策应",
+            "value": 95
+          },
+          {
+            "subject": "致命直塞",
+            "value": 91
+          },
+          {
+            "subject": "后插上射门",
+            "value": 88
+          },
+          {
+            "subject": "空中优势",
+            "value": 92
+          },
+          {
+            "subject": "身体护球",
+            "value": 93
+          },
+          {
+            "subject": "短传串联",
+            "value": 89
+          }
+        ]
+      },
+      {
+        "pos": "AML",
+        "name": "Park Seung-Soo",
+        "name_en": "Park Seung-Soo",
+        "name_zh": "朴昇秀",
+        "rating": 7.6,
+        "min": 85,
+        "is_mvp": false,
+        "stats": {
+          "左路内切": "5 次",
+          "射门(射正)": "3(2)",
+          "进球/助攻": "1球/0助",
+          "突破成功": "4/5",
+          "短传到位": "31/35",
+          "跑动距离": "11.7 km"
+        },
+        "radar": [
+          {
+            "subject": "内切抽射",
+            "value": 91
+          },
+          {
+            "subject": "灵巧变向",
+            "value": 93
+          },
+          {
+            "subject": "短传配合",
+            "value": 87
+          },
+          {
+            "subject": "速度冲刺",
+            "value": 92
+          },
+          {
+            "subject": "前插抢点",
+            "value": 85
+          },
+          {
+            "subject": "传球创造",
+            "value": 84
+          }
+        ]
+      },
+      {
+        "pos": "ST",
+        "name": "Abdelsamad Hachem",
+        "name_en": "Abdelsamad Hachem",
+        "name_zh": "阿卜杜勒萨马迪·哈切姆",
+        "rating": 8.2,
+        "min": 90,
+        "is_mvp": true,
+        "stats": {
+          "进球/助攻": "2球/0助",
+          "门前单刀": "3 次",
+          "射门(射正)": "5(4)",
+          "预期进球xG": "1.82",
+          "反越位冲刺": "7 次",
+          "跑动距离": "11.8 km"
+        },
+        "radar": [
+          {
+            "subject": "单前锋终结",
+            "value": 96
+          },
+          {
             "subject": "门前嗅觉",
+            "value": 95
+          },
+          {
+            "subject": "反越位突刺",
             "value": 94
           },
           {
-            "subject": "终结能力",
-            "value": 90
+            "subject": "把握机会",
+            "value": 93
           },
           {
-            "subject": "空中争顶",
+            "subject": "禁区抢点",
+            "value": 92
+          },
+          {
+            "subject": "短传配合",
             "value": 82
-          },
-          {
-            "subject": "背身支点",
-            "value": 80
-          },
-          {
-            "subject": "无球穿插",
-            "value": 83
-          },
-          {
-            "subject": "逼抢反抢",
-            "value": 78
           }
         ]
       }
@@ -1558,475 +1547,475 @@
     ],
     "lineup": [
       {
+        "pos": "GK",
         "name": "Célestin De Schrevel",
         "name_en": "Célestin De Schrevel",
         "name_zh": "塞莱斯丁·德·施瑞沃",
-        "pos": "GK",
-        "rating": 6.8,
+        "rating": 6.9,
         "min": 90,
         "is_mvp": false,
         "stats": {
-          "扑救次数": "4 次",
-          "高空摘球": "2 次",
+          "扑救次数": "5 次",
           "出击成功": "100%",
-          "传球成功率": "79.1%",
-          "长传到位": "12/17",
-          "跑动距离": "5.4 km"
+          "短传组织": "28/31",
+          "长传到位": "11/14",
+          "高空摘球": "3 次",
+          "跑动距离": "5.6 km"
         },
         "radar": [
           {
             "subject": "门线扑救",
-            "value": 85
+            "value": 88
           },
           {
             "subject": "出击果断",
-            "value": 80
-          },
-          {
-            "subject": "高空控制",
             "value": 82
           },
           {
+            "subject": "短传脚法",
+            "value": 85
+          },
+          {
             "subject": "后场出球",
-            "value": 75
+            "value": 84
           },
           {
             "subject": "反应速度",
             "value": 86
           },
           {
-            "subject": "指挥防线",
-            "value": 78
+            "subject": "防线指挥",
+            "value": 80
           }
         ]
       },
       {
+        "pos": "DR",
         "name": "Steeven Assengue",
         "name_en": "Steeven Assengue",
         "name_zh": "斯蒂文·阿森盖",
-        "pos": "DR",
-        "rating": 7.0,
+        "rating": 7.1,
         "min": 90,
         "is_mvp": false,
         "stats": {
-          "抢断/拦截": "4/3 次",
-          "解围次数": "5 次",
-          "传中成功率": "42%",
-          "关键传球": "1 次",
-          "地面对抗": "6/8",
-          "跑动距离": "11.2 km"
+          "右路插上": "6 次",
+          "传中到位": "4 次",
+          "拦截抢断": "4/3 次",
+          "地面对抗": "7/9",
+          "短传渗透": "42/47",
+          "跑动距离": "11.6 km"
         },
         "radar": [
           {
-            "subject": "边路突击",
-            "value": 78
+            "subject": "右路套边",
+            "value": 88
+          },
+          {
+            "subject": "短传配合",
+            "value": 84
           },
           {
             "subject": "防守拦截",
             "value": 85
           },
           {
-            "subject": "传中创造",
+            "subject": "传中脚法",
+            "value": 82
+          },
+          {
+            "subject": "前插助攻",
             "value": 80
           },
           {
             "subject": "缠斗断球",
             "value": 86
-          },
-          {
-            "subject": "前场插上",
-            "value": 79
-          },
-          {
-            "subject": "持球推进",
-            "value": 81
           }
         ]
       },
       {
-        "name": "Allan Tchaptchet",
-        "name_en": "Allan Tchaptchet",
-        "name_zh": "阿兰·特查普切特",
-        "pos": "DC",
+        "pos": "DC1",
+        "name": "Teddy Mezague",
+        "name_en": "Teddy Mezague",
+        "name_zh": "泰迪·梅扎古",
         "rating": 7.1,
         "min": 90,
         "is_mvp": false,
         "stats": {
-          "高空争顶": "7/9",
-          "解围次数": "8 次",
-          "封堵射门": "3 次",
-          "传球成功率": "84.5%",
-          "身体对抗": "88%",
+          "后场倒脚": "56/60",
+          "关键拦截": "5 次",
+          "解围次数": "6 次",
+          "高空争顶": "6/8",
+          "造越位": "3 次",
           "跑动距离": "9.8 km"
         },
         "radar": [
+          {
+            "subject": "短传组织",
+            "value": 86
+          },
+          {
+            "subject": "正面拦截",
+            "value": 88
+          },
+          {
+            "subject": "防线统帅",
+            "value": 89
+          },
+          {
+            "subject": "高空解围",
+            "value": 85
+          },
+          {
+            "subject": "沉着冷静",
+            "value": 87
+          },
+          {
+            "subject": "战术执行",
+            "value": 90
+          }
+        ]
+      },
+      {
+        "pos": "DC2",
+        "name": "Allan Tchaptchet",
+        "name_en": "Allan Tchaptchet",
+        "name_zh": "阿兰·特查普切特",
+        "rating": 7.2,
+        "min": 90,
+        "is_mvp": false,
+        "stats": {
+          "头球解围": "8 次",
+          "封堵射门": "3 次",
+          "身体对抗": "9/10",
+          "出球成功率": "89.2%",
+          "精准回传": "18 次",
+          "跑动距离": "10.0 km"
+        },
+        "radar": [
+          {
+            "subject": "硬碰硬对抗",
+            "value": 94
+          },
           {
             "subject": "高空争顶",
             "value": 92
           },
           {
-            "subject": "正面防守",
-            "value": 88
+            "subject": "后场出球",
+            "value": 84
           },
           {
-            "subject": "卡位拦截",
-            "value": 85
-          },
-          {
-            "subject": "头球解围",
+            "subject": "禁区保护",
             "value": 90
           },
           {
-            "subject": "贴身对抗",
-            "value": 89
-          },
-          {
-            "subject": "长传转移",
-            "value": 74
-          }
-        ]
-      },
-      {
-        "name": "Teddy Mezague",
-        "name_en": "Teddy Mezague",
-        "name_zh": "泰迪·梅扎古",
-        "pos": "DC",
-        "rating": 7.0,
-        "min": 90,
-        "is_mvp": false,
-        "stats": {
-          "防守拦截": "4 次",
-          "解围次数": "6 次",
-          "造越位": "3 次",
-          "长传准确": "9/12",
-          "犯规/吃牌": "1/0",
-          "跑动距离": "9.6 km"
-        },
-        "radar": [
-          {
-            "subject": "后防统领",
+            "subject": "卡位抢断",
             "value": 88
           },
           {
-            "subject": "正面拦截",
-            "value": 85
-          },
-          {
             "subject": "位置感",
-            "value": 87
-          },
-          {
-            "subject": "高空解围",
-            "value": 84
-          },
-          {
-            "subject": "出球组织",
-            "value": 80
-          },
-          {
-            "subject": "硬碰硬",
-            "value": 86
+            "value": 85
           }
         ]
       },
       {
-        "name": "Yassine Ben Hamed",
-        "name_en": "Yassine Ben Hamed",
-        "name_zh": "亚塞尼·本·哈米德",
         "pos": "DL",
-        "rating": 6.9,
+        "name": "Yumeki Yoshinaga",
+        "name_en": "Yumeki Yoshinaga",
+        "name_zh": "吉永梦希",
+        "rating": 7.2,
         "min": 90,
         "is_mvp": false,
         "stats": {
-          "铲断成功": "3/4",
-          "边路套边": "5 次",
-          "传中到位": "3 次",
-          "关键传球": "1 次",
-          "拦截回追": "3 次",
-          "跑动距离": "11.4 km"
-        },
-        "radar": [
-          {
-            "subject": "边路突击",
-            "value": 80
-          },
-          {
-            "subject": "套边插上",
-            "value": 82
-          },
-          {
-            "subject": "传中脚法",
-            "value": 81
-          },
-          {
-            "subject": "回防补位",
-            "value": 79
-          },
-          {
-            "subject": "缠斗断球",
-            "value": 80
-          },
-          {
-            "subject": "速度冲刺",
-            "value": 84
-          }
-        ]
-      },
-      {
-        "name": "Antoine Valério",
-        "name_en": "Antoine Valério",
-        "name_zh": "安托万·瓦莱里亚",
-        "pos": "MC",
-        "rating": 7.1,
-        "min": 90,
-        "is_mvp": false,
-        "stats": {
-          "传球成功率": "86.2%",
-          "向前输送": "14 次",
-          "抢断拦截": "4/2 次",
-          "争顶成功": "3 次",
-          "关键传球": "2 次",
+          "左路助攻": "1 次",
+          "关键传球": "3 次",
+          "成功过人": "4 次",
+          "短传渗透": "45/50",
+          "抢断拦截": "3/2 次",
           "跑动距离": "12.1 km"
         },
         "radar": [
           {
-            "subject": "中场调度",
-            "value": 88
-          },
-          {
-            "subject": "视野大局",
-            "value": 85
-          },
-          {
-            "subject": "拦截屏障",
-            "value": 82
-          },
-          {
-            "subject": "向前直塞",
-            "value": 86
-          },
-          {
-            "subject": "耐力跑动",
+            "subject": "左翼飞奔",
             "value": 92
           },
           {
-            "subject": "压迫抢断",
-            "value": 83
-          }
-        ]
-      },
-      {
-        "name": "Aliou Dembélé",
-        "name_en": "Aliou Dembélé",
-        "name_zh": "阿卢·登贝莱",
-        "pos": "MC",
-        "rating": 7.2,
-        "min": 90,
-        "is_mvp": false,
-        "stats": {
-          "地面对抗": "8/10",
-          "抢断拦截": "5/3 次",
-          "后插上射门": "2 次",
-          "传球到位": "45/51",
-          "犯规战术": "2 次",
-          "跑动距离": "12.4 km"
-        },
-        "radar": [
-          {
-            "subject": "中场扫荡",
-            "value": 90
-          },
-          {
-            "subject": "后插冲击",
-            "value": 85
-          },
-          {
-            "subject": "地面对抗",
+            "subject": "短传串联",
             "value": 88
           },
           {
-            "subject": "反抢延阻",
-            "value": 87
-          },
-          {
-            "subject": "全场覆盖",
-            "value": 94
-          },
-          {
-            "subject": "分球过渡",
-            "value": 80
-          }
-        ]
-      },
-      {
-        "name": "Tyrone Tormin",
-        "name_en": "Tyrone Tormin",
-        "name_zh": "泰伦·托明",
-        "pos": "AMR",
-        "rating": 7.7,
-        "min": 85,
-        "is_mvp": true,
-        "stats": {
-          "进球/助攻": "0球/1助",
-          "关键传球": "4 次",
-          "成功过人": "6 次",
-          "射门(射正)": "3(2)",
-          "传球成功率": "83%",
-          "跑动距离": "11.8 km"
-        },
-        "radar": [
-          {
-            "subject": "边路突击",
-            "value": 96
-          },
-          {
-            "subject": "终结射门",
-            "value": 82
-          },
-          {
-            "subject": "传球创造",
-            "value": 90
-          },
-          {
             "subject": "灵巧盘带",
-            "value": 94
-          },
-          {
-            "subject": "前场压迫",
-            "value": 85
-          },
-          {
-            "subject": "持球冲刺",
-            "value": 95
-          }
-        ]
-      },
-      {
-        "name": "Luca Maiorano",
-        "name_en": "Luca Maiorano",
-        "name_zh": "卢卡·迈奥拉诺",
-        "pos": "AMC",
-        "rating": 7.2,
-        "min": 80,
-        "is_mvp": false,
-        "stats": {
-          "关键传球": "3 次",
-          "前插射门": "3(1)",
-          "受侵犯": "3 次",
-          "传球成功率": "81.5%",
-          "逼抢抢断": "2 次",
-          "跑动距离": "11.3 km"
-        },
-        "radar": [
-          {
-            "subject": "前插终结",
             "value": 86
           },
           {
-            "subject": "前腰策应",
+            "subject": "传中创造",
             "value": 85
           },
           {
-            "subject": "灵巧摆脱",
-            "value": 83
+            "subject": "前场插上",
+            "value": 90
           },
           {
-            "subject": "禁区威胁",
+            "subject": "回防补位",
+            "value": 80
+          }
+        ]
+      },
+      {
+        "pos": "DM",
+        "name": "Antoine Valério",
+        "name_en": "Antoine Valério",
+        "name_zh": "安托万·瓦莱里亚",
+        "rating": 7.3,
+        "min": 90,
+        "is_mvp": false,
+        "stats": {
+          "中场节拍": "68/73",
+          "向前输送": "19 次",
+          "扫荡抢断": "5/3 次",
+          "战术犯规": "2 次",
+          "拦截反击": "4 次",
+          "跑动距离": "12.5 km"
+        },
+        "radar": [
+          {
+            "subject": "短传节拍",
+            "value": 92
+          },
+          {
+            "subject": "视野大局",
+            "value": 90
+          },
+          {
+            "subject": "单后腰扫荡",
+            "value": 88
+          },
+          {
+            "subject": "向前直塞",
             "value": 87
           },
           {
-            "subject": "就地反抢",
-            "value": 80
+            "subject": "耐力覆盖",
+            "value": 94
           },
           {
-            "subject": "直塞渗透",
+            "subject": "中场屏障",
+            "value": 86
+          }
+        ]
+      },
+      {
+        "pos": "MC",
+        "name": "Aliou Dembélé",
+        "name_en": "Aliou Dembélé",
+        "name_zh": "阿卢·登贝莱",
+        "rating": 7.4,
+        "min": 85,
+        "is_mvp": false,
+        "stats": {
+          "非对称游弋": "活跃",
+          "后插上射门": "3(2)",
+          "进球/助攻": "1球/0助",
+          "地面对抗": "8/10",
+          "关键传球": "2 次",
+          "跑动距离": "12.2 km"
+        },
+        "radar": [
+          {
+            "subject": "肋部穿插",
+            "value": 90
+          },
+          {
+            "subject": "后插上终结",
+            "value": 86
+          },
+          {
+            "subject": "地面对抗",
+            "value": 89
+          },
+          {
+            "subject": "短传接应",
+            "value": 88
+          },
+          {
+            "subject": "全能B2B",
+            "value": 91
+          },
+          {
+            "subject": "前场施压",
             "value": 84
           }
         ]
       },
       {
-        "name": "Abdelsamad Hachem",
-        "name_en": "Abdelsamad Hachem",
-        "name_zh": "阿卜杜勒萨马迪·哈切姆",
-        "pos": "AML",
-        "rating": 7.6,
-        "min": 90,
+        "pos": "AMR",
+        "name": "Luca Maiorano",
+        "name_en": "Luca Maiorano",
+        "name_zh": "卢卡·迈奥拉诺",
+        "rating": 7.5,
+        "min": 80,
         "is_mvp": false,
         "stats": {
-          "进球/助攻": "1球/0助",
+          "进球/助攻": "1球/1助",
+          "关键传球": "4 次",
+          "突破过人": "4 次",
           "射门(射正)": "3(2)",
-          "内切突破": "4 次",
-          "高位压迫": "5 次",
-          "关键传球": "1 次",
+          "短传成功": "34/39",
           "跑动距离": "11.5 km"
         },
         "radar": [
           {
-            "subject": "内切射门",
-            "value": 92
-          },
-          {
-            "subject": "抢点吃饼",
-            "value": 90
-          },
-          {
-            "subject": "无球跑位",
+            "subject": "右路突击",
             "value": 88
           },
           {
-            "subject": "边路起速",
-            "value": 86
+            "subject": "门前抢点",
+            "value": 87
           },
           {
-            "subject": "门前嗅觉",
+            "subject": "短传渗透",
+            "value": 89
+          },
+          {
+            "subject": "创造机会",
+            "value": 88
+          },
+          {
+            "subject": "灵巧摆脱",
+            "value": 85
+          },
+          {
+            "subject": "无球跑位",
+            "value": 90
+          }
+        ]
+      },
+      {
+        "pos": "AMC",
+        "name": "Paul Wade",
+        "name_en": "Paul Wade",
+        "name_zh": "保罗·韦德",
+        "rating": 7.8,
+        "min": 90,
+        "is_mvp": true,
+        "stats": {
+          "前腰做球": "12 次",
+          "关键传球": "5 次",
+          "进球/助攻": "1球/1助",
+          "高空摆渡": "8/10",
+          "禁区前沿回敲": "7 次",
+          "跑动距离": "11.4 km"
+        },
+        "radar": [
+          {
+            "subject": "前腰支点策应",
+            "value": 95
+          },
+          {
+            "subject": "致命直塞",
+            "value": 91
+          },
+          {
+            "subject": "后插上射门",
+            "value": 88
+          },
+          {
+            "subject": "空中优势",
+            "value": 92
+          },
+          {
+            "subject": "身体护球",
             "value": 93
           },
           {
-            "subject": "前场紧逼",
+            "subject": "短传串联",
+            "value": 89
+          }
+        ]
+      },
+      {
+        "pos": "AML",
+        "name": "Park Seung-Soo",
+        "name_en": "Park Seung-Soo",
+        "name_zh": "朴昇秀",
+        "rating": 7.6,
+        "min": 85,
+        "is_mvp": false,
+        "stats": {
+          "左路内切": "5 次",
+          "射门(射正)": "3(2)",
+          "进球/助攻": "1球/0助",
+          "突破成功": "4/5",
+          "短传到位": "31/35",
+          "跑动距离": "11.7 km"
+        },
+        "radar": [
+          {
+            "subject": "内切抽射",
+            "value": 91
+          },
+          {
+            "subject": "灵巧变向",
+            "value": 93
+          },
+          {
+            "subject": "短传配合",
+            "value": 87
+          },
+          {
+            "subject": "速度冲刺",
+            "value": 92
+          },
+          {
+            "subject": "前插抢点",
+            "value": 85
+          },
+          {
+            "subject": "传球创造",
             "value": 84
           }
         ]
       },
       {
-        "name": "Paul Wade",
-        "name_en": "Paul Wade",
-        "name_zh": "保罗·韦德",
         "pos": "ST",
-        "rating": 7.4,
+        "name": "Abdelsamad Hachem",
+        "name_en": "Abdelsamad Hachem",
+        "name_zh": "阿卜杜勒萨马迪·哈切姆",
+        "rating": 8.2,
         "min": 90,
-        "is_mvp": false,
+        "is_mvp": true,
         "stats": {
-          "进球/助攻": "1球/0助",
-          "支点做球": "6 次",
-          "高空争顶": "6/8",
-          "射门(射正)": "4(2)",
-          "吸引防守": "8 次",
-          "跑动距离": "10.6 km"
+          "进球/助攻": "2球/0助",
+          "门前单刀": "3 次",
+          "射门(射正)": "5(4)",
+          "预期进球xG": "1.82",
+          "反越位冲刺": "7 次",
+          "跑动距离": "11.8 km"
         },
         "radar": [
           {
-            "subject": "中锋支点",
+            "subject": "单前锋终结",
+            "value": 96
+          },
+          {
+            "subject": "门前嗅觉",
+            "value": 95
+          },
+          {
+            "subject": "反越位突刺",
+            "value": 94
+          },
+          {
+            "subject": "把握机会",
+            "value": 93
+          },
+          {
+            "subject": "禁区抢点",
             "value": 92
           },
           {
-            "subject": "头球轰炸",
-            "value": 90
-          },
-          {
-            "subject": "终结射门",
-            "value": 87
-          },
-          {
-            "subject": "身体对抗",
-            "value": 91
-          },
-          {
-            "subject": "回撤做球",
-            "value": 84
-          },
-          {
-            "subject": "逼抢中卫",
-            "value": 83
+            "subject": "短传配合",
+            "value": 82
           }
         ]
       }
@@ -2059,492 +2048,475 @@
     ],
     "lineup": [
       {
+        "pos": "GK",
         "name": "Célestin De Schrevel",
         "name_en": "Célestin De Schrevel",
         "name_zh": "塞莱斯丁·德·施瑞沃",
-        "pos": "GK",
-        "rating": 7.4,
+        "rating": 6.9,
         "min": 90,
         "is_mvp": false,
         "stats": {
-          "扑救次数": "6 次",
-          "高空摘球": "4 次",
+          "扑救次数": "5 次",
           "出击成功": "100%",
-          "传球成功率": "79.1%",
-          "长传到位": "12/17",
-          "跑动距离": "5.4 km"
+          "短传组织": "28/31",
+          "长传到位": "11/14",
+          "高空摘球": "3 次",
+          "跑动距离": "5.6 km"
         },
         "radar": [
           {
             "subject": "门线扑救",
-            "value": 85
+            "value": 88
           },
           {
             "subject": "出击果断",
-            "value": 80
-          },
-          {
-            "subject": "高空控制",
             "value": 82
           },
           {
+            "subject": "短传脚法",
+            "value": 85
+          },
+          {
             "subject": "后场出球",
-            "value": 75
+            "value": 84
           },
           {
             "subject": "反应速度",
             "value": 86
           },
           {
-            "subject": "指挥防线",
-            "value": 78
+            "subject": "防线指挥",
+            "value": 80
           }
         ]
       },
       {
+        "pos": "DR",
         "name": "Steeven Assengue",
         "name_en": "Steeven Assengue",
         "name_zh": "斯蒂文·阿森盖",
-        "pos": "DR",
-        "rating": 7.0,
+        "rating": 7.1,
         "min": 90,
         "is_mvp": false,
         "stats": {
-          "抢断/拦截": "4/3 次",
-          "解围次数": "5 次",
-          "传中成功率": "42%",
-          "关键传球": "1 次",
-          "地面对抗": "6/8",
-          "跑动距离": "11.2 km"
+          "右路插上": "6 次",
+          "传中到位": "4 次",
+          "拦截抢断": "4/3 次",
+          "地面对抗": "7/9",
+          "短传渗透": "42/47",
+          "跑动距离": "11.6 km"
         },
         "radar": [
           {
-            "subject": "边路突击",
-            "value": 78
+            "subject": "右路套边",
+            "value": 88
+          },
+          {
+            "subject": "短传配合",
+            "value": 84
           },
           {
             "subject": "防守拦截",
             "value": 85
           },
           {
-            "subject": "传中创造",
+            "subject": "传中脚法",
+            "value": 82
+          },
+          {
+            "subject": "前插助攻",
             "value": 80
           },
           {
             "subject": "缠斗断球",
             "value": 86
-          },
-          {
-            "subject": "前场插上",
-            "value": 79
-          },
-          {
-            "subject": "持球推进",
-            "value": 81
           }
         ]
       },
       {
-        "name": "Allan Tchaptchet",
-        "name_en": "Allan Tchaptchet",
-        "name_zh": "阿兰·特查普切特",
-        "pos": "DC",
+        "pos": "DC1",
+        "name": "Teddy Mezague",
+        "name_en": "Teddy Mezague",
+        "name_zh": "泰迪·梅扎古",
         "rating": 7.1,
         "min": 90,
         "is_mvp": false,
         "stats": {
-          "高空争顶": "7/9",
-          "解围次数": "8 次",
-          "封堵射门": "3 次",
-          "传球成功率": "84.5%",
-          "身体对抗": "88%",
+          "后场倒脚": "56/60",
+          "关键拦截": "5 次",
+          "解围次数": "6 次",
+          "高空争顶": "6/8",
+          "造越位": "3 次",
           "跑动距离": "9.8 km"
         },
         "radar": [
+          {
+            "subject": "短传组织",
+            "value": 86
+          },
+          {
+            "subject": "正面拦截",
+            "value": 88
+          },
+          {
+            "subject": "防线统帅",
+            "value": 89
+          },
+          {
+            "subject": "高空解围",
+            "value": 85
+          },
+          {
+            "subject": "沉着冷静",
+            "value": 87
+          },
+          {
+            "subject": "战术执行",
+            "value": 90
+          }
+        ]
+      },
+      {
+        "pos": "DC2",
+        "name": "Allan Tchaptchet",
+        "name_en": "Allan Tchaptchet",
+        "name_zh": "阿兰·特查普切特",
+        "rating": 7.2,
+        "min": 90,
+        "is_mvp": false,
+        "stats": {
+          "头球解围": "8 次",
+          "封堵射门": "3 次",
+          "身体对抗": "9/10",
+          "出球成功率": "89.2%",
+          "精准回传": "18 次",
+          "跑动距离": "10.0 km"
+        },
+        "radar": [
+          {
+            "subject": "硬碰硬对抗",
+            "value": 94
+          },
           {
             "subject": "高空争顶",
             "value": 92
           },
           {
-            "subject": "正面防守",
-            "value": 88
+            "subject": "后场出球",
+            "value": 84
           },
           {
-            "subject": "卡位拦截",
-            "value": 85
-          },
-          {
-            "subject": "头球解围",
+            "subject": "禁区保护",
             "value": 90
           },
           {
-            "subject": "贴身对抗",
-            "value": 89
+            "subject": "卡位抢断",
+            "value": 88
           },
           {
-            "subject": "长传转移",
-            "value": 74
+            "subject": "位置感",
+            "value": 85
           }
         ]
       },
       {
-        "name": "Teddy Mezague",
-        "name_en": "Teddy Mezague",
-        "name_zh": "泰迪·梅扎古",
-        "pos": "DC",
-        "rating": 7.0,
+        "pos": "DL",
+        "name": "Yumeki Yoshinaga",
+        "name_en": "Yumeki Yoshinaga",
+        "name_zh": "吉永梦希",
+        "rating": 7.2,
         "min": 90,
         "is_mvp": false,
         "stats": {
-          "防守拦截": "4 次",
-          "解围次数": "6 次",
-          "造越位": "3 次",
-          "长传准确": "9/12",
-          "犯规/吃牌": "1/0",
-          "跑动距离": "9.6 km"
+          "左路助攻": "1 次",
+          "关键传球": "3 次",
+          "成功过人": "4 次",
+          "短传渗透": "45/50",
+          "抢断拦截": "3/2 次",
+          "跑动距离": "12.1 km"
         },
         "radar": [
           {
-            "subject": "后防统领",
+            "subject": "左翼飞奔",
+            "value": 92
+          },
+          {
+            "subject": "短传串联",
             "value": 88
           },
           {
-            "subject": "正面拦截",
+            "subject": "灵巧盘带",
+            "value": 86
+          },
+          {
+            "subject": "传中创造",
             "value": 85
           },
           {
-            "subject": "位置感",
+            "subject": "前场插上",
+            "value": 90
+          },
+          {
+            "subject": "回防补位",
+            "value": 80
+          }
+        ]
+      },
+      {
+        "pos": "DM",
+        "name": "Antoine Valério",
+        "name_en": "Antoine Valério",
+        "name_zh": "安托万·瓦莱里亚",
+        "rating": 7.3,
+        "min": 90,
+        "is_mvp": false,
+        "stats": {
+          "中场节拍": "68/73",
+          "向前输送": "19 次",
+          "扫荡抢断": "5/3 次",
+          "战术犯规": "2 次",
+          "拦截反击": "4 次",
+          "跑动距离": "12.5 km"
+        },
+        "radar": [
+          {
+            "subject": "短传节拍",
+            "value": 92
+          },
+          {
+            "subject": "视野大局",
+            "value": 90
+          },
+          {
+            "subject": "单后腰扫荡",
+            "value": 88
+          },
+          {
+            "subject": "向前直塞",
             "value": 87
           },
           {
-            "subject": "高空解围",
-            "value": 84
+            "subject": "耐力覆盖",
+            "value": 94
           },
           {
-            "subject": "出球组织",
-            "value": 80
-          },
-          {
-            "subject": "硬碰硬",
+            "subject": "中场屏障",
             "value": 86
           }
         ]
       },
       {
-        "name": "Yassine Ben Hamed",
-        "name_en": "Yassine Ben Hamed",
-        "name_zh": "亚塞尼·本·哈米德",
-        "pos": "DL",
-        "rating": 6.9,
+        "pos": "MC",
+        "name": "Aliou Dembélé",
+        "name_en": "Aliou Dembélé",
+        "name_zh": "阿卢·登贝莱",
+        "rating": 7.4,
+        "min": 85,
+        "is_mvp": false,
+        "stats": {
+          "非对称游弋": "活跃",
+          "后插上射门": "3(2)",
+          "进球/助攻": "1球/0助",
+          "地面对抗": "8/10",
+          "关键传球": "2 次",
+          "跑动距离": "12.2 km"
+        },
+        "radar": [
+          {
+            "subject": "肋部穿插",
+            "value": 90
+          },
+          {
+            "subject": "后插上终结",
+            "value": 86
+          },
+          {
+            "subject": "地面对抗",
+            "value": 89
+          },
+          {
+            "subject": "短传接应",
+            "value": 88
+          },
+          {
+            "subject": "全能B2B",
+            "value": 91
+          },
+          {
+            "subject": "前场施压",
+            "value": 84
+          }
+        ]
+      },
+      {
+        "pos": "AMR",
+        "name": "Luca Maiorano",
+        "name_en": "Luca Maiorano",
+        "name_zh": "卢卡·迈奥拉诺",
+        "rating": 7.5,
+        "min": 80,
+        "is_mvp": false,
+        "stats": {
+          "进球/助攻": "1球/1助",
+          "关键传球": "4 次",
+          "突破过人": "4 次",
+          "射门(射正)": "3(2)",
+          "短传成功": "34/39",
+          "跑动距离": "11.5 km"
+        },
+        "radar": [
+          {
+            "subject": "右路突击",
+            "value": 88
+          },
+          {
+            "subject": "门前抢点",
+            "value": 87
+          },
+          {
+            "subject": "短传渗透",
+            "value": 89
+          },
+          {
+            "subject": "创造机会",
+            "value": 88
+          },
+          {
+            "subject": "灵巧摆脱",
+            "value": 85
+          },
+          {
+            "subject": "无球跑位",
+            "value": 90
+          }
+        ]
+      },
+      {
+        "pos": "AMC",
+        "name": "Paul Wade",
+        "name_en": "Paul Wade",
+        "name_zh": "保罗·韦德",
+        "rating": 7.8,
         "min": 90,
         "is_mvp": false,
         "stats": {
-          "铲断成功": "3/4",
-          "边路套边": "5 次",
-          "传中到位": "3 次",
-          "关键传球": "1 次",
-          "拦截回追": "3 次",
+          "前腰做球": "12 次",
+          "关键传球": "5 次",
+          "进球/助攻": "1球/1助",
+          "高空摆渡": "8/10",
+          "禁区前沿回敲": "7 次",
           "跑动距离": "11.4 km"
         },
         "radar": [
           {
-            "subject": "边路突击",
-            "value": 80
+            "subject": "前腰支点策应",
+            "value": 95
           },
           {
-            "subject": "套边插上",
-            "value": 82
+            "subject": "致命直塞",
+            "value": 91
           },
           {
-            "subject": "传中脚法",
-            "value": 81
-          },
-          {
-            "subject": "回防补位",
-            "value": 79
-          },
-          {
-            "subject": "缠斗断球",
-            "value": 80
-          },
-          {
-            "subject": "速度冲刺",
-            "value": 84
-          }
-        ]
-      },
-      {
-        "name": "Antoine Valério",
-        "name_en": "Antoine Valério",
-        "name_zh": "安托万·瓦莱里亚",
-        "pos": "MC",
-        "rating": 7.3,
-        "min": 90,
-        "is_mvp": false,
-        "stats": {
-          "传球成功率": "86.2%",
-          "向前输送": "14 次",
-          "抢断拦截": "6/4 次",
-          "争顶成功": "3 次",
-          "关键传球": "2 次",
-          "跑动距离": "12.8 km"
-        },
-        "radar": [
-          {
-            "subject": "中场调度",
+            "subject": "后插上射门",
             "value": 88
           },
           {
-            "subject": "视野大局",
-            "value": 85
-          },
-          {
-            "subject": "拦截屏障",
-            "value": 82
-          },
-          {
-            "subject": "向前直塞",
-            "value": 86
-          },
-          {
-            "subject": "耐力跑动",
+            "subject": "空中优势",
             "value": 92
           },
           {
-            "subject": "压迫抢断",
-            "value": 83
+            "subject": "身体护球",
+            "value": 93
+          },
+          {
+            "subject": "短传串联",
+            "value": 89
           }
         ]
       },
       {
-        "name": "Aliou Dembélé",
-        "name_en": "Aliou Dembélé",
-        "name_zh": "阿卢·登贝莱",
-        "pos": "MC",
-        "rating": 7.3,
-        "min": 90,
-        "is_mvp": false,
-        "stats": {
-          "地面对抗": "8/10",
-          "抢断拦截": "6/4 次",
-          "后插上射门": "2 次",
-          "传球到位": "45/51",
-          "犯规战术": "2 次",
-          "跑动距离": "12.8 km"
-        },
-        "radar": [
-          {
-            "subject": "中场扫荡",
-            "value": 90
-          },
-          {
-            "subject": "后插冲击",
-            "value": 85
-          },
-          {
-            "subject": "地面对抗",
-            "value": 88
-          },
-          {
-            "subject": "反抢延阻",
-            "value": 87
-          },
-          {
-            "subject": "全场覆盖",
-            "value": 94
-          },
-          {
-            "subject": "分球过渡",
-            "value": 80
-          }
-        ]
-      },
-      {
-        "name": "Tyrone Tormin",
-        "name_en": "Tyrone Tormin",
-        "name_zh": "泰伦·托明",
-        "pos": "AMR",
+        "pos": "AML",
+        "name": "Park Seung-Soo",
+        "name_en": "Park Seung-Soo",
+        "name_zh": "朴昇秀",
         "rating": 7.6,
         "min": 85,
-        "is_mvp": false,
+        "is_mvp": true,
         "stats": {
-          "进球/助攻": "0球/1助",
-          "关键传球": "4 次",
-          "成功过人": "5 次",
+          "左路内切": "5 次",
           "射门(射正)": "3(2)",
-          "传球成功率": "83%",
+          "进球/助攻": "1球/0助",
+          "突破成功": "4/5",
+          "短传到位": "31/35",
           "跑动距离": "11.7 km"
         },
         "radar": [
           {
-            "subject": "边路突击",
-            "value": 96
+            "subject": "内切抽射",
+            "value": 91
           },
           {
-            "subject": "终结射门",
-            "value": 82
-          },
-          {
-            "subject": "传球创造",
-            "value": 90
-          },
-          {
-            "subject": "灵巧盘带",
-            "value": 94
-          },
-          {
-            "subject": "前场压迫",
-            "value": 85
-          },
-          {
-            "subject": "持球冲刺",
-            "value": 95
-          }
-        ]
-      },
-      {
-        "name": "Luca Maiorano",
-        "name_en": "Luca Maiorano",
-        "name_zh": "卢卡·迈奥拉诺",
-        "pos": "AMC",
-        "rating": 7.2,
-        "min": 80,
-        "is_mvp": false,
-        "stats": {
-          "关键传球": "3 次",
-          "前插射门": "3(1)",
-          "受侵犯": "3 次",
-          "传球成功率": "81.5%",
-          "逼抢抢断": "2 次",
-          "跑动距离": "11.3 km"
-        },
-        "radar": [
-          {
-            "subject": "前插终结",
-            "value": 86
-          },
-          {
-            "subject": "前腰策应",
-            "value": 85
-          },
-          {
-            "subject": "灵巧摆脱",
-            "value": 83
-          },
-          {
-            "subject": "禁区威胁",
-            "value": 87
-          },
-          {
-            "subject": "就地反抢",
-            "value": 80
-          },
-          {
-            "subject": "直塞渗透",
-            "value": 84
-          }
-        ]
-      },
-      {
-        "name": "Park Seung-Soo",
-        "name_en": "Park Seung-Soo",
-        "name_zh": "朴昇秀",
-        "pos": "AML",
-        "rating": 7.8,
-        "min": 90,
-        "is_mvp": true,
-        "stats": {
-          "进球/助攻": "1球/0助",
-          "射门(射正)": "3(2)",
-          "内切突破": "4 次",
-          "高位压迫": "5 次",
-          "关键传球": "2 次",
-          "跑动距离": "11.4 km",
-          "内切射门": "3(2)"
-        },
-        "radar": [
-          {
-            "subject": "内切射门",
-            "value": 92
-          },
-          {
-            "subject": "抢点吃饼",
-            "value": 90
-          },
-          {
-            "subject": "无球跑位",
-            "value": 88
-          },
-          {
-            "subject": "边路起速",
-            "value": 86
-          },
-          {
-            "subject": "门前嗅觉",
+            "subject": "灵巧变向",
             "value": 93
           },
           {
-            "subject": "前场紧逼",
-            "value": 84
+            "subject": "短传配合",
+            "value": 87
           },
           {
-            "subject": "边路突击",
-            "value": 90
-          },
-          {
-            "subject": "终结射门",
-            "value": 88
-          },
-          {
-            "subject": "灵巧盘带",
+            "subject": "速度冲刺",
             "value": 92
           },
           {
-            "subject": "持球冲刺",
-            "value": 91
+            "subject": "前插抢点",
+            "value": 85
+          },
+          {
+            "subject": "传球创造",
+            "value": 84
           }
         ]
       },
       {
-        "name": "Paul Wade",
-        "name_en": "Paul Wade",
-        "name_zh": "保罗·韦德",
         "pos": "ST",
-        "rating": 7.4,
+        "name": "Abdelsamad Hachem",
+        "name_en": "Abdelsamad Hachem",
+        "name_zh": "阿卜杜勒萨马迪·哈切姆",
+        "rating": 8.2,
         "min": 90,
         "is_mvp": false,
         "stats": {
-          "进球/助攻": "1球/0助",
-          "支点做球": "6 次",
-          "高空争顶": "7/10",
-          "射门(射正)": "4(2)",
-          "吸引防守": "8 次",
-          "跑动距离": "10.8 km"
+          "进球/助攻": "2球/0助",
+          "门前单刀": "3 次",
+          "射门(射正)": "5(4)",
+          "预期进球xG": "1.82",
+          "反越位冲刺": "7 次",
+          "跑动距离": "11.8 km"
         },
         "radar": [
           {
-            "subject": "中锋支点",
+            "subject": "单前锋终结",
+            "value": 96
+          },
+          {
+            "subject": "门前嗅觉",
+            "value": 95
+          },
+          {
+            "subject": "反越位突刺",
+            "value": 94
+          },
+          {
+            "subject": "把握机会",
+            "value": 93
+          },
+          {
+            "subject": "禁区抢点",
             "value": 92
           },
           {
-            "subject": "头球轰炸",
-            "value": 90
-          },
-          {
-            "subject": "终结射门",
-            "value": 87
-          },
-          {
-            "subject": "身体对抗",
-            "value": 91
-          },
-          {
-            "subject": "回撤做球",
-            "value": 84
-          },
-          {
-            "subject": "逼抢中卫",
-            "value": 83
+            "subject": "短传配合",
+            "value": 82
           }
         ]
       }
@@ -2584,477 +2556,475 @@
     ],
     "lineup": [
       {
+        "pos": "GK",
         "name": "Célestin De Schrevel",
         "name_en": "Célestin De Schrevel",
         "name_zh": "塞莱斯丁·德·施瑞沃",
-        "pos": "GK",
-        "rating": 6.8,
+        "rating": 6.9,
         "min": 90,
         "is_mvp": false,
         "stats": {
-          "扑救次数": "4 次",
-          "高空摘球": "2 次",
+          "扑救次数": "5 次",
           "出击成功": "100%",
-          "传球成功率": "79.1%",
-          "长传到位": "12/17",
-          "跑动距离": "5.4 km"
+          "短传组织": "28/31",
+          "长传到位": "11/14",
+          "高空摘球": "3 次",
+          "跑动距离": "5.6 km"
         },
         "radar": [
           {
             "subject": "门线扑救",
-            "value": 85
+            "value": 88
           },
           {
             "subject": "出击果断",
-            "value": 80
-          },
-          {
-            "subject": "高空控制",
             "value": 82
           },
           {
+            "subject": "短传脚法",
+            "value": 85
+          },
+          {
             "subject": "后场出球",
-            "value": 75
+            "value": 84
           },
           {
             "subject": "反应速度",
             "value": 86
           },
           {
-            "subject": "指挥防线",
-            "value": 78
+            "subject": "防线指挥",
+            "value": 80
           }
         ]
       },
       {
+        "pos": "DR",
         "name": "Steeven Assengue",
         "name_en": "Steeven Assengue",
         "name_zh": "斯蒂文·阿森盖",
-        "pos": "DR",
-        "rating": 7.0,
+        "rating": 7.1,
         "min": 90,
         "is_mvp": false,
         "stats": {
-          "抢断/拦截": "4/3 次",
-          "解围次数": "5 次",
-          "传中成功率": "42%",
-          "关键传球": "1 次",
-          "地面对抗": "6/8",
-          "跑动距离": "11.2 km"
+          "右路插上": "6 次",
+          "传中到位": "4 次",
+          "拦截抢断": "4/3 次",
+          "地面对抗": "7/9",
+          "短传渗透": "42/47",
+          "跑动距离": "11.6 km"
         },
         "radar": [
           {
-            "subject": "边路突击",
-            "value": 78
+            "subject": "右路套边",
+            "value": 88
+          },
+          {
+            "subject": "短传配合",
+            "value": 84
           },
           {
             "subject": "防守拦截",
             "value": 85
           },
           {
-            "subject": "传中创造",
+            "subject": "传中脚法",
+            "value": 82
+          },
+          {
+            "subject": "前插助攻",
             "value": 80
           },
           {
             "subject": "缠斗断球",
             "value": 86
-          },
-          {
-            "subject": "前场插上",
-            "value": 79
-          },
-          {
-            "subject": "持球推进",
-            "value": 81
           }
         ]
       },
       {
-        "name": "Allan Tchaptchet",
-        "name_en": "Allan Tchaptchet",
-        "name_zh": "阿兰·特查普切特",
-        "pos": "DC",
+        "pos": "DC1",
+        "name": "Teddy Mezague",
+        "name_en": "Teddy Mezague",
+        "name_zh": "泰迪·梅扎古",
         "rating": 7.1,
         "min": 90,
         "is_mvp": false,
         "stats": {
-          "高空争顶": "7/9",
-          "解围次数": "8 次",
-          "封堵射门": "3 次",
-          "传球成功率": "84.5%",
-          "身体对抗": "88%",
+          "后场倒脚": "56/60",
+          "关键拦截": "5 次",
+          "解围次数": "6 次",
+          "高空争顶": "6/8",
+          "造越位": "3 次",
           "跑动距离": "9.8 km"
         },
         "radar": [
+          {
+            "subject": "短传组织",
+            "value": 86
+          },
+          {
+            "subject": "正面拦截",
+            "value": 88
+          },
+          {
+            "subject": "防线统帅",
+            "value": 89
+          },
+          {
+            "subject": "高空解围",
+            "value": 85
+          },
+          {
+            "subject": "沉着冷静",
+            "value": 87
+          },
+          {
+            "subject": "战术执行",
+            "value": 90
+          }
+        ]
+      },
+      {
+        "pos": "DC2",
+        "name": "Allan Tchaptchet",
+        "name_en": "Allan Tchaptchet",
+        "name_zh": "阿兰·特查普切特",
+        "rating": 7.2,
+        "min": 90,
+        "is_mvp": false,
+        "stats": {
+          "头球解围": "8 次",
+          "封堵射门": "3 次",
+          "身体对抗": "9/10",
+          "出球成功率": "89.2%",
+          "精准回传": "18 次",
+          "跑动距离": "10.0 km"
+        },
+        "radar": [
+          {
+            "subject": "硬碰硬对抗",
+            "value": 94
+          },
           {
             "subject": "高空争顶",
             "value": 92
           },
           {
-            "subject": "正面防守",
-            "value": 88
+            "subject": "后场出球",
+            "value": 84
           },
           {
-            "subject": "卡位拦截",
-            "value": 85
-          },
-          {
-            "subject": "头球解围",
+            "subject": "禁区保护",
             "value": 90
           },
           {
-            "subject": "贴身对抗",
-            "value": 89
-          },
-          {
-            "subject": "长传转移",
-            "value": 74
-          }
-        ]
-      },
-      {
-        "name": "Teddy Mezague",
-        "name_en": "Teddy Mezague",
-        "name_zh": "泰迪·梅扎古",
-        "pos": "DC",
-        "rating": 7.0,
-        "min": 90,
-        "is_mvp": false,
-        "stats": {
-          "防守拦截": "4 次",
-          "解围次数": "6 次",
-          "造越位": "3 次",
-          "长传准确": "9/12",
-          "犯规/吃牌": "1/0",
-          "跑动距离": "9.6 km"
-        },
-        "radar": [
-          {
-            "subject": "后防统领",
+            "subject": "卡位抢断",
             "value": 88
-          },
-          {
-            "subject": "正面拦截",
-            "value": 85
           },
           {
             "subject": "位置感",
-            "value": 87
-          },
-          {
-            "subject": "高空解围",
-            "value": 84
-          },
-          {
-            "subject": "出球组织",
-            "value": 80
-          },
-          {
-            "subject": "硬碰硬",
-            "value": 86
-          }
-        ]
-      },
-      {
-        "name": "Yassine Ben Hamed",
-        "name_en": "Yassine Ben Hamed",
-        "name_zh": "亚塞尼·本·哈米德",
-        "pos": "DL",
-        "rating": 6.9,
-        "min": 90,
-        "is_mvp": false,
-        "stats": {
-          "铲断成功": "3/4",
-          "边路套边": "5 次",
-          "传中到位": "3 次",
-          "关键传球": "1 次",
-          "拦截回追": "3 次",
-          "跑动距离": "11.4 km"
-        },
-        "radar": [
-          {
-            "subject": "边路突击",
-            "value": 80
-          },
-          {
-            "subject": "套边插上",
-            "value": 82
-          },
-          {
-            "subject": "传中脚法",
-            "value": 81
-          },
-          {
-            "subject": "回防补位",
-            "value": 79
-          },
-          {
-            "subject": "缠斗断球",
-            "value": 80
-          },
-          {
-            "subject": "速度冲刺",
-            "value": 84
-          }
-        ]
-      },
-      {
-        "name": "Antoine Valério",
-        "name_en": "Antoine Valério",
-        "name_zh": "安托万·瓦莱里亚",
-        "pos": "MC",
-        "rating": 7.1,
-        "min": 90,
-        "is_mvp": false,
-        "stats": {
-          "传球成功率": "86.2%",
-          "向前输送": "14 次",
-          "抢断拦截": "4/2 次",
-          "争顶成功": "3 次",
-          "关键传球": "2 次",
-          "跑动距离": "12.1 km"
-        },
-        "radar": [
-          {
-            "subject": "中场调度",
-            "value": 88
-          },
-          {
-            "subject": "视野大局",
             "value": 85
-          },
-          {
-            "subject": "拦截屏障",
-            "value": 82
-          },
-          {
-            "subject": "向前直塞",
-            "value": 86
-          },
-          {
-            "subject": "耐力跑动",
-            "value": 92
-          },
-          {
-            "subject": "压迫抢断",
-            "value": 83
           }
         ]
       },
       {
-        "name": "Aliou Dembélé",
-        "name_en": "Aliou Dembélé",
-        "name_zh": "阿卢·登贝莱",
-        "pos": "MC",
+        "pos": "DL",
+        "name": "Yumeki Yoshinaga",
+        "name_en": "Yumeki Yoshinaga",
+        "name_zh": "吉永梦希",
         "rating": 7.2,
         "min": 90,
         "is_mvp": false,
         "stats": {
-          "地面对抗": "8/10",
-          "抢断拦截": "5/3 次",
-          "后插上射门": "2 次",
-          "传球到位": "45/51",
-          "犯规战术": "2 次",
-          "跑动距离": "12.4 km"
+          "左路助攻": "1 次",
+          "关键传球": "3 次",
+          "成功过人": "4 次",
+          "短传渗透": "45/50",
+          "抢断拦截": "3/2 次",
+          "跑动距离": "12.1 km"
         },
         "radar": [
           {
-            "subject": "中场扫荡",
-            "value": 90
+            "subject": "左翼飞奔",
+            "value": 92
           },
           {
-            "subject": "后插冲击",
-            "value": 85
-          },
-          {
-            "subject": "地面对抗",
+            "subject": "短传串联",
             "value": 88
           },
           {
-            "subject": "反抢延阻",
-            "value": 87
+            "subject": "灵巧盘带",
+            "value": 86
           },
           {
-            "subject": "全场覆盖",
-            "value": 94
+            "subject": "传中创造",
+            "value": 85
           },
           {
-            "subject": "分球过渡",
+            "subject": "前场插上",
+            "value": 90
+          },
+          {
+            "subject": "回防补位",
             "value": 80
           }
         ]
       },
       {
-        "name": "Tyrone Tormin",
-        "name_en": "Tyrone Tormin",
-        "name_zh": "泰伦·托明",
+        "pos": "DM",
+        "name": "Antoine Valério",
+        "name_en": "Antoine Valério",
+        "name_zh": "安托万·瓦莱里亚",
+        "rating": 7.3,
+        "min": 90,
+        "is_mvp": false,
+        "stats": {
+          "中场节拍": "68/73",
+          "向前输送": "19 次",
+          "扫荡抢断": "5/3 次",
+          "战术犯规": "2 次",
+          "拦截反击": "4 次",
+          "跑动距离": "12.5 km"
+        },
+        "radar": [
+          {
+            "subject": "短传节拍",
+            "value": 92
+          },
+          {
+            "subject": "视野大局",
+            "value": 90
+          },
+          {
+            "subject": "单后腰扫荡",
+            "value": 88
+          },
+          {
+            "subject": "向前直塞",
+            "value": 87
+          },
+          {
+            "subject": "耐力覆盖",
+            "value": 94
+          },
+          {
+            "subject": "中场屏障",
+            "value": 86
+          }
+        ]
+      },
+      {
+        "pos": "MC",
+        "name": "Aliou Dembélé",
+        "name_en": "Aliou Dembélé",
+        "name_zh": "阿卢·登贝莱",
+        "rating": 7.4,
+        "min": 85,
+        "is_mvp": false,
+        "stats": {
+          "非对称游弋": "活跃",
+          "后插上射门": "3(2)",
+          "进球/助攻": "1球/0助",
+          "地面对抗": "8/10",
+          "关键传球": "2 次",
+          "跑动距离": "12.2 km"
+        },
+        "radar": [
+          {
+            "subject": "肋部穿插",
+            "value": 90
+          },
+          {
+            "subject": "后插上终结",
+            "value": 86
+          },
+          {
+            "subject": "地面对抗",
+            "value": 89
+          },
+          {
+            "subject": "短传接应",
+            "value": 88
+          },
+          {
+            "subject": "全能B2B",
+            "value": 91
+          },
+          {
+            "subject": "前场施压",
+            "value": 84
+          }
+        ]
+      },
+      {
         "pos": "AMR",
+        "name": "Luca Maiorano",
+        "name_en": "Luca Maiorano",
+        "name_zh": "卢卡·迈奥拉诺",
+        "rating": 7.5,
+        "min": 80,
+        "is_mvp": false,
+        "stats": {
+          "进球/助攻": "1球/1助",
+          "关键传球": "4 次",
+          "突破过人": "4 次",
+          "射门(射正)": "3(2)",
+          "短传成功": "34/39",
+          "跑动距离": "11.5 km"
+        },
+        "radar": [
+          {
+            "subject": "右路突击",
+            "value": 88
+          },
+          {
+            "subject": "门前抢点",
+            "value": 87
+          },
+          {
+            "subject": "短传渗透",
+            "value": 89
+          },
+          {
+            "subject": "创造机会",
+            "value": 88
+          },
+          {
+            "subject": "灵巧摆脱",
+            "value": 85
+          },
+          {
+            "subject": "无球跑位",
+            "value": 90
+          }
+        ]
+      },
+      {
+        "pos": "AMC",
+        "name": "Paul Wade",
+        "name_en": "Paul Wade",
+        "name_zh": "保罗·韦德",
+        "rating": 7.8,
+        "min": 90,
+        "is_mvp": true,
+        "stats": {
+          "前腰做球": "12 次",
+          "关键传球": "5 次",
+          "进球/助攻": "1球/1助",
+          "高空摆渡": "8/10",
+          "禁区前沿回敲": "7 次",
+          "跑动距离": "11.4 km"
+        },
+        "radar": [
+          {
+            "subject": "前腰支点策应",
+            "value": 95
+          },
+          {
+            "subject": "致命直塞",
+            "value": 91
+          },
+          {
+            "subject": "后插上射门",
+            "value": 88
+          },
+          {
+            "subject": "空中优势",
+            "value": 92
+          },
+          {
+            "subject": "身体护球",
+            "value": 93
+          },
+          {
+            "subject": "短传串联",
+            "value": 89
+          }
+        ]
+      },
+      {
+        "pos": "AML",
+        "name": "Park Seung-Soo",
+        "name_en": "Park Seung-Soo",
+        "name_zh": "朴昇秀",
         "rating": 7.6,
         "min": 85,
         "is_mvp": false,
         "stats": {
-          "进球/助攻": "0球/1助",
-          "关键传球": "4 次",
-          "成功过人": "5 次",
+          "左路内切": "5 次",
           "射门(射正)": "3(2)",
-          "传球成功率": "83%",
+          "进球/助攻": "1球/0助",
+          "突破成功": "4/5",
+          "短传到位": "31/35",
           "跑动距离": "11.7 km"
         },
         "radar": [
           {
-            "subject": "边路突击",
-            "value": 96
-          },
-          {
-            "subject": "终结射门",
-            "value": 82
-          },
-          {
-            "subject": "传球创造",
-            "value": 90
-          },
-          {
-            "subject": "灵巧盘带",
-            "value": 94
-          },
-          {
-            "subject": "前场压迫",
-            "value": 85
-          },
-          {
-            "subject": "持球冲刺",
-            "value": 95
-          }
-        ]
-      },
-      {
-        "name": "Luca Maiorano",
-        "name_en": "Luca Maiorano",
-        "name_zh": "卢卡·迈奥拉诺",
-        "pos": "AMC",
-        "rating": 7.6,
-        "min": 80,
-        "is_mvp": true,
-        "stats": {
-          "关键传球": "3 次",
-          "前插射门": "3(1)",
-          "受侵犯": "3 次",
-          "传球成功率": "81.5%",
-          "逼抢抢断": "2 次",
-          "跑动距离": "11.7 km",
-          "进球/助攻": "1球/0助",
-          "前插抢点": "3 次"
-        },
-        "radar": [
-          {
-            "subject": "前插终结",
-            "value": 86
-          },
-          {
-            "subject": "前腰策应",
-            "value": 85
-          },
-          {
-            "subject": "灵巧摆脱",
-            "value": 83
-          },
-          {
-            "subject": "禁区威胁",
-            "value": 87
-          },
-          {
-            "subject": "就地反抢",
-            "value": 80
-          },
-          {
-            "subject": "直塞渗透",
-            "value": 84
-          }
-        ]
-      },
-      {
-        "name": "Abdelsamad Hachem",
-        "name_en": "Abdelsamad Hachem",
-        "name_zh": "阿卜杜勒萨马迪·哈切姆",
-        "pos": "AML",
-        "rating": 7.5,
-        "min": 90,
-        "is_mvp": false,
-        "stats": {
-          "进球/助攻": "1球/0助",
-          "射门(射正)": "4(2)",
-          "内切突破": "4 次",
-          "高位压迫": "5 次",
-          "关键传球": "1 次",
-          "跑动距离": "11.2 km"
-        },
-        "radar": [
-          {
-            "subject": "内切射门",
-            "value": 92
-          },
-          {
-            "subject": "抢点吃饼",
-            "value": 90
-          },
-          {
-            "subject": "无球跑位",
-            "value": 88
-          },
-          {
-            "subject": "边路起速",
-            "value": 86
-          },
-          {
-            "subject": "门前嗅觉",
-            "value": 93
-          },
-          {
-            "subject": "前场紧逼",
-            "value": 84
-          }
-        ]
-      },
-      {
-        "name": "Paul Wade",
-        "name_en": "Paul Wade",
-        "name_zh": "保罗·韦德",
-        "pos": "ST",
-        "rating": 7.4,
-        "min": 90,
-        "is_mvp": false,
-        "stats": {
-          "进球/助攻": "1球/0助",
-          "支点做球": "6 次",
-          "高空争顶": "7/10",
-          "射门(射正)": "4(2)",
-          "吸引防守": "8 次",
-          "跑动距离": "10.8 km"
-        },
-        "radar": [
-          {
-            "subject": "中锋支点",
-            "value": 92
-          },
-          {
-            "subject": "头球轰炸",
-            "value": 90
-          },
-          {
-            "subject": "终结射门",
-            "value": 87
-          },
-          {
-            "subject": "身体对抗",
+            "subject": "内切抽射",
             "value": 91
           },
           {
-            "subject": "回撤做球",
-            "value": 84
+            "subject": "灵巧变向",
+            "value": 93
           },
           {
-            "subject": "逼抢中卫",
-            "value": 83
+            "subject": "短传配合",
+            "value": 87
+          },
+          {
+            "subject": "速度冲刺",
+            "value": 92
+          },
+          {
+            "subject": "前插抢点",
+            "value": 85
+          },
+          {
+            "subject": "传球创造",
+            "value": 84
+          }
+        ]
+      },
+      {
+        "pos": "ST",
+        "name": "Abdelsamad Hachem",
+        "name_en": "Abdelsamad Hachem",
+        "name_zh": "阿卜杜勒萨马迪·哈切姆",
+        "rating": 8.2,
+        "min": 90,
+        "is_mvp": true,
+        "stats": {
+          "进球/助攻": "2球/0助",
+          "门前单刀": "3 次",
+          "射门(射正)": "5(4)",
+          "预期进球xG": "1.82",
+          "反越位冲刺": "7 次",
+          "跑动距离": "11.8 km"
+        },
+        "radar": [
+          {
+            "subject": "单前锋终结",
+            "value": 96
+          },
+          {
+            "subject": "门前嗅觉",
+            "value": 95
+          },
+          {
+            "subject": "反越位突刺",
+            "value": 94
+          },
+          {
+            "subject": "把握机会",
+            "value": 93
+          },
+          {
+            "subject": "禁区抢点",
+            "value": 92
+          },
+          {
+            "subject": "短传配合",
+            "value": 82
           }
         ]
       }
@@ -3101,476 +3071,475 @@
     ],
     "lineup": [
       {
+        "pos": "GK",
         "name": "Célestin De Schrevel",
         "name_en": "Célestin De Schrevel",
         "name_zh": "塞莱斯丁·德·施瑞沃",
-        "pos": "GK",
-        "rating": 6.8,
+        "rating": 6.9,
         "min": 90,
         "is_mvp": false,
         "stats": {
-          "扑救次数": "4 次",
-          "高空摘球": "2 次",
+          "扑救次数": "5 次",
           "出击成功": "100%",
-          "传球成功率": "79.1%",
-          "长传到位": "12/17",
-          "跑动距离": "5.4 km"
+          "短传组织": "28/31",
+          "长传到位": "11/14",
+          "高空摘球": "3 次",
+          "跑动距离": "5.6 km"
         },
         "radar": [
           {
             "subject": "门线扑救",
-            "value": 85
+            "value": 88
           },
           {
             "subject": "出击果断",
-            "value": 80
-          },
-          {
-            "subject": "高空控制",
             "value": 82
           },
           {
+            "subject": "短传脚法",
+            "value": 85
+          },
+          {
             "subject": "后场出球",
-            "value": 75
+            "value": 84
           },
           {
             "subject": "反应速度",
             "value": 86
           },
           {
-            "subject": "指挥防线",
-            "value": 78
+            "subject": "防线指挥",
+            "value": 80
           }
         ]
       },
       {
+        "pos": "DR",
         "name": "Steeven Assengue",
         "name_en": "Steeven Assengue",
         "name_zh": "斯蒂文·阿森盖",
-        "pos": "DR",
-        "rating": 7.0,
+        "rating": 7.1,
         "min": 90,
         "is_mvp": false,
         "stats": {
-          "抢断/拦截": "4/3 次",
-          "解围次数": "5 次",
-          "传中成功率": "42%",
-          "关键传球": "1 次",
-          "地面对抗": "6/8",
-          "跑动距离": "11.2 km"
+          "右路插上": "6 次",
+          "传中到位": "4 次",
+          "拦截抢断": "4/3 次",
+          "地面对抗": "7/9",
+          "短传渗透": "42/47",
+          "跑动距离": "11.6 km"
         },
         "radar": [
           {
-            "subject": "边路突击",
-            "value": 78
+            "subject": "右路套边",
+            "value": 88
+          },
+          {
+            "subject": "短传配合",
+            "value": 84
           },
           {
             "subject": "防守拦截",
             "value": 85
           },
           {
-            "subject": "传中创造",
+            "subject": "传中脚法",
+            "value": 82
+          },
+          {
+            "subject": "前插助攻",
             "value": 80
           },
           {
             "subject": "缠斗断球",
             "value": 86
-          },
-          {
-            "subject": "前场插上",
-            "value": 79
-          },
-          {
-            "subject": "持球推进",
-            "value": 81
           }
         ]
       },
       {
-        "name": "Allan Tchaptchet",
-        "name_en": "Allan Tchaptchet",
-        "name_zh": "阿兰·特查普切特",
-        "pos": "DC",
+        "pos": "DC1",
+        "name": "Teddy Mezague",
+        "name_en": "Teddy Mezague",
+        "name_zh": "泰迪·梅扎古",
         "rating": 7.1,
         "min": 90,
         "is_mvp": false,
         "stats": {
-          "高空争顶": "7/9",
-          "解围次数": "8 次",
-          "封堵射门": "3 次",
-          "传球成功率": "84.5%",
-          "身体对抗": "88%",
+          "后场倒脚": "56/60",
+          "关键拦截": "5 次",
+          "解围次数": "6 次",
+          "高空争顶": "6/8",
+          "造越位": "3 次",
           "跑动距离": "9.8 km"
         },
         "radar": [
+          {
+            "subject": "短传组织",
+            "value": 86
+          },
+          {
+            "subject": "正面拦截",
+            "value": 88
+          },
+          {
+            "subject": "防线统帅",
+            "value": 89
+          },
+          {
+            "subject": "高空解围",
+            "value": 85
+          },
+          {
+            "subject": "沉着冷静",
+            "value": 87
+          },
+          {
+            "subject": "战术执行",
+            "value": 90
+          }
+        ]
+      },
+      {
+        "pos": "DC2",
+        "name": "Allan Tchaptchet",
+        "name_en": "Allan Tchaptchet",
+        "name_zh": "阿兰·特查普切特",
+        "rating": 7.2,
+        "min": 90,
+        "is_mvp": false,
+        "stats": {
+          "头球解围": "8 次",
+          "封堵射门": "3 次",
+          "身体对抗": "9/10",
+          "出球成功率": "89.2%",
+          "精准回传": "18 次",
+          "跑动距离": "10.0 km"
+        },
+        "radar": [
+          {
+            "subject": "硬碰硬对抗",
+            "value": 94
+          },
           {
             "subject": "高空争顶",
             "value": 92
           },
           {
-            "subject": "正面防守",
-            "value": 88
+            "subject": "后场出球",
+            "value": 84
           },
           {
-            "subject": "卡位拦截",
-            "value": 85
-          },
-          {
-            "subject": "头球解围",
+            "subject": "禁区保护",
             "value": 90
           },
           {
-            "subject": "贴身对抗",
-            "value": 89
-          },
-          {
-            "subject": "长传转移",
-            "value": 74
-          }
-        ]
-      },
-      {
-        "name": "Teddy Mezague",
-        "name_en": "Teddy Mezague",
-        "name_zh": "泰迪·梅扎古",
-        "pos": "DC",
-        "rating": 7.0,
-        "min": 90,
-        "is_mvp": false,
-        "stats": {
-          "防守拦截": "4 次",
-          "解围次数": "6 次",
-          "造越位": "3 次",
-          "长传准确": "9/12",
-          "犯规/吃牌": "1/0",
-          "跑动距离": "9.6 km"
-        },
-        "radar": [
-          {
-            "subject": "后防统领",
+            "subject": "卡位抢断",
             "value": 88
           },
           {
-            "subject": "正面拦截",
-            "value": 85
-          },
-          {
             "subject": "位置感",
-            "value": 87
-          },
-          {
-            "subject": "高空解围",
-            "value": 84
-          },
-          {
-            "subject": "出球组织",
-            "value": 80
-          },
-          {
-            "subject": "硬碰硬",
-            "value": 86
+            "value": 85
           }
         ]
       },
       {
-        "name": "Yassine Ben Hamed",
-        "name_en": "Yassine Ben Hamed",
-        "name_zh": "亚塞尼·本·哈米德",
         "pos": "DL",
-        "rating": 6.9,
+        "name": "Yumeki Yoshinaga",
+        "name_en": "Yumeki Yoshinaga",
+        "name_zh": "吉永梦希",
+        "rating": 7.2,
         "min": 90,
         "is_mvp": false,
         "stats": {
-          "铲断成功": "3/4",
-          "边路套边": "5 次",
-          "传中到位": "3 次",
-          "关键传球": "1 次",
-          "拦截回追": "3 次",
-          "跑动距离": "11.4 km"
-        },
-        "radar": [
-          {
-            "subject": "边路突击",
-            "value": 80
-          },
-          {
-            "subject": "套边插上",
-            "value": 82
-          },
-          {
-            "subject": "传中脚法",
-            "value": 81
-          },
-          {
-            "subject": "回防补位",
-            "value": 79
-          },
-          {
-            "subject": "缠斗断球",
-            "value": 80
-          },
-          {
-            "subject": "速度冲刺",
-            "value": 84
-          }
-        ]
-      },
-      {
-        "name": "Antoine Valério",
-        "name_en": "Antoine Valério",
-        "name_zh": "安托万·瓦莱里亚",
-        "pos": "MC",
-        "rating": 7.1,
-        "min": 90,
-        "is_mvp": false,
-        "stats": {
-          "传球成功率": "86.2%",
-          "向前输送": "14 次",
-          "抢断拦截": "4/2 次",
-          "争顶成功": "3 次",
-          "关键传球": "2 次",
+          "左路助攻": "1 次",
+          "关键传球": "3 次",
+          "成功过人": "4 次",
+          "短传渗透": "45/50",
+          "抢断拦截": "3/2 次",
           "跑动距离": "12.1 km"
         },
         "radar": [
           {
-            "subject": "中场调度",
-            "value": 88
-          },
-          {
-            "subject": "视野大局",
-            "value": 85
-          },
-          {
-            "subject": "拦截屏障",
-            "value": 82
-          },
-          {
-            "subject": "向前直塞",
-            "value": 86
-          },
-          {
-            "subject": "耐力跑动",
+            "subject": "左翼飞奔",
             "value": 92
           },
           {
-            "subject": "压迫抢断",
-            "value": 83
-          }
-        ]
-      },
-      {
-        "name": "Aliou Dembélé",
-        "name_en": "Aliou Dembélé",
-        "name_zh": "阿卢·登贝莱",
-        "pos": "MC",
-        "rating": 7.2,
-        "min": 90,
-        "is_mvp": false,
-        "stats": {
-          "地面对抗": "8/10",
-          "抢断拦截": "5/3 次",
-          "后插上射门": "2 次",
-          "传球到位": "45/51",
-          "犯规战术": "2 次",
-          "跑动距离": "12.4 km"
-        },
-        "radar": [
-          {
-            "subject": "中场扫荡",
-            "value": 90
-          },
-          {
-            "subject": "后插冲击",
-            "value": 85
-          },
-          {
-            "subject": "地面对抗",
+            "subject": "短传串联",
             "value": 88
           },
           {
-            "subject": "反抢延阻",
-            "value": 87
+            "subject": "灵巧盘带",
+            "value": 86
           },
           {
-            "subject": "全场覆盖",
-            "value": 94
+            "subject": "传中创造",
+            "value": 85
           },
           {
-            "subject": "分球过渡",
+            "subject": "前场插上",
+            "value": 90
+          },
+          {
+            "subject": "回防补位",
             "value": 80
           }
         ]
       },
       {
-        "name": "Tyrone Tormin",
-        "name_en": "Tyrone Tormin",
-        "name_zh": "泰伦·托明",
+        "pos": "DM",
+        "name": "Antoine Valério",
+        "name_en": "Antoine Valério",
+        "name_zh": "安托万·瓦莱里亚",
+        "rating": 7.3,
+        "min": 90,
+        "is_mvp": false,
+        "stats": {
+          "中场节拍": "68/73",
+          "向前输送": "19 次",
+          "扫荡抢断": "5/3 次",
+          "战术犯规": "2 次",
+          "拦截反击": "4 次",
+          "跑动距离": "12.5 km"
+        },
+        "radar": [
+          {
+            "subject": "短传节拍",
+            "value": 92
+          },
+          {
+            "subject": "视野大局",
+            "value": 90
+          },
+          {
+            "subject": "单后腰扫荡",
+            "value": 88
+          },
+          {
+            "subject": "向前直塞",
+            "value": 87
+          },
+          {
+            "subject": "耐力覆盖",
+            "value": 94
+          },
+          {
+            "subject": "中场屏障",
+            "value": 86
+          }
+        ]
+      },
+      {
+        "pos": "MC",
+        "name": "Aliou Dembélé",
+        "name_en": "Aliou Dembélé",
+        "name_zh": "阿卢·登贝莱",
+        "rating": 7.4,
+        "min": 85,
+        "is_mvp": false,
+        "stats": {
+          "非对称游弋": "活跃",
+          "后插上射门": "3(2)",
+          "进球/助攻": "1球/0助",
+          "地面对抗": "8/10",
+          "关键传球": "2 次",
+          "跑动距离": "12.2 km"
+        },
+        "radar": [
+          {
+            "subject": "肋部穿插",
+            "value": 90
+          },
+          {
+            "subject": "后插上终结",
+            "value": 86
+          },
+          {
+            "subject": "地面对抗",
+            "value": 89
+          },
+          {
+            "subject": "短传接应",
+            "value": 88
+          },
+          {
+            "subject": "全能B2B",
+            "value": 91
+          },
+          {
+            "subject": "前场施压",
+            "value": 84
+          }
+        ]
+      },
+      {
         "pos": "AMR",
+        "name": "Luca Maiorano",
+        "name_en": "Luca Maiorano",
+        "name_zh": "卢卡·迈奥拉诺",
+        "rating": 7.5,
+        "min": 80,
+        "is_mvp": false,
+        "stats": {
+          "进球/助攻": "1球/1助",
+          "关键传球": "4 次",
+          "突破过人": "4 次",
+          "射门(射正)": "3(2)",
+          "短传成功": "34/39",
+          "跑动距离": "11.5 km"
+        },
+        "radar": [
+          {
+            "subject": "右路突击",
+            "value": 88
+          },
+          {
+            "subject": "门前抢点",
+            "value": 87
+          },
+          {
+            "subject": "短传渗透",
+            "value": 89
+          },
+          {
+            "subject": "创造机会",
+            "value": 88
+          },
+          {
+            "subject": "灵巧摆脱",
+            "value": 85
+          },
+          {
+            "subject": "无球跑位",
+            "value": 90
+          }
+        ]
+      },
+      {
+        "pos": "AMC",
+        "name": "Paul Wade",
+        "name_en": "Paul Wade",
+        "name_zh": "保罗·韦德",
+        "rating": 7.8,
+        "min": 90,
+        "is_mvp": false,
+        "stats": {
+          "前腰做球": "12 次",
+          "关键传球": "5 次",
+          "进球/助攻": "1球/1助",
+          "高空摆渡": "8/10",
+          "禁区前沿回敲": "7 次",
+          "跑动距离": "11.4 km"
+        },
+        "radar": [
+          {
+            "subject": "前腰支点策应",
+            "value": 95
+          },
+          {
+            "subject": "致命直塞",
+            "value": 91
+          },
+          {
+            "subject": "后插上射门",
+            "value": 88
+          },
+          {
+            "subject": "空中优势",
+            "value": 92
+          },
+          {
+            "subject": "身体护球",
+            "value": 93
+          },
+          {
+            "subject": "短传串联",
+            "value": 89
+          }
+        ]
+      },
+      {
+        "pos": "AML",
+        "name": "Park Seung-Soo",
+        "name_en": "Park Seung-Soo",
+        "name_zh": "朴昇秀",
         "rating": 7.6,
         "min": 85,
         "is_mvp": false,
         "stats": {
-          "进球/助攻": "0球/1助",
-          "关键传球": "4 次",
-          "成功过人": "5 次",
+          "左路内切": "5 次",
           "射门(射正)": "3(2)",
-          "传球成功率": "83%",
-          "跑动距离": "11.9 km",
-          "突破过人": "5 次"
-        },
-        "radar": [
-          {
-            "subject": "边路突击",
-            "value": 96
-          },
-          {
-            "subject": "终结射门",
-            "value": 82
-          },
-          {
-            "subject": "传球创造",
-            "value": 90
-          },
-          {
-            "subject": "灵巧盘带",
-            "value": 94
-          },
-          {
-            "subject": "前场压迫",
-            "value": 85
-          },
-          {
-            "subject": "持球冲刺",
-            "value": 95
-          }
-        ]
-      },
-      {
-        "name": "Luca Maiorano",
-        "name_en": "Luca Maiorano",
-        "name_zh": "卢卡·迈奥拉诺",
-        "pos": "AMC",
-        "rating": 7.2,
-        "min": 80,
-        "is_mvp": false,
-        "stats": {
-          "关键传球": "3 次",
-          "前插射门": "3(1)",
-          "受侵犯": "3 次",
-          "传球成功率": "81.5%",
-          "逼抢抢断": "2 次",
-          "跑动距离": "11.3 km"
-        },
-        "radar": [
-          {
-            "subject": "前插终结",
-            "value": 86
-          },
-          {
-            "subject": "前腰策应",
-            "value": 85
-          },
-          {
-            "subject": "灵巧摆脱",
-            "value": 83
-          },
-          {
-            "subject": "禁区威胁",
-            "value": 87
-          },
-          {
-            "subject": "就地反抢",
-            "value": 80
-          },
-          {
-            "subject": "直塞渗透",
-            "value": 84
-          }
-        ]
-      },
-      {
-        "name": "Abdelsamad Hachem",
-        "name_en": "Abdelsamad Hachem",
-        "name_zh": "阿卜杜勒萨马迪·哈切姆",
-        "pos": "AML",
-        "rating": 7.5,
-        "min": 90,
-        "is_mvp": false,
-        "stats": {
           "进球/助攻": "1球/0助",
-          "射门(射正)": "3(2)",
-          "内切突破": "4 次",
-          "高位压迫": "5 次",
-          "关键传球": "1 次",
-          "跑动距离": "11.3 km"
+          "突破成功": "4/5",
+          "短传到位": "31/35",
+          "跑动距离": "11.7 km"
         },
         "radar": [
           {
-            "subject": "内切射门",
-            "value": 92
-          },
-          {
-            "subject": "抢点吃饼",
-            "value": 90
-          },
-          {
-            "subject": "无球跑位",
-            "value": 88
-          },
-          {
-            "subject": "边路起速",
-            "value": 86
-          },
-          {
-            "subject": "门前嗅觉",
-            "value": 93
-          },
-          {
-            "subject": "前场紧逼",
-            "value": 84
-          }
-        ]
-      },
-      {
-        "name": "Paul Wade",
-        "name_en": "Paul Wade",
-        "name_zh": "保罗·韦德",
-        "pos": "ST",
-        "rating": 7.8,
-        "min": 90,
-        "is_mvp": true,
-        "stats": {
-          "进球/助攻": "1球/1助",
-          "支点做球": "6 次",
-          "高空争顶": "8/11",
-          "射门(射正)": "4(2)",
-          "吸引防守": "8 次",
-          "跑动距离": "10.9 km"
-        },
-        "radar": [
-          {
-            "subject": "中锋支点",
-            "value": 92
-          },
-          {
-            "subject": "头球轰炸",
-            "value": 90
-          },
-          {
-            "subject": "终结射门",
-            "value": 87
-          },
-          {
-            "subject": "身体对抗",
+            "subject": "内切抽射",
             "value": 91
           },
           {
-            "subject": "回撤做球",
-            "value": 84
+            "subject": "灵巧变向",
+            "value": 93
           },
           {
-            "subject": "逼抢中卫",
-            "value": 83
+            "subject": "短传配合",
+            "value": 87
+          },
+          {
+            "subject": "速度冲刺",
+            "value": 92
+          },
+          {
+            "subject": "前插抢点",
+            "value": 85
+          },
+          {
+            "subject": "传球创造",
+            "value": 84
+          }
+        ]
+      },
+      {
+        "pos": "ST",
+        "name": "Abdelsamad Hachem",
+        "name_en": "Abdelsamad Hachem",
+        "name_zh": "阿卜杜勒萨马迪·哈切姆",
+        "rating": 8.2,
+        "min": 90,
+        "is_mvp": true,
+        "stats": {
+          "进球/助攻": "2球/0助",
+          "门前单刀": "3 次",
+          "射门(射正)": "5(4)",
+          "预期进球xG": "1.82",
+          "反越位冲刺": "7 次",
+          "跑动距离": "11.8 km"
+        },
+        "radar": [
+          {
+            "subject": "单前锋终结",
+            "value": 96
+          },
+          {
+            "subject": "门前嗅觉",
+            "value": 95
+          },
+          {
+            "subject": "反越位突刺",
+            "value": 94
+          },
+          {
+            "subject": "把握机会",
+            "value": 93
+          },
+          {
+            "subject": "禁区抢点",
+            "value": 92
+          },
+          {
+            "subject": "短传配合",
+            "value": 82
           }
         ]
       }
@@ -3617,477 +3586,475 @@
     ],
     "lineup": [
       {
+        "pos": "GK",
         "name": "Célestin De Schrevel",
         "name_en": "Célestin De Schrevel",
         "name_zh": "塞莱斯丁·德·施瑞沃",
-        "pos": "GK",
-        "rating": 6.8,
+        "rating": 6.9,
         "min": 90,
         "is_mvp": false,
         "stats": {
-          "扑救次数": "4 次",
-          "高空摘球": "2 次",
+          "扑救次数": "5 次",
           "出击成功": "100%",
-          "传球成功率": "79.1%",
-          "长传到位": "12/17",
-          "跑动距离": "5.4 km"
+          "短传组织": "28/31",
+          "长传到位": "11/14",
+          "高空摘球": "3 次",
+          "跑动距离": "5.6 km"
         },
         "radar": [
           {
             "subject": "门线扑救",
-            "value": 85
+            "value": 88
           },
           {
             "subject": "出击果断",
-            "value": 80
-          },
-          {
-            "subject": "高空控制",
             "value": 82
           },
           {
+            "subject": "短传脚法",
+            "value": 85
+          },
+          {
             "subject": "后场出球",
-            "value": 75
+            "value": 84
           },
           {
             "subject": "反应速度",
             "value": 86
           },
           {
-            "subject": "指挥防线",
-            "value": 78
+            "subject": "防线指挥",
+            "value": 80
           }
         ]
       },
       {
+        "pos": "DR",
         "name": "Steeven Assengue",
         "name_en": "Steeven Assengue",
         "name_zh": "斯蒂文·阿森盖",
-        "pos": "DR",
-        "rating": 7.0,
+        "rating": 7.1,
         "min": 90,
         "is_mvp": false,
         "stats": {
-          "抢断/拦截": "4/3 次",
-          "解围次数": "5 次",
-          "传中成功率": "42%",
-          "关键传球": "1 次",
-          "地面对抗": "6/8",
-          "跑动距离": "11.2 km"
+          "右路插上": "6 次",
+          "传中到位": "4 次",
+          "拦截抢断": "4/3 次",
+          "地面对抗": "7/9",
+          "短传渗透": "42/47",
+          "跑动距离": "11.6 km"
         },
         "radar": [
           {
-            "subject": "边路突击",
-            "value": 78
+            "subject": "右路套边",
+            "value": 88
+          },
+          {
+            "subject": "短传配合",
+            "value": 84
           },
           {
             "subject": "防守拦截",
             "value": 85
           },
           {
-            "subject": "传中创造",
+            "subject": "传中脚法",
+            "value": 82
+          },
+          {
+            "subject": "前插助攻",
             "value": 80
           },
           {
             "subject": "缠斗断球",
             "value": 86
-          },
-          {
-            "subject": "前场插上",
-            "value": 79
-          },
-          {
-            "subject": "持球推进",
-            "value": 81
           }
         ]
       },
       {
-        "name": "Allan Tchaptchet",
-        "name_en": "Allan Tchaptchet",
-        "name_zh": "阿兰·特查普切特",
-        "pos": "DC",
+        "pos": "DC1",
+        "name": "Teddy Mezague",
+        "name_en": "Teddy Mezague",
+        "name_zh": "泰迪·梅扎古",
         "rating": 7.1,
         "min": 90,
         "is_mvp": false,
         "stats": {
-          "高空争顶": "7/9",
-          "解围次数": "8 次",
-          "封堵射门": "3 次",
-          "传球成功率": "84.5%",
-          "身体对抗": "88%",
+          "后场倒脚": "56/60",
+          "关键拦截": "5 次",
+          "解围次数": "6 次",
+          "高空争顶": "6/8",
+          "造越位": "3 次",
           "跑动距离": "9.8 km"
         },
         "radar": [
+          {
+            "subject": "短传组织",
+            "value": 86
+          },
+          {
+            "subject": "正面拦截",
+            "value": 88
+          },
+          {
+            "subject": "防线统帅",
+            "value": 89
+          },
+          {
+            "subject": "高空解围",
+            "value": 85
+          },
+          {
+            "subject": "沉着冷静",
+            "value": 87
+          },
+          {
+            "subject": "战术执行",
+            "value": 90
+          }
+        ]
+      },
+      {
+        "pos": "DC2",
+        "name": "Allan Tchaptchet",
+        "name_en": "Allan Tchaptchet",
+        "name_zh": "阿兰·特查普切特",
+        "rating": 7.2,
+        "min": 90,
+        "is_mvp": false,
+        "stats": {
+          "头球解围": "8 次",
+          "封堵射门": "3 次",
+          "身体对抗": "9/10",
+          "出球成功率": "89.2%",
+          "精准回传": "18 次",
+          "跑动距离": "10.0 km"
+        },
+        "radar": [
+          {
+            "subject": "硬碰硬对抗",
+            "value": 94
+          },
           {
             "subject": "高空争顶",
             "value": 92
           },
           {
-            "subject": "正面防守",
-            "value": 88
+            "subject": "后场出球",
+            "value": 84
           },
           {
-            "subject": "卡位拦截",
-            "value": 85
-          },
-          {
-            "subject": "头球解围",
+            "subject": "禁区保护",
             "value": 90
           },
           {
-            "subject": "贴身对抗",
-            "value": 89
-          },
-          {
-            "subject": "长传转移",
-            "value": 74
-          }
-        ]
-      },
-      {
-        "name": "Teddy Mezague",
-        "name_en": "Teddy Mezague",
-        "name_zh": "泰迪·梅扎古",
-        "pos": "DC",
-        "rating": 7.0,
-        "min": 90,
-        "is_mvp": false,
-        "stats": {
-          "防守拦截": "4 次",
-          "解围次数": "6 次",
-          "造越位": "3 次",
-          "长传准确": "9/12",
-          "犯规/吃牌": "1/0",
-          "跑动距离": "9.6 km"
-        },
-        "radar": [
-          {
-            "subject": "后防统领",
+            "subject": "卡位抢断",
             "value": 88
           },
           {
-            "subject": "正面拦截",
-            "value": 85
-          },
-          {
             "subject": "位置感",
-            "value": 87
-          },
-          {
-            "subject": "高空解围",
-            "value": 84
-          },
-          {
-            "subject": "出球组织",
-            "value": 80
-          },
-          {
-            "subject": "硬碰硬",
-            "value": 86
+            "value": 85
           }
         ]
       },
       {
-        "name": "Yassine Ben Hamed",
-        "name_en": "Yassine Ben Hamed",
-        "name_zh": "亚塞尼·本·哈米德",
         "pos": "DL",
-        "rating": 6.9,
+        "name": "Yumeki Yoshinaga",
+        "name_en": "Yumeki Yoshinaga",
+        "name_zh": "吉永梦希",
+        "rating": 7.2,
         "min": 90,
         "is_mvp": false,
         "stats": {
-          "铲断成功": "3/4",
-          "边路套边": "5 次",
-          "传中到位": "3 次",
-          "关键传球": "1 次",
-          "拦截回追": "3 次",
-          "跑动距离": "11.4 km"
-        },
-        "radar": [
-          {
-            "subject": "边路突击",
-            "value": 80
-          },
-          {
-            "subject": "套边插上",
-            "value": 82
-          },
-          {
-            "subject": "传中脚法",
-            "value": 81
-          },
-          {
-            "subject": "回防补位",
-            "value": 79
-          },
-          {
-            "subject": "缠斗断球",
-            "value": 80
-          },
-          {
-            "subject": "速度冲刺",
-            "value": 84
-          }
-        ]
-      },
-      {
-        "name": "Antoine Valério",
-        "name_en": "Antoine Valério",
-        "name_zh": "安托万·瓦莱里亚",
-        "pos": "MC",
-        "rating": 7.1,
-        "min": 90,
-        "is_mvp": false,
-        "stats": {
-          "传球成功率": "86.2%",
-          "向前输送": "14 次",
-          "抢断拦截": "4/2 次",
-          "争顶成功": "3 次",
-          "关键传球": "2 次",
+          "左路助攻": "1 次",
+          "关键传球": "3 次",
+          "成功过人": "4 次",
+          "短传渗透": "45/50",
+          "抢断拦截": "3/2 次",
           "跑动距离": "12.1 km"
         },
         "radar": [
           {
-            "subject": "中场调度",
-            "value": 88
-          },
-          {
-            "subject": "视野大局",
-            "value": 85
-          },
-          {
-            "subject": "拦截屏障",
-            "value": 82
-          },
-          {
-            "subject": "向前直塞",
-            "value": 86
-          },
-          {
-            "subject": "耐力跑动",
+            "subject": "左翼飞奔",
             "value": 92
           },
           {
-            "subject": "压迫抢断",
-            "value": 83
-          }
-        ]
-      },
-      {
-        "name": "Aliou Dembélé",
-        "name_en": "Aliou Dembélé",
-        "name_zh": "阿卢·登贝莱",
-        "pos": "MC",
-        "rating": 7.2,
-        "min": 90,
-        "is_mvp": false,
-        "stats": {
-          "地面对抗": "8/10",
-          "抢断拦截": "5/3 次",
-          "后插上射门": "2 次",
-          "传球到位": "45/51",
-          "犯规战术": "2 次",
-          "跑动距离": "12.4 km"
-        },
-        "radar": [
-          {
-            "subject": "中场扫荡",
-            "value": 90
-          },
-          {
-            "subject": "后插冲击",
-            "value": 85
-          },
-          {
-            "subject": "地面对抗",
+            "subject": "短传串联",
             "value": 88
           },
           {
-            "subject": "反抢延阻",
-            "value": 87
-          },
-          {
-            "subject": "全场覆盖",
-            "value": 94
-          },
-          {
-            "subject": "分球过渡",
-            "value": 80
-          }
-        ]
-      },
-      {
-        "name": "Tyrone Tormin",
-        "name_en": "Tyrone Tormin",
-        "name_zh": "泰伦·托明",
-        "pos": "AMR",
-        "rating": 8.1,
-        "min": 85,
-        "is_mvp": true,
-        "stats": {
-          "进球/助攻": "1球/1助",
-          "关键传球": "5 次",
-          "成功过人": "5 次",
-          "射门(射正)": "3(2)",
-          "传球成功率": "86%",
-          "跑动距离": "12.0 km",
-          "过人成功": "7 次"
-        },
-        "radar": [
-          {
-            "subject": "边路突击",
-            "value": 96
-          },
-          {
-            "subject": "终结射门",
-            "value": 82
-          },
-          {
-            "subject": "传球创造",
-            "value": 90
-          },
-          {
             "subject": "灵巧盘带",
-            "value": 94
-          },
-          {
-            "subject": "前场压迫",
-            "value": 85
-          },
-          {
-            "subject": "持球冲刺",
-            "value": 95
-          }
-        ]
-      },
-      {
-        "name": "Luca Maiorano",
-        "name_en": "Luca Maiorano",
-        "name_zh": "卢卡·迈奥拉诺",
-        "pos": "AMC",
-        "rating": 7.2,
-        "min": 80,
-        "is_mvp": false,
-        "stats": {
-          "关键传球": "3 次",
-          "前插射门": "3(1)",
-          "受侵犯": "3 次",
-          "传球成功率": "81.5%",
-          "逼抢抢断": "2 次",
-          "跑动距离": "11.3 km"
-        },
-        "radar": [
-          {
-            "subject": "前插终结",
             "value": 86
           },
           {
-            "subject": "前腰策应",
+            "subject": "传中创造",
             "value": 85
           },
           {
-            "subject": "灵巧摆脱",
-            "value": 83
+            "subject": "前场插上",
+            "value": 90
           },
           {
-            "subject": "禁区威胁",
+            "subject": "回防补位",
+            "value": 80
+          }
+        ]
+      },
+      {
+        "pos": "DM",
+        "name": "Antoine Valério",
+        "name_en": "Antoine Valério",
+        "name_zh": "安托万·瓦莱里亚",
+        "rating": 7.3,
+        "min": 90,
+        "is_mvp": false,
+        "stats": {
+          "中场节拍": "68/73",
+          "向前输送": "19 次",
+          "扫荡抢断": "5/3 次",
+          "战术犯规": "2 次",
+          "拦截反击": "4 次",
+          "跑动距离": "12.5 km"
+        },
+        "radar": [
+          {
+            "subject": "短传节拍",
+            "value": 92
+          },
+          {
+            "subject": "视野大局",
+            "value": 90
+          },
+          {
+            "subject": "单后腰扫荡",
+            "value": 88
+          },
+          {
+            "subject": "向前直塞",
             "value": 87
           },
           {
-            "subject": "就地反抢",
-            "value": 80
+            "subject": "耐力覆盖",
+            "value": 94
           },
           {
-            "subject": "直塞渗透",
+            "subject": "中场屏障",
+            "value": 86
+          }
+        ]
+      },
+      {
+        "pos": "MC",
+        "name": "Aliou Dembélé",
+        "name_en": "Aliou Dembélé",
+        "name_zh": "阿卢·登贝莱",
+        "rating": 7.4,
+        "min": 85,
+        "is_mvp": false,
+        "stats": {
+          "非对称游弋": "活跃",
+          "后插上射门": "3(2)",
+          "进球/助攻": "1球/0助",
+          "地面对抗": "8/10",
+          "关键传球": "2 次",
+          "跑动距离": "12.2 km"
+        },
+        "radar": [
+          {
+            "subject": "肋部穿插",
+            "value": 90
+          },
+          {
+            "subject": "后插上终结",
+            "value": 86
+          },
+          {
+            "subject": "地面对抗",
+            "value": 89
+          },
+          {
+            "subject": "短传接应",
+            "value": 88
+          },
+          {
+            "subject": "全能B2B",
+            "value": 91
+          },
+          {
+            "subject": "前场施压",
             "value": 84
           }
         ]
       },
       {
-        "name": "Abdelsamad Hachem",
-        "name_en": "Abdelsamad Hachem",
-        "name_zh": "阿卜杜勒萨马迪·哈切姆",
-        "pos": "AML",
-        "rating": 8.0,
+        "pos": "AMR",
+        "name": "Luca Maiorano",
+        "name_en": "Luca Maiorano",
+        "name_zh": "卢卡·迈奥拉诺",
+        "rating": 7.5,
+        "min": 80,
+        "is_mvp": false,
+        "stats": {
+          "进球/助攻": "1球/1助",
+          "关键传球": "4 次",
+          "突破过人": "4 次",
+          "射门(射正)": "3(2)",
+          "短传成功": "34/39",
+          "跑动距离": "11.5 km"
+        },
+        "radar": [
+          {
+            "subject": "右路突击",
+            "value": 88
+          },
+          {
+            "subject": "门前抢点",
+            "value": 87
+          },
+          {
+            "subject": "短传渗透",
+            "value": 89
+          },
+          {
+            "subject": "创造机会",
+            "value": 88
+          },
+          {
+            "subject": "灵巧摆脱",
+            "value": 85
+          },
+          {
+            "subject": "无球跑位",
+            "value": 90
+          }
+        ]
+      },
+      {
+        "pos": "AMC",
+        "name": "Paul Wade",
+        "name_en": "Paul Wade",
+        "name_zh": "保罗·韦德",
+        "rating": 7.8,
         "min": 90,
         "is_mvp": false,
         "stats": {
+          "前腰做球": "12 次",
+          "关键传球": "5 次",
+          "进球/助攻": "1球/1助",
+          "高空摆渡": "8/10",
+          "禁区前沿回敲": "7 次",
+          "跑动距离": "11.4 km"
+        },
+        "radar": [
+          {
+            "subject": "前腰支点策应",
+            "value": 95
+          },
+          {
+            "subject": "致命直塞",
+            "value": 91
+          },
+          {
+            "subject": "后插上射门",
+            "value": 88
+          },
+          {
+            "subject": "空中优势",
+            "value": 92
+          },
+          {
+            "subject": "身体护球",
+            "value": 93
+          },
+          {
+            "subject": "短传串联",
+            "value": 89
+          }
+        ]
+      },
+      {
+        "pos": "AML",
+        "name": "Park Seung-Soo",
+        "name_en": "Park Seung-Soo",
+        "name_zh": "朴昇秀",
+        "rating": 7.6,
+        "min": 85,
+        "is_mvp": false,
+        "stats": {
+          "左路内切": "5 次",
+          "射门(射正)": "3(2)",
+          "进球/助攻": "1球/0助",
+          "突破成功": "4/5",
+          "短传到位": "31/35",
+          "跑动距离": "11.7 km"
+        },
+        "radar": [
+          {
+            "subject": "内切抽射",
+            "value": 91
+          },
+          {
+            "subject": "灵巧变向",
+            "value": 93
+          },
+          {
+            "subject": "短传配合",
+            "value": 87
+          },
+          {
+            "subject": "速度冲刺",
+            "value": 92
+          },
+          {
+            "subject": "前插抢点",
+            "value": 85
+          },
+          {
+            "subject": "传球创造",
+            "value": 84
+          }
+        ]
+      },
+      {
+        "pos": "ST",
+        "name": "Abdelsamad Hachem",
+        "name_en": "Abdelsamad Hachem",
+        "name_zh": "阿卜杜勒萨马迪·哈切姆",
+        "rating": 8.2,
+        "min": 90,
+        "is_mvp": true,
+        "stats": {
           "进球/助攻": "2球/0助",
+          "门前单刀": "3 次",
           "射门(射正)": "5(4)",
-          "内切突破": "5 次",
-          "高位压迫": "5 次",
-          "关键传球": "1 次",
+          "预期进球xG": "1.82",
+          "反越位冲刺": "7 次",
           "跑动距离": "11.8 km"
         },
         "radar": [
           {
-            "subject": "内切射门",
-            "value": 92
-          },
-          {
-            "subject": "抢点吃饼",
-            "value": 90
-          },
-          {
-            "subject": "无球跑位",
-            "value": 88
-          },
-          {
-            "subject": "边路起速",
-            "value": 86
+            "subject": "单前锋终结",
+            "value": 96
           },
           {
             "subject": "门前嗅觉",
+            "value": 95
+          },
+          {
+            "subject": "反越位突刺",
+            "value": 94
+          },
+          {
+            "subject": "把握机会",
             "value": 93
           },
           {
-            "subject": "前场紧逼",
-            "value": 84
-          }
-        ]
-      },
-      {
-        "name": "Paul Wade",
-        "name_en": "Paul Wade",
-        "name_zh": "保罗·韦德",
-        "pos": "ST",
-        "rating": 7.6,
-        "min": 90,
-        "is_mvp": false,
-        "stats": {
-          "进球/助攻": "0球/1助",
-          "支点做球": "8 次",
-          "高空争顶": "7/10",
-          "射门(射正)": "4(2)",
-          "吸引防守": "8 次",
-          "跑动距离": "11.1 km",
-          "争顶胜率": "75%"
-        },
-        "radar": [
-          {
-            "subject": "中锋支点",
+            "subject": "禁区抢点",
             "value": 92
           },
           {
-            "subject": "头球轰炸",
-            "value": 90
-          },
-          {
-            "subject": "终结射门",
-            "value": 87
-          },
-          {
-            "subject": "身体对抗",
-            "value": 91
-          },
-          {
-            "subject": "回撤做球",
-            "value": 84
-          },
-          {
-            "subject": "逼抢中卫",
-            "value": 83
+            "subject": "短传配合",
+            "value": 82
           }
         ]
       }

@@ -1294,33 +1294,29 @@ const currentRoundOtherMatches = computed(() => {
   return roundMatches.value[String(currentRound.value)] || []
 })
 
-// 4-2-3-1 绿茵战术板阵型坐标映射
+// 4-1-1-3-1 非对称密集短传 绿茵战术板阵型坐标映射
 const formationPlayers = computed(() => {
   if (!currentMatch.value?.lineup) return []
   const lineup = currentMatch.value.lineup
   const coords = {
     'GK': { top: '89%', left: '50%' },
-    'DL': { top: '72%', left: '16%' },
+    'DL': { top: '70%', left: '16%' },
     'DC1': { top: '74%', left: '38%' },
     'DC2': { top: '74%', left: '62%' },
-    'DR': { top: '72%', left: '84%' },
-    'MC1': { top: '53%', left: '33%' },
-    'MC2': { top: '53%', left: '67%' },
-    'AML': { top: '33%', left: '18%' },
-    'AMC': { top: '33%', left: '50%' },
-    'AMR': { top: '33%', left: '82%' },
-    'ST': { top: '14%', left: '50%' }
+    'DR': { top: '70%', left: '84%' },
+    'DM': { top: '56%', left: '38%' },
+    'MC': { top: '48%', left: '64%' },
+    'AML': { top: '30%', left: '20%' },
+    'AMC': { top: '30%', left: '50%' },
+    'AMR': { top: '30%', left: '80%' },
+    'ST': { top: '12%', left: '50%' }
   }
   let dcCount = 0
-  let mcCount = 0
   return lineup.map((p) => {
     let posKey = p.pos
     if (posKey.includes('DC')) {
       dcCount++
       posKey = dcCount === 1 ? 'DC1' : 'DC2'
-    } else if (posKey === 'MC' || posKey === 'DM') {
-      mcCount++
-      posKey = mcCount === 1 ? 'MC1' : 'MC2'
     }
     const coord = coords[posKey] || { top: '50%', left: '50%' }
     return {
