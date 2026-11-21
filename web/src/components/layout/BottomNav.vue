@@ -34,8 +34,11 @@
     </button>
 
     <button
-      @click="$emit('open-mailbox')"
-      class="flex flex-col items-center space-y-0.5 py-1 px-3 rounded-lg text-slate-400 hover:text-amber-400 transition relative"
+      @click="$emit('update:activeTab', 'mailbox')"
+      :class="[
+        'flex flex-col items-center space-y-0.5 py-1 px-3 rounded-lg transition relative',
+        activeTab === 'mailbox' ? 'text-amber-400 font-bold' : 'text-slate-400 hover:text-slate-200'
+      ]"
     >
       <span class="text-base">💼</span>
       <span class="text-[10px]">主帅信箱</span>
@@ -52,5 +55,5 @@ defineProps({
   }
 })
 
-defineEmits(['update:activeTab', 'open-mailbox'])
+defineEmits(['update:activeTab'])
 </script>

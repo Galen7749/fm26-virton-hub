@@ -49,20 +49,18 @@
           :availableLeagues="availableLeagues"
           :leaderboards="leaderboards"
         />
+
+        <!-- 模块 D: 💼 主帅信箱 (私域主帅工作台页面，非弹窗) -->
+        <ManagerMailbox
+          v-else-if="activeTab === 'mailbox'"
+          :mailbox="mailbox"
+        />
       </div>
 
       <!-- 3. 底部常驻导航条 (唯一全局导航：比赛 / 战术 / 榜单 / 信箱) -->
       <BottomNav
         :activeTab="activeTab"
         @update:activeTab="changeTab"
-        @open-mailbox="showMailbox = true"
-      />
-
-      <!-- 4. 私域主帅信箱弹窗 (严格隔离第四面墙) -->
-      <ManagerMailbox
-        v-if="showMailbox"
-        :mailbox="mailbox"
-        @close="showMailbox = false"
       />
 
     </main>
@@ -135,9 +133,6 @@ const selectedRoundOtherMatches = computed(() => {
   if (!selectedMatch.value) return []
   return roundMatches.value[String(selectedMatch.value.round)] || []
 })
-
-// 私域主帅信箱显示状态
-const showMailbox = ref(false)
 
 // 交互操作
 const onSelectMatch = (matchId) => {
