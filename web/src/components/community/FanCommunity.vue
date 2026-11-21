@@ -38,10 +38,36 @@
           <span>参与评选人数: <strong class="text-slate-200">{{ communityData?.season_coach_summary?.total_votes || '19,850' }}</strong></span>
         </div>
 
-        <!-- 历轮评分走势小滑块条 -->
-        <div class="space-y-1 pt-1">
+        <!-- 视图切换条 (Chart.js 动态走势图 vs 药丸卡片) -->
+        <div class="flex items-center justify-between pt-1">
+          <div class="text-[9px] text-slate-500 font-bold">
+            历轮主帅战术执教评分跟踪：
+          </div>
+          <div class="bg-slate-900 border border-slate-800 rounded-lg p-0.5 flex space-x-1">
+            <button
+              @click="chartViewMode = 'chart'"
+              :class="['px-2 py-0.5 rounded text-[10px] font-semibold transition', chartViewMode === 'chart' ? 'bg-emerald-600 text-white font-bold' : 'text-slate-400 hover:text-white']"
+            >
+              📈 趋势图表
+            </button>
+            <button
+              @click="chartViewMode = 'pills'"
+              :class="['px-2 py-0.5 rounded text-[10px] font-semibold transition', chartViewMode === 'pills' ? 'bg-emerald-600 text-white font-bold' : 'text-slate-400 hover:text-white']"
+            >
+              📋 轮次卡片
+            </button>
+          </div>
+        </div>
+
+        <!-- 模式 A: Chart.js 驱动的专业平滑贝塞尔折线走势图 -->
+        <div v-show="chartViewMode === 'chart'" class="pt-0.5">
+          <ScoreTrendChart :scores="communityData?.season_coach_summary?.round_scores || []" />
+        </div>
+
+        <!-- 模式 B: 历轮评分走势小滑块条 (供横向轻扫查阅) -->
+        <div v-show="chartViewMode === 'pills'" class="space-y-1 pt-1">
           <div class="text-[9px] text-slate-500 font-bold flex justify-between">
-            <span>各轮次单场主帅评分走势：</span>
+            <span>各轮次单场主帅评分卡片：</span>
             <span>滑动查看全部轮次 ›</span>
           </div>
           <div class="flex items-center space-x-1.5 overflow-x-auto no-scrollbar py-0.5 select-none">
@@ -205,6 +231,7 @@
 
 <script setup>
 import { ref, computed } from 'vue'
+import ScoreTrendChart from '../common/ScoreTrendChart.vue'
 
 const props = defineProps({
   communityData: {
@@ -212,6 +239,9 @@ const props = defineProps({
     required: true
   }
 })
+
+// 图表模式：'chart' (折线图) vs 'pills' (药丸列表)
+const chartViewMode = ref('chart')
 
 // 分类筛选 Tabs
 const activeCategory = ref('all')
