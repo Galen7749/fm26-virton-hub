@@ -1,0 +1,35 @@
+{
+  "current_season": "2025-2026",
+  "current_club_id": "virton",
+  "clubs": [
+    {
+      "id": "virton",
+      "name": "维尔通精英",
+      "full_name": "Royal Excelsior Virton",
+      "league": "比利时甲级B组 (Challenger Pro League)",
+      "league_short": "比乙",
+      "badge": "🟢",
+      "country": "比利时 🇧🇪",
+      "stadium": "伊夫·勒卡尔彭蒂耶体育场",
+      "seasons": [
+        {
+          "id": "2025-2026",
+          "label": "2025/26 赛季",
+          "league": "比乙联赛",
+          "status": "进行中 (第8轮)",
+          "stats": {
+            "played": 8,
+            "won": 4,
+            "drawn": 3,
+            "lost": 1,
+            "goals_for": 15,
+            "goals_against": 9,
+            "points": 15,
+            "rank": 3
+          }
+        }
+      ]
+    }
+  ],
+  "history": []
+}

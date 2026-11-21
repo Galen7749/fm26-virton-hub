@@ -1,0 +1,56 @@
+<template>
+  <footer class="fixed bottom-0 w-full max-w-md bg-slate-900/95 backdrop-blur border-t border-slate-800 px-4 py-2 flex items-center justify-around text-xs z-30 shadow-lg">
+    <button
+      @click="$emit('update:activeTab', 'matches')"
+      :class="[
+        'flex flex-col items-center space-y-0.5 py-1 px-3 rounded-lg transition',
+        activeTab === 'matches' ? 'text-emerald-400 font-bold' : 'text-slate-400 hover:text-slate-200'
+      ]"
+    >
+      <span class="text-base">⚽</span>
+      <span class="text-[10px]">比赛大盘</span>
+    </button>
+
+    <button
+      @click="$emit('update:activeTab', 'tactics')"
+      :class="[
+        'flex flex-col items-center space-y-0.5 py-1 px-3 rounded-lg transition',
+        activeTab === 'tactics' ? 'text-emerald-400 font-bold' : 'text-slate-400 hover:text-slate-200'
+      ]"
+    >
+      <span class="text-base">📊</span>
+      <span class="text-[10px]">球队战术</span>
+    </button>
+
+    <button
+      @click="$emit('update:activeTab', 'standings')"
+      :class="[
+        'flex flex-col items-center space-y-0.5 py-1 px-3 rounded-lg transition',
+        activeTab === 'standings' ? 'text-emerald-400 font-bold' : 'text-slate-400 hover:text-slate-200'
+      ]"
+    >
+      <span class="text-base">🏆</span>
+      <span class="text-[10px]">榜单大盘</span>
+    </button>
+
+    <button
+      @click="$emit('open-mailbox')"
+      class="flex flex-col items-center space-y-0.5 py-1 px-3 rounded-lg text-slate-400 hover:text-amber-400 transition relative"
+    >
+      <span class="text-base">💼</span>
+      <span class="text-[10px]">主帅信箱</span>
+      <span class="w-1.5 h-1.5 rounded-full bg-amber-400 absolute top-1 right-2"></span>
+    </button>
+  </footer>
+</template>
+
+<script setup>
+defineProps({
+  activeTab: {
+    type: String,
+    required: true
+  }
+})
+
+defineEmits(['update:activeTab', 'open-mailbox'])
+</script>
