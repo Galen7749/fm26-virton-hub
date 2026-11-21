@@ -491,15 +491,15 @@
           <div class="grid grid-cols-3 gap-2 text-center text-xs">
             <div class="bg-slate-950 p-2 rounded-lg border border-slate-850">
               <div class="text-[10px] text-slate-400">核心阵型</div>
-              <div class="font-black text-white mt-0.5">{{ teamAnalysis.tactical_system.formation }}</div>
+              <div class="font-black text-white mt-0.5">{{ teamAnalysis?.tactical_system?.formation || teamAnalysis?.tactical_overview?.formation || '4-2-3-1' }}</div>
             </div>
             <div class="bg-slate-950 p-2 rounded-lg border border-slate-850">
               <div class="text-[10px] text-slate-400">战术风格</div>
-              <div class="font-bold text-emerald-400 mt-0.5 truncate text-[11px]">{{ teamAnalysis.tactical_system.style_name }}</div>
+              <div class="font-bold text-emerald-400 mt-0.5 truncate text-[11px]">{{ teamAnalysis?.tactical_system?.style_name || teamAnalysis?.tactical_overview?.mentality || '全场高位反抢' }}</div>
             </div>
             <div class="bg-slate-950 p-2 rounded-lg border border-slate-850">
               <div class="text-[10px] text-slate-400">战术节奏</div>
-              <div class="font-black text-white mt-0.5">{{ teamAnalysis.tactical_system.tempo }}</div>
+              <div class="font-black text-white mt-0.5">{{ teamAnalysis?.tactical_system?.tempo || '极快节奏' }}</div>
             </div>
           </div>
         </div>
@@ -516,21 +516,21 @@
 
           <!-- 分布走廊三段进度条 -->
           <div class="w-full bg-slate-950 h-3 rounded-full overflow-hidden flex border border-slate-800">
-            <div class="bg-teal-600 h-full flex items-center justify-center text-[8px] text-white font-black" :style="{ width: `${teamAnalysis.attack_channels.left_wing}%` }">
-              左 {{ teamAnalysis.attack_channels.left_wing }}%
+            <div class="bg-teal-600 h-full flex items-center justify-center text-[8px] text-white font-black" :style="{ width: `${teamAnalysis?.attack_channels?.left_wing || teamAnalysis?.attack_channels?.left || 29}%` }">
+              左 {{ teamAnalysis?.attack_channels?.left_wing || teamAnalysis?.attack_channels?.left || 29 }}%
             </div>
-            <div class="bg-slate-700 h-full flex items-center justify-center text-[8px] text-slate-200 font-black" :style="{ width: `${teamAnalysis.attack_channels.center}%` }">
-              中 {{ teamAnalysis.attack_channels.center }}%
+            <div class="bg-slate-700 h-full flex items-center justify-center text-[8px] text-slate-200 font-black" :style="{ width: `${teamAnalysis?.attack_channels?.center || 28}%` }">
+              中 {{ teamAnalysis?.attack_channels?.center || 28 }}%
             </div>
-            <div class="bg-emerald-500 h-full flex items-center justify-center text-[8px] text-slate-950 font-black" :style="{ width: `${teamAnalysis.attack_channels.right_wing}%` }">
-              右 {{ teamAnalysis.attack_channels.right_wing }}%
+            <div class="bg-emerald-500 h-full flex items-center justify-center text-[8px] text-slate-950 font-black" :style="{ width: `${teamAnalysis?.attack_channels?.right_wing || teamAnalysis?.attack_channels?.right || 43}%` }">
+              右 {{ teamAnalysis?.attack_channels?.right_wing || teamAnalysis?.attack_channels?.right || 43 }}%
             </div>
           </div>
 
           <div class="grid grid-cols-3 gap-2 text-center text-[10px] text-slate-400 pt-1">
-            <div>左路发起 (28%)</div>
-            <div>中路渗透 (32%)</div>
-            <div class="text-emerald-400 font-bold">右路突击 (40% ★)</div>
+            <div>左路发起 ({{ teamAnalysis?.attack_channels?.left_wing || teamAnalysis?.attack_channels?.left || 29 }}%)</div>
+            <div>中路渗透 ({{ teamAnalysis?.attack_channels?.center || 28 }}%)</div>
+            <div class="text-emerald-400 font-bold">右路突击 ({{ teamAnalysis?.attack_channels?.right_wing || teamAnalysis?.attack_channels?.right || 43 }}% ★)</div>
           </div>
         </div>
 
@@ -541,12 +541,12 @@
               <span>📈</span>
               <span>核心战术指标对标 (维尔通 vs 比乙平均)</span>
             </span>
-            <span class="text-[10px] text-slate-400 font-normal">基于前3轮官方数据</span>
+            <span class="text-[10px] text-slate-400 font-normal">基于前8轮官方数据</span>
           </div>
 
           <div class="space-y-2.5">
             <div
-              v-for="m in teamAnalysis.team_radar"
+              v-for="m in (teamAnalysis?.team_radar || [])"
               :key="m.label"
               class="space-y-1 text-xs"
             >
@@ -579,7 +579,7 @@
               <span>主帅体系核心优势</span>
             </div>
             <ul class="space-y-1 text-[11px] text-slate-300">
-              <li v-for="(str, sIdx) in teamAnalysis.strengths" :key="sIdx" class="leading-relaxed">
+              <li v-for="(str, sIdx) in (teamAnalysis?.strengths || [])" :key="sIdx" class="leading-relaxed">
                 • {{ str }}
               </li>
             </ul>
@@ -592,7 +592,7 @@
               <span>潜在技战术与阵容隐患</span>
             </div>
             <ul class="space-y-1 text-[11px] text-slate-300">
-              <li v-for="(c, cIdx) in teamAnalysis.concerns" :key="cIdx" class="leading-relaxed">
+              <li v-for="(c, cIdx) in (teamAnalysis?.concerns || [])" :key="cIdx" class="leading-relaxed">
                 • {{ c }}
               </li>
             </ul>
@@ -606,7 +606,7 @@
             <span>外媒专栏 · 战术观察哨</span>
           </div>
           <p class="text-xs text-slate-300 leading-relaxed font-sans bg-slate-950 p-2.5 rounded-lg border border-slate-850">
-            {{ teamAnalysis.analyst_quote }}
+            {{ teamAnalysis?.analyst_quote || teamAnalysis?.media_quote?.content || '暂无外媒点评' }}
           </p>
         </div>
 
