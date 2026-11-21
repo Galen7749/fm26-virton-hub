@@ -47,8 +47,8 @@
       </div>
 
       <!-- 比分栏 -->
-      <div class="flex items-center justify-between py-1">
-        <div class="w-5/12 text-center">
+      <div class="flex items-center justify-between py-1.5 px-1">
+        <div class="flex-1 text-center min-w-0 pr-2">
           <div :class="[
             'text-sm font-bold truncate',
             match.home_team.includes('维尔通') ? 'text-emerald-400 font-black' : 'text-white'
@@ -58,12 +58,12 @@
           <div class="text-[10px] text-slate-500 mt-0.5">主队</div>
         </div>
 
-        <div class="w-2/12 text-center">
-          <div class="text-2xl font-black text-white tracking-wider">
+        <div class="shrink-0 text-center px-2 flex flex-col items-center">
+          <div class="text-2xl font-black text-white tracking-wider whitespace-nowrap font-mono">
             {{ match.score_home }} - {{ match.score_away }}
           </div>
           <span :class="[
-            'text-[9px] px-1.5 py-0.2 rounded font-bold font-mono inline-block mt-0.5',
+            'text-[9px] px-1.5 py-0.2 rounded font-bold font-mono inline-block mt-0.5 whitespace-nowrap',
             match.result === 'W' || match.result === '胜' ? 'bg-emerald-950 text-emerald-300 border border-emerald-800' :
             match.result === 'D' || match.result === '平' ? 'bg-amber-950 text-amber-300 border border-amber-800' :
             'bg-rose-950 text-rose-300 border border-rose-800'
@@ -72,7 +72,7 @@
           </span>
         </div>
 
-        <div class="w-5/12 text-center">
+        <div class="flex-1 text-center min-w-0 pl-2">
           <div :class="[
             'text-sm font-bold truncate',
             match.away_team.includes('维尔通') ? 'text-emerald-400 font-black' : 'text-white'

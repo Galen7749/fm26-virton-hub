@@ -27,9 +27,9 @@
     </div>
 
     <!-- 中间对阵与比分 -->
-    <div class="flex items-center justify-between py-1 px-1">
+    <div class="flex items-center justify-between py-1.5 px-1">
       <!-- 主队 -->
-      <div class="w-5/12 text-right pr-2">
+      <div class="flex-1 text-right pr-2 min-w-0">
         <div :class="[
           'text-xs font-bold truncate',
           match.home_team.includes('维尔通') ? 'text-emerald-400 font-black' : 'text-slate-200'
@@ -39,15 +39,15 @@
         <div class="text-[10px] text-slate-500 mt-0.5">主队</div>
       </div>
 
-      <!-- 比分 -->
-      <div class="w-2/12 text-center shrink-0">
-        <span class="bg-slate-950 text-white font-mono font-black text-base px-2.5 py-1 rounded-lg border border-slate-800 tracking-wider shadow-inner inline-block">
+      <!-- 比分 (绝对不折行) -->
+      <div class="shrink-0 text-center mx-1.5">
+        <span class="bg-slate-950 text-white font-mono font-black text-sm px-3 py-1 rounded-lg border border-slate-800 tracking-wider shadow-inner inline-flex items-center justify-center whitespace-nowrap min-w-[54px] select-none">
           {{ match.score_home }} - {{ match.score_away }}
         </span>
       </div>
 
       <!-- 客队 -->
-      <div class="w-5/12 text-left pl-2">
+      <div class="flex-1 text-left pl-2 min-w-0">
         <div :class="[
           'text-xs font-bold truncate',
           match.away_team.includes('维尔通') ? 'text-emerald-400 font-black' : 'text-slate-200'

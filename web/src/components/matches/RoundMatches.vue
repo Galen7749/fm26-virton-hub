@@ -27,9 +27,9 @@
           </span>
         </div>
 
-        <!-- 3. 比分药丸 (固定46px，水平居中) -->
+        <!-- 3. 比分药丸 (水平居中，保证单行) -->
         <div class="flex justify-center">
-          <span class="font-mono font-bold bg-slate-950 text-slate-100 px-2 py-0.5 rounded text-[11px] border border-slate-800 text-center w-[46px] block tracking-wider">
+          <span class="font-mono font-bold bg-slate-950 text-slate-100 px-2 py-0.5 rounded text-[11px] border border-slate-800 text-center min-w-[48px] block tracking-wider whitespace-nowrap select-none">
             {{ m.score }}
           </span>
         </div>
