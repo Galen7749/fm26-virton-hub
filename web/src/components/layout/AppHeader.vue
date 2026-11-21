@@ -1,5 +1,6 @@
 <template>
   <header class="bg-slate-900 border-b border-slate-800 px-4 py-3 flex items-center justify-between sticky top-0 z-30 shadow-md">
+    <!-- 左侧：媒体品牌与执教俱乐部 -->
     <div class="flex items-center space-x-2.5">
       <div class="w-8 h-8 rounded-lg bg-emerald-600 flex items-center justify-center font-black text-white text-base tracking-tighter shadow-sm">
         FH
@@ -12,22 +13,18 @@
           </span>
         </h1>
         <p class="text-[9px] text-slate-400 font-sans flex items-center space-x-1">
-          <span>{{ seasonLabel }}</span>
-          <span>·</span>
           <span>{{ leagueName }}</span>
+          <span>·</span>
+          <span>即时比分与数据中心</span>
         </p>
       </div>
     </div>
 
-    <!-- 私人入口：主帅信箱按钮 -->
-    <button
-      @click="$emit('open-mailbox')"
-      class="bg-slate-800 hover:bg-slate-700 text-slate-200 border border-slate-700 text-xs px-2.5 py-1.5 rounded-lg flex items-center space-x-1 transition shadow-sm relative group"
-    >
-      <span class="text-xs">💼</span>
-      <span class="font-bold text-[11px] text-emerald-400">主帅信箱</span>
-      <span class="w-2 h-2 rounded-full bg-amber-400 absolute -top-0.5 -right-0.5 ring-2 ring-slate-900 animate-pulse"></span>
-    </button>
+    <!-- 右侧：当前赛季标识徽章 (纯净公域展示，去除重复的信箱按钮) -->
+    <div class="flex items-center space-x-1.5 bg-slate-800/80 border border-slate-700/80 px-2.5 py-1 rounded-full text-xs shadow-sm">
+      <span class="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse"></span>
+      <span class="text-[11px] font-bold text-slate-200">{{ seasonLabel }}</span>
+    </div>
   </header>
 </template>
 
@@ -46,6 +43,4 @@ defineProps({
     default: '比乙联赛'
   }
 })
-
-defineEmits(['open-mailbox'])
 </script>
