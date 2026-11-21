@@ -19,7 +19,7 @@
       ]"
     >
       <span class="text-base">📊</span>
-      <span class="text-[10px]">球队战术</span>
+      <span class="text-[10px]">战术阵容</span>
     </button>
 
     <button

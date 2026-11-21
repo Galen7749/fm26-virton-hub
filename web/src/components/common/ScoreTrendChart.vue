@@ -4,7 +4,7 @@
     <div class="flex items-center justify-between text-xs">
       <div class="flex items-center space-x-1.5">
         <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
-        <span class="font-bold text-slate-200 text-[11px]">8轮战术评分折线趋势图 (Chart.js 驱动)</span>
+        <span class="font-bold text-slate-200 text-[11px]">8轮战术执教评分趋势跟踪</span>
       </div>
       <div class="flex items-center space-x-2 text-[10px] text-slate-400 font-mono">
         <span class="flex items-center space-x-1">
