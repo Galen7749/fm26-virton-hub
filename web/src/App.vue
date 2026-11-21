@@ -50,7 +50,13 @@
           :leaderboards="leaderboards"
         />
 
-        <!-- 模块 D: 💼 主帅信箱 (私域主帅工作台页面，非弹窗) -->
+        <!-- 模块 D: 🔥 球迷热议广场 (所有比赛总评 + 场外日常与转会吃瓜) -->
+        <FanCommunity
+          v-else-if="activeTab === 'community'"
+          :communityData="community"
+        />
+
+        <!-- 模块 E: 💼 主帅信箱 (私域主帅工作台页面，非弹窗) -->
         <ManagerMailbox
           v-else-if="activeTab === 'mailbox'"
           :mailbox="mailbox"
@@ -80,6 +86,7 @@ import MatchDetail from './components/matches/MatchDetail.vue'
 
 import TeamTactics from './components/tactics/TeamTactics.vue'
 import StandingsBoard from './components/standings/StandingsBoard.vue'
+import FanCommunity from './components/community/FanCommunity.vue'
 
 // 数据导入
 import careerData from './data/career.json'
@@ -91,6 +98,7 @@ import roundMatchesData from './data/round_matches.json'
 import worldNewsData from './data/world_news.json'
 import teamAnalysisData from './data/team_analysis.json'
 import leaderboardsData from './data/leaderboards.json'
+import communityData from './data/community.json'
 
 // 响应式数据
 const career = ref(careerData)
@@ -102,6 +110,7 @@ const worldNews = ref(worldNewsData)
 const availableLeagues = ref(multiLeaguesData.leagues || [])
 const teamAnalysis = ref(teamAnalysisData)
 const leaderboards = ref(leaderboardsData)
+const community = ref(communityData)
 
 // 多赛季/多俱乐部上下文支持
 const currentClub = computed(() => {
