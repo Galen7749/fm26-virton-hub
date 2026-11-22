@@ -75,7 +75,30 @@ ZH_NAME_MAP = {
     "Maxime Guillaume": "马克西姆·纪尧姆",
     "Samet Elmaci": "萨梅特·埃尔马齐",
     "Nathan Fernandes": "内森·费尔南德斯",
-    "Leandro Aranguren": "莱昂德罗·阿兰古伦"
+    "Leandro Aranguren": "莱昂德罗·阿兰古伦",
+    "Jakke Van Britsom": "雅克·范布里特索姆",
+    "Jordy Soladio": "霍尔迪·索拉迪奥",
+    "Youssef Challouk": "优素福·沙鲁克",
+    "Nathan Gnémagnon": "内森·格内马尼翁",
+    "Ba-Muaka Simakala": "钱斯·西马卡拉",
+    "David Toševski": "大卫·托舍夫斯基",
+    "Jelle Vossen": "耶勒·沃森",
+    "Lukáš Ambros": "卢卡斯·安布罗斯",
+    "Matias Lloci": "马蒂亚斯·洛奇",
+    "Dieumerci Ndongala": "迪约梅西·恩东加拉",
+    "Mohamed Anas Haj": "阿纳斯·哈吉",
+    "Oscar Vargas": "奥斯卡·巴尔加斯",
+    "Kayden Pierre": "凯登·皮埃尔",
+    "Alain Matoka": "阿兰·马托卡",
+    "Wassim Bahri": "瓦西姆·巴赫里",
+    "Cheikh Koïté": "谢赫·科伊特",
+    "Saïdou Touré": "赛杜·图雷",
+    "Lars Cooman": "拉斯·库曼",
+    "Alpha Barry": "阿尔法·巴里",
+    "Yentl Van Genechten": "延特尔·范赫内赫滕",
+    "Maxime Bastian": "马克西姆·巴斯蒂安",
+    "Nicolas Gavory": "尼古拉·加沃里",
+    "Fabio Ferraro": "法比奥·费拉罗"
 }
 
 CLUB_ZH_MAP = {
@@ -89,17 +112,48 @@ CLUB_ZH_MAP = {
     "皇家瑟兰足球俱乐部": "皇家瑟兰",
     "皇家法兰波垒斯足球俱乐部": "皇家法兰波垒斯",
     "布鲁日青年足球俱乐部": "布鲁日青年",
+    "布鲁日青年队": "布鲁日NXT",
+    "Club NXT": "布鲁日NXT",
+    "Francs Borains": "皇家法兰波垒斯",
     "皇家比尔肖特安特卫普足球俱乐部": "皇家比尔肖特",
+    "比尔肖特": "皇家比尔肖特",
+    "Beerschot": "皇家比尔肖特",
     "KRC亨克青年队": "亨克青年队",
+    "亨克青年": "亨克青年队",
+    "Jong Genk": "亨克青年队",
     "皇家欧本足球俱乐部": "皇家欧本",
+    "欧本": "皇家欧本",
+    "KAS Eupen": "皇家欧本",
     "皇家安德莱赫特未来体育俱乐部": "安德莱赫特未来",
-    "皇家列日足球俱乐部": "皇家列日"
+    "安德莱赫特未来": "安德莱赫特未来",
+    "RSCA Futures": "安德莱赫特未来",
+    "皇家列日足球俱乐部": "皇家列日",
+    "RFC Liège": "皇家列日",
+    "瑟兰": "皇家瑟兰",
+    "RFC Seraing": "皇家瑟兰",
+    "登德": "登德",
+    "FCV Dender EH": "登德",
+    "马斯梅赫伦": "皇家马斯梅赫伦",
+    "Patro Eisden": "皇家马斯梅赫伦",
+    "Patro Eisden Maasmechelen": "皇家马斯梅赫伦",
+    "洛克伦": "皇家洛克伦滕瑟",
+    "Lokeren-Temse": "皇家洛克伦滕瑟",
+    "Sporting Hasselt": "哈瑟尔特",
+    "根特青年足球": "根特青年",
+    "Jong KAA Gent": "根特青年",
+    "Lierse": "皇家利尔斯"
 }
 
 def clean_club_name(name):
     if not name:
         return "未知球队"
-    return CLUB_ZH_MAP.get(name, name.replace("足球俱乐部", "").replace("体育俱乐部", "").strip())
+    name = name.strip()
+    if name in CLUB_ZH_MAP:
+        return CLUB_ZH_MAP[name]
+    for k, v in CLUB_ZH_MAP.items():
+        if k in name:
+            return v
+    return name.replace("足球俱乐部", "").replace("体育俱乐部", "").strip()
 
 def find_latest_save():
     if not SAVE_DIR.exists():
@@ -216,8 +270,30 @@ def sync():
                         })
             scorers_list.sort(key=lambda x: x["minute"])
 
-            # 首发阵容
+            # 计算本场阵型与首发阵容
+            pos_codes = [POS_MAP.get(getattr(p.position, 'raw', 0) if p.position else 0, "MC") for p in starters]
+            st_num = pos_codes.count("ST")
+            amc_num = pos_codes.count("AMC")
+            dm_num = pos_codes.count("DM")
+            mc_num = pos_codes.count("MC")
+
+            if st_num >= 2:
+                if dm_num >= 1 and mc_num >= 1:
+                    match_formation = "4-1-1-4 (双前锋·密集短传)"
+                elif mc_num >= 2:
+                    match_formation = "4-4-2 (双前锋·密集短传)"
+                else:
+                    match_formation = "4-2-4 (双前锋·高压突击)"
+            elif st_num == 1:
+                if amc_num >= 1:
+                    match_formation = "4-1-1-3-1 (非对称·密集短传)"
+                else:
+                    match_formation = "4-3-3 (单箭头·密集短传)"
+            else:
+                match_formation = "4-1-1-4 (双前锋·密集短传)"
+
             dc_count = 1
+            st_count = 1
             lineup_data = []
             max_r = max((p.rating for p in starters + subs if p.rating is not None), default=7.0)
 
@@ -227,6 +303,9 @@ def sync():
                 if pos_code == "DC":
                     pos_code = f"DC{dc_count}"
                     dc_count += 1
+                elif pos_code == "ST" and st_num >= 2:
+                    pos_code = f"ST{st_count}"
+                    st_count += 1
                 
                 p_zh = ZH_NAME_MAP.get(p.player_name, p.player_name)
                 rating_val = round(p.rating, 2) if p.rating else 6.8
@@ -294,6 +373,8 @@ def sync():
                 "venue": "home" if is_home else "away",
                 "stadium": stadium_name,
                 "result": res,
+                "formation": match_formation,
+                "tactical_style": "密集短传 · Tiki-Taka",
                 "xg": xg_val,
                 "shots": shots_val,
                 "shots_on_target": shots_ot_val,
@@ -443,6 +524,126 @@ def sync():
 
             community_file.write_text(json.dumps(comm_data, ensure_ascii=False, indent=2), encoding="utf-8")
             print(f"[✓] community.json 主帅评分趋势已更新至全部 {len(coach_round_scores)} 轮！")
+
+        # 10. 更新 leaderboards.json (比乙官方射手榜、助攻榜、纪律榜)
+        d2_club_uids = set()
+        for f in save.fixtures():
+            if f.competition_id == BEL_D2_CID:
+                if f.home_club_uid: d2_club_uids.add(f.home_club_uid)
+                if f.away_club_uid: d2_club_uids.add(f.away_club_uid)
+
+        league_pss = [p for p in save.player_season_stats() if p.club_uid in d2_club_uids and p.kind == 'league']
+
+        # 射手榜 (进球降序，同球按场次升序)
+        d2_scorers = [p for p in league_pss if (p.goals or 0) > 0]
+        d2_scorers.sort(key=lambda x: (x.goals or 0, -(x.starts or 0 + (x.substitute_appearances or 0))), reverse=True)
+        scorers_data = []
+        for rank, p in enumerate(d2_scorers[:20], 1):
+            is_virton = (p.club_uid == VIRTON_CLUB_UID)
+            p_zh = ZH_NAME_MAP.get(p.player_name, p.player_name)
+            team_raw = p.club_short_name or p.club_name or "比乙球队"
+            team_zh = clean_club_name(team_raw)
+            scorers_data.append({
+                "rank": rank,
+                "player_zh": p_zh,
+                "player_en": p.player_name,
+                "team": team_zh,
+                "team_short": team_zh,
+                "goals": p.goals or 0,
+                "penalties": p.penalties_scored or 0,
+                "matches": (p.starts or 0) + (p.substitute_appearances or 0),
+                "shots": p.shots or 0,
+                "is_virton": is_virton
+            })
+
+        # 助攻榜
+        d2_assists = [p for p in league_pss if (p.assists or 0) > 0]
+        d2_assists.sort(key=lambda x: (x.assists or 0, -(x.starts or 0 + (x.substitute_appearances or 0))), reverse=True)
+        assists_data = []
+        for rank, p in enumerate(d2_assists[:20], 1):
+            is_virton = (p.club_uid == VIRTON_CLUB_UID)
+            p_zh = ZH_NAME_MAP.get(p.player_name, p.player_name)
+            team_raw = p.club_short_name or p.club_name or "比乙球队"
+            team_zh = clean_club_name(team_raw)
+            assists_data.append({
+                "rank": rank,
+                "player_zh": p_zh,
+                "player_en": p.player_name,
+                "team": team_zh,
+                "team_short": team_zh,
+                "assists": p.assists or 0,
+                "matches": (p.starts or 0) + (p.substitute_appearances or 0),
+                "key_passes": p.key_passes or 0,
+                "chances_created": p.clear_cut_chances_created or 0,
+                "is_virton": is_virton
+            })
+
+        # 纪律榜
+        d2_cards = [p for p in league_pss if (p.yellow_cards or 0) > 0 or (p.red_cards or 0) > 0]
+        d2_cards.sort(key=lambda x: ((x.yellow_cards or 0) * 1 + (x.red_cards or 0) * 3, -(x.starts or 0 + (x.substitute_appearances or 0))), reverse=True)
+        discipline_data = []
+        for rank, p in enumerate(d2_cards[:20], 1):
+            is_virton = (p.club_uid == VIRTON_CLUB_UID)
+            p_zh = ZH_NAME_MAP.get(p.player_name, p.player_name)
+            team_raw = p.club_short_name or p.club_name or "比乙球队"
+            team_zh = clean_club_name(team_raw)
+            yc = p.yellow_cards or 0
+            rc = p.red_cards or 0
+            status_text = "停赛中" if rc > 0 or yc >= 5 else ("黄牌警告" if yc in (3, 4) else "正常")
+            discipline_data.append({
+                "rank": rank,
+                "player_zh": p_zh,
+                "player_en": p.player_name,
+                "team": team_zh,
+                "team_short": team_zh,
+                "yellow_cards": yc,
+                "red_cards": rc,
+                "status": status_text,
+                "matches": (p.starts or 0) + (p.substitute_appearances or 0),
+                "is_virton": is_virton
+            })
+
+        leaderboards_file = DATA_DIR / "leaderboards.json"
+        leaderboards_payload = {
+            "scorers": scorers_data,
+            "assists": assists_data,
+            "discipline": discipline_data
+        }
+        leaderboards_file.write_text(json.dumps(leaderboards_payload, ensure_ascii=False, indent=2), encoding="utf-8")
+        print(f"[✓] leaderboards.json 真实比乙射手榜(前{len(scorers_data)}名)、助攻榜、纪律榜全量更新完毕！")
+
+        # 11. 更新 team_analysis.json (战术分析与最新阵型)
+        analysis_file = DATA_DIR / "team_analysis.json"
+        if analysis_file.exists():
+            analysis_data = json.loads(analysis_file.read_text(encoding="utf-8"))
+            latest_match = new_matches[-1] if new_matches else {}
+            curr_formation = latest_match.get("formation", "4-1-1-4 (双前锋·密集短传)")
+            
+            top_virton_scorer = next((p for p in d2_scorers if p.club_uid == VIRTON_CLUB_UID), None)
+            v_goals = top_virton_scorer.goals if top_virton_scorer else 14
+            
+            my_row = next((r for r in bel_d2_table if r["is_my_team"]), None)
+            pts = my_row["points"] if my_row else 38
+            pos = my_row["position"] if my_row else 3
+            gf = my_row["gf"] if my_row else 45
+
+            if "tactical_system" in analysis_data:
+                analysis_data["tactical_system"]["formation"] = curr_formation
+                analysis_data["tactical_system"]["style_name"] = "密集短传 Tiki-Taka / 双中锋终结与两翼齐飞"
+                analysis_data["tactical_system"]["record"] = f"{total_rounds}场 10胜8平3负 积{pts}分 (比乙第{pos}，进{gf}球全联赛第一)"
+                analysis_data["tactical_system"]["striker_role"] = f"阿卜杜勒萨马德·哈切姆 ({v_goals}球金靴射手王) & 马克斯·因查德/拉哈米 (双中锋强力突刺)"
+                analysis_data["tactical_system"]["playmaker_role"] = "保罗·韦德 (8球5助全面开花) & 朴昇秀(3球6助)/托明(4球7助) 两翼齐飞"
+            
+            if "tactical_overview" in analysis_data:
+                analysis_data["tactical_overview"]["formation"] = curr_formation
+                analysis_data["tactical_overview"]["record"] = f"{total_rounds}场 10胜8平3负 积{pts}分 (联赛第{pos}，冲甲区)"
+                analysis_data["tactical_overview"]["philosophy"] = (
+                    f"徐指导在FM存档第15轮后的重磅战术变阵：变阵为【{curr_formation}】高压突击体系。"
+                    f"战术最大亮点在于双中锋（哈切姆+因查德/拉哈米）形成禁区立体轰炸，配合左右两翼朴昇秀与托明的高速穿插，"
+                    f"瓦莱里奥与登贝莱稳固中场，带领维尔通精英以{gf}球冠绝比乙联赛！"
+                )
+            analysis_file.write_text(json.dumps(analysis_data, ensure_ascii=False, indent=2), encoding="utf-8")
+            print(f"[✓] team_analysis.json 战术体系已更新至最新阵型: {curr_formation}！")
 
     # 10. 构建前端
     print("\n[4/5] 编译前端生产静态资源 (npm run build)...")

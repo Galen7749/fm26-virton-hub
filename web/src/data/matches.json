@@ -10,6 +10,8 @@
     "venue": "away",
     "stadium": "登德主场",
     "result": "D",
+    "formation": "4-1-1-4 (双前锋·密集短传)",
+    "tactical_style": "密集短传 · Tiki-Taka",
     "xg": 1.2,
     "shots": 12,
     "shots_on_target": 5,
@@ -524,6 +526,8 @@
     "venue": "home",
     "stadium": "伊万·乔治球场 (Stade Yvan Georges)",
     "result": "W",
+    "formation": "4-1-1-4 (双前锋·密集短传)",
+    "tactical_style": "密集短传 · Tiki-Taka",
     "xg": 2.85,
     "shots": 21,
     "shots_on_target": 9,
@@ -1058,6 +1062,8 @@
     "venue": "away",
     "stadium": "皇家马斯梅赫伦主场",
     "result": "L",
+    "formation": "4-1-1-4 (双前锋·密集短传)",
+    "tactical_style": "密集短传 · Tiki-Taka",
     "xg": 1.5,
     "shots": 14,
     "shots_on_target": 6,
@@ -1582,6 +1588,8 @@
     "venue": "home",
     "stadium": "伊万·乔治球场 (Stade Yvan Georges)",
     "result": "W",
+    "formation": "4-1-1-3-1 (非对称·密集短传)",
+    "tactical_style": "密集短传 · Tiki-Taka",
     "xg": 2.4,
     "shots": 15,
     "shots_on_target": 6,
@@ -2121,6 +2129,8 @@
     "venue": "away",
     "stadium": "皇家洛克伦滕瑟主场",
     "result": "D",
+    "formation": "4-1-1-3-1 (非对称·密集短传)",
+    "tactical_style": "密集短传 · Tiki-Taka",
     "xg": 1.05,
     "shots": 12,
     "shots_on_target": 5,
@@ -2612,6 +2622,8 @@
     "venue": "home",
     "stadium": "伊万·乔治球场 (Stade Yvan Georges)",
     "result": "D",
+    "formation": "4-1-1-3-1 (非对称·密集短传)",
+    "tactical_style": "密集短传 · Tiki-Taka",
     "xg": 1.95,
     "shots": 17,
     "shots_on_target": 7,
@@ -3108,6 +3120,8 @@
     "venue": "away",
     "stadium": "皇家瑟兰主场",
     "result": "W",
+    "formation": "4-1-1-3-1 (非对称·密集短传)",
+    "tactical_style": "密集短传 · Tiki-Taka",
     "xg": 2.85,
     "shots": 22,
     "shots_on_target": 9,
@@ -3621,6 +3635,8 @@
     "venue": "home",
     "stadium": "伊万·乔治球场 (Stade Yvan Georges)",
     "result": "W",
+    "formation": "4-1-1-3-1 (非对称·密集短传)",
+    "tactical_style": "密集短传 · Tiki-Taka",
     "xg": 3.0,
     "shots": 19,
     "shots_on_target": 8,
@@ -4144,6 +4160,8 @@
     "venue": "away",
     "stadium": "布鲁日青年主场",
     "result": "L",
+    "formation": "4-1-1-3-1 (非对称·密集短传)",
+    "tactical_style": "密集短传 · Tiki-Taka",
     "xg": 3.9,
     "shots": 24,
     "shots_on_target": 10,
@@ -4654,6 +4672,8 @@
     "venue": "home",
     "stadium": "伊万·乔治球场 (Stade Yvan Georges)",
     "result": "D",
+    "formation": "4-1-1-3-1 (非对称·密集短传)",
+    "tactical_style": "密集短传 · Tiki-Taka",
     "xg": 1.8,
     "shots": 17,
     "shots_on_target": 7,
@@ -5170,6 +5190,8 @@
     "venue": "away",
     "stadium": "亨克青年队主场",
     "result": "D",
+    "formation": "4-1-1-3-1 (非对称·密集短传)",
+    "tactical_style": "密集短传 · Tiki-Taka",
     "xg": 1.2,
     "shots": 14,
     "shots_on_target": 6,
@@ -5669,6 +5691,8 @@
     "venue": "home",
     "stadium": "伊万·乔治球场 (Stade Yvan Georges)",
     "result": "D",
+    "formation": "4-1-1-3-1 (非对称·密集短传)",
+    "tactical_style": "密集短传 · Tiki-Taka",
     "xg": 1.35,
     "shots": 11,
     "shots_on_target": 4,
@@ -6168,6 +6192,8 @@
     "venue": "away",
     "stadium": "安德莱赫特未来主场",
     "result": "W",
+    "formation": "4-1-1-3-1 (非对称·密集短传)",
+    "tactical_style": "密集短传 · Tiki-Taka",
     "xg": 3.0,
     "shots": 20,
     "shots_on_target": 9,
@@ -6714,6 +6740,8 @@
     "venue": "home",
     "stadium": "伊万·乔治球场 (Stade Yvan Georges)",
     "result": "D",
+    "formation": "4-1-1-3-1 (非对称·密集短传)",
+    "tactical_style": "密集短传 · Tiki-Taka",
     "xg": 2.4,
     "shots": 17,
     "shots_on_target": 7,
@@ -7263,6 +7291,8 @@
     "venue": "away",
     "stadium": "根特青年主场",
     "result": "W",
+    "formation": "4-1-1-4 (双前锋·密集短传)",
+    "tactical_style": "密集短传 · Tiki-Taka",
     "xg": 2.55,
     "shots": 22,
     "shots_on_target": 9,
@@ -7507,7 +7537,7 @@
         ]
       },
       {
-        "pos": "ST",
+        "pos": "ST1",
         "name": "Marks Inchaud",
         "name_en": "Marks Inchaud",
         "name_zh": "马克斯·因查德",
@@ -7520,7 +7550,7 @@
           "本场评分": "6.4 分",
           "传球到位": "20/24",
           "跑动强度": "高强度覆盖",
-          "战术职责": "首发 ST"
+          "战术职责": "首发 ST1"
         },
         "radar": [
           {
@@ -7722,7 +7752,7 @@
         ]
       },
       {
-        "pos": "ST",
+        "pos": "ST2",
         "name": "Abdelsamad Hachem",
         "name_en": "Abdelsamad Hachem",
         "name_zh": "阿卜杜勒萨马德·哈切姆",
@@ -7735,7 +7765,7 @@
           "本场评分": "7.3 分",
           "传球到位": "20/24",
           "跑动强度": "高强度覆盖",
-          "战术职责": "首发 ST"
+          "战术职责": "首发 ST2"
         },
         "radar": [
           {
@@ -7809,6 +7839,8 @@
     "venue": "home",
     "stadium": "伊万·乔治球场 (Stade Yvan Georges)",
     "result": "W",
+    "formation": "4-1-1-4 (双前锋·密集短传)",
+    "tactical_style": "密集短传 · Tiki-Taka",
     "xg": 2.7,
     "shots": 19,
     "shots_on_target": 8,
@@ -8139,7 +8171,7 @@
         ]
       },
       {
-        "pos": "ST",
+        "pos": "ST1",
         "name": "Sullivan Lakhamy",
         "name_en": "Sullivan Lakhamy",
         "name_zh": "沙利文·拉哈米",
@@ -8152,7 +8184,7 @@
           "本场评分": "6.7 分",
           "传球到位": "23/27",
           "跑动强度": "高强度覆盖",
-          "战术职责": "首发 ST"
+          "战术职责": "首发 ST1"
         },
         "radar": [
           {
@@ -8268,7 +8300,7 @@
         ]
       },
       {
-        "pos": "ST",
+        "pos": "ST2",
         "name": "Abdelsamad Hachem",
         "name_en": "Abdelsamad Hachem",
         "name_zh": "阿卜杜勒萨马德·哈切姆",
@@ -8281,7 +8313,7 @@
           "本场评分": "7.4 分",
           "传球到位": "23/27",
           "跑动强度": "高强度覆盖",
-          "战术职责": "首发 ST"
+          "战术职责": "首发 ST2"
         },
         "radar": [
           {
@@ -8345,6 +8377,8 @@
     "venue": "home",
     "stadium": "伊万·乔治球场 (Stade Yvan Georges)",
     "result": "D",
+    "formation": "4-1-1-4 (双前锋·密集短传)",
+    "tactical_style": "密集短传 · Tiki-Taka",
     "xg": 2.1,
     "shots": 16,
     "shots_on_target": 7,
@@ -8496,7 +8530,7 @@
         ]
       },
       {
-        "pos": "ST",
+        "pos": "ST1",
         "name": "Marks Inchaud",
         "name_en": "Marks Inchaud",
         "name_zh": "马克斯·因查德",
@@ -8509,7 +8543,7 @@
           "本场评分": "8.3 分",
           "传球到位": "26/30",
           "跑动强度": "高强度覆盖",
-          "战术职责": "首发 ST"
+          "战术职责": "首发 ST1"
         },
         "radar": [
           {
@@ -8711,7 +8745,7 @@
         ]
       },
       {
-        "pos": "ST",
+        "pos": "ST2",
         "name": "Sullivan Lakhamy",
         "name_en": "Sullivan Lakhamy",
         "name_zh": "沙利文·拉哈米",
@@ -8724,7 +8758,7 @@
           "本场评分": "7.0 分",
           "传球到位": "26/30",
           "跑动强度": "高强度覆盖",
-          "战术职责": "首发 ST"
+          "战术职责": "首发 ST2"
         },
         "radar": [
           {
@@ -8884,6 +8918,8 @@
     "venue": "away",
     "stadium": "哈瑟尔特主场",
     "result": "L",
+    "formation": "4-1-1-4 (双前锋·密集短传)",
+    "tactical_style": "密集短传 · Tiki-Taka",
     "xg": 1.5,
     "shots": 13,
     "shots_on_target": 5,
@@ -9028,7 +9064,7 @@
         ]
       },
       {
-        "pos": "ST",
+        "pos": "ST1",
         "name": "Marks Inchaud",
         "name_en": "Marks Inchaud",
         "name_zh": "马克斯·因查德",
@@ -9041,7 +9077,7 @@
           "本场评分": "6.1 分",
           "传球到位": "29/33",
           "跑动强度": "高强度覆盖",
-          "战术职责": "首发 ST"
+          "战术职责": "首发 ST1"
         },
         "radar": [
           {
@@ -9243,7 +9279,7 @@
         ]
       },
       {
-        "pos": "ST",
+        "pos": "ST2",
         "name": "Sullivan Lakhamy",
         "name_en": "Sullivan Lakhamy",
         "name_zh": "沙利文·拉哈米",
@@ -9256,7 +9292,7 @@
           "本场评分": "6.0 分",
           "传球到位": "29/33",
           "跑动强度": "高强度覆盖",
-          "战术职责": "首发 ST"
+          "战术职责": "首发 ST2"
         },
         "radar": [
           {
@@ -9426,6 +9462,8 @@
     "venue": "home",
     "stadium": "伊万·乔治球场 (Stade Yvan Georges)",
     "result": "W",
+    "formation": "4-1-1-4 (双前锋·密集短传)",
+    "tactical_style": "密集短传 · Tiki-Taka",
     "xg": 2.4,
     "shots": 18,
     "shots_on_target": 8,
@@ -9749,7 +9787,7 @@
         ]
       },
       {
-        "pos": "ST",
+        "pos": "ST1",
         "name": "Sullivan Lakhamy",
         "name_en": "Sullivan Lakhamy",
         "name_zh": "沙利文·拉哈米",
@@ -9762,7 +9800,7 @@
           "本场评分": "7.8 分",
           "传球到位": "32/36",
           "跑动强度": "高强度覆盖",
-          "战术职责": "首发 ST"
+          "战术职责": "首发 ST1"
         },
         "radar": [
           {
@@ -9878,7 +9916,7 @@
         ]
       },
       {
-        "pos": "ST",
+        "pos": "ST2",
         "name": "Abdelsamad Hachem",
         "name_en": "Abdelsamad Hachem",
         "name_zh": "阿卜杜勒萨马德·哈切姆",
@@ -9891,7 +9929,7 @@
           "本场评分": "7.4 分",
           "传球到位": "32/36",
           "跑动强度": "高强度覆盖",
-          "战术职责": "首发 ST"
+          "战术职责": "首发 ST2"
         },
         "radar": [
           {
@@ -9945,6 +9983,8 @@
     "venue": "away",
     "stadium": "皇家利尔斯主场",
     "result": "W",
+    "formation": "4-1-1-4 (双前锋·密集短传)",
+    "tactical_style": "密集短传 · Tiki-Taka",
     "xg": 1.8,
     "shots": 15,
     "shots_on_target": 6,
@@ -10268,7 +10308,7 @@
         ]
       },
       {
-        "pos": "ST",
+        "pos": "ST1",
         "name": "Sullivan Lakhamy",
         "name_en": "Sullivan Lakhamy",
         "name_zh": "沙利文·拉哈米",
@@ -10281,7 +10321,7 @@
           "本场评分": "7.3 分",
           "传球到位": "20/24",
           "跑动强度": "高强度覆盖",
-          "战术职责": "首发 ST"
+          "战术职责": "首发 ST1"
         },
         "radar": [
           {
@@ -10397,7 +10437,7 @@
         ]
       },
       {
-        "pos": "ST",
+        "pos": "ST2",
         "name": "Abdelsamad Hachem",
         "name_en": "Abdelsamad Hachem",
         "name_zh": "阿卜杜勒萨马德·哈切姆",
@@ -10410,7 +10450,7 @@
           "本场评分": "6.1 分",
           "传球到位": "20/24",
           "跑动强度": "高强度覆盖",
-          "战术职责": "首发 ST"
+          "战术职责": "首发 ST2"
         },
         "radar": [
           {
@@ -10494,6 +10534,8 @@
     "venue": "home",
     "stadium": "伊万·乔治球场 (Stade Yvan Georges)",
     "result": "W",
+    "formation": "4-1-1-4 (双前锋·密集短传)",
+    "tactical_style": "密集短传 · Tiki-Taka",
     "xg": 2.7,
     "shots": 20,
     "shots_on_target": 9,
@@ -10731,7 +10773,7 @@
         ]
       },
       {
-        "pos": "ST",
+        "pos": "ST1",
         "name": "Marks Inchaud",
         "name_en": "Marks Inchaud",
         "name_zh": "马克斯·因查德",
@@ -10744,7 +10786,7 @@
           "本场评分": "7.6 分",
           "传球到位": "23/27",
           "跑动强度": "高强度覆盖",
-          "战术职责": "首发 ST"
+          "战术职责": "首发 ST1"
         },
         "radar": [
           {
@@ -10946,7 +10988,7 @@
         ]
       },
       {
-        "pos": "ST",
+        "pos": "ST2",
         "name": "Abdelsamad Hachem",
         "name_en": "Abdelsamad Hachem",
         "name_zh": "阿卜杜勒萨马德·哈切姆",
@@ -10959,7 +11001,7 @@
           "本场评分": "7.6 分",
           "传球到位": "23/27",
           "跑动强度": "高强度覆盖",
-          "战术职责": "首发 ST"
+          "战术职责": "首发 ST2"
         },
         "radar": [
           {

@@ -4,7 +4,7 @@
     <div class="flex items-center justify-between text-xs">
       <div>
         <div class="font-bold text-white flex items-center space-x-1.5">
-          <span>首发阵型：{{ match.formation || '4-1-1-3-1' }}</span>
+          <span>首发阵型：{{ match.formation || '4-1-1-4 (双前锋)' }}</span>
           <span class="text-[9px] bg-emerald-950 text-emerald-400 border border-emerald-800 px-1.5 rounded">
             {{ match.tactical_style || '密集短传 · Tiki-Taka' }}
           </span>
@@ -240,7 +240,7 @@ const props = defineProps({
 const lineupViewMode = ref('pitch')
 const selectedPlayer = ref(null)
 
-// 4-1-1-3-1 非对称坐标映射
+// 动态多阵型坐标映射 (支持 4-1-1-4 双前锋 / 4-1-1-3-1 单前锋 等无缝适配)
 const formationPlayers = computed(() => {
   if (!props.match?.lineup) return []
   const lineup = props.match.lineup
@@ -252,17 +252,30 @@ const formationPlayers = computed(() => {
     'DR': { top: '70%', left: '84%' },
     'DM': { top: '56%', left: '38%' },
     'MC': { top: '48%', left: '64%' },
-    'AML': { top: '30%', left: '20%' },
+    'AML': { top: '30%', left: '18%' },
     'AMC': { top: '30%', left: '50%' },
-    'AMR': { top: '30%', left: '80%' },
-    'ST': { top: '12%', left: '50%' }
+    'AMR': { top: '30%', left: '82%' },
+    'ST': { top: '12%', left: '50%' },
+    'ST1': { top: '13%', left: '36%' },
+    'ST2': { top: '13%', left: '64%' }
   }
+
+  const stTotal = lineup.filter(p => p.pos && p.pos.includes('ST')).length
   let dcCount = 0
+  let stCount = 0
+
   return lineup.map((p) => {
-    let posKey = p.pos
+    let posKey = p.pos || 'MC'
     if (posKey.includes('DC')) {
       dcCount++
       posKey = dcCount === 1 ? 'DC1' : 'DC2'
+    } else if (posKey.includes('ST')) {
+      if (stTotal >= 2) {
+        stCount++
+        posKey = stCount === 1 ? 'ST1' : 'ST2'
+      } else {
+        posKey = 'ST'
+      }
     }
     const coord = coords[posKey] || { top: '50%', left: '50%' }
     return {

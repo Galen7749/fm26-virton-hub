@@ -2,7 +2,9 @@
   <div class="space-y-3">
     <div class="bg-slate-900 border border-slate-800 rounded-lg p-2.5 flex items-center justify-between text-xs">
       <span class="font-bold text-white">🇧🇪 比乙联赛 · 官方助攻榜</span>
-      <span class="text-[10px] text-emerald-400 font-bold">泰伦·托明 4次领跑第1</span>
+      <span v-if="topVirton" class="text-[10px] text-teal-400 font-bold">
+        {{ topVirton.player_zh }} {{ topVirton.assists }}助 (第{{ topVirton.rank }}名)
+      </span>
     </div>
 
     <div class="bg-slate-900 rounded-xl border border-slate-800 overflow-hidden text-xs">
@@ -52,10 +54,14 @@
 </template>
 
 <script setup>
-defineProps({
+import { computed } from 'vue'
+
+const props = defineProps({
   assists: {
     type: Array,
     default: () => []
   }
 })
+
+const topVirton = computed(() => props.assists.find(a => a.is_virton))
 </script>

@@ -2,7 +2,9 @@
   <div class="space-y-3">
     <div class="bg-slate-900 border border-slate-800 rounded-lg p-2.5 flex items-center justify-between text-xs">
       <span class="font-bold text-white">🇧🇪 比乙联赛 · 纪律榜与停赛监控</span>
-      <span class="text-[10px] text-amber-400 font-bold">阿朗·查普切特 3黄预警</span>
+      <span v-if="topVirton" class="text-[10px] text-amber-400 font-bold">
+        {{ topVirton.player_zh }} {{ topVirton.yellow_cards ?? topVirton.yellow ?? 0 }}黄 ({{ topVirton.status || '正常' }})
+      </span>
     </div>
 
     <div class="bg-slate-900 rounded-xl border border-slate-800 overflow-hidden text-xs">
@@ -52,10 +54,14 @@
 </template>
 
 <script setup>
-defineProps({
+import { computed } from 'vue'
+
+const props = defineProps({
   discipline: {
     type: Array,
     default: () => []
   }
 })
+
+const topVirton = computed(() => props.discipline.find(d => d.is_virton))
 </script>

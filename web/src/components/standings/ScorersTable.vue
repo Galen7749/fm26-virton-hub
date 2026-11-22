@@ -2,7 +2,9 @@
   <div class="space-y-3">
     <div class="bg-slate-900 border border-slate-800 rounded-lg p-2.5 flex items-center justify-between text-xs">
       <span class="font-bold text-white">🇧🇪 比乙联赛 · 官方金靴射手榜</span>
-      <span class="text-[10px] text-emerald-400 font-medium">阿卜杜勒萨马德·哈切姆 5球排第2</span>
+      <span v-if="topVirton" class="text-[10px] text-emerald-400 font-bold">
+        {{ topVirton.player_zh }} {{ topVirton.goals }}球 (第{{ topVirton.rank }}名)
+      </span>
     </div>
 
     <div class="bg-slate-900 rounded-xl border border-slate-800 overflow-hidden text-xs">
@@ -52,10 +54,14 @@
 </template>
 
 <script setup>
-defineProps({
+import { computed } from 'vue'
+
+const props = defineProps({
   scorers: {
     type: Array,
     default: () => []
   }
 })
+
+const topVirton = computed(() => props.scorers.find(s => s.is_virton))
 </script>
