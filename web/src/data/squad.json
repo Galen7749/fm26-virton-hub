@@ -10,12 +10,12 @@
     "age": 23,
     "nation": "法国 🇫🇷 / 阿尔及利亚 🇩🇿",
     "role_type": "核心主力",
-    "matches": 8,
-    "starts": 6,
-    "subs": 2,
-    "goals": 5,
-    "assists": 0,
-    "avg_rating": 7.42,
+    "matches": 15,
+    "starts": 14,
+    "subs": 1,
+    "goals": 13,
+    "assists": 2,
+    "avg_rating": 7.31,
     "market_value": "€45万",
     "wage": "€1,800/周",
     "contract_until": "2027-06",
@@ -29,12 +29,30 @@
       "场均跑动": "10.8 km"
     },
     "radar": [
-      { "subject": "终结能力", "value": 94 },
-      { "subject": "跑位嗅觉", "value": 92 },
-      { "subject": "冲刺速度", "value": 88 },
-      { "subject": "对抗拼抢", "value": 78 },
-      { "subject": "战术执行", "value": 90 },
-      { "subject": "策应传球", "value": 72 }
+      {
+        "subject": "终结能力",
+        "value": 94
+      },
+      {
+        "subject": "跑位嗅觉",
+        "value": 92
+      },
+      {
+        "subject": "冲刺速度",
+        "value": 88
+      },
+      {
+        "subject": "对抗拼抢",
+        "value": 78
+      },
+      {
+        "subject": "战术执行",
+        "value": 90
+      },
+      {
+        "subject": "策应传球",
+        "value": 72
+      }
     ]
   },
   {
@@ -48,12 +66,12 @@
     "age": 25,
     "nation": "法国 🇫🇷",
     "role_type": "核心主力",
-    "matches": 8,
-    "starts": 8,
-    "subs": 0,
-    "goals": 3,
-    "assists": 3,
-    "avg_rating": 7.35,
+    "matches": 16,
+    "starts": 12,
+    "subs": 4,
+    "goals": 6,
+    "assists": 4,
+    "avg_rating": 6.99,
     "market_value": "€55万",
     "wage": "€2,200/周",
     "contract_until": "2027-06",
@@ -67,12 +85,30 @@
       "场均跑动": "11.2 km"
     },
     "radar": [
-      { "subject": "支点策应", "value": 96 },
-      { "subject": "争顶对抗", "value": 90 },
-      { "subject": "关键传球", "value": 91 },
-      { "subject": "后插终结", "value": 86 },
-      { "subject": "防守反抢", "value": 82 },
-      { "subject": "大赛心理", "value": 89 }
+      {
+        "subject": "支点策应",
+        "value": 96
+      },
+      {
+        "subject": "争顶对抗",
+        "value": 90
+      },
+      {
+        "subject": "关键传球",
+        "value": 91
+      },
+      {
+        "subject": "后插终结",
+        "value": 86
+      },
+      {
+        "subject": "防守反抢",
+        "value": 82
+      },
+      {
+        "subject": "大赛心理",
+        "value": 89
+      }
     ]
   },
   {
@@ -86,12 +122,12 @@
     "age": 24,
     "nation": "法国 🇫🇷",
     "role_type": "核心主力",
-    "matches": 8,
-    "starts": 6,
+    "matches": 15,
+    "starts": 13,
     "subs": 2,
-    "goals": 1,
-    "assists": 4,
-    "avg_rating": 7.38,
+    "goals": 4,
+    "assists": 5,
+    "avg_rating": 6.89,
     "market_value": "€50万",
     "wage": "€1,900/周",
     "contract_until": "2026-06",
@@ -105,12 +141,30 @@
       "场均跑动": "11.5 km"
     },
     "radar": [
-      { "subject": "盘带过人", "value": 95 },
-      { "subject": "边路传中", "value": 92 },
-      { "subject": "爆发速度", "value": 94 },
-      { "subject": "视野做球", "value": 88 },
-      { "subject": "门前抢点", "value": 75 },
-      { "subject": "回防协防", "value": 70 }
+      {
+        "subject": "盘带过人",
+        "value": 95
+      },
+      {
+        "subject": "边路传中",
+        "value": 92
+      },
+      {
+        "subject": "爆发速度",
+        "value": 94
+      },
+      {
+        "subject": "视野做球",
+        "value": 88
+      },
+      {
+        "subject": "门前抢点",
+        "value": 75
+      },
+      {
+        "subject": "回防协防",
+        "value": 70
+      }
     ]
   },
   {
@@ -124,12 +178,12 @@
     "age": 18,
     "nation": "韩国 🇰🇷",
     "role_type": "主力新星",
-    "matches": 7,
-    "starts": 6,
+    "matches": 16,
+    "starts": 15,
     "subs": 1,
-    "goals": 1,
-    "assists": 1,
-    "avg_rating": 7.18,
+    "goals": 3,
+    "assists": 6,
+    "avg_rating": 6.83,
     "market_value": "€60万",
     "wage": "€1,200/周",
     "contract_until": "2028-06",
@@ -143,12 +197,30 @@
       "场均跑动": "11.1 km"
     },
     "radar": [
-      { "subject": "盘带技术", "value": 90 },
-      { "subject": "潜力灵性", "value": 96 },
-      { "subject": "无球穿插", "value": 85 },
-      { "subject": "体能储备", "value": 82 },
-      { "subject": "内切终结", "value": 80 },
-      { "subject": "防守态度", "value": 78 }
+      {
+        "subject": "盘带技术",
+        "value": 90
+      },
+      {
+        "subject": "潜力灵性",
+        "value": 96
+      },
+      {
+        "subject": "无球穿插",
+        "value": 85
+      },
+      {
+        "subject": "体能储备",
+        "value": 82
+      },
+      {
+        "subject": "内切终结",
+        "value": 80
+      },
+      {
+        "subject": "防守态度",
+        "value": 78
+      }
     ]
   },
   {
@@ -162,12 +234,12 @@
     "age": 21,
     "nation": "意大利 🇮🇹 / 比利时 🇧🇪",
     "role_type": "主力轮换",
-    "matches": 7,
-    "starts": 6,
-    "subs": 1,
-    "goals": 1,
+    "matches": 15,
+    "starts": 7,
+    "subs": 8,
+    "goals": 3,
     "assists": 1,
-    "avg_rating": 7.15,
+    "avg_rating": 6.77,
     "market_value": "€35万",
     "wage": "€1,500/周",
     "contract_until": "2027-06",
@@ -181,12 +253,30 @@
       "传球到位": "81.0%"
     },
     "radar": [
-      { "subject": "高强度跑", "value": 92 },
-      { "subject": "反抢拦截", "value": 86 },
-      { "subject": "传控配合", "value": 82 },
-      { "subject": "盘带突破", "value": 80 },
-      { "subject": "远射威胁", "value": 78 },
-      { "subject": "战术纪律", "value": 88 }
+      {
+        "subject": "高强度跑",
+        "value": 92
+      },
+      {
+        "subject": "反抢拦截",
+        "value": 86
+      },
+      {
+        "subject": "传控配合",
+        "value": 82
+      },
+      {
+        "subject": "盘带突破",
+        "value": 80
+      },
+      {
+        "subject": "远射威胁",
+        "value": 78
+      },
+      {
+        "subject": "战术纪律",
+        "value": 88
+      }
     ]
   },
   {
@@ -200,12 +290,12 @@
     "age": 25,
     "nation": "法国 🇫🇷",
     "role_type": "绝对主力",
-    "matches": 8,
-    "starts": 8,
+    "matches": 18,
+    "starts": 18,
     "subs": 0,
     "goals": 0,
-    "assists": 1,
-    "avg_rating": 7.10,
+    "assists": 0,
+    "avg_rating": 6.65,
     "market_value": "€65万",
     "wage": "€2,500/周",
     "contract_until": "2027-06",
@@ -219,12 +309,30 @@
       "战术犯规": "9 次"
     },
     "radar": [
-      { "subject": "抢断拦截", "value": 95 },
-      { "subject": "出球调度", "value": 91 },
-      { "subject": "跑动覆盖", "value": 96 },
-      { "subject": "位置感", "value": 90 },
-      { "subject": "身体对抗", "value": 85 },
-      { "subject": "后插远射", "value": 70 }
+      {
+        "subject": "抢断拦截",
+        "value": 95
+      },
+      {
+        "subject": "出球调度",
+        "value": 91
+      },
+      {
+        "subject": "跑动覆盖",
+        "value": 96
+      },
+      {
+        "subject": "位置感",
+        "value": 90
+      },
+      {
+        "subject": "身体对抗",
+        "value": 85
+      },
+      {
+        "subject": "后插远射",
+        "value": 70
+      }
     ]
   },
   {
@@ -238,12 +346,12 @@
     "age": 22,
     "nation": "法国 🇫🇷 / 马里 🇲🇱",
     "role_type": "主力中前卫",
-    "matches": 8,
-    "starts": 8,
-    "subs": 0,
-    "goals": 1,
-    "assists": 1,
-    "avg_rating": 7.12,
+    "matches": 18,
+    "starts": 16,
+    "subs": 2,
+    "goals": 2,
+    "assists": 2,
+    "avg_rating": 6.73,
     "market_value": "€40万",
     "wage": "€1,600/周",
     "contract_until": "2026-06",
@@ -257,12 +365,30 @@
       "场均跑动": "11.8 km"
     },
     "radar": [
-      { "subject": "向前推进", "value": 88 },
-      { "subject": "攻防转换", "value": 90 },
-      { "subject": "体能充沛", "value": 92 },
-      { "subject": "短传渗透", "value": 84 },
-      { "subject": "禁区远射", "value": 81 },
-      { "subject": "战术执行", "value": 86 }
+      {
+        "subject": "向前推进",
+        "value": 88
+      },
+      {
+        "subject": "攻防转换",
+        "value": 90
+      },
+      {
+        "subject": "体能充沛",
+        "value": 92
+      },
+      {
+        "subject": "短传渗透",
+        "value": 84
+      },
+      {
+        "subject": "禁区远射",
+        "value": 81
+      },
+      {
+        "subject": "战术执行",
+        "value": 86
+      }
     ]
   },
   {
@@ -276,12 +402,12 @@
     "age": 19,
     "nation": "日本 🇯🇵",
     "role_type": "绝对主力",
-    "matches": 8,
-    "starts": 8,
+    "matches": 9,
+    "starts": 9,
     "subs": 0,
     "goals": 0,
-    "assists": 1,
-    "avg_rating": 7.16,
+    "assists": 3,
+    "avg_rating": 7.02,
     "market_value": "€50万",
     "wage": "€1,400/周",
     "contract_until": "2028-06",
@@ -295,12 +421,30 @@
       "场均跑动": "11.7 km"
     },
     "radar": [
-      { "subject": "传控技术", "value": 92 },
-      { "subject": "边路往返", "value": 91 },
-      { "subject": "下底传中", "value": 88 },
-      { "subject": "战术意识", "value": 89 },
-      { "subject": "防守回追", "value": 82 },
-      { "subject": "身体对抗", "value": 75 }
+      {
+        "subject": "传控技术",
+        "value": 92
+      },
+      {
+        "subject": "边路往返",
+        "value": 91
+      },
+      {
+        "subject": "下底传中",
+        "value": 88
+      },
+      {
+        "subject": "战术意识",
+        "value": 89
+      },
+      {
+        "subject": "防守回追",
+        "value": 82
+      },
+      {
+        "subject": "身体对抗",
+        "value": 75
+      }
     ]
   },
   {
@@ -314,12 +458,12 @@
     "age": 20,
     "nation": "法国 🇫🇷",
     "role_type": "绝对主力",
-    "matches": 7,
-    "starts": 6,
-    "subs": 1,
+    "matches": 15,
+    "starts": 10,
+    "subs": 5,
     "goals": 0,
-    "assists": 1,
-    "avg_rating": 7.08,
+    "assists": 3,
+    "avg_rating": 6.79,
     "market_value": "€45万",
     "wage": "€1,500/周",
     "contract_until": "2027-06",
@@ -333,12 +477,30 @@
       "场均跑动": "11.3 km"
     },
     "radar": [
-      { "subject": "身体冲劲", "value": 90 },
-      { "subject": "右路套上", "value": 88 },
-      { "subject": "对抗断球", "value": 85 },
-      { "subject": "回防保护", "value": 84 },
-      { "subject": "下底助攻", "value": 82 },
-      { "subject": "脚下短传", "value": 80 }
+      {
+        "subject": "身体冲劲",
+        "value": 90
+      },
+      {
+        "subject": "右路套上",
+        "value": 88
+      },
+      {
+        "subject": "对抗断球",
+        "value": 85
+      },
+      {
+        "subject": "回防保护",
+        "value": 84
+      },
+      {
+        "subject": "下底助攻",
+        "value": 82
+      },
+      {
+        "subject": "脚下短传",
+        "value": 80
+      }
     ]
   },
   {
@@ -352,12 +514,12 @@
     "age": 34,
     "nation": "法国 🇫🇷 / 喀麦隆 🇨🇲",
     "role_type": "队长核心",
-    "matches": 8,
-    "starts": 8,
+    "matches": 18,
+    "starts": 18,
     "subs": 0,
     "goals": 0,
     "assists": 0,
-    "avg_rating": 7.22,
+    "avg_rating": 6.74,
     "market_value": "€25万",
     "wage": "€2,800/周",
     "contract_until": "2026-06",
@@ -371,12 +533,30 @@
       "纪律牌": "2 黄 (注意停赛)"
     },
     "radar": [
-      { "subject": "高空争顶", "value": 96 },
-      { "subject": "领袖气质", "value": 98 },
-      { "subject": "防守预判", "value": 92 },
-      { "subject": "身体力量", "value": 90 },
-      { "subject": "出球长传", "value": 84 },
-      { "subject": "回追速度", "value": 68 }
+      {
+        "subject": "高空争顶",
+        "value": 96
+      },
+      {
+        "subject": "领袖气质",
+        "value": 98
+      },
+      {
+        "subject": "防守预判",
+        "value": 92
+      },
+      {
+        "subject": "身体力量",
+        "value": 90
+      },
+      {
+        "subject": "出球长传",
+        "value": 84
+      },
+      {
+        "subject": "回追速度",
+        "value": 68
+      }
     ]
   },
   {
@@ -390,12 +570,12 @@
     "age": 23,
     "nation": "法国 🇫🇷",
     "role_type": "主力中卫",
-    "matches": 7,
-    "starts": 7,
+    "matches": 18,
+    "starts": 18,
     "subs": 0,
-    "goals": 0,
+    "goals": 1,
     "assists": 0,
-    "avg_rating": 7.14,
+    "avg_rating": 6.97,
     "market_value": "€40万",
     "wage": "€1,600/周",
     "contract_until": "2027-06",
@@ -409,12 +589,30 @@
       "场均跑动": "9.8 km"
     },
     "radar": [
-      { "subject": "拦截抢断", "value": 89 },
-      { "subject": "短传出球", "value": 88 },
-      { "subject": "回追卡位", "value": 86 },
-      { "subject": "高空头球", "value": 87 },
-      { "subject": "抗压能力", "value": 82 },
-      { "subject": "防守侵略", "value": 85 }
+      {
+        "subject": "拦截抢断",
+        "value": 89
+      },
+      {
+        "subject": "短传出球",
+        "value": 88
+      },
+      {
+        "subject": "回追卡位",
+        "value": 86
+      },
+      {
+        "subject": "高空头球",
+        "value": 87
+      },
+      {
+        "subject": "抗压能力",
+        "value": 82
+      },
+      {
+        "subject": "防守侵略",
+        "value": 85
+      }
     ]
   },
   {
@@ -428,12 +626,12 @@
     "age": 23,
     "nation": "比利时 🇧🇪",
     "role_type": "主力门将",
-    "matches": 8,
-    "starts": 8,
+    "matches": 18,
+    "starts": 18,
     "subs": 0,
     "goals": 0,
     "assists": 0,
-    "avg_rating": 7.05,
+    "avg_rating": 6.66,
     "market_value": "€35万",
     "wage": "€1,500/周",
     "contract_until": "2027-06",
@@ -447,12 +645,30 @@
       "脚下传球": "85.6% 成功率"
     },
     "radar": [
-      { "subject": "反应扑救", "value": 92 },
-      { "subject": "出击摘球", "value": 86 },
-      { "subject": "门线技术", "value": 90 },
-      { "subject": "出球传球", "value": 88 },
-      { "subject": "心理稳定", "value": 89 },
-      { "subject": "防线指挥", "value": 84 }
+      {
+        "subject": "反应扑救",
+        "value": 92
+      },
+      {
+        "subject": "出击摘球",
+        "value": 86
+      },
+      {
+        "subject": "门线技术",
+        "value": 90
+      },
+      {
+        "subject": "出球传球",
+        "value": 88
+      },
+      {
+        "subject": "心理稳定",
+        "value": 89
+      },
+      {
+        "subject": "防线指挥",
+        "value": 84
+      }
     ]
   }
 ]

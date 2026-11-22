@@ -1,18 +1,136 @@
 {
   "season_coach_summary": {
-    "average_score": 8.9,
+    "average_score": 8.3,
     "total_votes": 19850,
     "support_rate": "94.6%",
     "trend_label": "近两轮豪取全胜，球迷支持率飙升",
     "round_scores": [
-      { "round": 1, "fixture": "登德 1-1 维尔通", "score": 8.8, "result": "平", "badge": "首秀爆冷" },
-      { "round": 2, "fixture": "维尔通 3-2 根特青年", "score": 9.3, "result": "胜", "badge": "主场大捷" },
-      { "round": 3, "fixture": "马斯梅赫伦 2-1 维尔通", "score": 6.8, "result": "负", "badge": "唯一败仗" },
-      { "round": 4, "fixture": "维尔通 2-1 哈瑟尔特", "score": 8.9, "result": "胜", "badge": "逆风反弹" },
-      { "round": 5, "fixture": "洛克伦 1-1 维尔通", "score": 7.9, "result": "平", "badge": "稳健抢分" },
-      { "round": 6, "fixture": "维尔通 2-2 利尔斯", "score": 8.2, "result": "平", "badge": "对攻战平" },
-      { "round": 7, "fixture": "皇家瑟兰 1-3 维尔通", "score": 9.6, "result": "胜", "badge": "客场大胜" },
-      { "round": 8, "fixture": "维尔通 3-1 法兰波垒斯", "score": 9.9, "result": "胜", "badge": "登顶神战" }
+      {
+        "round": 1,
+        "score": 7.6,
+        "opponent": "登德",
+        "result": "1-1"
+      },
+      {
+        "round": 2,
+        "score": 9.3,
+        "opponent": "根特青年",
+        "result": "3-2"
+      },
+      {
+        "round": 3,
+        "score": 6.2,
+        "opponent": "皇家马斯梅赫伦",
+        "result": "2-1"
+      },
+      {
+        "round": 4,
+        "score": 9.2,
+        "opponent": "哈瑟尔特",
+        "result": "2-1"
+      },
+      {
+        "round": 5,
+        "score": 7.7,
+        "opponent": "皇家洛克伦滕瑟",
+        "result": "1-1"
+      },
+      {
+        "round": 6,
+        "score": 7.8,
+        "opponent": "皇家利尔斯",
+        "result": "2-2"
+      },
+      {
+        "round": 7,
+        "score": 9.5,
+        "opponent": "皇家瑟兰",
+        "result": "1-3"
+      },
+      {
+        "round": 8,
+        "score": 9.6,
+        "opponent": "皇家法兰波垒斯",
+        "result": "3-1"
+      },
+      {
+        "round": 9,
+        "score": 6.2,
+        "opponent": "布鲁日青年",
+        "result": "5-4"
+      },
+      {
+        "round": 10,
+        "score": 7.9,
+        "opponent": "皇家比尔肖特",
+        "result": "2-2"
+      },
+      {
+        "round": 11,
+        "score": 7.7,
+        "opponent": "亨克青年队",
+        "result": "1-1"
+      },
+      {
+        "round": 12,
+        "score": 7.5,
+        "opponent": "皇家欧本",
+        "result": "1-1"
+      },
+      {
+        "round": 13,
+        "score": 9.5,
+        "opponent": "安德莱赫特未来",
+        "result": "1-3"
+      },
+      {
+        "round": 14,
+        "score": 8.0,
+        "opponent": "皇家列日",
+        "result": "2-2"
+      },
+      {
+        "round": 15,
+        "score": 9.1,
+        "opponent": "根特青年",
+        "result": "2-3"
+      },
+      {
+        "round": 16,
+        "score": 9.5,
+        "opponent": "登德",
+        "result": "3-1"
+      },
+      {
+        "round": 17,
+        "score": 8.0,
+        "opponent": "皇家马斯梅赫伦",
+        "result": "2-2"
+      },
+      {
+        "round": 18,
+        "score": 6.2,
+        "opponent": "哈瑟尔特",
+        "result": "2-1"
+      },
+      {
+        "round": 19,
+        "score": 9.2,
+        "opponent": "皇家洛克伦滕瑟",
+        "result": "2-1"
+      },
+      {
+        "round": 20,
+        "score": 9.3,
+        "opponent": "皇家利尔斯",
+        "result": "1-2"
+      },
+      {
+        "round": 21,
+        "score": 9.4,
+        "opponent": "皇家瑟兰",
+        "result": "3-1"
+      }
     ]
   },
   "threads": [

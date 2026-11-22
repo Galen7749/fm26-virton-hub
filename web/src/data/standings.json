@@ -11,7 +11,7 @@
       "table": [
         {
           "position": 1,
-          "team_name": "皇家马斯梅赫伦足球俱乐部",
+          "team_name": "皇家马斯梅赫伦",
           "played": 22,
           "won": 13,
           "drawn": 6,
@@ -24,7 +24,7 @@
         },
         {
           "position": 2,
-          "team_name": "皇家比尔肖特安特卫普足球俱乐部",
+          "team_name": "皇家比尔肖特",
           "played": 22,
           "won": 13,
           "drawn": 5,
@@ -37,7 +37,7 @@
         },
         {
           "position": 3,
-          "team_name": "维尔通精英足球俱乐部",
+          "team_name": "维尔通精英",
           "played": 21,
           "won": 10,
           "drawn": 8,
@@ -50,7 +50,7 @@
         },
         {
           "position": 4,
-          "team_name": "登德足球俱乐部",
+          "team_name": "登德",
           "played": 22,
           "won": 10,
           "drawn": 7,
@@ -63,7 +63,7 @@
         },
         {
           "position": 5,
-          "team_name": "皇家洛克伦滕瑟体育俱乐部",
+          "team_name": "皇家洛克伦滕瑟",
           "played": 21,
           "won": 9,
           "drawn": 7,
@@ -76,7 +76,7 @@
         },
         {
           "position": 6,
-          "team_name": "布鲁日青年足球俱乐部",
+          "team_name": "布鲁日青年",
           "played": 22,
           "won": 9,
           "drawn": 6,
@@ -89,7 +89,7 @@
         },
         {
           "position": 7,
-          "team_name": "皇家欧本足球俱乐部",
+          "team_name": "皇家欧本",
           "played": 21,
           "won": 9,
           "drawn": 6,
@@ -115,7 +115,7 @@
         },
         {
           "position": 9,
-          "team_name": "皇家利尔斯体育俱乐部",
+          "team_name": "皇家利尔斯",
           "played": 21,
           "won": 8,
           "drawn": 5,
@@ -128,7 +128,7 @@
         },
         {
           "position": 10,
-          "team_name": "皇家瑟兰足球俱乐部",
+          "team_name": "皇家瑟兰",
           "played": 22,
           "won": 9,
           "drawn": 2,
@@ -141,7 +141,7 @@
         },
         {
           "position": 11,
-          "team_name": "皇家法兰波垒斯足球俱乐部",
+          "team_name": "皇家法兰波垒斯",
           "played": 22,
           "won": 7,
           "drawn": 5,
@@ -154,7 +154,7 @@
         },
         {
           "position": 12,
-          "team_name": "皇家安德莱赫特未来体育俱乐部",
+          "team_name": "安德莱赫特未来",
           "played": 21,
           "won": 4,
           "drawn": 6,
@@ -167,7 +167,7 @@
         },
         {
           "position": 13,
-          "team_name": "皇家列日足球俱乐部",
+          "team_name": "皇家列日",
           "played": 21,
           "won": 5,
           "drawn": 3,
@@ -180,7 +180,7 @@
         },
         {
           "position": 14,
-          "team_name": "KRC亨克青年队",
+          "team_name": "亨克青年队",
           "played": 21,
           "won": 4,
           "drawn": 5,
@@ -193,7 +193,7 @@
         },
         {
           "position": 15,
-          "team_name": "根特青年足球俱乐部",
+          "team_name": "根特青年",
           "played": 22,
           "won": 3,
           "drawn": 4,
