@@ -54,6 +54,9 @@
         <FanCommunity
           v-else-if="activeTab === 'community'"
           :communityData="community"
+          :newsList="news"
+          :matchesList="matches"
+          @select-match="onCommunitySelectMatch"
         />
 
         <!-- 模块 E: 💼 主帅信箱 (私域主帅工作台页面，非弹窗) -->
@@ -147,6 +150,14 @@ const selectedRoundOtherMatches = computed(() => {
 const onSelectMatch = (matchId) => {
   selectedMatchId.value = matchId
   window.scrollTo({ top: 0, behavior: 'smooth' })
+}
+
+const onCommunitySelectMatch = (matchId) => {
+  if (matchId) {
+    activeTab.value = 'matches'
+    selectedMatchId.value = matchId
+    window.scrollTo({ top: 0, behavior: 'smooth' })
+  }
 }
 
 const onSwitchMatch = (matchId) => {
