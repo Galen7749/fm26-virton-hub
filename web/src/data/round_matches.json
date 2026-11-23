@@ -922,5 +922,341 @@
       "score_away": 2,
       "date": "2026-02-01"
     }
-  ]
+  ],
+  "22": [
+    {
+      "home_team": "皇家比尔肖特",
+      "away_team": "皇家洛克伦滕瑟",
+      "score_home": 2,
+      "score_away": 1,
+      "date": "2026-02-07"
+    },
+    {
+      "home_team": "皇家欧本",
+      "away_team": "皇家马斯梅赫伦",
+      "score_home": 0,
+      "score_away": 4,
+      "date": "2026-02-08"
+    },
+    {
+      "home_team": "皇家列日",
+      "away_team": "登德",
+      "score_home": 0,
+      "score_away": 1,
+      "date": "2026-02-08"
+    },
+    {
+      "home_team": "亨克青年队",
+      "away_team": "哈瑟尔特",
+      "score_home": 0,
+      "score_away": 2,
+      "date": "2026-02-08"
+    },
+    {
+      "home_team": "安德莱赫特未来",
+      "away_team": "根特青年",
+      "score_home": 2,
+      "score_away": 0,
+      "date": "2026-02-08"
+    },
+    {
+      "home_team": "布鲁日青年",
+      "away_team": "皇家利尔斯",
+      "score_home": 0,
+      "score_away": 1,
+      "date": "2026-02-08"
+    }
+  ],
+  "23": [
+    {
+      "home_team": "皇家利尔斯",
+      "away_team": "皇家比尔肖特",
+      "score_home": 3,
+      "score_away": 1,
+      "date": "2026-02-13"
+    },
+    {
+      "home_team": "皇家瑟兰",
+      "away_team": "皇家法兰波垒斯",
+      "score_home": 2,
+      "score_away": 0,
+      "date": "2026-02-14"
+    },
+    {
+      "home_team": "哈瑟尔特",
+      "away_team": "皇家欧本",
+      "score_home": 4,
+      "score_away": 2,
+      "date": "2026-02-15"
+    },
+    {
+      "home_team": "皇家马斯梅赫伦",
+      "away_team": "安德莱赫特未来",
+      "score_home": 0,
+      "score_away": 0,
+      "date": "2026-02-15"
+    },
+    {
+      "home_team": "皇家洛克伦滕瑟",
+      "away_team": "亨克青年队",
+      "score_home": 3,
+      "score_away": 1,
+      "date": "2026-02-15"
+    },
+    {
+      "home_team": "根特青年",
+      "away_team": "皇家列日",
+      "score_home": 2,
+      "score_away": 2,
+      "date": "2026-02-15"
+    }
+  ],
+  "24": [
+    {
+      "home_team": "皇家列日",
+      "away_team": "皇家马斯梅赫伦",
+      "score_home": 0,
+      "score_away": 2,
+      "date": "2026-02-21"
+    },
+    {
+      "home_team": "皇家欧本",
+      "away_team": "皇家洛克伦滕瑟",
+      "score_home": 3,
+      "score_away": 2,
+      "date": "2026-02-22"
+    },
+    {
+      "home_team": "登德",
+      "away_team": "根特青年",
+      "score_home": 0,
+      "score_away": 4,
+      "date": "2026-02-22"
+    },
+    {
+      "home_team": "布鲁日青年",
+      "away_team": "皇家瑟兰",
+      "score_home": 0,
+      "score_away": 2,
+      "date": "2026-02-22"
+    },
+    {
+      "home_team": "亨克青年队",
+      "away_team": "皇家利尔斯",
+      "score_home": 1,
+      "score_away": 2,
+      "date": "2026-02-22"
+    },
+    {
+      "home_team": "安德莱赫特未来",
+      "away_team": "哈瑟尔特",
+      "score_home": 1,
+      "score_away": 1,
+      "date": "2026-02-22"
+    }
+  ],
+  "25": [
+    {
+      "home_team": "皇家马斯梅赫伦",
+      "away_team": "登德",
+      "score_home": 3,
+      "score_away": 0,
+      "date": "2026-02-27"
+    },
+    {
+      "home_team": "皇家瑟兰",
+      "away_team": "皇家比尔肖特",
+      "score_home": 3,
+      "score_away": 0,
+      "date": "2026-02-28"
+    },
+    {
+      "home_team": "哈瑟尔特",
+      "away_team": "皇家列日",
+      "score_home": 2,
+      "score_away": 0,
+      "date": "2026-03-01"
+    },
+    {
+      "home_team": "皇家法兰波垒斯",
+      "away_team": "布鲁日青年",
+      "score_home": 0,
+      "score_away": 1,
+      "date": "2026-03-01"
+    },
+    {
+      "home_team": "皇家洛克伦滕瑟",
+      "away_team": "安德莱赫特未来",
+      "score_home": 1,
+      "score_away": 1,
+      "date": "2026-03-01"
+    },
+    {
+      "home_team": "皇家利尔斯",
+      "away_team": "皇家欧本",
+      "score_home": 1,
+      "score_away": 1,
+      "date": "2026-03-01"
+    }
+  ],
+  "26": [
+    {
+      "home_team": "皇家比尔肖特",
+      "away_team": "皇家法兰波垒斯",
+      "score_home": 1,
+      "score_away": 0,
+      "date": "2026-03-06"
+    },
+    {
+      "home_team": "皇家列日",
+      "away_team": "皇家洛克伦滕瑟",
+      "score_home": 0,
+      "score_away": 1,
+      "date": "2026-03-07"
+    },
+    {
+      "home_team": "登德",
+      "away_team": "哈瑟尔特",
+      "score_home": 1,
+      "score_away": 1,
+      "date": "2026-03-08"
+    },
+    {
+      "home_team": "亨克青年队",
+      "away_team": "皇家瑟兰",
+      "score_home": 1,
+      "score_away": 4,
+      "date": "2026-03-08"
+    },
+    {
+      "home_team": "安德莱赫特未来",
+      "away_team": "皇家利尔斯",
+      "score_home": 3,
+      "score_away": 3,
+      "date": "2026-03-08"
+    },
+    {
+      "home_team": "根特青年",
+      "away_team": "皇家马斯梅赫伦",
+      "score_home": 0,
+      "score_away": 4,
+      "date": "2026-03-08"
+    }
+  ],
+  "27": [
+    {
+      "home_team": "皇家洛克伦滕瑟",
+      "away_team": "登德",
+      "score_home": 2,
+      "score_away": 3,
+      "date": "2026-03-13"
+    },
+    {
+      "home_team": "皇家利尔斯",
+      "away_team": "皇家列日",
+      "score_home": 2,
+      "score_away": 1,
+      "date": "2026-03-14"
+    },
+    {
+      "home_team": "皇家瑟兰",
+      "away_team": "皇家欧本",
+      "score_home": 1,
+      "score_away": 1,
+      "date": "2026-03-15"
+    },
+    {
+      "home_team": "哈瑟尔特",
+      "away_team": "根特青年",
+      "score_home": 3,
+      "score_away": 2,
+      "date": "2026-03-15"
+    },
+    {
+      "home_team": "皇家法兰波垒斯",
+      "away_team": "亨克青年队",
+      "score_home": 3,
+      "score_away": 0,
+      "date": "2026-03-15"
+    },
+    {
+      "home_team": "布鲁日青年",
+      "away_team": "皇家比尔肖特",
+      "score_home": 2,
+      "score_away": 0,
+      "date": "2026-03-15"
+    }
+  ],
+  "28": [
+    {
+      "home_team": "登德",
+      "away_team": "皇家利尔斯",
+      "score_home": 2,
+      "score_away": 3,
+      "date": "2026-03-27"
+    },
+    {
+      "home_team": "皇家欧本",
+      "away_team": "皇家法兰波垒斯",
+      "score_home": 1,
+      "score_away": 2,
+      "date": "2026-03-28"
+    },
+    {
+      "home_team": "皇家马斯梅赫伦",
+      "away_team": "哈瑟尔特",
+      "score_home": 2,
+      "score_away": 1,
+      "date": "2026-03-29"
+    },
+    {
+      "home_team": "根特青年",
+      "away_team": "皇家洛克伦滕瑟",
+      "score_home": 2,
+      "score_away": 0,
+      "date": "2026-03-29"
+    },
+    {
+      "home_team": "亨克青年队",
+      "away_team": "布鲁日青年",
+      "score_home": 1,
+      "score_away": 0,
+      "date": "2026-03-29"
+    },
+    {
+      "home_team": "安德莱赫特未来",
+      "away_team": "皇家瑟兰",
+      "score_home": 2,
+      "score_away": 0,
+      "date": "2026-03-29"
+    }
+  ],
+  "29": [
+    {
+      "home_team": "皇家利尔斯",
+      "away_team": "皇家比尔肖特",
+      "score_home": 0,
+      "score_away": 0,
+      "date": "2026-06-02"
+    }
+  ],
+  "30": [
+    {
+      "home_team": "皇家比尔肖特",
+      "away_team": "皇家利尔斯",
+      "score_home": 0,
+      "score_away": 0,
+      "date": "2026-06-09"
+    }
+  ],
+  "31": [
+    {
+      "home_team": "皇家比尔肖特",
+      "away_team": "皇家利尔斯",
+      "score_home": 0,
+      "score_away": 0,
+      "date": "2026-06-09"
+    }
+  ],
+  "32": []
 }

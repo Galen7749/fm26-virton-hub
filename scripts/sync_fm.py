@@ -98,7 +98,14 @@ ZH_NAME_MAP = {
     "Yentl Van Genechten": "延特尔·范赫内赫滕",
     "Maxime Bastian": "马克西姆·巴斯蒂安",
     "Nicolas Gavory": "尼古拉·加沃里",
-    "Fabio Ferraro": "法比奥·费拉罗"
+    "Fabio Ferraro": "法比奥·费拉罗",
+    "Alexandre Stanić": "亚历山大·斯塔尼奇",
+    "David Mukuna": "大卫·穆库纳",
+    "Jelani Trevisan": "杰拉尼·特雷维桑",
+    "Marko Mitrović": "马尔科·米特罗维奇",
+    "Ruslan Vydysh": "鲁斯兰·维迪什",
+    "David Ramos": "大卫·拉莫斯",
+    "Ehsan Kari": "埃赫桑·卡里"
 }
 
 CLUB_ZH_MAP = {
@@ -109,6 +116,8 @@ CLUB_ZH_MAP = {
     "哈瑟尔特": "哈瑟尔特",
     "皇家洛克伦滕瑟体育俱乐部": "皇家洛克伦滕瑟",
     "皇家利尔斯体育俱乐部": "皇家利尔斯",
+    "SK利尔斯": "皇家利尔斯",
+    "Lierse SK": "皇家利尔斯",
     "皇家瑟兰足球俱乐部": "皇家瑟兰",
     "皇家法兰波垒斯足球俱乐部": "皇家法兰波垒斯",
     "布鲁日青年足球俱乐部": "布鲁日青年",
@@ -362,9 +371,23 @@ def sync():
 
             stadium_name = "伊万·乔治球场 (Stade Yvan Georges)" if is_home else f"{home_team}主场"
 
+            is_playoff = (f.stage_id in (5398, 5399, 5400, 5401))
+            if f.stage_id == 5398:
+                stage_title = "冲甲半决赛·首回合 (客)"
+            elif f.stage_id == 5399:
+                stage_title = "冲甲半决赛·次回合 (主)"
+            elif f.stage_id == 5400:
+                stage_title = "冲甲决赛·首回合 (客)"
+            elif f.stage_id == 5401:
+                stage_title = "🏆 冲甲决赛·次回合 (4-3绝杀冲甲)"
+            else:
+                stage_title = f"比乙常规赛 · 第{r_num}轮"
+
             match_entry = {
                 "id": r_num,
                 "round": r_num,
+                "stage_title": stage_title,
+                "is_playoff": is_playoff,
                 "date": d_str,
                 "home_team": home_team,
                 "away_team": away_team,
@@ -458,15 +481,16 @@ def sync():
                     if club["id"] == "virton":
                         for season in club.get("seasons", []):
                             if season.get("id") == "2025-2026":
-                                season["status"] = f"进行中 (第{total_rounds}轮)"
-                                season["stats"]["played"] = my_row["played"]
-                                season["stats"]["won"] = my_row["won"]
+                                season["status"] = "已完结 · 冲甲成功！(升入比利时甲级联赛)" if total_rounds >= 32 else f"进行中 (第{total_rounds}轮)"
+                                season["stats"]["played"] = total_rounds
+                                season["stats"]["won"] = 19 if total_rounds >= 32 else my_row["won"]
                                 season["stats"]["drawn"] = my_row["drawn"]
-                                season["stats"]["lost"] = my_row["lost"]
-                                season["stats"]["goals_for"] = my_row["gf"]
-                                season["stats"]["goals_against"] = my_row["ga"]
+                                season["stats"]["lost"] = 4 if total_rounds >= 32 else my_row["lost"]
+                                season["stats"]["goals_for"] = 70 if total_rounds >= 32 else my_row["gf"]
+                                season["stats"]["goals_against"] = 42 if total_rounds >= 32 else my_row["ga"]
                                 season["stats"]["points"] = my_row["points"]
                                 season["stats"]["rank"] = my_row["position"]
+                                season["stats"]["achievement"] = "🏆 冲甲附加赛总冠军 · 升入比甲联赛 (4-3绝杀淘汰利尔斯)"
             career_file.write_text(json.dumps(career_data, ensure_ascii=False, indent=2), encoding="utf-8")
             print("[✓] career.json 俱乐部生涯总战绩已更新！")
 
@@ -501,15 +525,20 @@ def sync():
                 sh, sa = m["score_home"], m["score_away"]
                 opp = m["away_team"] if m["venue"] == "home" else m["home_team"]
                 
-                if res == "W":
+                if r == len(new_matches) and ((sh == 4 and sa == 1) or (sh == 1 and sa == 4)):
+                    score_val = 10.0
+                elif r == len(new_matches) - 1 and res == "L":
+                    score_val = 6.8
+                elif res == "W":
                     diff = abs(sh - sa)
                     base_score = 8.8 + min(0.9, diff * 0.3)
+                    score_val = round(base_score + (r % 3) * 0.1, 1)
                 elif res == "D":
                     base_score = 7.5 + (0.3 if (sh + sa >= 4) else 0.0)
+                    score_val = round(base_score + (r % 3) * 0.1, 1)
                 else:
                     base_score = 6.2 - (0.4 if abs(sh - sa) >= 2 else 0.0)
-                
-                score_val = round(base_score + (r % 3) * 0.1, 1)
+                    score_val = round(base_score + (r % 3) * 0.1, 1)
                 coach_round_scores.append({
                     "round": r,
                     "score": score_val,
@@ -620,27 +649,31 @@ def sync():
             curr_formation = latest_match.get("formation", "4-1-1-4 (双前锋·密集短传)")
             
             top_virton_scorer = next((p for p in d2_scorers if p.club_uid == VIRTON_CLUB_UID), None)
-            v_goals = top_virton_scorer.goals if top_virton_scorer else 14
+            v_goals = top_virton_scorer.goals if top_virton_scorer else 21
             
             my_row = next((r for r in bel_d2_table if r["is_my_team"]), None)
-            pts = my_row["points"] if my_row else 38
-            pos = my_row["position"] if my_row else 3
-            gf = my_row["gf"] if my_row else 45
+            pts = my_row["points"] if my_row else 57
+            pos = my_row["position"] if my_row else 2
+            gf = 70 if total_rounds >= 32 else (my_row["gf"] if my_row else 61)
+            won_c = 19 if total_rounds >= 32 else (my_row["won"] if my_row else 16)
+            lost_c = 4 if total_rounds >= 32 else (my_row["lost"] if my_row else 3)
+            rec_str = f"全季32战 19胜9平4负 进70球 (比乙常规赛亚军 + 冲甲附加赛总冠军 · 成功升入比甲！)" if total_rounds >= 32 else f"{total_rounds}场 {won_c}胜9平{lost_c}负 积{pts}分 (比乙第{pos}，进{gf}球全联赛第一)"
 
             if "tactical_system" in analysis_data:
                 analysis_data["tactical_system"]["formation"] = curr_formation
                 analysis_data["tactical_system"]["style_name"] = "密集短传 Tiki-Taka / 双中锋终结与两翼齐飞"
-                analysis_data["tactical_system"]["record"] = f"{total_rounds}场 10胜8平3负 积{pts}分 (比乙第{pos}，进{gf}球全联赛第一)"
-                analysis_data["tactical_system"]["striker_role"] = f"阿卜杜勒萨马德·哈切姆 ({v_goals}球金靴射手王) & 马克斯·因查德/拉哈米 (双中锋强力突刺)"
-                analysis_data["tactical_system"]["playmaker_role"] = "保罗·韦德 (8球5助全面开花) & 朴昇秀(3球6助)/托明(4球7助) 两翼齐飞"
+                analysis_data["tactical_system"]["record"] = rec_str
+                analysis_data["tactical_system"]["striker_role"] = f"阿卜杜勒萨马德·哈切姆 ({v_goals}球荣膺比乙金靴) & 马克斯·因查德 (冲甲决战戴帽封神)"
+                analysis_data["tactical_system"]["playmaker_role"] = "朴昇秀 (10助摘得比乙助攻王) & 泰伦·托明 (8球7助双前场爆点)"
             
             if "tactical_overview" in analysis_data:
                 analysis_data["tactical_overview"]["formation"] = curr_formation
-                analysis_data["tactical_overview"]["record"] = f"{total_rounds}场 10胜8平3负 积{pts}分 (联赛第{pos}，冲甲区)"
+                analysis_data["tactical_overview"]["record"] = "32战 19胜9平4负 (冲甲成功，升入比甲联赛)" if total_rounds >= 32 else f"{total_rounds}场 积{pts}分"
                 analysis_data["tactical_overview"]["philosophy"] = (
-                    f"徐指导在FM存档第15轮后的重磅战术变阵：变阵为【{curr_formation}】高压突击体系。"
-                    f"战术最大亮点在于双中锋（哈切姆+因查德/拉哈米）形成禁区立体轰炸，配合左右两翼朴昇秀与托明的高速穿插，"
-                    f"瓦莱里奥与登贝莱稳固中场，带领维尔通精英以{gf}球冠绝比乙联赛！"
+                    "徐指导率领维尔通精英谱写比利时足坛神话：常规赛28轮斩获亚军并轰入全比乙最多的61球！"
+                    "进入冲甲附加赛后，徐指导贯彻【4-1-1-4 双前锋高压强攻】哲学，半决赛5-1横扫登德，"
+                    "决赛首回合客场0-2落后绝境下，次回合主场展开史诗级反扑，因查德帽子戏法+哈切姆建功+阿森盖替补压哨助攻，"
+                    "以4-1、总比分4-3惊天大逆转绝杀皇家利尔斯，率队以升班马奇迹直接冲入比利时甲级联赛！"
                 )
             analysis_file.write_text(json.dumps(analysis_data, ensure_ascii=False, indent=2), encoding="utf-8")
             print(f"[✓] team_analysis.json 战术体系已更新至最新阵型: {curr_formation}！")

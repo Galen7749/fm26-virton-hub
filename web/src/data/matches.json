@@ -2,6 +2,8 @@
   {
     "id": 1,
     "round": 1,
+    "stage_title": "比乙常规赛 · 第1轮",
+    "is_playoff": false,
     "date": "2025-08-10",
     "home_team": "登德",
     "away_team": "维尔通精英",
@@ -518,6 +520,8 @@
   {
     "id": 2,
     "round": 2,
+    "stage_title": "比乙常规赛 · 第2轮",
+    "is_playoff": false,
     "date": "2025-08-13",
     "home_team": "维尔通精英",
     "away_team": "根特青年",
@@ -1054,6 +1058,8 @@
   {
     "id": 3,
     "round": 3,
+    "stage_title": "比乙常规赛 · 第3轮",
+    "is_playoff": false,
     "date": "2025-08-17",
     "home_team": "皇家马斯梅赫伦",
     "away_team": "维尔通精英",
@@ -1580,6 +1586,8 @@
   {
     "id": 4,
     "round": 4,
+    "stage_title": "比乙常规赛 · 第4轮",
+    "is_playoff": false,
     "date": "2025-08-24",
     "home_team": "维尔通精英",
     "away_team": "哈瑟尔特",
@@ -1588,28 +1596,13 @@
     "venue": "home",
     "stadium": "伊万·乔治球场 (Stade Yvan Georges)",
     "result": "W",
-    "formation": "4-1-1-3-1 (非对称·密集短传)",
+    "formation": "4-1-1-4 (双前锋·密集短传)",
     "tactical_style": "密集短传 · Tiki-Taka",
     "xg": 2.4,
     "shots": 15,
     "shots_on_target": 6,
     "distance_km": 121.2,
-    "scorers": [
-      {
-        "player": "Paul Wade",
-        "player_zh": "保罗·韦德",
-        "minute": 53,
-        "assist": "Tyrone Tormin",
-        "assist_zh": "泰伦·托明"
-      },
-      {
-        "player": "Abdelsamad Hachem",
-        "player_zh": "阿卜杜勒萨马德·哈切姆",
-        "minute": 53,
-        "assist": "Tyrone Tormin",
-        "assist_zh": "泰伦·托明"
-      }
-    ],
+    "scorers": [],
     "lineup": [
       {
         "pos": "GK",
@@ -2121,6 +2114,8 @@
   {
     "id": 5,
     "round": 5,
+    "stage_title": "比乙常规赛 · 第5轮",
+    "is_playoff": false,
     "date": "2025-08-31",
     "home_team": "皇家洛克伦滕瑟",
     "away_team": "维尔通精英",
@@ -2129,7 +2124,7 @@
     "venue": "away",
     "stadium": "皇家洛克伦滕瑟主场",
     "result": "D",
-    "formation": "4-1-1-3-1 (非对称·密集短传)",
+    "formation": "4-1-1-4 (双前锋·密集短传)",
     "tactical_style": "密集短传 · Tiki-Taka",
     "xg": 1.05,
     "shots": 12,
@@ -2614,6 +2609,8 @@
   {
     "id": 6,
     "round": 6,
+    "stage_title": "比乙常规赛 · 第6轮",
+    "is_playoff": false,
     "date": "2025-09-14",
     "home_team": "维尔通精英",
     "away_team": "皇家利尔斯",
@@ -2622,28 +2619,13 @@
     "venue": "home",
     "stadium": "伊万·乔治球场 (Stade Yvan Georges)",
     "result": "D",
-    "formation": "4-1-1-3-1 (非对称·密集短传)",
+    "formation": "4-1-1-4 (双前锋·密集短传)",
     "tactical_style": "密集短传 · Tiki-Taka",
     "xg": 1.95,
     "shots": 17,
     "shots_on_target": 7,
     "distance_km": 122.8,
-    "scorers": [
-      {
-        "player": "Aliou Dembélé",
-        "player_zh": "阿卢·登贝莱",
-        "minute": 37,
-        "assist": null,
-        "assist_zh": null
-      },
-      {
-        "player": "Abdelsamad Hachem",
-        "player_zh": "阿卜杜勒萨马德·哈切姆",
-        "minute": 37,
-        "assist": null,
-        "assist_zh": null
-      }
-    ],
+    "scorers": [],
     "lineup": [
       {
         "pos": "GK",
@@ -3112,6 +3094,8 @@
   {
     "id": 7,
     "round": 7,
+    "stage_title": "比乙常规赛 · 第7轮",
+    "is_playoff": false,
     "date": "2025-09-24",
     "home_team": "皇家瑟兰",
     "away_team": "维尔通精英",
@@ -3120,35 +3104,13 @@
     "venue": "away",
     "stadium": "皇家瑟兰主场",
     "result": "W",
-    "formation": "4-1-1-3-1 (非对称·密集短传)",
+    "formation": "4-1-1-4 (双前锋·密集短传)",
     "tactical_style": "密集短传 · Tiki-Taka",
     "xg": 2.85,
     "shots": 22,
     "shots_on_target": 9,
     "distance_km": 118.0,
-    "scorers": [
-      {
-        "player": "Park Seung-Soo",
-        "player_zh": "朴昇秀",
-        "minute": 44,
-        "assist": "Tyrone Tormin",
-        "assist_zh": "泰伦·托明"
-      },
-      {
-        "player": "Luca Maiorano",
-        "player_zh": "卢卡·马约拉诺",
-        "minute": 44,
-        "assist": "Tyrone Tormin",
-        "assist_zh": "泰伦·托明"
-      },
-      {
-        "player": "Luca Maiorano",
-        "player_zh": "卢卡·马约拉诺",
-        "minute": 72,
-        "assist": null,
-        "assist_zh": null
-      }
-    ],
+    "scorers": [],
     "lineup": [
       {
         "pos": "DR",
@@ -3627,6 +3589,8 @@
   {
     "id": 8,
     "round": 8,
+    "stage_title": "比乙常规赛 · 第8轮",
+    "is_playoff": false,
     "date": "2025-10-05",
     "home_team": "维尔通精英",
     "away_team": "皇家法兰波垒斯",
@@ -3635,35 +3599,13 @@
     "venue": "home",
     "stadium": "伊万·乔治球场 (Stade Yvan Georges)",
     "result": "W",
-    "formation": "4-1-1-3-1 (非对称·密集短传)",
+    "formation": "4-1-1-4 (双前锋·密集短传)",
     "tactical_style": "密集短传 · Tiki-Taka",
     "xg": 3.0,
     "shots": 19,
     "shots_on_target": 8,
     "distance_km": 118.8,
-    "scorers": [
-      {
-        "player": "Abdelsamad Hachem",
-        "player_zh": "阿卜杜勒萨马德·哈切姆",
-        "minute": 51,
-        "assist": "Tyrone Tormin",
-        "assist_zh": "泰伦·托明"
-      },
-      {
-        "player": "Tyrone Tormin",
-        "player_zh": "泰伦·托明",
-        "minute": 51,
-        "assist": "Tyrone Tormin",
-        "assist_zh": "泰伦·托明"
-      },
-      {
-        "player": "Abdelsamad Hachem",
-        "player_zh": "阿卜杜勒萨马德·哈切姆",
-        "minute": 79,
-        "assist": null,
-        "assist_zh": null
-      }
-    ],
+    "scorers": [],
     "lineup": [
       {
         "pos": "GK",
@@ -4152,6 +4094,8 @@
   {
     "id": 9,
     "round": 9,
+    "stage_title": "比乙常规赛 · 第9轮",
+    "is_playoff": false,
     "date": "2025-10-19",
     "home_team": "布鲁日青年",
     "away_team": "维尔通精英",
@@ -4160,42 +4104,13 @@
     "venue": "away",
     "stadium": "布鲁日青年主场",
     "result": "L",
-    "formation": "4-1-1-3-1 (非对称·密集短传)",
+    "formation": "4-1-1-4 (双前锋·密集短传)",
     "tactical_style": "密集短传 · Tiki-Taka",
     "xg": 3.9,
     "shots": 24,
     "shots_on_target": 10,
     "distance_km": 119.6,
-    "scorers": [
-      {
-        "player": "Paul Wade",
-        "player_zh": "保罗·韦德",
-        "minute": 28,
-        "assist": null,
-        "assist_zh": null
-      },
-      {
-        "player": "Abdelsamad Hachem",
-        "player_zh": "阿卜杜勒萨马德·哈切姆",
-        "minute": 28,
-        "assist": null,
-        "assist_zh": null
-      },
-      {
-        "player": "Paul Wade",
-        "player_zh": "保罗·韦德",
-        "minute": 56,
-        "assist": null,
-        "assist_zh": null
-      },
-      {
-        "player": "Abdelsamad Hachem",
-        "player_zh": "阿卜杜勒萨马德·哈切姆",
-        "minute": 56,
-        "assist": null,
-        "assist_zh": null
-      }
-    ],
+    "scorers": [],
     "lineup": [
       {
         "pos": "GK",
@@ -4664,6 +4579,8 @@
   {
     "id": 10,
     "round": 10,
+    "stage_title": "比乙常规赛 · 第10轮",
+    "is_playoff": false,
     "date": "2025-10-26",
     "home_team": "维尔通精英",
     "away_team": "皇家比尔肖特",
@@ -4672,28 +4589,13 @@
     "venue": "home",
     "stadium": "伊万·乔治球场 (Stade Yvan Georges)",
     "result": "D",
-    "formation": "4-1-1-3-1 (非对称·密集短传)",
+    "formation": "4-1-1-4 (双前锋·密集短传)",
     "tactical_style": "密集短传 · Tiki-Taka",
     "xg": 1.8,
     "shots": 17,
     "shots_on_target": 7,
     "distance_km": 120.4,
-    "scorers": [
-      {
-        "player": "Tyrone Tormin",
-        "player_zh": "泰伦·托明",
-        "minute": 35,
-        "assist": null,
-        "assist_zh": null
-      },
-      {
-        "player": "Abdelsamad Hachem",
-        "player_zh": "阿卜杜勒萨马德·哈切姆",
-        "minute": 35,
-        "assist": null,
-        "assist_zh": null
-      }
-    ],
+    "scorers": [],
     "lineup": [
       {
         "pos": "DR",
@@ -5182,6 +5084,8 @@
   {
     "id": 11,
     "round": 11,
+    "stage_title": "比乙常规赛 · 第11轮",
+    "is_playoff": false,
     "date": "2025-11-02",
     "home_team": "亨克青年队",
     "away_team": "维尔通精英",
@@ -5190,21 +5094,13 @@
     "venue": "away",
     "stadium": "亨克青年队主场",
     "result": "D",
-    "formation": "4-1-1-3-1 (非对称·密集短传)",
+    "formation": "4-1-1-4 (双前锋·密集短传)",
     "tactical_style": "密集短传 · Tiki-Taka",
     "xg": 1.2,
     "shots": 14,
     "shots_on_target": 6,
     "distance_km": 121.2,
-    "scorers": [
-      {
-        "player": "Abdelsamad Hachem",
-        "player_zh": "阿卜杜勒萨马德·哈切姆",
-        "minute": 42,
-        "assist": null,
-        "assist_zh": null
-      }
-    ],
+    "scorers": [],
     "lineup": [
       {
         "pos": "GK",
@@ -5683,6 +5579,8 @@
   {
     "id": 12,
     "round": 12,
+    "stage_title": "比乙常规赛 · 第12轮",
+    "is_playoff": false,
     "date": "2025-11-09",
     "home_team": "维尔通精英",
     "away_team": "皇家欧本",
@@ -5691,21 +5589,13 @@
     "venue": "home",
     "stadium": "伊万·乔治球场 (Stade Yvan Georges)",
     "result": "D",
-    "formation": "4-1-1-3-1 (非对称·密集短传)",
+    "formation": "4-1-1-4 (双前锋·密集短传)",
     "tactical_style": "密集短传 · Tiki-Taka",
     "xg": 1.35,
     "shots": 11,
     "shots_on_target": 4,
     "distance_km": 122.0,
-    "scorers": [
-      {
-        "player": "Abdelsamad Hachem",
-        "player_zh": "阿卜杜勒萨马德·哈切姆",
-        "minute": 49,
-        "assist": null,
-        "assist_zh": null
-      }
-    ],
+    "scorers": [],
     "lineup": [
       {
         "pos": "GK",
@@ -6184,6 +6074,8 @@
   {
     "id": 13,
     "round": 13,
+    "stage_title": "比乙常规赛 · 第13轮",
+    "is_playoff": false,
     "date": "2025-11-23",
     "home_team": "安德莱赫特未来",
     "away_team": "维尔通精英",
@@ -6192,35 +6084,13 @@
     "venue": "away",
     "stadium": "安德莱赫特未来主场",
     "result": "W",
-    "formation": "4-1-1-3-1 (非对称·密集短传)",
+    "formation": "4-1-1-4 (双前锋·密集短传)",
     "tactical_style": "密集短传 · Tiki-Taka",
     "xg": 3.0,
     "shots": 20,
     "shots_on_target": 9,
     "distance_km": 122.8,
-    "scorers": [
-      {
-        "player": "Prins Tjiueza",
-        "player_zh": "普林斯·吉乌扎",
-        "minute": 26,
-        "assist": "Tyrone Tormin",
-        "assist_zh": "泰伦·托明"
-      },
-      {
-        "player": "Paul Wade",
-        "player_zh": "保罗·韦德",
-        "minute": 26,
-        "assist": "Tyrone Tormin",
-        "assist_zh": "泰伦·托明"
-      },
-      {
-        "player": "Luca Maiorano",
-        "player_zh": "卢卡·马约拉诺",
-        "minute": 26,
-        "assist": "Tyrone Tormin",
-        "assist_zh": "泰伦·托明"
-      }
-    ],
+    "scorers": [],
     "lineup": [
       {
         "pos": "DR",
@@ -6732,6 +6602,8 @@
   {
     "id": 14,
     "round": 14,
+    "stage_title": "比乙常规赛 · 第14轮",
+    "is_playoff": false,
     "date": "2025-11-30",
     "home_team": "维尔通精英",
     "away_team": "皇家列日",
@@ -7283,6 +7155,8 @@
   {
     "id": 15,
     "round": 15,
+    "stage_title": "比乙常规赛 · 第15轮",
+    "is_playoff": false,
     "date": "2025-12-07",
     "home_team": "根特青年",
     "away_team": "维尔通精英",
@@ -7831,6 +7705,8 @@
   {
     "id": 16,
     "round": 16,
+    "stage_title": "比乙常规赛 · 第16轮",
+    "is_playoff": false,
     "date": "2025-12-14",
     "home_team": "维尔通精英",
     "away_team": "登德",
@@ -8369,6 +8245,8 @@
   {
     "id": 17,
     "round": 17,
+    "stage_title": "比乙常规赛 · 第17轮",
+    "is_playoff": false,
     "date": "2025-12-17",
     "home_team": "维尔通精英",
     "away_team": "皇家马斯梅赫伦",
@@ -8910,6 +8788,8 @@
   {
     "id": 18,
     "round": 18,
+    "stage_title": "比乙常规赛 · 第18轮",
+    "is_playoff": false,
     "date": "2025-12-21",
     "home_team": "哈瑟尔特",
     "away_team": "维尔通精英",
@@ -9454,6 +9334,8 @@
   {
     "id": 19,
     "round": 19,
+    "stage_title": "比乙常规赛 · 第19轮",
+    "is_playoff": false,
     "date": "2026-01-18",
     "home_team": "维尔通精英",
     "away_team": "皇家洛克伦滕瑟",
@@ -9975,6 +9857,8 @@
   {
     "id": 20,
     "round": 20,
+    "stage_title": "比乙常规赛 · 第20轮",
+    "is_playoff": false,
     "date": "2026-01-25",
     "home_team": "皇家利尔斯",
     "away_team": "维尔通精英",
@@ -10526,6 +10410,8 @@
   {
     "id": 21,
     "round": 21,
+    "stage_title": "比乙常规赛 · 第21轮",
+    "is_playoff": false,
     "date": "2026-02-01",
     "home_team": "维尔通精英",
     "away_team": "皇家瑟兰",
@@ -11079,6 +10965,6150 @@
         "entered_minute": 10,
         "minutes": 80,
         "rating": 7.0,
+        "goals": 0,
+        "assists": 0
+      }
+    ]
+  },
+  {
+    "id": 22,
+    "round": 22,
+    "stage_title": "比乙常规赛 · 第22轮",
+    "is_playoff": false,
+    "date": "2026-02-08",
+    "home_team": "皇家法兰波垒斯",
+    "away_team": "维尔通精英",
+    "score_home": 0,
+    "score_away": 0,
+    "venue": "away",
+    "stadium": "皇家法兰波垒斯主场",
+    "result": "D",
+    "formation": "4-1-1-4 (双前锋·密集短传)",
+    "tactical_style": "密集短传 · Tiki-Taka",
+    "xg": 0.6,
+    "shots": 10,
+    "shots_on_target": 4,
+    "distance_km": 118.8,
+    "scorers": [],
+    "lineup": [
+      {
+        "pos": "GK",
+        "name": "Célestin De Schrevel",
+        "name_en": "Célestin De Schrevel",
+        "name_zh": "塞莱斯丁·德·施瑞沃",
+        "rating": 7.1,
+        "min": 90,
+        "is_mvp": false,
+        "stats": {
+          "出场时间": "90 分钟 (首发)",
+          "进球/助攻": "0球 / 0助",
+          "本场评分": "7.1 分",
+          "传球到位": "26/30",
+          "跑动强度": "高强度覆盖",
+          "战术职责": "首发 GK"
+        },
+        "radar": [
+          {
+            "subject": "赛场表现",
+            "value": 85
+          },
+          {
+            "subject": "出场时间",
+            "value": 100
+          },
+          {
+            "subject": "关键贡献",
+            "value": 80
+          },
+          {
+            "subject": "战术执行",
+            "value": 88
+          },
+          {
+            "subject": "对抗拼抢",
+            "value": 85
+          },
+          {
+            "subject": "传控配合",
+            "value": 86
+          }
+        ]
+      },
+      {
+        "pos": "AMR",
+        "name": "Tyrone Tormin",
+        "name_en": "Tyrone Tormin",
+        "name_zh": "泰伦·托明",
+        "rating": 6.5,
+        "min": 83,
+        "is_mvp": false,
+        "stats": {
+          "出场时间": "83 分钟 (首发)",
+          "进球/助攻": "0球 / 0助",
+          "本场评分": "6.5 分",
+          "传球到位": "26/30",
+          "跑动强度": "高强度覆盖",
+          "战术职责": "首发 AMR"
+        },
+        "radar": [
+          {
+            "subject": "赛场表现",
+            "value": 78
+          },
+          {
+            "subject": "出场时间",
+            "value": 92
+          },
+          {
+            "subject": "关键贡献",
+            "value": 80
+          },
+          {
+            "subject": "战术执行",
+            "value": 88
+          },
+          {
+            "subject": "对抗拼抢",
+            "value": 85
+          },
+          {
+            "subject": "传控配合",
+            "value": 86
+          }
+        ]
+      },
+      {
+        "pos": "DC1",
+        "name": "Allan Tchaptchet",
+        "name_en": "Allan Tchaptchet",
+        "name_zh": "阿兰·特查普切特",
+        "rating": 7.4,
+        "min": 90,
+        "is_mvp": false,
+        "stats": {
+          "出场时间": "90 分钟 (首发)",
+          "进球/助攻": "0球 / 0助",
+          "本场评分": "7.4 分",
+          "传球到位": "26/30",
+          "跑动强度": "高强度覆盖",
+          "战术职责": "首发 DC1"
+        },
+        "radar": [
+          {
+            "subject": "赛场表现",
+            "value": 88
+          },
+          {
+            "subject": "出场时间",
+            "value": 100
+          },
+          {
+            "subject": "关键贡献",
+            "value": 80
+          },
+          {
+            "subject": "战术执行",
+            "value": 88
+          },
+          {
+            "subject": "对抗拼抢",
+            "value": 85
+          },
+          {
+            "subject": "传控配合",
+            "value": 86
+          }
+        ]
+      },
+      {
+        "pos": "ST1",
+        "name": "Marks Inchaud",
+        "name_en": "Marks Inchaud",
+        "name_zh": "马克斯·因查德",
+        "rating": 6.5,
+        "min": 63,
+        "is_mvp": false,
+        "stats": {
+          "出场时间": "63 分钟 (首发)",
+          "进球/助攻": "0球 / 0助",
+          "本场评分": "6.5 分",
+          "传球到位": "26/30",
+          "跑动强度": "高强度覆盖",
+          "战术职责": "首发 ST1"
+        },
+        "radar": [
+          {
+            "subject": "赛场表现",
+            "value": 78
+          },
+          {
+            "subject": "出场时间",
+            "value": 70
+          },
+          {
+            "subject": "关键贡献",
+            "value": 80
+          },
+          {
+            "subject": "战术执行",
+            "value": 88
+          },
+          {
+            "subject": "对抗拼抢",
+            "value": 85
+          },
+          {
+            "subject": "传控配合",
+            "value": 86
+          }
+        ]
+      },
+      {
+        "pos": "DM",
+        "name": "Antoine Valério",
+        "name_en": "Antoine Valério",
+        "name_zh": "安托万·瓦莱里奥",
+        "rating": 6.9,
+        "min": 90,
+        "is_mvp": false,
+        "stats": {
+          "出场时间": "90 分钟 (首发)",
+          "进球/助攻": "0球 / 0助",
+          "本场评分": "6.9 分",
+          "传球到位": "26/30",
+          "跑动强度": "高强度覆盖",
+          "战术职责": "首发 DM"
+        },
+        "radar": [
+          {
+            "subject": "赛场表现",
+            "value": 82
+          },
+          {
+            "subject": "出场时间",
+            "value": 100
+          },
+          {
+            "subject": "关键贡献",
+            "value": 80
+          },
+          {
+            "subject": "战术执行",
+            "value": 88
+          },
+          {
+            "subject": "对抗拼抢",
+            "value": 85
+          },
+          {
+            "subject": "传控配合",
+            "value": 86
+          }
+        ]
+      },
+      {
+        "pos": "MC",
+        "name": "Aliou Dembélé",
+        "name_en": "Aliou Dembélé",
+        "name_zh": "阿卢·登贝莱",
+        "rating": 6.6,
+        "min": 83,
+        "is_mvp": false,
+        "stats": {
+          "出场时间": "83 分钟 (首发)",
+          "进球/助攻": "0球 / 0助",
+          "本场评分": "6.6 分",
+          "传球到位": "26/30",
+          "跑动强度": "高强度覆盖",
+          "战术职责": "首发 MC"
+        },
+        "radar": [
+          {
+            "subject": "赛场表现",
+            "value": 79
+          },
+          {
+            "subject": "出场时间",
+            "value": 92
+          },
+          {
+            "subject": "关键贡献",
+            "value": 80
+          },
+          {
+            "subject": "战术执行",
+            "value": 88
+          },
+          {
+            "subject": "对抗拼抢",
+            "value": 85
+          },
+          {
+            "subject": "传控配合",
+            "value": 86
+          }
+        ]
+      },
+      {
+        "pos": "DC2",
+        "name": "William Simba",
+        "name_en": "William Simba",
+        "name_zh": "威廉·辛巴",
+        "rating": 7.2,
+        "min": 90,
+        "is_mvp": false,
+        "stats": {
+          "出场时间": "90 分钟 (首发)",
+          "进球/助攻": "0球 / 0助",
+          "本场评分": "7.2 分",
+          "传球到位": "26/30",
+          "跑动强度": "高强度覆盖",
+          "战术职责": "首发 DC2"
+        },
+        "radar": [
+          {
+            "subject": "赛场表现",
+            "value": 86
+          },
+          {
+            "subject": "出场时间",
+            "value": 100
+          },
+          {
+            "subject": "关键贡献",
+            "value": 80
+          },
+          {
+            "subject": "战术执行",
+            "value": 88
+          },
+          {
+            "subject": "对抗拼抢",
+            "value": 85
+          },
+          {
+            "subject": "传控配合",
+            "value": 86
+          }
+        ]
+      },
+      {
+        "pos": "DR",
+        "name": "Steeven Assengue",
+        "name_en": "Steeven Assengue",
+        "name_zh": "斯蒂文·阿森盖",
+        "rating": 6.8,
+        "min": 90,
+        "is_mvp": false,
+        "stats": {
+          "出场时间": "90 分钟 (首发)",
+          "进球/助攻": "0球 / 0助",
+          "本场评分": "6.8 分",
+          "传球到位": "26/30",
+          "跑动强度": "高强度覆盖",
+          "战术职责": "首发 DR"
+        },
+        "radar": [
+          {
+            "subject": "赛场表现",
+            "value": 81
+          },
+          {
+            "subject": "出场时间",
+            "value": 100
+          },
+          {
+            "subject": "关键贡献",
+            "value": 80
+          },
+          {
+            "subject": "战术执行",
+            "value": 88
+          },
+          {
+            "subject": "对抗拼抢",
+            "value": 85
+          },
+          {
+            "subject": "传控配合",
+            "value": 86
+          }
+        ]
+      },
+      {
+        "pos": "AML",
+        "name": "Luca Maiorano",
+        "name_en": "Luca Maiorano",
+        "name_zh": "卢卡·马约拉诺",
+        "rating": 6.2,
+        "min": 83,
+        "is_mvp": false,
+        "stats": {
+          "出场时间": "83 分钟 (首发)",
+          "进球/助攻": "0球 / 0助",
+          "本场评分": "6.2 分",
+          "传球到位": "26/30",
+          "跑动强度": "高强度覆盖",
+          "战术职责": "首发 AML"
+        },
+        "radar": [
+          {
+            "subject": "赛场表现",
+            "value": 74
+          },
+          {
+            "subject": "出场时间",
+            "value": 92
+          },
+          {
+            "subject": "关键贡献",
+            "value": 80
+          },
+          {
+            "subject": "战术执行",
+            "value": 88
+          },
+          {
+            "subject": "对抗拼抢",
+            "value": 85
+          },
+          {
+            "subject": "传控配合",
+            "value": 86
+          }
+        ]
+      },
+      {
+        "pos": "DL",
+        "name": "Yumeki Yoshinaga",
+        "name_en": "Yumeki Yoshinaga",
+        "name_zh": "吉永梦希",
+        "rating": 7.1,
+        "min": 90,
+        "is_mvp": false,
+        "stats": {
+          "出场时间": "90 分钟 (首发)",
+          "进球/助攻": "0球 / 0助",
+          "本场评分": "7.1 分",
+          "传球到位": "26/30",
+          "跑动强度": "高强度覆盖",
+          "战术职责": "首发 DL"
+        },
+        "radar": [
+          {
+            "subject": "赛场表现",
+            "value": 85
+          },
+          {
+            "subject": "出场时间",
+            "value": 100
+          },
+          {
+            "subject": "关键贡献",
+            "value": 80
+          },
+          {
+            "subject": "战术执行",
+            "value": 88
+          },
+          {
+            "subject": "对抗拼抢",
+            "value": 85
+          },
+          {
+            "subject": "传控配合",
+            "value": 86
+          }
+        ]
+      },
+      {
+        "pos": "ST2",
+        "name": "Abdelsamad Hachem",
+        "name_en": "Abdelsamad Hachem",
+        "name_zh": "阿卜杜勒萨马德·哈切姆",
+        "rating": 6.5,
+        "min": 90,
+        "is_mvp": false,
+        "stats": {
+          "出场时间": "90 分钟 (首发)",
+          "进球/助攻": "0球 / 0助",
+          "本场评分": "6.5 分",
+          "传球到位": "26/30",
+          "跑动强度": "高强度覆盖",
+          "战术职责": "首发 ST2"
+        },
+        "radar": [
+          {
+            "subject": "赛场表现",
+            "value": 78
+          },
+          {
+            "subject": "出场时间",
+            "value": 100
+          },
+          {
+            "subject": "关键贡献",
+            "value": 80
+          },
+          {
+            "subject": "战术执行",
+            "value": 88
+          },
+          {
+            "subject": "对抗拼抢",
+            "value": 85
+          },
+          {
+            "subject": "传控配合",
+            "value": 86
+          }
+        ]
+      }
+    ],
+    "bench_subs": [
+      {
+        "name": "Prins Tjiueza",
+        "name_zh": "普林斯·吉乌扎",
+        "pos": "AMR",
+        "entered_minute": 83,
+        "minutes": 7,
+        "rating": 6.7,
+        "goals": 0,
+        "assists": 0
+      },
+      {
+        "name": "Gaëtan Arib",
+        "name_zh": "加埃唐·阿里布",
+        "pos": "MC",
+        "entered_minute": 83,
+        "minutes": 7,
+        "rating": 6.7,
+        "goals": 0,
+        "assists": 0
+      },
+      {
+        "name": "Paul Wade",
+        "name_zh": "保罗·韦德",
+        "pos": "AML",
+        "entered_minute": 83,
+        "minutes": 7,
+        "rating": 6.7,
+        "goals": 0,
+        "assists": 0
+      },
+      {
+        "name": "Sullivan Lakhamy",
+        "name_zh": "沙利文·拉哈米",
+        "pos": "ST",
+        "entered_minute": 63,
+        "minutes": 27,
+        "rating": 6.7,
+        "goals": 0,
+        "assists": 0
+      }
+    ]
+  },
+  {
+    "id": 23,
+    "round": 23,
+    "stage_title": "比乙常规赛 · 第23轮",
+    "is_playoff": false,
+    "date": "2026-02-15",
+    "home_team": "维尔通精英",
+    "away_team": "布鲁日青年",
+    "score_home": 2,
+    "score_away": 1,
+    "venue": "home",
+    "stadium": "伊万·乔治球场 (Stade Yvan Georges)",
+    "result": "W",
+    "formation": "4-1-1-4 (双前锋·密集短传)",
+    "tactical_style": "密集短传 · Tiki-Taka",
+    "xg": 2.25,
+    "shots": 18,
+    "shots_on_target": 8,
+    "distance_km": 119.6,
+    "scorers": [
+      {
+        "player": "Marks Inchaud",
+        "player_zh": "马克斯·因查德",
+        "minute": 36,
+        "assist": "Tyrone Tormin",
+        "assist_zh": "泰伦·托明"
+      },
+      {
+        "player": "Abdelsamad Hachem",
+        "player_zh": "阿卜杜勒萨马德·哈切姆",
+        "minute": 36,
+        "assist": "Tyrone Tormin",
+        "assist_zh": "泰伦·托明"
+      }
+    ],
+    "lineup": [
+      {
+        "pos": "GK",
+        "name": "Célestin De Schrevel",
+        "name_en": "Célestin De Schrevel",
+        "name_zh": "塞莱斯丁·德·施瑞沃",
+        "rating": 6.6,
+        "min": 90,
+        "is_mvp": false,
+        "stats": {
+          "出场时间": "90 分钟 (首发)",
+          "进球/助攻": "0球 / 0助",
+          "本场评分": "6.6 分",
+          "传球到位": "29/33",
+          "跑动强度": "高强度覆盖",
+          "战术职责": "首发 GK"
+        },
+        "radar": [
+          {
+            "subject": "赛场表现",
+            "value": 79
+          },
+          {
+            "subject": "出场时间",
+            "value": 100
+          },
+          {
+            "subject": "关键贡献",
+            "value": 80
+          },
+          {
+            "subject": "战术执行",
+            "value": 88
+          },
+          {
+            "subject": "对抗拼抢",
+            "value": 85
+          },
+          {
+            "subject": "传控配合",
+            "value": 86
+          }
+        ]
+      },
+      {
+        "pos": "AMR",
+        "name": "Tyrone Tormin",
+        "name_en": "Tyrone Tormin",
+        "name_zh": "泰伦·托明",
+        "rating": 6.4,
+        "min": 90,
+        "is_mvp": false,
+        "stats": {
+          "出场时间": "90 分钟 (首发)",
+          "进球/助攻": "0球 / 0助",
+          "本场评分": "6.4 分",
+          "传球到位": "29/33",
+          "跑动强度": "高强度覆盖",
+          "战术职责": "首发 AMR"
+        },
+        "radar": [
+          {
+            "subject": "赛场表现",
+            "value": 76
+          },
+          {
+            "subject": "出场时间",
+            "value": 100
+          },
+          {
+            "subject": "关键贡献",
+            "value": 80
+          },
+          {
+            "subject": "战术执行",
+            "value": 88
+          },
+          {
+            "subject": "对抗拼抢",
+            "value": 85
+          },
+          {
+            "subject": "传控配合",
+            "value": 86
+          }
+        ]
+      },
+      {
+        "pos": "AML",
+        "name": "Paul Wade",
+        "name_en": "Paul Wade",
+        "name_zh": "保罗·韦德",
+        "rating": 6.3,
+        "min": 82,
+        "is_mvp": false,
+        "stats": {
+          "出场时间": "82 分钟 (首发)",
+          "进球/助攻": "0球 / 0助",
+          "本场评分": "6.3 分",
+          "传球到位": "29/33",
+          "跑动强度": "高强度覆盖",
+          "战术职责": "首发 AML"
+        },
+        "radar": [
+          {
+            "subject": "赛场表现",
+            "value": 75
+          },
+          {
+            "subject": "出场时间",
+            "value": 91
+          },
+          {
+            "subject": "关键贡献",
+            "value": 80
+          },
+          {
+            "subject": "战术执行",
+            "value": 88
+          },
+          {
+            "subject": "对抗拼抢",
+            "value": 85
+          },
+          {
+            "subject": "传控配合",
+            "value": 86
+          }
+        ]
+      },
+      {
+        "pos": "DC1",
+        "name": "Allan Tchaptchet",
+        "name_en": "Allan Tchaptchet",
+        "name_zh": "阿兰·特查普切特",
+        "rating": 7.0,
+        "min": 90,
+        "is_mvp": false,
+        "stats": {
+          "出场时间": "90 分钟 (首发)",
+          "进球/助攻": "0球 / 0助",
+          "本场评分": "7.0 分",
+          "传球到位": "29/33",
+          "跑动强度": "高强度覆盖",
+          "战术职责": "首发 DC1"
+        },
+        "radar": [
+          {
+            "subject": "赛场表现",
+            "value": 84
+          },
+          {
+            "subject": "出场时间",
+            "value": 100
+          },
+          {
+            "subject": "关键贡献",
+            "value": 80
+          },
+          {
+            "subject": "战术执行",
+            "value": 88
+          },
+          {
+            "subject": "对抗拼抢",
+            "value": 85
+          },
+          {
+            "subject": "传控配合",
+            "value": 86
+          }
+        ]
+      },
+      {
+        "pos": "ST1",
+        "name": "Marks Inchaud",
+        "name_en": "Marks Inchaud",
+        "name_zh": "马克斯·因查德",
+        "rating": 7.4,
+        "min": 90,
+        "is_mvp": false,
+        "stats": {
+          "出场时间": "90 分钟 (首发)",
+          "进球/助攻": "1球 / 0助",
+          "本场评分": "7.4 分",
+          "传球到位": "29/33",
+          "跑动强度": "高强度覆盖",
+          "战术职责": "首发 ST1"
+        },
+        "radar": [
+          {
+            "subject": "赛场表现",
+            "value": 88
+          },
+          {
+            "subject": "出场时间",
+            "value": 100
+          },
+          {
+            "subject": "关键贡献",
+            "value": 90
+          },
+          {
+            "subject": "战术执行",
+            "value": 88
+          },
+          {
+            "subject": "对抗拼抢",
+            "value": 85
+          },
+          {
+            "subject": "传控配合",
+            "value": 86
+          }
+        ]
+      },
+      {
+        "pos": "DM",
+        "name": "Antoine Valério",
+        "name_en": "Antoine Valério",
+        "name_zh": "安托万·瓦莱里奥",
+        "rating": 7.0,
+        "min": 88,
+        "is_mvp": false,
+        "stats": {
+          "出场时间": "88 分钟 (首发)",
+          "进球/助攻": "0球 / 0助",
+          "本场评分": "7.0 分",
+          "传球到位": "29/33",
+          "跑动强度": "高强度覆盖",
+          "战术职责": "首发 DM"
+        },
+        "radar": [
+          {
+            "subject": "赛场表现",
+            "value": 84
+          },
+          {
+            "subject": "出场时间",
+            "value": 97
+          },
+          {
+            "subject": "关键贡献",
+            "value": 80
+          },
+          {
+            "subject": "战术执行",
+            "value": 88
+          },
+          {
+            "subject": "对抗拼抢",
+            "value": 85
+          },
+          {
+            "subject": "传控配合",
+            "value": 86
+          }
+        ]
+      },
+      {
+        "pos": "MC",
+        "name": "Aliou Dembélé",
+        "name_en": "Aliou Dembélé",
+        "name_zh": "阿卢·登贝莱",
+        "rating": 6.5,
+        "min": 90,
+        "is_mvp": false,
+        "stats": {
+          "出场时间": "90 分钟 (首发)",
+          "进球/助攻": "0球 / 0助",
+          "本场评分": "6.5 分",
+          "传球到位": "29/33",
+          "跑动强度": "高强度覆盖",
+          "战术职责": "首发 MC"
+        },
+        "radar": [
+          {
+            "subject": "赛场表现",
+            "value": 78
+          },
+          {
+            "subject": "出场时间",
+            "value": 100
+          },
+          {
+            "subject": "关键贡献",
+            "value": 80
+          },
+          {
+            "subject": "战术执行",
+            "value": 88
+          },
+          {
+            "subject": "对抗拼抢",
+            "value": 85
+          },
+          {
+            "subject": "传控配合",
+            "value": 86
+          }
+        ]
+      },
+      {
+        "pos": "DC2",
+        "name": "William Simba",
+        "name_en": "William Simba",
+        "name_zh": "威廉·辛巴",
+        "rating": 6.7,
+        "min": 90,
+        "is_mvp": false,
+        "stats": {
+          "出场时间": "90 分钟 (首发)",
+          "进球/助攻": "0球 / 1助",
+          "本场评分": "6.7 分",
+          "传球到位": "29/33",
+          "跑动强度": "高强度覆盖",
+          "战术职责": "首发 DC2"
+        },
+        "radar": [
+          {
+            "subject": "赛场表现",
+            "value": 80
+          },
+          {
+            "subject": "出场时间",
+            "value": 100
+          },
+          {
+            "subject": "关键贡献",
+            "value": 90
+          },
+          {
+            "subject": "战术执行",
+            "value": 88
+          },
+          {
+            "subject": "对抗拼抢",
+            "value": 85
+          },
+          {
+            "subject": "传控配合",
+            "value": 86
+          }
+        ]
+      },
+      {
+        "pos": "DR",
+        "name": "Steeven Assengue",
+        "name_en": "Steeven Assengue",
+        "name_zh": "斯蒂文·阿森盖",
+        "rating": 6.2,
+        "min": 61,
+        "is_mvp": false,
+        "stats": {
+          "出场时间": "61 分钟 (首发)",
+          "进球/助攻": "0球 / 0助",
+          "本场评分": "6.2 分",
+          "传球到位": "29/33",
+          "跑动强度": "高强度覆盖",
+          "战术职责": "首发 DR"
+        },
+        "radar": [
+          {
+            "subject": "赛场表现",
+            "value": 74
+          },
+          {
+            "subject": "出场时间",
+            "value": 67
+          },
+          {
+            "subject": "关键贡献",
+            "value": 80
+          },
+          {
+            "subject": "战术执行",
+            "value": 88
+          },
+          {
+            "subject": "对抗拼抢",
+            "value": 85
+          },
+          {
+            "subject": "传控配合",
+            "value": 86
+          }
+        ]
+      },
+      {
+        "pos": "DL",
+        "name": "Yumeki Yoshinaga",
+        "name_en": "Yumeki Yoshinaga",
+        "name_zh": "吉永梦希",
+        "rating": 7.6,
+        "min": 88,
+        "is_mvp": false,
+        "stats": {
+          "出场时间": "88 分钟 (首发)",
+          "进球/助攻": "0球 / 0助",
+          "本场评分": "7.6 分",
+          "传球到位": "29/33",
+          "跑动强度": "高强度覆盖",
+          "战术职责": "首发 DL"
+        },
+        "radar": [
+          {
+            "subject": "赛场表现",
+            "value": 91
+          },
+          {
+            "subject": "出场时间",
+            "value": 97
+          },
+          {
+            "subject": "关键贡献",
+            "value": 80
+          },
+          {
+            "subject": "战术执行",
+            "value": 88
+          },
+          {
+            "subject": "对抗拼抢",
+            "value": 85
+          },
+          {
+            "subject": "传控配合",
+            "value": 86
+          }
+        ]
+      },
+      {
+        "pos": "ST2",
+        "name": "Abdelsamad Hachem",
+        "name_en": "Abdelsamad Hachem",
+        "name_zh": "阿卜杜勒萨马德·哈切姆",
+        "rating": 8.5,
+        "min": 90,
+        "is_mvp": true,
+        "stats": {
+          "出场时间": "90 分钟 (首发)",
+          "进球/助攻": "1球 / 0助",
+          "本场评分": "8.5 分",
+          "传球到位": "29/33",
+          "跑动强度": "高强度覆盖",
+          "战术职责": "首发 ST2"
+        },
+        "radar": [
+          {
+            "subject": "赛场表现",
+            "value": 100
+          },
+          {
+            "subject": "出场时间",
+            "value": 100
+          },
+          {
+            "subject": "关键贡献",
+            "value": 90
+          },
+          {
+            "subject": "战术执行",
+            "value": 88
+          },
+          {
+            "subject": "对抗拼抢",
+            "value": 85
+          },
+          {
+            "subject": "传控配合",
+            "value": 86
+          }
+        ]
+      }
+    ],
+    "bench_subs": [
+      {
+        "name": "Prins Tjiueza",
+        "name_zh": "普林斯·吉乌扎",
+        "pos": "DR",
+        "entered_minute": 61,
+        "minutes": 29,
+        "rating": 7.1,
+        "goals": 0,
+        "assists": 1
+      },
+      {
+        "name": "Gaëtan Arib",
+        "name_zh": "加埃唐·阿里布",
+        "pos": "DM",
+        "entered_minute": 88,
+        "minutes": 2,
+        "rating": 6.7,
+        "goals": 0,
+        "assists": 0
+      },
+      {
+        "name": "Yassine Ben Hamed",
+        "name_zh": "亚塞尼·本·哈米德",
+        "pos": "DL",
+        "entered_minute": 88,
+        "minutes": 2,
+        "rating": 6.7,
+        "goals": 0,
+        "assists": 0
+      },
+      {
+        "name": "Luca Maiorano",
+        "name_zh": "卢卡·马约拉诺",
+        "pos": "AML",
+        "entered_minute": 82,
+        "minutes": 8,
+        "rating": 6.7,
+        "goals": 0,
+        "assists": 0
+      }
+    ]
+  },
+  {
+    "id": 24,
+    "round": 24,
+    "stage_title": "比乙常规赛 · 第24轮",
+    "is_playoff": false,
+    "date": "2026-02-20",
+    "home_team": "皇家比尔肖特",
+    "away_team": "维尔通精英",
+    "score_home": 0,
+    "score_away": 1,
+    "venue": "away",
+    "stadium": "皇家比尔肖特主场",
+    "result": "W",
+    "formation": "4-1-1-4 (双前锋·密集短传)",
+    "tactical_style": "密集短传 · Tiki-Taka",
+    "xg": 1.65,
+    "shots": 11,
+    "shots_on_target": 4,
+    "distance_km": 120.4,
+    "scorers": [
+      {
+        "player": "Park Seung-Soo",
+        "player_zh": "朴昇秀",
+        "minute": 43,
+        "assist": "Tyrone Tormin",
+        "assist_zh": "泰伦·托明"
+      }
+    ],
+    "lineup": [
+      {
+        "pos": "GK",
+        "name": "Célestin De Schrevel",
+        "name_en": "Célestin De Schrevel",
+        "name_zh": "塞莱斯丁·德·施瑞沃",
+        "rating": 7.3,
+        "min": 90,
+        "is_mvp": false,
+        "stats": {
+          "出场时间": "90 分钟 (首发)",
+          "进球/助攻": "0球 / 0助",
+          "本场评分": "7.3 分",
+          "传球到位": "32/36",
+          "跑动强度": "高强度覆盖",
+          "战术职责": "首发 GK"
+        },
+        "radar": [
+          {
+            "subject": "赛场表现",
+            "value": 87
+          },
+          {
+            "subject": "出场时间",
+            "value": 100
+          },
+          {
+            "subject": "关键贡献",
+            "value": 80
+          },
+          {
+            "subject": "战术执行",
+            "value": 88
+          },
+          {
+            "subject": "对抗拼抢",
+            "value": 85
+          },
+          {
+            "subject": "传控配合",
+            "value": 86
+          }
+        ]
+      },
+      {
+        "pos": "AMR",
+        "name": "Tyrone Tormin",
+        "name_en": "Tyrone Tormin",
+        "name_zh": "泰伦·托明",
+        "rating": 6.2,
+        "min": 87,
+        "is_mvp": false,
+        "stats": {
+          "出场时间": "87 分钟 (首发)",
+          "进球/助攻": "0球 / 0助",
+          "本场评分": "6.2 分",
+          "传球到位": "32/36",
+          "跑动强度": "高强度覆盖",
+          "战术职责": "首发 AMR"
+        },
+        "radar": [
+          {
+            "subject": "赛场表现",
+            "value": 74
+          },
+          {
+            "subject": "出场时间",
+            "value": 96
+          },
+          {
+            "subject": "关键贡献",
+            "value": 80
+          },
+          {
+            "subject": "战术执行",
+            "value": 88
+          },
+          {
+            "subject": "对抗拼抢",
+            "value": 85
+          },
+          {
+            "subject": "传控配合",
+            "value": 86
+          }
+        ]
+      },
+      {
+        "pos": "DC1",
+        "name": "Allan Tchaptchet",
+        "name_en": "Allan Tchaptchet",
+        "name_zh": "阿兰·特查普切特",
+        "rating": 7.1,
+        "min": 90,
+        "is_mvp": false,
+        "stats": {
+          "出场时间": "90 分钟 (首发)",
+          "进球/助攻": "0球 / 0助",
+          "本场评分": "7.1 分",
+          "传球到位": "32/36",
+          "跑动强度": "高强度覆盖",
+          "战术职责": "首发 DC1"
+        },
+        "radar": [
+          {
+            "subject": "赛场表现",
+            "value": 85
+          },
+          {
+            "subject": "出场时间",
+            "value": 100
+          },
+          {
+            "subject": "关键贡献",
+            "value": 80
+          },
+          {
+            "subject": "战术执行",
+            "value": 88
+          },
+          {
+            "subject": "对抗拼抢",
+            "value": 85
+          },
+          {
+            "subject": "传控配合",
+            "value": 86
+          }
+        ]
+      },
+      {
+        "pos": "ST1",
+        "name": "Marks Inchaud",
+        "name_en": "Marks Inchaud",
+        "name_zh": "马克斯·因查德",
+        "rating": 6.7,
+        "min": 90,
+        "is_mvp": false,
+        "stats": {
+          "出场时间": "90 分钟 (首发)",
+          "进球/助攻": "0球 / 0助",
+          "本场评分": "6.7 分",
+          "传球到位": "32/36",
+          "跑动强度": "高强度覆盖",
+          "战术职责": "首发 ST1"
+        },
+        "radar": [
+          {
+            "subject": "赛场表现",
+            "value": 80
+          },
+          {
+            "subject": "出场时间",
+            "value": 100
+          },
+          {
+            "subject": "关键贡献",
+            "value": 80
+          },
+          {
+            "subject": "战术执行",
+            "value": 88
+          },
+          {
+            "subject": "对抗拼抢",
+            "value": 85
+          },
+          {
+            "subject": "传控配合",
+            "value": 86
+          }
+        ]
+      },
+      {
+        "pos": "DM",
+        "name": "Antoine Valério",
+        "name_en": "Antoine Valério",
+        "name_zh": "安托万·瓦莱里奥",
+        "rating": 7.3,
+        "min": 90,
+        "is_mvp": false,
+        "stats": {
+          "出场时间": "90 分钟 (首发)",
+          "进球/助攻": "0球 / 0助",
+          "本场评分": "7.3 分",
+          "传球到位": "32/36",
+          "跑动强度": "高强度覆盖",
+          "战术职责": "首发 DM"
+        },
+        "radar": [
+          {
+            "subject": "赛场表现",
+            "value": 87
+          },
+          {
+            "subject": "出场时间",
+            "value": 100
+          },
+          {
+            "subject": "关键贡献",
+            "value": 80
+          },
+          {
+            "subject": "战术执行",
+            "value": 88
+          },
+          {
+            "subject": "对抗拼抢",
+            "value": 85
+          },
+          {
+            "subject": "传控配合",
+            "value": 86
+          }
+        ]
+      },
+      {
+        "pos": "MC",
+        "name": "Aliou Dembélé",
+        "name_en": "Aliou Dembélé",
+        "name_zh": "阿卢·登贝莱",
+        "rating": 6.4,
+        "min": 87,
+        "is_mvp": false,
+        "stats": {
+          "出场时间": "87 分钟 (首发)",
+          "进球/助攻": "0球 / 0助",
+          "本场评分": "6.4 分",
+          "传球到位": "32/36",
+          "跑动强度": "高强度覆盖",
+          "战术职责": "首发 MC"
+        },
+        "radar": [
+          {
+            "subject": "赛场表现",
+            "value": 76
+          },
+          {
+            "subject": "出场时间",
+            "value": 96
+          },
+          {
+            "subject": "关键贡献",
+            "value": 80
+          },
+          {
+            "subject": "战术执行",
+            "value": 88
+          },
+          {
+            "subject": "对抗拼抢",
+            "value": 85
+          },
+          {
+            "subject": "传控配合",
+            "value": 86
+          }
+        ]
+      },
+      {
+        "pos": "DC2",
+        "name": "William Simba",
+        "name_en": "William Simba",
+        "name_zh": "威廉·辛巴",
+        "rating": 6.8,
+        "min": 90,
+        "is_mvp": false,
+        "stats": {
+          "出场时间": "90 分钟 (首发)",
+          "进球/助攻": "0球 / 0助",
+          "本场评分": "6.8 分",
+          "传球到位": "32/36",
+          "跑动强度": "高强度覆盖",
+          "战术职责": "首发 DC2"
+        },
+        "radar": [
+          {
+            "subject": "赛场表现",
+            "value": 81
+          },
+          {
+            "subject": "出场时间",
+            "value": 100
+          },
+          {
+            "subject": "关键贡献",
+            "value": 80
+          },
+          {
+            "subject": "战术执行",
+            "value": 88
+          },
+          {
+            "subject": "对抗拼抢",
+            "value": 85
+          },
+          {
+            "subject": "传控配合",
+            "value": 86
+          }
+        ]
+      },
+      {
+        "pos": "DR",
+        "name": "Steeven Assengue",
+        "name_en": "Steeven Assengue",
+        "name_zh": "斯蒂文·阿森盖",
+        "rating": 7.8,
+        "min": 90,
+        "is_mvp": true,
+        "stats": {
+          "出场时间": "90 分钟 (首发)",
+          "进球/助攻": "0球 / 1助",
+          "本场评分": "7.8 分",
+          "传球到位": "32/36",
+          "跑动强度": "高强度覆盖",
+          "战术职责": "首发 DR"
+        },
+        "radar": [
+          {
+            "subject": "赛场表现",
+            "value": 93
+          },
+          {
+            "subject": "出场时间",
+            "value": 100
+          },
+          {
+            "subject": "关键贡献",
+            "value": 90
+          },
+          {
+            "subject": "战术执行",
+            "value": 88
+          },
+          {
+            "subject": "对抗拼抢",
+            "value": 85
+          },
+          {
+            "subject": "传控配合",
+            "value": 86
+          }
+        ]
+      },
+      {
+        "pos": "AML",
+        "name": "Park Seung-Soo",
+        "name_en": "Park Seung-Soo",
+        "name_zh": "朴昇秀",
+        "rating": 7.4,
+        "min": 90,
+        "is_mvp": false,
+        "stats": {
+          "出场时间": "90 分钟 (首发)",
+          "进球/助攻": "1球 / 0助",
+          "本场评分": "7.4 分",
+          "传球到位": "32/36",
+          "跑动强度": "高强度覆盖",
+          "战术职责": "首发 AML"
+        },
+        "radar": [
+          {
+            "subject": "赛场表现",
+            "value": 88
+          },
+          {
+            "subject": "出场时间",
+            "value": 100
+          },
+          {
+            "subject": "关键贡献",
+            "value": 90
+          },
+          {
+            "subject": "战术执行",
+            "value": 88
+          },
+          {
+            "subject": "对抗拼抢",
+            "value": 85
+          },
+          {
+            "subject": "传控配合",
+            "value": 86
+          }
+        ]
+      },
+      {
+        "pos": "DL",
+        "name": "Yumeki Yoshinaga",
+        "name_en": "Yumeki Yoshinaga",
+        "name_zh": "吉永梦希",
+        "rating": 6.5,
+        "min": 87,
+        "is_mvp": false,
+        "stats": {
+          "出场时间": "87 分钟 (首发)",
+          "进球/助攻": "0球 / 0助",
+          "本场评分": "6.5 分",
+          "传球到位": "32/36",
+          "跑动强度": "高强度覆盖",
+          "战术职责": "首发 DL"
+        },
+        "radar": [
+          {
+            "subject": "赛场表现",
+            "value": 78
+          },
+          {
+            "subject": "出场时间",
+            "value": 96
+          },
+          {
+            "subject": "关键贡献",
+            "value": 80
+          },
+          {
+            "subject": "战术执行",
+            "value": 88
+          },
+          {
+            "subject": "对抗拼抢",
+            "value": 85
+          },
+          {
+            "subject": "传控配合",
+            "value": 86
+          }
+        ]
+      },
+      {
+        "pos": "ST2",
+        "name": "Abdelsamad Hachem",
+        "name_en": "Abdelsamad Hachem",
+        "name_zh": "阿卜杜勒萨马德·哈切姆",
+        "rating": 6.3,
+        "min": 90,
+        "is_mvp": false,
+        "stats": {
+          "出场时间": "90 分钟 (首发)",
+          "进球/助攻": "0球 / 0助",
+          "本场评分": "6.3 分",
+          "传球到位": "32/36",
+          "跑动强度": "高强度覆盖",
+          "战术职责": "首发 ST2"
+        },
+        "radar": [
+          {
+            "subject": "赛场表现",
+            "value": 75
+          },
+          {
+            "subject": "出场时间",
+            "value": 100
+          },
+          {
+            "subject": "关键贡献",
+            "value": 80
+          },
+          {
+            "subject": "战术执行",
+            "value": 88
+          },
+          {
+            "subject": "对抗拼抢",
+            "value": 85
+          },
+          {
+            "subject": "传控配合",
+            "value": 86
+          }
+        ]
+      }
+    ],
+    "bench_subs": [
+      {
+        "name": "Adama Diop",
+        "name_zh": "亚当穆斯·迪奥普",
+        "pos": "MC",
+        "entered_minute": 87,
+        "minutes": 3,
+        "rating": 6.7,
+        "goals": 0,
+        "assists": 0
+      },
+      {
+        "name": "Paul Wade",
+        "name_zh": "保罗·韦德",
+        "pos": "AMR",
+        "entered_minute": 87,
+        "minutes": 3,
+        "rating": 6.7,
+        "goals": 0,
+        "assists": 0
+      },
+      {
+        "name": "Jean-Claude Ntenda",
+        "name_zh": "让-克洛德·恩滕达",
+        "pos": "DL",
+        "entered_minute": 87,
+        "minutes": 3,
+        "rating": 6.7,
+        "goals": 0,
+        "assists": 0
+      }
+    ]
+  },
+  {
+    "id": 25,
+    "round": 25,
+    "stage_title": "比乙常规赛 · 第25轮",
+    "is_playoff": false,
+    "date": "2026-03-01",
+    "home_team": "维尔通精英",
+    "away_team": "亨克青年队",
+    "score_home": 3,
+    "score_away": 1,
+    "venue": "home",
+    "stadium": "伊万·乔治球场 (Stade Yvan Georges)",
+    "result": "W",
+    "formation": "4-1-1-4 (双前锋·密集短传)",
+    "tactical_style": "密集短传 · Tiki-Taka",
+    "xg": 2.55,
+    "shots": 20,
+    "shots_on_target": 9,
+    "distance_km": 121.2,
+    "scorers": [
+      {
+        "player": "Marks Inchaud",
+        "player_zh": "马克斯·因查德",
+        "minute": 50,
+        "assist": "Tyrone Tormin",
+        "assist_zh": "泰伦·托明"
+      },
+      {
+        "player": "Abdelsamad Hachem",
+        "player_zh": "阿卜杜勒萨马德·哈切姆",
+        "minute": 50,
+        "assist": "Tyrone Tormin",
+        "assist_zh": "泰伦·托明"
+      },
+      {
+        "player": "Abdelsamad Hachem",
+        "player_zh": "阿卜杜勒萨马德·哈切姆",
+        "minute": 78,
+        "assist": null,
+        "assist_zh": null
+      }
+    ],
+    "lineup": [
+      {
+        "pos": "GK",
+        "name": "Célestin De Schrevel",
+        "name_en": "Célestin De Schrevel",
+        "name_zh": "塞莱斯丁·德·施瑞沃",
+        "rating": 6.8,
+        "min": 90,
+        "is_mvp": false,
+        "stats": {
+          "出场时间": "90 分钟 (首发)",
+          "进球/助攻": "0球 / 0助",
+          "本场评分": "6.8 分",
+          "传球到位": "20/24",
+          "跑动强度": "高强度覆盖",
+          "战术职责": "首发 GK"
+        },
+        "radar": [
+          {
+            "subject": "赛场表现",
+            "value": 81
+          },
+          {
+            "subject": "出场时间",
+            "value": 100
+          },
+          {
+            "subject": "关键贡献",
+            "value": 80
+          },
+          {
+            "subject": "战术执行",
+            "value": 88
+          },
+          {
+            "subject": "对抗拼抢",
+            "value": 85
+          },
+          {
+            "subject": "传控配合",
+            "value": 86
+          }
+        ]
+      },
+      {
+        "pos": "AMR",
+        "name": "Tyrone Tormin",
+        "name_en": "Tyrone Tormin",
+        "name_zh": "泰伦·托明",
+        "rating": 6.2,
+        "min": 74,
+        "is_mvp": false,
+        "stats": {
+          "出场时间": "74 分钟 (首发)",
+          "进球/助攻": "0球 / 0助",
+          "本场评分": "6.2 分",
+          "传球到位": "20/24",
+          "跑动强度": "高强度覆盖",
+          "战术职责": "首发 AMR"
+        },
+        "radar": [
+          {
+            "subject": "赛场表现",
+            "value": 74
+          },
+          {
+            "subject": "出场时间",
+            "value": 82
+          },
+          {
+            "subject": "关键贡献",
+            "value": 80
+          },
+          {
+            "subject": "战术执行",
+            "value": 88
+          },
+          {
+            "subject": "对抗拼抢",
+            "value": 85
+          },
+          {
+            "subject": "传控配合",
+            "value": 86
+          }
+        ]
+      },
+      {
+        "pos": "DC1",
+        "name": "Allan Tchaptchet",
+        "name_en": "Allan Tchaptchet",
+        "name_zh": "阿兰·特查普切特",
+        "rating": 7.4,
+        "min": 90,
+        "is_mvp": false,
+        "stats": {
+          "出场时间": "90 分钟 (首发)",
+          "进球/助攻": "0球 / 0助",
+          "本场评分": "7.4 分",
+          "传球到位": "20/24",
+          "跑动强度": "高强度覆盖",
+          "战术职责": "首发 DC1"
+        },
+        "radar": [
+          {
+            "subject": "赛场表现",
+            "value": 88
+          },
+          {
+            "subject": "出场时间",
+            "value": 100
+          },
+          {
+            "subject": "关键贡献",
+            "value": 80
+          },
+          {
+            "subject": "战术执行",
+            "value": 88
+          },
+          {
+            "subject": "对抗拼抢",
+            "value": 85
+          },
+          {
+            "subject": "传控配合",
+            "value": 86
+          }
+        ]
+      },
+      {
+        "pos": "ST1",
+        "name": "Marks Inchaud",
+        "name_en": "Marks Inchaud",
+        "name_zh": "马克斯·因查德",
+        "rating": 7.3,
+        "min": 90,
+        "is_mvp": false,
+        "stats": {
+          "出场时间": "90 分钟 (首发)",
+          "进球/助攻": "1球 / 0助",
+          "本场评分": "7.3 分",
+          "传球到位": "20/24",
+          "跑动强度": "高强度覆盖",
+          "战术职责": "首发 ST1"
+        },
+        "radar": [
+          {
+            "subject": "赛场表现",
+            "value": 87
+          },
+          {
+            "subject": "出场时间",
+            "value": 100
+          },
+          {
+            "subject": "关键贡献",
+            "value": 90
+          },
+          {
+            "subject": "战术执行",
+            "value": 88
+          },
+          {
+            "subject": "对抗拼抢",
+            "value": 85
+          },
+          {
+            "subject": "传控配合",
+            "value": 86
+          }
+        ]
+      },
+      {
+        "pos": "DM",
+        "name": "Antoine Valério",
+        "name_en": "Antoine Valério",
+        "name_zh": "安托万·瓦莱里奥",
+        "rating": 6.6,
+        "min": 90,
+        "is_mvp": false,
+        "stats": {
+          "出场时间": "90 分钟 (首发)",
+          "进球/助攻": "0球 / 0助",
+          "本场评分": "6.6 分",
+          "传球到位": "20/24",
+          "跑动强度": "高强度覆盖",
+          "战术职责": "首发 DM"
+        },
+        "radar": [
+          {
+            "subject": "赛场表现",
+            "value": 79
+          },
+          {
+            "subject": "出场时间",
+            "value": 100
+          },
+          {
+            "subject": "关键贡献",
+            "value": 80
+          },
+          {
+            "subject": "战术执行",
+            "value": 88
+          },
+          {
+            "subject": "对抗拼抢",
+            "value": 85
+          },
+          {
+            "subject": "传控配合",
+            "value": 86
+          }
+        ]
+      },
+      {
+        "pos": "MC",
+        "name": "Aliou Dembélé",
+        "name_en": "Aliou Dembélé",
+        "name_zh": "阿卢·登贝莱",
+        "rating": 6.6,
+        "min": 74,
+        "is_mvp": false,
+        "stats": {
+          "出场时间": "74 分钟 (首发)",
+          "进球/助攻": "0球 / 0助",
+          "本场评分": "6.6 分",
+          "传球到位": "20/24",
+          "跑动强度": "高强度覆盖",
+          "战术职责": "首发 MC"
+        },
+        "radar": [
+          {
+            "subject": "赛场表现",
+            "value": 79
+          },
+          {
+            "subject": "出场时间",
+            "value": 82
+          },
+          {
+            "subject": "关键贡献",
+            "value": 80
+          },
+          {
+            "subject": "战术执行",
+            "value": 88
+          },
+          {
+            "subject": "对抗拼抢",
+            "value": 85
+          },
+          {
+            "subject": "传控配合",
+            "value": 86
+          }
+        ]
+      },
+      {
+        "pos": "DC2",
+        "name": "William Simba",
+        "name_en": "William Simba",
+        "name_zh": "威廉·辛巴",
+        "rating": 7.4,
+        "min": 90,
+        "is_mvp": false,
+        "stats": {
+          "出场时间": "90 分钟 (首发)",
+          "进球/助攻": "0球 / 0助",
+          "本场评分": "7.4 分",
+          "传球到位": "20/24",
+          "跑动强度": "高强度覆盖",
+          "战术职责": "首发 DC2"
+        },
+        "radar": [
+          {
+            "subject": "赛场表现",
+            "value": 88
+          },
+          {
+            "subject": "出场时间",
+            "value": 100
+          },
+          {
+            "subject": "关键贡献",
+            "value": 80
+          },
+          {
+            "subject": "战术执行",
+            "value": 88
+          },
+          {
+            "subject": "对抗拼抢",
+            "value": 85
+          },
+          {
+            "subject": "传控配合",
+            "value": 86
+          }
+        ]
+      },
+      {
+        "pos": "DR",
+        "name": "Steeven Assengue",
+        "name_en": "Steeven Assengue",
+        "name_zh": "斯蒂文·阿森盖",
+        "rating": 8.4,
+        "min": 62,
+        "is_mvp": false,
+        "stats": {
+          "出场时间": "62 分钟 (首发)",
+          "进球/助攻": "0球 / 1助",
+          "本场评分": "8.4 分",
+          "传球到位": "20/24",
+          "跑动强度": "高强度覆盖",
+          "战术职责": "首发 DR"
+        },
+        "radar": [
+          {
+            "subject": "赛场表现",
+            "value": 100
+          },
+          {
+            "subject": "出场时间",
+            "value": 68
+          },
+          {
+            "subject": "关键贡献",
+            "value": 90
+          },
+          {
+            "subject": "战术执行",
+            "value": 88
+          },
+          {
+            "subject": "对抗拼抢",
+            "value": 85
+          },
+          {
+            "subject": "传控配合",
+            "value": 86
+          }
+        ]
+      },
+      {
+        "pos": "AML",
+        "name": "Park Seung-Soo",
+        "name_en": "Park Seung-Soo",
+        "name_zh": "朴昇秀",
+        "rating": 7.2,
+        "min": 89,
+        "is_mvp": false,
+        "stats": {
+          "出场时间": "89 分钟 (首发)",
+          "进球/助攻": "0球 / 1助",
+          "本场评分": "7.2 分",
+          "传球到位": "20/24",
+          "跑动强度": "高强度覆盖",
+          "战术职责": "首发 AML"
+        },
+        "radar": [
+          {
+            "subject": "赛场表现",
+            "value": 86
+          },
+          {
+            "subject": "出场时间",
+            "value": 98
+          },
+          {
+            "subject": "关键贡献",
+            "value": 90
+          },
+          {
+            "subject": "战术执行",
+            "value": 88
+          },
+          {
+            "subject": "对抗拼抢",
+            "value": 85
+          },
+          {
+            "subject": "传控配合",
+            "value": 86
+          }
+        ]
+      },
+      {
+        "pos": "DL",
+        "name": "Yumeki Yoshinaga",
+        "name_en": "Yumeki Yoshinaga",
+        "name_zh": "吉永梦希",
+        "rating": 7.3,
+        "min": 89,
+        "is_mvp": false,
+        "stats": {
+          "出场时间": "89 分钟 (首发)",
+          "进球/助攻": "0球 / 0助",
+          "本场评分": "7.3 分",
+          "传球到位": "20/24",
+          "跑动强度": "高强度覆盖",
+          "战术职责": "首发 DL"
+        },
+        "radar": [
+          {
+            "subject": "赛场表现",
+            "value": 87
+          },
+          {
+            "subject": "出场时间",
+            "value": 98
+          },
+          {
+            "subject": "关键贡献",
+            "value": 80
+          },
+          {
+            "subject": "战术执行",
+            "value": 88
+          },
+          {
+            "subject": "对抗拼抢",
+            "value": 85
+          },
+          {
+            "subject": "传控配合",
+            "value": 86
+          }
+        ]
+      },
+      {
+        "pos": "ST2",
+        "name": "Abdelsamad Hachem",
+        "name_en": "Abdelsamad Hachem",
+        "name_zh": "阿卜杜勒萨马德·哈切姆",
+        "rating": 9.3,
+        "min": 90,
+        "is_mvp": true,
+        "stats": {
+          "出场时间": "90 分钟 (首发)",
+          "进球/助攻": "2球 / 1助",
+          "本场评分": "9.3 分",
+          "传球到位": "20/24",
+          "跑动强度": "高强度覆盖",
+          "战术职责": "首发 ST2"
+        },
+        "radar": [
+          {
+            "subject": "赛场表现",
+            "value": 100
+          },
+          {
+            "subject": "出场时间",
+            "value": 100
+          },
+          {
+            "subject": "关键贡献",
+            "value": 90
+          },
+          {
+            "subject": "战术执行",
+            "value": 88
+          },
+          {
+            "subject": "对抗拼抢",
+            "value": 85
+          },
+          {
+            "subject": "传控配合",
+            "value": 86
+          }
+        ]
+      }
+    ],
+    "bench_subs": [
+      {
+        "name": "Prins Tjiueza",
+        "name_zh": "普林斯·吉乌扎",
+        "pos": "DR",
+        "entered_minute": 62,
+        "minutes": 28,
+        "rating": 6.8,
+        "goals": 0,
+        "assists": 0
+      },
+      {
+        "name": "Adama Diop",
+        "name_zh": "亚当穆斯·迪奥普",
+        "pos": "MC",
+        "entered_minute": 74,
+        "minutes": 16,
+        "rating": 6.6,
+        "goals": 0,
+        "assists": 0
+      },
+      {
+        "name": "Paul Wade",
+        "name_zh": "保罗·韦德",
+        "pos": "AMR",
+        "entered_minute": 74,
+        "minutes": 16,
+        "rating": 6.6,
+        "goals": 0,
+        "assists": 0
+      },
+      {
+        "name": "Jean-Claude Ntenda",
+        "name_zh": "让-克洛德·恩滕达",
+        "pos": "DL",
+        "entered_minute": 89,
+        "minutes": 1,
+        "rating": 6.7,
+        "goals": 0,
+        "assists": 0
+      },
+      {
+        "name": "Luca Maiorano",
+        "name_zh": "卢卡·马约拉诺",
+        "pos": "AML",
+        "entered_minute": 89,
+        "minutes": 1,
+        "rating": 6.7,
+        "goals": 0,
+        "assists": 0
+      }
+    ]
+  },
+  {
+    "id": 26,
+    "round": 26,
+    "stage_title": "比乙常规赛 · 第26轮",
+    "is_playoff": false,
+    "date": "2026-03-08",
+    "home_team": "皇家欧本",
+    "away_team": "维尔通精英",
+    "score_home": 0,
+    "score_away": 3,
+    "venue": "away",
+    "stadium": "皇家欧本主场",
+    "result": "W",
+    "formation": "4-1-1-4 (双前锋·密集短传)",
+    "tactical_style": "密集短传 · Tiki-Taka",
+    "xg": 2.7,
+    "shots": 21,
+    "shots_on_target": 9,
+    "distance_km": 122.0,
+    "scorers": [
+      {
+        "player": "Tyrone Tormin",
+        "player_zh": "泰伦·托明",
+        "minute": 27,
+        "assist": "Tyrone Tormin",
+        "assist_zh": "泰伦·托明"
+      },
+      {
+        "player": "Abdelsamad Hachem",
+        "player_zh": "阿卜杜勒萨马德·哈切姆",
+        "minute": 27,
+        "assist": "Tyrone Tormin",
+        "assist_zh": "泰伦·托明"
+      },
+      {
+        "player": "Tyrone Tormin",
+        "player_zh": "泰伦·托明",
+        "minute": 55,
+        "assist": null,
+        "assist_zh": null
+      }
+    ],
+    "lineup": [
+      {
+        "pos": "GK",
+        "name": "Célestin De Schrevel",
+        "name_en": "Célestin De Schrevel",
+        "name_zh": "塞莱斯丁·德·施瑞沃",
+        "rating": 8.4,
+        "min": 90,
+        "is_mvp": true,
+        "stats": {
+          "出场时间": "90 分钟 (首发)",
+          "进球/助攻": "0球 / 0助",
+          "本场评分": "8.4 分",
+          "传球到位": "23/27",
+          "跑动强度": "高强度覆盖",
+          "战术职责": "首发 GK"
+        },
+        "radar": [
+          {
+            "subject": "赛场表现",
+            "value": 100
+          },
+          {
+            "subject": "出场时间",
+            "value": 100
+          },
+          {
+            "subject": "关键贡献",
+            "value": 80
+          },
+          {
+            "subject": "战术执行",
+            "value": 88
+          },
+          {
+            "subject": "对抗拼抢",
+            "value": 85
+          },
+          {
+            "subject": "传控配合",
+            "value": 86
+          }
+        ]
+      },
+      {
+        "pos": "AMR",
+        "name": "Tyrone Tormin",
+        "name_en": "Tyrone Tormin",
+        "name_zh": "泰伦·托明",
+        "rating": 8.3,
+        "min": 76,
+        "is_mvp": false,
+        "stats": {
+          "出场时间": "76 分钟 (首发)",
+          "进球/助攻": "2球 / 0助",
+          "本场评分": "8.3 分",
+          "传球到位": "23/27",
+          "跑动强度": "高强度覆盖",
+          "战术职责": "首发 AMR"
+        },
+        "radar": [
+          {
+            "subject": "赛场表现",
+            "value": 99
+          },
+          {
+            "subject": "出场时间",
+            "value": 84
+          },
+          {
+            "subject": "关键贡献",
+            "value": 90
+          },
+          {
+            "subject": "战术执行",
+            "value": 88
+          },
+          {
+            "subject": "对抗拼抢",
+            "value": 85
+          },
+          {
+            "subject": "传控配合",
+            "value": 86
+          }
+        ]
+      },
+      {
+        "pos": "AML",
+        "name": "Paul Wade",
+        "name_en": "Paul Wade",
+        "name_zh": "保罗·韦德",
+        "rating": 6.5,
+        "min": 65,
+        "is_mvp": false,
+        "stats": {
+          "出场时间": "65 分钟 (首发)",
+          "进球/助攻": "0球 / 0助",
+          "本场评分": "6.5 分",
+          "传球到位": "23/27",
+          "跑动强度": "高强度覆盖",
+          "战术职责": "首发 AML"
+        },
+        "radar": [
+          {
+            "subject": "赛场表现",
+            "value": 78
+          },
+          {
+            "subject": "出场时间",
+            "value": 72
+          },
+          {
+            "subject": "关键贡献",
+            "value": 80
+          },
+          {
+            "subject": "战术执行",
+            "value": 88
+          },
+          {
+            "subject": "对抗拼抢",
+            "value": 85
+          },
+          {
+            "subject": "传控配合",
+            "value": 86
+          }
+        ]
+      },
+      {
+        "pos": "DC1",
+        "name": "Allan Tchaptchet",
+        "name_en": "Allan Tchaptchet",
+        "name_zh": "阿兰·特查普切特",
+        "rating": 7.7,
+        "min": 90,
+        "is_mvp": false,
+        "stats": {
+          "出场时间": "90 分钟 (首发)",
+          "进球/助攻": "0球 / 0助",
+          "本场评分": "7.7 分",
+          "传球到位": "23/27",
+          "跑动强度": "高强度覆盖",
+          "战术职责": "首发 DC1"
+        },
+        "radar": [
+          {
+            "subject": "赛场表现",
+            "value": 92
+          },
+          {
+            "subject": "出场时间",
+            "value": 100
+          },
+          {
+            "subject": "关键贡献",
+            "value": 80
+          },
+          {
+            "subject": "战术执行",
+            "value": 88
+          },
+          {
+            "subject": "对抗拼抢",
+            "value": 85
+          },
+          {
+            "subject": "传控配合",
+            "value": 86
+          }
+        ]
+      },
+      {
+        "pos": "ST1",
+        "name": "Marks Inchaud",
+        "name_en": "Marks Inchaud",
+        "name_zh": "马克斯·因查德",
+        "rating": 7.5,
+        "min": 90,
+        "is_mvp": false,
+        "stats": {
+          "出场时间": "90 分钟 (首发)",
+          "进球/助攻": "0球 / 0助",
+          "本场评分": "7.5 分",
+          "传球到位": "23/27",
+          "跑动强度": "高强度覆盖",
+          "战术职责": "首发 ST1"
+        },
+        "radar": [
+          {
+            "subject": "赛场表现",
+            "value": 90
+          },
+          {
+            "subject": "出场时间",
+            "value": 100
+          },
+          {
+            "subject": "关键贡献",
+            "value": 80
+          },
+          {
+            "subject": "战术执行",
+            "value": 88
+          },
+          {
+            "subject": "对抗拼抢",
+            "value": 85
+          },
+          {
+            "subject": "传控配合",
+            "value": 86
+          }
+        ]
+      },
+      {
+        "pos": "DM",
+        "name": "Antoine Valério",
+        "name_en": "Antoine Valério",
+        "name_zh": "安托万·瓦莱里奥",
+        "rating": 6.8,
+        "min": 90,
+        "is_mvp": false,
+        "stats": {
+          "出场时间": "90 分钟 (首发)",
+          "进球/助攻": "0球 / 0助",
+          "本场评分": "6.8 分",
+          "传球到位": "23/27",
+          "跑动强度": "高强度覆盖",
+          "战术职责": "首发 DM"
+        },
+        "radar": [
+          {
+            "subject": "赛场表现",
+            "value": 81
+          },
+          {
+            "subject": "出场时间",
+            "value": 100
+          },
+          {
+            "subject": "关键贡献",
+            "value": 80
+          },
+          {
+            "subject": "战术执行",
+            "value": 88
+          },
+          {
+            "subject": "对抗拼抢",
+            "value": 85
+          },
+          {
+            "subject": "传控配合",
+            "value": 86
+          }
+        ]
+      },
+      {
+        "pos": "MC",
+        "name": "Aliou Dembélé",
+        "name_en": "Aliou Dembélé",
+        "name_zh": "阿卢·登贝莱",
+        "rating": 7.1,
+        "min": 87,
+        "is_mvp": false,
+        "stats": {
+          "出场时间": "87 分钟 (首发)",
+          "进球/助攻": "0球 / 0助",
+          "本场评分": "7.1 分",
+          "传球到位": "23/27",
+          "跑动强度": "高强度覆盖",
+          "战术职责": "首发 MC"
+        },
+        "radar": [
+          {
+            "subject": "赛场表现",
+            "value": 85
+          },
+          {
+            "subject": "出场时间",
+            "value": 96
+          },
+          {
+            "subject": "关键贡献",
+            "value": 80
+          },
+          {
+            "subject": "战术执行",
+            "value": 88
+          },
+          {
+            "subject": "对抗拼抢",
+            "value": 85
+          },
+          {
+            "subject": "传控配合",
+            "value": 86
+          }
+        ]
+      },
+      {
+        "pos": "DC2",
+        "name": "William Simba",
+        "name_en": "William Simba",
+        "name_zh": "威廉·辛巴",
+        "rating": 8.1,
+        "min": 90,
+        "is_mvp": false,
+        "stats": {
+          "出场时间": "90 分钟 (首发)",
+          "进球/助攻": "0球 / 0助",
+          "本场评分": "8.1 分",
+          "传球到位": "23/27",
+          "跑动强度": "高强度覆盖",
+          "战术职责": "首发 DC2"
+        },
+        "radar": [
+          {
+            "subject": "赛场表现",
+            "value": 97
+          },
+          {
+            "subject": "出场时间",
+            "value": 100
+          },
+          {
+            "subject": "关键贡献",
+            "value": 80
+          },
+          {
+            "subject": "战术执行",
+            "value": 88
+          },
+          {
+            "subject": "对抗拼抢",
+            "value": 85
+          },
+          {
+            "subject": "传控配合",
+            "value": 86
+          }
+        ]
+      },
+      {
+        "pos": "DR",
+        "name": "Steeven Assengue",
+        "name_en": "Steeven Assengue",
+        "name_zh": "斯蒂文·阿森盖",
+        "rating": 6.7,
+        "min": 65,
+        "is_mvp": false,
+        "stats": {
+          "出场时间": "65 分钟 (首发)",
+          "进球/助攻": "0球 / 0助",
+          "本场评分": "6.7 分",
+          "传球到位": "23/27",
+          "跑动强度": "高强度覆盖",
+          "战术职责": "首发 DR"
+        },
+        "radar": [
+          {
+            "subject": "赛场表现",
+            "value": 80
+          },
+          {
+            "subject": "出场时间",
+            "value": 72
+          },
+          {
+            "subject": "关键贡献",
+            "value": 80
+          },
+          {
+            "subject": "战术执行",
+            "value": 88
+          },
+          {
+            "subject": "对抗拼抢",
+            "value": 85
+          },
+          {
+            "subject": "传控配合",
+            "value": 86
+          }
+        ]
+      },
+      {
+        "pos": "DL",
+        "name": "Yumeki Yoshinaga",
+        "name_en": "Yumeki Yoshinaga",
+        "name_zh": "吉永梦希",
+        "rating": 6.8,
+        "min": 76,
+        "is_mvp": false,
+        "stats": {
+          "出场时间": "76 分钟 (首发)",
+          "进球/助攻": "0球 / 0助",
+          "本场评分": "6.8 分",
+          "传球到位": "23/27",
+          "跑动强度": "高强度覆盖",
+          "战术职责": "首发 DL"
+        },
+        "radar": [
+          {
+            "subject": "赛场表现",
+            "value": 81
+          },
+          {
+            "subject": "出场时间",
+            "value": 84
+          },
+          {
+            "subject": "关键贡献",
+            "value": 80
+          },
+          {
+            "subject": "战术执行",
+            "value": 88
+          },
+          {
+            "subject": "对抗拼抢",
+            "value": 85
+          },
+          {
+            "subject": "传控配合",
+            "value": 86
+          }
+        ]
+      },
+      {
+        "pos": "ST2",
+        "name": "Abdelsamad Hachem",
+        "name_en": "Abdelsamad Hachem",
+        "name_zh": "阿卜杜勒萨马德·哈切姆",
+        "rating": 8.0,
+        "min": 90,
+        "is_mvp": false,
+        "stats": {
+          "出场时间": "90 分钟 (首发)",
+          "进球/助攻": "1球 / 1助",
+          "本场评分": "8.0 分",
+          "传球到位": "23/27",
+          "跑动强度": "高强度覆盖",
+          "战术职责": "首发 ST2"
+        },
+        "radar": [
+          {
+            "subject": "赛场表现",
+            "value": 96
+          },
+          {
+            "subject": "出场时间",
+            "value": 100
+          },
+          {
+            "subject": "关键贡献",
+            "value": 90
+          },
+          {
+            "subject": "战术执行",
+            "value": 88
+          },
+          {
+            "subject": "对抗拼抢",
+            "value": 85
+          },
+          {
+            "subject": "传控配合",
+            "value": 86
+          }
+        ]
+      }
+    ],
+    "bench_subs": [
+      {
+        "name": "Prins Tjiueza",
+        "name_zh": "普林斯·吉乌扎",
+        "pos": "DR",
+        "entered_minute": 65,
+        "minutes": 25,
+        "rating": 6.7,
+        "goals": 0,
+        "assists": 0
+      },
+      {
+        "name": "Adama Diop",
+        "name_zh": "亚当穆斯·迪奥普",
+        "pos": "MC",
+        "entered_minute": 87,
+        "minutes": 3,
+        "rating": 6.7,
+        "goals": 0,
+        "assists": 0
+      },
+      {
+        "name": "Jean-Claude Ntenda",
+        "name_zh": "让-克洛德·恩滕达",
+        "pos": "DL",
+        "entered_minute": 76,
+        "minutes": 14,
+        "rating": 6.7,
+        "goals": 0,
+        "assists": 0
+      },
+      {
+        "name": "Luca Maiorano",
+        "name_zh": "卢卡·马约拉诺",
+        "pos": "AMR",
+        "entered_minute": 76,
+        "minutes": 14,
+        "rating": 6.7,
+        "goals": 0,
+        "assists": 0
+      },
+      {
+        "name": "Park Seung-Soo",
+        "name_zh": "朴昇秀",
+        "pos": "AML",
+        "entered_minute": 65,
+        "minutes": 25,
+        "rating": 7.8,
+        "goals": 0,
+        "assists": 1
+      }
+    ]
+  },
+  {
+    "id": 27,
+    "round": 27,
+    "stage_title": "比乙常规赛 · 第27轮",
+    "is_playoff": false,
+    "date": "2026-03-15",
+    "home_team": "维尔通精英",
+    "away_team": "安德莱赫特未来",
+    "score_home": 3,
+    "score_away": 2,
+    "venue": "home",
+    "stadium": "伊万·乔治球场 (Stade Yvan Georges)",
+    "result": "W",
+    "formation": "4-1-1-4 (双前锋·密集短传)",
+    "tactical_style": "密集短传 · Tiki-Taka",
+    "xg": 2.85,
+    "shots": 22,
+    "shots_on_target": 9,
+    "distance_km": 122.8,
+    "scorers": [
+      {
+        "player": "Marks Inchaud",
+        "player_zh": "马克斯·因查德",
+        "minute": 34,
+        "assist": "Tyrone Tormin",
+        "assist_zh": "泰伦·托明"
+      },
+      {
+        "player": "Abdelsamad Hachem",
+        "player_zh": "阿卜杜勒萨马德·哈切姆",
+        "minute": 34,
+        "assist": "Tyrone Tormin",
+        "assist_zh": "泰伦·托明"
+      },
+      {
+        "player": "Park Seung-Soo",
+        "player_zh": "朴昇秀",
+        "minute": 34,
+        "assist": "Tyrone Tormin",
+        "assist_zh": "泰伦·托明"
+      }
+    ],
+    "lineup": [
+      {
+        "pos": "GK",
+        "name": "Célestin De Schrevel",
+        "name_en": "Célestin De Schrevel",
+        "name_zh": "塞莱斯丁·德·施瑞沃",
+        "rating": 6.5,
+        "min": 90,
+        "is_mvp": false,
+        "stats": {
+          "出场时间": "90 分钟 (首发)",
+          "进球/助攻": "0球 / 0助",
+          "本场评分": "6.5 分",
+          "传球到位": "26/30",
+          "跑动强度": "高强度覆盖",
+          "战术职责": "首发 GK"
+        },
+        "radar": [
+          {
+            "subject": "赛场表现",
+            "value": 78
+          },
+          {
+            "subject": "出场时间",
+            "value": 100
+          },
+          {
+            "subject": "关键贡献",
+            "value": 80
+          },
+          {
+            "subject": "战术执行",
+            "value": 88
+          },
+          {
+            "subject": "对抗拼抢",
+            "value": 85
+          },
+          {
+            "subject": "传控配合",
+            "value": 86
+          }
+        ]
+      },
+      {
+        "pos": "AMR",
+        "name": "Tyrone Tormin",
+        "name_en": "Tyrone Tormin",
+        "name_zh": "泰伦·托明",
+        "rating": 6.7,
+        "min": 87,
+        "is_mvp": false,
+        "stats": {
+          "出场时间": "87 分钟 (首发)",
+          "进球/助攻": "0球 / 0助",
+          "本场评分": "6.7 分",
+          "传球到位": "26/30",
+          "跑动强度": "高强度覆盖",
+          "战术职责": "首发 AMR"
+        },
+        "radar": [
+          {
+            "subject": "赛场表现",
+            "value": 80
+          },
+          {
+            "subject": "出场时间",
+            "value": 96
+          },
+          {
+            "subject": "关键贡献",
+            "value": 80
+          },
+          {
+            "subject": "战术执行",
+            "value": 88
+          },
+          {
+            "subject": "对抗拼抢",
+            "value": 85
+          },
+          {
+            "subject": "传控配合",
+            "value": 86
+          }
+        ]
+      },
+      {
+        "pos": "AML",
+        "name": "Paul Wade",
+        "name_en": "Paul Wade",
+        "name_zh": "保罗·韦德",
+        "rating": 6.5,
+        "min": 62,
+        "is_mvp": false,
+        "stats": {
+          "出场时间": "62 分钟 (首发)",
+          "进球/助攻": "0球 / 0助",
+          "本场评分": "6.5 分",
+          "传球到位": "26/30",
+          "跑动强度": "高强度覆盖",
+          "战术职责": "首发 AML"
+        },
+        "radar": [
+          {
+            "subject": "赛场表现",
+            "value": 78
+          },
+          {
+            "subject": "出场时间",
+            "value": 68
+          },
+          {
+            "subject": "关键贡献",
+            "value": 80
+          },
+          {
+            "subject": "战术执行",
+            "value": 88
+          },
+          {
+            "subject": "对抗拼抢",
+            "value": 85
+          },
+          {
+            "subject": "传控配合",
+            "value": 86
+          }
+        ]
+      },
+      {
+        "pos": "DC1",
+        "name": "Allan Tchaptchet",
+        "name_en": "Allan Tchaptchet",
+        "name_zh": "阿兰·特查普切特",
+        "rating": 7.5,
+        "min": 90,
+        "is_mvp": false,
+        "stats": {
+          "出场时间": "90 分钟 (首发)",
+          "进球/助攻": "0球 / 0助",
+          "本场评分": "7.5 分",
+          "传球到位": "26/30",
+          "跑动强度": "高强度覆盖",
+          "战术职责": "首发 DC1"
+        },
+        "radar": [
+          {
+            "subject": "赛场表现",
+            "value": 90
+          },
+          {
+            "subject": "出场时间",
+            "value": 100
+          },
+          {
+            "subject": "关键贡献",
+            "value": 80
+          },
+          {
+            "subject": "战术执行",
+            "value": 88
+          },
+          {
+            "subject": "对抗拼抢",
+            "value": 85
+          },
+          {
+            "subject": "传控配合",
+            "value": 86
+          }
+        ]
+      },
+      {
+        "pos": "ST1",
+        "name": "Marks Inchaud",
+        "name_en": "Marks Inchaud",
+        "name_zh": "马克斯·因查德",
+        "rating": 7.9,
+        "min": 74,
+        "is_mvp": false,
+        "stats": {
+          "出场时间": "74 分钟 (首发)",
+          "进球/助攻": "1球 / 1助",
+          "本场评分": "7.9 分",
+          "传球到位": "26/30",
+          "跑动强度": "高强度覆盖",
+          "战术职责": "首发 ST1"
+        },
+        "radar": [
+          {
+            "subject": "赛场表现",
+            "value": 94
+          },
+          {
+            "subject": "出场时间",
+            "value": 82
+          },
+          {
+            "subject": "关键贡献",
+            "value": 90
+          },
+          {
+            "subject": "战术执行",
+            "value": 88
+          },
+          {
+            "subject": "对抗拼抢",
+            "value": 85
+          },
+          {
+            "subject": "传控配合",
+            "value": 86
+          }
+        ]
+      },
+      {
+        "pos": "DL",
+        "name": "Yassine Ben Hamed",
+        "name_en": "Yassine Ben Hamed",
+        "name_zh": "亚塞尼·本·哈米德",
+        "rating": 6.8,
+        "min": 90,
+        "is_mvp": false,
+        "stats": {
+          "出场时间": "90 分钟 (首发)",
+          "进球/助攻": "0球 / 0助",
+          "本场评分": "6.8 分",
+          "传球到位": "26/30",
+          "跑动强度": "高强度覆盖",
+          "战术职责": "首发 DL"
+        },
+        "radar": [
+          {
+            "subject": "赛场表现",
+            "value": 81
+          },
+          {
+            "subject": "出场时间",
+            "value": 100
+          },
+          {
+            "subject": "关键贡献",
+            "value": 80
+          },
+          {
+            "subject": "战术执行",
+            "value": 88
+          },
+          {
+            "subject": "对抗拼抢",
+            "value": 85
+          },
+          {
+            "subject": "传控配合",
+            "value": 86
+          }
+        ]
+      },
+      {
+        "pos": "DM",
+        "name": "Antoine Valério",
+        "name_en": "Antoine Valério",
+        "name_zh": "安托万·瓦莱里奥",
+        "rating": 6.8,
+        "min": 90,
+        "is_mvp": false,
+        "stats": {
+          "出场时间": "90 分钟 (首发)",
+          "进球/助攻": "0球 / 0助",
+          "本场评分": "6.8 分",
+          "传球到位": "26/30",
+          "跑动强度": "高强度覆盖",
+          "战术职责": "首发 DM"
+        },
+        "radar": [
+          {
+            "subject": "赛场表现",
+            "value": 81
+          },
+          {
+            "subject": "出场时间",
+            "value": 100
+          },
+          {
+            "subject": "关键贡献",
+            "value": 80
+          },
+          {
+            "subject": "战术执行",
+            "value": 88
+          },
+          {
+            "subject": "对抗拼抢",
+            "value": 85
+          },
+          {
+            "subject": "传控配合",
+            "value": 86
+          }
+        ]
+      },
+      {
+        "pos": "MC",
+        "name": "Aliou Dembélé",
+        "name_en": "Aliou Dembélé",
+        "name_zh": "阿卢·登贝莱",
+        "rating": 6.5,
+        "min": 87,
+        "is_mvp": false,
+        "stats": {
+          "出场时间": "87 分钟 (首发)",
+          "进球/助攻": "0球 / 0助",
+          "本场评分": "6.5 分",
+          "传球到位": "26/30",
+          "跑动强度": "高强度覆盖",
+          "战术职责": "首发 MC"
+        },
+        "radar": [
+          {
+            "subject": "赛场表现",
+            "value": 78
+          },
+          {
+            "subject": "出场时间",
+            "value": 96
+          },
+          {
+            "subject": "关键贡献",
+            "value": 80
+          },
+          {
+            "subject": "战术执行",
+            "value": 88
+          },
+          {
+            "subject": "对抗拼抢",
+            "value": 85
+          },
+          {
+            "subject": "传控配合",
+            "value": 86
+          }
+        ]
+      },
+      {
+        "pos": "DC2",
+        "name": "William Simba",
+        "name_en": "William Simba",
+        "name_zh": "威廉·辛巴",
+        "rating": 6.5,
+        "min": 90,
+        "is_mvp": false,
+        "stats": {
+          "出场时间": "90 分钟 (首发)",
+          "进球/助攻": "0球 / 0助",
+          "本场评分": "6.5 分",
+          "传球到位": "26/30",
+          "跑动强度": "高强度覆盖",
+          "战术职责": "首发 DC2"
+        },
+        "radar": [
+          {
+            "subject": "赛场表现",
+            "value": 78
+          },
+          {
+            "subject": "出场时间",
+            "value": 100
+          },
+          {
+            "subject": "关键贡献",
+            "value": 80
+          },
+          {
+            "subject": "战术执行",
+            "value": 88
+          },
+          {
+            "subject": "对抗拼抢",
+            "value": 85
+          },
+          {
+            "subject": "传控配合",
+            "value": 86
+          }
+        ]
+      },
+      {
+        "pos": "DR",
+        "name": "Steeven Assengue",
+        "name_en": "Steeven Assengue",
+        "name_zh": "斯蒂文·阿森盖",
+        "rating": 7.1,
+        "min": 74,
+        "is_mvp": false,
+        "stats": {
+          "出场时间": "74 分钟 (首发)",
+          "进球/助攻": "0球 / 1助",
+          "本场评分": "7.1 分",
+          "传球到位": "26/30",
+          "跑动强度": "高强度覆盖",
+          "战术职责": "首发 DR"
+        },
+        "radar": [
+          {
+            "subject": "赛场表现",
+            "value": 85
+          },
+          {
+            "subject": "出场时间",
+            "value": 82
+          },
+          {
+            "subject": "关键贡献",
+            "value": 90
+          },
+          {
+            "subject": "战术执行",
+            "value": 88
+          },
+          {
+            "subject": "对抗拼抢",
+            "value": 85
+          },
+          {
+            "subject": "传控配合",
+            "value": 86
+          }
+        ]
+      },
+      {
+        "pos": "ST2",
+        "name": "Abdelsamad Hachem",
+        "name_en": "Abdelsamad Hachem",
+        "name_zh": "阿卜杜勒萨马德·哈切姆",
+        "rating": 8.1,
+        "min": 90,
+        "is_mvp": true,
+        "stats": {
+          "出场时间": "90 分钟 (首发)",
+          "进球/助攻": "1球 / 0助",
+          "本场评分": "8.1 分",
+          "传球到位": "26/30",
+          "跑动强度": "高强度覆盖",
+          "战术职责": "首发 ST2"
+        },
+        "radar": [
+          {
+            "subject": "赛场表现",
+            "value": 97
+          },
+          {
+            "subject": "出场时间",
+            "value": 100
+          },
+          {
+            "subject": "关键贡献",
+            "value": 90
+          },
+          {
+            "subject": "战术执行",
+            "value": 88
+          },
+          {
+            "subject": "对抗拼抢",
+            "value": 85
+          },
+          {
+            "subject": "传控配合",
+            "value": 86
+          }
+        ]
+      }
+    ],
+    "bench_subs": [
+      {
+        "name": "Prins Tjiueza",
+        "name_zh": "普林斯·吉乌扎",
+        "pos": "DR",
+        "entered_minute": 74,
+        "minutes": 16,
+        "rating": 6.9,
+        "goals": 0,
+        "assists": 0
+      },
+      {
+        "name": "Adama Diop",
+        "name_zh": "亚当穆斯·迪奥普",
+        "pos": "MC",
+        "entered_minute": 87,
+        "minutes": 3,
+        "rating": 6.7,
+        "goals": 0,
+        "assists": 0
+      },
+      {
+        "name": "Luca Maiorano",
+        "name_zh": "卢卡·马约拉诺",
+        "pos": "AMR",
+        "entered_minute": 87,
+        "minutes": 3,
+        "rating": 6.7,
+        "goals": 0,
+        "assists": 0
+      },
+      {
+        "name": "Sullivan Lakhamy",
+        "name_zh": "沙利文·拉哈米",
+        "pos": "ST",
+        "entered_minute": 74,
+        "minutes": 16,
+        "rating": 7.3,
+        "goals": 0,
+        "assists": 1
+      },
+      {
+        "name": "Park Seung-Soo",
+        "name_zh": "朴昇秀",
+        "pos": "AML",
+        "entered_minute": 62,
+        "minutes": 28,
+        "rating": 7.6,
+        "goals": 1,
+        "assists": 0
+      }
+    ]
+  },
+  {
+    "id": 28,
+    "round": 28,
+    "stage_title": "比乙常规赛 · 第28轮",
+    "is_playoff": false,
+    "date": "2026-03-29",
+    "home_team": "皇家列日",
+    "away_team": "维尔通精英",
+    "score_home": 0,
+    "score_away": 4,
+    "venue": "away",
+    "stadium": "皇家列日主场",
+    "result": "W",
+    "formation": "4-1-1-4 (双前锋·密集短传)",
+    "tactical_style": "密集短传 · Tiki-Taka",
+    "xg": 3.75,
+    "shots": 23,
+    "shots_on_target": 10,
+    "distance_km": 118.0,
+    "scorers": [
+      {
+        "player": "Tyrone Tormin",
+        "player_zh": "泰伦·托明",
+        "minute": 41,
+        "assist": "Tyrone Tormin",
+        "assist_zh": "泰伦·托明"
+      },
+      {
+        "player": "Park Seung-Soo",
+        "player_zh": "朴昇秀",
+        "minute": 41,
+        "assist": "Tyrone Tormin",
+        "assist_zh": "泰伦·托明"
+      },
+      {
+        "player": "Abdelsamad Hachem",
+        "player_zh": "阿卜杜勒萨马德·哈切姆",
+        "minute": 41,
+        "assist": "Tyrone Tormin",
+        "assist_zh": "泰伦·托明"
+      },
+      {
+        "player": "Abdelsamad Hachem",
+        "player_zh": "阿卜杜勒萨马德·哈切姆",
+        "minute": 69,
+        "assist": null,
+        "assist_zh": null
+      }
+    ],
+    "lineup": [
+      {
+        "pos": "GK",
+        "name": "Célestin De Schrevel",
+        "name_en": "Célestin De Schrevel",
+        "name_zh": "塞莱斯丁·德·施瑞沃",
+        "rating": 7.4,
+        "min": 90,
+        "is_mvp": false,
+        "stats": {
+          "出场时间": "90 分钟 (首发)",
+          "进球/助攻": "0球 / 0助",
+          "本场评分": "7.4 分",
+          "传球到位": "29/33",
+          "跑动强度": "高强度覆盖",
+          "战术职责": "首发 GK"
+        },
+        "radar": [
+          {
+            "subject": "赛场表现",
+            "value": 88
+          },
+          {
+            "subject": "出场时间",
+            "value": 100
+          },
+          {
+            "subject": "关键贡献",
+            "value": 80
+          },
+          {
+            "subject": "战术执行",
+            "value": 88
+          },
+          {
+            "subject": "对抗拼抢",
+            "value": 85
+          },
+          {
+            "subject": "传控配合",
+            "value": 86
+          }
+        ]
+      },
+      {
+        "pos": "MC",
+        "name": "Adama Diop",
+        "name_en": "Adama Diop",
+        "name_zh": "亚当穆斯·迪奥普",
+        "rating": 6.6,
+        "min": 90,
+        "is_mvp": false,
+        "stats": {
+          "出场时间": "90 分钟 (首发)",
+          "进球/助攻": "0球 / 0助",
+          "本场评分": "6.6 分",
+          "传球到位": "29/33",
+          "跑动强度": "高强度覆盖",
+          "战术职责": "首发 MC"
+        },
+        "radar": [
+          {
+            "subject": "赛场表现",
+            "value": 79
+          },
+          {
+            "subject": "出场时间",
+            "value": 100
+          },
+          {
+            "subject": "关键贡献",
+            "value": 80
+          },
+          {
+            "subject": "战术执行",
+            "value": 88
+          },
+          {
+            "subject": "对抗拼抢",
+            "value": 85
+          },
+          {
+            "subject": "传控配合",
+            "value": 86
+          }
+        ]
+      },
+      {
+        "pos": "AMR",
+        "name": "Tyrone Tormin",
+        "name_en": "Tyrone Tormin",
+        "name_zh": "泰伦·托明",
+        "rating": 8.3,
+        "min": 90,
+        "is_mvp": false,
+        "stats": {
+          "出场时间": "90 分钟 (首发)",
+          "进球/助攻": "1球 / 0助",
+          "本场评分": "8.3 分",
+          "传球到位": "29/33",
+          "跑动强度": "高强度覆盖",
+          "战术职责": "首发 AMR"
+        },
+        "radar": [
+          {
+            "subject": "赛场表现",
+            "value": 99
+          },
+          {
+            "subject": "出场时间",
+            "value": 100
+          },
+          {
+            "subject": "关键贡献",
+            "value": 90
+          },
+          {
+            "subject": "战术执行",
+            "value": 88
+          },
+          {
+            "subject": "对抗拼抢",
+            "value": 85
+          },
+          {
+            "subject": "传控配合",
+            "value": 86
+          }
+        ]
+      },
+      {
+        "pos": "DC1",
+        "name": "Allan Tchaptchet",
+        "name_en": "Allan Tchaptchet",
+        "name_zh": "阿兰·特查普切特",
+        "rating": 7.4,
+        "min": 90,
+        "is_mvp": false,
+        "stats": {
+          "出场时间": "90 分钟 (首发)",
+          "进球/助攻": "0球 / 0助",
+          "本场评分": "7.4 分",
+          "传球到位": "29/33",
+          "跑动强度": "高强度覆盖",
+          "战术职责": "首发 DC1"
+        },
+        "radar": [
+          {
+            "subject": "赛场表现",
+            "value": 88
+          },
+          {
+            "subject": "出场时间",
+            "value": 100
+          },
+          {
+            "subject": "关键贡献",
+            "value": 80
+          },
+          {
+            "subject": "战术执行",
+            "value": 88
+          },
+          {
+            "subject": "对抗拼抢",
+            "value": 85
+          },
+          {
+            "subject": "传控配合",
+            "value": 86
+          }
+        ]
+      },
+      {
+        "pos": "ST1",
+        "name": "Marks Inchaud",
+        "name_en": "Marks Inchaud",
+        "name_zh": "马克斯·因查德",
+        "rating": 8.1,
+        "min": 90,
+        "is_mvp": false,
+        "stats": {
+          "出场时间": "90 分钟 (首发)",
+          "进球/助攻": "0球 / 2助",
+          "本场评分": "8.1 分",
+          "传球到位": "29/33",
+          "跑动强度": "高强度覆盖",
+          "战术职责": "首发 ST1"
+        },
+        "radar": [
+          {
+            "subject": "赛场表现",
+            "value": 97
+          },
+          {
+            "subject": "出场时间",
+            "value": 100
+          },
+          {
+            "subject": "关键贡献",
+            "value": 90
+          },
+          {
+            "subject": "战术执行",
+            "value": 88
+          },
+          {
+            "subject": "对抗拼抢",
+            "value": 85
+          },
+          {
+            "subject": "传控配合",
+            "value": 86
+          }
+        ]
+      },
+      {
+        "pos": "DL",
+        "name": "Yassine Ben Hamed",
+        "name_en": "Yassine Ben Hamed",
+        "name_zh": "亚塞尼·本·哈米德",
+        "rating": 7.4,
+        "min": 90,
+        "is_mvp": false,
+        "stats": {
+          "出场时间": "90 分钟 (首发)",
+          "进球/助攻": "0球 / 0助",
+          "本场评分": "7.4 分",
+          "传球到位": "29/33",
+          "跑动强度": "高强度覆盖",
+          "战术职责": "首发 DL"
+        },
+        "radar": [
+          {
+            "subject": "赛场表现",
+            "value": 88
+          },
+          {
+            "subject": "出场时间",
+            "value": 100
+          },
+          {
+            "subject": "关键贡献",
+            "value": 80
+          },
+          {
+            "subject": "战术执行",
+            "value": 88
+          },
+          {
+            "subject": "对抗拼抢",
+            "value": 85
+          },
+          {
+            "subject": "传控配合",
+            "value": 86
+          }
+        ]
+      },
+      {
+        "pos": "DM",
+        "name": "Antoine Valério",
+        "name_en": "Antoine Valério",
+        "name_zh": "安托万·瓦莱里奥",
+        "rating": 6.8,
+        "min": 90,
+        "is_mvp": false,
+        "stats": {
+          "出场时间": "90 分钟 (首发)",
+          "进球/助攻": "0球 / 0助",
+          "本场评分": "6.8 分",
+          "传球到位": "29/33",
+          "跑动强度": "高强度覆盖",
+          "战术职责": "首发 DM"
+        },
+        "radar": [
+          {
+            "subject": "赛场表现",
+            "value": 81
+          },
+          {
+            "subject": "出场时间",
+            "value": 100
+          },
+          {
+            "subject": "关键贡献",
+            "value": 80
+          },
+          {
+            "subject": "战术执行",
+            "value": 88
+          },
+          {
+            "subject": "对抗拼抢",
+            "value": 85
+          },
+          {
+            "subject": "传控配合",
+            "value": 86
+          }
+        ]
+      },
+      {
+        "pos": "DC2",
+        "name": "William Simba",
+        "name_en": "William Simba",
+        "name_zh": "威廉·辛巴",
+        "rating": 7.6,
+        "min": 90,
+        "is_mvp": false,
+        "stats": {
+          "出场时间": "90 分钟 (首发)",
+          "进球/助攻": "0球 / 0助",
+          "本场评分": "7.6 分",
+          "传球到位": "29/33",
+          "跑动强度": "高强度覆盖",
+          "战术职责": "首发 DC2"
+        },
+        "radar": [
+          {
+            "subject": "赛场表现",
+            "value": 91
+          },
+          {
+            "subject": "出场时间",
+            "value": 100
+          },
+          {
+            "subject": "关键贡献",
+            "value": 80
+          },
+          {
+            "subject": "战术执行",
+            "value": 88
+          },
+          {
+            "subject": "对抗拼抢",
+            "value": 85
+          },
+          {
+            "subject": "传控配合",
+            "value": 86
+          }
+        ]
+      },
+      {
+        "pos": "DR",
+        "name": "Steeven Assengue",
+        "name_en": "Steeven Assengue",
+        "name_zh": "斯蒂文·阿森盖",
+        "rating": 7.2,
+        "min": 90,
+        "is_mvp": false,
+        "stats": {
+          "出场时间": "90 分钟 (首发)",
+          "进球/助攻": "0球 / 0助",
+          "本场评分": "7.2 分",
+          "传球到位": "29/33",
+          "跑动强度": "高强度覆盖",
+          "战术职责": "首发 DR"
+        },
+        "radar": [
+          {
+            "subject": "赛场表现",
+            "value": 86
+          },
+          {
+            "subject": "出场时间",
+            "value": 100
+          },
+          {
+            "subject": "关键贡献",
+            "value": 80
+          },
+          {
+            "subject": "战术执行",
+            "value": 88
+          },
+          {
+            "subject": "对抗拼抢",
+            "value": 85
+          },
+          {
+            "subject": "传控配合",
+            "value": 86
+          }
+        ]
+      },
+      {
+        "pos": "AML",
+        "name": "Park Seung-Soo",
+        "name_en": "Park Seung-Soo",
+        "name_zh": "朴昇秀",
+        "rating": 9.7,
+        "min": 90,
+        "is_mvp": true,
+        "stats": {
+          "出场时间": "90 分钟 (首发)",
+          "进球/助攻": "1球 / 2助",
+          "本场评分": "9.7 分",
+          "传球到位": "29/33",
+          "跑动强度": "高强度覆盖",
+          "战术职责": "首发 AML"
+        },
+        "radar": [
+          {
+            "subject": "赛场表现",
+            "value": 100
+          },
+          {
+            "subject": "出场时间",
+            "value": 100
+          },
+          {
+            "subject": "关键贡献",
+            "value": 90
+          },
+          {
+            "subject": "战术执行",
+            "value": 88
+          },
+          {
+            "subject": "对抗拼抢",
+            "value": 85
+          },
+          {
+            "subject": "传控配合",
+            "value": 86
+          }
+        ]
+      },
+      {
+        "pos": "ST2",
+        "name": "Abdelsamad Hachem",
+        "name_en": "Abdelsamad Hachem",
+        "name_zh": "阿卜杜勒萨马德·哈切姆",
+        "rating": 8.6,
+        "min": 90,
+        "is_mvp": false,
+        "stats": {
+          "出场时间": "90 分钟 (首发)",
+          "进球/助攻": "2球 / 0助",
+          "本场评分": "8.6 分",
+          "传球到位": "29/33",
+          "跑动强度": "高强度覆盖",
+          "战术职责": "首发 ST2"
+        },
+        "radar": [
+          {
+            "subject": "赛场表现",
+            "value": 100
+          },
+          {
+            "subject": "出场时间",
+            "value": 100
+          },
+          {
+            "subject": "关键贡献",
+            "value": 90
+          },
+          {
+            "subject": "战术执行",
+            "value": 88
+          },
+          {
+            "subject": "对抗拼抢",
+            "value": 85
+          },
+          {
+            "subject": "传控配合",
+            "value": 86
+          }
+        ]
+      }
+    ],
+    "bench_subs": []
+  },
+  {
+    "id": 29,
+    "round": 29,
+    "stage_title": "冲甲半决赛·首回合 (客)",
+    "is_playoff": true,
+    "date": "2026-06-02",
+    "home_team": "登德",
+    "away_team": "维尔通精英",
+    "score_home": 0,
+    "score_away": 2,
+    "venue": "away",
+    "stadium": "登德主场",
+    "result": "W",
+    "formation": "4-1-1-4 (双前锋·密集短传)",
+    "tactical_style": "密集短传 · Tiki-Taka",
+    "xg": 2.4,
+    "shots": 16,
+    "shots_on_target": 7,
+    "distance_km": 118.8,
+    "scorers": [
+      {
+        "player": "Prins Tjiueza",
+        "player_zh": "普林斯·吉乌扎",
+        "minute": 48,
+        "assist": "Tyrone Tormin",
+        "assist_zh": "泰伦·托明"
+      },
+      {
+        "player": "Tyrone Tormin",
+        "player_zh": "泰伦·托明",
+        "minute": 48,
+        "assist": "Tyrone Tormin",
+        "assist_zh": "泰伦·托明"
+      }
+    ],
+    "lineup": [
+      {
+        "pos": "DR",
+        "name": "Prins Tjiueza",
+        "name_en": "Prins Tjiueza",
+        "name_zh": "普林斯·吉乌扎",
+        "rating": 8.3,
+        "min": 90,
+        "is_mvp": true,
+        "stats": {
+          "出场时间": "90 分钟 (首发)",
+          "进球/助攻": "1球 / 0助",
+          "本场评分": "8.3 分",
+          "传球到位": "32/36",
+          "跑动强度": "高强度覆盖",
+          "战术职责": "首发 DR"
+        },
+        "radar": [
+          {
+            "subject": "赛场表现",
+            "value": 99
+          },
+          {
+            "subject": "出场时间",
+            "value": 100
+          },
+          {
+            "subject": "关键贡献",
+            "value": 90
+          },
+          {
+            "subject": "战术执行",
+            "value": 88
+          },
+          {
+            "subject": "对抗拼抢",
+            "value": 85
+          },
+          {
+            "subject": "传控配合",
+            "value": 86
+          }
+        ]
+      },
+      {
+        "pos": "GK",
+        "name": "Célestin De Schrevel",
+        "name_en": "Célestin De Schrevel",
+        "name_zh": "塞莱斯丁·德·施瑞沃",
+        "rating": 7.4,
+        "min": 90,
+        "is_mvp": false,
+        "stats": {
+          "出场时间": "90 分钟 (首发)",
+          "进球/助攻": "0球 / 0助",
+          "本场评分": "7.4 分",
+          "传球到位": "32/36",
+          "跑动强度": "高强度覆盖",
+          "战术职责": "首发 GK"
+        },
+        "radar": [
+          {
+            "subject": "赛场表现",
+            "value": 88
+          },
+          {
+            "subject": "出场时间",
+            "value": 100
+          },
+          {
+            "subject": "关键贡献",
+            "value": 80
+          },
+          {
+            "subject": "战术执行",
+            "value": 88
+          },
+          {
+            "subject": "对抗拼抢",
+            "value": 85
+          },
+          {
+            "subject": "传控配合",
+            "value": 86
+          }
+        ]
+      },
+      {
+        "pos": "DC1",
+        "name": "Teddy Mezague",
+        "name_en": "Teddy Mezague",
+        "name_zh": "泰迪·梅扎古",
+        "rating": 7.4,
+        "min": 90,
+        "is_mvp": false,
+        "stats": {
+          "出场时间": "90 分钟 (首发)",
+          "进球/助攻": "0球 / 0助",
+          "本场评分": "7.4 分",
+          "传球到位": "32/36",
+          "跑动强度": "高强度覆盖",
+          "战术职责": "首发 DC1"
+        },
+        "radar": [
+          {
+            "subject": "赛场表现",
+            "value": 88
+          },
+          {
+            "subject": "出场时间",
+            "value": 100
+          },
+          {
+            "subject": "关键贡献",
+            "value": 80
+          },
+          {
+            "subject": "战术执行",
+            "value": 88
+          },
+          {
+            "subject": "对抗拼抢",
+            "value": 85
+          },
+          {
+            "subject": "传控配合",
+            "value": 86
+          }
+        ]
+      },
+      {
+        "pos": "AMR",
+        "name": "Tyrone Tormin",
+        "name_en": "Tyrone Tormin",
+        "name_zh": "泰伦·托明",
+        "rating": 8.0,
+        "min": 90,
+        "is_mvp": false,
+        "stats": {
+          "出场时间": "90 分钟 (首发)",
+          "进球/助攻": "1球 / 0助",
+          "本场评分": "8.0 分",
+          "传球到位": "32/36",
+          "跑动强度": "高强度覆盖",
+          "战术职责": "首发 AMR"
+        },
+        "radar": [
+          {
+            "subject": "赛场表现",
+            "value": 96
+          },
+          {
+            "subject": "出场时间",
+            "value": 100
+          },
+          {
+            "subject": "关键贡献",
+            "value": 90
+          },
+          {
+            "subject": "战术执行",
+            "value": 88
+          },
+          {
+            "subject": "对抗拼抢",
+            "value": 85
+          },
+          {
+            "subject": "传控配合",
+            "value": 86
+          }
+        ]
+      },
+      {
+        "pos": "DC2",
+        "name": "Allan Tchaptchet",
+        "name_en": "Allan Tchaptchet",
+        "name_zh": "阿兰·特查普切特",
+        "rating": 7.5,
+        "min": 90,
+        "is_mvp": false,
+        "stats": {
+          "出场时间": "90 分钟 (首发)",
+          "进球/助攻": "0球 / 0助",
+          "本场评分": "7.5 分",
+          "传球到位": "32/36",
+          "跑动强度": "高强度覆盖",
+          "战术职责": "首发 DC2"
+        },
+        "radar": [
+          {
+            "subject": "赛场表现",
+            "value": 90
+          },
+          {
+            "subject": "出场时间",
+            "value": 100
+          },
+          {
+            "subject": "关键贡献",
+            "value": 80
+          },
+          {
+            "subject": "战术执行",
+            "value": 88
+          },
+          {
+            "subject": "对抗拼抢",
+            "value": 85
+          },
+          {
+            "subject": "传控配合",
+            "value": 86
+          }
+        ]
+      },
+      {
+        "pos": "ST1",
+        "name": "Marks Inchaud",
+        "name_en": "Marks Inchaud",
+        "name_zh": "马克斯·因查德",
+        "rating": 6.7,
+        "min": 90,
+        "is_mvp": false,
+        "stats": {
+          "出场时间": "90 分钟 (首发)",
+          "进球/助攻": "0球 / 0助",
+          "本场评分": "6.7 分",
+          "传球到位": "32/36",
+          "跑动强度": "高强度覆盖",
+          "战术职责": "首发 ST1"
+        },
+        "radar": [
+          {
+            "subject": "赛场表现",
+            "value": 80
+          },
+          {
+            "subject": "出场时间",
+            "value": 100
+          },
+          {
+            "subject": "关键贡献",
+            "value": 80
+          },
+          {
+            "subject": "战术执行",
+            "value": 88
+          },
+          {
+            "subject": "对抗拼抢",
+            "value": 85
+          },
+          {
+            "subject": "传控配合",
+            "value": 86
+          }
+        ]
+      },
+      {
+        "pos": "DM",
+        "name": "Antoine Valério",
+        "name_en": "Antoine Valério",
+        "name_zh": "安托万·瓦莱里奥",
+        "rating": 7.0,
+        "min": 90,
+        "is_mvp": false,
+        "stats": {
+          "出场时间": "90 分钟 (首发)",
+          "进球/助攻": "0球 / 0助",
+          "本场评分": "7.0 分",
+          "传球到位": "32/36",
+          "跑动强度": "高强度覆盖",
+          "战术职责": "首发 DM"
+        },
+        "radar": [
+          {
+            "subject": "赛场表现",
+            "value": 84
+          },
+          {
+            "subject": "出场时间",
+            "value": 100
+          },
+          {
+            "subject": "关键贡献",
+            "value": 80
+          },
+          {
+            "subject": "战术执行",
+            "value": 88
+          },
+          {
+            "subject": "对抗拼抢",
+            "value": 85
+          },
+          {
+            "subject": "传控配合",
+            "value": 86
+          }
+        ]
+      },
+      {
+        "pos": "MC",
+        "name": "Aliou Dembélé",
+        "name_en": "Aliou Dembélé",
+        "name_zh": "阿卢·登贝莱",
+        "rating": 7.6,
+        "min": 90,
+        "is_mvp": false,
+        "stats": {
+          "出场时间": "90 分钟 (首发)",
+          "进球/助攻": "0球 / 1助",
+          "本场评分": "7.6 分",
+          "传球到位": "32/36",
+          "跑动强度": "高强度覆盖",
+          "战术职责": "首发 MC"
+        },
+        "radar": [
+          {
+            "subject": "赛场表现",
+            "value": 91
+          },
+          {
+            "subject": "出场时间",
+            "value": 100
+          },
+          {
+            "subject": "关键贡献",
+            "value": 90
+          },
+          {
+            "subject": "战术执行",
+            "value": 88
+          },
+          {
+            "subject": "对抗拼抢",
+            "value": 85
+          },
+          {
+            "subject": "传控配合",
+            "value": 86
+          }
+        ]
+      },
+      {
+        "pos": "AML",
+        "name": "Luca Maiorano",
+        "name_en": "Luca Maiorano",
+        "name_zh": "卢卡·马约拉诺",
+        "rating": 6.6,
+        "min": 83,
+        "is_mvp": false,
+        "stats": {
+          "出场时间": "83 分钟 (首发)",
+          "进球/助攻": "0球 / 0助",
+          "本场评分": "6.6 分",
+          "传球到位": "32/36",
+          "跑动强度": "高强度覆盖",
+          "战术职责": "首发 AML"
+        },
+        "radar": [
+          {
+            "subject": "赛场表现",
+            "value": 79
+          },
+          {
+            "subject": "出场时间",
+            "value": 92
+          },
+          {
+            "subject": "关键贡献",
+            "value": 80
+          },
+          {
+            "subject": "战术执行",
+            "value": 88
+          },
+          {
+            "subject": "对抗拼抢",
+            "value": 85
+          },
+          {
+            "subject": "传控配合",
+            "value": 86
+          }
+        ]
+      },
+      {
+        "pos": "DL",
+        "name": "Yumeki Yoshinaga",
+        "name_en": "Yumeki Yoshinaga",
+        "name_zh": "吉永梦希",
+        "rating": 7.8,
+        "min": 90,
+        "is_mvp": false,
+        "stats": {
+          "出场时间": "90 分钟 (首发)",
+          "进球/助攻": "0球 / 0助",
+          "本场评分": "7.8 分",
+          "传球到位": "32/36",
+          "跑动强度": "高强度覆盖",
+          "战术职责": "首发 DL"
+        },
+        "radar": [
+          {
+            "subject": "赛场表现",
+            "value": 93
+          },
+          {
+            "subject": "出场时间",
+            "value": 100
+          },
+          {
+            "subject": "关键贡献",
+            "value": 80
+          },
+          {
+            "subject": "战术执行",
+            "value": 88
+          },
+          {
+            "subject": "对抗拼抢",
+            "value": 85
+          },
+          {
+            "subject": "传控配合",
+            "value": 86
+          }
+        ]
+      },
+      {
+        "pos": "ST2",
+        "name": "Abdelsamad Hachem",
+        "name_en": "Abdelsamad Hachem",
+        "name_zh": "阿卜杜勒萨马德·哈切姆",
+        "rating": 6.9,
+        "min": 90,
+        "is_mvp": false,
+        "stats": {
+          "出场时间": "90 分钟 (首发)",
+          "进球/助攻": "0球 / 0助",
+          "本场评分": "6.9 分",
+          "传球到位": "32/36",
+          "跑动强度": "高强度覆盖",
+          "战术职责": "首发 ST2"
+        },
+        "radar": [
+          {
+            "subject": "赛场表现",
+            "value": 82
+          },
+          {
+            "subject": "出场时间",
+            "value": 100
+          },
+          {
+            "subject": "关键贡献",
+            "value": 80
+          },
+          {
+            "subject": "战术执行",
+            "value": 88
+          },
+          {
+            "subject": "对抗拼抢",
+            "value": 85
+          },
+          {
+            "subject": "传控配合",
+            "value": 86
+          }
+        ]
+      }
+    ],
+    "bench_subs": [
+      {
+        "name": "Sullivan Coulibaly",
+        "name_zh": "沙利文·库利巴利",
+        "pos": "AML",
+        "entered_minute": 83,
+        "minutes": 7,
+        "rating": 6.7,
+        "goals": 0,
+        "assists": 0
+      }
+    ]
+  },
+  {
+    "id": 30,
+    "round": 30,
+    "stage_title": "冲甲半决赛·次回合 (主)",
+    "is_playoff": true,
+    "date": "2026-06-09",
+    "home_team": "维尔通精英",
+    "away_team": "登德",
+    "score_home": 3,
+    "score_away": 1,
+    "venue": "home",
+    "stadium": "伊万·乔治球场 (Stade Yvan Georges)",
+    "result": "W",
+    "formation": "4-1-1-4 (双前锋·密集短传)",
+    "tactical_style": "密集短传 · Tiki-Taka",
+    "xg": 2.55,
+    "shots": 21,
+    "shots_on_target": 9,
+    "distance_km": 119.6,
+    "scorers": [
+      {
+        "player": "Marks Inchaud",
+        "player_zh": "马克斯·因查德",
+        "minute": 25,
+        "assist": "Tyrone Tormin",
+        "assist_zh": "泰伦·托明"
+      },
+      {
+        "player": "Park Seung-Soo",
+        "player_zh": "朴昇秀",
+        "minute": 25,
+        "assist": "Tyrone Tormin",
+        "assist_zh": "泰伦·托明"
+      },
+      {
+        "player": "Abdelsamad Hachem",
+        "player_zh": "阿卜杜勒萨马德·哈切姆",
+        "minute": 25,
+        "assist": "Tyrone Tormin",
+        "assist_zh": "泰伦·托明"
+      },
+      {
+        "player": "Marks Inchaud",
+        "player_zh": "马克斯·因查德",
+        "minute": 53,
+        "assist": null,
+        "assist_zh": null
+      }
+    ],
+    "lineup": [
+      {
+        "pos": "DR",
+        "name": "Prins Tjiueza",
+        "name_en": "Prins Tjiueza",
+        "name_zh": "普林斯·吉乌扎",
+        "rating": 7.1,
+        "min": 87,
+        "is_mvp": false,
+        "stats": {
+          "出场时间": "87 分钟 (首发)",
+          "进球/助攻": "0球 / 1助",
+          "本场评分": "7.1 分",
+          "传球到位": "20/24",
+          "跑动强度": "高强度覆盖",
+          "战术职责": "首发 DR"
+        },
+        "radar": [
+          {
+            "subject": "赛场表现",
+            "value": 85
+          },
+          {
+            "subject": "出场时间",
+            "value": 96
+          },
+          {
+            "subject": "关键贡献",
+            "value": 90
+          },
+          {
+            "subject": "战术执行",
+            "value": 88
+          },
+          {
+            "subject": "对抗拼抢",
+            "value": 85
+          },
+          {
+            "subject": "传控配合",
+            "value": 86
+          }
+        ]
+      },
+      {
+        "pos": "GK",
+        "name": "Célestin De Schrevel",
+        "name_en": "Célestin De Schrevel",
+        "name_zh": "塞莱斯丁·德·施瑞沃",
+        "rating": 6.6,
+        "min": 90,
+        "is_mvp": false,
+        "stats": {
+          "出场时间": "90 分钟 (首发)",
+          "进球/助攻": "0球 / 0助",
+          "本场评分": "6.6 分",
+          "传球到位": "20/24",
+          "跑动强度": "高强度覆盖",
+          "战术职责": "首发 GK"
+        },
+        "radar": [
+          {
+            "subject": "赛场表现",
+            "value": 79
+          },
+          {
+            "subject": "出场时间",
+            "value": 100
+          },
+          {
+            "subject": "关键贡献",
+            "value": 80
+          },
+          {
+            "subject": "战术执行",
+            "value": 88
+          },
+          {
+            "subject": "对抗拼抢",
+            "value": 85
+          },
+          {
+            "subject": "传控配合",
+            "value": 86
+          }
+        ]
+      },
+      {
+        "pos": "DC1",
+        "name": "Teddy Mezague",
+        "name_en": "Teddy Mezague",
+        "name_zh": "泰迪·梅扎古",
+        "rating": 6.7,
+        "min": 90,
+        "is_mvp": false,
+        "stats": {
+          "出场时间": "90 分钟 (首发)",
+          "进球/助攻": "0球 / 0助",
+          "本场评分": "6.7 分",
+          "传球到位": "20/24",
+          "跑动强度": "高强度覆盖",
+          "战术职责": "首发 DC1"
+        },
+        "radar": [
+          {
+            "subject": "赛场表现",
+            "value": 80
+          },
+          {
+            "subject": "出场时间",
+            "value": 100
+          },
+          {
+            "subject": "关键贡献",
+            "value": 80
+          },
+          {
+            "subject": "战术执行",
+            "value": 88
+          },
+          {
+            "subject": "对抗拼抢",
+            "value": 85
+          },
+          {
+            "subject": "传控配合",
+            "value": 86
+          }
+        ]
+      },
+      {
+        "pos": "DM",
+        "name": "Adama Diop",
+        "name_en": "Adama Diop",
+        "name_zh": "亚当穆斯·迪奥普",
+        "rating": 6.6,
+        "min": 45,
+        "is_mvp": false,
+        "stats": {
+          "出场时间": "45 分钟 (首发)",
+          "进球/助攻": "0球 / 0助",
+          "本场评分": "6.6 分",
+          "传球到位": "20/24",
+          "跑动强度": "高强度覆盖",
+          "战术职责": "首发 DM"
+        },
+        "radar": [
+          {
+            "subject": "赛场表现",
+            "value": 79
+          },
+          {
+            "subject": "出场时间",
+            "value": 50
+          },
+          {
+            "subject": "关键贡献",
+            "value": 80
+          },
+          {
+            "subject": "战术执行",
+            "value": 88
+          },
+          {
+            "subject": "对抗拼抢",
+            "value": 85
+          },
+          {
+            "subject": "传控配合",
+            "value": 86
+          }
+        ]
+      },
+      {
+        "pos": "AMR",
+        "name": "Tyrone Tormin",
+        "name_en": "Tyrone Tormin",
+        "name_zh": "泰伦·托明",
+        "rating": 6.9,
+        "min": 90,
+        "is_mvp": false,
+        "stats": {
+          "出场时间": "90 分钟 (首发)",
+          "进球/助攻": "0球 / 1助",
+          "本场评分": "6.9 分",
+          "传球到位": "20/24",
+          "跑动强度": "高强度覆盖",
+          "战术职责": "首发 AMR"
+        },
+        "radar": [
+          {
+            "subject": "赛场表现",
+            "value": 82
+          },
+          {
+            "subject": "出场时间",
+            "value": 100
+          },
+          {
+            "subject": "关键贡献",
+            "value": 90
+          },
+          {
+            "subject": "战术执行",
+            "value": 88
+          },
+          {
+            "subject": "对抗拼抢",
+            "value": 85
+          },
+          {
+            "subject": "传控配合",
+            "value": 86
+          }
+        ]
+      },
+      {
+        "pos": "DC2",
+        "name": "Allan Tchaptchet",
+        "name_en": "Allan Tchaptchet",
+        "name_zh": "阿兰·特查普切特",
+        "rating": 7.4,
+        "min": 90,
+        "is_mvp": false,
+        "stats": {
+          "出场时间": "90 分钟 (首发)",
+          "进球/助攻": "0球 / 0助",
+          "本场评分": "7.4 分",
+          "传球到位": "20/24",
+          "跑动强度": "高强度覆盖",
+          "战术职责": "首发 DC2"
+        },
+        "radar": [
+          {
+            "subject": "赛场表现",
+            "value": 88
+          },
+          {
+            "subject": "出场时间",
+            "value": 100
+          },
+          {
+            "subject": "关键贡献",
+            "value": 80
+          },
+          {
+            "subject": "战术执行",
+            "value": 88
+          },
+          {
+            "subject": "对抗拼抢",
+            "value": 85
+          },
+          {
+            "subject": "传控配合",
+            "value": 86
+          }
+        ]
+      },
+      {
+        "pos": "ST1",
+        "name": "Marks Inchaud",
+        "name_en": "Marks Inchaud",
+        "name_zh": "马克斯·因查德",
+        "rating": 8.1,
+        "min": 90,
+        "is_mvp": false,
+        "stats": {
+          "出场时间": "90 分钟 (首发)",
+          "进球/助攻": "2球 / 0助",
+          "本场评分": "8.1 分",
+          "传球到位": "20/24",
+          "跑动强度": "高强度覆盖",
+          "战术职责": "首发 ST1"
+        },
+        "radar": [
+          {
+            "subject": "赛场表现",
+            "value": 97
+          },
+          {
+            "subject": "出场时间",
+            "value": 100
+          },
+          {
+            "subject": "关键贡献",
+            "value": 90
+          },
+          {
+            "subject": "战术执行",
+            "value": 88
+          },
+          {
+            "subject": "对抗拼抢",
+            "value": 85
+          },
+          {
+            "subject": "传控配合",
+            "value": 86
+          }
+        ]
+      },
+      {
+        "pos": "DM",
+        "name": "Antoine Valério",
+        "name_en": "Antoine Valério",
+        "name_zh": "安托万·瓦莱里奥",
+        "rating": 7.1,
+        "min": 90,
+        "is_mvp": false,
+        "stats": {
+          "出场时间": "90 分钟 (首发)",
+          "进球/助攻": "0球 / 0助",
+          "本场评分": "7.1 分",
+          "传球到位": "20/24",
+          "跑动强度": "高强度覆盖",
+          "战术职责": "首发 DM"
+        },
+        "radar": [
+          {
+            "subject": "赛场表现",
+            "value": 85
+          },
+          {
+            "subject": "出场时间",
+            "value": 100
+          },
+          {
+            "subject": "关键贡献",
+            "value": 80
+          },
+          {
+            "subject": "战术执行",
+            "value": 88
+          },
+          {
+            "subject": "对抗拼抢",
+            "value": 85
+          },
+          {
+            "subject": "传控配合",
+            "value": 86
+          }
+        ]
+      },
+      {
+        "pos": "MC",
+        "name": "Aliou Dembélé",
+        "name_en": "Aliou Dembélé",
+        "name_zh": "阿卢·登贝莱",
+        "rating": 7.3,
+        "min": 75,
+        "is_mvp": false,
+        "stats": {
+          "出场时间": "75 分钟 (首发)",
+          "进球/助攻": "0球 / 0助",
+          "本场评分": "7.3 分",
+          "传球到位": "20/24",
+          "跑动强度": "高强度覆盖",
+          "战术职责": "首发 MC"
+        },
+        "radar": [
+          {
+            "subject": "赛场表现",
+            "value": 87
+          },
+          {
+            "subject": "出场时间",
+            "value": 83
+          },
+          {
+            "subject": "关键贡献",
+            "value": 80
+          },
+          {
+            "subject": "战术执行",
+            "value": 88
+          },
+          {
+            "subject": "对抗拼抢",
+            "value": 85
+          },
+          {
+            "subject": "传控配合",
+            "value": 86
+          }
+        ]
+      },
+      {
+        "pos": "AML",
+        "name": "Luca Maiorano",
+        "name_en": "Luca Maiorano",
+        "name_zh": "卢卡·马约拉诺",
+        "rating": 6.5,
+        "min": 87,
+        "is_mvp": false,
+        "stats": {
+          "出场时间": "87 分钟 (首发)",
+          "进球/助攻": "0球 / 0助",
+          "本场评分": "6.5 分",
+          "传球到位": "20/24",
+          "跑动强度": "高强度覆盖",
+          "战术职责": "首发 AML"
+        },
+        "radar": [
+          {
+            "subject": "赛场表现",
+            "value": 78
+          },
+          {
+            "subject": "出场时间",
+            "value": 96
+          },
+          {
+            "subject": "关键贡献",
+            "value": 80
+          },
+          {
+            "subject": "战术执行",
+            "value": 88
+          },
+          {
+            "subject": "对抗拼抢",
+            "value": 85
+          },
+          {
+            "subject": "传控配合",
+            "value": 86
+          }
+        ]
+      },
+      {
+        "pos": "MC",
+        "name": "Park Seung-Soo",
+        "name_en": "Park Seung-Soo",
+        "name_zh": "朴昇秀",
+        "rating": 9.3,
+        "min": 90,
+        "is_mvp": true,
+        "stats": {
+          "出场时间": "90 分钟 (首发)",
+          "进球/助攻": "1球 / 0助",
+          "本场评分": "9.3 分",
+          "传球到位": "20/24",
+          "跑动强度": "高强度覆盖",
+          "战术职责": "首发 MC"
+        },
+        "radar": [
+          {
+            "subject": "赛场表现",
+            "value": 100
+          },
+          {
+            "subject": "出场时间",
+            "value": 100
+          },
+          {
+            "subject": "关键贡献",
+            "value": 90
+          },
+          {
+            "subject": "战术执行",
+            "value": 88
+          },
+          {
+            "subject": "对抗拼抢",
+            "value": 85
+          },
+          {
+            "subject": "传控配合",
+            "value": 86
+          }
+        ]
+      },
+      {
+        "pos": "DL",
+        "name": "Yumeki Yoshinaga",
+        "name_en": "Yumeki Yoshinaga",
+        "name_zh": "吉永梦希",
+        "rating": 6.5,
+        "min": 75,
+        "is_mvp": false,
+        "stats": {
+          "出场时间": "75 分钟 (首发)",
+          "进球/助攻": "0球 / 0助",
+          "本场评分": "6.5 分",
+          "传球到位": "20/24",
+          "跑动强度": "高强度覆盖",
+          "战术职责": "首发 DL"
+        },
+        "radar": [
+          {
+            "subject": "赛场表现",
+            "value": 78
+          },
+          {
+            "subject": "出场时间",
+            "value": 83
+          },
+          {
+            "subject": "关键贡献",
+            "value": 80
+          },
+          {
+            "subject": "战术执行",
+            "value": 88
+          },
+          {
+            "subject": "对抗拼抢",
+            "value": 85
+          },
+          {
+            "subject": "传控配合",
+            "value": 86
+          }
+        ]
+      },
+      {
+        "pos": "ST2",
+        "name": "Abdelsamad Hachem",
+        "name_en": "Abdelsamad Hachem",
+        "name_zh": "阿卜杜勒萨马德·哈切姆",
+        "rating": 7.4,
+        "min": 90,
+        "is_mvp": false,
+        "stats": {
+          "出场时间": "90 分钟 (首发)",
+          "进球/助攻": "1球 / 0助",
+          "本场评分": "7.4 分",
+          "传球到位": "20/24",
+          "跑动强度": "高强度覆盖",
+          "战术职责": "首发 ST2"
+        },
+        "radar": [
+          {
+            "subject": "赛场表现",
+            "value": 88
+          },
+          {
+            "subject": "出场时间",
+            "value": 100
+          },
+          {
+            "subject": "关键贡献",
+            "value": 90
+          },
+          {
+            "subject": "战术执行",
+            "value": 88
+          },
+          {
+            "subject": "对抗拼抢",
+            "value": 85
+          },
+          {
+            "subject": "传控配合",
+            "value": 86
+          }
+        ]
+      }
+    ],
+    "bench_subs": [
+      {
+        "name": "Paul Wade",
+        "name_zh": "保罗·韦德",
+        "pos": "MC",
+        "entered_minute": 75,
+        "minutes": 15,
+        "rating": 6.6,
+        "goals": 0,
+        "assists": 0
+      },
+      {
+        "name": "Jean-Claude Ntenda",
+        "name_zh": "让-克洛德·恩滕达",
+        "pos": "DL",
+        "entered_minute": 75,
+        "minutes": 15,
+        "rating": 6.8,
+        "goals": 0,
+        "assists": 0
+      },
+      {
+        "name": "Ehsan Kari",
+        "name_zh": "埃赫桑·卡里",
+        "pos": "DM",
+        "entered_minute": 64,
+        "minutes": 26,
+        "rating": 6.6,
+        "goals": 0,
+        "assists": 0
+      },
+      {
+        "name": "Steeven Assengue",
+        "name_zh": "斯蒂文·阿森盖",
+        "pos": "DR",
+        "entered_minute": 87,
+        "minutes": 3,
+        "rating": 6.7,
+        "goals": 0,
+        "assists": 0
+      },
+      {
+        "name": "Ihab Goudani",
+        "name_zh": "伊哈卜·古达尼",
+        "pos": "AML",
+        "entered_minute": 87,
+        "minutes": 3,
+        "rating": 6.7,
+        "goals": 0,
+        "assists": 0
+      }
+    ]
+  },
+  {
+    "id": 31,
+    "round": 31,
+    "stage_title": "冲甲决赛·首回合 (客)",
+    "is_playoff": true,
+    "date": "2026-06-12",
+    "home_team": "皇家利尔斯",
+    "away_team": "维尔通精英",
+    "score_home": 2,
+    "score_away": 0,
+    "venue": "away",
+    "stadium": "皇家利尔斯主场",
+    "result": "L",
+    "formation": "4-1-1-4 (双前锋·密集短传)",
+    "tactical_style": "密集短传 · Tiki-Taka",
+    "xg": 0.6,
+    "shots": 10,
+    "shots_on_target": 4,
+    "distance_km": 120.4,
+    "scorers": [],
+    "lineup": [
+      {
+        "pos": "GK",
+        "name": "Célestin De Schrevel",
+        "name_en": "Célestin De Schrevel",
+        "name_zh": "塞莱斯丁·德·施瑞沃",
+        "rating": 6.2,
+        "min": 90,
+        "is_mvp": false,
+        "stats": {
+          "出场时间": "90 分钟 (首发)",
+          "进球/助攻": "0球 / 0助",
+          "本场评分": "6.2 分",
+          "传球到位": "23/27",
+          "跑动强度": "高强度覆盖",
+          "战术职责": "首发 GK"
+        },
+        "radar": [
+          {
+            "subject": "赛场表现",
+            "value": 74
+          },
+          {
+            "subject": "出场时间",
+            "value": 100
+          },
+          {
+            "subject": "关键贡献",
+            "value": 80
+          },
+          {
+            "subject": "战术执行",
+            "value": 88
+          },
+          {
+            "subject": "对抗拼抢",
+            "value": 85
+          },
+          {
+            "subject": "传控配合",
+            "value": 86
+          }
+        ]
+      },
+      {
+        "pos": "MC",
+        "name": "Adama Diop",
+        "name_en": "Adama Diop",
+        "name_zh": "亚当穆斯·迪奥普",
+        "rating": 6.4,
+        "min": 90,
+        "is_mvp": false,
+        "stats": {
+          "出场时间": "90 分钟 (首发)",
+          "进球/助攻": "0球 / 0助",
+          "本场评分": "6.4 分",
+          "传球到位": "23/27",
+          "跑动强度": "高强度覆盖",
+          "战术职责": "首发 MC"
+        },
+        "radar": [
+          {
+            "subject": "赛场表现",
+            "value": 76
+          },
+          {
+            "subject": "出场时间",
+            "value": 100
+          },
+          {
+            "subject": "关键贡献",
+            "value": 80
+          },
+          {
+            "subject": "战术执行",
+            "value": 88
+          },
+          {
+            "subject": "对抗拼抢",
+            "value": 85
+          },
+          {
+            "subject": "传控配合",
+            "value": 86
+          }
+        ]
+      },
+      {
+        "pos": "AMR",
+        "name": "Tyrone Tormin",
+        "name_en": "Tyrone Tormin",
+        "name_zh": "泰伦·托明",
+        "rating": 6.3,
+        "min": 70,
+        "is_mvp": false,
+        "stats": {
+          "出场时间": "70 分钟 (首发)",
+          "进球/助攻": "0球 / 0助",
+          "本场评分": "6.3 分",
+          "传球到位": "23/27",
+          "跑动强度": "高强度覆盖",
+          "战术职责": "首发 AMR"
+        },
+        "radar": [
+          {
+            "subject": "赛场表现",
+            "value": 75
+          },
+          {
+            "subject": "出场时间",
+            "value": 77
+          },
+          {
+            "subject": "关键贡献",
+            "value": 80
+          },
+          {
+            "subject": "战术执行",
+            "value": 88
+          },
+          {
+            "subject": "对抗拼抢",
+            "value": 85
+          },
+          {
+            "subject": "传控配合",
+            "value": 86
+          }
+        ]
+      },
+      {
+        "pos": "DC1",
+        "name": "Allan Tchaptchet",
+        "name_en": "Allan Tchaptchet",
+        "name_zh": "阿兰·特查普切特",
+        "rating": 7.1,
+        "min": 90,
+        "is_mvp": false,
+        "stats": {
+          "出场时间": "90 分钟 (首发)",
+          "进球/助攻": "0球 / 0助",
+          "本场评分": "7.1 分",
+          "传球到位": "23/27",
+          "跑动强度": "高强度覆盖",
+          "战术职责": "首发 DC1"
+        },
+        "radar": [
+          {
+            "subject": "赛场表现",
+            "value": 85
+          },
+          {
+            "subject": "出场时间",
+            "value": 100
+          },
+          {
+            "subject": "关键贡献",
+            "value": 80
+          },
+          {
+            "subject": "战术执行",
+            "value": 88
+          },
+          {
+            "subject": "对抗拼抢",
+            "value": 85
+          },
+          {
+            "subject": "传控配合",
+            "value": 86
+          }
+        ]
+      },
+      {
+        "pos": "ST1",
+        "name": "Marks Inchaud",
+        "name_en": "Marks Inchaud",
+        "name_zh": "马克斯·因查德",
+        "rating": 6.3,
+        "min": 90,
+        "is_mvp": false,
+        "stats": {
+          "出场时间": "90 分钟 (首发)",
+          "进球/助攻": "0球 / 0助",
+          "本场评分": "6.3 分",
+          "传球到位": "23/27",
+          "跑动强度": "高强度覆盖",
+          "战术职责": "首发 ST1"
+        },
+        "radar": [
+          {
+            "subject": "赛场表现",
+            "value": 75
+          },
+          {
+            "subject": "出场时间",
+            "value": 100
+          },
+          {
+            "subject": "关键贡献",
+            "value": 80
+          },
+          {
+            "subject": "战术执行",
+            "value": 88
+          },
+          {
+            "subject": "对抗拼抢",
+            "value": 85
+          },
+          {
+            "subject": "传控配合",
+            "value": 86
+          }
+        ]
+      },
+      {
+        "pos": "DM",
+        "name": "Antoine Valério",
+        "name_en": "Antoine Valério",
+        "name_zh": "安托万·瓦莱里奥",
+        "rating": 6.9,
+        "min": 90,
+        "is_mvp": false,
+        "stats": {
+          "出场时间": "90 分钟 (首发)",
+          "进球/助攻": "0球 / 0助",
+          "本场评分": "6.9 分",
+          "传球到位": "23/27",
+          "跑动强度": "高强度覆盖",
+          "战术职责": "首发 DM"
+        },
+        "radar": [
+          {
+            "subject": "赛场表现",
+            "value": 82
+          },
+          {
+            "subject": "出场时间",
+            "value": 100
+          },
+          {
+            "subject": "关键贡献",
+            "value": 80
+          },
+          {
+            "subject": "战术执行",
+            "value": 88
+          },
+          {
+            "subject": "对抗拼抢",
+            "value": 85
+          },
+          {
+            "subject": "传控配合",
+            "value": 86
+          }
+        ]
+      },
+      {
+        "pos": "DC2",
+        "name": "William Simba",
+        "name_en": "William Simba",
+        "name_zh": "威廉·辛巴",
+        "rating": 6.7,
+        "min": 90,
+        "is_mvp": false,
+        "stats": {
+          "出场时间": "90 分钟 (首发)",
+          "进球/助攻": "0球 / 0助",
+          "本场评分": "6.7 分",
+          "传球到位": "23/27",
+          "跑动强度": "高强度覆盖",
+          "战术职责": "首发 DC2"
+        },
+        "radar": [
+          {
+            "subject": "赛场表现",
+            "value": 80
+          },
+          {
+            "subject": "出场时间",
+            "value": 100
+          },
+          {
+            "subject": "关键贡献",
+            "value": 80
+          },
+          {
+            "subject": "战术执行",
+            "value": 88
+          },
+          {
+            "subject": "对抗拼抢",
+            "value": 85
+          },
+          {
+            "subject": "传控配合",
+            "value": 86
+          }
+        ]
+      },
+      {
+        "pos": "DR",
+        "name": "Steeven Assengue",
+        "name_en": "Steeven Assengue",
+        "name_zh": "斯蒂文·阿森盖",
+        "rating": 6.8,
+        "min": 90,
+        "is_mvp": false,
+        "stats": {
+          "出场时间": "90 分钟 (首发)",
+          "进球/助攻": "0球 / 0助",
+          "本场评分": "6.8 分",
+          "传球到位": "23/27",
+          "跑动强度": "高强度覆盖",
+          "战术职责": "首发 DR"
+        },
+        "radar": [
+          {
+            "subject": "赛场表现",
+            "value": 81
+          },
+          {
+            "subject": "出场时间",
+            "value": 100
+          },
+          {
+            "subject": "关键贡献",
+            "value": 80
+          },
+          {
+            "subject": "战术执行",
+            "value": 88
+          },
+          {
+            "subject": "对抗拼抢",
+            "value": 85
+          },
+          {
+            "subject": "传控配合",
+            "value": 86
+          }
+        ]
+      },
+      {
+        "pos": "AML",
+        "name": "Luca Maiorano",
+        "name_en": "Luca Maiorano",
+        "name_zh": "卢卡·马约拉诺",
+        "rating": 6.6,
+        "min": 82,
+        "is_mvp": false,
+        "stats": {
+          "出场时间": "82 分钟 (首发)",
+          "进球/助攻": "0球 / 0助",
+          "本场评分": "6.6 分",
+          "传球到位": "23/27",
+          "跑动强度": "高强度覆盖",
+          "战术职责": "首发 AML"
+        },
+        "radar": [
+          {
+            "subject": "赛场表现",
+            "value": 79
+          },
+          {
+            "subject": "出场时间",
+            "value": 91
+          },
+          {
+            "subject": "关键贡献",
+            "value": 80
+          },
+          {
+            "subject": "战术执行",
+            "value": 88
+          },
+          {
+            "subject": "对抗拼抢",
+            "value": 85
+          },
+          {
+            "subject": "传控配合",
+            "value": 86
+          }
+        ]
+      },
+      {
+        "pos": "DL",
+        "name": "Yumeki Yoshinaga",
+        "name_en": "Yumeki Yoshinaga",
+        "name_zh": "吉永梦希",
+        "rating": 6.5,
+        "min": 70,
+        "is_mvp": false,
+        "stats": {
+          "出场时间": "70 分钟 (首发)",
+          "进球/助攻": "0球 / 0助",
+          "本场评分": "6.5 分",
+          "传球到位": "23/27",
+          "跑动强度": "高强度覆盖",
+          "战术职责": "首发 DL"
+        },
+        "radar": [
+          {
+            "subject": "赛场表现",
+            "value": 78
+          },
+          {
+            "subject": "出场时间",
+            "value": 77
+          },
+          {
+            "subject": "关键贡献",
+            "value": 80
+          },
+          {
+            "subject": "战术执行",
+            "value": 88
+          },
+          {
+            "subject": "对抗拼抢",
+            "value": 85
+          },
+          {
+            "subject": "传控配合",
+            "value": 86
+          }
+        ]
+      },
+      {
+        "pos": "ST2",
+        "name": "Abdelsamad Hachem",
+        "name_en": "Abdelsamad Hachem",
+        "name_zh": "阿卜杜勒萨马德·哈切姆",
+        "rating": 6.8,
+        "min": 90,
+        "is_mvp": false,
+        "stats": {
+          "出场时间": "90 分钟 (首发)",
+          "进球/助攻": "0球 / 0助",
+          "本场评分": "6.8 分",
+          "传球到位": "23/27",
+          "跑动强度": "高强度覆盖",
+          "战术职责": "首发 ST2"
+        },
+        "radar": [
+          {
+            "subject": "赛场表现",
+            "value": 81
+          },
+          {
+            "subject": "出场时间",
+            "value": 100
+          },
+          {
+            "subject": "关键贡献",
+            "value": 80
+          },
+          {
+            "subject": "战术执行",
+            "value": 88
+          },
+          {
+            "subject": "对抗拼抢",
+            "value": 85
+          },
+          {
+            "subject": "传控配合",
+            "value": 86
+          }
+        ]
+      }
+    ],
+    "bench_subs": [
+      {
+        "name": "Prins Tjiueza",
+        "name_zh": "普林斯·吉乌扎",
+        "pos": "AML",
+        "entered_minute": 82,
+        "minutes": 8,
+        "rating": 7.0,
+        "goals": 0,
+        "assists": 0
+      },
+      {
+        "name": "Paul Wade",
+        "name_zh": "保罗·韦德",
+        "pos": "AMR",
+        "entered_minute": 70,
+        "minutes": 20,
+        "rating": 6.6,
+        "goals": 0,
+        "assists": 0
+      },
+      {
+        "name": "Jean-Claude Ntenda",
+        "name_zh": "让-克洛德·恩滕达",
+        "pos": "DL",
+        "entered_minute": 70,
+        "minutes": 20,
+        "rating": 6.7,
+        "goals": 0,
+        "assists": 0
+      }
+    ]
+  },
+  {
+    "id": 32,
+    "round": 32,
+    "stage_title": "🏆 冲甲决赛·次回合 (4-3绝杀冲甲)",
+    "is_playoff": true,
+    "date": "2026-06-17",
+    "home_team": "维尔通精英",
+    "away_team": "皇家利尔斯",
+    "score_home": 4,
+    "score_away": 1,
+    "venue": "home",
+    "stadium": "伊万·乔治球场 (Stade Yvan Georges)",
+    "result": "W",
+    "formation": "4-1-1-4 (双前锋·密集短传)",
+    "tactical_style": "密集短传 · Tiki-Taka",
+    "xg": 3.6,
+    "shots": 23,
+    "shots_on_target": 10,
+    "distance_km": 121.2,
+    "scorers": [
+      {
+        "player": "Marks Inchaud",
+        "player_zh": "马克斯·因查德",
+        "minute": 39,
+        "assist": "Tyrone Tormin",
+        "assist_zh": "泰伦·托明"
+      },
+      {
+        "player": "Abdelsamad Hachem",
+        "player_zh": "阿卜杜勒萨马德·哈切姆",
+        "minute": 39,
+        "assist": "Tyrone Tormin",
+        "assist_zh": "泰伦·托明"
+      },
+      {
+        "player": "Marks Inchaud",
+        "player_zh": "马克斯·因查德",
+        "minute": 67,
+        "assist": null,
+        "assist_zh": null
+      },
+      {
+        "player": "Marks Inchaud",
+        "player_zh": "马克斯·因查德",
+        "minute": 89,
+        "assist": null,
+        "assist_zh": null
+      }
+    ],
+    "lineup": [
+      {
+        "pos": "DR",
+        "name": "Prins Tjiueza",
+        "name_en": "Prins Tjiueza",
+        "name_zh": "普林斯·吉乌扎",
+        "rating": 7.0,
+        "min": 84,
+        "is_mvp": false,
+        "stats": {
+          "出场时间": "84 分钟 (首发)",
+          "进球/助攻": "0球 / 0助",
+          "本场评分": "7.0 分",
+          "传球到位": "26/30",
+          "跑动强度": "高强度覆盖",
+          "战术职责": "首发 DR"
+        },
+        "radar": [
+          {
+            "subject": "赛场表现",
+            "value": 84
+          },
+          {
+            "subject": "出场时间",
+            "value": 93
+          },
+          {
+            "subject": "关键贡献",
+            "value": 80
+          },
+          {
+            "subject": "战术执行",
+            "value": 88
+          },
+          {
+            "subject": "对抗拼抢",
+            "value": 85
+          },
+          {
+            "subject": "传控配合",
+            "value": 86
+          }
+        ]
+      },
+      {
+        "pos": "GK",
+        "name": "Arthur Cremer",
+        "name_en": "Arthur Cremer",
+        "name_zh": "Arthur Cremer",
+        "rating": 6.6,
+        "min": 90,
+        "is_mvp": false,
+        "stats": {
+          "出场时间": "90 分钟 (首发)",
+          "进球/助攻": "0球 / 0助",
+          "本场评分": "6.6 分",
+          "传球到位": "26/30",
+          "跑动强度": "高强度覆盖",
+          "战术职责": "首发 GK"
+        },
+        "radar": [
+          {
+            "subject": "赛场表现",
+            "value": 79
+          },
+          {
+            "subject": "出场时间",
+            "value": 100
+          },
+          {
+            "subject": "关键贡献",
+            "value": 80
+          },
+          {
+            "subject": "战术执行",
+            "value": 88
+          },
+          {
+            "subject": "对抗拼抢",
+            "value": 85
+          },
+          {
+            "subject": "传控配合",
+            "value": 86
+          }
+        ]
+      },
+      {
+        "pos": "AMR",
+        "name": "Tyrone Tormin",
+        "name_en": "Tyrone Tormin",
+        "name_zh": "泰伦·托明",
+        "rating": 7.0,
+        "min": 84,
+        "is_mvp": false,
+        "stats": {
+          "出场时间": "84 分钟 (首发)",
+          "进球/助攻": "0球 / 1助",
+          "本场评分": "7.0 分",
+          "传球到位": "26/30",
+          "跑动强度": "高强度覆盖",
+          "战术职责": "首发 AMR"
+        },
+        "radar": [
+          {
+            "subject": "赛场表现",
+            "value": 84
+          },
+          {
+            "subject": "出场时间",
+            "value": 93
+          },
+          {
+            "subject": "关键贡献",
+            "value": 90
+          },
+          {
+            "subject": "战术执行",
+            "value": 88
+          },
+          {
+            "subject": "对抗拼抢",
+            "value": 85
+          },
+          {
+            "subject": "传控配合",
+            "value": 86
+          }
+        ]
+      },
+      {
+        "pos": "DC1",
+        "name": "Allan Tchaptchet",
+        "name_en": "Allan Tchaptchet",
+        "name_zh": "阿兰·特查普切特",
+        "rating": 7.2,
+        "min": 90,
+        "is_mvp": false,
+        "stats": {
+          "出场时间": "90 分钟 (首发)",
+          "进球/助攻": "0球 / 0助",
+          "本场评分": "7.2 分",
+          "传球到位": "26/30",
+          "跑动强度": "高强度覆盖",
+          "战术职责": "首发 DC1"
+        },
+        "radar": [
+          {
+            "subject": "赛场表现",
+            "value": 86
+          },
+          {
+            "subject": "出场时间",
+            "value": 100
+          },
+          {
+            "subject": "关键贡献",
+            "value": 80
+          },
+          {
+            "subject": "战术执行",
+            "value": 88
+          },
+          {
+            "subject": "对抗拼抢",
+            "value": 85
+          },
+          {
+            "subject": "传控配合",
+            "value": 86
+          }
+        ]
+      },
+      {
+        "pos": "ST1",
+        "name": "Marks Inchaud",
+        "name_en": "Marks Inchaud",
+        "name_zh": "马克斯·因查德",
+        "rating": 9.8,
+        "min": 90,
+        "is_mvp": true,
+        "stats": {
+          "出场时间": "90 分钟 (首发)",
+          "进球/助攻": "3球 / 0助",
+          "本场评分": "9.8 分",
+          "传球到位": "26/30",
+          "跑动强度": "高强度覆盖",
+          "战术职责": "首发 ST1"
+        },
+        "radar": [
+          {
+            "subject": "赛场表现",
+            "value": 100
+          },
+          {
+            "subject": "出场时间",
+            "value": 100
+          },
+          {
+            "subject": "关键贡献",
+            "value": 90
+          },
+          {
+            "subject": "战术执行",
+            "value": 88
+          },
+          {
+            "subject": "对抗拼抢",
+            "value": 85
+          },
+          {
+            "subject": "传控配合",
+            "value": 86
+          }
+        ]
+      },
+      {
+        "pos": "DM",
+        "name": "Antoine Valério",
+        "name_en": "Antoine Valério",
+        "name_zh": "安托万·瓦莱里奥",
+        "rating": 6.7,
+        "min": 90,
+        "is_mvp": false,
+        "stats": {
+          "出场时间": "90 分钟 (首发)",
+          "进球/助攻": "0球 / 0助",
+          "本场评分": "6.7 分",
+          "传球到位": "26/30",
+          "跑动强度": "高强度覆盖",
+          "战术职责": "首发 DM"
+        },
+        "radar": [
+          {
+            "subject": "赛场表现",
+            "value": 80
+          },
+          {
+            "subject": "出场时间",
+            "value": 100
+          },
+          {
+            "subject": "关键贡献",
+            "value": 80
+          },
+          {
+            "subject": "战术执行",
+            "value": 88
+          },
+          {
+            "subject": "对抗拼抢",
+            "value": 85
+          },
+          {
+            "subject": "传控配合",
+            "value": 86
+          }
+        ]
+      },
+      {
+        "pos": "MC",
+        "name": "Aliou Dembélé",
+        "name_en": "Aliou Dembélé",
+        "name_zh": "阿卢·登贝莱",
+        "rating": 7.7,
+        "min": 90,
+        "is_mvp": false,
+        "stats": {
+          "出场时间": "90 分钟 (首发)",
+          "进球/助攻": "0球 / 1助",
+          "本场评分": "7.7 分",
+          "传球到位": "26/30",
+          "跑动强度": "高强度覆盖",
+          "战术职责": "首发 MC"
+        },
+        "radar": [
+          {
+            "subject": "赛场表现",
+            "value": 92
+          },
+          {
+            "subject": "出场时间",
+            "value": 100
+          },
+          {
+            "subject": "关键贡献",
+            "value": 90
+          },
+          {
+            "subject": "战术执行",
+            "value": 88
+          },
+          {
+            "subject": "对抗拼抢",
+            "value": 85
+          },
+          {
+            "subject": "传控配合",
+            "value": 86
+          }
+        ]
+      },
+      {
+        "pos": "DC2",
+        "name": "William Simba",
+        "name_en": "William Simba",
+        "name_zh": "威廉·辛巴",
+        "rating": 6.9,
+        "min": 90,
+        "is_mvp": false,
+        "stats": {
+          "出场时间": "90 分钟 (首发)",
+          "进球/助攻": "0球 / 0助",
+          "本场评分": "6.9 分",
+          "传球到位": "26/30",
+          "跑动强度": "高强度覆盖",
+          "战术职责": "首发 DC2"
+        },
+        "radar": [
+          {
+            "subject": "赛场表现",
+            "value": 82
+          },
+          {
+            "subject": "出场时间",
+            "value": 100
+          },
+          {
+            "subject": "关键贡献",
+            "value": 80
+          },
+          {
+            "subject": "战术执行",
+            "value": 88
+          },
+          {
+            "subject": "对抗拼抢",
+            "value": 85
+          },
+          {
+            "subject": "传控配合",
+            "value": 86
+          }
+        ]
+      },
+      {
+        "pos": "AML",
+        "name": "Park Seung-Soo",
+        "name_en": "Park Seung-Soo",
+        "name_zh": "朴昇秀",
+        "rating": 6.5,
+        "min": 75,
+        "is_mvp": false,
+        "stats": {
+          "出场时间": "75 分钟 (首发)",
+          "进球/助攻": "0球 / 0助",
+          "本场评分": "6.5 分",
+          "传球到位": "26/30",
+          "跑动强度": "高强度覆盖",
+          "战术职责": "首发 AML"
+        },
+        "radar": [
+          {
+            "subject": "赛场表现",
+            "value": 78
+          },
+          {
+            "subject": "出场时间",
+            "value": 83
+          },
+          {
+            "subject": "关键贡献",
+            "value": 80
+          },
+          {
+            "subject": "战术执行",
+            "value": 88
+          },
+          {
+            "subject": "对抗拼抢",
+            "value": 85
+          },
+          {
+            "subject": "传控配合",
+            "value": 86
+          }
+        ]
+      },
+      {
+        "pos": "DL",
+        "name": "Yumeki Yoshinaga",
+        "name_en": "Yumeki Yoshinaga",
+        "name_zh": "吉永梦希",
+        "rating": 7.1,
+        "min": 84,
+        "is_mvp": false,
+        "stats": {
+          "出场时间": "84 分钟 (首发)",
+          "进球/助攻": "0球 / 0助",
+          "本场评分": "7.1 分",
+          "传球到位": "26/30",
+          "跑动强度": "高强度覆盖",
+          "战术职责": "首发 DL"
+        },
+        "radar": [
+          {
+            "subject": "赛场表现",
+            "value": 85
+          },
+          {
+            "subject": "出场时间",
+            "value": 93
+          },
+          {
+            "subject": "关键贡献",
+            "value": 80
+          },
+          {
+            "subject": "战术执行",
+            "value": 88
+          },
+          {
+            "subject": "对抗拼抢",
+            "value": 85
+          },
+          {
+            "subject": "传控配合",
+            "value": 86
+          }
+        ]
+      },
+      {
+        "pos": "ST2",
+        "name": "Abdelsamad Hachem",
+        "name_en": "Abdelsamad Hachem",
+        "name_zh": "阿卜杜勒萨马德·哈切姆",
+        "rating": 7.6,
+        "min": 90,
+        "is_mvp": false,
+        "stats": {
+          "出场时间": "90 分钟 (首发)",
+          "进球/助攻": "1球 / 0助",
+          "本场评分": "7.6 分",
+          "传球到位": "26/30",
+          "跑动强度": "高强度覆盖",
+          "战术职责": "首发 ST2"
+        },
+        "radar": [
+          {
+            "subject": "赛场表现",
+            "value": 91
+          },
+          {
+            "subject": "出场时间",
+            "value": 100
+          },
+          {
+            "subject": "关键贡献",
+            "value": 90
+          },
+          {
+            "subject": "战术执行",
+            "value": 88
+          },
+          {
+            "subject": "对抗拼抢",
+            "value": 85
+          },
+          {
+            "subject": "传控配合",
+            "value": 86
+          }
+        ]
+      }
+    ],
+    "bench_subs": [
+      {
+        "name": "Paul Wade",
+        "name_zh": "保罗·韦德",
+        "pos": "AMR",
+        "entered_minute": 84,
+        "minutes": 6,
+        "rating": 6.7,
+        "goals": 0,
+        "assists": 0
+      },
+      {
+        "name": "Jean-Claude Ntenda",
+        "name_zh": "让-克洛德·恩滕达",
+        "pos": "DL",
+        "entered_minute": 84,
+        "minutes": 6,
+        "rating": 6.7,
+        "goals": 0,
+        "assists": 0
+      },
+      {
+        "name": "Steeven Assengue",
+        "name_zh": "斯蒂文·阿森盖",
+        "pos": "DR",
+        "entered_minute": 84,
+        "minutes": 6,
+        "rating": 7.4,
+        "goals": 0,
+        "assists": 1
+      },
+      {
+        "name": "Luca Maiorano",
+        "name_zh": "卢卡·马约拉诺",
+        "pos": "AML",
+        "entered_minute": 75,
+        "minutes": 15,
+        "rating": 6.7,
         "goals": 0,
         "assists": 0
       }

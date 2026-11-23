@@ -8,8 +8,11 @@
           <span class="text-sm">🇧🇪</span>
           <span class="font-bold text-white">{{ seasonLabel }} · 战绩看板</span>
         </div>
-        <span class="text-[10px] text-emerald-400 font-bold bg-emerald-950 px-2 py-0.5 rounded border border-emerald-900/50">
-          比乙暂列第 3 名 (升级附加区)
+        <span :class="[
+          'text-[10px] font-bold px-2 py-0.5 rounded border',
+          isPromoted ? 'bg-amber-950 text-amber-300 border-amber-600 shadow-sm font-black' : 'bg-emerald-950 text-emerald-400 border-emerald-900/50'
+        ]">
+          {{ isPromoted ? '🏆 冲甲附加赛总冠军 · 成功升入比甲！' : '比乙冲甲附加区' }}
         </span>
       </div>
 
@@ -137,9 +140,12 @@ defineEmits(['select-match'])
 const activeFilter = ref('all')
 const orderDesc = ref(true) // 默认最新赛果排在前面
 
+const isPromoted = computed(() => props.matches.some(m => m.stage_title?.includes('绝杀') || m.round >= 32))
+
 const filters = [
   { key: 'all', label: '全部比赛' },
-  { key: 'league', label: '比乙联赛' },
+  { key: 'playoff', label: '🏆 冲甲决战' },
+  { key: 'regular', label: '常规赛' },
   { key: 'win', label: '胜仗' },
   { key: 'home', label: '主场' },
   { key: 'away', label: '客场' }
@@ -168,8 +174,10 @@ const totalGoalsAgainst = computed(() => {
 const displayedMatches = computed(() => {
   let list = [...props.matches]
   
-  if (activeFilter.value === 'league') {
-    list = list.filter(m => !m.competition || m.competition.includes('比乙'))
+  if (activeFilter.value === 'playoff') {
+    list = list.filter(m => m.is_playoff || m.stage_title?.includes('冲甲') || m.round >= 29)
+  } else if (activeFilter.value === 'regular') {
+    list = list.filter(m => !m.is_playoff && !m.stage_title?.includes('冲甲') && m.round < 29)
   } else if (activeFilter.value === 'win') {
     list = list.filter(m => m.result === 'W' || m.result === '胜')
   } else if (activeFilter.value === 'home') {

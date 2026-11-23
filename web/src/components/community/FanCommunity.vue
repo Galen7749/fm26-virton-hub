@@ -41,7 +41,7 @@
         <!-- 走势视图切换条 (动态折线走势图 vs 轮次药丸) -->
         <div class="flex items-center justify-between pt-1">
           <div class="text-[9px] text-slate-500 font-bold">
-            21轮主帅执教战术评分走势：
+            全季主帅执教战术评分走势：
           </div>
           <div class="bg-slate-900 border border-slate-800 rounded-lg p-0.5 flex space-x-1">
             <button
@@ -67,7 +67,7 @@
         <!-- 模式 B: 历轮评分滑动卡片 (覆盖全部21轮) -->
         <div v-show="chartViewMode === 'pills'" class="space-y-1 pt-1">
           <div class="text-[9px] text-slate-500 font-bold flex justify-between">
-            <span>横向轻扫查看全部21轮评分：</span>
+            <span>横向轻扫查看历场执教评分：</span>
             <span>滑动浏览 ›</span>
           </div>
           <div class="flex items-center space-x-1.5 overflow-x-auto no-scrollbar py-0.5 select-none">
@@ -77,7 +77,7 @@
               class="bg-slate-900 border border-slate-800 rounded-lg p-1.5 shrink-0 text-center w-[78px] transition hover:border-slate-700 cursor-pointer"
               @click="filterByRound(r.round)"
             >
-              <div class="text-[9px] text-slate-400 truncate">第{{ r.round }}轮</div>
+              <div class="text-[9px] text-slate-400 truncate">{{ r.round >= 29 ? (r.round === 32 ? '🏆冲甲决胜' : '附加赛') : ('第' + r.round + '轮') }}</div>
               <div :class="[
                 'text-xs font-black font-mono my-0.5',
                 r.score >= 9.0 ? 'text-emerald-400' :
@@ -138,7 +138,7 @@
           ]"
         >
           <span>📋</span>
-          <span>全部21轮历史</span>
+          <span>全季全部战报 ({{ availableRounds.length }}场)</span>
         </button>
 
         <button
@@ -152,7 +152,7 @@
               : 'bg-slate-900 text-slate-400 hover:text-white border border-slate-800'
           ]"
         >
-          第{{ rNum }}轮
+          {{ rNum >= 29 ? (rNum === 32 ? '🏆 决胜战' : ('附加赛 R' + rNum)) : ('第' + rNum + '轮') }}
         </button>
       </div>
 

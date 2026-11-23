@@ -6,8 +6,15 @@
     <!-- 顶栏：轮次、赛事、日期、主客场与赛果标签 -->
     <div class="flex items-center justify-between text-xs">
       <div class="flex items-center space-x-2">
-        <span class="text-[10px] bg-slate-800 text-teal-300 font-bold px-1.5 py-0.5 rounded border border-slate-700">
-          {{ match.competition || '比乙' }} · {{ match.round_label || ('第 ' + match.round + ' 轮') }}
+        <span
+          :class="[
+            'text-[10px] font-bold px-1.5 py-0.5 rounded border',
+            match.stage_title?.includes('绝杀') ? 'bg-amber-950 text-amber-300 border-amber-600 font-black shadow-sm' :
+            match.is_playoff || match.stage_title?.includes('冲甲') ? 'bg-indigo-950 text-indigo-300 border-indigo-700' :
+            'bg-slate-800 text-teal-300 border-slate-700'
+          ]"
+        >
+          {{ match.stage_title || ((match.competition || '比乙') + ' · 第 ' + match.round + ' 轮') }}
         </span>
         <span class="text-slate-400 text-[11px] font-mono">{{ match.date }}</span>
         <span class="text-[10px] text-slate-500">({{ match.venue === 'home' ? '主场' : '客场' }})</span>

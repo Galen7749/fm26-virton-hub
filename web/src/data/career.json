@@ -16,16 +16,17 @@
           "id": "2025-2026",
           "label": "2025/26 赛季",
           "league": "比乙联赛",
-          "status": "进行中 (第21轮)",
+          "status": "已完结 · 冲甲成功！(升入比利时甲级联赛)",
           "stats": {
-            "played": 21,
-            "won": 10,
-            "drawn": 8,
-            "lost": 3,
-            "goals_for": 45,
-            "goals_against": 33,
-            "points": 38,
-            "rank": 3
+            "played": 32,
+            "won": 19,
+            "drawn": 9,
+            "lost": 4,
+            "goals_for": 70,
+            "goals_against": 42,
+            "points": 57,
+            "rank": 2,
+            "achievement": "🏆 冲甲附加赛总冠军 · 升入比甲联赛 (4-3绝杀淘汰利尔斯)"
           }
         }
       ]
