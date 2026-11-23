@@ -65,12 +65,39 @@
       </div>
     </div>
 
-    <!-- 进球摘要 -->
-    <div v-if="match.scorers && match.scorers.length" class="text-[11px] text-slate-400 flex items-center flex-wrap gap-1.5 pt-1 border-t border-slate-800/60">
-      <span class="text-xs">⚽</span>
-      <span v-for="(sc, sIdx) in match.scorers" :key="sIdx" class="text-slate-300">
-        {{ sc.player_zh || sc.player }} ({{ sc.minute }}')<span v-if="sIdx < match.scorers.length - 1">,</span>
-      </span>
+    <!-- 进球摘要 (主客双栏清晰对阵) -->
+    <div v-if="match.scorers && match.scorers.length" class="text-[11px] text-slate-400 pt-1.5 border-t border-slate-800/60">
+      <div class="grid grid-cols-2 gap-2 text-[10.5px]">
+        <!-- 主队进球 (右对齐贴向比分) -->
+        <div class="text-right truncate pr-1">
+          <span v-if="homeScorers.length" class="text-slate-300">
+            <template v-for="(sc, i) in homeScorers" :key="'h-'+i">
+              <span :class="sc.is_virton ? 'text-emerald-400 font-semibold' : 'text-slate-300'">
+                {{ sc.player_zh || sc.player }} {{ formatMinute(sc.minute) }}
+                <span v-if="sc.is_stoppage || String(sc.minute).includes('+')" class="text-[9px] bg-amber-950 text-amber-300 px-1 py-0.2 rounded border border-amber-800/60 font-bold">绝杀</span>
+              </span>
+              <span v-if="i < homeScorers.length - 1" class="text-slate-600 mr-1">,</span>
+            </template>
+            <span class="text-xs ml-1">⚽</span>
+          </span>
+          <span v-else class="text-slate-600 text-[10px]">-</span>
+        </div>
+
+        <!-- 客队进球 (左对齐贴向比分) -->
+        <div class="text-left truncate pl-1 border-l border-slate-800/60">
+          <span v-if="awayScorers.length" class="text-slate-300">
+            <span class="text-xs mr-1">⚽</span>
+            <template v-for="(sc, i) in awayScorers" :key="'a-'+i">
+              <span :class="sc.is_virton ? 'text-emerald-400 font-semibold' : 'text-slate-300'">
+                {{ sc.player_zh || sc.player }} {{ formatMinute(sc.minute) }}
+                <span v-if="sc.is_stoppage || String(sc.minute).includes('+')" class="text-[9px] bg-amber-950 text-amber-300 px-1 py-0.2 rounded border border-amber-800/60 font-bold">绝杀</span>
+              </span>
+              <span v-if="i < awayScorers.length - 1" class="text-slate-600 mr-1">,</span>
+            </template>
+          </span>
+          <span v-else class="text-slate-600 text-[10px]">-</span>
+        </div>
+      </div>
     </div>
 
     <!-- 底栏数据指示与进入详情入口 -->
@@ -89,7 +116,9 @@
 </template>
 
 <script setup>
-defineProps({
+import { computed } from 'vue'
+
+const props = defineProps({
   match: {
     type: Object,
     required: true
@@ -97,4 +126,20 @@ defineProps({
 })
 
 defineEmits(['select'])
+
+const homeScorers = computed(() => {
+  if (!props.match.scorers) return []
+  return props.match.scorers.filter(s => s.team === 'home' || (s.team === undefined && props.match.venue === 'home'))
+})
+
+const awayScorers = computed(() => {
+  if (!props.match.scorers) return []
+  return props.match.scorers.filter(s => s.team === 'away' || (s.team === undefined && props.match.venue === 'away'))
+})
+
+const formatMinute = (m) => {
+  if (!m && m !== 0) return ''
+  const s = String(m).trim()
+  return s.endsWith("'") ? s : `${s}'`
+}
 </script>

@@ -18,7 +18,18 @@
     "shots": 12,
     "shots_on_target": 5,
     "distance_km": 118.8,
-    "scorers": [],
+    "scorers": [
+      {
+        "player": "David Toševski",
+        "player_zh": "大卫·托舍夫斯基",
+        "minute": "25'",
+        "minute_num": 25,
+        "is_virton": false,
+        "team": "home",
+        "assist": null,
+        "assist_zh": null
+      }
+    ],
     "lineup": [
       {
         "pos": "GK",
@@ -536,7 +547,28 @@
     "shots": 21,
     "shots_on_target": 9,
     "distance_km": 119.6,
-    "scorers": [],
+    "scorers": [
+      {
+        "player": "David Mukuna",
+        "player_zh": "大卫·穆库纳",
+        "minute": "36'",
+        "minute_num": 36,
+        "is_virton": false,
+        "team": "away",
+        "assist": null,
+        "assist_zh": null
+      },
+      {
+        "player": "Tibe De Vlieger",
+        "player_zh": "Tibe De Vlieger",
+        "minute": "70'",
+        "minute_num": 70,
+        "is_virton": false,
+        "team": "away",
+        "assist": null,
+        "assist_zh": null
+      }
+    ],
     "lineup": [
       {
         "pos": "GK",
@@ -1074,7 +1106,28 @@
     "shots": 14,
     "shots_on_target": 6,
     "distance_km": 120.4,
-    "scorers": [],
+    "scorers": [
+      {
+        "player": "Youssef Challouk",
+        "player_zh": "优素福·沙鲁克",
+        "minute": "47'",
+        "minute_num": 47,
+        "is_virton": false,
+        "team": "home",
+        "assist": null,
+        "assist_zh": null
+      },
+      {
+        "player": "Ridwane M'barki",
+        "player_zh": "Ridwane M'barki",
+        "minute": "81'",
+        "minute_num": 81,
+        "is_virton": false,
+        "team": "home",
+        "assist": null,
+        "assist_zh": null
+      }
+    ],
     "lineup": [
       {
         "pos": "GK",
@@ -1602,7 +1655,18 @@
     "shots": 15,
     "shots_on_target": 6,
     "distance_km": 121.2,
-    "scorers": [],
+    "scorers": [
+      {
+        "player": "Siebe Van Keymolen",
+        "player_zh": "西贝·范凯莫伦",
+        "minute": "18'",
+        "minute_num": 18,
+        "is_virton": false,
+        "team": "away",
+        "assist": null,
+        "assist_zh": null
+      }
+    ],
     "lineup": [
       {
         "pos": "GK",
@@ -2130,7 +2194,18 @@
     "shots": 12,
     "shots_on_target": 5,
     "distance_km": 122.0,
-    "scorers": [],
+    "scorers": [
+      {
+        "player": "Jelani Trevisan",
+        "player_zh": "杰拉尼·特雷维桑",
+        "minute": "29'",
+        "minute_num": 29,
+        "is_virton": false,
+        "team": "home",
+        "assist": null,
+        "assist_zh": null
+      }
+    ],
     "lineup": [
       {
         "pos": "GK",
@@ -2625,7 +2700,28 @@
     "shots": 17,
     "shots_on_target": 7,
     "distance_km": 122.8,
-    "scorers": [],
+    "scorers": [
+      {
+        "player": "Alexandre Stanić",
+        "player_zh": "亚历山大·斯塔尼奇",
+        "minute": "40'",
+        "minute_num": 40,
+        "is_virton": false,
+        "team": "away",
+        "assist": null,
+        "assist_zh": null
+      },
+      {
+        "player": "Wout De Buyser",
+        "player_zh": "沃特·德伯伊瑟",
+        "minute": "74'",
+        "minute_num": 74,
+        "is_virton": false,
+        "team": "away",
+        "assist": null,
+        "assist_zh": null
+      }
+    ],
     "lineup": [
       {
         "pos": "GK",
@@ -3110,7 +3206,18 @@
     "shots": 22,
     "shots_on_target": 9,
     "distance_km": 118.0,
-    "scorers": [],
+    "scorers": [
+      {
+        "player": "Nathan Gnémagnon",
+        "player_zh": "内森·格内马尼翁",
+        "minute": "51'",
+        "minute_num": 51,
+        "is_virton": false,
+        "team": "home",
+        "assist": null,
+        "assist_zh": null
+      }
+    ],
     "lineup": [
       {
         "pos": "DR",
@@ -3605,7 +3712,18 @@
     "shots": 19,
     "shots_on_target": 8,
     "distance_km": 118.8,
-    "scorers": [],
+    "scorers": [
+      {
+        "player": "Jordy Soladio",
+        "player_zh": "霍尔迪·索拉迪奥",
+        "minute": "22'",
+        "minute_num": 22,
+        "is_virton": false,
+        "team": "away",
+        "assist": null,
+        "assist_zh": null
+      }
+    ],
     "lineup": [
       {
         "pos": "GK",
@@ -4110,7 +4228,58 @@
     "shots": 24,
     "shots_on_target": 10,
     "distance_km": 119.6,
-    "scorers": [],
+    "scorers": [
+      {
+        "player": "Jakke Van Britsom",
+        "player_zh": "雅克·范布里特索姆",
+        "minute": "33'",
+        "minute_num": 33,
+        "is_virton": false,
+        "team": "home",
+        "assist": null,
+        "assist_zh": null
+      },
+      {
+        "player": "Milan Robberechts",
+        "player_zh": "Milan Robberechts",
+        "minute": "67'",
+        "minute_num": 67,
+        "is_virton": false,
+        "team": "home",
+        "assist": null,
+        "assist_zh": null
+      },
+      {
+        "player": "Rayan Buifrahi",
+        "player_zh": "Rayan Buifrahi",
+        "minute": "101'",
+        "minute_num": 101,
+        "is_virton": false,
+        "team": "home",
+        "assist": null,
+        "assist_zh": null
+      },
+      {
+        "player": "Jessi Da Silva",
+        "player_zh": "Jessi Da Silva",
+        "minute": "135'",
+        "minute_num": 135,
+        "is_virton": false,
+        "team": "home",
+        "assist": null,
+        "assist_zh": null
+      },
+      {
+        "player": "Andre Garcia",
+        "player_zh": "Andre Garcia",
+        "minute": "169'",
+        "minute_num": 169,
+        "is_virton": false,
+        "team": "home",
+        "assist": null,
+        "assist_zh": null
+      }
+    ],
     "lineup": [
       {
         "pos": "GK",
@@ -4595,7 +4764,28 @@
     "shots": 17,
     "shots_on_target": 7,
     "distance_km": 120.4,
-    "scorers": [],
+    "scorers": [
+      {
+        "player": "Jelle Vossen",
+        "player_zh": "耶勒·沃森",
+        "minute": "44'",
+        "minute_num": 44,
+        "is_virton": false,
+        "team": "away",
+        "assist": null,
+        "assist_zh": null
+      },
+      {
+        "player": "Genki Haraguchi",
+        "player_zh": "Genki Haraguchi",
+        "minute": "78'",
+        "minute_num": 78,
+        "is_virton": false,
+        "team": "away",
+        "assist": null,
+        "assist_zh": null
+      }
+    ],
     "lineup": [
       {
         "pos": "DR",
@@ -5100,7 +5290,18 @@
     "shots": 14,
     "shots_on_target": 6,
     "distance_km": 121.2,
-    "scorers": [],
+    "scorers": [
+      {
+        "player": "Élie Kongolo",
+        "player_zh": "Élie Kongolo",
+        "minute": "15'",
+        "minute_num": 15,
+        "is_virton": false,
+        "team": "home",
+        "assist": null,
+        "assist_zh": null
+      }
+    ],
     "lineup": [
       {
         "pos": "GK",
@@ -5595,7 +5796,18 @@
     "shots": 11,
     "shots_on_target": 4,
     "distance_km": 122.0,
-    "scorers": [],
+    "scorers": [
+      {
+        "player": "Ba-Muaka Simakala",
+        "player_zh": "钱斯·西马卡拉",
+        "minute": "26'",
+        "minute_num": 26,
+        "is_virton": false,
+        "team": "away",
+        "assist": null,
+        "assist_zh": null
+      }
+    ],
     "lineup": [
       {
         "pos": "GK",
@@ -6090,7 +6302,18 @@
     "shots": 20,
     "shots_on_target": 9,
     "distance_km": 122.8,
-    "scorers": [],
+    "scorers": [
+      {
+        "player": "Lukáš Ambros",
+        "player_zh": "卢卡斯·安布罗斯",
+        "minute": "37'",
+        "minute_num": 37,
+        "is_virton": false,
+        "team": "home",
+        "assist": null,
+        "assist_zh": null
+      }
+    ],
     "lineup": [
       {
         "pos": "DR",
@@ -6622,14 +6845,40 @@
       {
         "player": "Abdelsamad Hachem",
         "player_zh": "阿卜杜勒萨马德·哈切姆",
-        "minute": 33,
-        "assist": null,
-        "assist_zh": null
+        "minute": "46'",
+        "minute_num": 46,
+        "is_virton": true,
+        "team": "home",
+        "assist": "Tyrone Tormin",
+        "assist_zh": "泰伦·托明"
       },
       {
         "player": "Marks Inchaud",
         "player_zh": "马克斯·因查德",
-        "minute": 33,
+        "minute": "46'",
+        "minute_num": 46,
+        "is_virton": true,
+        "team": "home",
+        "assist": "Steeven Assengue",
+        "assist_zh": "斯蒂文·阿森盖"
+      },
+      {
+        "player": "Nacim Dendani",
+        "player_zh": "Nacim Dendani",
+        "minute": "48'",
+        "minute_num": 48,
+        "is_virton": false,
+        "team": "away",
+        "assist": null,
+        "assist_zh": null
+      },
+      {
+        "player": "Marco Ngaya",
+        "player_zh": "Marco Ngaya",
+        "minute": "82'",
+        "minute_num": 82,
+        "is_virton": false,
+        "team": "away",
         "assist": null,
         "assist_zh": null
       }
@@ -7175,23 +7424,52 @@
       {
         "player": "Aliou Dembélé",
         "player_zh": "阿卢·登贝莱",
-        "minute": 40,
+        "minute": "18'",
+        "minute_num": 18,
+        "is_virton": true,
+        "team": "away",
         "assist": "Tyrone Tormin",
         "assist_zh": "泰伦·托明"
       },
       {
         "player": "Park Seung-Soo",
         "player_zh": "朴昇秀",
-        "minute": 40,
-        "assist": "Tyrone Tormin",
-        "assist_zh": "泰伦·托明"
+        "minute": "18'",
+        "minute_num": 18,
+        "is_virton": true,
+        "team": "away",
+        "assist": "Park Seung-Soo",
+        "assist_zh": "朴昇秀"
       },
       {
         "player": "Abdelsamad Hachem",
         "player_zh": "阿卜杜勒萨马德·哈切姆",
-        "minute": 40,
-        "assist": "Tyrone Tormin",
-        "assist_zh": "泰伦·托明"
+        "minute": "18'",
+        "minute_num": 18,
+        "is_virton": true,
+        "team": "away",
+        "assist": "Yumeki Yoshinaga",
+        "assist_zh": "吉永梦希"
+      },
+      {
+        "player": "David Mukuna",
+        "player_zh": "大卫·穆库纳",
+        "minute": "19'",
+        "minute_num": 19,
+        "is_virton": false,
+        "team": "home",
+        "assist": null,
+        "assist_zh": null
+      },
+      {
+        "player": "Tibe De Vlieger",
+        "player_zh": "Tibe De Vlieger",
+        "minute": "53'",
+        "minute_num": 53,
+        "is_virton": false,
+        "team": "home",
+        "assist": null,
+        "assist_zh": null
       }
     ],
     "lineup": [
@@ -7725,23 +8003,42 @@
       {
         "player": "Paul Wade",
         "player_zh": "保罗·韦德",
-        "minute": 47,
-        "assist": "Tyrone Tormin",
-        "assist_zh": "泰伦·托明"
+        "minute": "25'",
+        "minute_num": 25,
+        "is_virton": true,
+        "team": "home",
+        "assist": "Paul Wade",
+        "assist_zh": "保罗·韦德"
       },
       {
         "player": "Allan Tchaptchet",
         "player_zh": "阿兰·特查普切特",
-        "minute": 47,
-        "assist": "Tyrone Tormin",
-        "assist_zh": "泰伦·托明"
+        "minute": "25'",
+        "minute_num": 25,
+        "is_virton": true,
+        "team": "home",
+        "assist": "Steeven Assengue",
+        "assist_zh": "斯蒂文·阿森盖"
       },
       {
         "player": "Abdelsamad Hachem",
         "player_zh": "阿卜杜勒萨马德·哈切姆",
-        "minute": 47,
-        "assist": "Tyrone Tormin",
-        "assist_zh": "泰伦·托明"
+        "minute": "25'",
+        "minute_num": 25,
+        "is_virton": true,
+        "team": "home",
+        "assist": "Paul Wade",
+        "assist_zh": "保罗·韦德"
+      },
+      {
+        "player": "David Toševski",
+        "player_zh": "大卫·托舍夫斯基",
+        "minute": "30'",
+        "minute_num": 30,
+        "is_virton": false,
+        "team": "away",
+        "assist": null,
+        "assist_zh": null
       }
     ],
     "lineup": [
@@ -8265,14 +8562,40 @@
       {
         "player": "Marks Inchaud",
         "player_zh": "马克斯·因查德",
-        "minute": 54,
-        "assist": null,
-        "assist_zh": null
+        "minute": "32'",
+        "minute_num": 32,
+        "is_virton": true,
+        "team": "home",
+        "assist": "Marks Inchaud",
+        "assist_zh": "马克斯·因查德"
       },
       {
         "player": "Sullivan Lakhamy",
         "player_zh": "沙利文·拉哈米",
-        "minute": 54,
+        "minute": "32'",
+        "minute_num": 32,
+        "is_virton": true,
+        "team": "home",
+        "assist": "Paul Wade",
+        "assist_zh": "保罗·韦德"
+      },
+      {
+        "player": "Youssef Challouk",
+        "player_zh": "优素福·沙鲁克",
+        "minute": "41'",
+        "minute_num": 41,
+        "is_virton": false,
+        "team": "away",
+        "assist": null,
+        "assist_zh": null
+      },
+      {
+        "player": "Ridwane M'barki",
+        "player_zh": "Ridwane M'barki",
+        "minute": "75'",
+        "minute_num": 75,
+        "is_virton": false,
+        "team": "away",
         "assist": null,
         "assist_zh": null
       }
@@ -8808,7 +9131,30 @@
       {
         "player": "Paul Wade",
         "player_zh": "保罗·韦德",
-        "minute": 31,
+        "minute": "39'",
+        "minute_num": 39,
+        "is_virton": true,
+        "team": "away",
+        "assist": "Nathan Fernandes",
+        "assist_zh": "内森·费尔南德斯"
+      },
+      {
+        "player": "Siebe Van Keymolen",
+        "player_zh": "西贝·范凯莫伦",
+        "minute": "52'",
+        "minute_num": 52,
+        "is_virton": false,
+        "team": "home",
+        "assist": null,
+        "assist_zh": null
+      },
+      {
+        "player": "Alain Matoka",
+        "player_zh": "阿兰·马托卡",
+        "minute": "86'",
+        "minute_num": 86,
+        "is_virton": false,
+        "team": "home",
         "assist": null,
         "assist_zh": null
       }
@@ -9352,18 +9698,34 @@
     "distance_km": 122.0,
     "scorers": [
       {
+        "player": "Jelani Trevisan",
+        "player_zh": "杰拉尼·特雷维桑",
+        "minute": "23'",
+        "minute_num": 23,
+        "is_virton": false,
+        "team": "away",
+        "assist": null,
+        "assist_zh": null
+      },
+      {
         "player": "Sullivan Lakhamy",
         "player_zh": "沙利文·拉哈米",
-        "minute": 38,
-        "assist": "Tyrone Tormin",
-        "assist_zh": "泰伦·托明"
+        "minute": "46'",
+        "minute_num": 46,
+        "is_virton": true,
+        "team": "home",
+        "assist": "Sullivan Lakhamy",
+        "assist_zh": "沙利文·拉哈米"
       },
       {
         "player": "Abdelsamad Hachem",
         "player_zh": "阿卜杜勒萨马德·哈切姆",
-        "minute": 38,
-        "assist": "Tyrone Tormin",
-        "assist_zh": "泰伦·托明"
+        "minute": "46'",
+        "minute_num": 46,
+        "is_virton": true,
+        "team": "home",
+        "assist": "Park Seung-Soo",
+        "assist_zh": "朴昇秀"
       }
     ],
     "lineup": [
@@ -9877,16 +10239,32 @@
       {
         "player": "Tyrone Tormin",
         "player_zh": "泰伦·托明",
-        "minute": 45,
-        "assist": "Tyrone Tormin",
-        "assist_zh": "泰伦·托明"
+        "minute": "18'",
+        "minute_num": 18,
+        "is_virton": true,
+        "team": "away",
+        "assist": "Aliou Dembélé",
+        "assist_zh": "阿卢·登贝莱"
       },
       {
         "player": "Park Seung-Soo",
         "player_zh": "朴昇秀",
-        "minute": 45,
-        "assist": "Tyrone Tormin",
-        "assist_zh": "泰伦·托明"
+        "minute": "18'",
+        "minute_num": 18,
+        "is_virton": true,
+        "team": "away",
+        "assist": "Park Seung-Soo",
+        "assist_zh": "朴昇秀"
+      },
+      {
+        "player": "Alexandre Stanić",
+        "player_zh": "亚历山大·斯塔尼奇",
+        "minute": "34'",
+        "minute_num": 34,
+        "is_virton": false,
+        "team": "home",
+        "assist": null,
+        "assist_zh": null
       }
     ],
     "lineup": [
@@ -10430,16 +10808,32 @@
       {
         "player": "Tyrone Tormin",
         "player_zh": "泰伦·托明",
-        "minute": 52,
-        "assist": "Tyrone Tormin",
-        "assist_zh": "泰伦·托明"
+        "minute": "25'",
+        "minute_num": 25,
+        "is_virton": true,
+        "team": "home",
+        "assist": "Yumeki Yoshinaga",
+        "assist_zh": "吉永梦希"
       },
       {
         "player": "Marks Inchaud",
         "player_zh": "马克斯·因查德",
-        "minute": 52,
-        "assist": "Tyrone Tormin",
-        "assist_zh": "泰伦·托明"
+        "minute": "25'",
+        "minute_num": 25,
+        "is_virton": true,
+        "team": "home",
+        "assist": "Abdelsamad Hachem",
+        "assist_zh": "阿卜杜勒萨马德·哈切姆"
+      },
+      {
+        "player": "Nathan Gnémagnon",
+        "player_zh": "内森·格内马尼翁",
+        "minute": "45'",
+        "minute_num": 45,
+        "is_virton": false,
+        "team": "away",
+        "assist": null,
+        "assist_zh": null
       }
     ],
     "lineup": [
@@ -11529,18 +11923,34 @@
     "distance_km": 119.6,
     "scorers": [
       {
+        "player": "Jakke Van Britsom",
+        "player_zh": "雅克·范布里特索姆",
+        "minute": "27'",
+        "minute_num": 27,
+        "is_virton": false,
+        "team": "away",
+        "assist": null,
+        "assist_zh": null
+      },
+      {
         "player": "Marks Inchaud",
         "player_zh": "马克斯·因查德",
-        "minute": 36,
-        "assist": "Tyrone Tormin",
-        "assist_zh": "泰伦·托明"
+        "minute": "39'",
+        "minute_num": 39,
+        "is_virton": true,
+        "team": "home",
+        "assist": "William Simba",
+        "assist_zh": "威廉·辛巴"
       },
       {
         "player": "Abdelsamad Hachem",
         "player_zh": "阿卜杜勒萨马德·哈切姆",
-        "minute": 36,
-        "assist": "Tyrone Tormin",
-        "assist_zh": "泰伦·托明"
+        "minute": "39'",
+        "minute_num": 39,
+        "is_virton": true,
+        "team": "home",
+        "assist": "Prins Tjiueza",
+        "assist_zh": "普林斯·吉乌扎"
       }
     ],
     "lineup": [
@@ -12084,9 +12494,12 @@
       {
         "player": "Park Seung-Soo",
         "player_zh": "朴昇秀",
-        "minute": 43,
-        "assist": "Tyrone Tormin",
-        "assist_zh": "泰伦·托明"
+        "minute": "46'",
+        "minute_num": 46,
+        "is_virton": true,
+        "team": "away",
+        "assist": "Steeven Assengue",
+        "assist_zh": "斯蒂文·阿森盖"
       }
     ],
     "lineup": [
@@ -12620,21 +13033,40 @@
       {
         "player": "Marks Inchaud",
         "player_zh": "马克斯·因查德",
-        "minute": 50,
-        "assist": "Tyrone Tormin",
-        "assist_zh": "泰伦·托明"
+        "minute": "18'",
+        "minute_num": 18,
+        "is_virton": true,
+        "team": "home",
+        "assist": "Steeven Assengue",
+        "assist_zh": "斯蒂文·阿森盖"
       },
       {
         "player": "Abdelsamad Hachem",
         "player_zh": "阿卜杜勒萨马德·哈切姆",
-        "minute": 50,
-        "assist": "Tyrone Tormin",
-        "assist_zh": "泰伦·托明"
+        "minute": "18'",
+        "minute_num": 18,
+        "is_virton": true,
+        "team": "home",
+        "assist": "Park Seung-Soo",
+        "assist_zh": "朴昇秀"
       },
       {
         "player": "Abdelsamad Hachem",
         "player_zh": "阿卜杜勒萨马德·哈切姆",
-        "minute": 78,
+        "minute": "46'",
+        "minute_num": 46,
+        "is_virton": true,
+        "team": "home",
+        "assist": "Abdelsamad Hachem",
+        "assist_zh": "阿卜杜勒萨马德·哈切姆"
+      },
+      {
+        "player": "Élie Kongolo",
+        "player_zh": "Élie Kongolo",
+        "minute": "49'",
+        "minute_num": 49,
+        "is_virton": false,
+        "team": "away",
         "assist": null,
         "assist_zh": null
       }
@@ -13190,23 +13622,32 @@
       {
         "player": "Tyrone Tormin",
         "player_zh": "泰伦·托明",
-        "minute": 27,
-        "assist": "Tyrone Tormin",
-        "assist_zh": "泰伦·托明"
+        "minute": "25'",
+        "minute_num": 25,
+        "is_virton": true,
+        "team": "away",
+        "assist": "Abdelsamad Hachem",
+        "assist_zh": "阿卜杜勒萨马德·哈切姆"
       },
       {
         "player": "Abdelsamad Hachem",
         "player_zh": "阿卜杜勒萨马德·哈切姆",
-        "minute": 27,
-        "assist": "Tyrone Tormin",
-        "assist_zh": "泰伦·托明"
+        "minute": "25'",
+        "minute_num": 25,
+        "is_virton": true,
+        "team": "away",
+        "assist": "Abdelsamad Hachem",
+        "assist_zh": "阿卜杜勒萨马德·哈切姆"
       },
       {
         "player": "Tyrone Tormin",
         "player_zh": "泰伦·托明",
-        "minute": 55,
-        "assist": null,
-        "assist_zh": null
+        "minute": "53'",
+        "minute_num": 53,
+        "is_virton": true,
+        "team": "away",
+        "assist": "Park Seung-Soo",
+        "assist_zh": "朴昇秀"
       }
     ],
     "lineup": [
@@ -13758,25 +14199,54 @@
     "distance_km": 122.8,
     "scorers": [
       {
+        "player": "Lukáš Ambros",
+        "player_zh": "卢卡斯·安布罗斯",
+        "minute": "31'",
+        "minute_num": 31,
+        "is_virton": false,
+        "team": "away",
+        "assist": null,
+        "assist_zh": null
+      },
+      {
         "player": "Marks Inchaud",
         "player_zh": "马克斯·因查德",
-        "minute": 34,
-        "assist": "Tyrone Tormin",
-        "assist_zh": "泰伦·托明"
+        "minute": "32'",
+        "minute_num": 32,
+        "is_virton": true,
+        "team": "home",
+        "assist": "Marks Inchaud",
+        "assist_zh": "马克斯·因查德"
       },
       {
         "player": "Abdelsamad Hachem",
         "player_zh": "阿卜杜勒萨马德·哈切姆",
-        "minute": 34,
-        "assist": "Tyrone Tormin",
-        "assist_zh": "泰伦·托明"
+        "minute": "32'",
+        "minute_num": 32,
+        "is_virton": true,
+        "team": "home",
+        "assist": "Steeven Assengue",
+        "assist_zh": "斯蒂文·阿森盖"
       },
       {
         "player": "Park Seung-Soo",
         "player_zh": "朴昇秀",
-        "minute": 34,
-        "assist": "Tyrone Tormin",
-        "assist_zh": "泰伦·托明"
+        "minute": "32'",
+        "minute_num": 32,
+        "is_virton": true,
+        "team": "home",
+        "assist": "Sullivan Lakhamy",
+        "assist_zh": "沙利文·拉哈米"
+      },
+      {
+        "player": "Elyèss Dao",
+        "player_zh": "Elyèss Dao",
+        "minute": "65'",
+        "minute_num": 65,
+        "is_virton": false,
+        "team": "away",
+        "assist": null,
+        "assist_zh": null
       }
     ],
     "lineup": [
@@ -14330,30 +14800,42 @@
       {
         "player": "Tyrone Tormin",
         "player_zh": "泰伦·托明",
-        "minute": 41,
-        "assist": "Tyrone Tormin",
-        "assist_zh": "泰伦·托明"
+        "minute": "39'",
+        "minute_num": 39,
+        "is_virton": true,
+        "team": "away",
+        "assist": "Marks Inchaud",
+        "assist_zh": "马克斯·因查德"
       },
       {
         "player": "Park Seung-Soo",
         "player_zh": "朴昇秀",
-        "minute": 41,
-        "assist": "Tyrone Tormin",
-        "assist_zh": "泰伦·托明"
+        "minute": "39'",
+        "minute_num": 39,
+        "is_virton": true,
+        "team": "away",
+        "assist": "Park Seung-Soo",
+        "assist_zh": "朴昇秀"
       },
       {
         "player": "Abdelsamad Hachem",
         "player_zh": "阿卜杜勒萨马德·哈切姆",
-        "minute": 41,
-        "assist": "Tyrone Tormin",
-        "assist_zh": "泰伦·托明"
+        "minute": "39'",
+        "minute_num": 39,
+        "is_virton": true,
+        "team": "away",
+        "assist": "Marks Inchaud",
+        "assist_zh": "马克斯·因查德"
       },
       {
         "player": "Abdelsamad Hachem",
         "player_zh": "阿卜杜勒萨马德·哈切姆",
-        "minute": 69,
-        "assist": null,
-        "assist_zh": null
+        "minute": "67'",
+        "minute_num": 67,
+        "is_virton": true,
+        "team": "away",
+        "assist": "Park Seung-Soo",
+        "assist_zh": "朴昇秀"
       }
     ],
     "lineup": [
@@ -14854,18 +15336,24 @@
     "distance_km": 118.8,
     "scorers": [
       {
-        "player": "Prins Tjiueza",
-        "player_zh": "普林斯·吉乌扎",
-        "minute": 48,
-        "assist": "Tyrone Tormin",
-        "assist_zh": "泰伦·托明"
-      },
-      {
         "player": "Tyrone Tormin",
         "player_zh": "泰伦·托明",
-        "minute": 48,
-        "assist": "Tyrone Tormin",
-        "assist_zh": "泰伦·托明"
+        "minute": "32'",
+        "minute_num": 32,
+        "is_virton": true,
+        "team": "away",
+        "assist": "Prins Tjiueza",
+        "assist_zh": "普林斯·吉乌扎"
+      },
+      {
+        "player": "Prins Tjiueza",
+        "player_zh": "普林斯·吉乌扎",
+        "minute": "78'",
+        "minute_num": 78,
+        "is_virton": true,
+        "team": "away",
+        "assist": null,
+        "assist_zh": null
       }
     ],
     "lineup": [
@@ -15379,28 +15867,40 @@
       {
         "player": "Marks Inchaud",
         "player_zh": "马克斯·因查德",
-        "minute": 25,
-        "assist": "Tyrone Tormin",
-        "assist_zh": "泰伦·托明"
-      },
-      {
-        "player": "Park Seung-Soo",
-        "player_zh": "朴昇秀",
-        "minute": 25,
+        "minute": "23'",
+        "minute_num": 23,
+        "is_virton": true,
+        "team": "home",
         "assist": "Tyrone Tormin",
         "assist_zh": "泰伦·托明"
       },
       {
         "player": "Abdelsamad Hachem",
         "player_zh": "阿卜杜勒萨马德·哈切姆",
-        "minute": 25,
-        "assist": "Tyrone Tormin",
-        "assist_zh": "泰伦·托明"
+        "minute": "44'",
+        "minute_num": 44,
+        "is_virton": true,
+        "team": "home",
+        "assist": "Park Seung-Soo",
+        "assist_zh": "朴昇秀"
       },
       {
-        "player": "Marks Inchaud",
-        "player_zh": "马克斯·因查德",
-        "minute": 53,
+        "player": "Kevin Cassoratti",
+        "player_zh": "凯文·卡索拉蒂",
+        "minute": "51'",
+        "minute_num": 51,
+        "is_virton": false,
+        "team": "away",
+        "assist": null,
+        "assist_zh": null
+      },
+      {
+        "player": "Park Seung-Soo",
+        "player_zh": "朴昇秀",
+        "minute": "68'",
+        "minute_num": 68,
+        "is_virton": true,
+        "team": "home",
         "assist": null,
         "assist_zh": null
       }
@@ -16038,7 +16538,28 @@
     "shots": 10,
     "shots_on_target": 4,
     "distance_km": 120.4,
-    "scorers": [],
+    "scorers": [
+      {
+        "player": "Alexandre Stanić",
+        "player_zh": "亚历山大·斯塔尼奇",
+        "minute": "24'",
+        "minute_num": 24,
+        "is_virton": false,
+        "team": "home",
+        "assist": null,
+        "assist_zh": null
+      },
+      {
+        "player": "Wout De Buyser",
+        "player_zh": "沃特·德伯伊瑟",
+        "minute": "76'",
+        "minute_num": 76,
+        "is_virton": false,
+        "team": "home",
+        "assist": null,
+        "assist_zh": null
+      }
+    ],
     "lineup": [
       {
         "pos": "GK",
@@ -16570,30 +17091,53 @@
       {
         "player": "Marks Inchaud",
         "player_zh": "马克斯·因查德",
-        "minute": 39,
+        "minute": "18'",
+        "minute_num": 18,
+        "is_virton": true,
+        "team": "home",
         "assist": "Tyrone Tormin",
         "assist_zh": "泰伦·托明"
       },
       {
         "player": "Abdelsamad Hachem",
         "player_zh": "阿卜杜勒萨马德·哈切姆",
-        "minute": 39,
-        "assist": "Tyrone Tormin",
-        "assist_zh": "泰伦·托明"
+        "minute": "42'",
+        "minute_num": 42,
+        "is_virton": true,
+        "team": "home",
+        "assist": "Aliou Dembélé",
+        "assist_zh": "阿卢·登贝莱"
       },
       {
-        "player": "Marks Inchaud",
-        "player_zh": "马克斯·因查德",
-        "minute": 67,
+        "player": "Alexandre Stanić",
+        "player_zh": "亚历山大·斯塔尼奇",
+        "minute": "58'",
+        "minute_num": 58,
+        "is_virton": false,
+        "team": "away",
         "assist": null,
         "assist_zh": null
       },
       {
         "player": "Marks Inchaud",
         "player_zh": "马克斯·因查德",
-        "minute": 89,
+        "minute": "67'",
+        "minute_num": 67,
+        "is_virton": true,
+        "team": "home",
         "assist": null,
         "assist_zh": null
+      },
+      {
+        "player": "Marks Inchaud",
+        "player_zh": "马克斯·因查德",
+        "minute": "90+2'",
+        "minute_num": 92,
+        "is_virton": true,
+        "team": "home",
+        "assist": "Steeven Assengue",
+        "assist_zh": "斯蒂文·阿森盖",
+        "is_stoppage": true
       }
     ],
     "lineup": [

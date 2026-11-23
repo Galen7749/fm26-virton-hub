@@ -83,17 +83,48 @@
         </div>
       </div>
 
-      <!-- 进球列表 -->
-      <div v-if="match.scorers && match.scorers.length" class="pt-2 border-t border-slate-800/60 text-center space-y-1">
-        <div
-          v-for="(sc, sIdx) in match.scorers"
-          :key="sIdx"
-          class="text-[11px] text-slate-300"
-        >
-          ⚽ {{ sc.player_zh || sc.player }} ({{ sc.minute }}')
-          <span v-if="sc.assist_zh || sc.assist" class="text-slate-500 text-[10px]">
-            助攻: {{ sc.assist_zh || sc.assist }}
-          </span>
+      <!-- 进球列表 (主客两栏对齐时间线) -->
+      <div v-if="match.scorers && match.scorers.length" class="pt-2.5 border-t border-slate-800/60">
+        <div class="grid grid-cols-2 gap-3 text-xs">
+          <!-- 主队进球 (右对齐贴向中缝) -->
+          <div class="space-y-1.5 text-right pr-2 border-r border-slate-800/60">
+            <template v-for="(sc, idx) in homeScorers" :key="'home-'+idx">
+              <div class="flex items-center justify-end space-x-1.5 text-slate-200">
+                <span v-if="sc.assist_zh || sc.assist" class="text-slate-500 text-[10px] truncate max-w-[110px]">
+                  (助: {{ sc.assist_zh || sc.assist }})
+                </span>
+                <span v-if="sc.is_stoppage || String(sc.minute).includes('+')" class="text-[9px] bg-amber-950 text-amber-300 px-1 py-0.2 rounded border border-amber-600 font-black shadow-sm">
+                  补时绝杀!
+                </span>
+                <span :class="sc.is_virton ? 'text-emerald-400 font-bold' : 'text-slate-300 font-medium'">
+                  {{ sc.player_zh || sc.player }}
+                </span>
+                <span class="font-mono text-emerald-400 font-bold">{{ formatMinute(sc.minute) }}</span>
+                <span class="text-xs">⚽</span>
+              </div>
+            </template>
+            <div v-if="!homeScorers.length" class="text-slate-600 text-[11px]">-</div>
+          </div>
+
+          <!-- 客队进球 (左对齐贴向中缝) -->
+          <div class="space-y-1.5 text-left pl-2">
+            <template v-for="(sc, idx) in awayScorers" :key="'away-'+idx">
+              <div class="flex items-center justify-start space-x-1.5 text-slate-200">
+                <span class="text-xs">⚽</span>
+                <span class="font-mono text-slate-400 font-bold">{{ formatMinute(sc.minute) }}</span>
+                <span :class="sc.is_virton ? 'text-emerald-400 font-bold' : 'text-slate-300 font-medium'">
+                  {{ sc.player_zh || sc.player }}
+                </span>
+                <span v-if="sc.is_stoppage || String(sc.minute).includes('+')" class="text-[9px] bg-amber-950 text-amber-300 px-1 py-0.2 rounded border border-amber-600 font-black shadow-sm">
+                  补时绝杀!
+                </span>
+                <span v-if="sc.assist_zh || sc.assist" class="text-slate-500 text-[10px] truncate max-w-[110px]">
+                  (助: {{ sc.assist_zh || sc.assist }})
+                </span>
+              </div>
+            </template>
+            <div v-if="!awayScorers.length" class="text-slate-600 text-[11px]">-</div>
+          </div>
         </div>
       </div>
 
@@ -224,4 +255,20 @@ const prevMatchId = computed(() => {
 const nextMatchId = computed(() => {
   return hasNext.value ? props.allMatches[currentIndex.value + 1].id : null
 })
+
+const homeScorers = computed(() => {
+  if (!props.match?.scorers) return []
+  return props.match.scorers.filter(s => s.team === 'home' || (s.team === undefined && props.match.venue === 'home'))
+})
+
+const awayScorers = computed(() => {
+  if (!props.match?.scorers) return []
+  return props.match.scorers.filter(s => s.team === 'away' || (s.team === undefined && props.match.venue === 'away'))
+})
+
+const formatMinute = (m) => {
+  if (!m && m !== 0) return ''
+  const s = String(m).trim()
+  return s.endsWith("'") ? s : `${s}'`
+}
 </script>

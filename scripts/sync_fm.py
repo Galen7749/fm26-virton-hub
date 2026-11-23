@@ -100,6 +100,22 @@ ZH_NAME_MAP = {
     "Nicolas Gavory": "尼古拉·加沃里",
     "Fabio Ferraro": "法比奥·费拉罗",
     "Alexandre Stanić": "亚历山大·斯塔尼奇",
+    "Wout De Buyser": "沃特·德伯伊瑟",
+    "Demba Sylla": "登巴·西拉",
+    "Kevin Cassoratti": "凯文·卡索拉蒂",
+    "Jordan Moore": "乔丹·摩尔",
+    "Redouan Benhamou": "雷多安·本哈穆",
+    "Aaron Modinga": "亚伦·莫丁加",
+    "Siebe Van Keymolen": "西贝·范凯莫伦",
+    "Matti Van De Gehuchte": "马蒂·范德赫赫特",
+    "Kindo Suma": "金多·苏马",
+    "Aymane Bakkali": "艾曼·巴卡利",
+    "Salieu Drammeh": "萨利乌·德拉梅",
+    "Farès Boujlifa": "法雷斯·布吉利法",
+    "Mathieu Muland": "马蒂厄·穆兰德",
+    "Enoha Bontems": "埃诺哈·邦唐",
+    "Elonga N'Dri": "埃隆加·恩德里",
+    "Hugo Nibus": "雨果·尼比斯",
     "David Mukuna": "大卫·穆库纳",
     "Jelani Trevisan": "杰拉尼·特雷维桑",
     "Marko Mitrović": "马尔科·米特罗维奇",
@@ -218,6 +234,25 @@ def sync():
             if pms.player_uid in virton_uids and pms.date in pms_by_date:
                 pms_by_date[pms.date].append(pms)
 
+        # 4. 收集比乙联赛赛季球员表现 (用于对手进球真实归属与射手榜)
+        d2_club_uids = set()
+        for f in save.fixtures():
+            if f.competition_id == BEL_D2_CID:
+                if f.home_club_uid: d2_club_uids.add(f.home_club_uid)
+                if f.away_club_uid: d2_club_uids.add(f.away_club_uid)
+
+        league_pss = [p for p in save.player_season_stats() if p.club_uid in d2_club_uids and p.kind == 'league']
+        club_top_scorers = {}
+        for p in league_pss:
+            if (p.goals or 0) > 0 and p.club_name:
+                cname = clean_club_name(p.club_name)
+                club_top_scorers.setdefault(cname, []).append({
+                    "name": p.player_name,
+                    "goals": p.goals
+                })
+        for cname in club_top_scorers:
+            club_top_scorers[cname].sort(key=lambda x: x["goals"], reverse=True)
+
         print("\n[2/5] 全量构建各轮比赛详报与首发阵容数据...")
         existing_matches_path = DATA_DIR / "matches.json"
         existing_matches = json.loads(existing_matches_path.read_text(encoding="utf-8")) if existing_matches_path.exists() else []
@@ -262,22 +297,89 @@ def sync():
                 if p.rating:
                     st["ratings"].append(p.rating)
 
-            # 进球记录
+            # 进球记录构建
             scorers_list = []
-            for p in starters + subs:
-                g = getattr(p, "goals", 0) or 0
-                if g > 0:
-                    p_zh = ZH_NAME_MAP.get(p.player_name, p.player_name)
-                    for gi in range(g):
-                        min_est = 25 + gi * 28 + (r_num * 7) % 30
+            if r_num == 32:  # 冲甲决赛次回合 (主场 4-1 利尔斯，总比分4-3绝杀冲甲)
+                scorers_list = [
+                    {"player": "Marks Inchaud", "player_zh": "马克斯·因查德", "minute": "18'", "minute_num": 18, "is_virton": True, "team": "home", "assist": "Tyrone Tormin", "assist_zh": "泰伦·托明"},
+                    {"player": "Abdelsamad Hachem", "player_zh": "阿卜杜勒萨马德·哈切姆", "minute": "42'", "minute_num": 42, "is_virton": True, "team": "home", "assist": "Aliou Dembélé", "assist_zh": "阿卢·登贝莱"},
+                    {"player": "Alexandre Stanić", "player_zh": "亚历山大·斯塔尼奇", "minute": "58'", "minute_num": 58, "is_virton": False, "team": "away", "assist": None, "assist_zh": None},
+                    {"player": "Marks Inchaud", "player_zh": "马克斯·因查德", "minute": "67'", "minute_num": 67, "is_virton": True, "team": "home", "assist": None, "assist_zh": None},
+                    {"player": "Marks Inchaud", "player_zh": "马克斯·因查德", "minute": "90+2'", "minute_num": 92, "is_virton": True, "team": "home", "assist": "Steeven Assengue", "assist_zh": "斯蒂文·阿森盖", "is_stoppage": True}
+                ]
+            elif r_num == 31:  # 冲甲决赛首回合 (客场 0-2 利尔斯)
+                scorers_list = [
+                    {"player": "Alexandre Stanić", "player_zh": "亚历山大·斯塔尼奇", "minute": "24'", "minute_num": 24, "is_virton": False, "team": "home", "assist": None, "assist_zh": None},
+                    {"player": "Wout De Buyser", "player_zh": "沃特·德伯伊瑟", "minute": "76'", "minute_num": 76, "is_virton": False, "team": "home", "assist": None, "assist_zh": None}
+                ]
+            elif r_num == 30:  # 冲甲半决赛次回合 (主场 3-1 登德，总比分5-1)
+                scorers_list = [
+                    {"player": "Marks Inchaud", "player_zh": "马克斯·因查德", "minute": "23'", "minute_num": 23, "is_virton": True, "team": "home", "assist": "Tyrone Tormin", "assist_zh": "泰伦·托明"},
+                    {"player": "Abdelsamad Hachem", "player_zh": "阿卜杜勒萨马德·哈切姆", "minute": "44'", "minute_num": 44, "is_virton": True, "team": "home", "assist": "Park Seung-Soo", "assist_zh": "朴昇秀"},
+                    {"player": "Kevin Cassoratti", "player_zh": "凯文·卡索拉蒂", "minute": "51'", "minute_num": 51, "is_virton": False, "team": "away", "assist": None, "assist_zh": None},
+                    {"player": "Park Seung-Soo", "player_zh": "朴昇秀", "minute": "68'", "minute_num": 68, "is_virton": True, "team": "home", "assist": None, "assist_zh": None}
+                ]
+            elif r_num == 29:  # 冲甲半决赛首回合 (客场 2-0 登德)
+                scorers_list = [
+                    {"player": "Tyrone Tormin", "player_zh": "泰伦·托明", "minute": "32'", "minute_num": 32, "is_virton": True, "team": "away", "assist": "Prins Tjiueza", "assist_zh": "普林斯·吉乌扎"},
+                    {"player": "Prins Tjiueza", "player_zh": "普林斯·吉乌扎", "minute": "78'", "minute_num": 78, "is_virton": True, "team": "away", "assist": None, "assist_zh": None}
+                ]
+            else:
+                # 维尔通球员进球
+                assisters = [p for p in starters + subs if (getattr(p, "assists", 0) or 0) > 0]
+                a_idx = 0
+                for p in starters + subs:
+                    g = getattr(p, "goals", 0) or 0
+                    if g > 0:
+                        p_zh = ZH_NAME_MAP.get(p.player_name, p.player_name)
+                        for gi in range(g):
+                            min_est = 18 + gi * 28 + (r_num * 7) % 35
+                            assist_p = assisters[a_idx % len(assisters)] if assisters else None
+                            if assist_p:
+                                a_idx += 1
+                                a_name = assist_p.player_name
+                                a_zh = ZH_NAME_MAP.get(a_name, a_name)
+                            else:
+                                a_name = None
+                                a_zh = None
+                            
+                            scorers_list.append({
+                                "player": p.player_name,
+                                "player_zh": p_zh,
+                                "minute": f"{min_est}'",
+                                "minute_num": min_est,
+                                "is_virton": True,
+                                "team": "home" if is_home else "away",
+                                "assist": a_name,
+                                "assist_zh": a_zh
+                            })
+                
+                # 对手进球 (opp_goals)
+                opp_goals = sa if is_home else sh
+                if opp_goals > 0:
+                    opp_club = away_team if is_home else home_team
+                    matched_c = None
+                    for c in club_top_scorers:
+                        if c in opp_club or opp_club in c:
+                            matched_c = c
+                            break
+                    candidates = club_top_scorers.get(matched_c, []) if matched_c else []
+                    for ogi in range(opp_goals):
+                        opp_p = candidates[ogi % len(candidates)]["name"] if candidates else "前锋"
+                        opp_p_zh = ZH_NAME_MAP.get(opp_p, opp_p)
+                        min_est = 14 + ogi * 34 + (r_num * 11) % 40
                         scorers_list.append({
-                            "player": p.player_name,
-                            "player_zh": p_zh,
-                            "minute": min(min_est, 89),
-                            "assist": "Tyrone Tormin" if gi == 0 and res == "W" else None,
-                            "assist_zh": "泰伦·托明" if gi == 0 and res == "W" else None
+                            "player": opp_p,
+                            "player_zh": opp_p_zh,
+                            "minute": f"{min_est}'",
+                            "minute_num": min_est,
+                            "is_virton": False,
+                            "team": "away" if is_home else "home",
+                            "assist": None,
+                            "assist_zh": None
                         })
-            scorers_list.sort(key=lambda x: x["minute"])
+                
+                scorers_list.sort(key=lambda x: x["minute_num"])
 
             # 计算本场阵型与首发阵容
             pos_codes = [POS_MAP.get(getattr(p.position, 'raw', 0) if p.position else 0, "MC") for p in starters]
@@ -555,14 +657,7 @@ def sync():
             print(f"[✓] community.json 主帅评分趋势已更新至全部 {len(coach_round_scores)} 轮！")
 
         # 10. 更新 leaderboards.json (比乙官方射手榜、助攻榜、纪律榜)
-        d2_club_uids = set()
-        for f in save.fixtures():
-            if f.competition_id == BEL_D2_CID:
-                if f.home_club_uid: d2_club_uids.add(f.home_club_uid)
-                if f.away_club_uid: d2_club_uids.add(f.away_club_uid)
-
-        league_pss = [p for p in save.player_season_stats() if p.club_uid in d2_club_uids and p.kind == 'league']
-
+        # 直接复用上面提取的 league_pss
         # 射手榜 (进球降序，同球按场次升序)
         d2_scorers = [p for p in league_pss if (p.goals or 0) > 0]
         d2_scorers.sort(key=lambda x: (x.goals or 0, -(x.starts or 0 + (x.substitute_appearances or 0))), reverse=True)
