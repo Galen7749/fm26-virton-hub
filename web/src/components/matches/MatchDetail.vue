@@ -93,8 +93,11 @@
                 <span v-if="sc.assist_zh || sc.assist" class="text-slate-500 text-[10px] truncate max-w-[110px]">
                   (助: {{ sc.assist_zh || sc.assist }})
                 </span>
-                <span v-if="sc.is_stoppage || String(sc.minute).includes('+')" class="text-[9px] bg-amber-950 text-amber-300 px-1 py-0.2 rounded border border-amber-600 font-black shadow-sm">
-                  补时绝杀!
+                <span v-if="sc.is_stoppage || String(sc.minute).includes('+')" class="text-[9px] bg-amber-950 text-amber-300 px-1.5 py-0.5 rounded border border-amber-600 font-black shadow-sm">
+                  {{ sc.is_header || sc.goal_type === '头球' ? '补时头球绝杀!' : '补时绝杀!' }}
+                </span>
+                <span v-else-if="sc.is_header || sc.goal_type === '头球'" class="text-[9px] bg-teal-950 text-teal-300 px-1 py-0.2 rounded border border-teal-700 font-bold">
+                  头球
                 </span>
                 <span :class="sc.is_virton ? 'text-emerald-400 font-bold' : 'text-slate-300 font-medium'">
                   {{ sc.player_zh || sc.player }}
@@ -115,8 +118,11 @@
                 <span :class="sc.is_virton ? 'text-emerald-400 font-bold' : 'text-slate-300 font-medium'">
                   {{ sc.player_zh || sc.player }}
                 </span>
-                <span v-if="sc.is_stoppage || String(sc.minute).includes('+')" class="text-[9px] bg-amber-950 text-amber-300 px-1 py-0.2 rounded border border-amber-600 font-black shadow-sm">
-                  补时绝杀!
+                <span v-if="sc.is_stoppage || String(sc.minute).includes('+')" class="text-[9px] bg-amber-950 text-amber-300 px-1.5 py-0.5 rounded border border-amber-600 font-black shadow-sm">
+                  {{ sc.is_header || sc.goal_type === '头球' ? '补时头球绝杀!' : '补时绝杀!' }}
+                </span>
+                <span v-else-if="sc.is_header || sc.goal_type === '头球'" class="text-[9px] bg-teal-950 text-teal-300 px-1 py-0.2 rounded border border-teal-700 font-bold">
+                  头球
                 </span>
                 <span v-if="sc.assist_zh || sc.assist" class="text-slate-500 text-[10px] truncate max-w-[110px]">
                   (助: {{ sc.assist_zh || sc.assist }})

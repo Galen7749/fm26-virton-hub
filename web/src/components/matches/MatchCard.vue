@@ -74,7 +74,12 @@
             <template v-for="(sc, i) in homeScorers" :key="'h-'+i">
               <span :class="sc.is_virton ? 'text-emerald-400 font-semibold' : 'text-slate-300'">
                 {{ sc.player_zh || sc.player }} {{ formatMinute(sc.minute) }}
-                <span v-if="sc.is_stoppage || String(sc.minute).includes('+')" class="text-[9px] bg-amber-950 text-amber-300 px-1 py-0.2 rounded border border-amber-800/60 font-bold">绝杀</span>
+                <span v-if="sc.is_stoppage || String(sc.minute).includes('+')" class="text-[9px] bg-amber-950 text-amber-300 px-1 py-0.2 rounded border border-amber-800/60 font-bold">
+                  {{ sc.is_header || sc.goal_type === '头球' ? '头球绝杀' : '绝杀' }}
+                </span>
+                <span v-else-if="sc.is_header || sc.goal_type === '头球'" class="text-[9px] bg-teal-950 text-teal-300 px-1 py-0.2 rounded border border-teal-800/60 font-bold">
+                  头球
+                </span>
               </span>
               <span v-if="i < homeScorers.length - 1" class="text-slate-600 mr-1">,</span>
             </template>
@@ -90,7 +95,12 @@
             <template v-for="(sc, i) in awayScorers" :key="'a-'+i">
               <span :class="sc.is_virton ? 'text-emerald-400 font-semibold' : 'text-slate-300'">
                 {{ sc.player_zh || sc.player }} {{ formatMinute(sc.minute) }}
-                <span v-if="sc.is_stoppage || String(sc.minute).includes('+')" class="text-[9px] bg-amber-950 text-amber-300 px-1 py-0.2 rounded border border-amber-800/60 font-bold">绝杀</span>
+                <span v-if="sc.is_stoppage || String(sc.minute).includes('+')" class="text-[9px] bg-amber-950 text-amber-300 px-1 py-0.2 rounded border border-amber-800/60 font-bold">
+                  {{ sc.is_header || sc.goal_type === '头球' ? '头球绝杀' : '绝杀' }}
+                </span>
+                <span v-else-if="sc.is_header || sc.goal_type === '头球'" class="text-[9px] bg-teal-950 text-teal-300 px-1 py-0.2 rounded border border-teal-800/60 font-bold">
+                  头球
+                </span>
               </span>
               <span v-if="i < awayScorers.length - 1" class="text-slate-600 mr-1">,</span>
             </template>

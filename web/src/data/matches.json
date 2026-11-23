@@ -17137,7 +17137,9 @@
         "team": "home",
         "assist": "Steeven Assengue",
         "assist_zh": "斯蒂文·阿森盖",
-        "is_stoppage": true
+        "is_stoppage": true,
+        "goal_type": "头球",
+        "is_header": true
       }
     ],
     "lineup": [

@@ -305,7 +305,7 @@ def sync():
                     {"player": "Abdelsamad Hachem", "player_zh": "阿卜杜勒萨马德·哈切姆", "minute": "42'", "minute_num": 42, "is_virton": True, "team": "home", "assist": "Aliou Dembélé", "assist_zh": "阿卢·登贝莱"},
                     {"player": "Alexandre Stanić", "player_zh": "亚历山大·斯塔尼奇", "minute": "58'", "minute_num": 58, "is_virton": False, "team": "away", "assist": None, "assist_zh": None},
                     {"player": "Marks Inchaud", "player_zh": "马克斯·因查德", "minute": "67'", "minute_num": 67, "is_virton": True, "team": "home", "assist": None, "assist_zh": None},
-                    {"player": "Marks Inchaud", "player_zh": "马克斯·因查德", "minute": "90+2'", "minute_num": 92, "is_virton": True, "team": "home", "assist": "Steeven Assengue", "assist_zh": "斯蒂文·阿森盖", "is_stoppage": True}
+                    {"player": "Marks Inchaud", "player_zh": "马克斯·因查德", "minute": "90+2'", "minute_num": 92, "is_virton": True, "team": "home", "assist": "Steeven Assengue", "assist_zh": "斯蒂文·阿森盖", "is_stoppage": True, "goal_type": "头球", "is_header": True}
                 ]
             elif r_num == 31:  # 冲甲决赛首回合 (客场 0-2 利尔斯)
                 scorers_list = [
