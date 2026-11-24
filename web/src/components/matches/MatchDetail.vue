@@ -208,8 +208,8 @@
       <!-- 虎扑热评 -->
       <MatchComments v-else-if="subTab === 'comments'" :news="news" />
 
-      <!-- 同轮比乙其他场次完整赛果 -->
-      <RoundMatches v-else-if="subTab === 'round'" :matches="roundOtherMatches" :round="match.round" />
+      <!-- 同轮其他场次完整赛果 -->
+      <RoundMatches v-else-if="subTab === 'round'" :matches="roundOtherMatches" :round="match.round" :league="match.league_name" />
     </div>
 
   </div>

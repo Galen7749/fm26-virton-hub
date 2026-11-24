@@ -246,21 +246,34 @@
             <div class="text-[11px] font-bold text-slate-300 flex items-center justify-between">
               <span class="inline-flex items-center gap-1.5">
                 <Icon icon="lucide:message-circle" class="w-3.5 h-3.5 text-emerald-400" />
-                <span>热门评论 ({{ selectedArticle.comments_count }})</span>
+                <span>热门球迷热议 ({{ currentArticleComments.length }})</span>
               </span>
               <span class="text-emerald-400 text-[10px] cursor-pointer hover:underline">发表评论</span>
             </div>
-            <div class="bg-slate-950 p-2.5 rounded-lg border border-slate-850 space-y-1">
+
+            <div
+              v-for="(cmt, cIdx) in currentArticleComments"
+              :key="cIdx"
+              class="bg-slate-950 p-2.5 rounded-lg border border-slate-850 space-y-1"
+            >
               <div class="flex items-center justify-between text-[10px]">
-                <span class="font-bold text-slate-200">Galen</span>
-                <span class="text-slate-500 inline-flex items-center gap-1">
-                  <span>刚刚 · </span>
+                <div class="flex items-center space-x-1.5">
+                  <div class="w-4 h-4 rounded-full bg-slate-800 border border-slate-700 flex items-center justify-center text-[9px] font-bold text-emerald-400">
+                    {{ cmt.user.slice(0, 1) }}
+                  </div>
+                  <span class="font-bold text-slate-200">{{ cmt.user }}</span>
+                  <span v-if="cmt.badge" class="text-[9px] px-1 py-0.2 rounded bg-slate-900 text-amber-300 border border-amber-900/40">
+                    {{ cmt.badge }}
+                  </span>
+                </div>
+                <div class="text-slate-500 inline-flex items-center gap-1">
+                  <span>{{ cmt.time }} · </span>
                   <Icon icon="lucide:thumbs-up" class="w-2.5 h-2.5 text-amber-400" />
-                  <span>89</span>
-                </span>
+                  <span>{{ cmt.likes }}</span>
+                </div>
               </div>
-              <p class="text-[10px] text-slate-400">
-                这场比赛看得真过瘾！欧洲次级别联赛的节奏非常快，战术体系打出了清晰的边中结合。
+              <p class="text-[10px] text-slate-300 leading-relaxed pl-1">
+                {{ cmt.text }}
               </p>
             </div>
           </div>
@@ -290,6 +303,7 @@ import { ref, computed } from 'vue'
 
 import tickerMatchesRaw from '../../data/ticker_matches.json'
 import newsArticlesRaw from '../../data/news_articles.json'
+import newsCommentsRaw from '../../data/news_comments.json'
 
 defineProps({
   matches: {
@@ -306,6 +320,22 @@ const newsArticles = ref(newsArticlesRaw)
 // 3 个轻量胶囊筛选：'headline' (全部头条) | 'overseas' (留洋专区) | 'transfer' (转会动态)
 const activeCategory = ref('headline')
 const selectedArticle = ref(null)
+
+const currentArticleComments = computed(() => {
+  if (!selectedArticle.value) return []
+  const specific = newsCommentsRaw[selectedArticle.value.id]
+  if (specific && specific.length) return specific
+  if (selectedArticle.value.category === 'transfer') {
+    return [
+      { user: '转会雷达', badge: '转会分析', time: '1小时前', likes: 88, text: '夏窗豪门军备竞赛正处于关键节点，体检和签字很快跟进。' },
+      { user: '绿茵球探', badge: '数据控', time: '2小时前', likes: 45, text: '这名球员的战术执行力和身体机能非常契合当前体系，看好能打出来。' }
+    ]
+  }
+  return [
+    { user: '球迷老张', badge: '资深球迷', time: '刚刚', likes: 62, text: '欧洲赛场的攻防节奏太快了，战术转换的执行力和对抗让人印象深刻！' },
+    { user: '足球战术室', badge: '战术分析', time: '25分钟前', likes: 39, text: '双方在攻防转换阶段的微调很见功底，值得赛后反复复盘。' }
+  ]
+})
 
 const filteredNews = computed(() => {
   if (activeCategory.value === 'headline') {

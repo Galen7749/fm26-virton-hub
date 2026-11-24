@@ -1,7 +1,10 @@
 <template>
   <div class="space-y-2 text-xs">
     <div class="flex items-center justify-between text-xs font-bold text-slate-300">
-      <span>🇧🇪 比乙第 {{ round }} 轮 · 完整战报栏</span>
+      <span class="inline-flex items-center gap-1.5">
+        <Icon :icon="leagueFlag" class="w-3.5 h-3.5 rounded-full" />
+        <span>{{ leagueName }}第 {{ round }} 轮 · 完整战报栏</span>
+      </span>
       <span class="text-[10px] text-slate-500">官方正式赛果</span>
     </div>
 
@@ -11,18 +14,18 @@
         :key="mIdx"
         :class="[
           'px-2.5 py-2.5 grid grid-cols-[58px_1fr_46px_1fr] items-center gap-1.5 transition',
-          m.is_virton ? 'bg-emerald-950/40 border-l-2 border-emerald-500' : 'hover:bg-slate-850'
+          m.is_virton || m.is_odra ? 'bg-emerald-950/40 border-l-2 border-emerald-500' : 'hover:bg-slate-850'
         ]"
       >
         <!-- 1. 日期与标记 (固定58px) -->
         <div class="flex items-center space-x-1 text-[10px] text-slate-400 truncate">
           <span class="font-mono">{{ (m.date || '').slice(5) }}</span>
-          <span v-if="m.is_virton" class="text-emerald-400 font-bold shrink-0">[本场]</span>
+          <span v-if="m.is_virton || m.is_odra" class="text-emerald-400 font-bold shrink-0">[本场]</span>
         </div>
 
         <!-- 2. 主队 (向右对齐贴向比分) -->
         <div class="truncate text-right font-medium text-slate-300">
-          <span :class="m.home === '维尔通精英' ? 'text-emerald-400 font-bold' : ''">
+          <span :class="m.home === '维尔通精英' || m.home === '奥波莱奥德拉' ? 'text-emerald-400 font-bold' : ''">
             {{ m.home }}
           </span>
         </div>
@@ -36,7 +39,7 @@
 
         <!-- 4. 客队 (向左对齐贴向比分) -->
         <div class="truncate text-left font-medium text-slate-300">
-          <span :class="m.away === '维尔通精英' ? 'text-emerald-400 font-bold' : ''">
+          <span :class="m.away === '维尔通精英' || m.away === '奥波莱奥德拉' ? 'text-emerald-400 font-bold' : ''">
             {{ m.away }}
           </span>
         </div>
@@ -46,7 +49,9 @@
 </template>
 
 <script setup>
-defineProps({
+import { computed } from 'vue'
+
+const props = defineProps({
   matches: {
     type: Array,
     default: () => []
@@ -54,6 +59,23 @@ defineProps({
   round: {
     type: [Number, String],
     default: 1
+  },
+  league: {
+    type: String,
+    default: ''
   }
+})
+
+const isPoland = computed(() => {
+  return props.league === '波甲' || props.matches.some(m => m.home?.includes('奥波莱') || m.away?.includes('奥波莱') || m.home?.includes('华沙') || m.home?.includes('克拉科维亚'))
+})
+
+const leagueName = computed(() => {
+  if (props.league) return props.league
+  return isPoland.value ? '波甲' : '比乙'
+})
+
+const leagueFlag = computed(() => {
+  return isPoland.value ? 'circle-flags:pl' : 'circle-flags:be'
 })
 </script>

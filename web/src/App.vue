@@ -131,7 +131,13 @@ const selectedMatch = computed(() => {
 const selectedNews = computed(() => {
   if (!selectedMatch.value) return null
   if (selectedMatch.value.news) return selectedMatch.value.news
-  return news.value.find(n => n.round === selectedMatch.value.round || n.match_id === selectedMatch.value.id)
+  const isVirtonMatch = selectedMatch.value.league_key === 'bel_d2' ||
+                        selectedMatch.value.home_team?.includes('维尔通') ||
+                        selectedMatch.value.away_team?.includes('维尔通')
+  if (isVirtonMatch) {
+    return news.value.find(n => n.match_id === selectedMatch.value.id || n.round === selectedMatch.value.round)
+  }
+  return null
 })
 
 const selectedRoundOtherMatches = computed(() => {
