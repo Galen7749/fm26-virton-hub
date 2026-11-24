@@ -6,9 +6,9 @@
       <!-- 返回按钮 -->
       <button
         @click="$emit('back')"
-        class="flex items-center space-x-1.5 text-slate-300 hover:text-white font-bold transition px-2 py-1 rounded-lg hover:bg-slate-900 border border-slate-800"
+        class="inline-flex items-center gap-1.5 text-slate-300 hover:text-white font-bold transition px-2.5 py-1 rounded-lg hover:bg-slate-900 border border-slate-800"
       >
-        <span class="text-sm">←</span>
+        <Icon icon="lucide:arrow-left" class="w-3.5 h-3.5" />
         <span>返回比赛列表</span>
       </button>
 
@@ -39,17 +39,21 @@
     <!-- 2. 中立焦点战报卡片 (完全中立电视台视角) -->
     <div class="bg-gradient-to-b from-slate-900 via-slate-900 to-slate-950 rounded-xl border border-slate-800 p-4 shadow-sm space-y-3">
       <div class="flex justify-between items-center text-[11px] text-slate-400">
-        <span class="flex items-center space-x-1 text-slate-300 font-medium">
-          <span class="w-1.5 h-1.5 rounded-full bg-emerald-400"></span>
+        <span class="inline-flex items-center gap-1.5 text-slate-300 font-medium">
+          <Icon icon="lucide:check-circle" class="w-3.5 h-3.5 text-emerald-400" />
           <span>比赛全场结束 (FT)</span>
           <span
             v-if="match.is_overseas || match.home_team.includes('奥波莱') || match.away_team.includes('奥波莱') || match.home_team.includes('维尔通') || match.away_team.includes('维尔通')"
-            class="ml-1 bg-red-950 text-red-300 border border-red-800/80 px-1 py-0.1 rounded text-[9px] font-bold"
+            class="ml-1 inline-flex items-center gap-1 bg-red-950 text-red-300 border border-red-800/80 px-1.5 py-0.2 rounded text-[9px] font-bold"
           >
-            🇨🇳 留洋
+            <Icon icon="circle-flags:cn" class="w-2.5 h-2.5" />
+            <span>留洋</span>
           </span>
         </span>
-        <span class="text-slate-400 truncate max-w-[170px]">{{ match.stadium }}</span>
+        <span class="text-slate-400 truncate max-w-[170px] inline-flex items-center gap-1">
+          <Icon icon="mdi:soccer-field" class="w-3 h-3 text-slate-500" />
+          <span>{{ match.stadium }}</span>
+        </span>
       </div>
 
       <!-- 比分栏（完全中立视角） -->
@@ -84,7 +88,7 @@
           <!-- 主队进球 (右对齐贴向中缝) -->
           <div class="space-y-1.5 text-right pr-2 border-r border-slate-800/60">
             <template v-for="(sc, idx) in homeScorers" :key="'home-'+idx">
-              <div class="flex items-center justify-end space-x-1.5 text-slate-200">
+              <div class="inline-flex items-center justify-end gap-1.5 text-slate-200 w-full">
                 <span v-if="sc.assist_zh || sc.assist" class="text-slate-500 text-[10px] truncate max-w-[110px]">
                   (助: {{ sc.assist_zh || sc.assist }})
                 </span>
@@ -98,7 +102,7 @@
                   {{ sc.player_zh || sc.player }}
                 </span>
                 <span class="font-mono text-slate-300 font-bold">{{ formatMinute(sc.minute) }}</span>
-                <span class="text-xs">⚽</span>
+                <Icon icon="ph:soccer-ball-fill" class="w-3 h-3 text-emerald-400 shrink-0" />
               </div>
             </template>
             <div v-if="!homeScorers.length" class="text-slate-600 text-[11px]">-</div>
@@ -107,8 +111,8 @@
           <!-- 客队进球 (左对齐贴向中缝) -->
           <div class="space-y-1.5 text-left pl-2">
             <template v-for="(sc, idx) in awayScorers" :key="'away-'+idx">
-              <div class="flex items-center justify-start space-x-1.5 text-slate-200">
-                <span class="text-xs">⚽</span>
+              <div class="inline-flex items-center justify-start gap-1.5 text-slate-200 w-full">
+                <Icon icon="ph:soccer-ball-fill" class="w-3 h-3 text-emerald-400 shrink-0" />
                 <span class="font-mono text-slate-300 font-bold">{{ formatMinute(sc.minute) }}</span>
                 <span class="text-slate-200 font-medium">
                   {{ sc.player_zh || sc.player }}
@@ -151,44 +155,44 @@
       <button
         @click="subTab = 'report'"
         :class="[
-          'flex-1 py-1.5 rounded-lg font-bold text-center transition flex items-center justify-center space-x-1',
+          'flex-1 py-1.5 rounded-lg font-bold text-center transition inline-flex items-center justify-center gap-1.5',
           subTab === 'report' ? 'bg-emerald-600 text-white shadow-sm' : 'text-slate-400 hover:text-white'
         ]"
       >
-        <span>📰</span>
+        <Icon icon="lucide:file-text" class="w-3.5 h-3.5" />
         <span>战报</span>
       </button>
 
       <button
         @click="subTab = 'lineup'"
         :class="[
-          'flex-1 py-1.5 rounded-lg font-bold text-center transition flex items-center justify-center space-x-1',
+          'flex-1 py-1.5 rounded-lg font-bold text-center transition inline-flex items-center justify-center gap-1.5',
           subTab === 'lineup' ? 'bg-emerald-600 text-white shadow-sm' : 'text-slate-400 hover:text-white'
         ]"
       >
-        <span>👥</span>
-        <span>赛况/阵容评分</span>
+        <Icon icon="tabler:shirt-sport" class="w-3.5 h-3.5" />
+        <span>赛况/阵容</span>
       </button>
 
       <button
         @click="subTab = 'comments'"
         :class="[
-          'flex-1 py-1.5 rounded-lg font-bold text-center transition flex items-center justify-center space-x-1',
+          'flex-1 py-1.5 rounded-lg font-bold text-center transition inline-flex items-center justify-center gap-1.5',
           subTab === 'comments' ? 'bg-emerald-600 text-white shadow-sm' : 'text-slate-400 hover:text-white'
         ]"
       >
-        <span>🔥</span>
+        <Icon icon="lucide:message-square" class="w-3.5 h-3.5" />
         <span>热评</span>
       </button>
 
       <button
         @click="subTab = 'round'"
         :class="[
-          'flex-1 py-1.5 rounded-lg font-bold text-center transition flex items-center justify-center space-x-1',
+          'flex-1 py-1.5 rounded-lg font-bold text-center transition inline-flex items-center justify-center gap-1.5',
           subTab === 'round' ? 'bg-emerald-600 text-white shadow-sm' : 'text-slate-400 hover:text-white'
         ]"
       >
-        <span>🌐</span>
+        <Icon icon="mdi:scoreboard-outline" class="w-3.5 h-3.5" />
         <span>同轮赛果</span>
       </button>
     </div>

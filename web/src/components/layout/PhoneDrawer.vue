@@ -10,16 +10,17 @@
       <div class="bg-slate-950 px-5 pt-3 pb-2 flex items-center justify-between border-b border-slate-800 text-[11px] text-slate-400 select-none">
         <span class="font-bold text-white font-mono">20:26</span>
         <div class="w-20 h-4 bg-slate-900 rounded-full border border-slate-800 mx-auto"></div>
-        <div class="flex items-center space-x-1.5 font-mono">
+        <div class="inline-flex items-center gap-1.5 font-mono">
           <span>5G</span>
-          <span>🔋 100%</span>
+          <Icon icon="lucide:battery-full" class="w-3.5 h-3.5 text-emerald-400" />
+          <span>100%</span>
         </div>
       </div>
 
       <!-- 手机工作台标题栏 -->
       <div class="bg-gradient-to-r from-slate-900 via-slate-850 to-slate-900 px-4 py-3 border-b border-slate-800 flex items-center justify-between">
-        <div class="flex items-center space-x-2">
-          <span class="text-base">📱</span>
+        <div class="inline-flex items-center gap-2">
+          <Icon icon="lucide:smartphone" class="w-4 h-4 text-emerald-400" />
           <div>
             <h3 class="text-xs font-black text-white">主帅私人工作终端 (Manager OS)</h3>
             <p class="text-[9px] text-emerald-400 font-mono">加密通道 · 仅主帅可见</p>
@@ -27,9 +28,9 @@
         </div>
         <button
           @click="$emit('close')"
-          class="w-6 h-6 rounded-full bg-slate-800 hover:bg-slate-700 text-slate-300 hover:text-white flex items-center justify-center text-xs transition"
+          class="w-6 h-6 rounded-full bg-slate-800 hover:bg-slate-700 text-slate-300 hover:text-white inline-flex items-center justify-center text-xs transition"
         >
-          ✕
+          <Icon icon="lucide:x" class="w-3.5 h-3.5" />
         </button>
       </div>
 
@@ -40,10 +41,11 @@
             徐
           </div>
           <div class="flex-1 min-w-0">
-            <div class="flex items-center space-x-2">
+            <div class="inline-flex items-center gap-2 w-full">
               <span class="font-black text-white text-sm truncate">{{ phoneData.manager.name }}</span>
-              <span class="text-[9px] bg-red-950 text-red-300 border border-red-800 px-1.5 py-0.2 rounded font-bold">
-                {{ phoneData.manager.league }}
+              <span class="inline-flex items-center gap-1 text-[9px] bg-red-950 text-red-300 border border-red-800 px-1.5 py-0.2 rounded font-bold shrink-0">
+                <Icon icon="circle-flags:pl" class="w-2.5 h-2.5" />
+                <span>{{ phoneData.manager.league }}</span>
               </span>
             </div>
             <div class="text-[10px] text-slate-400 mt-0.5 truncate">
@@ -58,37 +60,37 @@
         <button
           @click="phoneTab = 'badge'"
           :class="[
-            'flex-1 py-1 rounded-lg font-bold text-center transition text-[11px] flex items-center justify-center space-x-1',
+            'flex-1 py-1 rounded-lg font-bold text-center transition text-[11px] inline-flex items-center justify-center gap-1',
             phoneTab === 'badge' ? 'bg-emerald-600 text-white shadow-sm' : 'text-slate-400 hover:text-white bg-slate-950'
           ]"
         >
-          <span>📜</span>
+          <Icon icon="lucide:graduation-cap" class="w-3 h-3" />
           <span>欧足联考证</span>
         </button>
         <button
           @click="phoneTab = 'mailbox'"
           :class="[
-            'flex-1 py-1 rounded-lg font-bold text-center transition text-[11px] flex items-center justify-center space-x-1',
+            'flex-1 py-1 rounded-lg font-bold text-center transition text-[11px] inline-flex items-center justify-center gap-1',
             phoneTab === 'mailbox' ? 'bg-emerald-600 text-white shadow-sm' : 'text-slate-400 hover:text-white bg-slate-950'
           ]"
         >
-          <span>📬</span>
+          <Icon icon="lucide:inbox" class="w-3 h-3" />
           <span>董事会私信</span>
           <span class="w-1.5 h-1.5 rounded-full bg-amber-400 inline-block ml-0.5"></span>
         </button>
         <button
           @click="phoneTab = 'career'"
           :class="[
-            'flex-1 py-1 rounded-lg font-bold text-center transition text-[11px] flex items-center justify-center space-x-1',
+            'flex-1 py-1 rounded-lg font-bold text-center transition text-[11px] inline-flex items-center justify-center gap-1',
             phoneTab === 'career' ? 'bg-emerald-600 text-white shadow-sm' : 'text-slate-400 hover:text-white bg-slate-950'
           ]"
         >
-          <span>📁</span>
+          <Icon icon="lucide:folder-git-2" class="w-3 h-3" />
           <span>执教履历</span>
         </button>
       </div>
 
-      <!-- 手机内容展示区（带滚动） -->
+      <!-- 手机内容展示区 -->
       <div class="flex-1 overflow-y-auto p-3.5 space-y-3 text-xs custom-scrollbar bg-slate-950/60">
 
         <!-- 视图 1: 欧足联执照进修看板 -->
@@ -137,8 +139,9 @@
               </div>
             </div>
 
-            <p class="text-[10px] text-slate-400 leading-relaxed bg-slate-950/80 p-2 rounded border border-slate-850">
-              💡 <strong>重要保障：</strong>在奥波莱俱乐部全资赞助与官方担保下，徐指导已获得欧足联官方注册教练员学籍，彻底免除比甲/波甲“无证主帅巨额罚款”，扫清执教资质障碍！
+            <p class="text-[10px] text-slate-400 leading-relaxed bg-slate-950/80 p-2 rounded border border-slate-850 inline-flex items-start gap-1.5">
+              <Icon icon="lucide:shield-check" class="w-4 h-4 text-emerald-400 shrink-0 mt-0.5" />
+              <span><strong>资质保障：</strong>奥波莱俱乐部全资资助与官方担保已生效，主帅获得欧足联正规教练员学籍，免除无证执教罚款。</span>
             </p>
           </div>
 
@@ -150,14 +153,16 @@
               :key="mod.id"
               class="bg-slate-900 border border-slate-800 rounded-lg p-2.5 flex items-center justify-between text-[11px]"
             >
-              <div class="flex items-center space-x-2">
+              <div class="inline-flex items-center gap-2">
                 <span :class="[
-                  'w-5 h-5 rounded-full flex items-center justify-center text-[10px] font-bold shrink-0',
+                  'w-5 h-5 rounded-full inline-flex items-center justify-center text-[10px] font-bold shrink-0',
                   mod.status === '已通过' ? 'bg-emerald-950 text-emerald-400 border border-emerald-800' :
                   mod.status === '在读中' ? 'bg-amber-950 text-amber-400 border border-amber-800' :
                   'bg-slate-800 text-slate-400'
                 ]">
-                  {{ mod.status === '已通过' ? '✓' : mod.status === '在读中' ? '●' : '○' }}
+                  <Icon v-if="mod.status === '已通过'" icon="lucide:check" class="w-3 h-3 text-emerald-400" />
+                  <Icon v-else-if="mod.status === '在读中'" icon="lucide:clock" class="w-2.5 h-2.5 text-amber-400" />
+                  <span v-else>○</span>
                 </span>
                 <span class="text-slate-200 font-medium">{{ mod.name }}</span>
               </div>
@@ -181,8 +186,8 @@
               class="bg-slate-900 border border-slate-800 hover:border-slate-700 rounded-xl p-3 space-y-2 cursor-pointer transition shadow-sm"
             >
               <div class="flex items-center justify-between">
-                <div class="flex items-center space-x-2">
-                  <span class="text-base">{{ msg.avatar }}</span>
+                <div class="inline-flex items-center gap-2">
+                  <Icon icon="lucide:mail" class="w-4 h-4 text-emerald-400" />
                   <span class="font-bold text-white text-xs truncate max-w-[150px]">{{ msg.sender }}</span>
                 </div>
                 <span class="text-[9px] bg-slate-800 text-teal-300 px-1.5 py-0.2 rounded border border-teal-900/40">
@@ -203,9 +208,12 @@
               </p>
 
               <div class="flex items-center justify-between text-[9px] text-slate-500 pt-1 border-t border-slate-800/60 font-mono">
-                <span>{{ msg.date }}</span>
+                <span class="inline-flex items-center gap-1">
+                  <Icon icon="lucide:calendar" class="w-2.5 h-2.5" />
+                  <span>{{ msg.date }}</span>
+                </span>
                 <span class="text-emerald-400 hover:underline">
-                  {{ activeMessageId === msg.id ? '收起详情 ▲' : '查看全文 ▼' }}
+                  {{ activeMessageId === msg.id ? '收起详情' : '查看全文' }}
                 </span>
               </div>
             </div>
@@ -218,8 +226,8 @@
             <!-- 当前第二站：奥波莱奥德拉 -->
             <div class="bg-gradient-to-r from-red-950/60 to-slate-900 border border-red-900/60 rounded-xl p-3 space-y-2">
               <div class="flex items-center justify-between text-xs">
-                <span class="font-black text-white flex items-center space-x-1.5">
-                  <span>🇵🇱</span>
+                <span class="font-black text-white inline-flex items-center gap-1.5">
+                  <Icon icon="circle-flags:pl" class="w-3.5 h-3.5 rounded-full" />
                   <span>奥波莱奥德拉 (Odra Opole)</span>
                 </span>
                 <span class="text-[9px] bg-red-950 text-red-300 border border-red-800 px-1.5 py-0.5 rounded font-bold">
@@ -227,7 +235,7 @@
                 </span>
               </div>
               <p class="text-[11px] text-slate-300 leading-relaxed">
-                2026年7月签约出任主帅。首轮2-1绝杀开门红，俱乐部全资赞助攻读欧足联A/Pro执照。
+                2026年7月出任主帅。首轮2-1绝杀开门红，俱乐部全额资助攻读欧足联A/Pro执照。
               </p>
               <div class="text-[10px] text-slate-400 flex items-center space-x-3 pt-1 border-t border-red-900/30">
                 <span>战绩：1战1胜0负</span>
@@ -239,16 +247,17 @@
             <!-- 第一站：维尔通精英 -->
             <div class="bg-gradient-to-r from-emerald-950/60 to-slate-900 border border-emerald-900/60 rounded-xl p-3 space-y-2">
               <div class="flex items-center justify-between text-xs">
-                <span class="font-black text-white flex items-center space-x-1.5">
-                  <span>🇧🇪</span>
+                <span class="font-black text-white inline-flex items-center gap-1.5">
+                  <Icon icon="circle-flags:be" class="w-3.5 h-3.5 rounded-full" />
                   <span>维尔通精英 (R.E. Virton)</span>
                 </span>
-                <span class="text-[9px] bg-emerald-950 text-emerald-300 border border-emerald-800 px-1.5 py-0.5 rounded font-bold">
-                  冲甲冠军 🏆 (已离任)
+                <span class="text-[9px] bg-emerald-950 text-emerald-300 border border-emerald-800 px-1.5 py-0.5 rounded font-bold inline-flex items-center gap-1">
+                  <Icon icon="lucide:trophy" class="w-2.5 h-2.5 text-amber-400" />
+                  <span>冲甲冠军 (已离任)</span>
                 </span>
               </div>
               <p class="text-[11px] text-slate-300 leading-relaxed">
-                2025年8月至2026年5月执教。以升班马身份单季狂轰61球，附加赛客场0-2落后次回合4-1惊天逆转绝杀冲入比甲。因管理层U23政策与拒资助考证体面辞职。
+                2025年8月至2026年5月执教。以升班马身份单季狂轰61球，附加赛客场0-2落后次回合4-1大逆转绝杀冲入比甲。因管理层U23政策与拒资助考证体面辞职。
               </p>
               <div class="text-[10px] text-slate-400 flex items-center space-x-3 pt-1 border-t border-emerald-900/30">
                 <span>总场次：32场</span>

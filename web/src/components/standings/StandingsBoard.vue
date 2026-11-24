@@ -3,12 +3,12 @@
 
     <!-- 1. 顶部控制栏：左侧【联赛下拉选择器】 + 右侧【3个子视图切换】 -->
     <div class="bg-slate-900 border border-slate-800 rounded-xl p-2.5 flex items-center justify-between gap-2 shadow-sm text-xs">
-      <!-- 顶部左侧：联赛下拉选择器 (Select Dropdown) -->
-      <div class="flex items-center space-x-1.5 shrink-0">
-        <span class="text-sm">🌐</span>
+      <!-- 顶部左侧：联赛下拉选择器 (带矢量国旗徽章，无 Emoji) -->
+      <div class="inline-flex items-center gap-1.5 shrink-0">
+        <Icon :icon="currentLeague.flag_icon || 'circle-flags:eu'" class="w-4 h-4 rounded-full shrink-0" />
         <select
           v-model="selectedLeagueKey"
-          class="bg-slate-950 border border-slate-700 text-slate-200 text-xs font-bold rounded-lg px-2.5 py-1.5 focus:outline-none focus:border-emerald-500 cursor-pointer shadow-inner"
+          class="bg-slate-950 border border-slate-700 text-slate-200 text-xs font-bold rounded-lg px-2 py-1.5 focus:outline-none focus:border-emerald-500 cursor-pointer shadow-inner pr-6"
         >
           <option
             v-for="lg in leaguesData.leagues"
@@ -21,37 +21,37 @@
       </div>
 
       <!-- 顶部右侧：3 个子视图切换 (积分榜 | 射手/助攻榜 | 转会动态) -->
-      <div class="bg-slate-950 p-1 rounded-lg border border-slate-800 flex items-center space-x-1">
+      <div class="bg-slate-950 p-1 rounded-lg border border-slate-800 inline-flex items-center gap-1">
         <button
           @click="subView = 'table'"
           :class="[
-            'px-2 py-1 rounded-md text-[11px] font-bold transition flex items-center space-x-1',
+            'px-2 py-1 rounded-md text-[11px] font-bold transition inline-flex items-center gap-1',
             subView === 'table' ? 'bg-emerald-600 text-white shadow-sm' : 'text-slate-400 hover:text-white'
           ]"
         >
-          <span>🏆</span>
+          <Icon icon="lucide:trophy" class="w-3 h-3" />
           <span>积分榜</span>
         </button>
 
         <button
           @click="subView = 'leaders'"
           :class="[
-            'px-2 py-1 rounded-md text-[11px] font-bold transition flex items-center space-x-1',
+            'px-2 py-1 rounded-md text-[11px] font-bold transition inline-flex items-center gap-1',
             subView === 'leaders' ? 'bg-emerald-600 text-white shadow-sm' : 'text-slate-400 hover:text-white'
           ]"
         >
-          <span>⚽</span>
+          <Icon icon="ph:soccer-ball-fill" class="w-3 h-3" />
           <span>射手/助攻</span>
         </button>
 
         <button
           @click="subView = 'transfers'"
           :class="[
-            'px-2 py-1 rounded-md text-[11px] font-bold transition flex items-center space-x-1',
+            'px-2 py-1 rounded-md text-[11px] font-bold transition inline-flex items-center gap-1',
             subView === 'transfers' ? 'bg-emerald-600 text-white shadow-sm' : 'text-slate-400 hover:text-white'
           ]"
         >
-          <span>🔄</span>
+          <Icon icon="tabler:arrows-exchange" class="w-3 h-3" />
           <span>转会动态</span>
         </button>
       </div>
@@ -59,7 +59,7 @@
 
     <!-- 2. 当前联赛基本信息条 -->
     <div class="flex items-center justify-between text-[11px] text-slate-400 px-1">
-      <div class="flex items-center space-x-1.5 font-bold text-slate-200">
+      <div class="inline-flex items-center gap-1.5 font-bold text-slate-200">
         <span>{{ currentLeague.name }}</span>
         <span class="text-slate-500">·</span>
         <span class="text-emerald-400">{{ currentLeague.season }}</span>
@@ -103,13 +103,14 @@
               </td>
 
               <!-- 球队名称与中立留洋小标签 -->
-              <td class="py-2 px-3 font-sans font-bold text-white flex items-center space-x-1.5 truncate">
+              <td class="py-2 px-3 font-sans font-bold text-white inline-flex items-center gap-1.5 truncate">
                 <span class="truncate">{{ row.team_name }}</span>
                 <span
                   v-if="row.is_overseas"
-                  class="bg-red-950 text-red-300 border border-red-800 px-1 py-0.1 rounded text-[8px] font-bold shrink-0"
+                  class="inline-flex items-center gap-0.5 bg-red-950 text-red-300 border border-red-800 px-1 py-0.1 rounded text-[8px] font-bold shrink-0"
                 >
-                  🇨🇳 留洋
+                  <Icon icon="circle-flags:cn" class="w-2.5 h-2.5" />
+                  <span>留洋</span>
                 </span>
               </td>
 
@@ -143,8 +144,8 @@
       <!-- 射手榜卡片 -->
       <div class="bg-slate-900 border border-slate-800 rounded-xl p-3 space-y-2">
         <div class="flex items-center justify-between text-xs font-bold text-slate-200 border-b border-slate-800 pb-2">
-          <span class="flex items-center space-x-1.5">
-            <span>⚽</span>
+          <span class="inline-flex items-center gap-1.5">
+            <Icon icon="ph:soccer-ball-fill" class="w-4 h-4 text-emerald-400" />
             <span>射手榜 (Top Scorers)</span>
           </span>
           <span class="text-[10px] text-slate-500">进球(点球)</span>
@@ -156,7 +157,7 @@
             :key="s.rank + s.player"
             class="py-2 flex items-center justify-between"
           >
-            <div class="flex items-center space-x-2.5 min-w-0">
+            <div class="inline-flex items-center gap-2.5 min-w-0">
               <span :class="[
                 'w-4 h-4 rounded text-[9px] font-black inline-flex items-center justify-center font-mono',
                 s.rank === 1 ? 'bg-amber-500 text-slate-950' : 'bg-slate-800 text-slate-400'
@@ -179,8 +180,8 @@
       <!-- 助攻榜卡片 -->
       <div class="bg-slate-900 border border-slate-800 rounded-xl p-3 space-y-2">
         <div class="flex items-center justify-between text-xs font-bold text-slate-200 border-b border-slate-800 pb-2">
-          <span class="flex items-center space-x-1.5">
-            <span>👟</span>
+          <span class="inline-flex items-center gap-1.5">
+            <Icon icon="mdi:shoe-cleat" class="w-4 h-4 text-amber-400" />
             <span>助攻榜 (Top Assists)</span>
           </span>
           <span class="text-[10px] text-slate-500">助攻数</span>
@@ -192,7 +193,7 @@
             :key="a.rank + a.player"
             class="py-2 flex items-center justify-between"
           >
-            <div class="flex items-center space-x-2.5 min-w-0">
+            <div class="inline-flex items-center gap-2.5 min-w-0">
               <span :class="[
                 'w-4 h-4 rounded text-[9px] font-black inline-flex items-center justify-center font-mono',
                 a.rank === 1 ? 'bg-amber-500 text-slate-950' : 'bg-slate-800 text-slate-400'
@@ -224,7 +225,10 @@
           <span class="bg-slate-950 text-teal-300 px-1.5 py-0.5 rounded border border-teal-900/40 font-bold">
             {{ tr.type }}
           </span>
-          <span class="text-slate-500 font-mono">{{ tr.date }}</span>
+          <span class="text-slate-500 font-mono inline-flex items-center gap-1">
+            <Icon icon="lucide:calendar" class="w-2.5 h-2.5" />
+            <span>{{ tr.date }}</span>
+          </span>
         </div>
 
         <div class="flex items-center justify-between">
@@ -232,9 +236,9 @@
           <span class="text-[11px] text-emerald-400 font-mono font-bold">{{ tr.fee }}</span>
         </div>
 
-        <div class="text-[11px] text-slate-400 flex items-center space-x-2 pt-0.5">
+        <div class="text-[11px] text-slate-400 inline-flex items-center gap-2 pt-0.5">
           <span class="text-slate-300">{{ tr.from }}</span>
-          <span class="text-slate-500">→</span>
+          <Icon icon="lucide:arrow-right" class="w-3 h-3 text-slate-500" />
           <span class="text-white font-medium">{{ tr.to }}</span>
         </div>
       </div>

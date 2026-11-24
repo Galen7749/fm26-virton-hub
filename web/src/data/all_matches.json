@@ -3,7 +3,7 @@
     "id": 1001,
     "league_key": "pol_d1",
     "league_name": "波甲",
-    "league_badge": "🇵🇱 波甲",
+    "league_badge": "波甲",
     "round": 1,
     "round_label": "第 1 轮",
     "date": "2026-07-28 20:00",
@@ -12,9 +12,9 @@
     "status_label": "完赛",
     "is_overseas": true,
     "home_team": "奥波莱奥德拉",
-    "home_logo": "🔴",
+    "home_logo": "",
     "away_team": "普沃茨克维斯瓦",
-    "away_logo": "⚪",
+    "away_logo": "",
     "score_home": 2,
     "score_away": 1,
     "stadium": "奥波莱市政球场",
@@ -64,13 +64,16 @@
           "likes": 310
         }
       ]
-    }
+    },
+    "league_flag": "circle-flags:pl",
+    "home_code": "奥波莱",
+    "away_code": "普沃茨"
   },
   {
     "id": 1002,
     "league_key": "pol_d1",
     "league_name": "波甲",
-    "league_badge": "🇵🇱 波甲",
+    "league_badge": "波甲",
     "round": 1,
     "round_label": "第 1 轮",
     "date": "2026-07-28 22:00",
@@ -79,9 +82,9 @@
     "status_label": "完赛",
     "is_overseas": false,
     "home_team": "阿尔卡格丁尼亚",
-    "home_logo": "🟡",
+    "home_logo": "",
     "away_team": "斯维特",
-    "away_logo": "🟢",
+    "away_logo": "",
     "score_home": 3,
     "score_away": 0,
     "stadium": "格丁尼亚城市球场",
@@ -105,13 +108,16 @@
         "player": "马尔切夫斯基",
         "player_zh": "马尔切夫斯基"
       }
-    ]
+    ],
+    "league_flag": "circle-flags:pl",
+    "home_code": "阿尔卡",
+    "away_code": "斯维特"
   },
   {
     "id": 1003,
     "league_key": "pol_d1",
     "league_name": "波甲",
-    "league_badge": "🇵🇱 波甲",
+    "league_badge": "波甲",
     "round": 1,
     "round_label": "第 1 轮",
     "date": "2026-07-29 00:00",
@@ -120,9 +126,9 @@
     "status_label": "完赛",
     "is_overseas": false,
     "home_team": "莱吉亚格但斯克",
-    "home_logo": "⚪",
+    "home_logo": "",
     "away_team": "卡托维兹",
-    "away_logo": "🟡",
+    "away_logo": "",
     "score_home": 1,
     "score_away": 1,
     "stadium": "格但斯克能源体育场",
@@ -141,13 +147,16 @@
         "player": "巴尔加",
         "player_zh": "巴尔加"
       }
-    ]
+    ],
+    "league_flag": "circle-flags:pl",
+    "home_code": "莱吉亚",
+    "away_code": "卡托维"
   },
   {
     "id": 2001,
     "league_key": "ucl",
     "league_name": "欧冠",
-    "league_badge": "🇪🇺 欧冠",
+    "league_badge": "欧冠",
     "round": 13,
     "round_label": "决赛",
     "date": "2026-06-01 03:00",
@@ -156,9 +165,9 @@
     "status_label": "完赛",
     "is_overseas": false,
     "home_team": "皇家马德里",
-    "home_logo": "👑",
+    "home_logo": "",
     "away_team": "曼彻斯特城",
-    "away_logo": "🔵",
+    "away_logo": "",
     "score_home": 2,
     "score_away": 1,
     "stadium": "温布利球场",
@@ -191,13 +200,16 @@
       "title": "欧冠决赛：皇马 2-1 逆转曼城夺队史第16座欧冠奖杯",
       "summary": "维尼修斯传射建功，安切洛蒂战术换人显奇效，银河战舰再次登上欧洲之巅！",
       "reporter": "BBC Sport"
-    }
+    },
+    "league_flag": "circle-flags:eu",
+    "home_code": "皇家马",
+    "away_code": "曼彻斯"
   },
   {
     "id": 2002,
     "league_key": "ucl",
     "league_name": "欧冠",
-    "league_badge": "🇪🇺 欧冠",
+    "league_badge": "欧冠",
     "round": 12,
     "round_label": "半决赛次回合",
     "date": "2026-05-09 03:00",
@@ -206,9 +218,9 @@
     "status_label": "完赛",
     "is_overseas": false,
     "home_team": "皇家马德里",
-    "home_logo": "👑",
+    "home_logo": "",
     "away_team": "拜仁慕尼黑",
-    "away_logo": "🔴",
+    "away_logo": "",
     "score_home": 2,
     "score_away": 1,
     "stadium": "伯纳乌球场",
@@ -232,13 +244,16 @@
         "player": "何塞卢",
         "player_zh": "何塞卢"
       }
-    ]
+    ],
+    "league_flag": "circle-flags:eu",
+    "home_code": "皇家马",
+    "away_code": "拜仁慕"
   },
   {
     "id": 3001,
     "league_key": "pl",
     "league_name": "英超",
-    "league_badge": "🏴󠁧󠁢󠁥󠁮󠁧󠁿 英超",
+    "league_badge": "英超",
     "round": 38,
     "round_label": "第 38 轮",
     "date": "2026-05-25 23:00",
@@ -247,9 +262,9 @@
     "status_label": "完赛",
     "is_overseas": false,
     "home_team": "阿森纳",
-    "home_logo": "🔴",
+    "home_logo": "",
     "away_team": "埃弗顿",
-    "away_logo": "🔵",
+    "away_logo": "",
     "score_home": 2,
     "score_away": 0,
     "stadium": "酋长球场",
@@ -268,13 +283,16 @@
         "player": "哈弗茨",
         "player_zh": "哈弗茨"
       }
-    ]
+    ],
+    "league_flag": "circle-flags:gb-eng",
+    "home_code": "阿森纳",
+    "away_code": "埃弗顿"
   },
   {
     "id": 3002,
     "league_key": "pl",
     "league_name": "英超",
-    "league_badge": "🏴󠁧󠁢󠁥󠁮󠁧󠁿 英超",
+    "league_badge": "英超",
     "round": 38,
     "round_label": "第 38 轮",
     "date": "2026-05-25 23:00",
@@ -283,9 +301,9 @@
     "status_label": "完赛",
     "is_overseas": false,
     "home_team": "曼彻斯特城",
-    "home_logo": "🔵",
+    "home_logo": "",
     "away_team": "西汉姆联",
-    "away_logo": "⚒️",
+    "away_logo": "",
     "score_home": 3,
     "score_away": 1,
     "stadium": "阿提哈德球场",
@@ -314,13 +332,16 @@
         "player": "罗德里",
         "player_zh": "罗德里"
       }
-    ]
+    ],
+    "league_flag": "circle-flags:gb-eng",
+    "home_code": "曼彻斯",
+    "away_code": "西汉姆"
   },
   {
     "id": 3003,
     "league_key": "pl",
     "league_name": "英超",
-    "league_badge": "🏴󠁧󠁢󠁥󠁮󠁧󠁿 英超",
+    "league_badge": "英超",
     "round": 38,
     "round_label": "第 38 轮",
     "date": "2026-05-25 23:00",
@@ -329,9 +350,9 @@
     "status_label": "完赛",
     "is_overseas": false,
     "home_team": "切尔西",
-    "home_logo": "🔵",
+    "home_logo": "",
     "away_team": "伯恩茅斯",
-    "away_logo": "🍒",
+    "away_logo": "",
     "score_home": 2,
     "score_away": 1,
     "stadium": "斯坦福桥球场",
@@ -355,13 +376,16 @@
         "player": "乌纳尔",
         "player_zh": "乌纳尔"
       }
-    ]
+    ],
+    "league_flag": "circle-flags:gb-eng",
+    "home_code": "切尔西",
+    "away_code": "伯恩茅"
   },
   {
     "id": 4001,
     "league_key": "bel_d1",
     "league_name": "比甲",
-    "league_badge": "🇧🇪 比甲",
+    "league_badge": "比甲",
     "round": 10,
     "round_label": "季后赛第10轮",
     "date": "2026-05-26 02:30",
@@ -370,9 +394,9 @@
     "status_label": "完赛",
     "is_overseas": false,
     "home_team": "皇家布鲁日",
-    "home_logo": "🔵",
+    "home_logo": "",
     "away_team": "皇家安德莱赫特",
-    "away_logo": "🟣",
+    "away_logo": "",
     "score_home": 2,
     "score_away": 1,
     "stadium": "扬·布雷德尔球场",
@@ -396,13 +420,16 @@
         "player": "奥尔森",
         "player_zh": "奥尔森"
       }
-    ]
+    ],
+    "league_flag": "circle-flags:be",
+    "home_code": "皇家布",
+    "away_code": "皇家安"
   },
   {
     "id": 4002,
     "league_key": "bel_d1",
     "league_name": "比甲",
-    "league_badge": "🇧🇪 比甲",
+    "league_badge": "比甲",
     "round": 10,
     "round_label": "季后赛第10轮",
     "date": "2026-05-26 02:30",
@@ -411,9 +438,9 @@
     "status_label": "完赛",
     "is_overseas": false,
     "home_team": "皇家亨克",
-    "home_logo": "🔵",
+    "home_logo": "",
     "away_team": "圣吉罗斯联合",
-    "away_logo": "🟡",
+    "away_logo": "",
     "score_home": 1,
     "score_away": 0,
     "stadium": "结晶球场",
@@ -427,13 +454,16 @@
         "player": "托卢",
         "player_zh": "托卢"
       }
-    ]
+    ],
+    "league_flag": "circle-flags:be",
+    "home_code": "皇家亨",
+    "away_code": "圣吉罗"
   },
   {
     "id": 5032,
     "league_key": "bel_d2",
     "league_name": "比乙",
-    "league_badge": "🇧🇪 比乙",
+    "league_badge": "比乙",
     "round": 32,
     "round_label": "附加赛次回合",
     "date": "2026-05-24 21:00",
@@ -442,9 +472,9 @@
     "status_label": "完赛",
     "is_overseas": true,
     "home_team": "维尔通精英",
-    "home_logo": "🟢",
+    "home_logo": "",
     "away_team": "利尔斯",
-    "away_logo": "🟡",
+    "away_logo": "",
     "score_home": 4,
     "score_away": 1,
     "stadium": "伊万·乔治球场",
@@ -486,13 +516,16 @@
       "title": "90+2分钟绝杀！维尔通总比分4-1逆转利尔斯冲入比甲！",
       "summary": "梅扎格补时头球锁定胜局，维尔通完成比乙历史级绝地翻盘奇迹！",
       "reporter": "HLN 比利时最新消息报"
-    }
+    },
+    "league_flag": "circle-flags:be",
+    "home_code": "维尔通",
+    "away_code": "利尔斯"
   },
   {
     "id": 5031,
     "league_key": "bel_d2",
     "league_name": "比乙",
-    "league_badge": "🇧🇪 比乙",
+    "league_badge": "比乙",
     "round": 31,
     "round_label": "附加赛首回合",
     "date": "2026-05-18 20:00",
@@ -501,9 +534,9 @@
     "status_label": "完赛",
     "is_overseas": true,
     "home_team": "利尔斯",
-    "home_logo": "🟡",
+    "home_logo": "",
     "away_team": "维尔通精英",
-    "away_logo": "🟢",
+    "away_logo": "",
     "score_home": 2,
     "score_away": 0,
     "stadium": "赫尔曼·范德波滕球场",
@@ -522,13 +555,16 @@
         "player": "达格巴",
         "player_zh": "达格巴"
       }
-    ]
+    ],
+    "league_flag": "circle-flags:be",
+    "home_code": "利尔斯",
+    "away_code": "维尔通"
   },
   {
     "id": 5028,
     "league_key": "bel_d2",
     "league_name": "比乙",
-    "league_badge": "🇧🇪 比乙",
+    "league_badge": "比乙",
     "round": 28,
     "round_label": "第 28 轮",
     "date": "2026-04-20 20:00",
@@ -537,9 +573,9 @@
     "status_label": "完赛",
     "is_overseas": false,
     "home_team": "皇家马斯梅赫伦",
-    "home_logo": "⚪",
+    "home_logo": "",
     "away_team": "贝弗伦",
-    "away_logo": "🟡",
+    "away_logo": "",
     "score_home": 2,
     "score_away": 0,
     "stadium": "帕特罗球场",
@@ -558,6 +594,9 @@
         "player": "范登贝尔赫",
         "player_zh": "范登贝尔赫"
       }
-    ]
+    ],
+    "league_flag": "circle-flags:be",
+    "home_code": "皇家马",
+    "away_code": "贝弗伦"
   }
 ]

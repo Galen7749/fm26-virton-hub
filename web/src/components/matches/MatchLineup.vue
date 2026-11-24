@@ -73,7 +73,9 @@
         ]">
           <span>{{ p.pos }}</span>
           <!-- MVP 标记 -->
-          <span v-if="p.is_mvp" class="absolute -top-2 -right-1 text-[8px] bg-amber-400 text-slate-950 rounded-full px-1 font-black shadow">★</span>
+          <span v-if="p.is_mvp" class="absolute -top-2 -right-1 text-[8px] bg-amber-400 text-slate-950 rounded-full px-1 font-black shadow inline-flex items-center">
+            <Icon icon="lucide:star" class="w-2 h-2" />
+          </span>
           <!-- 评分小角标 -->
           <span :class="[
             'absolute -bottom-1 -right-2 text-[8px] font-bold px-1 rounded-full shadow border border-slate-900',
@@ -173,8 +175,14 @@
             <div class="font-bold text-slate-200 flex items-center space-x-1.5">
               <span>{{ p.name_zh || p.name }}</span>
               <span v-if="p.is_mvp" class="text-[9px] bg-amber-500 text-slate-950 font-black px-1 rounded">MVP</span>
-              <span v-if="p.goal" class="text-[10px]">⚽ x{{ p.goal }}</span>
-              <span v-if="p.assist" class="text-[10px]">🅰️ x{{ p.assist }}</span>
+              <span v-if="p.goal" class="text-[10px] inline-flex items-center gap-0.5 text-emerald-400">
+                <Icon icon="ph:soccer-ball-fill" class="w-2.5 h-2.5" />
+                <span>x{{ p.goal }}</span>
+              </span>
+              <span v-if="p.assist" class="text-[10px] inline-flex items-center gap-0.5 text-teal-400">
+                <Icon icon="mdi:shoe-cleat" class="w-2.5 h-2.5" />
+                <span>x{{ p.assist }}</span>
+              </span>
             </div>
             <div class="text-[10px] text-slate-500 flex items-center space-x-1">
               <span>{{ p.name_en || p.name }}</span>
@@ -202,7 +210,10 @@
       <!-- 替补换人记录 -->
       <div v-if="match.bench_subs && match.bench_subs.length" class="space-y-1.5 pt-2">
         <div class="text-[11px] font-bold text-slate-400 mb-1 flex items-center justify-between">
-          <span>🔄 真实赛场替补换人记录</span>
+          <span class="inline-flex items-center gap-1.5">
+            <Icon icon="tabler:arrows-exchange" class="w-3.5 h-3.5 text-emerald-400" />
+            <span>真实赛场替补换人记录</span>
+          </span>
           <span class="text-[10px] text-slate-500">共 {{ match.bench_subs.length }} 人替补登场</span>
         </div>
         <div
@@ -211,13 +222,20 @@
           class="flex items-center justify-between p-2 rounded-lg bg-slate-950/70 border border-slate-800 text-xs"
         >
           <div class="flex items-center space-x-2">
-            <span class="text-[10px] bg-slate-800 text-amber-400 px-1.5 py-0.5 rounded font-mono font-bold">
-              {{ sub.entered_minute }}' 换上
+            <span class="text-[10px] bg-slate-800 text-amber-400 px-1.5 py-0.5 rounded font-mono font-bold inline-flex items-center gap-1">
+              <Icon icon="lucide:arrow-up-right" class="w-2.5 h-2.5 text-emerald-400" />
+              <span>{{ sub.entered_minute }}' 换上</span>
             </span>
             <span class="font-bold text-slate-200">{{ sub.name_zh }}</span>
             <span class="text-[10px] text-slate-500 font-mono">({{ sub.pos }})</span>
-            <span v-if="sub.goals" class="text-[10px] text-emerald-400 font-bold">⚽ x{{ sub.goals }}</span>
-            <span v-if="sub.assists" class="text-[10px] text-teal-400 font-bold">🅰️ x{{ sub.assists }}</span>
+            <span v-if="sub.goals" class="text-[10px] text-emerald-400 font-bold inline-flex items-center gap-0.5">
+              <Icon icon="ph:soccer-ball-fill" class="w-2.5 h-2.5" />
+              <span>x{{ sub.goals }}</span>
+            </span>
+            <span v-if="sub.assists" class="text-[10px] text-teal-400 font-bold inline-flex items-center gap-0.5">
+              <Icon icon="mdi:shoe-cleat" class="w-2.5 h-2.5" />
+              <span>x{{ sub.assists }}</span>
+            </span>
           </div>
           <span class="text-[11px] font-mono text-emerald-400 font-bold">{{ sub.rating ? sub.rating + '分' : '登场' }}</span>
         </div>

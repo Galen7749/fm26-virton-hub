@@ -4,7 +4,7 @@
     <!-- 主手机/应用容器（对标 FotMob / 懂球帝，最大宽度 448px 居中渲染） -->
     <main class="w-full max-w-md bg-slate-950 min-h-screen flex flex-col pb-20 shadow-2xl relative">
 
-      <!-- 1. 全局 Header（品牌「☁️ 懂球云」、搜索栏、低调「📱」主帅手机彩蛋） -->
+      <!-- 1. 全局 Header（品牌「懂球云」、搜索栏、低调主帅手机入口） -->
       <AppHeader
         :activeTab="activeTab"
         @change-tab="changeTab"
@@ -13,14 +13,14 @@
 
       <!-- 2. 四大一级页面内容区 (资讯 | 比赛 | 社区 | 数据) -->
       <div class="flex-1">
-        <!-- Tab 1: 📰 【资讯】页（默认首页：焦点横滑比分 + 头条/留洋/转会胶囊 + 详情阅读Modal） -->
+        <!-- Tab 1: 【资讯】页（默认首页：焦点横滑比分 + 头条/留洋/转会胶囊 + 详情阅读Modal） -->
         <NewsHome
           v-if="activeTab === 'news'"
           :matches="matches"
           @select-match="onSelectMatch"
         />
 
-        <!-- Tab 2: ⚽ 【比赛】页 (顶部中立轮次/联赛下拉 + 中立比分列表 + 详情页子Tab) -->
+        <!-- Tab 2: 【比赛】页 (顶部中立轮次/联赛下拉 + 中立比分列表 + 详情页子Tab) -->
         <template v-else-if="activeTab === 'matches'">
           <!-- 比赛列表瀑布流 -->
           <MatchList
@@ -41,13 +41,13 @@
           />
         </template>
 
-        <!-- Tab 3: 🔥 【社区】页 (虎扑经典热帖流：热门/最新切换 + 亮评互动) -->
+        <!-- Tab 3: 【社区】页 (虎扑经典热帖流：热门/最新切换 + 亮评互动) -->
         <FanCommunity
           v-else-if="activeTab === 'community'"
           @select-match="onSelectMatch"
         />
 
-        <!-- Tab 4: 📊 【数据】页 (顶部左侧联赛下拉选择器 + 顶部右侧：积分榜 / 射手/助攻榜 / 转会动态) -->
+        <!-- Tab 4: 【数据】页 (顶部左侧联赛下拉选择器 + 顶部右侧：积分榜 / 射手/助攻榜 / 转会动态) -->
         <StandingsBoard
           v-else-if="activeTab === 'standings'"
         />
@@ -59,7 +59,7 @@
         @update:activeTab="changeTab"
       />
 
-      <!-- 4. 隐藏式「主帅私人手机模拟器」Drawer/Modal (点击顶栏 📱 呼出，完全脱离公开媒体流) -->
+      <!-- 4. 隐藏式「主帅私人手机模拟器」Drawer/Modal (点击顶栏手机图标呼出，完全脱离公开媒体流) -->
       <PhoneDrawer
         :isOpen="isPhoneOpen"
         @close="isPhoneOpen = false"

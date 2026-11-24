@@ -4,11 +4,14 @@
     <!-- 1. 顶部：焦点赛事横滑区 (Match Ticker) -->
     <section class="space-y-1.5 px-3 pt-3">
       <div class="flex items-center justify-between text-xs text-slate-400 px-1">
-        <span class="font-bold flex items-center space-x-1.5 text-slate-200">
-          <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+        <span class="font-bold inline-flex items-center gap-1.5 text-slate-200">
+          <Icon icon="lucide:activity" class="w-3.5 h-3.5 text-emerald-400 animate-pulse" />
           <span>焦点战报 · 即时比分</span>
         </span>
-        <span class="text-[10px] text-slate-500">左右横滑查看 ›</span>
+        <span class="text-[10px] text-slate-500 inline-flex items-center gap-0.5">
+          <span>左右横滑</span>
+          <Icon icon="lucide:chevron-right" class="w-3 h-3" />
+        </span>
       </div>
 
       <!-- 横滑卡片轨道 -->
@@ -21,23 +24,31 @@
         >
           <!-- 联赛与状态标签 -->
           <div class="flex items-center justify-between text-[10px] pb-2 border-b border-slate-800/80">
-            <span class="font-bold text-slate-300 flex items-center space-x-1">
+            <span class="font-bold text-slate-300 inline-flex items-center gap-1.5">
+              <Icon :icon="ticker.league_flag || 'circle-flags:eu'" class="w-3.5 h-3.5 rounded-full" />
               <span>{{ ticker.league_short }}</span>
-              <span v-if="ticker.is_overseas" class="bg-red-950 text-red-300 border border-red-800 px-1.5 py-0.2 rounded font-bold text-[9px]">
-                🇨🇳 留洋
+              <span v-if="ticker.is_overseas" class="inline-flex items-center gap-0.5 bg-red-950 text-red-300 border border-red-800 px-1.5 py-0.2 rounded font-bold text-[9px]">
+                <Icon icon="circle-flags:cn" class="w-2.5 h-2.5" />
+                <span>留洋</span>
               </span>
             </span>
-            <span class="bg-slate-950 text-emerald-400 px-2 py-0.5 rounded font-mono font-bold border border-emerald-950">
-              {{ ticker.time }}
+            <span class="inline-flex items-center gap-1 bg-slate-950 text-emerald-400 px-2 py-0.5 rounded font-mono font-bold border border-emerald-950 text-[10px]">
+              <Icon icon="lucide:check-circle" class="w-2.5 h-2.5" />
+              <span>{{ ticker.time }}</span>
             </span>
           </div>
 
           <!-- 主客对阵比分 -->
           <div class="py-2.5 flex items-center justify-between">
             <!-- 主队 -->
-            <div class="flex-1 text-center min-w-0 pr-1">
-              <div class="text-base">{{ ticker.home_logo }}</div>
-              <div class="text-xs font-bold text-white truncate mt-1">{{ ticker.home_team }}</div>
+            <div class="flex-1 text-center min-w-0 pr-1 flex flex-col items-center">
+              <div
+                class="w-7 h-7 rounded-full flex items-center justify-center font-bold text-[10px] text-white border border-slate-700 shadow-sm"
+                :style="{ backgroundColor: ticker.home_color || '#334155' }"
+              >
+                {{ ticker.home_code || ticker.home_team.slice(0, 2) }}
+              </div>
+              <div class="text-xs font-bold text-white truncate mt-1 w-full">{{ ticker.home_team }}</div>
             </div>
 
             <!-- 比分 -->
@@ -49,59 +60,65 @@
             </div>
 
             <!-- 客队 -->
-            <div class="flex-1 text-center min-w-0 pl-1">
-              <div class="text-base">{{ ticker.away_logo }}</div>
-              <div class="text-xs font-bold text-white truncate mt-1">{{ ticker.away_team }}</div>
+            <div class="flex-1 text-center min-w-0 pl-1 flex flex-col items-center">
+              <div
+                class="w-7 h-7 rounded-full flex items-center justify-center font-bold text-[10px] text-white border border-slate-700 shadow-sm"
+                :style="{ backgroundColor: ticker.away_color || '#334155' }"
+              >
+                {{ ticker.away_code || ticker.away_team.slice(0, 2) }}
+              </div>
+              <div class="text-xs font-bold text-white truncate mt-1 w-full">{{ ticker.away_team }}</div>
             </div>
           </div>
 
-          <!-- 亮点一句话 -->
-          <div class="text-[10px] text-slate-400 bg-slate-950 px-2 py-1 rounded truncate border border-slate-850">
-            ⚡ {{ ticker.highlights }}
+          <!-- 亮点数据行 -->
+          <div class="text-[10px] text-slate-400 bg-slate-950 px-2 py-1 rounded truncate border border-slate-850 inline-flex items-center gap-1.5 w-full">
+            <Icon icon="lucide:zap" class="w-3 h-3 text-amber-400 shrink-0" />
+            <span class="truncate">{{ ticker.highlights }}</span>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- 2. 二级轻量胶囊筛选 (严格 3 个：全部头条 | 🇨🇳 留洋 | 转会) -->
+    <!-- 2. 二级轻量胶囊筛选 (全部头条 | 留洋专区 | 转会动态) -->
     <section class="px-3">
       <div class="bg-slate-900 border border-slate-800 p-1 rounded-xl flex items-center space-x-1 text-xs">
         <button
           @click="activeCategory = 'headline'"
           :class="[
-            'flex-1 py-1.5 rounded-lg font-bold text-center transition flex items-center justify-center space-x-1',
+            'flex-1 py-1.5 rounded-lg font-bold text-center transition inline-flex items-center justify-center gap-1.5',
             activeCategory === 'headline'
               ? 'bg-emerald-600 text-white shadow-sm font-black'
               : 'text-slate-400 hover:text-white'
           ]"
         >
-          <span>🔥</span>
+          <Icon icon="ri:fire-fill" class="w-3.5 h-3.5 text-rose-400" />
           <span>全部头条</span>
         </button>
 
         <button
           @click="activeCategory = 'overseas'"
           :class="[
-            'flex-1 py-1.5 rounded-lg font-bold text-center transition flex items-center justify-center space-x-1',
+            'flex-1 py-1.5 rounded-lg font-bold text-center transition inline-flex items-center justify-center gap-1.5',
             activeCategory === 'overseas'
               ? 'bg-red-700 text-white shadow-sm font-black'
               : 'text-slate-400 hover:text-white'
           ]"
         >
-          <span>🇨🇳</span>
+          <Icon icon="circle-flags:cn" class="w-3.5 h-3.5" />
           <span>留洋专区</span>
         </button>
 
         <button
           @click="activeCategory = 'transfer'"
           :class="[
-            'flex-1 py-1.5 rounded-lg font-bold text-center transition flex items-center justify-center space-x-1',
+            'flex-1 py-1.5 rounded-lg font-bold text-center transition inline-flex items-center justify-center gap-1.5',
             activeCategory === 'transfer'
               ? 'bg-emerald-600 text-white shadow-sm font-black'
               : 'text-slate-400 hover:text-white'
           ]"
         >
-          <span>🚨</span>
+          <Icon icon="tabler:arrows-exchange" class="w-3.5 h-3.5 text-emerald-300" />
           <span>转会动态</span>
         </button>
       </div>
@@ -111,15 +128,16 @@
     <section class="px-3 space-y-2.5">
       <!-- 留洋时间线专栏提示（当在留洋专区时） -->
       <div v-if="activeCategory === 'overseas'" class="bg-slate-900/90 border border-red-900/40 rounded-xl p-2.5 flex items-center justify-between text-xs">
-        <div class="flex items-center space-x-2">
-          <span class="text-base">🇨🇳</span>
+        <div class="inline-flex items-center gap-2">
+          <Icon icon="circle-flags:cn" class="w-5 h-5" />
           <div>
-            <div class="font-bold text-slate-200">中国籍主教练欧洲执教动态</div>
-            <div class="text-[10px] text-slate-400">时间倒序跟踪 · 维尔通奇迹冲甲至奥波莱奥德拉</div>
+            <div class="font-bold text-slate-200">中国籍主帅欧洲执教战报</div>
+            <div class="text-[10px] text-slate-400">时间倒序跟踪 · 维尔通冲甲至奥波莱奥德拉</div>
           </div>
         </div>
-        <span class="text-[10px] bg-red-950 text-red-300 border border-red-800 px-2 py-0.5 rounded font-mono font-bold">
-          全记录
+        <span class="inline-flex items-center gap-1 text-[10px] bg-red-950 text-red-300 border border-red-800 px-2 py-0.5 rounded font-mono font-bold">
+          <Icon icon="lucide:archive" class="w-2.5 h-2.5" />
+          <span>留洋档案</span>
         </span>
       </div>
 
@@ -132,16 +150,20 @@
       >
         <!-- 标签与来源 -->
         <div class="flex items-center justify-between text-[10px]">
-          <div class="flex items-center space-x-2">
+          <div class="inline-flex items-center gap-2">
             <span :class="[
-              'px-1.5 py-0.5 rounded font-bold border',
+              'inline-flex items-center gap-1 px-1.5 py-0.5 rounded font-bold border',
               item.is_overseas ? 'bg-red-950 text-red-300 border-red-800' : 'bg-slate-800 text-teal-300 border-teal-900/40'
             ]">
-              {{ item.tag || (item.is_overseas ? '留洋报道' : '国际足球') }}
+              <Icon :icon="item.is_overseas ? 'circle-flags:cn' : 'circle-flags:eu'" class="w-2.5 h-2.5" />
+              <span>{{ item.tag || (item.is_overseas ? '留洋报道' : '国际足球') }}</span>
             </span>
             <span class="text-slate-400 font-medium">{{ item.source }}</span>
           </div>
-          <span class="text-slate-500 font-mono">{{ item.time }}</span>
+          <span class="text-slate-500 font-mono inline-flex items-center gap-1">
+            <Icon icon="lucide:clock" class="w-2.5 h-2.5" />
+            <span>{{ item.time }}</span>
+          </span>
         </div>
 
         <!-- 标题 -->
@@ -149,17 +171,26 @@
           {{ item.title }}
         </h3>
 
-        <!-- 摘要摘要 -->
+        <!-- 摘要 -->
         <p class="text-[11px] text-slate-400 leading-relaxed line-clamp-2">
           {{ item.summary }}
         </p>
 
         <!-- 底部数据栏：阅读数、评论数、作者 -->
         <div class="flex items-center justify-between text-[10px] text-slate-500 pt-1 border-t border-slate-800/60 font-sans">
-          <span>{{ item.author ? '作者: ' + item.author : '懂球云编辑部' }}</span>
-          <div class="flex items-center space-x-3">
-            <span>👁️ {{ item.reads }}</span>
-            <span>💬 {{ item.comments_count }} 评</span>
+          <span class="inline-flex items-center gap-1">
+            <Icon icon="lucide:user" class="w-2.5 h-2.5" />
+            <span>{{ item.author ? '作者: ' + item.author : '懂球云编辑部' }}</span>
+          </span>
+          <div class="inline-flex items-center gap-3">
+            <span class="inline-flex items-center gap-1">
+              <Icon icon="lucide:eye" class="w-3 h-3 text-slate-400" />
+              <span>{{ item.reads }}</span>
+            </span>
+            <span class="inline-flex items-center gap-1">
+              <Icon icon="lucide:message-circle" class="w-3 h-3 text-slate-400" />
+              <span>{{ item.comments_count }} 评</span>
+            </span>
           </div>
         </div>
       </article>
@@ -174,17 +205,20 @@
       <div class="relative w-full max-w-lg bg-slate-900 border border-slate-700 rounded-2xl shadow-2xl overflow-hidden flex flex-col max-h-[85vh] z-10">
         <!-- 弹窗顶栏 -->
         <div class="bg-slate-950 px-4 py-3 border-b border-slate-800 flex items-center justify-between">
-          <div class="flex items-center space-x-2">
+          <div class="inline-flex items-center gap-2">
             <span class="text-xs bg-emerald-950 text-emerald-400 px-2 py-0.5 rounded font-bold border border-emerald-900">
               {{ selectedArticle.source }}
             </span>
-            <span class="text-[11px] text-slate-400">{{ selectedArticle.time }}</span>
+            <span class="text-[11px] text-slate-400 inline-flex items-center gap-1">
+              <Icon icon="lucide:clock" class="w-3 h-3" />
+              <span>{{ selectedArticle.time }}</span>
+            </span>
           </div>
           <button
             @click="selectedArticle = null"
-            class="w-6 h-6 rounded-full bg-slate-800 hover:bg-slate-700 text-slate-300 hover:text-white flex items-center justify-center text-xs transition"
+            class="w-6 h-6 rounded-full bg-slate-800 hover:bg-slate-700 text-slate-300 hover:text-white inline-flex items-center justify-center text-xs transition"
           >
-            ✕
+            <Icon icon="lucide:x" class="w-3.5 h-3.5" />
           </button>
         </div>
 
@@ -195,7 +229,10 @@
           </h2>
 
           <div class="flex items-center space-x-3 text-[11px] text-slate-400 pb-2 border-b border-slate-800">
-            <span>记者: {{ selectedArticle.author || '特派报道' }}</span>
+            <span class="inline-flex items-center gap-1">
+              <Icon icon="lucide:user" class="w-3 h-3" />
+              <span>记者: {{ selectedArticle.author || '特派报道' }}</span>
+            </span>
             <span>·</span>
             <span>发布时间: {{ selectedArticle.date }}</span>
           </div>
@@ -207,16 +244,23 @@
           <!-- 模拟评论互动区 -->
           <div class="pt-4 border-t border-slate-800 space-y-2.5">
             <div class="text-[11px] font-bold text-slate-300 flex items-center justify-between">
-              <span>热门评论 ({{ selectedArticle.comments_count }})</span>
-              <span class="text-emerald-400 text-[10px]">发表评论</span>
+              <span class="inline-flex items-center gap-1.5">
+                <Icon icon="lucide:message-circle" class="w-3.5 h-3.5 text-emerald-400" />
+                <span>热门评论 ({{ selectedArticle.comments_count }})</span>
+              </span>
+              <span class="text-emerald-400 text-[10px] cursor-pointer hover:underline">发表评论</span>
             </div>
             <div class="bg-slate-950 p-2.5 rounded-lg border border-slate-850 space-y-1">
               <div class="flex items-center justify-between text-[10px]">
                 <span class="font-bold text-slate-200">Galen</span>
-                <span class="text-slate-500">刚刚 · 👍 89</span>
+                <span class="text-slate-500 inline-flex items-center gap-1">
+                  <span>刚刚 · </span>
+                  <Icon icon="lucide:thumbs-up" class="w-2.5 h-2.5 text-amber-400" />
+                  <span>89</span>
+                </span>
               </div>
               <p class="text-[10px] text-slate-400">
-                这场比赛看得真过瘾！中国教练在欧洲联赛带队拼下开门红，战术思路非常清晰。
+                这场比赛看得真过瘾！欧洲次级别联赛的节奏非常快，战术体系打出了清晰的边中结合。
               </p>
             </div>
           </div>
@@ -224,12 +268,15 @@
 
         <!-- 弹窗底栏 -->
         <div class="bg-slate-950 px-4 py-2.5 border-t border-slate-800 flex items-center justify-between text-xs">
-          <span class="text-slate-500 text-[10px]">☁️ 懂球云 · 权威足球资讯</span>
+          <span class="text-slate-500 text-[10px] inline-flex items-center gap-1">
+            <Icon icon="lucide:cloud" class="w-3 h-3 text-emerald-500" />
+            <span>懂球云 · 权威足球资讯</span>
+          </span>
           <button
             @click="selectedArticle = null"
-            class="px-3 py-1 bg-emerald-600 hover:bg-emerald-500 text-white rounded-lg font-bold text-xs transition"
+            class="px-3 py-1 bg-emerald-600 hover:bg-emerald-500 text-white rounded-lg font-bold text-xs transition inline-flex items-center gap-1"
           >
-            完成阅读
+            <span>完成阅读</span>
           </button>
         </div>
       </div>
@@ -256,19 +303,16 @@ defineEmits(['select-match'])
 const tickerMatches = ref(tickerMatchesRaw)
 const newsArticles = ref(newsArticlesRaw)
 
-// 3 个轻量胶囊筛选：'headline' (全部头条) | 'overseas' (🇨🇳 留洋) | 'transfer' (转会)
+// 3 个轻量胶囊筛选：'headline' (全部头条) | 'overseas' (留洋专区) | 'transfer' (转会动态)
 const activeCategory = ref('headline')
 const selectedArticle = ref(null)
 
 const filteredNews = computed(() => {
   if (activeCategory.value === 'headline') {
-    // 全部头条：混排世界足坛新闻与留洋新闻
     return newsArticles.value
   } else if (activeCategory.value === 'overseas') {
-    // 🇨🇳 留洋：按时间倒序展示从维尔通时期到奥波莱时期的所有中国主帅相关新闻
     return newsArticles.value.filter(n => n.category === 'overseas' || n.is_overseas)
   } else if (activeCategory.value === 'transfer') {
-    // 转会：转会流言与官方动态
     return newsArticles.value.filter(n => n.category === 'transfer')
   }
   return newsArticles.value

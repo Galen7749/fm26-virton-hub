@@ -8,12 +8,17 @@
     "time": "完赛",
     "is_overseas": true,
     "home_team": "奥波莱奥德拉",
-    "home_logo": "🔴",
+    "home_logo": "",
     "away_team": "普沃茨克维斯瓦",
-    "away_logo": "⚪",
+    "away_logo": "",
     "score_home": 2,
     "score_away": 1,
-    "highlights": "88'绝杀 · 奥波莱获波甲首胜"
+    "highlights": "88'绝杀 · 奥波莱获波甲首胜",
+    "home_code": "ODR",
+    "away_code": "WIS",
+    "home_color": "#dc2626",
+    "away_color": "#2563eb",
+    "league_flag": "circle-flags:pl"
   },
   {
     "id": "ticker_ucl_02",
@@ -24,12 +29,17 @@
     "time": "完赛",
     "is_overseas": false,
     "home_team": "皇家马德里",
-    "home_logo": "👑",
+    "home_logo": "",
     "away_team": "曼彻斯特城",
-    "away_logo": "🔵",
+    "away_logo": "",
     "score_home": 2,
     "score_away": 1,
-    "highlights": "维尼修斯传射 · 安切洛蒂捧杯"
+    "highlights": "维尼修斯传射 · 安切洛蒂捧杯",
+    "home_code": "RMA",
+    "away_code": "MCI",
+    "home_color": "#eab308",
+    "away_color": "#0ea5e9",
+    "league_flag": "circle-flags:eu"
   },
   {
     "id": "ticker_epl_03",
@@ -40,12 +50,17 @@
     "time": "完赛",
     "is_overseas": false,
     "home_team": "阿森纳",
-    "home_logo": "🔴",
+    "home_logo": "",
     "away_team": "埃弗顿",
-    "away_logo": "🔵",
+    "away_logo": "",
     "score_home": 2,
     "score_away": 0,
-    "highlights": "萨卡世界波破门"
+    "highlights": "萨卡世界波破门",
+    "home_code": "ARS",
+    "away_code": "EVE",
+    "home_color": "#ef4444",
+    "away_color": "#1d4ed8",
+    "league_flag": "circle-flags:gb-eng"
   },
   {
     "id": "ticker_jpl_04",
@@ -56,11 +71,16 @@
     "time": "完赛",
     "is_overseas": false,
     "home_team": "皇家布鲁日",
-    "home_logo": "🔵",
+    "home_logo": "",
     "away_team": "皇家安德莱赫特",
-    "away_logo": "🟣",
+    "away_logo": "",
     "score_home": 2,
     "score_away": 1,
-    "highlights": "布鲁日成功卫冕比甲冠军"
+    "highlights": "布鲁日成功卫冕比甲冠军",
+    "home_code": "CLU",
+    "away_code": "AND",
+    "home_color": "#0284c7",
+    "away_color": "#7c3aed",
+    "league_flag": "circle-flags:be"
   }
 ]
