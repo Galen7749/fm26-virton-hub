@@ -41,13 +41,18 @@
           />
         </template>
 
-        <!-- Tab 3: 【社区】页 (虎扑经典热帖流：热门/最新切换 + 亮评互动) -->
+        <!-- Tab 3: 【关注】页 (追踪当前与历史主队全维度数据：动态 | 比赛 | 阵容 | 转会) -->
+        <FollowedClubs
+          v-else-if="activeTab === 'followed'"
+        />
+
+        <!-- Tab 4: 【社区】页 (虎扑经典热帖流：热门/最新切换 + 亮评互动) -->
         <FanCommunity
           v-else-if="activeTab === 'community'"
           @select-match="onSelectMatch"
         />
 
-        <!-- Tab 4: 【数据】页 (顶部左侧联赛下拉选择器 + 顶部右侧：积分榜 / 射手/助攻榜 / 转会动态) -->
+        <!-- Tab 5: 【数据】页 (顶部左侧联赛下拉选择器 + 顶部右侧：积分榜 / 射手/助攻榜 / 转会动态) -->
         <StandingsBoard
           v-else-if="activeTab === 'standings'"
         />
@@ -80,6 +85,7 @@ import PhoneDrawer from './components/layout/PhoneDrawer.vue'
 import NewsHome from './components/news/NewsHome.vue'
 import MatchList from './components/matches/MatchList.vue'
 import MatchDetail from './components/matches/MatchDetail.vue'
+import FollowedClubs from './components/followed/FollowedClubs.vue'
 import FanCommunity from './components/community/FanCommunity.vue'
 import StandingsBoard from './components/standings/StandingsBoard.vue'
 
@@ -87,8 +93,8 @@ import StandingsBoard from './components/standings/StandingsBoard.vue'
 import allMatchesRaw from './data/all_matches.json'
 import seasonsMetaRaw from './data/seasons_meta.json'
 
-// ── 全局一级导航状态：严格限制为 4 个 Tab，默认首页为 'news' ──────
-const activeTab = ref('news') // 'news' | 'matches' | 'community' | 'standings'
+// ── 全局一级导航状态：标准 5 栏结构 (资讯 | 比赛 | 关注 | 社区 | 数据)，默认首页为 'news' ──────
+const activeTab = ref('news') // 'news' | 'matches' | 'followed' | 'community' | 'standings'
 const isPhoneOpen = ref(false)
 const selectedMatchId = ref(null)
 
