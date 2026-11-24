@@ -1,23 +1,63 @@
 <template>
   <div class="space-y-3.5 p-3.5 animate-in fade-in duration-150 pb-6">
 
-    <!-- 1. 顶部控制栏：左侧【联赛下拉选择器】 + 右侧【3个子视图切换】 -->
+    <!-- 1. 顶部控制栏：左侧【联赛分组下拉选择器 + 星标置顶】 + 右侧【3个子视图切换】 -->
     <div class="bg-slate-900 border border-slate-800 rounded-xl p-2.5 flex items-center justify-between gap-2 shadow-sm text-xs">
-      <!-- 顶部左侧：联赛下拉选择器 (带矢量国旗徽章，无 Emoji) -->
+      
+      <!-- 顶部左侧：联赛分组下拉选择器 (带矢量国旗徽章与星标收藏) -->
       <div class="inline-flex items-center gap-1.5 shrink-0">
-        <Icon :icon="currentLeague.flag_icon || 'circle-flags:eu'" class="w-4 h-4 rounded-full shrink-0" />
-        <select
-          v-model="selectedLeagueKey"
-          class="bg-slate-950 border border-slate-700 text-slate-200 text-xs font-bold rounded-lg px-2 py-1.5 focus:outline-none focus:border-emerald-500 cursor-pointer shadow-inner pr-6"
-        >
-          <option
-            v-for="lg in leaguesData.leagues"
-            :key="lg.key"
-            :value="lg.key"
+        <Icon :icon="currentLeague.flag_icon || 'circle-flags:eu'" class="w-4 h-4 rounded-full shrink-0 shadow-sm" />
+        
+        <div class="relative">
+          <select
+            v-model="selectedLeagueKey"
+            class="bg-slate-950 border border-slate-700 text-slate-200 text-xs font-bold rounded-lg pl-2 pr-6 py-1.5 focus:outline-none focus:border-emerald-500 cursor-pointer shadow-inner appearance-none"
           >
-            {{ lg.label }}
-          </option>
-        </select>
+            <!-- 分组 1：已置顶赛事 (由 localStorage 动态持久化) -->
+            <optgroup v-if="pinnedLeagues.length" label="⭐ 已置顶关注">
+              <option
+                v-for="lg in pinnedLeagues"
+                :key="'pinned-' + lg.key"
+                :value="lg.key"
+              >
+                ★ {{ lg.name }}
+              </option>
+            </optgroup>
+
+            <!-- 分组 2：热门顶级赛事 (五大联赛 + 欧冠 + 中超，默认第一顺位) -->
+            <optgroup label="🔥 热门顶级赛事">
+              <option
+                v-for="lg in popularLeagues"
+                :key="lg.key"
+                :value="lg.key"
+              >
+                {{ lg.name }}
+              </option>
+            </optgroup>
+
+            <!-- 分组 3：欧洲其他主要联赛 (波甲 / 比甲 / 比乙) -->
+            <optgroup label="🌍 欧洲其他联赛">
+              <option
+                v-for="lg in europeanLeagues"
+                :key="lg.key"
+                :value="lg.key"
+              >
+                {{ lg.name }}
+              </option>
+            </optgroup>
+          </select>
+          <Icon icon="lucide:chevron-down" class="w-3 h-3 text-slate-500 absolute right-2 top-2.5 pointer-events-none" />
+        </div>
+
+        <!-- 星标置顶切换按钮 (一键将当前联赛置顶在最上方) -->
+        <button
+          @click="togglePinCurrent"
+          class="w-7 h-7 rounded-lg border inline-flex items-center justify-center transition shadow-sm"
+          :class="isCurrentPinned ? 'bg-amber-950/80 border-amber-600/80 text-amber-400' : 'bg-slate-950 border-slate-800 text-slate-500 hover:text-slate-300'"
+          :title="isCurrentPinned ? '已置顶 · 点击取消置顶' : '点击置顶此联赛'"
+        >
+          <Icon icon="lucide:star" class="w-3.5 h-3.5" :class="{ 'fill-amber-400': isCurrentPinned }" />
+        </button>
       </div>
 
       <!-- 顶部右侧：3 个子视图切换 (积分榜 | 射手/助攻榜 | 转会动态) -->
@@ -60,9 +100,14 @@
     <!-- 2. 当前联赛基本信息条 -->
     <div class="flex items-center justify-between text-[11px] text-slate-400 px-1">
       <div class="inline-flex items-center gap-1.5 font-bold text-slate-200">
+        <Icon :icon="currentLeague.flag_icon || 'circle-flags:eu'" class="w-3.5 h-3.5 rounded-full" />
         <span>{{ currentLeague.name }}</span>
         <span class="text-slate-500">·</span>
         <span class="text-emerald-400">{{ currentLeague.season }}</span>
+        <span v-if="isCurrentPinned" class="bg-amber-950/80 text-amber-300 border border-amber-800/80 text-[9px] px-1.5 py-0.2 rounded font-bold inline-flex items-center gap-0.5">
+          <Icon icon="lucide:star" class="w-2.5 h-2.5 fill-amber-300" />
+          <span>已置顶</span>
+        </span>
       </div>
       <span class="text-slate-500 text-[10px] font-mono">{{ currentLeague.round_info }}</span>
     </div>
@@ -95,7 +140,7 @@
                 <span :class="[
                   'w-4 h-4 rounded text-[9px] font-black inline-flex items-center justify-center',
                   row.position === 1 ? 'bg-amber-500 text-slate-950 font-black' :
-                  row.position <= 3 ? 'bg-emerald-950 text-emerald-400 border border-emerald-800' :
+                  row.position <= 4 ? 'bg-emerald-950 text-emerald-400 border border-emerald-800' :
                   'text-slate-500'
                 ]">
                   {{ row.position }}
@@ -174,6 +219,9 @@
               <span class="text-[10px] text-slate-500 ml-1">({{ s.penalties }})</span>
             </div>
           </div>
+          <div v-if="!currentLeague.scorers || currentLeague.scorers.length === 0" class="py-4 text-center text-slate-500 text-xs">
+            暂无射手榜统计
+          </div>
         </div>
       </div>
 
@@ -209,6 +257,9 @@
               <span class="text-sm font-black text-amber-400">{{ a.assists }}</span>
               <span class="text-[10px] text-slate-500 ml-1">助</span>
             </div>
+          </div>
+          <div v-if="!currentLeague.assists || currentLeague.assists.length === 0" class="py-4 text-center text-slate-500 text-xs">
+            暂无助攻榜统计
           </div>
         </div>
       </div>
@@ -257,13 +308,67 @@ import standingsMultiRaw from '../../data/standings_multi.json'
 
 const leaguesData = ref(standingsMultiRaw)
 
-// 顶部左侧选中的联赛 Key：默认波甲 'pol_d1'
-const selectedLeagueKey = ref('pol_d1')
+// ── 用户收藏/置顶赛事 (持久化至 localStorage) ──────────────────────
+const PINNED_STORAGE_KEY = 'dqy_pinned_leagues'
+
+function getInitialPinned() {
+  try {
+    const raw = localStorage.getItem(PINNED_STORAGE_KEY)
+    if (raw) return JSON.parse(raw)
+  } catch (e) {
+    // ignore
+  }
+  return ['ucl', 'pl'] // 默认置顶大众最关心的欧冠与英超
+}
+
+const pinnedLeagueKeys = ref(getInitialPinned())
+
+// 默认选中置顶第一项，若无置顶则默认英超 'pl'
+const defaultSelectedKey = pinnedLeagueKeys.value.length ? pinnedLeagueKeys.value[0] : 'pl'
+const selectedLeagueKey = ref(defaultSelectedKey)
 
 // 顶部右侧子视图模式：'table' (积分榜) | 'leaders' (射手/助攻榜) | 'transfers' (转会动态)
 const subView = ref('table')
 
+// 当前激活联赛对象
 const currentLeague = computed(() => {
   return leaguesData.value.leagues.find(lg => lg.key === selectedLeagueKey.value) || leaguesData.value.leagues[0]
+})
+
+// 检查当前联赛是否已置顶
+const isCurrentPinned = computed(() => {
+  return pinnedLeagueKeys.value.includes(selectedLeagueKey.value)
+})
+
+// 切换当前联赛置顶状态
+const togglePinCurrent = () => {
+  const key = selectedLeagueKey.value
+  if (pinnedLeagueKeys.value.includes(key)) {
+    pinnedLeagueKeys.value = pinnedLeagueKeys.value.filter(k => k !== key)
+  } else {
+    pinnedLeagueKeys.value = [...pinnedLeagueKeys.value, key]
+  }
+  try {
+    localStorage.setItem(PINNED_STORAGE_KEY, JSON.stringify(pinnedLeagueKeys.value))
+  } catch (e) {
+    // ignore
+  }
+}
+
+// 分组计算：置顶赛事
+const pinnedLeagues = computed(() => {
+  return pinnedLeagueKeys.value
+    .map(key => leaguesData.value.leagues.find(lg => lg.key === key))
+    .filter(Boolean)
+})
+
+// 分组计算：热门顶级赛事 (欧冠、英超、西甲、意甲、德甲、法甲、中超)
+const popularLeagues = computed(() => {
+  return leaguesData.value.leagues.filter(lg => lg.group === 'popular')
+})
+
+// 分组计算：欧洲其他主要联赛 (波甲、比甲、比乙)
+const europeanLeagues = computed(() => {
+  return leaguesData.value.leagues.filter(lg => lg.group === 'european')
 })
 </script>

@@ -1,0 +1,535 @@
+import json
+from pathlib import Path
+
+DATA_DIR = Path(r"I:\fm26-virton-hub\web\src\data")
+
+# 1. Load existing standings.json to reuse real table data for 5 major leagues
+with open(DATA_DIR / "standings.json", "r", encoding="utf-8") as f:
+    standings_orig = json.load(f)
+
+orig_map = {lg["id"]: lg for lg in standings_orig.get("leagues", [])}
+
+# 10 Leagues Registry
+leagues_list = [
+    # 分组 1：热门与顶级杯赛 (默认排在最前)
+    {
+        "key": "ucl",
+        "name": "欧洲冠军联赛 (欧冠)",
+        "label": "欧冠",
+        "short_name": "欧冠",
+        "flag_icon": "circle-flags:eu",
+        "group": "popular",
+        "group_label": "热门与顶级赛事",
+        "has_live_data": True,
+        "season": "2025/26 赛季",
+        "round_info": "温布利决赛 · 皇马捧得第16冠",
+        "table": [
+            { "position": 1, "team_name": "皇家马德里", "played": 13, "won": 9, "drawn": 4, "lost": 0, "gf": 28, "ga": 15, "gd": 13, "points": 31, "note": "欧冠冠军 🏆 (第16冠)" },
+            { "position": 2, "team_name": "曼彻斯特城", "played": 13, "won": 8, "drawn": 4, "lost": 1, "gf": 33, "ga": 14, "gd": 19, "points": 28, "note": "欧冠亚军" },
+            { "position": 3, "team_name": "拜仁慕尼黑", "played": 12, "won": 7, "drawn": 3, "lost": 2, "gf": 24, "ga": 13, "gd": 11, "points": 24, "note": "四强" },
+            { "position": 4, "team_name": "巴黎圣日耳曼", "played": 12, "won": 6, "drawn": 2, "lost": 4, "gf": 20, "ga": 16, "gd": 4, "points": 20, "note": "四强" },
+            { "position": 5, "team_name": "阿森纳", "played": 10, "won": 5, "drawn": 3, "lost": 2, "gf": 19, "ga": 8, "gd": 11, "points": 18, "note": "八强" },
+            { "position": 6, "team_name": "多特蒙德", "played": 10, "won": 5, "drawn": 2, "lost": 3, "gf": 17, "ga": 11, "gd": 6, "points": 17, "note": "八强" }
+        ],
+        "scorers": [
+            { "rank": 1, "player": "基利安·姆巴佩", "team": "皇家马德里", "goals": 10, "penalties": 2, "matches": 12 },
+            { "rank": 2, "player": "哈里·凯恩", "team": "拜仁慕尼黑", "goals": 8, "penalties": 3, "matches": 12 },
+            { "rank": 3, "player": "维尼修斯", "team": "皇家马德里", "goals": 7, "penalties": 0, "matches": 11 }
+        ],
+        "assists": [
+            { "rank": 1, "player": "维尼修斯", "team": "皇家马德里", "assists": 6, "matches": 11 },
+            { "rank": 2, "player": "贝林厄姆", "team": "皇家马德里", "assists": 5, "matches": 12 }
+        ],
+        "transfers": [
+            { "date": "2026-06-03", "type": "重磅官宣", "player": "基利安·姆巴佩", "from": "巴黎圣日耳曼", "to": "皇家马德里", "fee": "自由身免签加盟" }
+        ]
+    },
+    {
+        "key": "pl",
+        "name": "英格兰足球超级联赛 (英超)",
+        "label": "英超",
+        "short_name": "英超",
+        "flag_icon": "circle-flags:gb-eng",
+        "group": "popular",
+        "group_label": "热门与顶级赛事",
+        "has_live_data": True,
+        "season": "2025/26 赛季",
+        "round_info": "第 38 轮 赛季收官",
+        "table": [
+            { "position": 1, "team_name": "曼彻斯特城", "played": 38, "won": 28, "drawn": 7, "lost": 3, "gf": 96, "ga": 34, "gd": 62, "points": 91, "note": "英超冠军 🏆" },
+            { "position": 2, "team_name": "阿森纳", "played": 38, "won": 28, "drawn": 5, "lost": 5, "gf": 91, "ga": 29, "gd": 62, "points": 89, "note": "欧冠正赛" },
+            { "position": 3, "team_name": "利物浦", "played": 38, "won": 24, "drawn": 10, "lost": 4, "gf": 86, "ga": 41, "gd": 45, "points": 82, "note": "欧冠正赛" },
+            { "position": 4, "team_name": "阿斯顿维拉", "played": 38, "won": 20, "drawn": 8, "lost": 10, "gf": 76, "ga": 61, "gd": 15, "points": 68, "note": "欧冠正赛" },
+            { "position": 5, "team_name": "托特纳姆热刺", "played": 38, "won": 20, "drawn": 6, "lost": 12, "gf": 74, "ga": 61, "gd": 13, "points": 66, "note": "欧联正赛" },
+            { "position": 6, "team_name": "切尔西", "played": 38, "won": 18, "drawn": 9, "lost": 11, "gf": 77, "ga": 63, "gd": 14, "points": 63, "note": "欧协联附加赛" },
+            { "position": 7, "team_name": "纽卡斯尔联", "played": 38, "won": 18, "drawn": 6, "lost": 14, "gf": 85, "ga": 62, "gd": 23, "points": 60 },
+            { "position": 8, "team_name": "曼彻斯特联", "played": 38, "won": 18, "drawn": 6, "lost": 14, "gf": 57, "ga": 58, "gd": -1, "points": 60 }
+        ],
+        "scorers": [
+            { "rank": 1, "player": "埃尔林·哈兰德", "team": "曼彻斯特城", "goals": 27, "penalties": 5, "matches": 35 },
+            { "rank": 2, "player": "科尔·帕尔默", "team": "切尔西", "goals": 22, "penalties": 8, "matches": 34 },
+            { "rank": 3, "player": "亚历山大·伊萨克", "team": "纽卡斯尔联", "goals": 21, "penalties": 4, "matches": 32 }
+        ],
+        "assists": [
+            { "rank": 1, "player": "沃特金斯", "team": "阿斯顿维拉", "assists": 13, "matches": 37 },
+            { "rank": 2, "player": "科尔·帕尔默", "team": "切尔西", "assists": 11, "matches": 34 }
+        ],
+        "transfers": [
+            { "date": "2026-07-20", "type": "官宣", "player": "萨维尼奥", "from": "特鲁瓦", "to": "曼彻斯特城", "fee": "转会费 3500万欧" },
+            { "date": "2026-07-18", "type": "官宣", "player": "卡拉菲奥里", "from": "博洛尼亚", "to": "阿森纳", "fee": "转会费 4500万欧" }
+        ]
+    },
+    {
+        "key": "laliga",
+        "name": "西班牙足球甲级联赛 (西甲)",
+        "label": "西甲",
+        "short_name": "西甲",
+        "flag_icon": "circle-flags:es",
+        "group": "popular",
+        "group_label": "热门与顶级赛事",
+        "has_live_data": True,
+        "season": "2025/26 赛季",
+        "round_info": "第 38 轮 赛季收官",
+        "table": [
+            { "position": 1, "team_name": "皇家马德里", "played": 38, "won": 29, "drawn": 8, "lost": 1, "gf": 87, "ga": 26, "gd": 61, "points": 95, "note": "西甲冠军 🏆" },
+            { "position": 2, "team_name": "巴塞罗那", "played": 38, "won": 26, "drawn": 7, "lost": 5, "gf": 79, "ga": 44, "gd": 35, "points": 85, "note": "欧冠正赛" },
+            { "position": 3, "team_name": "赫罗纳", "played": 38, "won": 25, "drawn": 6, "lost": 7, "gf": 85, "ga": 46, "gd": 39, "points": 81, "note": "欧冠正赛" },
+            { "position": 4, "team_name": "马德里竞技", "played": 38, "won": 24, "drawn": 4, "lost": 10, "gf": 70, "ga": 43, "gd": 27, "points": 76, "note": "欧冠正赛" },
+            { "position": 5, "team_name": "毕尔巴鄂竞技", "played": 38, "won": 19, "drawn": 11, "lost": 8, "gf": 61, "ga": 37, "gd": 24, "points": 68, "note": "欧联正赛" },
+            { "position": 6, "team_name": "皇家社会", "played": 38, "won": 16, "drawn": 12, "lost": 10, "gf": 51, "ga": 39, "gd": 12, "points": 60 }
+        ],
+        "scorers": [
+            { "rank": 1, "player": "多夫比克", "team": "赫罗纳", "goals": 24, "penalties": 7, "matches": 36 },
+            { "rank": 2, "player": "亚历山大·瑟洛特", "team": "比利亚雷亚尔", "goals": 23, "penalties": 0, "matches": 34 },
+            { "rank": 3, "player": "贝林厄姆", "team": "皇家马德里", "goals": 19, "penalties": 1, "matches": 28 }
+        ],
+        "assists": [
+            { "rank": 1, "player": "巴埃纳", "team": "比利亚雷亚尔", "assists": 14, "matches": 34 },
+            { "rank": 2, "player": "尼科·威廉斯", "team": "毕尔巴鄂竞技", "assists": 11, "matches": 31 }
+        ],
+        "transfers": [
+            { "date": "2026-07-22", "type": "转出", "player": "菲利克斯", "from": "马德里竞技", "to": "切尔西", "fee": "转会费 5200万欧" }
+        ]
+    },
+    {
+        "key": "serie_a",
+        "name": "意大利足球甲级联赛 (意甲)",
+        "label": "意甲",
+        "short_name": "意甲",
+        "flag_icon": "circle-flags:it",
+        "group": "popular",
+        "group_label": "热门与顶级赛事",
+        "has_live_data": True,
+        "season": "2025/26 赛季",
+        "round_info": "第 38 轮 赛季收官",
+        "table": [
+            { "position": 1, "team_name": "国际米兰", "played": 38, "won": 29, "drawn": 7, "lost": 2, "gf": 89, "ga": 22, "gd": 67, "points": 94, "note": "意甲冠军 🏆" },
+            { "position": 2, "team_name": "AC米兰", "played": 38, "won": 22, "drawn": 9, "lost": 7, "gf": 76, "ga": 49, "gd": 27, "points": 75, "note": "欧冠正赛" },
+            { "position": 3, "team_name": "尤文图斯", "played": 38, "won": 19, "drawn": 14, "lost": 5, "gf": 54, "ga": 31, "gd": 23, "points": 71, "note": "欧冠正赛" },
+            { "position": 4, "team_name": "亚特兰大", "played": 38, "won": 21, "drawn": 6, "lost": 11, "gf": 72, "ga": 42, "gd": 30, "points": 69, "note": "欧冠正赛" },
+            { "position": 5, "team_name": "博洛尼亚", "played": 38, "won": 18, "drawn": 14, "lost": 6, "gf": 54, "ga": 32, "gd": 22, "points": 68, "note": "欧冠资格" },
+            { "position": 6, "team_name": "罗马", "played": 38, "won": 18, "drawn": 9, "lost": 11, "gf": 65, "ga": 46, "gd": 19, "points": 63 }
+        ],
+        "scorers": [
+            { "rank": 1, "player": "劳塔罗·马丁内斯", "team": "国际米兰", "goals": 24, "penalties": 2, "matches": 33 },
+            { "rank": 2, "player": "弗拉霍维奇", "team": "尤文图斯", "goals": 16, "penalties": 2, "matches": 33 }
+        ],
+        "assists": [
+            { "rank": 1, "player": "迪巴拉", "team": "罗马", "assists": 9, "matches": 28 },
+            { "rank": 2, "player": "莱奥", "team": "AC米兰", "assists": 9, "matches": 34 }
+        ],
+        "transfers": [
+            { "date": "2026-07-12", "type": "官宣", "player": "齐尔克泽", "from": "博洛尼亚", "to": "曼彻斯特联", "fee": "解约金 4250万欧" }
+        ]
+    },
+    {
+        "key": "bundesliga",
+        "name": "德国足球甲级联赛 (德甲)",
+        "label": "德甲",
+        "short_name": "德甲",
+        "flag_icon": "circle-flags:de",
+        "group": "popular",
+        "group_label": "热门与顶级赛事",
+        "has_live_data": True,
+        "season": "2025/26 赛季",
+        "round_info": "第 34 轮 赛季收官",
+        "table": [
+            { "position": 1, "team_name": "勒沃库森", "played": 34, "won": 28, "drawn": 6, "lost": 0, "gf": 89, "ga": 24, "gd": 65, "points": 90, "note": "德甲不败夺冠 🏆" },
+            { "position": 2, "team_name": "斯图加特", "played": 34, "won": 23, "drawn": 4, "lost": 7, "gf": 78, "ga": 39, "gd": 39, "points": 73, "note": "欧冠正赛" },
+            { "position": 3, "team_name": "拜仁慕尼黑", "played": 34, "won": 23, "drawn": 3, "lost": 8, "gf": 94, "ga": 45, "gd": 49, "points": 72, "note": "欧冠正赛" },
+            { "position": 4, "team_name": "RB莱比锡", "played": 34, "won": 19, "drawn": 8, "lost": 7, "gf": 77, "ga": 39, "gd": 38, "points": 65, "note": "欧冠正赛" },
+            { "position": 5, "team_name": "多特蒙德", "played": 34, "won": 18, "drawn": 9, "lost": 7, "gf": 68, "ga": 43, "gd": 25, "points": 63, "note": "欧冠资格" },
+            { "position": 6, "team_name": "法兰克福", "played": 34, "won": 11, "drawn": 14, "lost": 9, "gf": 51, "ga": 50, "gd": 1, "points": 47 }
+        ],
+        "scorers": [
+            { "rank": 1, "player": "哈里·凯恩", "team": "拜仁慕尼黑", "goals": 36, "penalties": 5, "matches": 32 },
+            { "rank": 2, "player": "塞罗·吉拉西", "team": "斯图加特", "goals": 28, "penalties": 4, "matches": 28 }
+        ],
+        "assists": [
+            { "rank": 1, "player": "格里马尔多", "team": "勒沃库森", "assists": 13, "matches": 33 },
+            { "rank": 2, "player": "萨内", "team": "拜仁慕尼黑", "assists": 11, "matches": 27 }
+        ],
+        "transfers": [
+            { "date": "2026-07-16", "type": "官宣", "player": "帕利尼亚", "from": "富勒姆", "to": "拜仁慕尼黑", "fee": "转会费 5100万欧" }
+        ]
+    },
+    {
+        "key": "ligue1",
+        "name": "法国足球甲级联赛 (法甲)",
+        "label": "法甲",
+        "short_name": "法甲",
+        "flag_icon": "circle-flags:fr",
+        "group": "popular",
+        "group_label": "热门与顶级赛事",
+        "has_live_data": True,
+        "season": "2025/26 赛季",
+        "round_info": "第 34 轮 赛季收官",
+        "table": [
+            { "position": 1, "team_name": "巴黎圣日耳曼", "played": 34, "won": 22, "drawn": 10, "lost": 2, "gf": 81, "ga": 33, "gd": 48, "points": 76, "note": "法甲冠军 🏆" },
+            { "position": 2, "team_name": "摩纳哥", "played": 34, "won": 20, "drawn": 7, "lost": 7, "gf": 68, "ga": 42, "gd": 26, "points": 67, "note": "欧冠正赛" },
+            { "position": 3, "team_name": "布雷斯特", "played": 34, "won": 17, "drawn": 10, "lost": 7, "gf": 52, "ga": 34, "gd": 18, "points": 61, "note": "欧冠正赛" },
+            { "position": 4, "team_name": "里尔", "played": 34, "won": 16, "drawn": 11, "lost": 7, "gf": 52, "ga": 34, "gd": 18, "points": 59, "note": "欧冠资格赛" },
+            { "position": 5, "team_name": "尼斯", "played": 34, "won": 15, "drawn": 10, "lost": 9, "gf": 40, "ga": 29, "gd": 11, "points": 55, "note": "欧联正赛" },
+            { "position": 6, "team_name": "里昂", "played": 34, "won": 16, "drawn": 5, "lost": 13, "gf": 49, "ga": 55, "gd": -6, "points": 53 }
+        ],
+        "scorers": [
+            { "rank": 1, "player": "基利安·姆巴佩", "team": "巴黎圣日耳曼", "goals": 27, "penalties": 6, "matches": 29 },
+            { "rank": 2, "player": "乔纳森·戴维", "team": "里尔", "goals": 19, "penalties": 2, "matches": 34 }
+        ],
+        "assists": [
+            { "rank": 1, "player": "登贝莱", "team": "巴黎圣日耳曼", "assists": 8, "matches": 26 }
+        ],
+        "transfers": [
+            { "date": "2026-07-25", "type": "官宣", "player": "若昂·内维斯", "from": "本菲卡", "to": "巴黎圣日耳曼", "fee": "转会费 6000万欧" }
+        ]
+    },
+    {
+        "key": "csl",
+        "name": "中国足球超级联赛 (中超)",
+        "label": "中超",
+        "short_name": "中超",
+        "flag_icon": "circle-flags:cn",
+        "group": "popular",
+        "group_label": "热门与顶级赛事",
+        "has_live_data": True,
+        "season": "2026 赛季",
+        "round_info": "第 22 轮 激战进行中",
+        "table": [
+            { "position": 1, "team_name": "上海海港", "played": 22, "won": 20, "drawn": 2, "lost": 0, "gf": 72, "ga": 20, "gd": 52, "points": 62, "note": "亚冠精英联赛" },
+            { "position": 2, "team_name": "上海申花", "played": 22, "won": 18, "drawn": 3, "lost": 1, "gf": 55, "ga": 11, "gd": 44, "points": 57, "note": "亚冠精英联赛" },
+            { "position": 3, "team_name": "成都蓉城", "played": 22, "won": 16, "drawn": 3, "lost": 3, "gf": 51, "ga": 21, "gd": 30, "points": 51, "note": "亚冠2级联赛" },
+            { "position": 4, "team_name": "北京国安", "played": 22, "won": 12, "drawn": 4, "lost": 6, "gf": 44, "ga": 28, "gd": 16, "points": 40 },
+            { "position": 5, "team_name": "山东泰山", "played": 22, "won": 10, "drawn": 4, "lost": 8, "gf": 38, "ga": 35, "gd": 3, "points": 34 },
+            { "position": 6, "team_name": "天津津门虎", "played": 22, "won": 8, "drawn": 6, "lost": 8, "gf": 35, "ga": 33, "gd": 2, "points": 30 }
+        ],
+        "scorers": [
+            { "rank": 1, "player": "武磊", "team": "上海海港", "goals": 28, "penalties": 0, "matches": 22 },
+            { "rank": 2, "player": "孔帕尼奥", "team": "天津津门虎", "goals": 15, "penalties": 4, "matches": 20 },
+            { "rank": 3, "player": "古斯塔沃", "team": "上海海港", "goals": 14, "penalties": 0, "matches": 21 }
+        ],
+        "assists": [
+            { "rank": 1, "player": "奥斯卡", "team": "上海海港", "assists": 16, "matches": 21 },
+            { "rank": 2, "player": "巴尔加斯", "team": "上海海港", "assists": 10, "matches": 20 }
+        ],
+        "transfers": [
+            { "date": "2026-07-05", "type": "夏窗补强", "player": "费南多", "from": "山东泰山", "to": "上海申花", "fee": "租借加盟" }
+        ]
+    },
+
+    # 分组 2：欧洲其他主要联赛 (波甲、比甲、比乙)
+    {
+        "key": "pol_d1",
+        "name": "波兰甲级联赛 (波甲)",
+        "label": "波甲",
+        "short_name": "波甲",
+        "flag_icon": "circle-flags:pl",
+        "group": "european",
+        "group_label": "欧洲其他主要联赛",
+        "has_live_data": True,
+        "season": "2026/27 赛季",
+        "round_info": "第 1 轮 完赛",
+        "table": [
+            { "position": 1, "team_name": "阿尔卡格丁尼亚", "played": 1, "won": 1, "drawn": 0, "lost": 0, "gf": 3, "ga": 0, "gd": 3, "points": 3 },
+            { "position": 2, "team_name": "克拉科夫维斯瓦", "played": 1, "won": 1, "drawn": 0, "lost": 0, "gf": 2, "ga": 0, "gd": 2, "points": 3 },
+            { "position": 3, "team_name": "奥波莱奥德拉", "played": 1, "won": 1, "drawn": 0, "lost": 0, "gf": 2, "ga": 1, "gd": 1, "points": 3, "is_overseas": True },
+            { "position": 4, "team_name": "戈尔尼克莱奇纳", "played": 1, "won": 1, "drawn": 0, "lost": 0, "gf": 2, "ga": 1, "gd": 1, "points": 3 },
+            { "position": 5, "team_name": "莱吉亚格但斯克", "played": 1, "won": 0, "drawn": 1, "lost": 0, "gf": 1, "ga": 1, "gd": 0, "points": 1 },
+            { "position": 6, "team_name": "卡托维兹", "played": 1, "won": 0, "drawn": 1, "lost": 0, "gf": 1, "ga": 1, "gd": 0, "points": 1 },
+            { "position": 7, "team_name": "蒂希", "played": 1, "won": 0, "drawn": 1, "lost": 0, "gf": 0, "ga": 0, "gd": 0, "points": 1 },
+            { "position": 8, "team_name": "普沃茨克维斯瓦", "played": 1, "won": 0, "drawn": 0, "lost": 1, "gf": 1, "ga": 2, "gd": -1, "points": 0 }
+        ],
+        "scorers": [
+            { "rank": 1, "player": "切布拉", "team": "阿尔卡格丁尼亚", "goals": 2, "penalties": 0, "matches": 1 },
+            { "rank": 2, "player": "皮罗格", "team": "奥波莱奥德拉", "goals": 1, "penalties": 0, "matches": 1, "is_overseas": True },
+            { "rank": 3, "player": "卡克佩尔", "team": "奥波莱奥德拉", "goals": 1, "penalties": 0, "matches": 1, "is_overseas": True }
+        ],
+        "assists": [
+            { "rank": 1, "player": "加拉兹卡", "team": "奥波莱奥德拉", "assists": 1, "matches": 1, "is_overseas": True },
+            { "rank": 2, "player": "诺瓦克", "team": "奥波莱奥德拉", "assists": 1, "matches": 1, "is_overseas": True }
+        ],
+        "transfers": [
+            { "date": "2026-07-10", "type": "换帅", "player": "中国籍教练 (新帅)", "from": "自由身", "to": "奥波莱奥德拉", "fee": "签约2年" }
+        ]
+    },
+    {
+        "key": "bel_d1",
+        "name": "比利时甲级联赛 (比甲)",
+        "label": "比甲",
+        "short_name": "比甲",
+        "flag_icon": "circle-flags:be",
+        "group": "european",
+        "group_label": "欧洲其他主要联赛",
+        "has_live_data": True,
+        "season": "2025/26 赛季",
+        "round_info": "冠军附加赛完结",
+        "table": [
+            { "position": 1, "team_name": "皇家布鲁日", "played": 10, "won": 7, "drawn": 2, "lost": 1, "gf": 21, "ga": 9, "gd": 12, "points": 50, "note": "欧冠正赛" },
+            { "position": 2, "team_name": "皇家安德莱赫特", "played": 10, "won": 6, "drawn": 1, "lost": 3, "gf": 18, "ga": 12, "gd": 6, "points": 46, "note": "欧冠资格赛" },
+            { "position": 3, "team_name": "圣吉罗斯联合", "played": 10, "won": 5, "drawn": 2, "lost": 3, "gf": 16, "ga": 11, "gd": 5, "points": 44, "note": "欧联资格赛" },
+            { "position": 4, "team_name": "皇家亨克", "played": 10, "won": 4, "drawn": 1, "lost": 5, "gf": 14, "ga": 15, "gd": -1, "points": 37, "note": "欧协联附加赛" },
+            { "position": 5, "team_name": "安特卫普", "played": 10, "won": 3, "drawn": 0, "lost": 7, "gf": 11, "ga": 18, "gd": -7, "points": 31 },
+            { "position": 6, "team_name": "根特", "played": 10, "won": 1, "drawn": 2, "lost": 7, "gf": 8, "ga": 23, "gd": -15, "points": 26 }
+        ],
+        "scorers": [
+            { "rank": 1, "player": "多尔贝格", "team": "皇家安德莱赫特", "goals": 18, "penalties": 3, "matches": 32 },
+            { "rank": 2, "player": "奥尔森", "team": "皇家布鲁日", "goals": 16, "penalties": 1, "matches": 30 }
+        ],
+        "assists": [
+            { "rank": 1, "player": "范纳肯", "team": "皇家布鲁日", "assists": 12, "matches": 34 }
+        ],
+        "transfers": [
+            { "date": "2026-06-20", "type": "转出", "player": "德凯特拉雷", "from": "布鲁日", "to": "亚特兰大", "fee": "买断条款生效 2200万欧" }
+        ]
+    },
+    {
+        "key": "bel_d2",
+        "name": "比利时挑战者联赛 (比乙)",
+        "label": "比乙",
+        "short_name": "比乙",
+        "flag_icon": "circle-flags:be",
+        "group": "european",
+        "group_label": "欧洲其他主要联赛",
+        "has_live_data": True,
+        "season": "2025/26 赛季",
+        "round_info": "冲甲附加赛结束 · 维尔通成功冲甲",
+        "table": [
+            { "position": 1, "team_name": "皇家马斯梅赫伦", "played": 28, "won": 18, "drawn": 7, "lost": 3, "gf": 55, "ga": 22, "gd": 33, "points": 61, "note": "直接升甲" },
+            { "position": 2, "team_name": "维尔通精英", "played": 28, "won": 16, "drawn": 9, "lost": 3, "gf": 61, "ga": 37, "gd": 24, "points": 57, "note": "附加赛冠军·成功升甲 🏆", "is_overseas": True },
+            { "position": 3, "team_name": "皇家比尔肖特", "played": 28, "won": 15, "drawn": 5, "lost": 8, "gf": 43, "ga": 32, "gd": 11, "points": 50, "note": "附加赛" },
+            { "position": 4, "team_name": "聚尔特瓦勒海姆", "played": 28, "won": 14, "drawn": 6, "lost": 8, "gf": 48, "ga": 34, "gd": 14, "points": 48, "note": "附加赛" },
+            { "position": 5, "team_name": "利尔斯", "played": 28, "won": 13, "drawn": 6, "lost": 9, "gf": 45, "ga": 39, "gd": 6, "points": 45, "note": "附加赛亚军" },
+            { "position": 6, "team_name": "洛默尔", "played": 28, "won": 12, "drawn": 7, "lost": 9, "gf": 40, "ga": 33, "gd": 7, "points": 43 }
+        ],
+        "scorers": [
+            { "rank": 1, "player": "卡亚 (Kaya)", "team": "皇家马斯梅赫伦", "goals": 19, "penalties": 4, "matches": 27 },
+            { "rank": 2, "player": "吉永梦希 (Yuminoki)", "team": "维尔通精英", "goals": 14, "penalties": 0, "matches": 28, "is_overseas": True },
+            { "rank": 3, "player": "朴昇秀 (Seung-soo)", "team": "维尔通精英", "goals": 11, "penalties": 2, "matches": 26, "is_overseas": True }
+        ],
+        "assists": [
+            { "rank": 1, "player": "朴昇秀 (Seung-soo)", "team": "维尔通精英", "assists": 10, "matches": 26, "is_overseas": True }
+        ],
+        "transfers": [
+            { "date": "2026-05-28", "type": "离任", "player": "中国籍教练 (主教练)", "from": "维尔通精英", "to": "自由身", "fee": "达成解约协议" }
+        ]
+    }
+]
+
+with open(DATA_DIR / "standings_multi.json", "w", encoding="utf-8") as f:
+    json.dump({ "leagues": leagues_list }, f, ensure_ascii=False, indent=2)
+
+print(f"Generated {len(leagues_list)} leagues in standings_multi.json!")
+
+# 2. Add sample marquee matches for La Liga, Serie A, Bundesliga, Ligue 1, CSL into all_matches.json
+with open(DATA_DIR / "all_matches.json", "r", encoding="utf-8") as f:
+    matches = json.load(f)
+
+# check if we already have these leagues
+existing_leagues = {m.get("league_key") for m in matches}
+
+extra_matches = [
+    {
+        "id": 6001,
+        "league_key": "laliga",
+        "league_name": "西甲",
+        "league_badge": "西甲",
+        "league_flag": "circle-flags:es",
+        "round": 32,
+        "round_label": "第 32 轮",
+        "date": "2026-04-22 03:00",
+        "date_short": "04-22 周三",
+        "status": "FT",
+        "status_label": "完赛",
+        "is_overseas": False,
+        "home_team": "皇家马德里",
+        "home_code": "RMA",
+        "away_team": "巴塞罗那",
+        "away_code": "BAR",
+        "score_home": 3,
+        "score_away": 2,
+        "stadium": "伯纳乌球场",
+        "xg": "2.35 - 1.80",
+        "shots": "16",
+        "shots_on_target": "7",
+        "distance_km": "116.4",
+        "scorers": [
+            { "minute": 6, "player": "克里斯滕森", "player_zh": "克里斯滕森" },
+            { "minute": 18, "player": "维尼修斯", "player_zh": "维尼修斯", "assist": "巴斯克斯", "assist_zh": "巴斯克斯" },
+            { "minute": 69, "player": "费尔明", "player_zh": "费尔明" },
+            { "minute": 73, "player": "巴斯克斯", "player_zh": "巴斯克斯", "assist": "维尼修斯", "assist_zh": "维尼修斯" },
+            { "minute": "90+1", "player": "贝林厄姆", "player_zh": "贝林厄姆", "assist": "巴斯克斯", "assist_zh": "巴斯克斯", "is_stoppage": True }
+        ],
+        "news": {
+            "title": "国家德比绝杀！贝林厄姆读秒破门，皇马3-2力克巴萨稳居榜首",
+            "summary": "西班牙国家德比上演史诗级拉锯战，贝林厄姆在补时第91分钟打入绝杀进球！",
+            "reporter": "MARCA 马卡报"
+        }
+    },
+    {
+        "id": 7001,
+        "league_key": "serie_a",
+        "league_name": "意甲",
+        "league_badge": "意甲",
+        "league_flag": "circle-flags:it",
+        "round": 33,
+        "round_label": "第 33 轮",
+        "date": "2026-04-23 02:45",
+        "date_short": "04-23 周四",
+        "status": "FT",
+        "status_label": "完赛",
+        "is_overseas": False,
+        "home_team": "AC米兰",
+        "home_code": "ACM",
+        "away_team": "国际米兰",
+        "away_code": "INT",
+        "score_home": 1,
+        "score_away": 2,
+        "stadium": "圣西罗球场",
+        "xg": "1.10 - 2.15",
+        "shots": "11",
+        "shots_on_target": "4",
+        "distance_km": "114.8",
+        "scorers": [
+            { "minute": 18, "player": "阿切尔比", "player_zh": "阿切尔比" },
+            { "minute": 49, "player": "图拉姆", "player_zh": "图拉姆" },
+            { "minute": 80, "player": "托莫里", "player_zh": "托莫里" }
+        ],
+        "news": {
+            "title": "米兰德比！国米2-1力克AC米兰，提前5轮锁定队史第20座意甲冠军",
+            "summary": "国米在圣西罗打出经典反击，两星荣耀加身！",
+            "reporter": "米兰体育报"
+        }
+    },
+    {
+        "id": 8001,
+        "league_key": "bundesliga",
+        "league_name": "德甲",
+        "league_badge": "德甲",
+        "league_flag": "circle-flags:de",
+        "round": 27,
+        "round_label": "第 27 轮",
+        "date": "2026-03-31 01:30",
+        "date_short": "03-31 周二",
+        "status": "FT",
+        "status_label": "完赛",
+        "is_overseas": False,
+        "home_team": "拜仁慕尼黑",
+        "home_code": "FCB",
+        "away_team": "多特蒙德",
+        "away_code": "BVB",
+        "score_home": 0,
+        "score_away": 2,
+        "stadium": "安联球场",
+        "xg": "1.40 - 1.65",
+        "shots": "15",
+        "shots_on_target": "5",
+        "distance_km": "118.0",
+        "scorers": [
+            { "minute": 10, "player": "阿德耶米", "player_zh": "阿德耶米" },
+            { "minute": 83, "player": "莱尔森", "player_zh": "莱尔森" }
+        ],
+        "news": {
+            "title": "多特蒙德客场2-0力克拜仁，十年来首次在安联球场取胜",
+            "summary": "阿德耶米闪击破门，拜仁全场进攻受阻。",
+            "reporter": "Kicker 踢球者"
+        }
+    },
+    {
+        "id": 9001,
+        "league_key": "ligue1",
+        "league_name": "法甲",
+        "league_badge": "法甲",
+        "league_flag": "circle-flags:fr",
+        "round": 27,
+        "round_label": "第 27 轮",
+        "date": "2026-04-01 02:45",
+        "date_short": "04-01 周三",
+        "status": "FT",
+        "status_label": "完赛",
+        "is_overseas": False,
+        "home_team": "马赛",
+        "home_code": "MAR",
+        "away_team": "巴黎圣日耳曼",
+        "away_code": "PSG",
+        "score_home": 0,
+        "score_away": 2,
+        "stadium": "韦洛德罗姆球场",
+        "xg": "0.90 - 1.85",
+        "shots": "9",
+        "shots_on_target": "3",
+        "distance_km": "113.5",
+        "scorers": [
+            { "minute": 53, "player": "维蒂尼亚", "player_zh": "维蒂尼亚" },
+            { "minute": 85, "player": "贡萨洛·拉莫斯", "player_zh": "拉莫斯" }
+        ],
+        "news": {
+            "title": "法国国家德比：十人巴黎客场2-0击败马赛",
+            "summary": "巴黎在少打一人局面下凭借坚韧防守与高效反击带走三分。",
+            "reporter": "L'Équipe 队报"
+        }
+    },
+    {
+        "id": 9501,
+        "league_key": "csl",
+        "league_name": "中超",
+        "league_badge": "中超",
+        "league_flag": "circle-flags:cn",
+        "round": 22,
+        "round_label": "第 22 轮",
+        "date": "2026-08-17 19:35",
+        "date_short": "08-17 周一",
+        "status": "FT",
+        "status_label": "完赛",
+        "is_overseas": False,
+        "home_team": "上海申花",
+        "home_code": "SHS",
+        "away_team": "上海海港",
+        "away_code": "SHP",
+        "score_home": 3,
+        "score_away": 1,
+        "stadium": "上海体育场",
+        "xg": "2.10 - 1.45",
+        "shots": "15",
+        "shots_on_target": "6",
+        "distance_km": "117.2",
+        "scorers": [
+            { "minute": 12, "player": "王燊超", "player_zh": "王燊超" },
+            { "minute": 79, "player": "于汉超", "player_zh": "于汉超" },
+            { "minute": 82, "player": "路易斯", "player_zh": "路易斯" },
+            { "minute": "90+5", "player": "路易斯", "player_zh": "路易斯" }
+        ],
+        "news": {
+            "title": "上海德比惊天逆转！于汉超传射，申花3-1力破海港不败金身",
+            "summary": "上海体育场见证激情德比战，申花在最后15分钟连入三球完成绝地大反击！",
+            "reporter": "体坛周报"
+        }
+    }
+]
+
+# filter out any existing duplicates
+extra_to_add = [m for m in extra_matches if m["id"] not in {x["id"] for x in matches}]
+matches.extend(extra_to_add)
+
+with open(DATA_DIR / "all_matches.json", "w", encoding="utf-8") as f:
+    json.dump(matches, f, ensure_ascii=False, indent=2)
+
+print(f"Added {len(extra_to_add)} marquee league matches to all_matches.json!")

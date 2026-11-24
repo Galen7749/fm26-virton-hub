@@ -598,5 +598,252 @@
     "league_flag": "circle-flags:be",
     "home_code": "皇家马",
     "away_code": "贝弗伦"
+  },
+  {
+    "id": 6001,
+    "league_key": "laliga",
+    "league_name": "西甲",
+    "league_badge": "西甲",
+    "league_flag": "circle-flags:es",
+    "round": 32,
+    "round_label": "第 32 轮",
+    "date": "2026-04-22 03:00",
+    "date_short": "04-22 周三",
+    "status": "FT",
+    "status_label": "完赛",
+    "is_overseas": false,
+    "home_team": "皇家马德里",
+    "home_code": "RMA",
+    "away_team": "巴塞罗那",
+    "away_code": "BAR",
+    "score_home": 3,
+    "score_away": 2,
+    "stadium": "伯纳乌球场",
+    "xg": "2.35 - 1.80",
+    "shots": "16",
+    "shots_on_target": "7",
+    "distance_km": "116.4",
+    "scorers": [
+      {
+        "minute": 6,
+        "player": "克里斯滕森",
+        "player_zh": "克里斯滕森"
+      },
+      {
+        "minute": 18,
+        "player": "维尼修斯",
+        "player_zh": "维尼修斯",
+        "assist": "巴斯克斯",
+        "assist_zh": "巴斯克斯"
+      },
+      {
+        "minute": 69,
+        "player": "费尔明",
+        "player_zh": "费尔明"
+      },
+      {
+        "minute": 73,
+        "player": "巴斯克斯",
+        "player_zh": "巴斯克斯",
+        "assist": "维尼修斯",
+        "assist_zh": "维尼修斯"
+      },
+      {
+        "minute": "90+1",
+        "player": "贝林厄姆",
+        "player_zh": "贝林厄姆",
+        "assist": "巴斯克斯",
+        "assist_zh": "巴斯克斯",
+        "is_stoppage": true
+      }
+    ],
+    "news": {
+      "title": "国家德比绝杀！贝林厄姆读秒破门，皇马3-2力克巴萨稳居榜首",
+      "summary": "西班牙国家德比上演史诗级拉锯战，贝林厄姆在补时第91分钟打入绝杀进球！",
+      "reporter": "MARCA 马卡报"
+    }
+  },
+  {
+    "id": 7001,
+    "league_key": "serie_a",
+    "league_name": "意甲",
+    "league_badge": "意甲",
+    "league_flag": "circle-flags:it",
+    "round": 33,
+    "round_label": "第 33 轮",
+    "date": "2026-04-23 02:45",
+    "date_short": "04-23 周四",
+    "status": "FT",
+    "status_label": "完赛",
+    "is_overseas": false,
+    "home_team": "AC米兰",
+    "home_code": "ACM",
+    "away_team": "国际米兰",
+    "away_code": "INT",
+    "score_home": 1,
+    "score_away": 2,
+    "stadium": "圣西罗球场",
+    "xg": "1.10 - 2.15",
+    "shots": "11",
+    "shots_on_target": "4",
+    "distance_km": "114.8",
+    "scorers": [
+      {
+        "minute": 18,
+        "player": "阿切尔比",
+        "player_zh": "阿切尔比"
+      },
+      {
+        "minute": 49,
+        "player": "图拉姆",
+        "player_zh": "图拉姆"
+      },
+      {
+        "minute": 80,
+        "player": "托莫里",
+        "player_zh": "托莫里"
+      }
+    ],
+    "news": {
+      "title": "米兰德比！国米2-1力克AC米兰，提前5轮锁定队史第20座意甲冠军",
+      "summary": "国米在圣西罗打出经典反击，两星荣耀加身！",
+      "reporter": "米兰体育报"
+    }
+  },
+  {
+    "id": 8001,
+    "league_key": "bundesliga",
+    "league_name": "德甲",
+    "league_badge": "德甲",
+    "league_flag": "circle-flags:de",
+    "round": 27,
+    "round_label": "第 27 轮",
+    "date": "2026-03-31 01:30",
+    "date_short": "03-31 周二",
+    "status": "FT",
+    "status_label": "完赛",
+    "is_overseas": false,
+    "home_team": "拜仁慕尼黑",
+    "home_code": "FCB",
+    "away_team": "多特蒙德",
+    "away_code": "BVB",
+    "score_home": 0,
+    "score_away": 2,
+    "stadium": "安联球场",
+    "xg": "1.40 - 1.65",
+    "shots": "15",
+    "shots_on_target": "5",
+    "distance_km": "118.0",
+    "scorers": [
+      {
+        "minute": 10,
+        "player": "阿德耶米",
+        "player_zh": "阿德耶米"
+      },
+      {
+        "minute": 83,
+        "player": "莱尔森",
+        "player_zh": "莱尔森"
+      }
+    ],
+    "news": {
+      "title": "多特蒙德客场2-0力克拜仁，十年来首次在安联球场取胜",
+      "summary": "阿德耶米闪击破门，拜仁全场进攻受阻。",
+      "reporter": "Kicker 踢球者"
+    }
+  },
+  {
+    "id": 9001,
+    "league_key": "ligue1",
+    "league_name": "法甲",
+    "league_badge": "法甲",
+    "league_flag": "circle-flags:fr",
+    "round": 27,
+    "round_label": "第 27 轮",
+    "date": "2026-04-01 02:45",
+    "date_short": "04-01 周三",
+    "status": "FT",
+    "status_label": "完赛",
+    "is_overseas": false,
+    "home_team": "马赛",
+    "home_code": "MAR",
+    "away_team": "巴黎圣日耳曼",
+    "away_code": "PSG",
+    "score_home": 0,
+    "score_away": 2,
+    "stadium": "韦洛德罗姆球场",
+    "xg": "0.90 - 1.85",
+    "shots": "9",
+    "shots_on_target": "3",
+    "distance_km": "113.5",
+    "scorers": [
+      {
+        "minute": 53,
+        "player": "维蒂尼亚",
+        "player_zh": "维蒂尼亚"
+      },
+      {
+        "minute": 85,
+        "player": "贡萨洛·拉莫斯",
+        "player_zh": "拉莫斯"
+      }
+    ],
+    "news": {
+      "title": "法国国家德比：十人巴黎客场2-0击败马赛",
+      "summary": "巴黎在少打一人局面下凭借坚韧防守与高效反击带走三分。",
+      "reporter": "L'Équipe 队报"
+    }
+  },
+  {
+    "id": 9501,
+    "league_key": "csl",
+    "league_name": "中超",
+    "league_badge": "中超",
+    "league_flag": "circle-flags:cn",
+    "round": 22,
+    "round_label": "第 22 轮",
+    "date": "2026-08-17 19:35",
+    "date_short": "08-17 周一",
+    "status": "FT",
+    "status_label": "完赛",
+    "is_overseas": false,
+    "home_team": "上海申花",
+    "home_code": "SHS",
+    "away_team": "上海海港",
+    "away_code": "SHP",
+    "score_home": 3,
+    "score_away": 1,
+    "stadium": "上海体育场",
+    "xg": "2.10 - 1.45",
+    "shots": "15",
+    "shots_on_target": "6",
+    "distance_km": "117.2",
+    "scorers": [
+      {
+        "minute": 12,
+        "player": "王燊超",
+        "player_zh": "王燊超"
+      },
+      {
+        "minute": 79,
+        "player": "于汉超",
+        "player_zh": "于汉超"
+      },
+      {
+        "minute": 82,
+        "player": "路易斯",
+        "player_zh": "路易斯"
+      },
+      {
+        "minute": "90+5",
+        "player": "路易斯",
+        "player_zh": "路易斯"
+      }
+    ],
+    "news": {
+      "title": "上海德比惊天逆转！于汉超传射，申花3-1力破海港不败金身",
+      "summary": "上海体育场见证激情德比战，申花在最后15分钟连入三球完成绝地大反击！",
+      "reporter": "体坛周报"
+    }
   }
 ]

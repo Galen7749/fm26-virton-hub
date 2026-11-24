@@ -21,18 +21,40 @@
         </button>
       </div>
 
-      <!-- 右侧：联赛筛选下拉框 (全站无 Emoji，纯文本规范呈现) -->
+      <!-- 右侧：联赛筛选下拉框 (全站无 Emoji，纯文本规范呈现，支持置顶与分组) -->
       <div class="shrink-0 relative">
         <select
           v-model="selectedLeague"
           class="bg-slate-950 border border-slate-700 text-slate-200 text-xs font-bold rounded-lg px-2.5 py-1.5 focus:outline-none focus:border-emerald-500 cursor-pointer shadow-inner pr-6"
         >
           <option value="all">全部重要赛事</option>
-          <option value="pol_d1">波兰甲级联赛 (波甲)</option>
-          <option value="bel_d1">比利时甲级联赛 (比甲)</option>
-          <option value="bel_d2">比利时挑战者联赛 (比乙)</option>
-          <option value="pl">英格兰超级联赛 (英超)</option>
-          <option value="ucl">欧洲冠军联赛 (欧冠)</option>
+          <optgroup v-if="pinnedLeagues.length" label="⭐ 已置顶关注">
+            <option
+              v-for="lg in pinnedLeagues"
+              :key="'match-pinned-' + lg.key"
+              :value="lg.key"
+            >
+              ★ {{ lg.name }}
+            </option>
+          </optgroup>
+          <optgroup label="🔥 热门顶级赛事">
+            <option
+              v-for="lg in popularLeagues"
+              :key="'match-pop-' + lg.key"
+              :value="lg.key"
+            >
+              {{ lg.name }}
+            </option>
+          </optgroup>
+          <optgroup label="🌍 欧洲其他联赛">
+            <option
+              v-for="lg in europeanLeagues"
+              :key="'match-euro-' + lg.key"
+              :value="lg.key"
+            >
+              {{ lg.name }}
+            </option>
+          </optgroup>
         </select>
       </div>
     </div>
@@ -142,6 +164,7 @@
 <script setup>
 import { ref, computed } from 'vue'
 import allMatchesRaw from '../../data/all_matches.json'
+import standingsMultiRaw from '../../data/standings_multi.json'
 
 const props = defineProps({
   matches: {
@@ -155,6 +178,38 @@ defineEmits(['select-match'])
 // 联赛下拉筛选器
 const selectedLeague = ref('all')
 
+// ── 用户置顶赛事 (从 localStorage 同步) ──────────────────────
+const PINNED_STORAGE_KEY = 'dqy_pinned_leagues'
+function getInitialPinned() {
+  try {
+    const raw = localStorage.getItem(PINNED_STORAGE_KEY)
+    if (raw) return JSON.parse(raw)
+  } catch (e) {
+    // ignore
+  }
+  return ['ucl', 'pl']
+}
+
+const pinnedLeagueKeys = ref(getInitialPinned())
+const allLeagues = standingsMultiRaw.leagues || []
+
+// 分组计算：置顶赛事
+const pinnedLeagues = computed(() => {
+  return pinnedLeagueKeys.value
+    .map(key => allLeagues.find(lg => lg.key === key))
+    .filter(Boolean)
+})
+
+// 分组计算：热门顶级赛事 (五大联赛 + 欧冠 + 中超)
+const popularLeagues = computed(() => {
+  return allLeagues.filter(lg => lg.group === 'popular')
+})
+
+// 分组计算：欧洲其他主要联赛 (波甲、比甲、比乙)
+const europeanLeagues = computed(() => {
+  return allLeagues.filter(lg => lg.group === 'european')
+})
+
 // 轮次快捷筛选
 const selectedRoundFilter = ref('all')
 const roundOptions = [
@@ -165,11 +220,16 @@ const roundOptions = [
 
 const getLeagueFlag = (key) => {
   const flags = {
+    ucl: 'circle-flags:eu',
+    pl: 'circle-flags:gb-eng',
+    laliga: 'circle-flags:es',
+    serie_a: 'circle-flags:it',
+    bundesliga: 'circle-flags:de',
+    ligue1: 'circle-flags:fr',
+    csl: 'circle-flags:cn',
     pol_d1: 'circle-flags:pl',
     bel_d1: 'circle-flags:be',
-    bel_d2: 'circle-flags:be',
-    pl: 'circle-flags:gb-eng',
-    ucl: 'circle-flags:eu'
+    bel_d2: 'circle-flags:be'
   }
   return flags[key] || 'circle-flags:eu'
 }
