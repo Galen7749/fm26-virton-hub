@@ -375,20 +375,35 @@
           <div
             v-for="(tIn, idx) in activeClub.transfers.in"
             :key="'in-' + idx"
-            class="bg-slate-900 border border-slate-800 rounded-xl p-2.5 flex items-center justify-between text-xs shadow-sm"
+            class="bg-slate-900/90 border border-slate-800/80 hover:border-slate-700/80 rounded-xl p-2.5 flex items-center justify-between gap-3 text-xs transition-colors shadow-sm"
           >
-            <div class="flex items-center space-x-2">
-              <span class="w-5 h-5 rounded-full bg-emerald-950 text-emerald-400 border border-emerald-800 flex items-center justify-center text-[10px] font-bold">
+            <!-- 左侧：图标 + 球员姓名 + 位置 + 日期年龄 -->
+            <div class="flex items-center gap-2 min-w-0 flex-1">
+              <span class="w-5 h-5 rounded-full bg-emerald-950/90 text-emerald-400 border border-emerald-800/70 flex items-center justify-center text-[11px] font-black shrink-0">
                 +
               </span>
-              <div>
-                <span class="font-bold text-white">{{ tIn.name }}</span>
-                <span class="text-[10px] text-slate-400 font-mono ml-1.5">{{ tIn.pos }}</span>
+              <div class="min-w-0 flex-1">
+                <div class="flex items-center gap-1.5 min-w-0">
+                  <span class="font-bold text-white text-[12px] truncate">{{ tIn.name }}</span>
+                  <span class="text-[9px] px-1 py-0.5 rounded bg-slate-800 text-slate-300 font-mono shrink-0">{{ tIn.pos }}</span>
+                </div>
+                <div class="text-[10px] text-slate-500 font-mono mt-0.5 truncate">
+                  {{ tIn.date }} · {{ tIn.age }}岁
+                </div>
               </div>
             </div>
-            <div class="text-right text-[11px]">
-              <div class="text-slate-400 text-[10px] truncate max-w-[120px]">{{ tIn.from_team }}</div>
-              <div class="font-mono text-emerald-400 font-bold">{{ tIn.fee }}</div>
+
+            <!-- 右侧：转会费标签 (上方) + 原俱乐部 (下方，强制单行省略号截断) -->
+            <div class="text-right shrink-0 max-w-[130px] flex flex-col items-end min-w-0">
+              <span class="font-mono font-bold text-emerald-400 text-[11px] leading-tight">
+                {{ tIn.fee }}
+              </span>
+              <span
+                class="text-slate-400 text-[10px] truncate max-w-[130px] block mt-0.5 leading-tight"
+                :title="tIn.from_team"
+              >
+                {{ tIn.from_team }}
+              </span>
             </div>
           </div>
         </div>
@@ -403,20 +418,35 @@
           <div
             v-for="(tOut, idx) in activeClub.transfers.out"
             :key="'out-' + idx"
-            class="bg-slate-900 border border-slate-800 rounded-xl p-2.5 flex items-center justify-between text-xs shadow-sm"
+            class="bg-slate-900/90 border border-slate-800/80 hover:border-slate-700/80 rounded-xl p-2.5 flex items-center justify-between gap-3 text-xs transition-colors shadow-sm"
           >
-            <div class="flex items-center space-x-2">
-              <span class="w-5 h-5 rounded-full bg-rose-950 text-rose-400 border border-rose-800 flex items-center justify-center text-[10px] font-bold">
+            <!-- 左侧：图标 + 球员姓名 + 位置 + 日期年龄 -->
+            <div class="flex items-center gap-2 min-w-0 flex-1">
+              <span class="w-5 h-5 rounded-full bg-rose-950/90 text-rose-400 border border-rose-800/70 flex items-center justify-center text-[11px] font-black shrink-0">
                 -
               </span>
-              <div>
-                <span class="font-bold text-white">{{ tOut.name }}</span>
-                <span class="text-[10px] text-slate-400 font-mono ml-1.5">{{ tOut.pos }}</span>
+              <div class="min-w-0 flex-1">
+                <div class="flex items-center gap-1.5 min-w-0">
+                  <span class="font-bold text-white text-[12px] truncate">{{ tOut.name }}</span>
+                  <span class="text-[9px] px-1 py-0.5 rounded bg-slate-800 text-slate-300 font-mono shrink-0">{{ tOut.pos }}</span>
+                </div>
+                <div class="text-[10px] text-slate-500 font-mono mt-0.5 truncate">
+                  {{ tOut.date }} · {{ tOut.age }}岁
+                </div>
               </div>
             </div>
-            <div class="text-right text-[11px]">
-              <div class="text-slate-400 text-[10px] truncate max-w-[120px]">{{ tOut.to_team }}</div>
-              <div class="font-mono text-rose-400 font-bold">{{ tOut.fee }}</div>
+
+            <!-- 右侧：转会费标签 (上方) + 目标俱乐部 (下方，强制单行省略号截断) -->
+            <div class="text-right shrink-0 max-w-[130px] flex flex-col items-end min-w-0">
+              <span class="font-mono font-bold text-rose-400 text-[11px] leading-tight">
+                {{ tOut.fee }}
+              </span>
+              <span
+                class="text-slate-400 text-[10px] truncate max-w-[130px] block mt-0.5 leading-tight"
+                :title="tOut.to_team"
+              >
+                {{ tOut.to_team }}
+              </span>
             </div>
           </div>
         </div>
