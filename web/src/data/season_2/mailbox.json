@@ -1,0 +1,22 @@
+﻿{
+  "manager_profile": {
+    "name": "耶稣 徐",
+    "nationality": "中国",
+    "club_name": "维尔通精英足球俱乐部 (RE Virton)",
+    "role": "主教练",
+    "assistant_name": "大卫·齐特利 (David Zitelli)",
+    "contract_end": "2027-06-30",
+    "career_stage": "欧洲职业流浪 · 第 2 季 (比甲)"
+  },
+  "messages": [
+    {
+      "id": "msg_s2_001",
+      "date": "2026-07-01 09:00",
+      "from": "Rebeai Khabtane (俱乐部主席)",
+      "avatar": "👔",
+      "type": "赛季动员",
+      "subject": "欢迎来到比利时甲级联赛！董事会全力支持新赛季保级与发展",
+      "content": "徐，恭喜你率队完成不可思议的奇迹升甲！新赛季我们站在了比利时足球的最高舞台，面对安德莱赫特、布鲁日和根特等豪门，我们的首要目标是立足比甲、全力保级。转会引援工作已经全面展开，董事会将全力配合你的战术需求！"
+    }
+  ]
+}

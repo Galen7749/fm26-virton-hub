@@ -1,0 +1,36 @@
+{
+  "current_season": "2025-2026",
+  "current_club_id": "virton",
+  "clubs": [
+    {
+      "id": "virton",
+      "name": "维尔通精英",
+      "full_name": "Royal Excelsior Virton",
+      "league": "比利时甲级B组 (Challenger Pro League)",
+      "league_short": "比乙",
+      "badge": "🟢",
+      "country": "比利时 🇧🇪",
+      "stadium": "伊夫·勒卡尔彭蒂耶体育场",
+      "seasons": [
+        {
+          "id": "2025-2026",
+          "label": "2025/26 赛季",
+          "league": "比乙联赛",
+          "status": "已完结 · 冲甲成功！(升入比利时甲级联赛)",
+          "stats": {
+            "played": 32,
+            "won": 19,
+            "drawn": 9,
+            "lost": 4,
+            "goals_for": 70,
+            "goals_against": 42,
+            "points": 57,
+            "rank": 2,
+            "achievement": "🏆 冲甲附加赛总冠军 · 升入比甲联赛 (4-3绝杀淘汰利尔斯)"
+          }
+        }
+      ]
+    }
+  ],
+  "history": []
+}

@@ -1,0 +1,116 @@
+{
+  "scorers": [
+    {
+      "rank": 1,
+      "player_zh": "Kjetil Borry",
+      "player_en": "Kjetil Borry",
+      "team": "皇家马斯梅赫伦",
+      "team_short": "皇家马斯梅赫伦",
+      "goals": 1,
+      "penalties": 0,
+      "matches": 2,
+      "shots": 2,
+      "is_virton": false
+    },
+    {
+      "rank": 2,
+      "player_zh": "Ridwane M'barki",
+      "player_en": "Ridwane M'barki",
+      "team": "皇家马斯梅赫伦",
+      "team_short": "皇家马斯梅赫伦",
+      "goals": 1,
+      "penalties": 0,
+      "matches": 2,
+      "shots": 4,
+      "is_virton": false
+    }
+  ],
+  "assists": [
+    {
+      "rank": 1,
+      "player_zh": "Fabio Sposito",
+      "player_en": "Fabio Sposito",
+      "team": "皇家马斯梅赫伦",
+      "team_short": "皇家马斯梅赫伦",
+      "assists": 1,
+      "matches": 1,
+      "key_passes": 1,
+      "chances_created": 0,
+      "is_virton": false
+    },
+    {
+      "rank": 2,
+      "player_zh": "让-克洛德·恩滕达",
+      "player_en": "Jean-Claude Ntenda",
+      "team": "维尔通精英",
+      "team_short": "维尔通精英",
+      "assists": 1,
+      "matches": 3,
+      "key_passes": 1,
+      "chances_created": 0,
+      "is_virton": true
+    }
+  ],
+  "discipline": [
+    {
+      "rank": 1,
+      "player_zh": "Haji Mnoga",
+      "player_en": "Haji Mnoga",
+      "team": "皇家马斯梅赫伦",
+      "team_short": "皇家马斯梅赫伦",
+      "yellow_cards": 1,
+      "red_cards": 0,
+      "status": "正常",
+      "matches": 2,
+      "is_virton": false
+    },
+    {
+      "rank": 2,
+      "player_zh": "Arnaud Dony",
+      "player_en": "Arnaud Dony",
+      "team": "皇家马斯梅赫伦",
+      "team_short": "皇家马斯梅赫伦",
+      "yellow_cards": 1,
+      "red_cards": 0,
+      "status": "正常",
+      "matches": 2,
+      "is_virton": false
+    },
+    {
+      "rank": 3,
+      "player_zh": "Ryan Manning",
+      "player_en": "Ryan Manning",
+      "team": "维尔通精英",
+      "team_short": "维尔通精英",
+      "yellow_cards": 1,
+      "red_cards": 0,
+      "status": "正常",
+      "matches": 3,
+      "is_virton": true
+    },
+    {
+      "rank": 4,
+      "player_zh": "马克西姆·纪尧姆",
+      "player_en": "Maxime Guillaume",
+      "team": "维尔通精英",
+      "team_short": "维尔通精英",
+      "yellow_cards": 1,
+      "red_cards": 0,
+      "status": "正常",
+      "matches": 3,
+      "is_virton": true
+    },
+    {
+      "rank": 5,
+      "player_zh": "吉永梦希",
+      "player_en": "Yumeki Yoshinaga",
+      "team": "维尔通精英",
+      "team_short": "维尔通精英",
+      "yellow_cards": 1,
+      "red_cards": 0,
+      "status": "正常",
+      "matches": 3,
+      "is_virton": true
+    }
+  ]
+}

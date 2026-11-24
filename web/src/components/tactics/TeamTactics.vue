@@ -169,7 +169,7 @@
 
     <!-- 视图 2: 一线队球员阵容与六维档案 -->
     <div v-else-if="subTab === 'squad'">
-      <TeamSquad />
+      <TeamSquad :squad="squad" />
     </div>
 
   </div>
@@ -183,6 +183,10 @@ const props = defineProps({
   teamAnalysis: {
     type: Object,
     default: () => ({})
+  },
+  squad: {
+    type: Array,
+    default: () => []
   },
   clubName: {
     type: String,

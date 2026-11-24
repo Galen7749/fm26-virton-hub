@@ -326,9 +326,15 @@
 <script setup>
 import { ref, computed } from 'vue'
 import PlayerRadar from '../common/PlayerRadar.vue'
-import squadData from '../../data/squad.json'
 
-const squadList = ref(squadData)
+const props = defineProps({
+  squad: {
+    type: Array,
+    default: () => []
+  }
+})
+
+const squadList = computed(() => props.squad)
 const selectedPlayer = ref(null)
 const displayMode = ref('cards') // 'cards' | 'table'
 

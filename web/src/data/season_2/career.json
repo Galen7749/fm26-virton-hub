@@ -1,0 +1,30 @@
+﻿{
+  "current_club_id": 1,
+  "current_season": 2,
+  "clubs": [
+    {
+      "id": 1,
+      "name": "维尔通精英",
+      "short_name": "Virton",
+      "country": "Belgium",
+      "league": "比甲",
+      "league_short": "JPL",
+      "seasons": [
+        {
+          "id": 2,
+          "label": "2026/27 比甲",
+          "league": "比甲",
+          "matches": 0,
+          "wins": 0,
+          "draws": 0,
+          "losses": 0,
+          "goals_for": 0,
+          "goals_against": 0,
+          "points": 0,
+          "position": null,
+          "result": "进行中"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "current_season": 1,
+  "seasons": [
+    {
+      "id": 1,
+      "label": "2025/26 赛季",
+      "league": "25/26 比乙 🏆",
+      "league_short": "比乙联赛",
+      "comp_id": 1,
+      "result": "升甲冠军",
+      "result_icon": "🏆",
+      "is_complete": true
+    },
+    {
+      "id": 2,
+      "label": "2026/27 赛季",
+      "league": "26/27 比甲",
+      "league_short": "比甲联赛",
+      "comp_id": 2,
+      "result": "新赛季",
+      "result_icon": "⚡",
+      "is_complete": false
+    }
+  ]
+}
