@@ -552,41 +552,43 @@ def get_complete_leagues():
             "group_label": "欧洲主要联赛",
             "has_live_data": True,
             "season": "2026/27 赛季",
-            "round_info": "第 1 轮 战罢",
+            "round_info": "第 3 轮 战罢 · 奥波莱奥德拉 2胜1平保持不败跃居冲超区次席",
             "table": [
-                { "position": 1, "team_name": "阿尔卡格丁尼亚", "played": 1, "won": 1, "drawn": 0, "lost": 0, "gf": 3, "ga": 0, "gd": 3, "points": 3, "note": "直接升级区" },
-                { "position": 2, "team_name": "克拉科夫维斯瓦", "played": 1, "won": 1, "drawn": 0, "lost": 0, "gf": 3, "ga": 1, "gd": 2, "points": 3, "note": "直接升级区" },
-                { "position": 3, "team_name": "奥波莱奥德拉", "played": 1, "won": 1, "drawn": 0, "lost": 0, "gf": 2, "ga": 1, "gd": 1, "points": 3, "note": "升级附加赛 (留洋)" },
-                { "position": 4, "team_name": "蒂希71", "played": 1, "won": 1, "drawn": 0, "lost": 0, "gf": 2, "ga": 1, "gd": 1, "points": 3, "note": "升级附加赛" },
-                { "position": 5, "team_name": "涅切恰", "played": 1, "won": 1, "drawn": 0, "lost": 0, "gf": 1, "ga": 0, "gd": 1, "points": 3, "note": "升级附加赛" },
-                { "position": 6, "team_name": "莱赫纳", "played": 1, "won": 1, "drawn": 0, "lost": 0, "gf": 1, "ga": 0, "gd": 1, "points": 3, "note": "升级附加赛" },
-                { "position": 7, "team_name": "普鲁什库夫", "played": 1, "won": 0, "drawn": 1, "lost": 0, "gf": 1, "ga": 1, "gd": 0, "points": 1 },
-                { "position": 8, "team_name": "斯塔尔热舒夫", "played": 1, "won": 0, "drawn": 1, "lost": 0, "gf": 1, "ga": 1, "gd": 0, "points": 1 },
-                { "position": 9, "team_name": "罗兹维泽夫", "played": 1, "won": 0, "drawn": 1, "lost": 0, "gf": 0, "ga": 0, "gd": 0, "points": 1 },
-                { "position": 10, "team_name": "波罗尼亚华沙", "played": 1, "won": 0, "drawn": 1, "lost": 0, "gf": 0, "ga": 0, "gd": 0, "points": 1 },
-                { "position": 11, "team_name": "罗兹赫拉克勒斯", "played": 1, "won": 0, "drawn": 1, "lost": 0, "gf": 0, "ga": 0, "gd": 0, "points": 1 },
-                { "position": 12, "team_name": "斯塔尔斯塔洛瓦沃拉", "played": 1, "won": 0, "drawn": 1, "lost": 0, "gf": 0, "ga": 0, "gd": 0, "points": 1 },
-                { "position": 13, "team_name": "普沃茨克维斯瓦", "played": 1, "won": 0, "drawn": 0, "lost": 1, "gf": 1, "ga": 2, "gd": -1, "points": 0 },
-                { "position": 14, "team_name": "霍茹夫鲁赫", "played": 1, "won": 0, "drawn": 0, "lost": 1, "gf": 1, "ga": 2, "gd": -1, "points": 0 },
-                { "position": 15, "team_name": "科特维卡", "played": 1, "won": 0, "drawn": 0, "lost": 1, "gf": 0, "ga": 1, "gd": -1, "points": 0 },
-                { "position": 16, "team_name": "瓦尔塔波兹南", "played": 1, "won": 0, "drawn": 0, "lost": 1, "gf": 0, "ga": 1, "gd": -1, "points": 0, "note": "降级区" },
-                { "position": 17, "team_name": "赫罗布里格沃古夫", "played": 1, "won": 0, "drawn": 0, "lost": 1, "gf": 1, "ga": 3, "gd": -2, "points": 0, "note": "降级区" },
-                { "position": 18, "team_name": "波冈谢德尔采", "played": 1, "won": 0, "drawn": 0, "lost": 1, "gf": 0, "ga": 3, "gd": -3, "points": 0, "note": "降级区" }
+                { "position": 1, "team_name": "华沙莱吉亚", "played": 3, "won": 2, "drawn": 1, "lost": 0, "gf": 6, "ga": 1, "gd": 5, "points": 7, "note": "直接升级区" },
+                { "position": 2, "team_name": "奥波莱奥德拉", "played": 3, "won": 2, "drawn": 1, "lost": 0, "gf": 7, "ga": 5, "gd": 2, "points": 7, "note": "直接升级区 · 留洋主队 🇨🇳" },
+                { "position": 3, "team_name": "罗兹维泽夫", "played": 3, "won": 2, "drawn": 0, "lost": 1, "gf": 9, "ga": 7, "gd": 2, "points": 6, "note": "升级附加赛" },
+                { "position": 4, "team_name": "琴斯托霍瓦", "played": 3, "won": 2, "drawn": 0, "lost": 1, "gf": 8, "ga": 7, "gd": 1, "points": 6, "note": "升级附加赛" },
+                { "position": 5, "team_name": "拉多米亚克", "played": 3, "won": 2, "drawn": 0, "lost": 1, "gf": 6, "ga": 6, "gd": 0, "points": 6, "note": "升级附加赛" },
+                { "position": 6, "team_name": "克拉科维亚", "played": 3, "won": 1, "drawn": 2, "lost": 0, "gf": 5, "ga": 3, "gd": 2, "points": 5, "note": "升级附加赛" },
+                { "position": 7, "team_name": "乔治罗尼亚比亚韦斯托克", "played": 3, "won": 1, "drawn": 2, "lost": 0, "gf": 4, "ga": 2, "gd": 2, "points": 5 },
+                { "position": 8, "team_name": "KGHM卢宾扎格列比", "played": 2, "won": 1, "drawn": 1, "lost": 0, "gf": 5, "ga": 2, "gd": 3, "points": 4 },
+                { "position": 9, "team_name": "莫托路宾", "played": 3, "won": 1, "drawn": 1, "lost": 1, "gf": 4, "ga": 3, "gd": 1, "points": 4 },
+                { "position": 10, "team_name": "维斯拉克拉科", "played": 2, "won": 1, "drawn": 1, "lost": 0, "gf": 3, "ga": 2, "gd": 1, "points": 4 },
+                { "position": 11, "team_name": "GKS卡托维兹", "played": 3, "won": 1, "drawn": 0, "lost": 2, "gf": 9, "ga": 9, "gd": 0, "points": 3 },
+                { "position": 12, "team_name": "华沙普洛克", "played": 2, "won": 1, "drawn": 0, "lost": 1, "gf": 5, "ga": 5, "gd": 0, "points": 3 },
+                { "position": 13, "team_name": "扎布热戈尔尼克", "played": 3, "won": 0, "drawn": 3, "lost": 0, "gf": 2, "ga": 2, "gd": 0, "points": 3 },
+                { "position": 14, "team_name": "维彻兹塔克拉库瓦", "played": 3, "won": 1, "drawn": 0, "lost": 2, "gf": 7, "ga": 8, "gd": -1, "points": 3 },
+                { "position": 15, "team_name": "波兹南莱赫", "played": 3, "won": 1, "drawn": 0, "lost": 2, "gf": 5, "ga": 7, "gd": -2, "points": 3 },
+                { "position": 16, "team_name": "罗切霍茹夫", "played": 2, "won": 0, "drawn": 0, "lost": 2, "gf": 2, "ga": 6, "gd": -4, "points": 0, "note": "降级区" },
+                { "position": 17, "team_name": "莱格尼察铜业", "played": 3, "won": 0, "drawn": 0, "lost": 3, "gf": 2, "ga": 7, "gd": -5, "points": 0, "note": "降级区" },
+                { "position": 18, "team_name": "弗罗茨瓦夫西里西亚", "played": 3, "won": 0, "drawn": 0, "lost": 3, "gf": 4, "ga": 11, "gd": -7, "points": 0, "note": "降级区" }
             ],
             "scorers": [
-                { "rank": 1, "player": "卡罗尔·切布拉", "team": "阿尔卡格丁尼亚", "goals": 2, "penalties": 0, "matches": 1 },
-                { "rank": 2, "player": "皮罗格 (Pirog)", "team": "奥波莱奥德拉", "goals": 1, "penalties": 0, "matches": 1 },
-                { "rank": 3, "player": "卡克佩尔 (Kacper)", "team": "奥波莱奥德拉", "goals": 1, "penalties": 0, "matches": 1 },
-                { "rank": 4, "player": "塞库尔斯基 (Sekulski)", "team": "普沃茨克维斯瓦", "goals": 1, "penalties": 0, "matches": 1 }
+                { "rank": 1, "player": "卡克佩尔·普日比乌科 (Przybyłko)", "team": "奥波莱奥德拉", "goals": 5, "penalties": 0, "matches": 3 },
+                { "rank": 2, "player": "帕特里克·西什 (Patryk Szysz)", "team": "奥波莱奥德拉", "goals": 1, "penalties": 0, "matches": 3 },
+                { "rank": 3, "player": "托马斯·加伊达 (Tomasz Gajda)", "team": "奥波莱奥德拉", "goals": 1, "penalties": 0, "matches": 3 },
+                { "rank": 4, "player": "巴斯克斯", "team": "GKS卡托维兹", "goals": 2, "penalties": 0, "matches": 3 }
             ],
             "assists": [
-                { "rank": 1, "player": "诺瓦克 (Nowak)", "team": "奥波莱奥德拉", "assists": 1, "matches": 1 },
-                { "rank": 2, "player": "加拉兹卡 (Galazka)", "team": "奥波莱奥德拉", "assists": 1, "matches": 1 },
-                { "rank": 3, "player": "科斯塔 (Costa)", "team": "克拉科夫维斯瓦", "assists": 1, "matches": 1 }
+                { "rank": 1, "player": "帕特里克·西什 (Patryk Szysz)", "team": "奥波莱奥德拉", "assists": 1, "matches": 3 },
+                { "rank": 2, "player": "巴巴卡尔·迪奥内 (Babacar Dione)", "team": "奥波莱奥德拉", "assists": 1, "matches": 3 },
+                { "rank": 3, "player": "马特乌什·斯皮哈瓦 (Mateusz Spychała)", "team": "奥波莱奥德拉", "assists": 1, "matches": 3 },
+                { "rank": 4, "player": "雅库布·什雷克 (Jakub Szrek)", "team": "奥波莱奥德拉", "assists": 1, "matches": 3 },
+                { "rank": 5, "player": "皮尔伊 (Marin Pilj)", "team": "奥波莱奥德拉", "assists": 1, "matches": 3 }
             ],
             "transfers": [
-                { "date": "2026-07-20", "type": "主帅签约", "player": "中国籍主帅 (耶稣·徐)", "from": "自由身", "to": "奥波莱奥德拉", "fee": "签约至2027年" },
-                { "date": "2026-07-15", "type": "引援", "player": "卡克佩尔", "from": "自由身", "to": "奥波莱奥德拉", "fee": "免签加盟" }
+                { "date": "2026-07-20", "type": "主帅签约", "player": "中国籍少帅 (耶稣·徐)", "from": "自由身", "to": "奥波莱奥德拉", "fee": "签约至2028年 · 资助考证" },
+                { "date": "2026-07-15", "type": "引援", "player": "卡克佩尔·普日比乌科", "from": "自由身", "to": "奥波莱奥德拉", "fee": "免签加盟" }
             ]
         },
 
@@ -993,6 +995,117 @@ def get_marquee_matches():
                 "title": "布鲁日德比战平！皇家布鲁日力压圣吉罗斯夺得2025/26赛季比甲联赛冠军",
                 "summary": "布鲁日凭借附加赛净胜球优势成功加冕比甲联赛冠军，锁定下赛季欧冠正赛资格。",
                 "reporter": "晚报 (Le Soir)"
+            }
+        },
+        # 波甲 Round 1 (真实 FM24 存档)
+        {
+            "id": 1001,
+            "league_key": "pol_d1",
+            "league_name": "波甲",
+            "league_badge": "波甲",
+            "league_flag": "circle-flags:pl",
+            "round": 1,
+            "round_label": "第 1 轮",
+            "date": "2026-07-19 20:00",
+            "date_short": "07-19 周日",
+            "status": "FT",
+            "status_label": "完赛",
+            "is_overseas": True,
+            "home_team": "克拉科维亚",
+            "home_code": "CRA",
+            "away_team": "奥波莱奥德拉",
+            "away_code": "ODR",
+            "score_home": 1,
+            "score_away": 1,
+            "stadium": "克拉科夫约瑟夫·皮尔苏斯基球场",
+            "xg": "1.35 - 1.20",
+            "shots": "12",
+            "shots_on_target": "5",
+            "distance_km": "114.2",
+            "scorers": [
+                { "minute": 28, "player": "卡利曼 (Kallman)", "player_zh": "卡利曼" },
+                { "minute": 62, "player": "卡克佩尔·普日比乌科 (Przybyłko)", "player_zh": "卡克佩尔", "assist": "皮尔伊 (Pilj)", "assist_zh": "皮尔伊" }
+            ],
+            "news": {
+                "title": "波甲首轮客场逼平强敌！卡克佩尔推射建功，奥波莱奥德拉1-1客平克拉科维亚",
+                "summary": "中国新帅迎来波兰正式比赛首秀，客场面对劲旅克拉科维亚下半场顽强扳平比分，斩获新赛季第一分！",
+                "reporter": "懂球云波兰特派"
+            }
+        },
+        # 波甲 Round 2 (真实 FM24 存档)
+        {
+            "id": 1002,
+            "league_key": "pol_d1",
+            "league_name": "波甲",
+            "league_badge": "波甲",
+            "league_flag": "circle-flags:pl",
+            "round": 2,
+            "round_label": "第 2 轮",
+            "date": "2026-07-26 20:00",
+            "date_short": "07-26 周日",
+            "status": "FT",
+            "status_label": "完赛",
+            "is_overseas": True,
+            "home_team": "奥波莱奥德拉",
+            "home_code": "ODR",
+            "away_team": "GKS卡托维兹",
+            "away_code": "KAT",
+            "score_home": 3,
+            "score_away": 2,
+            "stadium": "奥波莱市政球场",
+            "xg": "2.40 - 1.65",
+            "shots": "17",
+            "shots_on_target": "8",
+            "distance_km": "116.8",
+            "scorers": [
+                { "minute": 18, "player": "卡克佩尔·普日比乌科", "player_zh": "卡克佩尔", "assist": "帕特里克·西什", "assist_zh": "西什" },
+                { "minute": 39, "player": "贝格尔", "player_zh": "贝格尔" },
+                { "minute": 55, "player": "罗加拉", "player_zh": "罗加拉" },
+                { "minute": 71, "player": "卡克佩尔·普日比乌科", "player_zh": "卡克佩尔", "assist": "克里斯蒂安·帕拉茨", "assist_zh": "帕拉茨", "is_header": True },
+                { "minute": 84, "player": "帕特里克·西什", "player_zh": "西什" }
+            ],
+            "news": {
+                "title": "奥波莱3-2险胜卡托维兹夺主场首胜！卡克佩尔双响，西什传射定胜局",
+                "summary": "新帅主场首秀打出经典进攻战，卡克佩尔梅开二度，西什84分钟致命击杀全取三分！",
+                "reporter": "懂球云波兰特派"
+            }
+        },
+        # 波甲 Round 3 (真实 FM24 存档)
+        {
+            "id": 1003,
+            "league_key": "pol_d1",
+            "league_name": "波甲",
+            "league_badge": "波甲",
+            "league_flag": "circle-flags:pl",
+            "round": 3,
+            "round_label": "第 3 轮",
+            "date": "2026-08-01 20:00",
+            "date_short": "08-01 周六",
+            "status": "FT",
+            "status_label": "完赛",
+            "is_overseas": True,
+            "home_team": "维彻兹塔克拉库瓦",
+            "home_code": "WIE",
+            "away_team": "奥波莱奥德拉",
+            "away_code": "ODR",
+            "score_home": 2,
+            "score_away": 3,
+            "stadium": "克拉科夫市政球场",
+            "xg": "1.75 - 2.10",
+            "shots": "13",
+            "shots_on_target": "7",
+            "distance_km": "115.3",
+            "scorers": [
+                { "minute": 14, "player": "科比亚克", "player_zh": "科比亚克" },
+                { "minute": 34, "player": "卡克佩尔·普日比乌科", "player_zh": "卡克佩尔", "assist": "巴巴卡尔·迪奥内", "assist_zh": "迪奥内" },
+                { "minute": 56, "player": "托马斯·加伊达", "player_zh": "加伊达", "assist": "马特乌什·斯皮哈瓦", "assist_zh": "斯皮哈瓦" },
+                { "minute": 69, "player": "米斯利维茨", "player_zh": "米斯利维茨" },
+                { "minute": 87, "player": "卡克佩尔·普日比乌科", "player_zh": "卡克佩尔", "assist": "雅库布·什雷克", "assist_zh": "什雷克", "is_header": True, "is_stoppage": True }
+            ],
+            "news": {
+                "title": "3场5球狂飙！奥波莱客场3-2绝杀维彻兹塔两连胜，中国少帅率队跃居波甲次席",
+                "summary": "凭借卡克佩尔87分钟头球绝杀上演背靠背双响，奥波莱奥德拉3轮2胜1平保持不败，冲进波甲直接升级区次席！",
+                "reporter": "体坛周报驻欧特派"
             }
         }
     ]

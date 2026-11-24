@@ -183,11 +183,18 @@ const PINNED_STORAGE_KEY = 'dqy_pinned_leagues'
 function getInitialPinned() {
   try {
     const raw = localStorage.getItem(PINNED_STORAGE_KEY)
-    if (raw) return JSON.parse(raw)
+    if (raw) {
+      const parsed = JSON.parse(raw)
+      if (Array.isArray(parsed) && parsed.length) {
+        // 优先置顶所在联赛 (波甲 pol_d1) 和欧战 (欧冠 ucl)
+        const withoutPol = parsed.filter(k => k !== 'pol_d1')
+        return ['pol_d1', ...withoutPol]
+      }
+    }
   } catch (e) {
     // ignore
   }
-  return ['ucl', 'pl']
+  return ['pol_d1', 'ucl']
 }
 
 const pinnedLeagueKeys = ref(getInitialPinned())

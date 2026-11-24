@@ -471,153 +471,171 @@
     "league_key": "pol_d1",
     "league_name": "波甲",
     "league_badge": "波甲",
+    "league_flag": "circle-flags:pl",
     "round": 1,
     "round_label": "第 1 轮",
-    "date": "2026-07-28 20:00",
-    "date_short": "07-28 周二",
+    "date": "2026-07-19 20:00",
+    "date_short": "07-19 周日",
     "status": "FT",
     "status_label": "完赛",
     "is_overseas": true,
-    "home_team": "奥波莱奥德拉",
-    "home_logo": "",
-    "away_team": "普沃茨克维斯瓦",
-    "away_logo": "",
-    "score_home": 2,
+    "home_team": "克拉科维亚",
+    "home_code": "CRA",
+    "away_team": "奥波莱奥德拉",
+    "away_code": "ODR",
+    "score_home": 1,
     "score_away": 1,
-    "stadium": "奥波莱市政球场",
-    "xg": "1.85 - 0.94",
-    "shots": "14",
-    "shots_on_target": "6",
+    "stadium": "克拉科夫约瑟夫·皮尔苏斯基球场",
+    "xg": "1.35 - 1.20",
+    "shots": "12",
+    "shots_on_target": "5",
     "distance_km": "114.2",
     "scorers": [
       {
-        "minute": 23,
-        "player": "卡克佩尔 (Kacper)",
+        "minute": 28,
+        "player": "卡利曼 (Kallman)",
+        "player_zh": "卡利曼"
+      },
+      {
+        "minute": 62,
+        "player": "卡克佩尔·普日比乌科 (Przybyłko)",
         "player_zh": "卡克佩尔",
-        "assist": "加拉兹卡",
-        "assist_zh": "加拉兹卡"
-      },
-      {
-        "minute": 65,
-        "player": "塞库尔斯基 (Sekulski)",
-        "player_zh": "塞库尔斯基"
-      },
-      {
-        "minute": 88,
-        "player": "皮罗格 (Pirog)",
-        "player_zh": "皮罗格",
-        "assist": "诺瓦克",
-        "assist_zh": "诺瓦克",
-        "goal_type": "头球",
-        "is_header": true,
-        "is_stoppage": true
+        "assist": "皮尔伊 (Pilj)",
+        "assist_zh": "皮尔伊"
       }
     ],
     "news": {
-      "title": "奥波莱奥德拉 2-1 绝杀开门红！波甲首轮战报",
-      "summary": "凭借88分钟角球头球破门，奥波莱奥德拉主场2-1力克劲旅，迎来波兰联赛首胜！",
-      "reporter": "懂球云波兰特派",
-      "post_comments": [
-        {
-          "username": "Galen",
-          "tag": "球迷",
-          "content": "首秀拿下三分，战术执行力很对味！波甲身体对抗很激烈，继续稳住！",
-          "likes": 420
-        },
-        {
-          "username": "Kimi_7",
-          "tag": "资深FM玩家",
-          "content": "角球战术加上高位逼抢，这套打法在波甲很能打出反击穿透力！",
-          "likes": 310
-        }
-      ]
-    },
-    "league_flag": "circle-flags:pl",
-    "home_code": "奥波莱",
-    "away_code": "普沃茨"
+      "title": "波甲首轮客场逼平强敌！卡克佩尔推射建功，奥波莱奥德拉1-1客平克拉科维亚",
+      "summary": "中国新帅迎来波兰正式比赛首秀，客场面对劲旅克拉科维亚下半场顽强扳平比分，斩获新赛季第一分！",
+      "reporter": "懂球云波兰特派"
+    }
   },
   {
     "id": 1002,
     "league_key": "pol_d1",
     "league_name": "波甲",
     "league_badge": "波甲",
-    "round": 1,
-    "round_label": "第 1 轮",
-    "date": "2026-07-28 22:00",
-    "date_short": "07-28 周二",
+    "league_flag": "circle-flags:pl",
+    "round": 2,
+    "round_label": "第 2 轮",
+    "date": "2026-07-26 20:00",
+    "date_short": "07-26 周日",
     "status": "FT",
     "status_label": "完赛",
-    "is_overseas": false,
-    "home_team": "阿尔卡格丁尼亚",
-    "home_logo": "",
-    "away_team": "斯维特",
-    "away_logo": "",
+    "is_overseas": true,
+    "home_team": "奥波莱奥德拉",
+    "home_code": "ODR",
+    "away_team": "GKS卡托维兹",
+    "away_code": "KAT",
     "score_home": 3,
-    "score_away": 0,
-    "stadium": "格丁尼亚城市球场",
-    "xg": "2.40 - 0.35",
-    "shots": "18",
+    "score_away": 2,
+    "stadium": "奥波莱市政球场",
+    "xg": "2.40 - 1.65",
+    "shots": "17",
     "shots_on_target": "8",
-    "distance_km": "109.8",
+    "distance_km": "116.8",
     "scorers": [
       {
-        "minute": 15,
-        "player": "切布拉",
-        "player_zh": "切布拉"
+        "minute": 18,
+        "player": "卡克佩尔·普日比乌科",
+        "player_zh": "卡克佩尔",
+        "assist": "帕特里克·西什",
+        "assist_zh": "西什"
       },
       {
-        "minute": 52,
-        "player": "戈博夫斯基",
-        "player_zh": "戈博夫斯基"
+        "minute": 39,
+        "player": "贝格尔",
+        "player_zh": "贝格尔"
       },
       {
-        "minute": 76,
-        "player": "马尔切夫斯基",
-        "player_zh": "马尔切夫斯基"
+        "minute": 55,
+        "player": "罗加拉",
+        "player_zh": "罗加拉"
+      },
+      {
+        "minute": 71,
+        "player": "卡克佩尔·普日比乌科",
+        "player_zh": "卡克佩尔",
+        "assist": "克里斯蒂安·帕拉茨",
+        "assist_zh": "帕拉茨",
+        "is_header": true
+      },
+      {
+        "minute": 84,
+        "player": "帕特里克·西什",
+        "player_zh": "西什"
       }
     ],
-    "league_flag": "circle-flags:pl",
-    "home_code": "阿尔卡",
-    "away_code": "斯维特"
+    "news": {
+      "title": "奥波莱3-2险胜卡托维兹夺主场首胜！卡克佩尔双响，西什传射定胜局",
+      "summary": "新帅主场首秀打出经典进攻战，卡克佩尔梅开二度，西什84分钟致命击杀全取三分！",
+      "reporter": "懂球云波兰特派"
+    }
   },
   {
     "id": 1003,
     "league_key": "pol_d1",
     "league_name": "波甲",
     "league_badge": "波甲",
-    "round": 1,
-    "round_label": "第 1 轮",
-    "date": "2026-07-29 00:00",
-    "date_short": "07-29 周三",
+    "league_flag": "circle-flags:pl",
+    "round": 3,
+    "round_label": "第 3 轮",
+    "date": "2026-08-01 20:00",
+    "date_short": "08-01 周六",
     "status": "FT",
     "status_label": "完赛",
-    "is_overseas": false,
-    "home_team": "莱吉亚格但斯克",
-    "home_logo": "",
-    "away_team": "卡托维兹",
-    "away_logo": "",
-    "score_home": 1,
-    "score_away": 1,
-    "stadium": "格但斯克能源体育场",
-    "xg": "1.10 - 1.25",
-    "shots": "10",
-    "shots_on_target": "4",
-    "distance_km": "111.0",
+    "is_overseas": true,
+    "home_team": "维彻兹塔克拉库瓦",
+    "home_code": "WIE",
+    "away_team": "奥波莱奥德拉",
+    "away_code": "ODR",
+    "score_home": 2,
+    "score_away": 3,
+    "stadium": "克拉科夫市政球场",
+    "xg": "1.75 - 2.10",
+    "shots": "13",
+    "shots_on_target": "7",
+    "distance_km": "115.3",
     "scorers": [
       {
-        "minute": 38,
-        "player": "卡皮奇",
-        "player_zh": "卡皮奇"
+        "minute": 14,
+        "player": "科比亚克",
+        "player_zh": "科比亚克"
       },
       {
-        "minute": 71,
-        "player": "巴尔加",
-        "player_zh": "巴尔加"
+        "minute": 34,
+        "player": "卡克佩尔·普日比乌科",
+        "player_zh": "卡克佩尔",
+        "assist": "巴巴卡尔·迪奥内",
+        "assist_zh": "迪奥内"
+      },
+      {
+        "minute": 56,
+        "player": "托马斯·加伊达",
+        "player_zh": "加伊达",
+        "assist": "马特乌什·斯皮哈瓦",
+        "assist_zh": "斯皮哈瓦"
+      },
+      {
+        "minute": 69,
+        "player": "米斯利维茨",
+        "player_zh": "米斯利维茨"
+      },
+      {
+        "minute": 87,
+        "player": "卡克佩尔·普日比乌科",
+        "player_zh": "卡克佩尔",
+        "assist": "雅库布·什雷克",
+        "assist_zh": "什雷克",
+        "is_header": true,
+        "is_stoppage": true
       }
     ],
-    "league_flag": "circle-flags:pl",
-    "home_code": "莱吉亚",
-    "away_code": "卡托维"
+    "news": {
+      "title": "3场5球狂飙！奥波莱客场3-2绝杀维彻兹塔两连胜，中国少帅率队跃居波甲次席",
+      "summary": "凭借卡克佩尔87分钟头球绝杀上演背靠背双响，奥波莱奥德拉3轮2胜1平保持不败，冲进波甲直接升级区次席！",
+      "reporter": "体坛周报驻欧特派"
+    }
   },
   {
     "id": 5032,
