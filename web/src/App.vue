@@ -14,16 +14,8 @@
         @switch-season="onSwitchSeason"
       />
 
-      <!-- 加载过渡态 -->
-      <div v-if="isLoading" class="flex-1 flex items-center justify-center">
-        <div class="text-center space-y-2">
-          <div class="text-2xl animate-spin">⚽</div>
-          <div class="text-xs text-slate-400">加载赛季数据中...</div>
-        </div>
-      </div>
-
-      <!-- 2. 主图内容区（直接展示内容，杜绝双层导航栏） -->
-      <div v-else class="flex-1">
+      <!-- 2. 主视图内容区 -->
+      <div class="flex-1">
         <!-- 模块 A: ⚽ 比赛大盘 (二级导航：列表瀑布流 vs 单场深度详情) -->
         <template v-if="activeTab === 'matches'">
           <!-- 一级：赛程赛果列表 -->
@@ -116,8 +108,18 @@ const activeSeason = computed(() =>
   seasonsMeta.value.seasons.find(s => s.id === activeSeasonId.value) || seasonsMeta.value.seasons[0]
 )
 
-// ── 赛季数据（动态加载）─────────────────────────────────────────
-const isLoading = ref(false)
+// ── 页面与导航状态 ──────────────────────────────────────────
+const activeTab = ref('matches')
+const selectedMatchId = ref(null)
+
+// ── 赛季数据（使用 import.meta.glob 避免动态字符串模板初始化 Bug）────────────────
+const allSeasonFiles = import.meta.glob('./data/season_*/*.json', { eager: true })
+
+function getSeasonData(seasonId, fileName) {
+  const key = `./data/season_${seasonId}/${fileName}.json`
+  const mod = allSeasonFiles[key]
+  return mod ? (mod.default ?? mod) : null
+}
 
 // 所有数据 ref（从当前赛季加载）
 const careerData   = ref({})
@@ -132,54 +134,26 @@ const leaderboards = ref({})
 const community    = ref({})
 const squad        = ref([])
 
-// 动态加载一个赛季的全部数据
-async function loadSeasonData(seasonId) {
-  isLoading.value = true
+// 加载指定赛季的数据（同步秒级切换）
+function loadSeasonData(seasonId) {
   selectedMatchId.value = null   // 重置单场详情
 
-  try {
-    const [
-      career,
-      matchesJson,
-      newsJson,
-      mailboxJson,
-      roundMatchesJson,
-      worldNewsJson,
-      standingsJson,
-      teamAnalysisJson,
-      leaderboardsJson,
-      communityJson,
-      squadJson,
-    ] = await Promise.all([
-      import(`./data/season_${seasonId}/career.json`),
-      import(`./data/season_${seasonId}/matches.json`),
-      import(`./data/season_${seasonId}/news.json`),
-      import(`./data/season_${seasonId}/mailbox.json`),
-      import(`./data/season_${seasonId}/round_matches.json`),
-      import(`./data/season_${seasonId}/world_news.json`),
-      import(`./data/season_${seasonId}/standings.json`),
-      import(`./data/season_${seasonId}/team_analysis.json`),
-      import(`./data/season_${seasonId}/leaderboards.json`),
-      import(`./data/season_${seasonId}/community.json`),
-      import(`./data/season_${seasonId}/squad.json`),
-    ])
+  careerData.value       = getSeasonData(seasonId, 'career') || {}
+  matches.value          = getSeasonData(seasonId, 'matches') || []
+  news.value             = getSeasonData(seasonId, 'news') || []
+  mailbox.value          = getSeasonData(seasonId, 'mailbox') || { messages: [] }
+  roundMatches.value     = getSeasonData(seasonId, 'round_matches') || {}
 
-    careerData.value       = career.default
-    matches.value          = matchesJson.default
-    news.value             = newsJson.default
-    mailbox.value          = mailboxJson.default
-    roundMatches.value     = roundMatchesJson.default
-    worldNews.value        = Array.isArray(worldNewsJson.default) ? worldNewsJson.default : (worldNewsJson.default?.articles || [])
-    availableLeagues.value = standingsJson.default?.leagues || []
-    teamAnalysis.value     = teamAnalysisJson.default
-    leaderboards.value     = leaderboardsJson.default
-    community.value        = communityJson.default
-    squad.value            = squadJson.default || []
-  } catch (e) {
-    console.error(`Failed to load season ${seasonId}:`, e)
-  } finally {
-    isLoading.value = false
-  }
+  const rawWn = getSeasonData(seasonId, 'world_news')
+  worldNews.value        = Array.isArray(rawWn) ? rawWn : (rawWn?.articles || [])
+
+  const standings = getSeasonData(seasonId, 'standings')
+  availableLeagues.value = standings?.leagues || []
+
+  teamAnalysis.value     = getSeasonData(seasonId, 'team_analysis') || {}
+  leaderboards.value     = getSeasonData(seasonId, 'leaderboards') || {}
+  community.value        = getSeasonData(seasonId, 'community') || {}
+  squad.value            = getSeasonData(seasonId, 'squad') || []
 }
 
 // 初始加载
@@ -200,12 +174,7 @@ const currentClub = computed(() => {
   return clubs.find(c => c.id === id) || clubs[0] || { name: '维尔通精英', seasons: [] }
 })
 
-// ── 全局主导航 Tab ────────────────────────────────────────────
-const activeTab = ref('matches')
-
-// ── 二级页面状态：选中的比赛 ID ──────────────────────────────
-const selectedMatchId = ref(null)
-
+// ── 选中的比赛与新闻数据 ──────────────────────────────────────
 const selectedMatch = computed(() => {
   if (!selectedMatchId.value) return null
   return matches.value.find(m => m.id === selectedMatchId.value) || matches.value[0]
