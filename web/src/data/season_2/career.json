@@ -1,19 +1,25 @@
 ﻿{
-  "current_club_id": 1,
+  "current_club_id": "free_agent",
   "current_season": 2,
+  "manager": {
+    "name": "耶稣 徐",
+    "status": "自由身求职中",
+    "reputation": "洲际声望上升 · 欧洲黑马少帅",
+    "core_demand": "必须全额出资赞助考取欧足联教练执照 (UEFA License)"
+  },
   "clubs": [
     {
-      "id": 1,
-      "name": "维尔通精英",
-      "short_name": "Virton",
-      "country": "Belgium",
-      "league": "比甲",
-      "league_short": "JPL",
+      "id": "free_agent",
+      "name": "自由身 / 待业求职中",
+      "short_name": "Free Agent",
+      "country": "欧洲流浪 🌍",
+      "league": "欧洲职业流浪记 · 第二卷",
+      "league_short": "自由身",
       "seasons": [
         {
           "id": 2,
-          "label": "2026/27 比甲",
-          "league": "比甲",
+          "label": "2026/27 待业流浪篇",
+          "league": "欧洲自由市场",
           "matches": 0,
           "wins": 0,
           "draws": 0,
@@ -22,9 +28,20 @@
           "goals_against": 0,
           "points": 0,
           "position": null,
-          "result": "进行中"
+          "result": "等待良木 · 面试中"
         }
       ]
     }
-  ]
+  ],
+  "job_hunt": {
+    "status": "接触潜在下家中",
+    "preferred_leagues": [
+      "荷兰乙级联赛 (荷乙中上游)",
+      "法国丙级联赛 (法丙冲乙劲旅)",
+      "比利时乙级联赛 (比乙财力健康俱乐部)",
+      "英格兰甲级/乙级联赛",
+      "瑞士/奥地利甲级或二级联赛"
+    ],
+    "deal_breaker": "俱乐部愿资助考取教练证书"
+  }
 }

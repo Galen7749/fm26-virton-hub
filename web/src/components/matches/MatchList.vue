@@ -5,19 +5,20 @@
     <div class="bg-gradient-to-r from-slate-900 via-slate-900 to-slate-950 border border-slate-800 rounded-xl p-3.5 space-y-2.5 shadow-sm">
       <div class="flex items-center justify-between text-xs">
         <div class="flex items-center space-x-2">
-          <span class="text-sm">🇧🇪</span>
-          <span class="font-bold text-white">{{ seasonLabel }} · 战绩看板</span>
+          <span class="text-sm">{{ matches.length > 0 ? '🇧🇪' : '🌍' }}</span>
+          <span class="font-bold text-white">{{ seasonLabel }} · {{ matches.length > 0 ? '战绩看板' : '求职雷达' }}</span>
         </div>
         <span :class="[
           'text-[10px] font-bold px-2 py-0.5 rounded border',
+          matches.length === 0 ? 'bg-amber-950/80 text-amber-300 border-amber-600/60 font-bold' :
           isPromoted ? 'bg-amber-950 text-amber-300 border-amber-600 shadow-sm font-black' : 'bg-emerald-950 text-emerald-400 border-emerald-900/50'
         ]">
-          {{ isPromoted ? '🏆 冲甲附加赛总冠军 · 成功升入比甲！' : '比乙冲甲附加区' }}
+          {{ matches.length === 0 ? '💼 自由身待业 · 寻找欧洲第2站' : isPromoted ? '🏆 冲甲附加赛总冠军 · 成功升入比甲！' : '比乙冲甲附加区' }}
         </span>
       </div>
 
-      <!-- 战绩统计网格 -->
-      <div class="grid grid-cols-4 gap-2 text-center text-xs">
+      <!-- 战绩统计网格 (常规已赛) -->
+      <div v-if="matches.length > 0" class="grid grid-cols-4 gap-2 text-center text-xs">
         <div class="bg-slate-950 p-2 rounded-lg border border-slate-850">
           <div class="text-[10px] text-slate-400">已赛场次</div>
           <div class="font-black text-white text-sm mt-0.5">{{ matches.length }} 场</div>
@@ -33,6 +34,27 @@
         <div class="bg-slate-950 p-2 rounded-lg border border-slate-850">
           <div class="text-[10px] text-slate-400">联赛积分</div>
           <div class="font-black text-amber-400 text-sm mt-0.5">{{ totalPoints }} 分</div>
+        </div>
+      </div>
+
+      <!-- 待业求职看板 (0场比赛待业时) -->
+      <div v-else class="bg-slate-950 p-3 rounded-xl border border-slate-850 space-y-2 text-xs">
+        <div class="flex items-center justify-between">
+          <span class="text-amber-400 font-bold flex items-center space-x-1.5">
+            <span>🔥</span>
+            <span>突发掀桌辞职！徐指导夏窗开启自由身求职</span>
+          </span>
+          <span class="text-[9px] bg-slate-800 text-amber-300 px-2 py-0.5 rounded border border-amber-900/40 font-mono">
+            奇迹声望加持
+          </span>
+        </div>
+        <p class="text-[11px] text-slate-300 leading-relaxed">
+          刚带维尔通绝杀冲甲，因不满管理层清洗功勋老将、且拒绝报销教练班学费，徐指导已当场辞职走人！凭借带保级队逆天升甲的硬核声望，已有多家欧洲俱乐部接洽。唯一刚性底线：<strong>【新东家必须全额报销欧足联教练班学费】</strong>！
+        </p>
+        <div class="flex items-center space-x-1.5 pt-0.5 text-[9px] text-slate-400 overflow-x-auto no-scrollbar">
+          <span class="bg-slate-900 px-2 py-0.5 rounded border border-slate-800 shrink-0">🎯 意向：荷乙中上游</span>
+          <span class="bg-slate-900 px-2 py-0.5 rounded border border-slate-800 shrink-0">🇫🇷 法丙冲乙劲旅</span>
+          <span class="bg-slate-900 px-2 py-0.5 rounded border border-slate-800 shrink-0">🇨🇭 瑞士联赛</span>
         </div>
       </div>
     </div>
@@ -76,8 +98,14 @@
         @select="$emit('select-match', m.id)"
       />
 
-      <div v-if="!displayedMatches.length" class="text-center py-8 text-slate-500 text-xs">
-        暂无符合筛选条件的比赛
+      <div v-if="!displayedMatches.length" class="text-center py-10 px-4 space-y-2 text-slate-500 text-xs">
+        <div class="text-2xl animate-bounce">✈️</div>
+        <div class="font-bold text-slate-300">
+          {{ matches.length === 0 ? '正在欧洲自由市场物色下家' : '暂无符合筛选条件的比赛' }}
+        </div>
+        <p v-if="matches.length === 0" class="text-[11px] text-slate-500 max-w-xs mx-auto leading-relaxed">
+          手握比乙冲甲奇迹声望，静候愿全额资助欧足联教练班进修资格的良心东家递上橄榄枝！
+        </p>
       </div>
     </div>
 

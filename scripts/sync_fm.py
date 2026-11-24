@@ -180,6 +180,13 @@ def clean_club_name(name):
             return v
     return name.replace("足球俱乐部", "").replace("体育俱乐部", "").strip()
 
+def save_json(filename, data, season_id=1):
+    """同时写入根数据目录以及对应赛季子目录，保持向下兼容与多赛季支持"""
+    (DATA_DIR / filename).write_text(json.dumps(data, ensure_ascii=False, indent=2), encoding="utf-8")
+    s_dir = DATA_DIR / f"season_{season_id}"
+    s_dir.mkdir(parents=True, exist_ok=True)
+    (s_dir / filename).write_text(json.dumps(data, ensure_ascii=False, indent=2), encoding="utf-8")
+
 def find_latest_save():
     if not SAVE_DIR.exists():
         print(f"[!] 存档目录不存在: {SAVE_DIR}")
@@ -511,7 +518,7 @@ def sync():
             new_matches.append(match_entry)
 
         # 写入 matches.json
-        (DATA_DIR / "matches.json").write_text(json.dumps(new_matches, ensure_ascii=False, indent=2), encoding="utf-8")
+        save_json("matches.json", new_matches, season_id=1)
         print(f"[✓] matches.json 已全量更新: 共 {len(new_matches)} 轮战报！")
 
         # 5. 更新 round_matches.json (同期联赛比分)
@@ -534,7 +541,7 @@ def sync():
                 }
                 for f in other_fixtures[:6]
             ]
-        (DATA_DIR / "round_matches.json").write_text(json.dumps(round_matches_data, ensure_ascii=False, indent=2), encoding="utf-8")
+        save_json("round_matches.json", round_matches_data, season_id=1)
         print(f"[✓] round_matches.json 同期联赛比分更新完毕！")
 
         print("\n[3/5] 更新积分榜、球员花名册、生涯与球迷走势...")

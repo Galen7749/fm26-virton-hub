@@ -3,22 +3,22 @@
   "seasons": [
     {
       "id": 1,
-      "label": "2025/26 赛季",
-      "league": "25/26 比乙 🏆",
-      "league_short": "比乙联赛",
+      "label": "2025/26 赛季 (完结)",
+      "league": "25/26 比乙 🏆 (辞职)",
+      "league_short": "比乙 · 奇迹冲甲",
       "comp_id": 1,
-      "result": "升甲冠军",
+      "result": "冲甲冠军·功成身退",
       "result_icon": "🏆",
       "is_complete": true
     },
     {
       "id": 2,
-      "label": "2026/27 赛季",
-      "league": "26/27 比甲",
-      "league_short": "比甲联赛",
-      "comp_id": 2,
-      "result": "新赛季",
-      "result_icon": "⚡",
+      "label": "2026/27 赛季 (待业中)",
+      "league": "26/27 待业流浪 🌍",
+      "league_short": "欧洲自由身",
+      "comp_id": 0,
+      "result": "寻找新东家",
+      "result_icon": "💼",
       "is_complete": false
     }
   ]
