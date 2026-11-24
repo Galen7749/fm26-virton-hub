@@ -252,18 +252,24 @@ const combinedMatches = computed(() => {
 })
 
 const filteredMatches = computed(() => {
-  return combinedMatches.value.filter(m => {
-    if (selectedLeague.value !== 'all') {
-      if (m.league_key !== selectedLeague.value) return false
-    }
+  return combinedMatches.value
+    .filter(m => {
+      if (selectedLeague.value !== 'all') {
+        if (m.league_key !== selectedLeague.value) return false
+      }
 
-    if (selectedRoundFilter.value === 'finals') {
-      const isFinal = String(m.round_label || '').includes('决赛') || String(m.round_label || '').includes('附加赛')
-      if (!isFinal) return false
-    }
+      if (selectedRoundFilter.value === 'recent') {
+        if (m.date < '2026-07-25') return false
+      }
 
-    return true
-  })
+      if (selectedRoundFilter.value === 'finals') {
+        const isFinal = String(m.round_label || '').includes('决赛') || String(m.round_label || '').includes('附加赛')
+        if (!isFinal) return false
+      }
+
+      return true
+    })
+    .sort((a, b) => b.date.localeCompare(a.date))
 })
 </script>
 

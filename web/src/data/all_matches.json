@@ -1,513 +1,222 @@
 [
   {
-    "id": 2001,
-    "league_key": "ucl",
-    "league_name": "欧冠",
-    "league_badge": "欧冠",
-    "league_flag": "circle-flags:eu",
-    "round": 8,
-    "round_label": "温布利总决赛",
-    "date": "2026-06-01 03:00",
-    "date_short": "06-01 周日",
-    "status": "FT",
-    "status_label": "完赛",
-    "is_overseas": false,
-    "home_team": "皇家马德里",
-    "home_code": "RMA",
-    "away_team": "多特蒙德",
-    "away_code": "BVB",
-    "score_home": 2,
-    "score_away": 0,
-    "stadium": "温布利大球场",
-    "xg": "1.82 - 1.15",
-    "shots": "13",
-    "shots_on_target": "6",
-    "distance_km": "112.5",
-    "scorers": [
-      {
-        "minute": 74,
-        "player": "卡瓦哈尔",
-        "player_zh": "卡瓦哈尔",
-        "is_header": true
-      },
-      {
-        "minute": 83,
-        "player": "维尼修斯",
-        "player_zh": "维尼修斯"
-      }
-    ],
-    "news": {
-      "title": "欧冠决赛：卡瓦哈尔头槌破僵维尼修斯锁定胜局，皇马2-0多特夺得队史第15冠！",
-      "summary": "凭借下半场角球头球破门与致命反击，皇家马德里再次登顶欧洲！",
-      "reporter": "懂球云欧洲特派"
-    }
-  },
-  {
-    "id": 2002,
-    "league_key": "uel",
-    "league_name": "欧联",
-    "league_badge": "欧联",
-    "league_flag": "circle-flags:eu",
-    "round": 8,
-    "round_label": "都柏林总决赛",
-    "date": "2026-05-23 03:00",
-    "date_short": "05-23 周五",
-    "status": "FT",
-    "status_label": "完赛",
-    "is_overseas": false,
-    "home_team": "亚特兰大",
-    "home_code": "ATA",
-    "away_team": "勒沃库森",
-    "away_code": "B04",
-    "score_home": 3,
-    "score_away": 0,
-    "stadium": "都柏林英杰华竞技场",
-    "xg": "1.65 - 0.95",
-    "shots": "12",
-    "shots_on_target": "7",
-    "distance_km": "118.0",
-    "scorers": [
-      {
-        "minute": 12,
-        "player": "卢克曼",
-        "player_zh": "卢克曼"
-      },
-      {
-        "minute": 26,
-        "player": "卢克曼",
-        "player_zh": "卢克曼"
-      },
-      {
-        "minute": 75,
-        "player": "卢克曼",
-        "player_zh": "卢克曼"
-      }
-    ],
-    "news": {
-      "title": "欧联决赛：卢克曼帽子戏法封神！亚特兰大3-0勒沃库森，终结药厂不败神话捧杯",
-      "summary": "卢克曼上演史诗级帽子戏法，加斯佩里尼率领真蓝黑夺得队史首座欧战奖杯！",
-      "reporter": "法新社"
-    }
-  },
-  {
-    "id": 2003,
-    "league_key": "uecl",
-    "league_name": "欧协联",
-    "league_badge": "欧协联",
-    "league_flag": "circle-flags:eu",
-    "round": 6,
-    "round_label": "弗罗茨瓦夫总决赛",
-    "date": "2026-05-30 03:00",
-    "date_short": "05-30 周六",
-    "status": "FT",
-    "status_label": "完赛",
-    "is_overseas": false,
-    "home_team": "奥林匹亚科斯",
-    "home_code": "OLY",
-    "away_team": "佛罗伦萨",
-    "away_code": "FIO",
-    "score_home": 1,
-    "score_away": 0,
-    "stadium": "雅典AEK球场",
-    "xg": "1.20 - 1.10",
-    "shots": "9",
-    "shots_on_target": "4",
-    "distance_km": "115.4",
-    "scorers": [
-      {
-        "minute": 116,
-        "player": "卡埃比",
-        "player_zh": "卡埃比",
-        "is_header": true
-      }
-    ],
-    "news": {
-      "title": "欧协联决赛：卡埃比加时116分钟头球绝杀！奥林匹亚科斯1-0佛罗伦萨夺冠",
-      "summary": "希腊豪门加时赛绝杀意甲劲旅，紫百合连续两年屈居欧协联亚军。",
-      "reporter": "路透社"
-    }
-  },
-  {
-    "id": 2004,
-    "league_key": "pl",
-    "league_name": "英超",
-    "league_badge": "英超",
-    "league_flag": "circle-flags:gb-eng",
-    "round": 38,
-    "round_label": "第 38 轮",
-    "date": "2026-05-19 23:00",
-    "date_short": "05-19 周日",
-    "status": "FT",
-    "status_label": "完赛",
-    "is_overseas": false,
-    "home_team": "曼彻斯特城",
-    "home_code": "MCI",
-    "away_team": "西汉姆联",
-    "away_code": "WHU",
-    "score_home": 3,
-    "score_away": 1,
-    "stadium": "阿提哈德球场",
-    "xg": "2.80 - 0.45",
-    "shots": "22",
-    "shots_on_target": "9",
-    "distance_km": "113.8",
-    "scorers": [
-      {
-        "minute": 2,
-        "player": "福登",
-        "player_zh": "福登"
-      },
-      {
-        "minute": 18,
-        "player": "福登",
-        "player_zh": "福登"
-      },
-      {
-        "minute": 42,
-        "player": "库杜斯",
-        "player_zh": "库杜斯"
-      },
-      {
-        "minute": 59,
-        "player": "罗德里",
-        "player_zh": "罗德里"
-      }
-    ],
-    "news": {
-      "title": "英超收官战：福登双响罗德里锁定胜局，曼城3-1西汉姆实现英超史无前例四连冠！",
-      "summary": "瓜迪奥拉率领蓝月军团以91分登顶，阿森纳两分之差屈居亚军。",
-      "reporter": "BBC Sport"
-    }
-  },
-  {
-    "id": 2005,
-    "league_key": "laliga",
-    "league_name": "西甲",
-    "league_badge": "西甲",
-    "league_flag": "circle-flags:es",
-    "round": 32,
-    "round_label": "第 32 轮",
-    "date": "2026-04-22 03:00",
-    "date_short": "04-22 周一",
-    "status": "FT",
-    "status_label": "完赛",
-    "is_overseas": false,
-    "home_team": "皇家马德里",
-    "home_code": "RMA",
-    "away_team": "巴塞罗那",
-    "away_code": "FCB",
-    "score_home": 3,
-    "score_away": 2,
-    "stadium": "圣地亚哥·伯纳乌球场",
-    "xg": "2.35 - 1.80",
-    "shots": "16",
-    "shots_on_target": "8",
-    "distance_km": "114.6",
-    "scorers": [
-      {
-        "minute": 6,
-        "player": "克里斯滕森",
-        "player_zh": "克里斯滕森"
-      },
-      {
-        "minute": 18,
-        "player": "维尼修斯",
-        "player_zh": "维尼修斯"
-      },
-      {
-        "minute": 69,
-        "player": "费尔明",
-        "player_zh": "费尔明"
-      },
-      {
-        "minute": 73,
-        "player": "巴斯克斯",
-        "player_zh": "巴斯克斯"
-      },
-      {
-        "minute": "90+1",
-        "player": "贝林厄姆",
-        "player_zh": "贝林厄姆"
-      }
-    ],
-    "news": {
-      "title": "西班牙国家德比：贝林厄姆91分钟读秒绝杀！皇马3-2逆转巴萨锁定冠军点",
-      "summary": "伯纳乌上演惊心动魄德比大战，贝林厄姆后点包抄攻入绝杀，皇马将领先优势扩大至11分。",
-      "reporter": "马卡报"
-    }
-  },
-  {
-    "id": 2006,
-    "league_key": "serie_a",
-    "league_name": "意甲",
-    "league_badge": "意甲",
-    "league_flag": "circle-flags:it",
-    "round": 33,
-    "round_label": "第 33 轮",
-    "date": "2026-04-23 02:45",
-    "date_short": "04-23 周二",
-    "status": "FT",
-    "status_label": "完赛",
-    "is_overseas": false,
-    "home_team": "AC米兰",
-    "home_code": "MIL",
-    "away_team": "国际米兰",
-    "away_code": "INT",
-    "score_home": 1,
-    "score_away": 2,
-    "stadium": "圣西罗球场",
-    "xg": "1.30 - 1.95",
-    "shots": "14",
-    "shots_on_target": "5",
-    "distance_km": "116.1",
-    "scorers": [
-      {
-        "minute": 18,
-        "player": "阿切尔比",
-        "player_zh": "阿切尔比",
-        "is_header": true
-      },
-      {
-        "minute": 49,
-        "player": "图拉姆",
-        "player_zh": "图拉姆"
-      },
-      {
-        "minute": 80,
-        "player": "托莫里",
-        "player_zh": "托莫里"
-      }
-    ],
-    "news": {
-      "title": "米兰德比：国米2-1力克米兰提前5轮夺冠！队史第20座意甲锦标绣上第二颗星",
-      "summary": "圣西罗球场见证蓝黑军团历史时刻，小因扎吉率队加冕意甲冠军！",
-      "reporter": "米兰体育报"
-    }
-  },
-  {
-    "id": 2007,
-    "league_key": "bundesliga",
-    "league_name": "德甲",
-    "league_badge": "德甲",
-    "league_flag": "circle-flags:de",
-    "round": 29,
-    "round_label": "第 29 轮",
-    "date": "2026-04-14 23:30",
-    "date_short": "04-14 周日",
-    "status": "FT",
-    "status_label": "完赛",
-    "is_overseas": false,
-    "home_team": "勒沃库森",
-    "home_code": "B04",
-    "away_team": "云达不莱梅",
-    "away_code": "SVW",
-    "score_home": 5,
-    "score_away": 0,
-    "stadium": "拜耳竞技场",
-    "xg": "3.40 - 0.25",
-    "shots": "24",
-    "shots_on_target": "11",
-    "distance_km": "115.0",
-    "scorers": [
-      {
-        "minute": 25,
-        "player": "博尼法斯",
-        "player_zh": "博尼法斯"
-      },
-      {
-        "minute": 60,
-        "player": "扎卡",
-        "player_zh": "扎卡"
-      },
-      {
-        "minute": 68,
-        "player": "维尔茨",
-        "player_zh": "维尔茨"
-      },
-      {
-        "minute": 83,
-        "player": "维尔茨",
-        "player_zh": "维尔茨"
-      },
-      {
-        "minute": 90,
-        "player": "维尔茨",
-        "player_zh": "维尔茨"
-      }
-    ],
-    "news": {
-      "title": "勒沃库森5-0大胜不莱梅！队史120年首夺德甲冠军，维尔茨替补戴帽引爆拜耳竞技场",
-      "summary": "阿隆索创造历史，勒沃库森提前5轮锁定德甲冠军，球迷涌入草皮狂欢！",
-      "reporter": "图片报"
-    }
-  },
-  {
-    "id": 2008,
-    "league_key": "ligue1",
-    "league_name": "法甲",
-    "league_badge": "法甲",
-    "league_flag": "circle-flags:fr",
-    "round": 27,
-    "round_label": "第 27 轮",
-    "date": "2026-04-01 02:45",
-    "date_short": "04-01 周一",
-    "status": "FT",
-    "status_label": "完赛",
-    "is_overseas": false,
-    "home_team": "马赛",
-    "home_code": "OM",
-    "away_team": "巴黎圣日耳曼",
-    "away_code": "PSG",
-    "score_home": 0,
-    "score_away": 2,
-    "stadium": "韦洛德罗姆球场",
-    "xg": "1.10 - 1.85",
-    "shots": "15",
-    "shots_on_target": "4",
-    "distance_km": "113.2",
-    "scorers": [
-      {
-        "minute": 53,
-        "player": "维蒂尼亚",
-        "player_zh": "维蒂尼亚"
-      },
-      {
-        "minute": 85,
-        "player": "贡萨洛·拉莫斯",
-        "player_zh": "拉莫斯"
-      }
-    ],
-    "news": {
-      "title": "法国国家德比：十人巴黎客场2-0力克马赛，维蒂尼亚拉莫斯破门锁定胜局",
-      "summary": "贝拉尔多上半场染红，十人巴黎反击犀利连下两城攻克韦洛德罗姆。",
-      "reporter": "队报"
-    }
-  },
-  {
-    "id": 2009,
-    "league_key": "csl",
-    "league_name": "中超",
-    "league_badge": "中超",
-    "league_flag": "circle-flags:cn",
-    "round": 22,
-    "round_label": "第 22 轮",
-    "date": "2026-08-17 19:35",
-    "date_short": "08-17 周一",
-    "status": "FT",
-    "status_label": "完赛",
-    "is_overseas": false,
-    "home_team": "上海申花",
-    "home_code": "SHS",
-    "away_team": "上海海港",
-    "away_code": "SHP",
-    "score_home": 3,
-    "score_away": 1,
-    "stadium": "上海体育场",
-    "xg": "2.10 - 1.45",
-    "shots": "15",
-    "shots_on_target": "6",
-    "distance_km": "117.2",
-    "scorers": [
-      {
-        "minute": 12,
-        "player": "王燊超",
-        "player_zh": "王燊超"
-      },
-      {
-        "minute": 79,
-        "player": "于汉超",
-        "player_zh": "于汉超"
-      },
-      {
-        "minute": 82,
-        "player": "路易斯",
-        "player_zh": "路易斯"
-      },
-      {
-        "minute": "90+5",
-        "player": "路易斯",
-        "player_zh": "路易斯"
-      }
-    ],
-    "news": {
-      "title": "上海德比惊天逆转！于汉超传射，申花3-1力破海港不败金身",
-      "summary": "上海体育场见证激情德比战，申花在最后15分钟连入三球完成绝地大反击！",
-      "reporter": "体坛周报"
-    }
-  },
-  {
-    "id": 2010,
-    "league_key": "bel_d1",
-    "league_name": "比甲",
-    "league_badge": "比甲",
-    "league_flag": "circle-flags:be",
-    "round": 30,
-    "round_label": "附加赛第 10 轮",
-    "date": "2026-05-26 20:30",
-    "date_short": "05-26 周日",
-    "status": "FT",
-    "status_label": "完赛",
-    "is_overseas": false,
-    "home_team": "皇家布鲁日",
-    "home_code": "CLU",
-    "away_team": "色格拉布鲁日",
-    "away_code": "CER",
-    "score_home": 0,
-    "score_away": 0,
-    "stadium": "扬·布雷德尔球场",
-    "xg": "1.45 - 0.85",
-    "shots": "14",
-    "shots_on_target": "4",
-    "distance_km": "112.0",
-    "scorers": [],
-    "news": {
-      "title": "布鲁日德比战平！皇家布鲁日力压圣吉罗斯夺得2025/26赛季比甲联赛冠军",
-      "summary": "布鲁日凭借附加赛净胜球优势成功加冕比甲联赛冠军，锁定下赛季欧冠正赛资格。",
-      "reporter": "晚报 (Le Soir)"
-    }
-  },
-  {
-    "id": 1001,
+    "id": 1003,
     "league_key": "pol_d1",
     "league_name": "波甲",
     "league_badge": "波甲",
     "league_flag": "circle-flags:pl",
-    "round": 1,
-    "round_label": "第 1 轮",
-    "date": "2026-07-19 20:00",
-    "date_short": "07-19 周日",
+    "round": 3,
+    "round_label": "第 3 轮",
+    "date": "2026-08-01 20:00",
+    "date_short": "08-01 周六",
     "status": "FT",
     "status_label": "完赛",
     "is_overseas": true,
-    "home_team": "克拉科维亚",
-    "home_code": "CRA",
+    "home_team": "维彻兹塔克拉库瓦",
+    "home_code": "WIE",
     "away_team": "奥波莱奥德拉",
     "away_code": "ODR",
-    "score_home": 1,
-    "score_away": 1,
-    "stadium": "克拉科夫约瑟夫·皮尔苏斯基球场",
-    "xg": "1.35 - 1.20",
-    "shots": "12",
-    "shots_on_target": "5",
-    "distance_km": "114.2",
+    "score_home": 2,
+    "score_away": 3,
+    "stadium": "克拉科夫市政球场",
+    "xg": "1.75 - 2.10",
+    "shots": "13",
+    "shots_on_target": "7",
+    "distance_km": "115.3",
     "scorers": [
       {
-        "minute": 28,
-        "player": "卡利曼 (Kallman)",
-        "player_zh": "卡利曼"
+        "minute": 14,
+        "player": "科比亚克",
+        "player_zh": "科比亚克"
       },
       {
-        "minute": 62,
-        "player": "卡克佩尔·普日比乌科 (Przybyłko)",
+        "minute": 34,
+        "player": "卡克佩尔·普日比乌科",
         "player_zh": "卡克佩尔",
-        "assist": "皮尔伊 (Pilj)",
-        "assist_zh": "皮尔伊"
+        "assist": "巴巴卡尔·迪奥内",
+        "assist_zh": "迪奥内"
+      },
+      {
+        "minute": 56,
+        "player": "托马斯·加伊达",
+        "player_zh": "加伊达",
+        "assist": "马特乌什·斯皮哈瓦",
+        "assist_zh": "斯皮哈瓦"
+      },
+      {
+        "minute": 69,
+        "player": "米斯利维茨",
+        "player_zh": "米斯利维茨"
+      },
+      {
+        "minute": 87,
+        "player": "卡克佩尔·普日比乌科",
+        "player_zh": "卡克佩尔",
+        "assist": "雅库布·什雷克",
+        "assist_zh": "什雷克",
+        "is_header": true,
+        "is_stoppage": true
       }
     ],
     "news": {
-      "title": "波甲首轮客场逼平强敌！卡克佩尔推射建功，奥波莱奥德拉1-1客平克拉科维亚",
-      "summary": "中国新帅迎来波兰正式比赛首秀，客场面对劲旅克拉科维亚下半场顽强扳平比分，斩获新赛季第一分！",
-      "reporter": "懂球云波兰特派"
+      "title": "3场5球狂飙！奥波莱客场3-2绝杀维彻兹塔两连胜，中国少帅率队跃居波甲次席",
+      "summary": "凭借卡克佩尔87分钟头球绝杀上演背靠背双响，奥波莱奥德拉3轮2胜1平保持不败，冲进波甲直接升级区次席！",
+      "reporter": "体坛周报驻欧特派"
+    }
+  },
+  {
+    "id": 1004,
+    "league_key": "pol_d1",
+    "league_name": "波甲",
+    "league_badge": "波甲",
+    "league_flag": "circle-flags:pl",
+    "round": 3,
+    "round_label": "第 3 轮",
+    "date": "2026-08-01 17:30",
+    "date_short": "08-01 周六",
+    "status": "FT",
+    "status_label": "完赛",
+    "is_overseas": false,
+    "home_team": "乔治罗尼亚",
+    "home_code": "JAG",
+    "away_team": "华沙莱吉亚",
+    "away_code": "LEG",
+    "score_home": 0,
+    "score_away": 0,
+    "stadium": "比亚韦斯托克市立球场",
+    "xg": "1.10 - 1.25",
+    "shots": "11",
+    "shots_on_target": "3",
+    "distance_km": "117.8",
+    "scorers": [],
+    "news": {
+      "title": "波甲天王山：卫冕冠军乔治罗尼亚0-0闷平华沙莱吉亚，两队防线滴水不漏",
+      "summary": "榜首强强对话拼抢激烈，主裁出示6张黄牌，双方互交白卷各取1分。",
+      "reporter": "Przegląd Sportowy"
+    }
+  },
+  {
+    "id": 1005,
+    "league_key": "pol_d1",
+    "league_name": "波甲",
+    "league_badge": "波甲",
+    "league_flag": "circle-flags:pl",
+    "round": 3,
+    "round_label": "第 3 轮",
+    "date": "2026-08-01 17:30",
+    "date_short": "08-01 周六",
+    "status": "FT",
+    "status_label": "完赛",
+    "is_overseas": false,
+    "home_team": "波兹南莱赫",
+    "home_code": "LPO",
+    "away_team": "拉多米亚克",
+    "away_code": "RAD",
+    "score_home": 4,
+    "score_away": 2,
+    "stadium": "波兹南市政球场",
+    "xg": "2.85 - 1.40",
+    "shots": "19",
+    "shots_on_target": "9",
+    "distance_km": "114.5",
+    "scorers": [
+      {
+        "minute": 12,
+        "player": "伊沙克",
+        "player_zh": "伊沙克"
+      },
+      {
+        "minute": 27,
+        "player": "罗恰",
+        "player_zh": "罗恰"
+      },
+      {
+        "minute": 45,
+        "player": "苏斯洛夫",
+        "player_zh": "苏斯洛夫"
+      },
+      {
+        "minute": 63,
+        "player": "伊沙克",
+        "player_zh": "伊沙克"
+      },
+      {
+        "minute": 78,
+        "player": "阿尔维斯",
+        "player_zh": "阿尔维斯"
+      },
+      {
+        "minute": 89,
+        "player": "瓦尔斯特伦",
+        "player_zh": "瓦尔斯特伦"
+      }
+    ],
+    "news": {
+      "title": "进球大战！波兹南莱赫4-2大胜拉多米亚克，伊沙克梅开二度领跑前场",
+      "summary": "莱赫主场狂轰4球打出极致攻势足球，全场球迷起立鼓掌欢庆大捷。",
+      "reporter": "波兰体育评论报"
+    }
+  },
+  {
+    "id": 1006,
+    "league_key": "pol_d1",
+    "league_name": "波甲",
+    "league_badge": "波甲",
+    "league_flag": "circle-flags:pl",
+    "round": 3,
+    "round_label": "第 3 轮",
+    "date": "2026-08-01 15:00",
+    "date_short": "08-01 周六",
+    "status": "FT",
+    "status_label": "完赛",
+    "is_overseas": false,
+    "home_team": "GKS卡托维兹",
+    "home_code": "KAT",
+    "away_team": "弗罗茨瓦夫西里西亚",
+    "away_code": "SLA",
+    "score_home": 4,
+    "score_away": 2,
+    "stadium": "卡托维兹球场",
+    "xg": "2.20 - 1.60",
+    "shots": "15",
+    "shots_on_target": "7",
+    "distance_km": "112.0",
+    "scorers": [
+      {
+        "minute": 19,
+        "player": "贝格尔",
+        "player_zh": "贝格尔"
+      },
+      {
+        "minute": 38,
+        "player": "克卢斯卡",
+        "player_zh": "克卢斯卡"
+      },
+      {
+        "minute": 54,
+        "player": "萨姆塞克",
+        "player_zh": "萨姆塞克"
+      },
+      {
+        "minute": 72,
+        "player": "罗加拉",
+        "player_zh": "罗加拉"
+      },
+      {
+        "minute": 85,
+        "player": "加尔万",
+        "player_zh": "加尔万"
+      },
+      {
+        "minute": "90+1",
+        "player": "马科夫斯基",
+        "player_zh": "马科夫斯基"
+      }
+    ],
+    "news": {
+      "title": "卡托维兹进攻狂潮4-2力克弗罗茨瓦夫，迅速走出上轮惜败阴霾",
+      "summary": "上轮惜败奥波莱的卡托维兹本轮主场发威，全场连下四城拿下关键3分。",
+      "reporter": "波兰足球在线"
     }
   },
   {
@@ -573,68 +282,514 @@
     }
   },
   {
-    "id": 1003,
+    "id": 1001,
     "league_key": "pol_d1",
     "league_name": "波甲",
     "league_badge": "波甲",
     "league_flag": "circle-flags:pl",
-    "round": 3,
-    "round_label": "第 3 轮",
+    "round": 1,
+    "round_label": "第 1 轮",
+    "date": "2026-07-19 20:00",
+    "date_short": "07-19 周日",
+    "status": "FT",
+    "status_label": "完赛",
+    "is_overseas": true,
+    "home_team": "克拉科维亚",
+    "home_code": "CRA",
+    "away_team": "奥波莱奥德拉",
+    "away_code": "ODR",
+    "score_home": 1,
+    "score_away": 1,
+    "stadium": "克拉科夫约瑟夫·皮尔苏斯基球场",
+    "xg": "1.35 - 1.20",
+    "shots": "12",
+    "shots_on_target": "5",
+    "distance_km": "114.2",
+    "scorers": [
+      {
+        "minute": 28,
+        "player": "卡利曼 (Kallman)",
+        "player_zh": "卡利曼"
+      },
+      {
+        "minute": 62,
+        "player": "卡克佩尔·普日比乌科 (Przybyłko)",
+        "player_zh": "卡克佩尔",
+        "assist": "皮尔伊 (Pilj)",
+        "assist_zh": "皮尔伊"
+      }
+    ],
+    "news": {
+      "title": "波甲首轮客场逼平强敌！卡克佩尔推射建功，奥波莱奥德拉1-1客平克拉科维亚",
+      "summary": "中国新帅迎来波兰正式比赛首秀，客场面对劲旅克拉科维亚下半场顽强扳平比分，斩获新赛季第一分！",
+      "reporter": "懂球云波兰特派"
+    }
+  },
+  {
+    "id": 2011,
+    "league_key": "bel_d1",
+    "league_name": "比甲",
+    "league_badge": "比甲",
+    "league_flag": "circle-flags:be",
+    "round": 1,
+    "round_label": "第 1 轮",
+    "date": "2026-08-01 20:45",
+    "date_short": "08-01 周六",
+    "status": "FT",
+    "status_label": "完赛",
+    "is_overseas": false,
+    "home_team": "旧海弗莱鲁汶",
+    "home_code": "OHL",
+    "away_team": "维尔通精英",
+    "away_code": "VIR",
+    "score_home": 3,
+    "score_away": 1,
+    "stadium": "登德鲁夫球场",
+    "xg": "2.10 - 0.95",
+    "shots": "14",
+    "shots_on_target": "6",
+    "distance_km": "113.4",
+    "scorers": [
+      {
+        "minute": 21,
+        "player": "索尔 (Thor)",
+        "player_zh": "索尔"
+      },
+      {
+        "minute": 54,
+        "player": "恩辛吉 (Nsingi)",
+        "player_zh": "恩辛吉"
+      },
+      {
+        "minute": 73,
+        "player": "保罗·韦德 (Wade)",
+        "player_zh": "韦德"
+      },
+      {
+        "minute": 86,
+        "player": "布鲁恩斯 (Bruns)",
+        "player_zh": "布鲁恩斯"
+      }
+    ],
+    "news": {
+      "title": "比甲首轮战报：升班马维尔通客场1-3不敌鲁汶，功勋离任后新帅体系磨合遇挫",
+      "summary": "老东家维尔通在首度征战比甲的揭幕战中防线犯错，客场1-3负于鲁汶。",
+      "reporter": "HLN 比利时最新消息报"
+    }
+  },
+  {
+    "id": 2010,
+    "league_key": "bel_d1",
+    "league_name": "比甲",
+    "league_badge": "比甲",
+    "league_flag": "circle-flags:be",
+    "round": 1,
+    "round_label": "第 1 轮",
+    "date": "2026-07-26 13:30",
+    "date_short": "07-26 周日",
+    "status": "FT",
+    "status_label": "完赛",
+    "is_overseas": false,
+    "home_team": "皇家布鲁日",
+    "home_code": "CLU",
+    "away_team": "皇家标准列日",
+    "away_code": "STA",
+    "score_home": 0,
+    "score_away": 0,
+    "stadium": "扬·布雷德尔球场",
+    "xg": "1.45 - 0.85",
+    "shots": "14",
+    "shots_on_target": "4",
+    "distance_km": "112.0",
+    "scorers": [],
+    "news": {
+      "title": "比甲揭幕战：卫冕冠军皇家布鲁日0-0闷平标准列日，全场狂攻破门乏术",
+      "summary": "布鲁日全场掌控球权但未能打破僵局，新赛季首战与传统死敌各取一分。",
+      "reporter": "Le Soir 比利时晚报"
+    }
+  },
+  {
+    "id": 2013,
+    "league_key": "bel_d1",
+    "league_name": "比甲",
+    "league_badge": "比甲",
+    "league_flag": "circle-flags:be",
+    "round": 1,
+    "round_label": "第 1 轮",
+    "date": "2026-07-26 18:30",
+    "date_short": "07-26 周日",
+    "status": "FT",
+    "status_label": "完赛",
+    "is_overseas": false,
+    "home_team": "皇家安德莱赫特",
+    "home_code": "AND",
+    "away_team": "SK贝弗伦",
+    "away_code": "BEV",
+    "score_home": 1,
+    "score_away": 0,
+    "stadium": "乐透公园球场",
+    "xg": "1.65 - 0.50",
+    "shots": "16",
+    "shots_on_target": "6",
+    "distance_km": "114.2",
+    "scorers": [
+      {
+        "minute": 42,
+        "player": "多尔贝格",
+        "player_zh": "多尔贝格"
+      }
+    ],
+    "news": {
+      "title": "多尔贝格一击制胜！安德莱赫特主场1-0小胜贝弗伦收获开门红",
+      "summary": "紫白军团凭借丹麦前锋的上半场抢射破门全取三分，暂列比甲前茅。",
+      "reporter": "RTBF"
+    }
+  },
+  {
+    "id": 3001,
+    "league_key": "pl",
+    "league_name": "英超",
+    "league_badge": "英超季前赛",
+    "league_flag": "circle-flags:gb-eng",
+    "round": 1,
+    "round_label": "季前热身赛",
+    "date": "2026-07-31 19:30",
+    "date_short": "07-31 周五",
+    "status": "FT",
+    "status_label": "完赛",
+    "is_overseas": false,
+    "home_team": "伯恩茅斯",
+    "home_code": "BOU",
+    "away_team": "曼彻斯特城",
+    "away_code": "MCI",
+    "score_home": 0,
+    "score_away": 2,
+    "stadium": "活力球场",
+    "xg": "0.45 - 2.10",
+    "shots": "6",
+    "shots_on_target": "2",
+    "distance_km": "111.0",
+    "scorers": [
+      {
+        "minute": 31,
+        "player": "哈兰德",
+        "player_zh": "哈兰德"
+      },
+      {
+        "minute": 68,
+        "player": "福登",
+        "player_zh": "福登"
+      }
+    ],
+    "news": {
+      "title": "季前赛：哈兰德福登建功，曼城客场2-0轻取伯恩茅斯豪取热身赛连胜",
+      "summary": "瓜迪奥拉演练前场全新压迫体系，蓝月亮全场控球达68%轻松过关。",
+      "reporter": "BBC Sport"
+    }
+  },
+  {
+    "id": 3002,
+    "league_key": "laliga",
+    "league_name": "西甲",
+    "league_badge": "西夏季赛",
+    "league_flag": "circle-flags:es",
+    "round": 1,
+    "round_label": "季前热身赛",
+    "date": "2026-08-01 19:00",
+    "date_short": "08-01 周六",
+    "status": "FT",
+    "status_label": "完赛",
+    "is_overseas": false,
+    "home_team": "阿莫雷比亚塔",
+    "home_code": "AMO",
+    "away_team": "巴塞罗那",
+    "away_code": "FCB",
+    "score_home": 0,
+    "score_away": 3,
+    "stadium": "乌里切球场",
+    "xg": "0.30 - 2.65",
+    "shots": "4",
+    "shots_on_target": "1",
+    "distance_km": "112.5",
+    "scorers": [
+      {
+        "minute": 15,
+        "player": "亚马尔",
+        "player_zh": "亚马尔"
+      },
+      {
+        "minute": 41,
+        "player": "拉菲尼亚",
+        "player_zh": "拉菲尼亚"
+      },
+      {
+        "minute": 76,
+        "player": "费尔明",
+        "player_zh": "费尔明"
+      }
+    ],
+    "news": {
+      "title": "巴萨季前赛3-0完胜阿莫雷比亚塔！亚马尔世界波，拉菲尼亚费尔明建功",
+      "summary": "弗里克麾下的红蓝军团在前场展开流畅逼抢配合，展现出良好的新赛季竞技状态。",
+      "reporter": "每日体育报"
+    }
+  },
+  {
+    "id": 3003,
+    "league_key": "pl",
+    "league_name": "英超",
+    "league_badge": "英超季前赛",
+    "league_flag": "circle-flags:gb-eng",
+    "round": 1,
+    "round_label": "季前热身赛",
     "date": "2026-08-01 20:00",
     "date_short": "08-01 周六",
     "status": "FT",
     "status_label": "完赛",
-    "is_overseas": true,
-    "home_team": "维彻兹塔克拉库瓦",
-    "home_code": "WIE",
-    "away_team": "奥波莱奥德拉",
-    "away_code": "ODR",
-    "score_home": 2,
-    "score_away": 3,
-    "stadium": "克拉科夫市政球场",
-    "xg": "1.75 - 2.10",
-    "shots": "13",
-    "shots_on_target": "7",
-    "distance_km": "115.3",
+    "is_overseas": false,
+    "home_team": "雅典君士坦丁堡竞技",
+    "home_code": "AEK",
+    "away_team": "阿森纳",
+    "away_code": "ARS",
+    "score_home": 1,
+    "score_away": 2,
+    "stadium": "阿吉亚索菲亚球场",
+    "xg": "0.85 - 1.95",
+    "shots": "8",
+    "shots_on_target": "3",
+    "distance_km": "115.0",
     "scorers": [
       {
-        "minute": 14,
-        "player": "科比亚克",
-        "player_zh": "科比亚克"
+        "minute": 23,
+        "player": "加西亚",
+        "player_zh": "加西亚"
       },
       {
-        "minute": 34,
-        "player": "卡克佩尔·普日比乌科",
-        "player_zh": "卡克佩尔",
-        "assist": "巴巴卡尔·迪奥内",
-        "assist_zh": "迪奥内"
+        "minute": 52,
+        "player": "萨卡",
+        "player_zh": "萨卡"
       },
       {
-        "minute": 56,
-        "player": "托马斯·加伊达",
-        "player_zh": "加伊达",
-        "assist": "马特乌什·斯皮哈瓦",
-        "assist_zh": "斯皮哈瓦"
-      },
-      {
-        "minute": 69,
-        "player": "米斯利维茨",
-        "player_zh": "米斯利维茨"
-      },
-      {
-        "minute": 87,
-        "player": "卡克佩尔·普日比乌科",
-        "player_zh": "卡克佩尔",
-        "assist": "雅库布·什雷克",
-        "assist_zh": "什雷克",
-        "is_header": true,
-        "is_stoppage": true
+        "minute": 83,
+        "player": "马丁内利",
+        "player_zh": "马丁内利"
       }
     ],
     "news": {
-      "title": "3场5球狂飙！奥波莱客场3-2绝杀维彻兹塔两连胜，中国少帅率队跃居波甲次席",
-      "summary": "凭借卡克佩尔87分钟头球绝杀上演背靠背双响，奥波莱奥德拉3轮2胜1平保持不败，冲进波甲直接升级区次席！",
-      "reporter": "体坛周报驻欧特派"
+      "title": "阿森纳客场2-1逆转雅典AEK！萨卡扳平马丁内利绝杀，枪手夏训状态渐入佳境",
+      "summary": "阿尔特塔下半场调整变阵收到奇效，阿森纳凭借边路双星爆发逆转对手。",
+      "reporter": "Sky Sports"
+    }
+  },
+  {
+    "id": 3004,
+    "league_key": "pl",
+    "league_name": "英超",
+    "league_badge": "英超季前赛",
+    "league_flag": "circle-flags:gb-eng",
+    "round": 1,
+    "round_label": "季前热身赛",
+    "date": "2026-08-01 18:00",
+    "date_short": "08-01 周六",
+    "status": "FT",
+    "status_label": "完赛",
+    "is_overseas": false,
+    "home_team": "朗斯",
+    "home_code": "RCL",
+    "away_team": "切尔西",
+    "away_code": "CHE",
+    "score_home": 0,
+    "score_away": 0,
+    "stadium": "博拉尔特-德勒利球场",
+    "xg": "1.05 - 1.15",
+    "shots": "10",
+    "shots_on_target": "3",
+    "distance_km": "114.0",
+    "scorers": [],
+    "news": {
+      "title": "热身赛闷平：切尔西客场0-0战平法甲朗斯，帕尔默中柱新援防线经受考验",
+      "summary": "蓝军客场战平朗斯，主教练马雷斯卡在下半场大面积轮换考察青年梯队新星。",
+      "reporter": "伦敦标准晚报"
+    }
+  },
+  {
+    "id": 2009,
+    "league_key": "csl",
+    "league_name": "中超",
+    "league_badge": "中超",
+    "league_flag": "circle-flags:cn",
+    "round": 22,
+    "round_label": "第 22 轮",
+    "date": "2026-08-17 19:35",
+    "date_short": "08-17 周一",
+    "status": "FT",
+    "status_label": "完赛",
+    "is_overseas": false,
+    "home_team": "上海申花",
+    "home_code": "SHS",
+    "away_team": "上海海港",
+    "away_code": "SHP",
+    "score_home": 3,
+    "score_away": 1,
+    "stadium": "上海体育场",
+    "xg": "2.10 - 1.45",
+    "shots": "15",
+    "shots_on_target": "6",
+    "distance_km": "117.2",
+    "scorers": [
+      {
+        "minute": 12,
+        "player": "王燊超",
+        "player_zh": "王燊超"
+      },
+      {
+        "minute": 79,
+        "player": "于汉超",
+        "player_zh": "于汉超"
+      },
+      {
+        "minute": 82,
+        "player": "路易斯",
+        "player_zh": "路易斯"
+      },
+      {
+        "minute": "90+5",
+        "player": "路易斯",
+        "player_zh": "路易斯"
+      }
+    ],
+    "news": {
+      "title": "上海德比惊天逆转！于汉超传射，申花3-1力破海港不败金身",
+      "summary": "上海体育场见证激情德比战，申花在最后15分钟连入三球完成绝地大反击！",
+      "reporter": "体坛周报"
+    }
+  },
+  {
+    "id": 2001,
+    "league_key": "ucl",
+    "league_name": "欧冠",
+    "league_badge": "欧冠",
+    "league_flag": "circle-flags:eu",
+    "round": 8,
+    "round_label": "25/26赛季温布利决赛",
+    "date": "2026-06-01 03:00",
+    "date_short": "06-01",
+    "status": "FT",
+    "status_label": "完赛",
+    "is_overseas": false,
+    "home_team": "皇家马德里",
+    "home_code": "RMA",
+    "away_team": "多特蒙德",
+    "away_code": "BVB",
+    "score_home": 2,
+    "score_away": 0,
+    "stadium": "温布利大球场",
+    "xg": "1.82 - 1.15",
+    "shots": "13",
+    "shots_on_target": "6",
+    "distance_km": "112.5",
+    "scorers": [
+      {
+        "minute": 74,
+        "player": "卡瓦哈尔",
+        "player_zh": "卡瓦哈尔",
+        "is_header": true
+      },
+      {
+        "minute": 83,
+        "player": "维尼修斯",
+        "player_zh": "维尼修斯"
+      }
+    ],
+    "news": {
+      "title": "2025/26赛季欧冠决赛：卡瓦哈尔破僵维尼修斯锁胜，皇马2-0夺队史第15冠",
+      "summary": "皇家马德里在温布利大球场力克多特蒙德，再次捧起欧冠奖杯。",
+      "reporter": "懂球云欧洲特派"
+    }
+  },
+  {
+    "id": 2002,
+    "league_key": "uel",
+    "league_name": "欧联",
+    "league_badge": "欧联",
+    "league_flag": "circle-flags:eu",
+    "round": 8,
+    "round_label": "25/26赛季都柏林决赛",
+    "date": "2026-05-23 03:00",
+    "date_short": "05-23",
+    "status": "FT",
+    "status_label": "完赛",
+    "is_overseas": false,
+    "home_team": "亚特兰大",
+    "home_code": "ATA",
+    "away_team": "勒沃库森",
+    "away_code": "B04",
+    "score_home": 3,
+    "score_away": 0,
+    "stadium": "都柏林英杰华竞技场",
+    "xg": "1.65 - 0.95",
+    "shots": "12",
+    "shots_on_target": "7",
+    "distance_km": "118.0",
+    "scorers": [
+      {
+        "minute": 12,
+        "player": "卢克曼",
+        "player_zh": "卢克曼"
+      },
+      {
+        "minute": 26,
+        "player": "卢克曼",
+        "player_zh": "卢克曼"
+      },
+      {
+        "minute": 75,
+        "player": "卢克曼",
+        "player_zh": "卢克曼"
+      }
+    ],
+    "news": {
+      "title": "2025/26赛季欧联决赛：卢克曼帽子戏法封神！亚特兰大3-0勒沃库森捧杯",
+      "summary": "卢克曼上演史诗级帽子戏法，加斯佩里尼率领真蓝黑夺得队史首座欧战奖杯！",
+      "reporter": "法新社"
+    }
+  },
+  {
+    "id": 2003,
+    "league_key": "uecl",
+    "league_name": "欧协联",
+    "league_badge": "欧协联",
+    "league_flag": "circle-flags:eu",
+    "round": 6,
+    "round_label": "25/26赛季总决赛",
+    "date": "2026-05-30 03:00",
+    "date_short": "05-30",
+    "status": "FT",
+    "status_label": "完赛",
+    "is_overseas": false,
+    "home_team": "奥林匹亚科斯",
+    "home_code": "OLY",
+    "away_team": "佛罗伦萨",
+    "away_code": "FIO",
+    "score_home": 1,
+    "score_away": 0,
+    "stadium": "雅典AEK球场",
+    "xg": "1.20 - 1.10",
+    "shots": "9",
+    "shots_on_target": "4",
+    "distance_km": "115.4",
+    "scorers": [
+      {
+        "minute": 116,
+        "player": "卡埃比",
+        "player_zh": "卡埃比",
+        "is_header": true
+      }
+    ],
+    "news": {
+      "title": "2025/26赛季欧协联决赛：卡埃比加时116分钟绝杀！奥林匹亚科斯夺冠",
+      "summary": "希腊豪门加时赛绝杀意甲劲旅，紫百合连续两年屈居欧协联亚军。",
+      "reporter": "路透社"
     }
   }
 ]
