@@ -396,7 +396,10 @@
 
             <!-- 右侧：转会费标签 (上方) + 原俱乐部 (下方，强制单行省略号截断) -->
             <div class="text-right shrink-0 max-w-[130px] flex flex-col items-end min-w-0">
-              <span class="font-mono font-bold text-emerald-400 text-[11px] leading-tight">
+              <span
+                class="font-mono text-[11px] leading-tight"
+                :class="getTransferFeeClass(tIn.fee, 'in')"
+              >
                 {{ tIn.fee }}
               </span>
               <span
@@ -439,7 +442,10 @@
 
             <!-- 右侧：转会费标签 (上方) + 目标俱乐部 (下方，强制单行省略号截断) -->
             <div class="text-right shrink-0 max-w-[130px] flex flex-col items-end min-w-0">
-              <span class="font-mono font-bold text-rose-400 text-[11px] leading-tight">
+              <span
+                class="font-mono text-[11px] leading-tight"
+                :class="getTransferFeeClass(tOut.fee, 'out')"
+              >
                 {{ tOut.fee }}
               </span>
               <span
@@ -870,6 +876,20 @@ const attrClass = (val) => {
   if (v >= 12) return 'bg-teal-950 text-teal-300 border border-teal-800/60 font-bold'
   if (v >= 8) return 'bg-slate-900 text-slate-200 border border-slate-800 font-medium'
   return 'bg-slate-950 text-slate-500 border border-slate-900'
+}
+
+const getTransferFeeClass = (fee, direction = 'in') => {
+  if (!fee) return 'text-slate-400'
+  if (fee.includes('估值')) {
+    return 'text-amber-400 font-medium'
+  }
+  if (fee.includes('免签')) {
+    return 'text-emerald-400 font-bold'
+  }
+  if (fee.includes('租借')) {
+    return 'text-sky-400 font-bold'
+  }
+  return direction === 'in' ? 'text-emerald-400 font-bold' : 'text-rose-400 font-bold'
 }
 </script>
 

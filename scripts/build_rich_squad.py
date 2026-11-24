@@ -6,6 +6,9 @@ import fmsave
 SAVE_PATH = Path(r"C:\Users\Administrator\Documents\Sports Interactive\Football Manager 2024\games\耶稣 徐- 失​业中.fm")
 FOLLOWED_PATH = Path(r"I:\fm26-virton-hub\web\src\data\followed_clubs.json")
 
+# 货币换算系数常量 CURRENCY_MULTIPLIER (从底层原始单位换算为游戏显示货币)
+CURRENCY_MULTIPLIER = 1.0
+
 ZH_NAME_MAP = {
     # Odra Opole
     "Kacper Przybyłko": "卡克佩尔·普日比乌科",
@@ -127,10 +130,12 @@ def extract_player_data(p, squad_number):
     is_gk = (pos == 'GK')
 
     # Contract & Value
-    wage = p.contract.wage if hasattr(p, 'contract') and hasattr(p.contract, 'wage') else 1200
+    raw_wage = p.contract.wage if hasattr(p, 'contract') and hasattr(p.contract, 'wage') else 1200
+    wage = int(raw_wage * CURRENCY_MULTIPLIER)
     end_date = str(p.contract.end) if hasattr(p, 'contract') and hasattr(p.contract.end, 'isoformat') else "2027-06-30"
-    t_val = getattr(p, 'transfer_value', 100000) or 100000
-    val_str = f"€{t_val / 10000:.1f}万" if t_val >= 10000 else f"€{t_val}"
+    raw_t_val = getattr(p, 'transfer_value', 100000) or 100000
+    t_val = raw_t_val * CURRENCY_MULTIPLIER
+    val_str = f"€{t_val / 10000:.1f}万" if t_val >= 10000 else f"€{int(t_val)}"
 
     return {
         "uid": p.uid,
@@ -231,6 +236,8 @@ def main():
                 squad_list.append(extract_player_data(p, num))
             
             odra_club['squad'] = squad_list
+            total_odra = sum((getattr(p, 'transfer_value', 100000) or 100000) * CURRENCY_MULTIPLIER for p in odra_fm[:26])
+            odra_club['market_value'] = f"€{total_odra / 10000:.1f}万"
 
         # 2. Virton (club_uid = 292)
         virton_club = next((c for c in followed_data if c['id'] == 'virton'), None)
@@ -245,6 +252,8 @@ def main():
                 squad_list.append(extract_player_data(p, num))
             
             virton_club['squad'] = squad_list
+            total_virton = sum((getattr(p, 'transfer_value', 100000) or 100000) * CURRENCY_MULTIPLIER for p in virton_fm[:24])
+            virton_club['market_value'] = f"€{total_virton / 10000:.1f}万"
 
     with open(FOLLOWED_PATH, 'w', encoding='utf-8') as f:
         json.dump(followed_data, f, ensure_ascii=False, indent=2)

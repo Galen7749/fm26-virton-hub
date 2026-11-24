@@ -287,7 +287,12 @@
 
         <div class="flex items-center justify-between">
           <span class="font-bold text-white text-xs sm:text-sm">{{ tr.player }}</span>
-          <span class="text-[11px] text-emerald-400 font-mono font-bold">{{ tr.fee }}</span>
+          <span
+            class="text-[11px] font-mono"
+            :class="tr.fee && tr.fee.includes('估值') ? 'text-amber-400 font-medium' : tr.fee && tr.fee.includes('租借') ? 'text-sky-400 font-bold' : 'text-emerald-400 font-bold'"
+          >
+            {{ tr.fee }}
+          </span>
         </div>
 
         <div class="text-[11px] text-slate-400 inline-flex items-center gap-2 pt-0.5">

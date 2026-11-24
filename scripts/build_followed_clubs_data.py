@@ -39,10 +39,13 @@ def get_flag(nation_name):
             return v
     return "circle-flags:un"
 
+# 货币换算系数常量 CURRENCY_MULTIPLIER
+CURRENCY_MULTIPLIER = 1.0
+
 def format_value(val):
     if not val:
         return "€20万"
-    val = int(val)
+    val = int(val * CURRENCY_MULTIPLIER)
     if val >= 1000000:
         return f"€{val / 1000000:.1f}M"
     elif val >= 10000:
