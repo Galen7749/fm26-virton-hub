@@ -9,7 +9,7 @@
         class="inline-flex items-center gap-1.5 text-slate-300 hover:text-white font-bold transition px-2.5 py-1 rounded-lg hover:bg-slate-900 border border-slate-800"
       >
         <Icon icon="lucide:arrow-left" class="w-3.5 h-3.5" />
-        <span>返回比赛列表</span>
+        <span>{{ backText || '返回' }}</span>
       </button>
 
       <!-- 轮次指示器与上一场/下一场切换 -->
@@ -238,6 +238,10 @@ const props = defineProps({
   roundOtherMatches: {
     type: Array,
     default: () => []
+  },
+  backText: {
+    type: String,
+    default: '返回比赛列表'
   }
 })
 

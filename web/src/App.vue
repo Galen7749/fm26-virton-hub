@@ -22,21 +22,22 @@
 
         <!-- Tab 2: 【比赛】页 (顶部中立轮次/联赛下拉 + 中立比分列表 + 详情页子Tab) -->
         <template v-else-if="activeTab === 'matches'">
-          <!-- 比赛列表瀑布流 -->
+          <!-- 比赛列表瀑布流 (使用 v-show 确保进入比赛详情后再返回时，保留用户先前的联赛与轮次筛选选项) -->
           <MatchList
-            v-if="!selectedMatchId"
+            v-show="!selectedMatchId"
             :matches="matches"
             @select-match="onSelectMatch"
           />
 
           <!-- 比赛详情页 (战报 | 赛况/阵容评分 | 热评 | 同轮赛果) -->
           <MatchDetail
-            v-else
+            v-if="selectedMatchId"
             :match="selectedMatch"
             :allMatches="matches"
             :news="selectedNews"
             :roundOtherMatches="selectedRoundOtherMatches"
-            @back="selectedMatchId = null"
+            :backText="backButtonText"
+            @back="handleBackFromMatch"
             @switch-match="onSwitchMatch"
           />
         </template>
@@ -149,16 +150,38 @@ const selectedRoundOtherMatches = computed(() => {
   return allMatchesRaw.filter(m => m.league_key === selectedMatch.value.league_key && m.id !== selectedMatch.value.id)
 })
 
+// ── 导航历史与返回上一级支持 ────────────────────────────────
+const previousTab = ref(null)
+
+const backButtonText = computed(() => {
+  if (previousTab.value === 'news') return '返回资讯'
+  if (previousTab.value === 'followed') return '返回关注'
+  if (previousTab.value === 'community') return '返回社区'
+  return '返回比赛列表'
+})
+
 // ── 交互导航 ────────────────────────────────────────────────
 const changeTab = (tabKey) => {
   activeTab.value = tabKey
   selectedMatchId.value = null
+  previousTab.value = null // 用户指示：“tab之间跳可以不保存”
   window.scrollTo({ top: 0, behavior: 'smooth' })
 }
 
 const onSelectMatch = (matchId) => {
+  // 记录来源上一级 Tab，以便详情页点击返回时能准确回到上一级
+  previousTab.value = activeTab.value
   activeTab.value = 'matches'
   selectedMatchId.value = matchId
+  window.scrollTo({ top: 0, behavior: 'smooth' })
+}
+
+const handleBackFromMatch = () => {
+  selectedMatchId.value = null
+  if (previousTab.value && previousTab.value !== 'matches') {
+    activeTab.value = previousTab.value
+    previousTab.value = null
+  }
   window.scrollTo({ top: 0, behavior: 'smooth' })
 }
 

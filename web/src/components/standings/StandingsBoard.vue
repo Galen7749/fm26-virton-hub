@@ -1,115 +1,118 @@
 <template>
   <div class="space-y-3.5 p-3.5 animate-in fade-in duration-150 pb-6">
 
-    <!-- 1. 顶部控制栏：左侧【联赛分组下拉选择器 + 星标置顶】 + 右侧【3个子视图切换】 -->
-    <div class="bg-slate-900 border border-slate-800 rounded-xl p-2.5 flex items-center justify-between gap-2 shadow-sm text-xs">
+    <!-- 1. 顶部控制栏：空间友好型两段式布局 (第一行：联赛选择器 + 置顶星标；第二行：三大子视图全宽分段切换器) -->
+    <div class="bg-slate-900 border border-slate-800 rounded-xl p-2.5 space-y-2 shadow-sm text-xs">
       
-      <!-- 顶部左侧：联赛分组下拉选择器 (带矢量国旗徽章与星标收藏) -->
-      <div class="inline-flex items-center gap-1.5 shrink-0">
-        <Icon :icon="currentLeague.flag_icon || 'circle-flags:eu'" class="w-4 h-4 rounded-full shrink-0 shadow-sm" />
-        
-        <div class="relative">
-          <select
-            v-model="selectedLeagueKey"
-            class="bg-slate-950 border border-slate-700 text-slate-200 text-xs font-bold rounded-lg pl-2 pr-6 py-1.5 focus:outline-none focus:border-emerald-500 cursor-pointer shadow-inner appearance-none"
-          >
-            <!-- 分组 1：已置顶赛事 (由 localStorage 动态持久化) -->
-            <optgroup v-if="pinnedLeagues.length" label="⭐ 已置顶关注">
-              <option
-                v-for="lg in pinnedLeagues"
-                :key="'pinned-' + lg.key"
-                :value="lg.key"
-              >
-                ★ {{ lg.name }}
-              </option>
-            </optgroup>
+      <!-- 第一行：联赛分组下拉选择器 (带矢量国旗徽章与星标收藏) -->
+      <div class="flex items-center justify-between gap-2">
+        <div class="inline-flex items-center gap-2 min-w-0 flex-1">
+          <Icon :icon="currentLeague.flag_icon || 'circle-flags:eu'" class="w-4 h-4 rounded-full shrink-0 shadow-sm" />
+          
+          <div class="relative min-w-0 flex-1">
+            <select
+              v-model="selectedLeagueKey"
+              class="w-full bg-slate-950 border border-slate-700 text-slate-200 text-xs font-bold rounded-lg pl-2.5 pr-7 py-1.5 focus:outline-none focus:border-emerald-500 cursor-pointer shadow-inner appearance-none truncate"
+            >
+              <!-- 分组 1：已置顶赛事 (由 localStorage 动态持久化) -->
+              <optgroup v-if="pinnedLeagues.length" label="⭐ 已置顶关注">
+                <option
+                  v-for="lg in pinnedLeagues"
+                  :key="'pinned-' + lg.key"
+                  :value="lg.key"
+                >
+                  ★ {{ lg.name }}
+                </option>
+              </optgroup>
 
-            <!-- 分组 2：欧战与顶级赛事 (三大欧战 + 五大联赛 + 中超，默认第一顺位) -->
-            <optgroup label="🔥 欧战与顶级赛事">
-              <option
-                v-for="lg in popularLeagues"
-                :key="lg.key"
-                :value="lg.key"
-              >
-                {{ lg.name }}
-              </option>
-            </optgroup>
+              <!-- 分组 2：欧战与顶级赛事 (三大欧战 + 五大联赛 + 中超，默认第一顺位) -->
+              <optgroup label="🔥 欧战与顶级赛事">
+                <option
+                  v-for="lg in popularLeagues"
+                  :key="lg.key"
+                  :value="lg.key"
+                >
+                  {{ lg.name }}
+                </option>
+              </optgroup>
 
-            <!-- 分组 3：欧洲主要联赛 (波甲 / 比甲) -->
-            <optgroup label="🌍 欧洲主要联赛">
-              <option
-                v-for="lg in europeanLeagues"
-                :key="lg.key"
-                :value="lg.key"
-              >
-                {{ lg.name }}
-              </option>
-            </optgroup>
-          </select>
-          <Icon icon="lucide:chevron-down" class="w-3 h-3 text-slate-500 absolute right-2 top-2.5 pointer-events-none" />
+              <!-- 分组 3：欧洲主要联赛 (波甲 / 比甲) -->
+              <optgroup label="🌍 欧洲主要联赛">
+                <option
+                  v-for="lg in europeanLeagues"
+                  :key="lg.key"
+                  :value="lg.key"
+                >
+                  {{ lg.name }}
+                </option>
+              </optgroup>
+            </select>
+            <Icon icon="lucide:chevron-down" class="w-3.5 h-3.5 text-slate-400 absolute right-2 top-2 pointer-events-none" />
+          </div>
         </div>
 
         <!-- 星标置顶切换按钮 (一键将当前联赛置顶在最上方) -->
         <button
           @click="togglePinCurrent"
-          class="w-7 h-7 rounded-lg border inline-flex items-center justify-center transition shadow-sm"
+          class="h-7 px-2.5 rounded-lg border inline-flex items-center justify-center gap-1 transition shadow-sm shrink-0"
           :class="isCurrentPinned ? 'bg-amber-950/80 border-amber-600/80 text-amber-400' : 'bg-slate-950 border-slate-800 text-slate-500 hover:text-slate-300'"
           :title="isCurrentPinned ? '已置顶 · 点击取消置顶' : '点击置顶此联赛'"
         >
           <Icon icon="lucide:star" class="w-3.5 h-3.5" :class="{ 'fill-amber-400': isCurrentPinned }" />
+          <span class="text-[11px] font-bold">{{ isCurrentPinned ? '已置顶' : '置顶' }}</span>
         </button>
       </div>
 
-      <!-- 顶部右侧：3 个子视图切换 (积分榜 | 射手/助攻榜 | 转会动态) -->
-      <div class="bg-slate-950 p-1 rounded-lg border border-slate-800 inline-flex items-center gap-1">
+      <!-- 第二行：3 个子视图全宽分段控制切换 (积分榜 | 射手/助攻榜 | 转会动态，杜绝文字溢出与纵向拉伸) -->
+      <div class="bg-slate-950 p-1 rounded-lg border border-slate-800 grid grid-cols-3 gap-1 w-full text-center">
         <button
           @click="subView = 'table'"
           :class="[
-            'px-2 py-1 rounded-md text-[11px] font-bold transition inline-flex items-center gap-1',
+            'py-1.5 px-1 rounded-md text-[11px] font-bold transition flex items-center justify-center gap-1 min-w-0',
             subView === 'table' ? 'bg-emerald-600 text-white shadow-sm' : 'text-slate-400 hover:text-white'
           ]"
         >
-          <Icon icon="lucide:trophy" class="w-3 h-3" />
-          <span>积分榜</span>
+          <Icon icon="lucide:trophy" class="w-3.5 h-3.5 shrink-0" />
+          <span class="truncate">积分榜</span>
         </button>
 
         <button
           @click="subView = 'leaders'"
           :class="[
-            'px-2 py-1 rounded-md text-[11px] font-bold transition inline-flex items-center gap-1',
+            'py-1.5 px-1 rounded-md text-[11px] font-bold transition flex items-center justify-center gap-1 min-w-0',
             subView === 'leaders' ? 'bg-emerald-600 text-white shadow-sm' : 'text-slate-400 hover:text-white'
           ]"
         >
-          <Icon icon="ph:soccer-ball-fill" class="w-3 h-3" />
-          <span>射手/助攻</span>
+          <Icon icon="ph:soccer-ball-fill" class="w-3.5 h-3.5 shrink-0" />
+          <span class="truncate">射手/助攻</span>
         </button>
 
         <button
           @click="subView = 'transfers'"
           :class="[
-            'px-2 py-1 rounded-md text-[11px] font-bold transition inline-flex items-center gap-1',
+            'py-1.5 px-1 rounded-md text-[11px] font-bold transition flex items-center justify-center gap-1 min-w-0',
             subView === 'transfers' ? 'bg-emerald-600 text-white shadow-sm' : 'text-slate-400 hover:text-white'
           ]"
         >
-          <Icon icon="tabler:arrows-exchange" class="w-3 h-3" />
-          <span>转会动态</span>
+          <Icon icon="tabler:arrows-exchange" class="w-3.5 h-3.5 shrink-0" />
+          <span class="truncate">转会动态</span>
         </button>
       </div>
     </div>
 
-    <!-- 2. 当前联赛基本信息条 -->
-    <div class="flex items-center justify-between text-[11px] text-slate-400 px-1">
-      <div class="inline-flex items-center gap-1.5 font-bold text-slate-200">
-        <Icon :icon="currentLeague.flag_icon || 'circle-flags:eu'" class="w-3.5 h-3.5 rounded-full" />
-        <span>{{ currentLeague.name }}</span>
-        <span class="text-slate-500">·</span>
-        <span class="text-emerald-400">{{ currentLeague.season }}</span>
-        <span v-if="isCurrentPinned" class="bg-amber-950/80 text-amber-300 border border-amber-800/80 text-[9px] px-1.5 py-0.2 rounded font-bold inline-flex items-center gap-0.5">
+    <!-- 2. 当前联赛赛季与轮次概况条 (杜绝标签与长文本互相叠盖重合) -->
+    <div class="flex items-center justify-between text-[11px] text-slate-400 px-1 gap-2 min-w-0">
+      <div class="inline-flex items-center gap-1.5 font-bold text-slate-200 shrink-0">
+        <Icon :icon="currentLeague.flag_icon || 'circle-flags:eu'" class="w-3.5 h-3.5 rounded-full shrink-0" />
+        <span class="text-emerald-400 font-mono">{{ currentLeague.season }}</span>
+        <span v-if="isCurrentPinned" class="bg-amber-950/80 text-amber-300 border border-amber-800/80 text-[9px] px-1.5 py-0.5 rounded font-bold inline-flex items-center gap-0.5 shrink-0">
           <Icon icon="lucide:star" class="w-2.5 h-2.5 fill-amber-300" />
-          <span>已置顶</span>
+          <span>置顶</span>
         </span>
       </div>
-      <span class="text-slate-500 text-[10px] font-mono">{{ currentLeague.round_info }}</span>
+      <span class="text-slate-400 text-[10px] font-mono truncate text-right min-w-0" :title="currentLeague.round_info">
+        {{ currentLeague.round_info }}
+      </span>
     </div>
 
     <!-- 3. 子视图 A: 联赛中立积分榜 -->

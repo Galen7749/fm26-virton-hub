@@ -94,37 +94,38 @@
         </div>
       </div>
 
-      <!-- 核心指标网格：主教练、总身价、主场球场、赛季积分概况 -->
+      <!-- 核心指标网格：主教练、总身价、主场球场、赛季积分概况 (杜绝文字溢出与撑破边界) -->
       <div class="grid grid-cols-2 sm:grid-cols-4 gap-2 pt-1 border-t border-slate-800/80 text-[11px] relative z-10">
         <!-- 现任主帅 -->
-        <div class="bg-slate-950/70 p-2 rounded-xl border border-slate-850">
+        <div class="bg-slate-950/70 p-2 rounded-xl border border-slate-850 overflow-hidden min-w-0 flex flex-col justify-center">
           <div class="text-[10px] text-slate-500">现任主帅</div>
-          <div class="font-bold text-white truncate inline-flex items-center gap-1 mt-0.5">
+          <div class="font-bold text-white text-[11px] truncate flex items-center gap-1 mt-0.5 min-w-0" :title="activeClub.manager">
             <Icon :icon="activeClub.manager_flag" class="w-3 h-3 rounded-full shrink-0" />
-            <span class="truncate">{{ activeClub.manager }}</span>
+            <span class="truncate">{{ activeClub.manager.split(' (')[0] }}</span>
           </div>
         </div>
 
         <!-- 阵容总身价 -->
-        <div class="bg-slate-950/70 p-2 rounded-xl border border-slate-850">
+        <div class="bg-slate-950/70 p-2 rounded-xl border border-slate-850 overflow-hidden min-w-0 flex flex-col justify-center">
           <div class="text-[10px] text-slate-500">阵容总身价</div>
-          <div class="font-bold font-mono text-emerald-400 mt-0.5">{{ activeClub.market_value }}</div>
+          <div class="font-bold font-mono text-emerald-400 mt-0.5 text-[11px] sm:text-xs truncate">{{ activeClub.market_value }}</div>
         </div>
 
         <!-- 战绩与积分 -->
-        <div class="bg-slate-950/70 p-2 rounded-xl border border-slate-850">
+        <div class="bg-slate-950/70 p-2 rounded-xl border border-slate-850 overflow-hidden min-w-0 flex flex-col justify-center">
           <div class="text-[10px] text-slate-500">联赛战绩积分</div>
-          <div class="font-bold font-mono text-slate-200 mt-0.5">
-            {{ activeClub.stats.won }}胜 {{ activeClub.stats.drawn }}平 {{ activeClub.stats.lost }}负 ({{ activeClub.stats.points }}分)
+          <div class="font-bold font-mono text-slate-200 mt-0.5 text-[11px] truncate" :title="activeClub.stats.won + '胜 ' + activeClub.stats.drawn + '平 ' + activeClub.stats.lost + '负 (' + activeClub.stats.points + '分)'">
+            <span>{{ activeClub.stats.won }}胜{{ activeClub.stats.drawn }}平{{ activeClub.stats.lost }}负</span>
+            <span class="text-emerald-400 font-bold ml-1">({{ activeClub.stats.points }}分)</span>
           </div>
         </div>
 
         <!-- 主场球场 -->
-        <div class="bg-slate-950/70 p-2 rounded-xl border border-slate-850">
+        <div class="bg-slate-950/70 p-2 rounded-xl border border-slate-850 overflow-hidden min-w-0 flex flex-col justify-center">
           <div class="text-[10px] text-slate-500">主场球场</div>
-          <div class="font-bold text-slate-300 truncate mt-0.5 inline-flex items-center gap-1">
+          <div class="font-bold text-slate-300 text-[11px] truncate mt-0.5 flex items-center gap-1 min-w-0" :title="activeClub.stadium">
             <Icon icon="mdi:soccer-field" class="w-3 h-3 text-slate-500 shrink-0" />
-            <span class="truncate">{{ activeClub.stadium }}</span>
+            <span class="truncate">{{ activeClub.stadium ? activeClub.stadium.split(' (')[0] : '主场' }}</span>
           </div>
         </div>
       </div>
