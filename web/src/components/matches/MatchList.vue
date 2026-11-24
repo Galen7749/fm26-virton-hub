@@ -41,20 +41,20 @@
       <div v-else class="bg-slate-950 p-3 rounded-xl border border-slate-850 space-y-2 text-xs">
         <div class="flex items-center justify-between">
           <span class="text-amber-400 font-bold flex items-center space-x-1.5">
-            <span>🔥</span>
-            <span>突发掀桌辞职！徐指导夏窗开启自由身求职</span>
+            <span>💼</span>
+            <span>【欧洲帅位动态】徐指导自由身进入夏窗市场</span>
           </span>
-          <span class="text-[9px] bg-slate-800 text-amber-300 px-2 py-0.5 rounded border border-amber-900/40 font-mono">
-            奇迹声望加持
+          <span class="text-[9px] bg-slate-800 text-teal-300 px-2 py-0.5 rounded border border-teal-900/40 font-mono">
+            冲甲教头 · 零违约金
           </span>
         </div>
         <p class="text-[11px] text-slate-300 leading-relaxed">
-          刚带维尔通绝杀冲甲，因不满管理层清洗功勋老将、且拒绝报销教练班学费，徐指导已当场辞职走人！凭借带保级队逆天升甲的硬核声望，已有多家欧洲俱乐部接洽。唯一刚性底线：<strong>【新东家必须全额报销欧足联教练班学费】</strong>！
+          率维尔通在补时完成绝杀冲入比甲后，徐指导与俱乐部达成协议解约离任。多家欧洲二线联赛球队已接触其团队，求职核心意向明确锁定<strong>【俱乐部全额资助欧足联高阶教练认证】</strong>。
         </p>
         <div class="flex items-center space-x-1.5 pt-0.5 text-[9px] text-slate-400 overflow-x-auto no-scrollbar">
-          <span class="bg-slate-900 px-2 py-0.5 rounded border border-slate-800 shrink-0">🎯 意向：荷乙中上游</span>
+          <span class="bg-slate-900 px-2 py-0.5 rounded border border-slate-800 shrink-0">🎯 热门下家：荷乙中上游</span>
           <span class="bg-slate-900 px-2 py-0.5 rounded border border-slate-800 shrink-0">🇫🇷 法丙冲乙劲旅</span>
-          <span class="bg-slate-900 px-2 py-0.5 rounded border border-slate-800 shrink-0">🇨🇭 瑞士联赛</span>
+          <span class="bg-slate-900 px-2 py-0.5 rounded border border-slate-800 shrink-0">🇨🇭 瑞士二级联赛</span>
         </div>
       </div>
     </div>
