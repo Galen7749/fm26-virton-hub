@@ -6,10 +6,10 @@
       <!-- 返回按钮 -->
       <button
         @click="$emit('back')"
-        class="flex items-center space-x-1.5 text-emerald-400 hover:text-emerald-300 font-bold transition px-2 py-1 rounded-lg hover:bg-slate-900 border border-transparent hover:border-slate-800"
+        class="flex items-center space-x-1.5 text-slate-300 hover:text-white font-bold transition px-2 py-1 rounded-lg hover:bg-slate-900 border border-slate-800"
       >
         <span class="text-sm">←</span>
-        <span>全部比赛大盘</span>
+        <span>返回比赛列表</span>
       </button>
 
       <!-- 轮次指示器与上一场/下一场切换 -->
@@ -23,7 +23,7 @@
           ‹
         </button>
         <span class="text-[11px] font-bold text-slate-300">
-          {{ match.competition || '比乙' }} · {{ match.round_label || ('第 ' + match.round + ' 轮') }}
+          {{ match.competition || match.league_name || '比乙' }} · {{ match.round_label || ('第 ' + match.round + ' 轮') }}
         </span>
         <button
           :disabled="!hasNext"
@@ -36,23 +36,26 @@
       </div>
     </div>
 
-    <!-- 2. 焦点战报卡片 (比分大盘与硬核数据) -->
+    <!-- 2. 中立焦点战报卡片 (完全中立电视台视角) -->
     <div class="bg-gradient-to-b from-slate-900 via-slate-900 to-slate-950 rounded-xl border border-slate-800 p-4 shadow-sm space-y-3">
       <div class="flex justify-between items-center text-[11px] text-slate-400">
-        <span class="flex items-center space-x-1 text-emerald-400 font-medium">
-          <span class="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse"></span>
-          <span>官方战报 · 已完赛</span>
+        <span class="flex items-center space-x-1 text-slate-300 font-medium">
+          <span class="w-1.5 h-1.5 rounded-full bg-emerald-400"></span>
+          <span>比赛全场结束 (FT)</span>
+          <span
+            v-if="match.is_overseas || match.home_team.includes('奥波莱') || match.away_team.includes('奥波莱') || match.home_team.includes('维尔通') || match.away_team.includes('维尔通')"
+            class="ml-1 bg-red-950 text-red-300 border border-red-800/80 px-1 py-0.1 rounded text-[9px] font-bold"
+          >
+            🇨🇳 留洋
+          </span>
         </span>
         <span class="text-slate-400 truncate max-w-[170px]">{{ match.stadium }}</span>
       </div>
 
-      <!-- 比分栏 -->
+      <!-- 比分栏（完全中立视角） -->
       <div class="flex items-center justify-between py-1.5 px-1">
         <div class="flex-1 text-center min-w-0 pr-2">
-          <div :class="[
-            'text-sm font-bold truncate',
-            match.home_team.includes('维尔通') ? 'text-emerald-400 font-black' : 'text-white'
-          ]">
+          <div class="text-sm font-bold text-white truncate">
             {{ match.home_team }}
           </div>
           <div class="text-[10px] text-slate-500 mt-0.5">主队</div>
@@ -62,21 +65,13 @@
           <div class="text-2xl font-black text-white tracking-wider whitespace-nowrap font-mono">
             {{ match.score_home }} - {{ match.score_away }}
           </div>
-          <span :class="[
-            'text-[9px] px-1.5 py-0.2 rounded font-bold font-mono inline-block mt-0.5 whitespace-nowrap',
-            match.result === 'W' || match.result === '胜' ? 'bg-emerald-950 text-emerald-300 border border-emerald-800' :
-            match.result === 'D' || match.result === '平' ? 'bg-amber-950 text-amber-300 border border-amber-800' :
-            'bg-rose-950 text-rose-300 border border-rose-800'
-          ]">
-            {{ match.result === 'W' ? '胜仗' : match.result === 'D' ? '平局' : '失利' }}
+          <span class="text-[9px] px-2 py-0.5 rounded font-bold font-mono inline-block mt-0.5 whitespace-nowrap bg-slate-950 text-slate-300 border border-slate-800">
+            完赛
           </span>
         </div>
 
         <div class="flex-1 text-center min-w-0 pl-2">
-          <div :class="[
-            'text-sm font-bold truncate',
-            match.away_team.includes('维尔通') ? 'text-emerald-400 font-black' : 'text-white'
-          ]">
+          <div class="text-sm font-bold text-white truncate">
             {{ match.away_team }}
           </div>
           <div class="text-[10px] text-slate-500 mt-0.5">客队</div>
@@ -93,16 +88,16 @@
                 <span v-if="sc.assist_zh || sc.assist" class="text-slate-500 text-[10px] truncate max-w-[110px]">
                   (助: {{ sc.assist_zh || sc.assist }})
                 </span>
-                <span v-if="sc.is_stoppage || String(sc.minute).includes('+')" class="text-[9px] bg-amber-950 text-amber-300 px-1.5 py-0.5 rounded border border-amber-600 font-black shadow-sm">
-                  {{ sc.is_header || sc.goal_type === '头球' ? '补时头球绝杀!' : '补时绝杀!' }}
+                <span v-if="sc.is_stoppage || String(sc.minute).includes('+')" class="text-[9px] bg-amber-950 text-amber-300 px-1.5 py-0.5 rounded border border-amber-600 font-bold shadow-sm">
+                  {{ sc.is_header || sc.goal_type === '头球' ? '补时头球绝杀' : '补时绝杀' }}
                 </span>
                 <span v-else-if="sc.is_header || sc.goal_type === '头球'" class="text-[9px] bg-teal-950 text-teal-300 px-1 py-0.2 rounded border border-teal-700 font-bold">
                   头球
                 </span>
-                <span :class="sc.is_virton ? 'text-emerald-400 font-bold' : 'text-slate-300 font-medium'">
+                <span class="text-slate-200 font-medium">
                   {{ sc.player_zh || sc.player }}
                 </span>
-                <span class="font-mono text-emerald-400 font-bold">{{ formatMinute(sc.minute) }}</span>
+                <span class="font-mono text-slate-300 font-bold">{{ formatMinute(sc.minute) }}</span>
                 <span class="text-xs">⚽</span>
               </div>
             </template>
@@ -114,12 +109,12 @@
             <template v-for="(sc, idx) in awayScorers" :key="'away-'+idx">
               <div class="flex items-center justify-start space-x-1.5 text-slate-200">
                 <span class="text-xs">⚽</span>
-                <span class="font-mono text-slate-400 font-bold">{{ formatMinute(sc.minute) }}</span>
-                <span :class="sc.is_virton ? 'text-emerald-400 font-bold' : 'text-slate-300 font-medium'">
+                <span class="font-mono text-slate-300 font-bold">{{ formatMinute(sc.minute) }}</span>
+                <span class="text-slate-200 font-medium">
                   {{ sc.player_zh || sc.player }}
                 </span>
-                <span v-if="sc.is_stoppage || String(sc.minute).includes('+')" class="text-[9px] bg-amber-950 text-amber-300 px-1.5 py-0.5 rounded border border-amber-600 font-black shadow-sm">
-                  {{ sc.is_header || sc.goal_type === '头球' ? '补时头球绝杀!' : '补时绝杀!' }}
+                <span v-if="sc.is_stoppage || String(sc.minute).includes('+')" class="text-[9px] bg-amber-950 text-amber-300 px-1.5 py-0.5 rounded border border-amber-600 font-bold shadow-sm">
+                  {{ sc.is_header || sc.goal_type === '头球' ? '补时头球绝杀' : '补时绝杀' }}
                 </span>
                 <span v-else-if="sc.is_header || sc.goal_type === '头球'" class="text-[9px] bg-teal-950 text-teal-300 px-1 py-0.2 rounded border border-teal-700 font-bold">
                   头球
@@ -151,19 +146,8 @@
       </div>
     </div>
 
-    <!-- 3. 二级详情专属子导航 Tab -->
+    <!-- 3. 二级详情专属子导航 Tab：战报 | 赛况/阵容评分 | 热评 | 同轮赛果 -->
     <div class="bg-slate-900 border border-slate-800 rounded-xl p-1 flex items-center space-x-1 text-xs shadow-inner">
-      <button
-        @click="subTab = 'lineup'"
-        :class="[
-          'flex-1 py-1.5 rounded-lg font-bold text-center transition flex items-center justify-center space-x-1',
-          subTab === 'lineup' ? 'bg-emerald-600 text-white shadow-sm' : 'text-slate-400 hover:text-white'
-        ]"
-      >
-        <span>👥</span>
-        <span>赛场阵容</span>
-      </button>
-
       <button
         @click="subTab = 'report'"
         :class="[
@@ -172,7 +156,18 @@
         ]"
       >
         <span>📰</span>
-        <span>深度战报</span>
+        <span>战报</span>
+      </button>
+
+      <button
+        @click="subTab = 'lineup'"
+        :class="[
+          'flex-1 py-1.5 rounded-lg font-bold text-center transition flex items-center justify-center space-x-1',
+          subTab === 'lineup' ? 'bg-emerald-600 text-white shadow-sm' : 'text-slate-400 hover:text-white'
+        ]"
+      >
+        <span>👥</span>
+        <span>赛况/阵容评分</span>
       </button>
 
       <button
@@ -183,7 +178,7 @@
         ]"
       >
         <span>🔥</span>
-        <span>虎扑热评</span>
+        <span>热评</span>
       </button>
 
       <button

@@ -1,0 +1,563 @@
+[
+  {
+    "id": 1001,
+    "league_key": "pol_d1",
+    "league_name": "波甲",
+    "league_badge": "🇵🇱 波甲",
+    "round": 1,
+    "round_label": "第 1 轮",
+    "date": "2026-07-28 20:00",
+    "date_short": "07-28 周二",
+    "status": "FT",
+    "status_label": "完赛",
+    "is_overseas": true,
+    "home_team": "奥波莱奥德拉",
+    "home_logo": "🔴",
+    "away_team": "普沃茨克维斯瓦",
+    "away_logo": "⚪",
+    "score_home": 2,
+    "score_away": 1,
+    "stadium": "奥波莱市政球场",
+    "xg": "1.85 - 0.94",
+    "shots": "14",
+    "shots_on_target": "6",
+    "distance_km": "114.2",
+    "scorers": [
+      {
+        "minute": 23,
+        "player": "卡克佩尔 (Kacper)",
+        "player_zh": "卡克佩尔",
+        "assist": "加拉兹卡",
+        "assist_zh": "加拉兹卡"
+      },
+      {
+        "minute": 65,
+        "player": "塞库尔斯基 (Sekulski)",
+        "player_zh": "塞库尔斯基"
+      },
+      {
+        "minute": 88,
+        "player": "皮罗格 (Pirog)",
+        "player_zh": "皮罗格",
+        "assist": "诺瓦克",
+        "assist_zh": "诺瓦克",
+        "goal_type": "头球",
+        "is_header": true,
+        "is_stoppage": true
+      }
+    ],
+    "news": {
+      "title": "奥波莱奥德拉 2-1 绝杀开门红！波甲首轮战报",
+      "summary": "凭借88分钟角球头球破门，奥波莱奥德拉主场2-1力克劲旅，迎来波兰联赛首胜！",
+      "reporter": "懂球云波兰特派",
+      "post_comments": [
+        {
+          "username": "Galen",
+          "tag": "球迷",
+          "content": "首秀拿下三分，战术执行力很对味！波甲身体对抗很激烈，继续稳住！",
+          "likes": 420
+        },
+        {
+          "username": "Kimi_7",
+          "tag": "资深FM玩家",
+          "content": "角球战术加上高位逼抢，这套打法在波甲很能打出反击穿透力！",
+          "likes": 310
+        }
+      ]
+    }
+  },
+  {
+    "id": 1002,
+    "league_key": "pol_d1",
+    "league_name": "波甲",
+    "league_badge": "🇵🇱 波甲",
+    "round": 1,
+    "round_label": "第 1 轮",
+    "date": "2026-07-28 22:00",
+    "date_short": "07-28 周二",
+    "status": "FT",
+    "status_label": "完赛",
+    "is_overseas": false,
+    "home_team": "阿尔卡格丁尼亚",
+    "home_logo": "🟡",
+    "away_team": "斯维特",
+    "away_logo": "🟢",
+    "score_home": 3,
+    "score_away": 0,
+    "stadium": "格丁尼亚城市球场",
+    "xg": "2.40 - 0.35",
+    "shots": "18",
+    "shots_on_target": "8",
+    "distance_km": "109.8",
+    "scorers": [
+      {
+        "minute": 15,
+        "player": "切布拉",
+        "player_zh": "切布拉"
+      },
+      {
+        "minute": 52,
+        "player": "戈博夫斯基",
+        "player_zh": "戈博夫斯基"
+      },
+      {
+        "minute": 76,
+        "player": "马尔切夫斯基",
+        "player_zh": "马尔切夫斯基"
+      }
+    ]
+  },
+  {
+    "id": 1003,
+    "league_key": "pol_d1",
+    "league_name": "波甲",
+    "league_badge": "🇵🇱 波甲",
+    "round": 1,
+    "round_label": "第 1 轮",
+    "date": "2026-07-29 00:00",
+    "date_short": "07-29 周三",
+    "status": "FT",
+    "status_label": "完赛",
+    "is_overseas": false,
+    "home_team": "莱吉亚格但斯克",
+    "home_logo": "⚪",
+    "away_team": "卡托维兹",
+    "away_logo": "🟡",
+    "score_home": 1,
+    "score_away": 1,
+    "stadium": "格但斯克能源体育场",
+    "xg": "1.10 - 1.25",
+    "shots": "10",
+    "shots_on_target": "4",
+    "distance_km": "111.0",
+    "scorers": [
+      {
+        "minute": 38,
+        "player": "卡皮奇",
+        "player_zh": "卡皮奇"
+      },
+      {
+        "minute": 71,
+        "player": "巴尔加",
+        "player_zh": "巴尔加"
+      }
+    ]
+  },
+  {
+    "id": 2001,
+    "league_key": "ucl",
+    "league_name": "欧冠",
+    "league_badge": "🇪🇺 欧冠",
+    "round": 13,
+    "round_label": "决赛",
+    "date": "2026-06-01 03:00",
+    "date_short": "06-01 周一",
+    "status": "FT",
+    "status_label": "完赛",
+    "is_overseas": false,
+    "home_team": "皇家马德里",
+    "home_logo": "👑",
+    "away_team": "曼彻斯特城",
+    "away_logo": "🔵",
+    "score_home": 2,
+    "score_away": 1,
+    "stadium": "温布利球场",
+    "xg": "1.92 - 1.76",
+    "shots": "15",
+    "shots_on_target": "7",
+    "distance_km": "120.5",
+    "scorers": [
+      {
+        "minute": 18,
+        "player": "哈兰德",
+        "player_zh": "哈兰德"
+      },
+      {
+        "minute": 62,
+        "player": "罗德里戈",
+        "player_zh": "罗德里戈",
+        "assist": "维尼修斯",
+        "assist_zh": "维尼修斯"
+      },
+      {
+        "minute": 84,
+        "player": "维尼修斯",
+        "player_zh": "维尼修斯",
+        "assist": "贝林厄姆",
+        "assist_zh": "贝林厄姆"
+      }
+    ],
+    "news": {
+      "title": "欧冠决赛：皇马 2-1 逆转曼城夺队史第16座欧冠奖杯",
+      "summary": "维尼修斯传射建功，安切洛蒂战术换人显奇效，银河战舰再次登上欧洲之巅！",
+      "reporter": "BBC Sport"
+    }
+  },
+  {
+    "id": 2002,
+    "league_key": "ucl",
+    "league_name": "欧冠",
+    "league_badge": "🇪🇺 欧冠",
+    "round": 12,
+    "round_label": "半决赛次回合",
+    "date": "2026-05-09 03:00",
+    "date_short": "05-09 周六",
+    "status": "FT",
+    "status_label": "完赛",
+    "is_overseas": false,
+    "home_team": "皇家马德里",
+    "home_logo": "👑",
+    "away_team": "拜仁慕尼黑",
+    "away_logo": "🔴",
+    "score_home": 2,
+    "score_away": 1,
+    "stadium": "伯纳乌球场",
+    "xg": "2.10 - 1.30",
+    "shots": "17",
+    "shots_on_target": "8",
+    "distance_km": "118.0",
+    "scorers": [
+      {
+        "minute": 68,
+        "player": "阿方索·戴维斯",
+        "player_zh": "戴维斯"
+      },
+      {
+        "minute": 88,
+        "player": "何塞卢",
+        "player_zh": "何塞卢"
+      },
+      {
+        "minute": "90+1",
+        "player": "何塞卢",
+        "player_zh": "何塞卢"
+      }
+    ]
+  },
+  {
+    "id": 3001,
+    "league_key": "pl",
+    "league_name": "英超",
+    "league_badge": "🏴󠁧󠁢󠁥󠁮󠁧󠁿 英超",
+    "round": 38,
+    "round_label": "第 38 轮",
+    "date": "2026-05-25 23:00",
+    "date_short": "05-25 周一",
+    "status": "FT",
+    "status_label": "完赛",
+    "is_overseas": false,
+    "home_team": "阿森纳",
+    "home_logo": "🔴",
+    "away_team": "埃弗顿",
+    "away_logo": "🔵",
+    "score_home": 2,
+    "score_away": 0,
+    "stadium": "酋长球场",
+    "xg": "2.10 - 0.40",
+    "shots": "16",
+    "shots_on_target": "6",
+    "distance_km": "115.3",
+    "scorers": [
+      {
+        "minute": 34,
+        "player": "萨卡",
+        "player_zh": "萨卡"
+      },
+      {
+        "minute": 78,
+        "player": "哈弗茨",
+        "player_zh": "哈弗茨"
+      }
+    ]
+  },
+  {
+    "id": 3002,
+    "league_key": "pl",
+    "league_name": "英超",
+    "league_badge": "🏴󠁧󠁢󠁥󠁮󠁧󠁿 英超",
+    "round": 38,
+    "round_label": "第 38 轮",
+    "date": "2026-05-25 23:00",
+    "date_short": "05-25 周一",
+    "status": "FT",
+    "status_label": "完赛",
+    "is_overseas": false,
+    "home_team": "曼彻斯特城",
+    "home_logo": "🔵",
+    "away_team": "西汉姆联",
+    "away_logo": "⚒️",
+    "score_home": 3,
+    "score_away": 1,
+    "stadium": "阿提哈德球场",
+    "xg": "2.85 - 0.70",
+    "shots": "22",
+    "shots_on_target": "9",
+    "distance_km": "116.8",
+    "scorers": [
+      {
+        "minute": 2,
+        "player": "福登",
+        "player_zh": "福登"
+      },
+      {
+        "minute": 18,
+        "player": "福登",
+        "player_zh": "福登"
+      },
+      {
+        "minute": 42,
+        "player": "库杜斯",
+        "player_zh": "库杜斯"
+      },
+      {
+        "minute": 59,
+        "player": "罗德里",
+        "player_zh": "罗德里"
+      }
+    ]
+  },
+  {
+    "id": 3003,
+    "league_key": "pl",
+    "league_name": "英超",
+    "league_badge": "🏴󠁧󠁢󠁥󠁮󠁧󠁿 英超",
+    "round": 38,
+    "round_label": "第 38 轮",
+    "date": "2026-05-25 23:00",
+    "date_short": "05-25 周一",
+    "status": "FT",
+    "status_label": "完赛",
+    "is_overseas": false,
+    "home_team": "切尔西",
+    "home_logo": "🔵",
+    "away_team": "伯恩茅斯",
+    "away_logo": "🍒",
+    "score_home": 2,
+    "score_away": 1,
+    "stadium": "斯坦福桥球场",
+    "xg": "1.90 - 1.10",
+    "shots": "15",
+    "shots_on_target": "6",
+    "distance_km": "113.2",
+    "scorers": [
+      {
+        "minute": 17,
+        "player": "凯塞多",
+        "player_zh": "凯塞多"
+      },
+      {
+        "minute": 48,
+        "player": "斯特林",
+        "player_zh": "斯特林"
+      },
+      {
+        "minute": 49,
+        "player": "乌纳尔",
+        "player_zh": "乌纳尔"
+      }
+    ]
+  },
+  {
+    "id": 4001,
+    "league_key": "bel_d1",
+    "league_name": "比甲",
+    "league_badge": "🇧🇪 比甲",
+    "round": 10,
+    "round_label": "季后赛第10轮",
+    "date": "2026-05-26 02:30",
+    "date_short": "05-26 周二",
+    "status": "FT",
+    "status_label": "完赛",
+    "is_overseas": false,
+    "home_team": "皇家布鲁日",
+    "home_logo": "🔵",
+    "away_team": "皇家安德莱赫特",
+    "away_logo": "🟣",
+    "score_home": 2,
+    "score_away": 1,
+    "stadium": "扬·布雷德尔球场",
+    "xg": "1.75 - 1.20",
+    "shots": "13",
+    "shots_on_target": "5",
+    "distance_km": "112.4",
+    "scorers": [
+      {
+        "minute": 29,
+        "player": "范纳肯",
+        "player_zh": "范纳肯"
+      },
+      {
+        "minute": 60,
+        "player": "多尔贝格",
+        "player_zh": "多尔贝格"
+      },
+      {
+        "minute": 82,
+        "player": "奥尔森",
+        "player_zh": "奥尔森"
+      }
+    ]
+  },
+  {
+    "id": 4002,
+    "league_key": "bel_d1",
+    "league_name": "比甲",
+    "league_badge": "🇧🇪 比甲",
+    "round": 10,
+    "round_label": "季后赛第10轮",
+    "date": "2026-05-26 02:30",
+    "date_short": "05-26 周二",
+    "status": "FT",
+    "status_label": "完赛",
+    "is_overseas": false,
+    "home_team": "皇家亨克",
+    "home_logo": "🔵",
+    "away_team": "圣吉罗斯联合",
+    "away_logo": "🟡",
+    "score_home": 1,
+    "score_away": 0,
+    "stadium": "结晶球场",
+    "xg": "1.20 - 0.95",
+    "shots": "11",
+    "shots_on_target": "4",
+    "distance_km": "111.0",
+    "scorers": [
+      {
+        "minute": 44,
+        "player": "托卢",
+        "player_zh": "托卢"
+      }
+    ]
+  },
+  {
+    "id": 5032,
+    "league_key": "bel_d2",
+    "league_name": "比乙",
+    "league_badge": "🇧🇪 比乙",
+    "round": 32,
+    "round_label": "附加赛次回合",
+    "date": "2026-05-24 21:00",
+    "date_short": "05-24 周日",
+    "status": "FT",
+    "status_label": "完赛",
+    "is_overseas": true,
+    "home_team": "维尔通精英",
+    "home_logo": "🟢",
+    "away_team": "利尔斯",
+    "away_logo": "🟡",
+    "score_home": 4,
+    "score_away": 1,
+    "stadium": "伊万·乔治球场",
+    "xg": "3.12 - 0.85",
+    "shots": "24",
+    "shots_on_target": "11",
+    "distance_km": "118.5",
+    "scorers": [
+      {
+        "minute": 14,
+        "player": "朴昇秀",
+        "player_zh": "朴昇秀"
+      },
+      {
+        "minute": 38,
+        "player": "吉永梦希",
+        "player_zh": "吉永梦希"
+      },
+      {
+        "minute": 62,
+        "player": "范埃克",
+        "player_zh": "范埃克"
+      },
+      {
+        "minute": 77,
+        "player": "马塞洛",
+        "player_zh": "马塞洛"
+      },
+      {
+        "minute": "90+2",
+        "player": "泰迪·梅扎格",
+        "player_zh": "泰迪·梅扎格",
+        "goal_type": "头球",
+        "is_header": true,
+        "is_stoppage": true
+      }
+    ],
+    "news": {
+      "title": "90+2分钟绝杀！维尔通总比分4-1逆转利尔斯冲入比甲！",
+      "summary": "梅扎格补时头球锁定胜局，维尔通完成比乙历史级绝地翻盘奇迹！",
+      "reporter": "HLN 比利时最新消息报"
+    }
+  },
+  {
+    "id": 5031,
+    "league_key": "bel_d2",
+    "league_name": "比乙",
+    "league_badge": "🇧🇪 比乙",
+    "round": 31,
+    "round_label": "附加赛首回合",
+    "date": "2026-05-18 20:00",
+    "date_short": "05-18 周一",
+    "status": "FT",
+    "status_label": "完赛",
+    "is_overseas": true,
+    "home_team": "利尔斯",
+    "home_logo": "🟡",
+    "away_team": "维尔通精英",
+    "away_logo": "🟢",
+    "score_home": 2,
+    "score_away": 0,
+    "stadium": "赫尔曼·范德波滕球场",
+    "xg": "1.65 - 1.10",
+    "shots": "12",
+    "shots_on_target": "5",
+    "distance_km": "110.2",
+    "scorers": [
+      {
+        "minute": 32,
+        "player": "范克雷贝尔",
+        "player_zh": "范克雷贝尔"
+      },
+      {
+        "minute": 81,
+        "player": "达格巴",
+        "player_zh": "达格巴"
+      }
+    ]
+  },
+  {
+    "id": 5028,
+    "league_key": "bel_d2",
+    "league_name": "比乙",
+    "league_badge": "🇧🇪 比乙",
+    "round": 28,
+    "round_label": "第 28 轮",
+    "date": "2026-04-20 20:00",
+    "date_short": "04-20 周一",
+    "status": "FT",
+    "status_label": "完赛",
+    "is_overseas": false,
+    "home_team": "皇家马斯梅赫伦",
+    "home_logo": "⚪",
+    "away_team": "贝弗伦",
+    "away_logo": "🟡",
+    "score_home": 2,
+    "score_away": 0,
+    "stadium": "帕特罗球场",
+    "xg": "1.80 - 0.60",
+    "shots": "14",
+    "shots_on_target": "6",
+    "distance_km": "108.4",
+    "scorers": [
+      {
+        "minute": 22,
+        "player": "卡亚",
+        "player_zh": "卡亚"
+      },
+      {
+        "minute": 67,
+        "player": "范登贝尔赫",
+        "player_zh": "范登贝尔赫"
+      }
+    ]
+  }
+]

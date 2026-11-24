@@ -41,11 +41,11 @@
         <line x1="2" y1="60" x2="98" y2="60" stroke-width="0.8" />
         <circle cx="50" cy="60" r="14" stroke-width="0.8" />
         <circle cx="50" cy="60" r="1" fill="#34d399" />
-        <!-- 上方禁区 (对方半场) -->
+        <!-- 上方禁区 (客队半场侧) -->
         <rect x="22" y="2" width="56" height="20" stroke-width="0.8" />
         <rect x="36" y="2" width="28" height="7" stroke-width="0.8" />
         <path d="M 38 22 A 12 12 0 0 0 62 22" stroke-width="0.8" />
-        <!-- 下方禁区 (我方半场守门员侧) -->
+        <!-- 下方禁区 (主队半场门将侧) -->
         <rect x="22" y="98" width="56" height="20" stroke-width="0.8" />
         <rect x="36" y="111" width="28" height="7" stroke-width="0.8" />
         <path d="M 38 98 A 12 12 0 0 1 62 98" stroke-width="0.8" />

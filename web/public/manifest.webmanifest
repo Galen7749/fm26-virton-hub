@@ -1,7 +1,7 @@
 {
-  "name": "FootHub · 懂球云",
-  "short_name": "FootHub",
-  "description": "欧洲职业足球即时比分与数据门户",
+  "name": "懂球云",
+  "short_name": "懂球云",
+  "description": "全球足球资讯与即时比分社区",
   "start_url": "/",
   "scope": "/",
   "display": "standalone",

@@ -1,61 +1,23 @@
 <template>
-  <footer class="fixed bottom-0 w-full max-w-md bg-slate-900/95 backdrop-blur border-t border-slate-800 px-2 py-1.5 flex items-center justify-around text-xs z-30 shadow-lg">
+  <footer class="fixed bottom-0 left-0 right-0 max-w-md mx-auto bg-slate-900/98 backdrop-blur-md border-t border-slate-800 px-3 py-1.5 flex items-center justify-around text-xs z-40 shadow-2xl">
     <button
-      @click="$emit('update:activeTab', 'matches')"
+      v-for="tab in navTabs"
+      :key="tab.key"
+      @click="$emit('update:activeTab', tab.key)"
       :class="[
-        'flex flex-col items-center space-y-0.5 py-1 px-2.5 rounded-lg transition',
-        activeTab === 'matches' ? 'text-emerald-400 font-bold' : 'text-slate-400 hover:text-slate-200'
+        'flex flex-col items-center space-y-0.5 py-1 px-4 rounded-xl transition-all duration-150 relative',
+        activeTab === tab.key
+          ? 'text-emerald-400 font-black scale-105'
+          : 'text-slate-400 hover:text-slate-200'
       ]"
     >
-      <span class="text-base">⚽</span>
-      <span class="text-[10px]">比赛大盘</span>
-    </button>
-
-    <button
-      @click="$emit('update:activeTab', 'tactics')"
-      :class="[
-        'flex flex-col items-center space-y-0.5 py-1 px-2.5 rounded-lg transition',
-        activeTab === 'tactics' ? 'text-emerald-400 font-bold' : 'text-slate-400 hover:text-slate-200'
-      ]"
-    >
-      <span class="text-base">📊</span>
-      <span class="text-[10px]">战术阵容</span>
-    </button>
-
-    <button
-      @click="$emit('update:activeTab', 'standings')"
-      :class="[
-        'flex flex-col items-center space-y-0.5 py-1 px-2.5 rounded-lg transition',
-        activeTab === 'standings' ? 'text-emerald-400 font-bold' : 'text-slate-400 hover:text-slate-200'
-      ]"
-    >
-      <span class="text-base">🏆</span>
-      <span class="text-[10px]">榜单大盘</span>
-    </button>
-
-    <!-- 新增：🔥 球迷广场 (包含所有比赛综合评价与场外八卦日常) -->
-    <button
-      @click="$emit('update:activeTab', 'community')"
-      :class="[
-        'flex flex-col items-center space-y-0.5 py-1 px-2.5 rounded-lg transition relative',
-        activeTab === 'community' ? 'text-rose-400 font-bold' : 'text-slate-400 hover:text-slate-200'
-      ]"
-    >
-      <span class="text-base">🔥</span>
-      <span class="text-[10px]">球迷热议</span>
-      <span class="w-1.5 h-1.5 rounded-full bg-rose-500 absolute top-1 right-2 animate-pulse"></span>
-    </button>
-
-    <button
-      @click="$emit('update:activeTab', 'mailbox')"
-      :class="[
-        'flex flex-col items-center space-y-0.5 py-1 px-2.5 rounded-lg transition relative',
-        activeTab === 'mailbox' ? 'text-amber-400 font-bold' : 'text-slate-400 hover:text-slate-200'
-      ]"
-    >
-      <span class="text-base">💼</span>
-      <span class="text-[10px]">主帅信箱</span>
-      <span class="w-1.5 h-1.5 rounded-full bg-amber-400 absolute top-1 right-2"></span>
+      <span class="text-lg leading-none">{{ tab.icon }}</span>
+      <span class="text-[10px] tracking-tight">{{ tab.name }}</span>
+      <!-- 选中指示小圆点 -->
+      <span
+        v-if="activeTab === tab.key"
+        class="w-1 h-1 rounded-full bg-emerald-400 absolute bottom-0.5"
+      ></span>
     </button>
   </footer>
 </template>
@@ -69,4 +31,12 @@ defineProps({
 })
 
 defineEmits(['update:activeTab'])
+
+// 全局主导航严格限制为 4 个一级 Tab（严禁任何联赛名称平铺）
+const navTabs = [
+  { key: 'news', name: '资讯', icon: '📰' },
+  { key: 'matches', name: '比赛', icon: '⚽' },
+  { key: 'community', name: '社区', icon: '🔥' },
+  { key: 'standings', name: '数据', icon: '📊' }
+]
 </script>

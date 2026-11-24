@@ -1,33 +1,35 @@
 <template>
-  <div class="min-h-screen bg-slate-950 text-slate-100 flex flex-col items-center select-none">
+  <div class="min-h-screen bg-slate-950 text-slate-100 flex flex-col items-center select-none font-sans">
     
-    <!-- 主口袋容器（限制移动端最大宽度 448px） -->
+    <!-- 主手机/应用容器（对标 FotMob / 懂球帝，最大宽度 448px 居中渲染） -->
     <main class="w-full max-w-md bg-slate-950 min-h-screen flex flex-col pb-20 shadow-2xl relative">
 
-      <!-- 1. 全局 Header（含赛季切换器） -->
+      <!-- 1. 全局 Header（品牌「☁️ 懂球云」、搜索栏、低调「📱」主帅手机彩蛋） -->
       <AppHeader
-        :clubName="currentClub.name"
-        :seasonLabel="activeSeason.label"
-        :leagueName="activeSeason.league_short"
-        :seasons="seasonsMeta.seasons"
-        :activeSeasonId="activeSeasonId"
-        @switch-season="onSwitchSeason"
+        :activeTab="activeTab"
+        @change-tab="changeTab"
+        @open-phone="isPhoneOpen = true"
       />
 
-      <!-- 2. 主视图内容区 -->
+      <!-- 2. 四大一级页面内容区 (资讯 | 比赛 | 社区 | 数据) -->
       <div class="flex-1">
-        <!-- 模块 A: ⚽ 比赛大盘 (二级导航：列表瀑布流 vs 单场深度详情) -->
-        <template v-if="activeTab === 'matches'">
-          <!-- 一级：赛程赛果列表 -->
+        <!-- Tab 1: 📰 【资讯】页（默认首页：焦点横滑比分 + 头条/留洋/转会胶囊 + 详情阅读Modal） -->
+        <NewsHome
+          v-if="activeTab === 'news'"
+          :matches="matches"
+          @select-match="onSelectMatch"
+        />
+
+        <!-- Tab 2: ⚽ 【比赛】页 (顶部中立轮次/联赛下拉 + 中立比分列表 + 详情页子Tab) -->
+        <template v-else-if="activeTab === 'matches'">
+          <!-- 比赛列表瀑布流 -->
           <MatchList
             v-if="!selectedMatchId"
             :matches="matches"
-            :worldNews="worldNews"
-            :seasonLabel="activeSeason.label"
             @select-match="onSelectMatch"
           />
 
-          <!-- 二级：比赛专属详情页 (2D战术棒 + 懂球帝战报 + 虎扑热评 + 同轮完整赛果) -->
+          <!-- 比赛详情页 (战报 | 赛况/阵容评分 | 热评 | 同轮赛果) -->
           <MatchDetail
             v-else
             :match="selectedMatch"
@@ -39,41 +41,28 @@
           />
         </template>
 
-        <!-- 模块 B: 📊 球队战术体系 (哲学架构 + 攻防走今 + 技战术雷达 + 专栏点评) -->
-        <TeamTactics
-          v-else-if="activeTab === 'tactics'"
-          :teamAnalysis="teamAnalysis"
-          :squad="squad"
-          :clubName="currentClub.name"
-        />
-
-        <!-- 模块 C: 🥇 榜单大盘 (七大联赛积分榜 + 比乙射手榜 + 助攻榜 + 纪律榜) -->
-        <StandingsBoard
-          v-else-if="activeTab === 'standings'"
-          :availableLeagues="availableLeagues"
-          :leaderboards="leaderboards"
-        />
-
-        <!-- 模块 D: 🔥 球迷热情广场 (所有比赛总评 + 场外日常与转会球评) -->
+        <!-- Tab 3: 🔥 【社区】页 (虎扑经典热帖流：热门/最新切换 + 亮评互动) -->
         <FanCommunity
           v-else-if="activeTab === 'community'"
-          :communityData="community"
-          :newsList="news"
-          :matchesList="matches"
-          @select-match="onCommunitySelectMatch"
+          @select-match="onSelectMatch"
         />
 
-        <!-- 模块 E: 📬 主监信箱 (私域主监工作台页面，非弹窗) -->
-        <ManagerMailbox
-          v-else-if="activeTab === 'mailbox'"
-          :mailbox="mailbox"
+        <!-- Tab 4: 📊 【数据】页 (顶部左侧联赛下拉选择器 + 顶部右侧：积分榜 / 射手/助攻榜 / 转会动态) -->
+        <StandingsBoard
+          v-else-if="activeTab === 'standings'"
         />
       </div>
 
-      <!-- 3. 底部常驻导航条（唯一全局导航：比赛 / 战术 / 榜单 / 信箱） -->
+      <!-- 3. 底部固定 Tab Bar（严格限制为 4 个一级 Tab，移动端与桌面端统一体验） -->
       <BottomNav
         :activeTab="activeTab"
         @update:activeTab="changeTab"
+      />
+
+      <!-- 4. 隐藏式「主帅私人手机模拟器」Drawer/Modal (点击顶栏 📱 呼出，完全脱离公开媒体流) -->
+      <PhoneDrawer
+        :isOpen="isPhoneOpen"
+        @close="isPhoneOpen = false"
       />
 
     </main>
@@ -81,38 +70,29 @@
 </template>
 
 <script setup>
-import { ref, computed, watch } from 'vue'
+import { ref, computed } from 'vue'
 
 // 模块化子组件导入
 import AppHeader from './components/layout/AppHeader.vue'
 import BottomNav from './components/layout/BottomNav.vue'
-import ManagerMailbox from './components/layout/ManagerMailbox.vue'
+import PhoneDrawer from './components/layout/PhoneDrawer.vue'
 
+import NewsHome from './components/news/NewsHome.vue'
 import MatchList from './components/matches/MatchList.vue'
 import MatchDetail from './components/matches/MatchDetail.vue'
-
-import TeamTactics from './components/tactics/TeamTactics.vue'
-import StandingsBoard from './components/standings/StandingsBoard.vue'
 import FanCommunity from './components/community/FanCommunity.vue'
+import StandingsBoard from './components/standings/StandingsBoard.vue'
 
-// 静态导入：赛季元数据（轻量，始终加载）
+// 数据文件
+import allMatchesRaw from './data/all_matches.json'
 import seasonsMetaRaw from './data/seasons_meta.json'
 
-// ── 赛季切换状态 ──────────────────────────────────────────────
-const seasonsMeta = ref(seasonsMetaRaw)
-
-// 默认激活最新赛季（current_season 字段）
-const activeSeasonId = ref(seasonsMetaRaw.current_season)
-
-const activeSeason = computed(() =>
-  seasonsMeta.value.seasons.find(s => s.id === activeSeasonId.value) || seasonsMeta.value.seasons[0]
-)
-
-// ── 页面与导航状态 ──────────────────────────────────────────
-const activeTab = ref('matches')
+// ── 全局一级导航状态：严格限制为 4 个 Tab，默认首页为 'news' ──────
+const activeTab = ref('news') // 'news' | 'matches' | 'community' | 'standings'
+const isPhoneOpen = ref(false)
 const selectedMatchId = ref(null)
 
-// ── 赛季数据（使用 import.meta.glob 避免动态字符串模板初始化 Bug）────────────────
+// ── 赛季底层数据同步加载（用于比乙维尔通历史比赛与战报匹配）──────
 const allSeasonFiles = import.meta.glob('./data/season_*/*.json', { eager: true })
 
 function getSeasonData(seasonId, fileName) {
@@ -121,87 +101,52 @@ function getSeasonData(seasonId, fileName) {
   return mod ? (mod.default ?? mod) : null
 }
 
-// 所有数据 ref（从当前赛季加载）
-const careerData   = ref({})
 const matches      = ref([])
 const news         = ref([])
-const mailbox      = ref({ messages: [] })
 const roundMatches = ref({})
-const worldNews    = ref([])
-const availableLeagues = ref([])
-const teamAnalysis = ref({})
-const leaderboards = ref({})
-const community    = ref({})
-const squad        = ref([])
 
-// 加载指定赛季的数据（同步秒级切换）
-function loadSeasonData(seasonId) {
-  selectedMatchId.value = null   // 重置单场详情
-
-  careerData.value       = getSeasonData(seasonId, 'career') || {}
-  matches.value          = getSeasonData(seasonId, 'matches') || []
-  news.value             = getSeasonData(seasonId, 'news') || []
-  mailbox.value          = getSeasonData(seasonId, 'mailbox') || { messages: [] }
-  roundMatches.value     = getSeasonData(seasonId, 'round_matches') || {}
-
-  const rawWn = getSeasonData(seasonId, 'world_news')
-  worldNews.value        = Array.isArray(rawWn) ? rawWn : (rawWn?.articles || [])
-
-  const standings = getSeasonData(seasonId, 'standings')
-  availableLeagues.value = standings?.leagues || []
-
-  teamAnalysis.value     = getSeasonData(seasonId, 'team_analysis') || {}
-  leaderboards.value     = getSeasonData(seasonId, 'leaderboards') || {}
-  community.value        = getSeasonData(seasonId, 'community') || {}
-  squad.value            = getSeasonData(seasonId, 'squad') || []
+function loadBaseData() {
+  // 载入历史完整比赛数据以支持详情页点击展开
+  matches.value      = getSeasonData(1, 'matches') || []
+  news.value         = getSeasonData(1, 'news') || []
+  roundMatches.value = getSeasonData(1, 'round_matches') || {}
 }
 
-// 初始加载
-loadSeasonData(activeSeasonId.value)
+loadBaseData()
 
-// 切换赛季
-function onSwitchSeason(seasonId) {
-  if (seasonId === activeSeasonId.value) return
-  activeSeasonId.value = seasonId
-  activeTab.value = 'matches'
-  loadSeasonData(seasonId)
-}
-
-// ── 俱乐部信息（从 careerData 读取）────────────────────────────
-const currentClub = computed(() => {
-  const clubs = careerData.value?.clubs || []
-  const id = careerData.value?.current_club_id
-  return clubs.find(c => c.id === id) || clubs[0] || { name: '维尔通精英', seasons: [] }
-})
-
-// ── 选中的比赛与新闻数据 ──────────────────────────────────────
+// ── 单场详情匹配计算属性 ────────────────────────────────────
 const selectedMatch = computed(() => {
   if (!selectedMatchId.value) return null
-  return matches.value.find(m => m.id === selectedMatchId.value) || matches.value[0]
+  const fromAll = allMatchesRaw.find(m => m.id === selectedMatchId.value)
+  if (fromAll) return fromAll
+  return matches.value.find(m => m.id === selectedMatchId.value) || allMatchesRaw[0]
 })
 
 const selectedNews = computed(() => {
   if (!selectedMatch.value) return null
+  if (selectedMatch.value.news) return selectedMatch.value.news
   return news.value.find(n => n.round === selectedMatch.value.round || n.match_id === selectedMatch.value.id)
 })
 
 const selectedRoundOtherMatches = computed(() => {
   if (!selectedMatch.value) return []
-  return roundMatches.value[String(selectedMatch.value.round)] || []
+  if (roundMatches.value[String(selectedMatch.value.round)]) {
+    return roundMatches.value[String(selectedMatch.value.round)]
+  }
+  return allMatchesRaw.filter(m => m.league_key === selectedMatch.value.league_key && m.id !== selectedMatch.value.id)
 })
 
-// ── 交互操作 ───────────────────────────────────────────────────
-const onSelectMatch = (matchId) => {
-  selectedMatchId.value = matchId
+// ── 交互导航 ────────────────────────────────────────────────
+const changeTab = (tabKey) => {
+  activeTab.value = tabKey
+  selectedMatchId.value = null
   window.scrollTo({ top: 0, behavior: 'smooth' })
 }
 
-const onCommunitySelectMatch = (matchId) => {
-  if (matchId) {
-    activeTab.value = 'matches'
-    selectedMatchId.value = matchId
-    window.scrollTo({ top: 0, behavior: 'smooth' })
-  }
+const onSelectMatch = (matchId) => {
+  activeTab.value = 'matches'
+  selectedMatchId.value = matchId
+  window.scrollTo({ top: 0, behavior: 'smooth' })
 }
 
 const onSwitchMatch = (matchId) => {
@@ -209,9 +154,5 @@ const onSwitchMatch = (matchId) => {
     selectedMatchId.value = matchId
     window.scrollTo({ top: 0, behavior: 'smooth' })
   }
-}
-
-const changeTab = (tabKey) => {
-  activeTab.value = tabKey
 }
 </script>

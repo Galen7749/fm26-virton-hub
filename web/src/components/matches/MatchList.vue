@@ -1,143 +1,129 @@
 <template>
-  <div class="p-4 space-y-4 animate-in fade-in duration-150">
-    
-    <!-- 赛季战绩大盘概览卡片 -->
-    <div class="bg-gradient-to-r from-slate-900 via-slate-900 to-slate-950 border border-slate-800 rounded-xl p-3.5 space-y-2.5 shadow-sm">
-      <div class="flex items-center justify-between text-xs">
-        <div class="flex items-center space-x-2">
-          <span class="text-sm">{{ matches.length > 0 ? '🇧🇪' : '🌍' }}</span>
-          <span class="font-bold text-white">{{ seasonLabel }} · {{ matches.length > 0 ? '战绩看板' : '求职雷达' }}</span>
-        </div>
-        <span :class="[
-          'text-[10px] font-bold px-2 py-0.5 rounded border',
-          matches.length === 0 ? 'bg-amber-950/80 text-amber-300 border-amber-600/60 font-bold' :
-          isPromoted ? 'bg-amber-950 text-amber-300 border-amber-600 shadow-sm font-black' : 'bg-emerald-950 text-emerald-400 border-emerald-900/50'
-        ]">
-          {{ matches.length === 0 ? '💼 自由身待业 · 寻找欧洲第2站' : isPromoted ? '🏆 冲甲附加赛总冠军 · 成功升入比甲！' : '比乙冲甲附加区' }}
-        </span>
-      </div>
+  <div class="space-y-3.5 p-3.5 animate-in fade-in duration-150 pb-6">
 
-      <!-- 战绩统计网格 (常规已赛) -->
-      <div v-if="matches.length > 0" class="grid grid-cols-4 gap-2 text-center text-xs">
-        <div class="bg-slate-950 p-2 rounded-lg border border-slate-850">
-          <div class="text-[10px] text-slate-400">已赛场次</div>
-          <div class="font-black text-white text-sm mt-0.5">{{ matches.length }} 场</div>
-        </div>
-        <div class="bg-slate-950 p-2 rounded-lg border border-slate-850">
-          <div class="text-[10px] text-slate-400">胜/平/负</div>
-          <div class="font-black text-emerald-400 text-sm mt-0.5">{{ winCount }}胜 {{ drawCount }}平 {{ lossCount }}负</div>
-        </div>
-        <div class="bg-slate-950 p-2 rounded-lg border border-slate-850">
-          <div class="text-[10px] text-slate-400">得失球/净胜</div>
-          <div class="font-black text-white text-sm mt-0.5">{{ totalGoalsFor }}-{{ totalGoalsAgainst }} (+{{ totalGoalsFor - totalGoalsAgainst }})</div>
-        </div>
-        <div class="bg-slate-950 p-2 rounded-lg border border-slate-850">
-          <div class="text-[10px] text-slate-400">联赛积分</div>
-          <div class="font-black text-amber-400 text-sm mt-0.5">{{ totalPoints }} 分</div>
-        </div>
-      </div>
-
-      <!-- 待业求职看板 (0场比赛待业时) -->
-      <div v-else class="bg-slate-950 p-3 rounded-xl border border-slate-850 space-y-2 text-xs">
-        <div class="flex items-center justify-between">
-          <span class="text-amber-400 font-bold flex items-center space-x-1.5">
-            <span>💼</span>
-            <span>【欧洲帅位动态】徐指导自由身进入夏窗市场</span>
-          </span>
-          <span class="text-[9px] bg-slate-800 text-teal-300 px-2 py-0.5 rounded border border-teal-900/40 font-mono">
-            冲甲教头 · 零违约金
-          </span>
-        </div>
-        <p class="text-[11px] text-slate-300 leading-relaxed">
-          率维尔通在补时完成绝杀冲入比甲后，徐指导与俱乐部达成协议解约离任。多家欧洲二线联赛球队已接触其团队，求职核心意向明确锁定<strong>【俱乐部全额资助欧足联高阶教练认证】</strong>。
-        </p>
-        <div class="flex items-center space-x-1.5 pt-0.5 text-[9px] text-slate-400 overflow-x-auto no-scrollbar">
-          <span class="bg-slate-900 px-2 py-0.5 rounded border border-slate-800 shrink-0">🎯 热门下家：荷乙中上游</span>
-          <span class="bg-slate-900 px-2 py-0.5 rounded border border-slate-800 shrink-0">🇫🇷 法丙冲乙劲旅</span>
-          <span class="bg-slate-900 px-2 py-0.5 rounded border border-slate-800 shrink-0">🇨🇭 瑞士二级联赛</span>
-        </div>
-      </div>
-    </div>
-
-    <!-- 筛选过滤与排序控制条 -->
-    <div class="flex items-center justify-between text-xs">
-      <!-- 过滤标签 -->
-      <div class="flex items-center space-x-1.5 overflow-x-auto no-scrollbar">
+    <!-- 1. 顶部控制器：【轮次/日期选择器】 + 右侧【联赛筛选下拉框】 -->
+    <div class="bg-slate-900 border border-slate-800 rounded-xl p-2.5 flex items-center justify-between gap-2 text-xs shadow-sm">
+      <!-- 轮次/日期选择胶囊 -->
+      <div class="flex items-center space-x-1 overflow-x-auto no-scrollbar py-0.5">
         <button
-          v-for="filter in filters"
-          :key="filter.key"
-          @click="activeFilter = filter.key"
+          v-for="r in roundOptions"
+          :key="r.key"
+          @click="selectedRoundFilter = r.key"
           :class="[
-            'px-2.5 py-1 rounded-full text-xs font-semibold shrink-0 transition',
-            activeFilter === filter.key
-              ? 'bg-emerald-600 text-white font-bold shadow-sm'
-              : 'bg-slate-900 text-slate-400 hover:text-white border border-slate-800'
+            'px-2.5 py-1 rounded-lg text-[11px] font-bold shrink-0 transition',
+            selectedRoundFilter === r.key
+              ? 'bg-emerald-600 text-white shadow-sm'
+              : 'text-slate-400 hover:text-white bg-slate-950/60'
           ]"
         >
-          {{ filter.label }}
+          {{ r.label }}
         </button>
       </div>
 
-      <!-- 排序切换 -->
-      <button
-        @click="orderDesc = !orderDesc"
-        class="text-[11px] text-slate-400 hover:text-emerald-400 flex items-center space-x-1 shrink-0 ml-2"
-        title="切换排序"
-      >
-        <span>{{ orderDesc ? '最新赛果' : '开赛顺序' }}</span>
-        <span class="text-xs">{{ orderDesc ? '↓' : '↑' }}</span>
-      </button>
-    </div>
-
-    <!-- 比赛列表瀑布流 -->
-    <div class="space-y-3">
-      <MatchCard
-        v-for="m in displayedMatches"
-        :key="m.id"
-        :match="m"
-        @select="$emit('select-match', m.id)"
-      />
-
-      <div v-if="!displayedMatches.length" class="text-center py-10 px-4 space-y-2 text-slate-500 text-xs">
-        <div class="text-2xl animate-bounce">✈️</div>
-        <div class="font-bold text-slate-300">
-          {{ matches.length === 0 ? '正在欧洲自由市场物色下家' : '暂无符合筛选条件的比赛' }}
-        </div>
-        <p v-if="matches.length === 0" class="text-[11px] text-slate-500 max-w-xs mx-auto leading-relaxed">
-          手握比乙冲甲奇迹声望，静候愿全额资助欧足联教练班进修资格的良心东家递上橄榄枝！
-        </p>
-      </div>
-    </div>
-
-    <!-- 国际背景板：同期欧洲快讯 -->
-    <div class="pt-4 border-t border-slate-800/80 space-y-2.5">
-      <div class="flex items-center justify-between text-xs font-bold text-slate-300">
-        <span class="flex items-center space-x-1.5">
-          <span>🌍</span>
-          <span>同期欧洲足坛要闻 (比甲 / 五大联赛)</span>
-        </span>
-        <span class="text-[10px] text-slate-500">国际版面</span>
-      </div>
-
-      <div class="space-y-2">
-        <div
-          v-for="wn in worldNews"
-          :key="wn.id"
-          class="bg-slate-900 border border-slate-800 rounded-xl p-3 space-y-1 hover:border-slate-700 transition text-xs"
+      <!-- 右侧：联赛筛选下拉框 (全部重要赛事 / 波甲 / 比甲 / 比乙 / 英超 / 欧冠) -->
+      <div class="shrink-0">
+        <select
+          v-model="selectedLeague"
+          class="bg-slate-950 border border-slate-700 text-slate-200 text-xs font-bold rounded-lg px-2.5 py-1 focus:outline-none focus:border-emerald-500 cursor-pointer shadow-inner"
         >
-          <div class="flex items-center justify-between text-[10px]">
-            <span class="bg-slate-800 text-teal-400 px-1.5 py-0.5 rounded font-medium">
-              {{ wn.league }}
-            </span>
-            <span class="text-slate-500">{{ wn.time }}</span>
+          <option value="all">🌐 全部重要赛事</option>
+          <option value="pol_d1">🇵🇱 波甲 (奥波莱)</option>
+          <option value="bel_d1">🇧🇪 比甲 (顶级联赛)</option>
+          <option value="bel_d2">🇧🇪 比乙 (维尔通冲甲)</option>
+          <option value="pl">🏴󠁧󠁢󠁥󠁮󠁧󠁿 英超</option>
+          <option value="ucl">🇪🇺 欧冠</option>
+        </select>
+      </div>
+    </div>
+
+    <!-- 2. 赛事汇总提示条 -->
+    <div class="flex items-center justify-between text-[11px] text-slate-400 px-1">
+      <span class="flex items-center space-x-1.5">
+        <span class="w-1.5 h-1.5 rounded-full bg-emerald-400"></span>
+        <span>共匹配到 <strong class="text-white">{{ filteredMatches.length }}</strong> 场比赛</span>
+      </span>
+      <span class="text-slate-500 text-[10px]">点击比赛卡片进入深度战报与阵容评分</span>
+    </div>
+
+    <!-- 3. 中立赛事列表（完全中立 主队 比分 客队 布局） -->
+    <div class="space-y-2">
+      <div
+        v-for="m in filteredMatches"
+        :key="m.id"
+        @click="$emit('select-match', m.id)"
+        class="bg-slate-900 hover:bg-slate-850 border border-slate-800 hover:border-slate-700 rounded-xl p-3 shadow-sm cursor-pointer transition transform hover:-translate-y-0.5 space-y-2"
+      >
+        <!-- 比赛元信息行：联赛名称、日期轮次、以及中立「🇨🇳 留洋」标签 -->
+        <div class="flex items-center justify-between text-[10px] pb-1.5 border-b border-slate-800/60">
+          <div class="flex items-center space-x-2">
+            <span class="font-bold text-slate-300">{{ m.league_name || m.competition || '比乙' }}</span>
+            <span class="text-slate-500">·</span>
+            <span class="text-slate-400">{{ m.round_label || ('第 ' + m.round + ' 轮') }}</span>
+            <span class="text-slate-500 font-mono">{{ m.date_short || m.date }}</span>
           </div>
-          <h4 class="font-bold text-slate-200 leading-snug">
-            {{ wn.title }}
-          </h4>
-          <p class="text-[11px] text-slate-400 leading-relaxed">
-            {{ wn.summary }}
-          </p>
+
+          <div class="flex items-center space-x-1.5">
+            <!-- 仅在有中国主教练执教的比赛右侧附带一个低调中立的「🇨🇳 留洋」标签 -->
+            <span
+              v-if="m.is_overseas || m.home_team.includes('维尔通') || m.away_team.includes('维尔通') || m.home_team.includes('奥波莱') || m.away_team.includes('奥波莱')"
+              class="bg-red-950 text-red-300 border border-red-800/80 px-1.5 py-0.2 rounded font-bold text-[9px] flex items-center space-x-0.5"
+            >
+              <span>🇨🇳</span>
+              <span>留洋</span>
+            </span>
+
+            <span class="bg-slate-950 text-emerald-400 px-1.5 py-0.2 rounded border border-emerald-950 font-bold font-mono">
+              {{ m.status_label || (m.status === 'FT' ? '完赛' : '已完赛') }}
+            </span>
+          </div>
         </div>
+
+        <!-- 比赛双方与比分主体（中立居中对齐） -->
+        <div class="flex items-center justify-between py-1">
+          <!-- 主队 -->
+          <div class="flex-1 text-right min-w-0 pr-3">
+            <div class="text-xs sm:text-sm font-bold text-white truncate">
+              {{ m.home_team }}
+            </div>
+            <div class="text-[9px] text-slate-500 mt-0.5 font-mono">
+              {{ m.stadium ? m.stadium.split(' ')[0] : '主场' }}
+            </div>
+          </div>
+
+          <!-- 比分中缝 -->
+          <div class="shrink-0 px-3 py-1 bg-slate-950 rounded-lg border border-slate-800 text-center flex flex-col items-center min-w-[72px]">
+            <span class="text-base sm:text-lg font-black text-white font-mono tracking-wider">
+              {{ m.score_home }} - {{ m.score_away }}
+            </span>
+            <span class="text-[9px] text-slate-500 font-mono">xG {{ m.xg || '1.4 - 0.9' }}</span>
+          </div>
+
+          <!-- 客队 -->
+          <div class="flex-1 text-left min-w-0 pl-3">
+            <div class="text-xs sm:text-sm font-bold text-white truncate">
+              {{ m.away_team }}
+            </div>
+            <div class="text-[9px] text-slate-500 mt-0.5">客场</div>
+          </div>
+        </div>
+
+        <!-- 进球速览摘要（有进球球员时紧凑展示） -->
+        <div v-if="m.scorers && m.scorers.length" class="text-[10px] text-slate-400 bg-slate-950/70 p-1.5 rounded border border-slate-850 truncate flex items-center space-x-1.5">
+          <span class="text-xs shrink-0">⚽</span>
+          <span class="truncate">
+            <template v-for="(sc, sidx) in m.scorers" :key="sidx">
+              <span :class="sc.is_header ? 'text-amber-300 font-bold' : 'text-slate-300'">
+                {{ sc.player_zh || sc.player }} {{ sc.minute }}'{{ sc.is_header ? '(头球)' : '' }}
+              </span>
+              <span v-if="sidx < m.scorers.length - 1" class="text-slate-600 mx-1">,</span>
+            </template>
+          </span>
+        </div>
+      </div>
+
+      <!-- 无数据兜底 -->
+      <div v-if="filteredMatches.length === 0" class="text-center py-12 text-slate-500 text-xs bg-slate-900/50 rounded-xl border border-slate-800">
+        暂无该联赛筛选条件下的比赛记录
       </div>
     </div>
 
@@ -146,79 +132,79 @@
 
 <script setup>
 import { ref, computed } from 'vue'
-import MatchCard from './MatchCard.vue'
+import allMatchesRaw from '../../data/all_matches.json'
 
 const props = defineProps({
   matches: {
     type: Array,
-    required: true
-  },
-  worldNews: {
-    type: Array,
     default: () => []
-  },
-  seasonLabel: {
-    type: String,
-    default: '2025/26 赛季'
   }
 })
 
 defineEmits(['select-match'])
 
-const activeFilter = ref('all')
-const orderDesc = ref(true) // 默认最新赛果排在前面
+// 联赛下拉筛选器：'all' | 'pol_d1' | 'bel_d1' | 'bel_d2' | 'pl' | 'ucl'
+const selectedLeague = ref('all')
 
-const isPromoted = computed(() => props.matches.some(m => m.stage_title?.includes('绝杀') || m.round >= 32))
-
-const filters = [
-  { key: 'all', label: '全部比赛' },
-  { key: 'playoff', label: '🏆 冲甲决战' },
-  { key: 'regular', label: '常规赛' },
-  { key: 'win', label: '胜仗' },
-  { key: 'home', label: '主场' },
-  { key: 'away', label: '客场' }
+// 轮次/日期快捷筛选
+const selectedRoundFilter = ref('all')
+const roundOptions = [
+  { key: 'all', label: '全部焦点' },
+  { key: 'recent', label: '最近完赛' },
+  { key: 'finals', label: '决赛/争冠' }
 ]
 
-// 统计计算
-const winCount = computed(() => props.matches.filter(m => m.result === 'W' || m.result === '胜').length)
-const drawCount = computed(() => props.matches.filter(m => m.result === 'D' || m.result === '平').length)
-const lossCount = computed(() => props.matches.filter(m => m.result === 'L' || m.result === '负').length)
+// 将 allMatchesRaw 与 props.matches 整合去重
+const combinedMatches = computed(() => {
+  const map = new Map()
 
-const totalPoints = computed(() => (winCount.value * 3) + drawCount.value)
-
-const totalGoalsFor = computed(() => {
-  return props.matches.reduce((sum, m) => {
-    return sum + (m.home_team.includes('维尔通') ? m.score_home : m.score_away)
-  }, 0)
-})
-
-const totalGoalsAgainst = computed(() => {
-  return props.matches.reduce((sum, m) => {
-    return sum + (m.home_team.includes('维尔通') ? m.score_away : m.score_home)
-  }, 0)
-})
-
-// 筛选与排序
-const displayedMatches = computed(() => {
-  let list = [...props.matches]
-  
-  if (activeFilter.value === 'playoff') {
-    list = list.filter(m => m.is_playoff || m.stage_title?.includes('冲甲') || m.round >= 29)
-  } else if (activeFilter.value === 'regular') {
-    list = list.filter(m => !m.is_playoff && !m.stage_title?.includes('冲甲') && m.round < 29)
-  } else if (activeFilter.value === 'win') {
-    list = list.filter(m => m.result === 'W' || m.result === '胜')
-  } else if (activeFilter.value === 'home') {
-    list = list.filter(m => m.venue === 'home' || m.home_team.includes('维尔通'))
-  } else if (activeFilter.value === 'away') {
-    list = list.filter(m => m.venue === 'away' || m.away_team.includes('维尔通'))
-  }
-
-  // 排序
-  list.sort((a, b) => {
-    return orderDesc.value ? (b.id - a.id) : (a.id - b.id)
+  // 首先载入内置多联赛比赛 (波甲、欧冠、英超、比甲焦点战)
+  allMatchesRaw.forEach(m => {
+    map.set(m.id, m)
   })
 
-  return list
+  // 载入当前赛季比赛 (例如 Virton 32 场)
+  props.matches.forEach(m => {
+    if (!map.has(m.id)) {
+      map.set(m.id, {
+        ...m,
+        league_key: 'bel_d2',
+        league_name: '比乙',
+        is_overseas: true,
+        date_short: m.date
+      })
+    }
+  })
+
+  return Array.from(map.values())
+})
+
+// 根据联赛与轮次进行中立过滤
+const filteredMatches = computed(() => {
+  return combinedMatches.value.filter(m => {
+    // 联赛筛选
+    if (selectedLeague.value !== 'all') {
+      const matchLeagueKey = m.league_key || (m.home_team.includes('维尔通') || m.away_team.includes('维尔通') ? 'bel_d2' : 'pol_d1')
+      if (matchLeagueKey !== selectedLeague.value) return false
+    }
+
+    // 轮次/状态筛选
+    if (selectedRoundFilter.value === 'finals') {
+      const isFinal = String(m.round_label || '').includes('决赛') || String(m.round_label || '').includes('附加赛')
+      if (!isFinal) return false
+    }
+
+    return true
+  })
 })
 </script>
+
+<style scoped>
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+</style>

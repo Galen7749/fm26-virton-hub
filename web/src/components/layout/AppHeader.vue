@@ -1,83 +1,70 @@
 <template>
-  <header class="bg-slate-900 border-b border-slate-800 px-4 py-3 sticky top-0 z-30 shadow-md">
-    <div class="flex items-center justify-between">
-      <!-- 左侧：媒体品牌与执教俱乐部 -->
-      <div class="flex items-center space-x-2.5">
-        <div class="w-8 h-8 rounded-lg bg-emerald-600 flex items-center justify-center font-black text-white text-base tracking-tighter shadow-sm">
-          FH
+  <header class="bg-slate-900/95 backdrop-blur border-b border-slate-800 px-3.5 py-2.5 sticky top-0 z-30 shadow-md">
+    <div class="flex items-center justify-between w-full">
+      <!-- 1. 左侧：大众媒体品牌「☁️ 懂球云」 -->
+      <div class="flex items-center space-x-2 shrink-0 cursor-pointer" @click="$emit('change-tab', 'news')">
+        <div class="w-8 h-8 rounded-lg bg-emerald-600 flex items-center justify-center font-black text-white text-base shadow-sm">
+          ☁️
         </div>
-        <div>
-          <h1 class="text-sm font-black text-white tracking-wide flex items-center space-x-1.5">
-            <span>FootHub · 懂球云</span>
-            <span class="text-[9px] bg-slate-800 text-teal-300 font-normal px-1.5 py-0.5 rounded border border-teal-900/40">
-              {{ clubName }}
+        <div class="flex flex-col">
+          <span class="text-sm font-black text-white tracking-wider flex items-center space-x-1.5">
+            <span>懂球云</span>
+            <span class="text-[9px] bg-emerald-950 text-emerald-400 font-bold px-1.5 py-0.2 rounded border border-emerald-800/60">
+              Live
             </span>
-          </h1>
-          <p class="text-[9px] text-slate-400 font-sans flex items-center space-x-1">
-            <span>{{ leagueName }}</span>
-            <span>·</span>
-            <span>即时比分与数据中心</span>
-          </p>
+          </span>
+          <span class="text-[9px] text-slate-400 font-sans tracking-tight">
+            全球足球资讯 · 即时比分社区
+          </span>
         </div>
       </div>
 
-      <!-- 右侧：赛季切换器 -->
-      <div class="flex items-center space-x-1">
-        <!-- 多赛季时：显示切换 pills -->
-        <template v-if="seasons && seasons.length > 1">
-          <div class="flex items-center space-x-1 bg-slate-800/80 border border-slate-700/60 px-1.5 py-1 rounded-full">
-            <button
-              v-for="s in seasons"
-              :key="s.id"
-              @click="$emit('switch-season', s.id)"
-              :class="[
-                'px-2 py-0.5 rounded-full text-[10px] font-bold transition-all duration-150',
-                s.id === activeSeasonId
-                  ? 'bg-emerald-600 text-white shadow-sm'
-                  : 'text-slate-400 hover:text-slate-200'
-              ]"
-            >
-              <span v-if="s.id === activeSeasonId" class="inline-block w-1.5 h-1.5 rounded-full bg-emerald-300 animate-pulse mr-1 align-middle"></span>
-              {{ s.league || s.label }}
-            </button>
-          </div>
-        </template>
+      <!-- 2. 右侧：搜索输入框与极低调的「📱」主帅私人手机入口 -->
+      <div class="flex items-center space-x-2 shrink-0">
+        <!-- 搜索输入框 -->
+        <div class="relative flex items-center">
+          <input
+            v-model="searchQuery"
+            @keyup.enter="handleSearch"
+            type="text"
+            placeholder="搜索球队/赛事/球星..."
+            class="w-32 bg-slate-950 border border-slate-800 focus:border-emerald-500 rounded-full pl-7 pr-2.5 py-1 text-slate-200 text-[11px] placeholder-slate-500 focus:outline-none transition-all"
+          />
+          <span class="absolute left-2.5 text-slate-500 text-xs pointer-events-none">🔍</span>
+        </div>
 
-        <!-- 单赛季时：纯展示胶囊 -->
-        <template v-else>
-          <div class="flex items-center space-x-1.5 bg-slate-800/80 border border-slate-700/80 px-2.5 py-1 rounded-full text-xs shadow-sm">
-            <span class="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse"></span>
-            <span class="text-[11px] font-bold text-slate-200">{{ seasonLabel }}</span>
-          </div>
-        </template>
+        <!-- 极低调的 📱 图标（无违和彩蛋：点击呼出主帅私人手机模拟器，完全不污染公开媒体界面） -->
+        <button
+          @click="$emit('open-phone')"
+          class="w-8 h-8 rounded-full bg-slate-950 hover:bg-slate-800 text-slate-400 hover:text-emerald-400 border border-slate-800/80 flex items-center justify-center transition shadow-sm relative"
+          title="私人主帅手机"
+        >
+          <span class="text-sm">📱</span>
+          <!-- 极小绿点提示状态正常 -->
+          <span class="w-1.5 h-1.5 rounded-full bg-emerald-400 absolute top-1.5 right-1.5 animate-pulse"></span>
+        </button>
       </div>
     </div>
   </header>
 </template>
 
 <script setup>
+import { ref } from 'vue'
+
 defineProps({
-  clubName: {
+  activeTab: {
     type: String,
-    default: '维尔通精英'
-  },
-  seasonLabel: {
-    type: String,
-    default: '2025/26 赛季'
-  },
-  leagueName: {
-    type: String,
-    default: '比乙联赛'
-  },
-  seasons: {
-    type: Array,
-    default: () => []
-  },
-  activeSeasonId: {
-    type: Number,
-    default: 1
+    default: 'news'
   }
 })
 
-defineEmits(['switch-season'])
+const emit = defineEmits(['change-tab', 'open-phone', 'search'])
+
+const searchQuery = ref('')
+
+const handleSearch = () => {
+  if (searchQuery.value.trim()) {
+    emit('search', searchQuery.value.trim())
+  }
+}
 </script>
