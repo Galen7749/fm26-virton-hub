@@ -37,7 +37,7 @@
               ★ {{ lg.name }}
             </option>
           </optgroup>
-          <optgroup label="🔥 热门顶级赛事">
+          <optgroup label="🔥 欧战与顶级赛事">
             <option
               v-for="lg in popularLeagues"
               :key="'match-pop-' + lg.key"
@@ -46,7 +46,7 @@
               {{ lg.name }}
             </option>
           </optgroup>
-          <optgroup label="🌍 欧洲其他联赛">
+          <optgroup label="🌍 欧洲主要联赛">
             <option
               v-for="lg in europeanLeagues"
               :key="'match-euro-' + lg.key"
@@ -221,6 +221,8 @@ const roundOptions = [
 const getLeagueFlag = (key) => {
   const flags = {
     ucl: 'circle-flags:eu',
+    uel: 'circle-flags:eu',
+    uecl: 'circle-flags:eu',
     pl: 'circle-flags:gb-eng',
     laliga: 'circle-flags:es',
     serie_a: 'circle-flags:it',
@@ -228,8 +230,7 @@ const getLeagueFlag = (key) => {
     ligue1: 'circle-flags:fr',
     csl: 'circle-flags:cn',
     pol_d1: 'circle-flags:pl',
-    bel_d1: 'circle-flags:be',
-    bel_d2: 'circle-flags:be'
+    bel_d1: 'circle-flags:be'
   }
   return flags[key] || 'circle-flags:eu'
 }
@@ -250,8 +251,8 @@ const combinedMatches = computed(() => {
     if (!map.has(m.id)) {
       map.set(m.id, {
         ...m,
-        league_key: 'bel_d2',
-        league_name: '比乙',
+        league_key: m.league_key || (isOverseasMatch(m) ? 'pol_d1' : 'ucl'),
+        league_name: m.league_name || (isOverseasMatch(m) ? '波甲' : '欧冠'),
         is_overseas: true,
         date_short: m.date
       })

@@ -24,8 +24,8 @@
               </option>
             </optgroup>
 
-            <!-- 分组 2：热门顶级赛事 (五大联赛 + 欧冠 + 中超，默认第一顺位) -->
-            <optgroup label="🔥 热门顶级赛事">
+            <!-- 分组 2：欧战与顶级赛事 (三大欧战 + 五大联赛 + 中超，默认第一顺位) -->
+            <optgroup label="🔥 欧战与顶级赛事">
               <option
                 v-for="lg in popularLeagues"
                 :key="lg.key"
@@ -35,8 +35,8 @@
               </option>
             </optgroup>
 
-            <!-- 分组 3：欧洲其他主要联赛 (波甲 / 比甲 / 比乙) -->
-            <optgroup label="🌍 欧洲其他联赛">
+            <!-- 分组 3：欧洲主要联赛 (波甲 / 比甲) -->
+            <optgroup label="🌍 欧洲主要联赛">
               <option
                 v-for="lg in europeanLeagues"
                 :key="lg.key"
