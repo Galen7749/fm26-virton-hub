@@ -528,7 +528,7 @@
         <!-- 3. 三列 FM 经典属性面板 (身体属性 / 技术属性 / 精神属性) -->
         <div v-if="selectedPlayer.attributes" class="grid grid-cols-1 sm:grid-cols-3 gap-3 text-xs">
           
-          <!-- 列 1: 身体属性 (Physical) - 爆发力、速度首发高亮 -->
+          <!-- 列 1: 身体属性 (Physical) -->
           <div class="bg-slate-950 p-3 rounded-xl border border-slate-850 space-y-2">
             <div class="font-bold text-slate-200 pb-1 border-b border-slate-800 text-[11px] inline-flex items-center gap-1.5 w-full">
               <Icon icon="lucide:zap" class="w-3.5 h-3.5 text-amber-400" />
@@ -536,13 +536,13 @@
             </div>
             <div class="space-y-1.5 text-[11px]">
               <div class="flex items-center justify-between">
-                <span class="text-amber-300 font-bold">爆发力 (Acceleration)</span>
+                <span class="text-slate-400">爆发力 (Acceleration)</span>
                 <span :class="['px-1.5 py-0.2 rounded font-mono text-center min-w-[24px]', attrClass(selectedPlayer.attributes.physical?.acceleration)]">
                   {{ selectedPlayer.attributes.physical?.acceleration }}
                 </span>
               </div>
               <div class="flex items-center justify-between">
-                <span class="text-amber-300 font-bold">速度 (Pace)</span>
+                <span class="text-slate-400">速度 (Pace)</span>
                 <span :class="['px-1.5 py-0.2 rounded font-mono text-center min-w-[24px]', attrClass(selectedPlayer.attributes.physical?.pace)]">
                   {{ selectedPlayer.attributes.physical?.pace }}
                 </span>
@@ -654,7 +654,7 @@
             <!-- 门将专用守门属性 -->
             <div v-else class="space-y-1.5 text-[11px]">
               <div class="flex items-center justify-between">
-                <span class="text-amber-300 font-bold">反应/扑救 (Reflexes)</span>
+                <span class="text-slate-400">反应/扑救 (Reflexes)</span>
                 <span :class="['px-1.5 py-0.2 rounded font-mono text-center min-w-[24px]', attrClass(selectedPlayer.attributes.goalkeeping?.reflexes)]">
                   {{ selectedPlayer.attributes.goalkeeping?.reflexes }}
                 </span>
