@@ -44,6 +44,7 @@
         <!-- Tab 3: 【关注】页 (追踪当前与历史主队全维度数据：动态 | 比赛 | 阵容 | 转会) -->
         <FollowedClubs
           v-else-if="activeTab === 'followed'"
+          @select-match="onSelectMatch"
         />
 
         <!-- Tab 4: 【社区】页 (虎扑经典热帖流：热门/最新切换 + 亮评互动) -->

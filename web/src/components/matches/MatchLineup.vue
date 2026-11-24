@@ -4,7 +4,7 @@
     <div class="flex items-center justify-between text-xs">
       <div>
         <div class="font-bold text-white flex items-center space-x-1.5">
-          <span>首发阵型：{{ match.formation || '4-2-3-1' }}</span>
+          <span>首发阵型：{{ match.formation || '4-1-1-4 (双翼齐飞)' }}</span>
         </div>
         <div class="text-[10px] text-slate-400 mt-0.5">点击场上球员圆点，查看单场硬核数据与雷达图</div>
       </div>

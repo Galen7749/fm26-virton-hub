@@ -113,7 +113,7 @@
 
         <!-- 战绩与积分 -->
         <div class="bg-slate-950/70 p-2 rounded-xl border border-slate-850">
-          <div class="text-[10px] text-slate-500">联赛积分走势</div>
+          <div class="text-[10px] text-slate-500">联赛战绩积分</div>
           <div class="font-bold font-mono text-slate-200 mt-0.5">
             {{ activeClub.stats.won }}胜 {{ activeClub.stats.drawn }}平 {{ activeClub.stats.lost }}负 ({{ activeClub.stats.points }}分)
           </div>
@@ -122,48 +122,50 @@
         <!-- 主场球场 -->
         <div class="bg-slate-950/70 p-2 rounded-xl border border-slate-850">
           <div class="text-[10px] text-slate-500">主场球场</div>
-          <div class="font-bold text-slate-300 truncate mt-0.5" :title="activeClub.stadium">
-            {{ activeClub.stadium.split('(')[0] }}
+          <div class="font-bold text-slate-300 truncate mt-0.5 inline-flex items-center gap-1">
+            <Icon icon="mdi:soccer-field" class="w-3 h-3 text-slate-500 shrink-0" />
+            <span class="truncate">{{ activeClub.stadium }}</span>
           </div>
         </div>
       </div>
 
-      <!-- 近 5 场走势 (胜/平/负 经典色块) -->
-      <div class="flex items-center justify-between text-xs pt-2 border-t border-slate-800/80 relative z-10">
-        <span class="text-[11px] text-slate-400 font-medium inline-flex items-center gap-1.5">
-          <Icon icon="lucide:trending-up" class="w-3 h-3 text-slate-400" />
-          <span>近 5 场战绩走势</span>
+      <!-- 近 5 场走势条 (W/D/L 紧凑圆形勋章) -->
+      <div class="pt-2 border-t border-slate-800/80 flex items-center justify-between text-xs relative z-10">
+        <span class="text-[11px] text-slate-400 font-medium inline-flex items-center gap-1">
+          <Icon icon="lucide:activity" class="w-3 h-3 text-emerald-400" />
+          <span>近 5 场正赛走势</span>
         </span>
         <div class="flex items-center space-x-1.5">
           <span
-            v-for="(res, ridx) in activeClub.form"
-            :key="ridx"
+            v-for="(res, idx) in activeClub.recent_form"
+            :key="idx"
             :class="[
-              'w-5 h-5 rounded-md flex items-center justify-center font-bold text-[10px] text-white shadow-sm font-mono',
-              res === 'W' ? 'bg-emerald-600' : res === 'D' ? 'bg-slate-600' : 'bg-rose-600'
+              'w-5 h-5 rounded-full flex items-center justify-center font-bold text-[10px] font-mono shadow-sm',
+              res === 'W' ? 'bg-emerald-500 text-slate-950' :
+              res === 'D' ? 'bg-amber-500 text-slate-950' : 'bg-rose-500 text-white'
             ]"
             :title="res === 'W' ? '胜' : res === 'D' ? '平' : '负'"
           >
-            {{ res === 'W' ? '胜' : res === 'D' ? '平' : '负' }}
+            {{ res }}
           </span>
         </div>
       </div>
     </section>
 
     <!-- ─────────────────────────────────────────────────────────────
-         第三层：下部【四大核心数据子 Tab】(动态 | 比赛 | 阵容 | 转会)
+         第三层：底部【俱乐部全景四子 Tab 切换器】(动态 | 比赛 | 阵容 | 转会)
          ───────────────────────────────────────────────────────────── -->
     <section v-if="activeClub" class="space-y-3">
-      <!-- 子 Tab 导航胶囊 -->
-      <div class="bg-slate-900 border border-slate-800 p-1 rounded-xl flex items-center space-x-1 text-xs">
+      <!-- 四子 Tab 按钮条 -->
+      <div class="bg-slate-900 border border-slate-800 rounded-xl p-1 flex items-center space-x-1 text-xs shadow-inner">
         <button
           v-for="sub in subTabs"
           :key="sub.key"
           @click="activeSubTab = sub.key"
           :class="[
-            'flex-1 py-1.5 rounded-lg font-bold text-center transition inline-flex items-center justify-center gap-1 text-[11px]',
+            'flex-1 py-1.5 rounded-lg font-bold text-center transition inline-flex items-center justify-center gap-1.5',
             activeSubTab === sub.key
-              ? 'bg-emerald-600 text-white shadow-sm font-black'
+              ? 'bg-emerald-600 text-white shadow-sm'
               : 'text-slate-400 hover:text-white'
           ]"
         >
@@ -172,71 +174,60 @@
         </button>
       </div>
 
-      <!-- ── 子 Tab 1: 【动态】(新闻、公告与社区热帖) ───────────── -->
+      <!-- ── 子 Tab 1: 【动态】(俱乐部快讯、球迷论坛置顶帖、赛事情报) ────── -->
       <div v-if="activeSubTab === 'dynamics'" class="space-y-2.5">
-        <article
-          v-for="dyn in activeClub.dynamics"
-          :key="dyn.id"
-          class="bg-slate-900 hover:bg-slate-850 border border-slate-800 hover:border-slate-700 rounded-xl p-3.5 space-y-2 transition shadow-sm"
+        <div
+          v-for="item in activeClub.dynamics"
+          :key="item.id"
+          class="bg-slate-900 border border-slate-800 rounded-xl p-3 space-y-1.5 shadow-sm hover:border-slate-700 transition"
         >
           <div class="flex items-center justify-between text-[10px]">
-            <span
-              :class="[
-                'px-1.5 py-0.2 rounded font-bold border text-[9px]',
-                dyn.type === 'notice'
-                  ? 'bg-amber-950 text-amber-300 border-amber-800'
-                  : dyn.type === 'community'
-                  ? 'bg-sky-950 text-sky-300 border-sky-800'
-                  : 'bg-emerald-950 text-emerald-300 border-emerald-800'
-              ]"
-            >
-              {{ dyn.tag }}
+            <span class="inline-flex items-center gap-1 text-slate-400">
+              <Icon icon="lucide:newspaper" class="w-2.5 h-2.5 text-emerald-400" />
+              <span>{{ item.source }}</span>
             </span>
-            <span class="text-slate-500 font-mono">{{ dyn.date }}</span>
+            <span class="text-slate-500 font-mono">{{ item.time }}</span>
           </div>
-
-          <h3 class="text-xs sm:text-sm font-bold text-slate-100 leading-snug">
-            {{ dyn.title }}
+          <h3 class="text-xs sm:text-sm font-bold text-white leading-snug">
+            {{ item.title }}
           </h3>
-
-          <p class="text-[11px] text-slate-400 leading-relaxed">
-            {{ dyn.summary }}
+          <p class="text-[11px] text-slate-400 leading-relaxed line-clamp-2">
+            {{ item.summary }}
           </p>
-
-          <div class="flex items-center justify-between text-[10px] text-slate-500 pt-1 border-t border-slate-800/60">
-            <span class="inline-flex items-center gap-1">
-              <Icon icon="lucide:newspaper" class="w-3 h-3 text-slate-400" />
-              <span>来源: {{ dyn.source }}</span>
-            </span>
-            <span class="text-emerald-400 font-medium">查看详情 →</span>
-          </div>
-        </article>
+        </div>
       </div>
 
-      <!-- ── 子 Tab 2: 【比赛】(已完赛记录 + 接下来 3 场赛程预告) ──── -->
+      <!-- ── 子 Tab 2: 【比赛】(已完赛记录 + 接下来 3 场赛程预告，点击进入比赛详情) ──── -->
       <div v-else-if="activeSubTab === 'matches'" class="space-y-3.5">
         <!-- 1. 已完赛赛果 -->
         <div class="space-y-2">
-          <div class="text-xs font-bold text-slate-300 px-1 inline-flex items-center gap-1.5">
-            <Icon icon="lucide:check-circle" class="w-3.5 h-3.5 text-emerald-400" />
-            <span>已完赛记录 ({{ activeClub.matches.completed.length }} 场)</span>
+          <div class="flex items-center justify-between text-xs text-slate-300 px-1">
+            <span class="font-bold inline-flex items-center gap-1.5">
+              <Icon icon="lucide:check-circle" class="w-3.5 h-3.5 text-emerald-400" />
+              <span>已完赛记录 ({{ activeClub.matches.completed.length }} 场)</span>
+            </span>
+            <span class="text-[10px] text-slate-500">点击卡片进入深度战报与阵容</span>
           </div>
 
           <div
             v-for="m in activeClub.matches.completed"
             :key="'comp-' + m.id"
-            class="bg-slate-900 border border-slate-800 rounded-xl p-3 space-y-2 shadow-sm"
+            @click="$emit('select-match', m.id)"
+            class="bg-slate-900 hover:bg-slate-850 border border-slate-800 hover:border-emerald-500/70 rounded-xl p-3 space-y-2 shadow-sm cursor-pointer transition transform hover:-translate-y-0.5 group"
           >
             <div class="flex items-center justify-between text-[10px] text-slate-400 pb-1.5 border-b border-slate-800/80">
-              <span class="font-bold text-slate-300">{{ m.round_label }}</span>
-              <span class="font-mono">{{ m.date }}</span>
+              <span class="font-bold text-slate-300 group-hover:text-emerald-400 transition">{{ m.round_label }}</span>
+              <div class="inline-flex items-center gap-1.5">
+                <span class="font-mono">{{ m.date }}</span>
+                <span class="text-[9px] text-emerald-400 bg-emerald-950/80 border border-emerald-800/80 px-1.5 py-0.2 rounded font-bold">查看战报 ›</span>
+              </div>
             </div>
 
             <div class="flex items-center justify-between py-1">
               <div class="flex-1 text-right font-bold text-xs text-white truncate pr-2">
                 {{ m.home_team }}
               </div>
-              <div class="px-3 py-1 bg-slate-950 rounded-lg border border-slate-800 text-center font-mono font-black text-sm tracking-wider text-white">
+              <div class="px-3 py-1 bg-slate-950 rounded-lg border border-slate-800 text-center font-mono font-black text-sm tracking-wider text-white group-hover:border-emerald-500/60 transition">
                 {{ m.score_home }} - {{ m.score_away }}
               </div>
               <div class="flex-1 text-left font-bold text-xs text-white truncate pl-2">
@@ -292,8 +283,16 @@
         </div>
       </div>
 
-      <!-- ── 子 Tab 3: 【阵容】(按位置分组、国籍、出场、进球助攻、评分与合同状态) ── -->
+      <!-- ── 子 Tab 3: 【阵容】(球员卡片可点击查看 FM 真实属性：爆发力、速度、精神、技术) ── -->
       <div v-else-if="activeSubTab === 'squad'" class="space-y-2.5">
+        <!-- 提示条 -->
+        <div class="flex items-center justify-between text-[10px] text-slate-400 bg-emerald-950/40 border border-emerald-900/60 p-2 rounded-xl">
+          <span class="inline-flex items-center gap-1.5 text-emerald-300 font-medium">
+            <Icon icon="lucide:sparkles" class="w-3.5 h-3.5 text-emerald-400 shrink-0" />
+            <span>点击任意球员卡片，查看 FM 游戏内全维度真实属性（爆发力、速度、精神、技术等）</span>
+          </span>
+        </div>
+
         <!-- 位置筛选胶囊 -->
         <div class="flex items-center space-x-1 overflow-x-auto no-scrollbar py-0.5 text-xs">
           <button
@@ -311,64 +310,54 @@
           </button>
         </div>
 
-        <!-- 球员详细列表 (表格卡片视觉) -->
+        <!-- 球员详细列表 (可点击弹出 FM 全属性面板) -->
         <div class="space-y-1.5">
           <div
             v-for="player in filteredSquad"
             :key="player.number + player.name"
-            class="bg-slate-900 hover:bg-slate-850 border border-slate-800 rounded-xl p-2.5 flex items-center justify-between gap-2 shadow-sm transition"
+            @click="selectedPlayer = player"
+            class="bg-slate-900 hover:bg-slate-850 border border-slate-800 hover:border-emerald-500/60 rounded-xl p-2.5 flex items-center justify-between gap-2 shadow-sm transition cursor-pointer group"
           >
             <!-- 左侧：号码、姓名、年龄、国籍、位置 -->
             <div class="flex items-center space-x-2.5 min-w-0 flex-1">
               <!-- 号码 -->
-              <span class="w-6 h-6 rounded-md bg-slate-950 border border-slate-800 flex items-center justify-center font-mono font-black text-xs text-slate-300 shrink-0">
+              <span class="w-6 h-6 rounded-md bg-slate-950 border border-slate-800 flex items-center justify-center font-mono font-black text-xs text-slate-300 shrink-0 group-hover:border-emerald-500/50 transition">
                 {{ player.number }}
               </span>
 
               <!-- 姓名与基础信息 -->
               <div class="min-w-0 flex-1">
                 <div class="flex items-center space-x-1.5">
-                  <span class="text-xs font-bold text-white truncate">{{ player.name_zh || player.name }}</span>
+                  <span class="text-xs font-bold text-white truncate group-hover:text-emerald-400 transition">{{ player.name_zh || player.name }}</span>
                   <Icon :icon="player.flag" class="w-3 h-3 rounded-full shrink-0" />
                 </div>
                 <div class="flex items-center space-x-2 text-[10px] text-slate-400 mt-0.5 font-mono">
-                  <span class="text-slate-300 font-bold px-1 py-0.2 bg-slate-950 rounded text-[9px]">
+                  <span class="text-slate-300 font-bold px-1 py-0.2 bg-slate-950 rounded text-[9px] border border-slate-800">
                     {{ player.position }}
                   </span>
                   <span>{{ player.age }}岁</span>
-                  <span>到期: {{ player.contract_until }}</span>
+                  <span v-if="player.height_cm">{{ player.height_cm }}cm</span>
+                  <span>到期: {{ player.contract_until?.slice(0, 4) || player.contract_until }}</span>
                 </div>
               </div>
             </div>
 
-            <!-- 右侧：出场/数据、场均评分、身价 -->
+            <!-- 右侧：CA/PA、周薪、身价与查看详情指示 -->
             <div class="flex items-center space-x-3 shrink-0 text-right">
-              <!-- 进球与助攻 -->
-              <div class="text-[10px] text-slate-400 font-mono">
-                <div>{{ player.apps }} 场</div>
-                <div class="font-bold text-slate-300">{{ player.goals }}球 {{ player.assists }}助</div>
-              </div>
-
-              <!-- 场均评分 (>= 7.0 亮绿高亮) -->
-              <div class="w-10 text-center">
-                <div class="text-[9px] text-slate-500">评分</div>
-                <div
-                  :class="[
-                    'text-xs font-mono font-black',
-                    parseFloat(player.rating) >= 7.0
-                      ? 'text-emerald-400 bg-emerald-950/80 px-1 rounded border border-emerald-800/80'
-                      : 'text-slate-300'
-                  ]"
-                >
-                  {{ player.rating }}
-                </div>
+              <!-- CA / PA 潜能 -->
+              <div v-if="player.ca" class="text-[10px] text-slate-400 font-mono">
+                <div class="text-[9px] text-slate-500">能力/潜力</div>
+                <div class="font-bold text-slate-200">{{ player.ca }} <span class="text-slate-500">/</span> {{ player.pa }}</div>
               </div>
 
               <!-- 身价 -->
-              <div class="w-14 text-right">
+              <div class="w-16 text-right">
                 <div class="text-[9px] text-slate-500">身价</div>
-                <div class="text-xs font-mono font-bold text-slate-300">{{ player.market_value }}</div>
+                <div class="text-xs font-mono font-bold text-emerald-400">{{ player.market_value }}</div>
               </div>
+
+              <!-- 箭头 -->
+              <Icon icon="lucide:chevron-right" class="w-3.5 h-3.5 text-slate-600 group-hover:text-emerald-400 transition shrink-0" />
             </div>
           </div>
         </div>
@@ -380,64 +369,54 @@
         <div class="space-y-2">
           <div class="text-xs font-bold text-emerald-400 px-1 inline-flex items-center gap-1.5">
             <Icon icon="lucide:arrow-down-left" class="w-3.5 h-3.5" />
-            <span>新赛季转入球员 (In · {{ activeClub.transfers.in.length }})</span>
+            <span>夏季转入 ({{ activeClub.transfers.in.length }} 人)</span>
           </div>
 
           <div
-            v-for="(t, tidx) in activeClub.transfers.in"
-            :key="'in-' + tidx"
-            class="bg-slate-900 border border-slate-800 rounded-xl p-3 flex items-center justify-between text-xs shadow-sm"
+            v-for="(tIn, idx) in activeClub.transfers.in"
+            :key="'in-' + idx"
+            class="bg-slate-900 border border-slate-800 rounded-xl p-2.5 flex items-center justify-between text-xs shadow-sm"
           >
-            <div>
-              <div class="font-bold text-white text-xs flex items-center space-x-1.5">
-                <span>{{ t.player }}</span>
-                <span class="text-[9px] font-mono bg-slate-950 text-slate-400 px-1 py-0.2 rounded border border-slate-850">
-                  {{ t.pos }} · {{ t.age }}岁
-                </span>
-              </div>
-              <div class="text-[10px] text-slate-400 mt-0.5">
-                原俱乐部: <span class="text-slate-300 font-bold">{{ t.from }}</span>
+            <div class="flex items-center space-x-2">
+              <span class="w-5 h-5 rounded-full bg-emerald-950 text-emerald-400 border border-emerald-800 flex items-center justify-center text-[10px] font-bold">
+                +
+              </span>
+              <div>
+                <span class="font-bold text-white">{{ tIn.name }}</span>
+                <span class="text-[10px] text-slate-400 font-mono ml-1.5">{{ tIn.pos }}</span>
               </div>
             </div>
-
-            <div class="text-right">
-              <span class="text-xs font-mono font-bold text-emerald-400 bg-emerald-950/60 px-2 py-0.5 rounded border border-emerald-900">
-                {{ t.fee }}
-              </span>
-              <div class="text-[9px] text-slate-500 font-mono mt-0.5">{{ t.date }}</div>
+            <div class="text-right text-[11px]">
+              <div class="text-slate-400 text-[10px] truncate max-w-[120px]">{{ tIn.from_team }}</div>
+              <div class="font-mono text-emerald-400 font-bold">{{ tIn.fee }}</div>
             </div>
           </div>
         </div>
 
         <!-- 转出 Out -->
-        <div class="space-y-2 pt-2">
+        <div class="space-y-2 pt-1">
           <div class="text-xs font-bold text-rose-400 px-1 inline-flex items-center gap-1.5">
             <Icon icon="lucide:arrow-up-right" class="w-3.5 h-3.5" />
-            <span>离队 / 转出球员 (Out · {{ activeClub.transfers.out.length }})</span>
+            <span>夏季转出 ({{ activeClub.transfers.out.length }} 人)</span>
           </div>
 
           <div
-            v-for="(t, tidx) in activeClub.transfers.out"
-            :key="'out-' + tidx"
-            class="bg-slate-900 border border-slate-800 rounded-xl p-3 flex items-center justify-between text-xs shadow-sm"
+            v-for="(tOut, idx) in activeClub.transfers.out"
+            :key="'out-' + idx"
+            class="bg-slate-900 border border-slate-800 rounded-xl p-2.5 flex items-center justify-between text-xs shadow-sm"
           >
-            <div>
-              <div class="font-bold text-white text-xs flex items-center space-x-1.5">
-                <span>{{ t.player }}</span>
-                <span class="text-[9px] font-mono bg-slate-950 text-slate-400 px-1 py-0.2 rounded border border-slate-850">
-                  {{ t.pos }} · {{ t.age }}岁
-                </span>
-              </div>
-              <div class="text-[10px] text-slate-400 mt-0.5">
-                新去向: <span class="text-slate-300 font-bold">{{ t.to }}</span>
+            <div class="flex items-center space-x-2">
+              <span class="w-5 h-5 rounded-full bg-rose-950 text-rose-400 border border-rose-800 flex items-center justify-center text-[10px] font-bold">
+                -
+              </span>
+              <div>
+                <span class="font-bold text-white">{{ tOut.name }}</span>
+                <span class="text-[10px] text-slate-400 font-mono ml-1.5">{{ tOut.pos }}</span>
               </div>
             </div>
-
-            <div class="text-right">
-              <span class="text-xs font-mono font-bold text-rose-300 bg-rose-950/60 px-2 py-0.5 rounded border border-rose-900">
-                {{ t.fee }}
-              </span>
-              <div class="text-[9px] text-slate-500 font-mono mt-0.5">{{ t.date }}</div>
+            <div class="text-right text-[11px]">
+              <div class="text-slate-400 text-[10px] truncate max-w-[120px]">{{ tOut.to_team }}</div>
+              <div class="font-mono text-rose-400 font-bold">{{ tOut.fee }}</div>
             </div>
           </div>
         </div>
@@ -445,7 +424,326 @@
     </section>
 
     <!-- ─────────────────────────────────────────────────────────────
-         关注更多弹窗 (轻量交互，维持真实大众 App 体验)
+         弹窗 1：FM 真实球员全属性面板 Modal (爆发力、速度、精神、技术)
+         ───────────────────────────────────────────────────────────── -->
+    <div
+      v-if="selectedPlayer"
+      class="fixed inset-0 z-50 bg-black/80 backdrop-blur-sm flex items-center justify-center p-3 animate-in fade-in"
+      @click.self="selectedPlayer = null"
+    >
+      <div class="bg-slate-900 border border-slate-800 rounded-2xl max-w-lg w-full max-h-[90vh] overflow-y-auto p-4 space-y-4 shadow-2xl relative select-none">
+        
+        <!-- 1. 球员名片头部 -->
+        <div class="flex items-start justify-between pb-3 border-b border-slate-800">
+          <div class="flex items-center space-x-3">
+            <!-- 球衣号码徽章 -->
+            <div class="w-11 h-11 rounded-xl bg-slate-950 border border-slate-700 flex items-center justify-center font-mono font-black text-lg text-emerald-400 shadow-inner">
+              {{ selectedPlayer.number }}
+            </div>
+            <div>
+              <div class="flex items-center space-x-2">
+                <h3 class="text-base font-black text-white">{{ selectedPlayer.name_zh || selectedPlayer.name }}</h3>
+                <Icon :icon="selectedPlayer.flag" class="w-4 h-4 rounded-full" />
+                <span class="text-[10px] text-slate-400">{{ selectedPlayer.nation }}</span>
+              </div>
+              <div class="text-[11px] text-slate-400 font-mono mt-0.5">
+                {{ selectedPlayer.name_en || selectedPlayer.name }} · {{ selectedPlayer.position }} · {{ selectedPlayer.age }}岁 · {{ selectedPlayer.height_cm }}cm
+              </div>
+            </div>
+          </div>
+
+          <!-- 关闭按钮 -->
+          <button
+            @click="selectedPlayer = null"
+            class="text-slate-400 hover:text-white p-1 rounded-lg hover:bg-slate-800 transition"
+          >
+            <Icon icon="lucide:x" class="w-5 h-5" />
+          </button>
+        </div>
+
+        <!-- 2. 合同与能力指标卡 -->
+        <div class="grid grid-cols-2 sm:grid-cols-4 gap-2 text-xs">
+          <div class="bg-slate-950 p-2 rounded-xl border border-slate-850">
+            <div class="text-[10px] text-slate-500">当前能力 / 潜力</div>
+            <div class="font-mono font-black text-white mt-0.5">
+              <span class="text-emerald-400">{{ selectedPlayer.ca }}</span>
+              <span class="text-slate-600 mx-1">/</span>
+              <span class="text-amber-400">{{ selectedPlayer.pa }}</span>
+            </div>
+          </div>
+
+          <div class="bg-slate-950 p-2 rounded-xl border border-slate-850">
+            <div class="text-[10px] text-slate-500">转会预估身价</div>
+            <div class="font-mono font-bold text-emerald-400 mt-0.5">{{ selectedPlayer.market_value }}</div>
+          </div>
+
+          <div class="bg-slate-950 p-2 rounded-xl border border-slate-850">
+            <div class="text-[10px] text-slate-500">周薪待遇</div>
+            <div class="font-mono font-bold text-slate-300 mt-0.5">{{ selectedPlayer.wage_weekly }}</div>
+          </div>
+
+          <div class="bg-slate-950 p-2 rounded-xl border border-slate-850">
+            <div class="text-[10px] text-slate-500">合同到期日</div>
+            <div class="font-mono font-bold text-slate-300 mt-0.5">{{ selectedPlayer.contract_until }}</div>
+          </div>
+        </div>
+
+        <!-- 3. 三列 FM 经典属性面板 (身体属性 / 技术属性 / 精神属性) -->
+        <div v-if="selectedPlayer.attributes" class="grid grid-cols-1 sm:grid-cols-3 gap-3 text-xs">
+          
+          <!-- 列 1: 身体属性 (Physical) - 爆发力、速度首发高亮 -->
+          <div class="bg-slate-950 p-3 rounded-xl border border-slate-850 space-y-2">
+            <div class="font-bold text-slate-200 pb-1 border-b border-slate-800 text-[11px] inline-flex items-center gap-1.5 w-full">
+              <Icon icon="lucide:zap" class="w-3.5 h-3.5 text-amber-400" />
+              <span>身体属性 (Physical)</span>
+            </div>
+            <div class="space-y-1.5 text-[11px]">
+              <div class="flex items-center justify-between">
+                <span class="text-amber-300 font-bold">爆发力 (Acceleration)</span>
+                <span :class="['px-1.5 py-0.2 rounded font-mono text-center min-w-[24px]', attrClass(selectedPlayer.attributes.physical?.acceleration)]">
+                  {{ selectedPlayer.attributes.physical?.acceleration }}
+                </span>
+              </div>
+              <div class="flex items-center justify-between">
+                <span class="text-amber-300 font-bold">速度 (Pace)</span>
+                <span :class="['px-1.5 py-0.2 rounded font-mono text-center min-w-[24px]', attrClass(selectedPlayer.attributes.physical?.pace)]">
+                  {{ selectedPlayer.attributes.physical?.pace }}
+                </span>
+              </div>
+              <div class="flex items-center justify-between">
+                <span class="text-slate-400">耐力 (Stamina)</span>
+                <span :class="['px-1.5 py-0.2 rounded font-mono text-center min-w-[24px]', attrClass(selectedPlayer.attributes.physical?.stamina)]">
+                  {{ selectedPlayer.attributes.physical?.stamina }}
+                </span>
+              </div>
+              <div class="flex items-center justify-between">
+                <span class="text-slate-400">强壮 (Strength)</span>
+                <span :class="['px-1.5 py-0.2 rounded font-mono text-center min-w-[24px]', attrClass(selectedPlayer.attributes.physical?.strength)]">
+                  {{ selectedPlayer.attributes.physical?.strength }}
+                </span>
+              </div>
+              <div class="flex items-center justify-between">
+                <span class="text-slate-400">弹跳 (Jumping Reach)</span>
+                <span :class="['px-1.5 py-0.2 rounded font-mono text-center min-w-[24px]', attrClass(selectedPlayer.attributes.physical?.jumping_reach)]">
+                  {{ selectedPlayer.attributes.physical?.jumping_reach }}
+                </span>
+              </div>
+              <div class="flex items-center justify-between">
+                <span class="text-slate-400">灵活 (Agility)</span>
+                <span :class="['px-1.5 py-0.2 rounded font-mono text-center min-w-[24px]', attrClass(selectedPlayer.attributes.physical?.agility)]">
+                  {{ selectedPlayer.attributes.physical?.agility }}
+                </span>
+              </div>
+              <div class="flex items-center justify-between">
+                <span class="text-slate-400">平衡 (Balance)</span>
+                <span :class="['px-1.5 py-0.2 rounded font-mono text-center min-w-[24px]', attrClass(selectedPlayer.attributes.physical?.balance)]">
+                  {{ selectedPlayer.attributes.physical?.balance }}
+                </span>
+              </div>
+              <div class="flex items-center justify-between">
+                <span class="text-slate-400">体质 (Natural Fitness)</span>
+                <span :class="['px-1.5 py-0.2 rounded font-mono text-center min-w-[24px]', attrClass(selectedPlayer.attributes.physical?.natural_fitness)]">
+                  {{ selectedPlayer.attributes.physical?.natural_fitness }}
+                </span>
+              </div>
+            </div>
+          </div>
+
+          <!-- 列 2: 技术属性 (Technical) 或 守门属性 (Goalkeeping) -->
+          <div class="bg-slate-950 p-3 rounded-xl border border-slate-850 space-y-2">
+            <div class="font-bold text-slate-200 pb-1 border-b border-slate-800 text-[11px] inline-flex items-center gap-1.5 w-full">
+              <Icon :icon="selectedPlayer.position === 'GK' ? 'lucide:shield' : 'lucide:crosshair'" class="w-3.5 h-3.5 text-emerald-400" />
+              <span>{{ selectedPlayer.position === 'GK' ? '守门属性 (Goalkeeping)' : '技术属性 (Technical)' }}</span>
+            </div>
+
+            <!-- 非门将技术属性 -->
+            <div v-if="selectedPlayer.position !== 'GK'" class="space-y-1.5 text-[11px]">
+              <div class="flex items-center justify-between">
+                <span class="text-slate-400">射门 (Finishing)</span>
+                <span :class="['px-1.5 py-0.2 rounded font-mono text-center min-w-[24px]', attrClass(selectedPlayer.attributes.technical?.finishing)]">
+                  {{ selectedPlayer.attributes.technical?.finishing }}
+                </span>
+              </div>
+              <div class="flex items-center justify-between">
+                <span class="text-slate-400">头球 (Heading)</span>
+                <span :class="['px-1.5 py-0.2 rounded font-mono text-center min-w-[24px]', attrClass(selectedPlayer.attributes.technical?.heading)]">
+                  {{ selectedPlayer.attributes.technical?.heading }}
+                </span>
+              </div>
+              <div class="flex items-center justify-between">
+                <span class="text-slate-400">盘带 (Dribbling)</span>
+                <span :class="['px-1.5 py-0.2 rounded font-mono text-center min-w-[24px]', attrClass(selectedPlayer.attributes.technical?.dribbling)]">
+                  {{ selectedPlayer.attributes.technical?.dribbling }}
+                </span>
+              </div>
+              <div class="flex items-center justify-between">
+                <span class="text-slate-400">传球 (Passing)</span>
+                <span :class="['px-1.5 py-0.2 rounded font-mono text-center min-w-[24px]', attrClass(selectedPlayer.attributes.technical?.passing)]">
+                  {{ selectedPlayer.attributes.technical?.passing }}
+                </span>
+              </div>
+              <div class="flex items-center justify-between">
+                <span class="text-slate-400">停球 (First Touch)</span>
+                <span :class="['px-1.5 py-0.2 rounded font-mono text-center min-w-[24px]', attrClass(selectedPlayer.attributes.technical?.first_touch)]">
+                  {{ selectedPlayer.attributes.technical?.first_touch }}
+                </span>
+              </div>
+              <div class="flex items-center justify-between">
+                <span class="text-slate-400">技术 (Technique)</span>
+                <span :class="['px-1.5 py-0.2 rounded font-mono text-center min-w-[24px]', attrClass(selectedPlayer.attributes.technical?.technique)]">
+                  {{ selectedPlayer.attributes.technical?.technique }}
+                </span>
+              </div>
+              <div class="flex items-center justify-between">
+                <span class="text-slate-400">抢断 (Tackling)</span>
+                <span :class="['px-1.5 py-0.2 rounded font-mono text-center min-w-[24px]', attrClass(selectedPlayer.attributes.technical?.tackling)]">
+                  {{ selectedPlayer.attributes.technical?.tackling }}
+                </span>
+              </div>
+              <div class="flex items-center justify-between">
+                <span class="text-slate-400">传中 (Crossing)</span>
+                <span :class="['px-1.5 py-0.2 rounded font-mono text-center min-w-[24px]', attrClass(selectedPlayer.attributes.technical?.crossing)]">
+                  {{ selectedPlayer.attributes.technical?.crossing }}
+                </span>
+              </div>
+              <div class="flex items-center justify-between">
+                <span class="text-slate-400">远射 (Long Shots)</span>
+                <span :class="['px-1.5 py-0.2 rounded font-mono text-center min-w-[24px]', attrClass(selectedPlayer.attributes.technical?.long_shots)]">
+                  {{ selectedPlayer.attributes.technical?.long_shots }}
+                </span>
+              </div>
+            </div>
+
+            <!-- 门将专用守门属性 -->
+            <div v-else class="space-y-1.5 text-[11px]">
+              <div class="flex items-center justify-between">
+                <span class="text-amber-300 font-bold">反应/扑救 (Reflexes)</span>
+                <span :class="['px-1.5 py-0.2 rounded font-mono text-center min-w-[24px]', attrClass(selectedPlayer.attributes.goalkeeping?.reflexes)]">
+                  {{ selectedPlayer.attributes.goalkeeping?.reflexes }}
+                </span>
+              </div>
+              <div class="flex items-center justify-between">
+                <span class="text-slate-400">一对一 (One on Ones)</span>
+                <span :class="['px-1.5 py-0.2 rounded font-mono text-center min-w-[24px]', attrClass(selectedPlayer.attributes.goalkeeping?.one_on_ones)]">
+                  {{ selectedPlayer.attributes.goalkeeping?.one_on_ones }}
+                </span>
+              </div>
+              <div class="flex items-center justify-between">
+                <span class="text-slate-400">手控球 (Handling)</span>
+                <span :class="['px-1.5 py-0.2 rounded font-mono text-center min-w-[24px]', attrClass(selectedPlayer.attributes.goalkeeping?.handling)]">
+                  {{ selectedPlayer.attributes.goalkeeping?.handling }}
+                </span>
+              </div>
+              <div class="flex items-center justify-between">
+                <span class="text-slate-400">制空能力 (Aerial Reach)</span>
+                <span :class="['px-1.5 py-0.2 rounded font-mono text-center min-w-[24px]', attrClass(selectedPlayer.attributes.goalkeeping?.aerial_reach)]">
+                  {{ selectedPlayer.attributes.goalkeeping?.aerial_reach }}
+                </span>
+              </div>
+              <div class="flex items-center justify-between">
+                <span class="text-slate-400">门线指挥 (Command of Area)</span>
+                <span :class="['px-1.5 py-0.2 rounded font-mono text-center min-w-[24px]', attrClass(selectedPlayer.attributes.goalkeeping?.command_of_area)]">
+                  {{ selectedPlayer.attributes.goalkeeping?.command_of_area }}
+                </span>
+              </div>
+              <div class="flex items-center justify-between">
+                <span class="text-slate-400">球门球 (Kicking)</span>
+                <span :class="['px-1.5 py-0.2 rounded font-mono text-center min-w-[24px]', attrClass(selectedPlayer.attributes.goalkeeping?.kicking)]">
+                  {{ selectedPlayer.attributes.goalkeeping?.kicking }}
+                </span>
+              </div>
+              <div class="flex items-center justify-between">
+                <span class="text-slate-400">沟通 (Communication)</span>
+                <span :class="['px-1.5 py-0.2 rounded font-mono text-center min-w-[24px]', attrClass(selectedPlayer.attributes.goalkeeping?.communication)]">
+                  {{ selectedPlayer.attributes.goalkeeping?.communication }}
+                </span>
+              </div>
+              <div class="flex items-center justify-between">
+                <span class="text-slate-400">出击 (Rushing Out)</span>
+                <span :class="['px-1.5 py-0.2 rounded font-mono text-center min-w-[24px]', attrClass(selectedPlayer.attributes.goalkeeping?.rushing_out)]">
+                  {{ selectedPlayer.attributes.goalkeeping?.rushing_out }}
+                </span>
+              </div>
+            </div>
+          </div>
+
+          <!-- 列 3: 精神属性 (Mental) -->
+          <div class="bg-slate-950 p-3 rounded-xl border border-slate-850 space-y-2">
+            <div class="font-bold text-slate-200 pb-1 border-b border-slate-800 text-[11px] inline-flex items-center gap-1.5 w-full">
+              <Icon icon="lucide:brain" class="w-3.5 h-3.5 text-teal-400" />
+              <span>精神属性 (Mental)</span>
+            </div>
+            <div class="space-y-1.5 text-[11px]">
+              <div class="flex items-center justify-between">
+                <span class="text-slate-400">决断 (Decisions)</span>
+                <span :class="['px-1.5 py-0.2 rounded font-mono text-center min-w-[24px]', attrClass(selectedPlayer.attributes.mental?.decisions)]">
+                  {{ selectedPlayer.attributes.mental?.decisions }}
+                </span>
+              </div>
+              <div class="flex items-center justify-between">
+                <span class="text-slate-400">预判 (Anticipation)</span>
+                <span :class="['px-1.5 py-0.2 rounded font-mono text-center min-w-[24px]', attrClass(selectedPlayer.attributes.mental?.anticipation)]">
+                  {{ selectedPlayer.attributes.mental?.anticipation }}
+                </span>
+              </div>
+              <div class="flex items-center justify-between">
+                <span class="text-slate-400">镇定 (Composure)</span>
+                <span :class="['px-1.5 py-0.2 rounded font-mono text-center min-w-[24px]', attrClass(selectedPlayer.attributes.mental?.composure)]">
+                  {{ selectedPlayer.attributes.mental?.composure }}
+                </span>
+              </div>
+              <div class="flex items-center justify-between">
+                <span class="text-slate-400">视野 (Vision)</span>
+                <span :class="['px-1.5 py-0.2 rounded font-mono text-center min-w-[24px]', attrClass(selectedPlayer.attributes.mental?.vision)]">
+                  {{ selectedPlayer.attributes.mental?.vision }}
+                </span>
+              </div>
+              <div class="flex items-center justify-between">
+                <span class="text-slate-400">工作投入 (Work Rate)</span>
+                <span :class="['px-1.5 py-0.2 rounded font-mono text-center min-w-[24px]', attrClass(selectedPlayer.attributes.mental?.work_rate)]">
+                  {{ selectedPlayer.attributes.mental?.work_rate }}
+                </span>
+              </div>
+              <div class="flex items-center justify-between">
+                <span class="text-slate-400">团队合作 (Teamwork)</span>
+                <span :class="['px-1.5 py-0.2 rounded font-mono text-center min-w-[24px]', attrClass(selectedPlayer.attributes.mental?.teamwork)]">
+                  {{ selectedPlayer.attributes.mental?.teamwork }}
+                </span>
+              </div>
+              <div class="flex items-center justify-between">
+                <span class="text-slate-400">无球跑动 (Off the Ball)</span>
+                <span :class="['px-1.5 py-0.2 rounded font-mono text-center min-w-[24px]', attrClass(selectedPlayer.attributes.mental?.off_the_ball)]">
+                  {{ selectedPlayer.attributes.mental?.off_the_ball }}
+                </span>
+              </div>
+              <div class="flex items-center justify-between">
+                <span class="text-slate-400">意志力 (Determination)</span>
+                <span :class="['px-1.5 py-0.2 rounded font-mono text-center min-w-[24px]', attrClass(selectedPlayer.attributes.mental?.determination)]">
+                  {{ selectedPlayer.attributes.mental?.determination }}
+                </span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- 底栏按钮 -->
+        <div class="flex justify-between items-center pt-2 border-t border-slate-800 text-xs">
+          <span class="text-[10px] text-slate-500 font-mono">
+            FM24 官方数据库原生属性 · 1-20 标准评分制
+          </span>
+          <button
+            @click="selectedPlayer = null"
+            class="px-4 py-1.5 bg-emerald-600 hover:bg-emerald-500 text-white rounded-lg text-xs font-bold transition shadow-sm"
+          >
+            完成查看
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- ─────────────────────────────────────────────────────────────
+         弹窗 2：+ 关注更多俱乐部 Modal
          ───────────────────────────────────────────────────────────── -->
     <div
       v-if="showAddMoreModal"
@@ -488,9 +786,12 @@
 import { ref, computed } from 'vue'
 import followedClubsRaw from '../../data/followed_clubs.json'
 
+defineEmits(['select-match'])
+
 const clubs = ref(followedClubsRaw)
 const selectedClubId = ref(clubs.value[0]?.id || 'odra')
 const showAddMoreModal = ref(false)
+const selectedPlayer = ref(null)
 
 const activeClub = computed(() => {
   return clubs.value.find(c => c.id === selectedClubId.value) || clubs.value[0]
@@ -522,8 +823,23 @@ const filteredSquad = computed(() => {
   if (selectedPositionFilter.value === 'all') {
     return activeClub.value.squad
   }
-  return activeClub.value.squad.filter(p => p.position === selectedPositionFilter.value)
+  return activeClub.value.squad.filter(p => {
+    const pos = p.position || ''
+    if (selectedPositionFilter.value === 'GK') return pos === 'GK'
+    if (selectedPositionFilter.value === 'DF') return pos.includes('D') || pos === 'DR' || pos === 'DL' || pos === 'DC'
+    if (selectedPositionFilter.value === 'MF') return pos.includes('M') || pos === 'DM' || pos === 'MC' || pos === 'AML' || pos === 'AMR' || pos === 'AMC'
+    if (selectedPositionFilter.value === 'FW') return pos.includes('ST') || pos === 'FW'
+    return pos === selectedPositionFilter.value
+  })
 })
+
+const attrClass = (val) => {
+  const v = Number(val) || 0
+  if (v >= 16) return 'bg-emerald-950 text-emerald-400 border border-emerald-600/80 font-black'
+  if (v >= 12) return 'bg-teal-950 text-teal-300 border border-teal-800/60 font-bold'
+  if (v >= 8) return 'bg-slate-900 text-slate-200 border border-slate-800 font-medium'
+  return 'bg-slate-950 text-slate-500 border border-slate-900'
+}
 </script>
 
 <style scoped>
