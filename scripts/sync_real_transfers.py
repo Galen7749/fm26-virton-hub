@@ -26,8 +26,8 @@ def sync_transfers():
                 {
                     "player": "铃木淳也 (Junya Suzuki)",
                     "name": "铃木淳也",
-                    "pos": "GK/DR",
-                    "age": 25,
+                    "pos": "DR/WBR",
+                    "age": 30,
                     "from_team": "松本山雅足球俱乐部 (日本)",
                     "fee": "转会费签约",
                     "date": "2026-07-24",

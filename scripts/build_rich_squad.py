@@ -63,6 +63,7 @@ ZH_NAME_MAP = {
 NATION_MAP = {
     161: ("波兰", "circle-flags:pl"),
     145: ("德国", "circle-flags:de"),
+    61: ("日本", "circle-flags:jp"),
     200: ("日本", "circle-flags:jp"),
     109: ("法国", "circle-flags:fr"),
     101: ("比利时", "circle-flags:be"),
