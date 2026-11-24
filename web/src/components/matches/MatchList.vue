@@ -243,37 +243,18 @@ const getLeagueFlag = (key) => {
 }
 
 const isOverseasMatch = (m) => {
-  return m.is_overseas || m.home_team.includes('奥波莱') || m.away_team.includes('奥波莱') || m.home_team.includes('维尔通') || m.away_team.includes('维尔通')
+  return m.is_overseas || (m.home_team && m.home_team.includes('奥波莱')) || (m.away_team && m.away_team.includes('奥波莱'))
 }
 
-// 整合与去重
+// 整合当前展示比赛（严禁混入旧赛季比乙数据，仅展示当前赛季波甲与世界主要联赛焦点赛事）
 const combinedMatches = computed(() => {
-  const map = new Map()
-
-  allMatchesRaw.forEach(m => {
-    map.set(m.id, m)
-  })
-
-  props.matches.forEach(m => {
-    if (!map.has(m.id)) {
-      map.set(m.id, {
-        ...m,
-        league_key: m.league_key || (isOverseasMatch(m) ? 'pol_d1' : 'ucl'),
-        league_name: m.league_name || (isOverseasMatch(m) ? '波甲' : '欧冠'),
-        is_overseas: true,
-        date_short: m.date
-      })
-    }
-  })
-
-  return Array.from(map.values())
+  return allMatchesRaw.filter(m => m.league_key !== 'bel_d2')
 })
 
 const filteredMatches = computed(() => {
   return combinedMatches.value.filter(m => {
     if (selectedLeague.value !== 'all') {
-      const matchLeagueKey = m.league_key || (isOverseasMatch(m) ? 'pol_d1' : 'ucl')
-      if (matchLeagueKey !== selectedLeague.value) return false
+      if (m.league_key !== selectedLeague.value) return false
     }
 
     if (selectedRoundFilter.value === 'finals') {

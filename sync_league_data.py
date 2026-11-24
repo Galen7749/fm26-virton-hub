@@ -1140,13 +1140,13 @@ def build():
         with open(all_matches_path, "r", encoding="utf-8") as f:
             existing_matches = json.load(f)
 
-    # Filter out any old bel_d2 matches or duplicate IDs
+    # 严格过滤：彻底移除任何旧比乙 (bel_d2) 比赛记录，仅保留当前活跃波甲 (pol_d1)
     overseas_matches = [
         m for m in existing_matches
-        if m.get("league_key") in ["pol_d1"] or m.get("is_overseas")
+        if m.get("league_key") == "pol_d1"
     ]
 
-    marquees = get_marquee_matches()
+    marquees = [m for m in get_marquee_matches() if m.get("league_key") != "bel_d2"]
     marquee_ids = {m["id"] for m in marquees}
 
     combined = marquees + [m for m in overseas_matches if m["id"] not in marquee_ids]
