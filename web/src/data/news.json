@@ -1,5 +1,49 @@
 [
   {
+    "id": "news_r4_1",
+    "type": "match_report",
+    "tag": "主场大捷",
+    "title": "主场轰4-1！奥波莱大胜琴斯托霍瓦，索拉迪奥双响称霸波甲射手榜",
+    "summary": "索拉迪奥全场最高9.0分双响，主场4-1大胜，奥波莱四轮不败稳居升级区！",
+    "date": "2026-08-09",
+    "source": "懂球云波兰特派",
+    "is_featured": false,
+    "club_id": "odra"
+  },
+  {
+    "id": "news_r5_1",
+    "type": "match_report",
+    "tag": "主场大捷",
+    "title": "主场4-0大捷！奥波莱零封罗兹维泽夫，索拉迪奥再次双响五连不败领跑波甲",
+    "summary": "主场完胜！零封对手，索拉迪奥双响，五轮13球仅失5球，奥波莱领跑波甲！",
+    "date": "2026-08-16",
+    "source": "懂球云波兰特派",
+    "is_featured": false,
+    "club_id": "odra"
+  },
+  {
+    "id": "news_r6_1",
+    "type": "match_report",
+    "tag": "客场告捷",
+    "title": "客场1-0险胜西里西亚！姆莱奇科7扑卡克佩尔世界波，六连不败登顶波甲",
+    "summary": "高难度客场，姆莱奇科7次扑救零封对手，卡克佩尔61分世界波一球定鼎！",
+    "date": "2026-08-23",
+    "source": "懂球云波兰特派",
+    "is_featured": false,
+    "club_id": "odra"
+  },
+  {
+    "id": "news_r7_1",
+    "type": "match_report",
+    "tag": "联赛战报",
+    "title": "七球大战！奥波莱4-3逆转扎布热，索拉迪奥双响七连不败领跑波甲",
+    "summary": "7进4-3战胜扎布热，索拉迪奥双响，七连不败依然领跑！本赛季最具观赏性的一役！",
+    "date": "2026-08-30",
+    "source": "懂球云波兰特派",
+    "is_featured": true,
+    "club_id": "odra"
+  },
+  {
     "match_id": "20250810_dender_virton",
     "round": 1,
     "date": "2025-08-10",

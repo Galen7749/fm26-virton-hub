@@ -1,5 +1,2366 @@
 [
   {
+    "id": 1004,
+    "league_key": "pol_d1",
+    "league_name": "波甲",
+    "league_badge": "波甲",
+    "league_flag": "circle-flags:pl",
+    "round": 4,
+    "round_label": "第 4 轮",
+    "date": "2026-08-09 18:00",
+    "date_short": "08-09 周日",
+    "status": "FT",
+    "status_label": "完赛",
+    "is_overseas": true,
+    "home_team": "奥波莱奥德拉",
+    "home_code": "ODR",
+    "away_team": "琴斯托霍瓦",
+    "away_code": "CZE",
+    "score_home": 4,
+    "score_away": 1,
+    "stadium": "奥波莱市政球场",
+    "xg": "2.80 - 1.10",
+    "shots": "16",
+    "shots_on_target": "9",
+    "distance_km": "0",
+    "scorers": [
+      {
+        "minute": 18,
+        "player": "乔丹·索拉迪奥",
+        "player_zh": "索拉迪奥",
+        "assist": "帕特里克·希什",
+        "assist_zh": "希什"
+      },
+      {
+        "minute": 37,
+        "player": "巴巴卡尔·迪奥内",
+        "player_zh": "迪奥内"
+      },
+      {
+        "minute": 52,
+        "player": "托马斯·加伊达",
+        "player_zh": "加伊达",
+        "assist": "马特乌什·斯皮哈瓦",
+        "assist_zh": "斯皮哈瓦"
+      },
+      {
+        "minute": 71,
+        "player": "乔丹·索拉迪奥",
+        "player_zh": "索拉迪奥",
+        "assist": "帕特里克·希什",
+        "assist_zh": "希什",
+        "is_mvp_goal": true
+      }
+    ],
+    "news": {
+      "title": "主场轰4-1！奥波莱大胜琴斯托霍瓦，索拉迪奥双响称霸波甲射手榜",
+      "summary": "主场大胜！索拉迪奥打入双响，加伊达和迪奥内各建功，奥波莱4轮全不败稳居升级区！",
+      "reporter": "懂球云波兰特派",
+      "dongqiudi_article": {
+        "title": "主场轰4-1！奥波莱大胜琴斯托霍瓦，索拉迪奥双响称霸波甲射手榜",
+        "summary": "索拉迪奥全场最高9.0评分双响，主场4-1大胜，奥波莱4轮7分稳居升级区！",
+        "body": "【比赛焦点】\n波甲第4轮主场之战，奥波莱迎战升班马琴斯托霍瓦。中国主帅排出熟悉的4-1-1-4双翼体系，巴西外援索拉迪奥担纲进攻箭头。\n\n【关键事件】\n第18分钟，希什右侧巧妙输送，索拉迪奥禁区内单刀推射破门，主场率先开球！\n第37分钟，迪奥内左路快速推进，进入禁区横档拨射，球贴右柱入网！2-0！\n第52分钟，斯皮哈瓦中路抢断发动快反，加伊达插上抽射，球改变方向入门！3-0。\n第71分钟，希什精准直塞，索拉迪奥追上皮球冷静推射，4-0！完全锁死比赛！\n客队临近终场扳回一城，最终4-1收场。\n\n【战术复盘】\n本场希什贡献1传2助，双翼传球体系完全爆发；索拉迪奥全场9.0评分，高居本轮最佳。四轮保持不败，奥波莱是本赛季波甲最具升级相的球队之一。",
+        "tags": [
+          "波甲",
+          "奥波莱奥德拉",
+          "主场大捷",
+          "索拉迪奥",
+          "四连不败"
+        ]
+      },
+      "local_media_snippet": {
+        "outlet": "波兰体育周刊《Przegląd Sportowy》",
+        "country_flag": "circle-flags:pl",
+        "journalist": "Tomasz Włodarczyk",
+        "quote": "奥波莱主场展现了真正的攻势足球！索拉迪奥与希什之间的默契配合令人叹为观止，这支球队正在以极快的速度适应波甲的强度。"
+      },
+      "hupu_thread": {
+        "coach_score": 9.2,
+        "comments": [
+          {
+            "username": "波兰追球人",
+            "tag": "西里西亚球迷",
+            "likes": 312,
+            "content": "4-1！主场完全碾压！索拉迪奥在这个体系下就是无解！"
+          },
+          {
+            "username": "奥波莱老铁",
+            "tag": "主场铁杆",
+            "likes": 243,
+            "content": "希什本场2助攻，真正意义上的左路发动机。徐指导把他激活了！"
+          },
+          {
+            "username": "战术观察站",
+            "tag": "FM战术师",
+            "likes": 189,
+            "content": "全场控球率62%，高位压迫让琴斯托霍瓦完全出不来球，高质量的主场表演。"
+          },
+          {
+            "username": "足球移民日记",
+            "tag": "波兰华人",
+            "likes": 156,
+            "content": "来奥波莱看球了！现场氛围太好了！中国教练打出这种攻势球确实骄傲！"
+          }
+        ]
+      }
+    },
+    "formation": "4-1-1-4 (双翼齐飞)",
+    "lineup": [
+      {
+        "pos": "GK",
+        "name": "姆莱奇科",
+        "name_zh": "米沃什·姆莱奇科",
+        "name_en": "Miłosz Mleczko",
+        "number": 1,
+        "rating": 7.0,
+        "min": 90,
+        "saves": 3,
+        "is_mvp": false,
+        "radar": [
+          {
+            "subject": "极限扑救",
+            "value": 78
+          },
+          {
+            "subject": "防守选位",
+            "value": 76
+          },
+          {
+            "subject": "出击果断",
+            "value": 72
+          },
+          {
+            "subject": "禁区制空",
+            "value": 80
+          },
+          {
+            "subject": "防线指挥",
+            "value": 75
+          },
+          {
+            "subject": "心理抗压",
+            "value": 76
+          }
+        ],
+        "stats": {
+          "关键扑救": "2次",
+          "禁区内救险": "1次",
+          "传球成功率": "79%",
+          "长传到位": "6次",
+          "失球": "1球",
+          "评分": "7.0分"
+        }
+      },
+      {
+        "pos": "DR",
+        "name": "铃木淳也",
+        "name_zh": "铃木淳也",
+        "name_en": "Junya Suzuki",
+        "number": 2,
+        "rating": 0,
+        "min": 12,
+        "is_mvp": false,
+        "radar": [
+          {
+            "subject": "边路插上",
+            "value": 78
+          },
+          {
+            "subject": "抢断拦截",
+            "value": 72
+          },
+          {
+            "subject": "边路传中",
+            "value": 70
+          },
+          {
+            "subject": "回追速度",
+            "value": 81
+          },
+          {
+            "subject": "防守纪律",
+            "value": 75
+          },
+          {
+            "subject": "对抗成功",
+            "value": 71
+          }
+        ],
+        "stats": {
+          "出场时间": "12分钟(替补)",
+          "评分": "替补出场"
+        }
+      },
+      {
+        "pos": "DC1",
+        "name": "普里维特",
+        "name_zh": "普里维特",
+        "name_en": "Andrew Privett",
+        "number": 5,
+        "rating": 6.7,
+        "min": 90,
+        "is_mvp": false,
+        "radar": [
+          {
+            "subject": "高空争顶",
+            "value": 80
+          },
+          {
+            "subject": "正面拦截",
+            "value": 78
+          },
+          {
+            "subject": "禁区解围",
+            "value": 84
+          },
+          {
+            "subject": "身体对抗",
+            "value": 82
+          },
+          {
+            "subject": "出球传导",
+            "value": 71
+          },
+          {
+            "subject": "位置感",
+            "value": 76
+          }
+        ],
+        "stats": {
+          "高空争顶": "4/5",
+          "关键解围": "4次",
+          "封堵射门": "1次",
+          "传球成功率": "84%",
+          "犯规": "0次",
+          "对抗胜率": "80%"
+        }
+      },
+      {
+        "pos": "DC2",
+        "name": "希尔马",
+        "name_zh": "希尔马",
+        "name_en": "Jilmar",
+        "number": 6,
+        "rating": 7.0,
+        "min": 90,
+        "is_mvp": false,
+        "radar": [
+          {
+            "subject": "正面防守",
+            "value": 76
+          },
+          {
+            "subject": "禁区争顶",
+            "value": 74
+          },
+          {
+            "subject": "补位意识",
+            "value": 75
+          },
+          {
+            "subject": "贴身逼抢",
+            "value": 78
+          },
+          {
+            "subject": "长传发起",
+            "value": 68
+          },
+          {
+            "subject": "回追速度",
+            "value": 70
+          }
+        ],
+        "stats": {
+          "关键解围": "3次",
+          "成功拦截": "2次",
+          "身体拼抢": "4/6",
+          "争顶胜率": "70%",
+          "犯规": "1次",
+          "黄牌": "0"
+        }
+      },
+      {
+        "pos": "DL",
+        "name": "帕拉茨",
+        "name_zh": "帕拉茨",
+        "name_en": "Krystian Palacz",
+        "number": 3,
+        "rating": 6.7,
+        "min": 78,
+        "is_mvp": false,
+        "radar": [
+          {
+            "subject": "边路插上",
+            "value": 74
+          },
+          {
+            "subject": "抢断拦截",
+            "value": 76
+          },
+          {
+            "subject": "边路传中",
+            "value": 72
+          },
+          {
+            "subject": "回追速度",
+            "value": 78
+          },
+          {
+            "subject": "防守纪律",
+            "value": 77
+          },
+          {
+            "subject": "对抗成功",
+            "value": 73
+          }
+        ],
+        "stats": {
+          "出场时间": "78分钟",
+          "传中": "2/5",
+          "成功抢断": "3次",
+          "跑动距离": "8.2km",
+          "评分": "6.7分"
+        }
+      },
+      {
+        "pos": "DM",
+        "name": "卡斯普日克",
+        "name_zh": "卡斯普日克",
+        "name_en": "Kacper Przybyłko",
+        "number": 8,
+        "rating": 7.0,
+        "min": 78,
+        "is_mvp": false,
+        "radar": [
+          {
+            "subject": "传球节奏",
+            "value": 76
+          },
+          {
+            "subject": "防守覆盖",
+            "value": 74
+          },
+          {
+            "subject": "高空争顶",
+            "value": 72
+          },
+          {
+            "subject": "技术盘带",
+            "value": 70
+          },
+          {
+            "subject": "前场压迫",
+            "value": 78
+          },
+          {
+            "subject": "体能跑动",
+            "value": 80
+          }
+        ],
+        "stats": {
+          "出场时间": "78分钟",
+          "传球成功率": "82%",
+          "关键传球": "1次",
+          "成功抢断": "2次",
+          "跑动距离": "9.1km",
+          "评分": "7.0分"
+        }
+      },
+      {
+        "pos": "AM",
+        "name": "斯皮哈瓦",
+        "name_zh": "斯皮哈瓦",
+        "name_en": "Mateusz Spychała",
+        "number": 10,
+        "rating": 7.7,
+        "min": 78,
+        "is_mvp": false,
+        "radar": [
+          {
+            "subject": "传球视野",
+            "value": 80
+          },
+          {
+            "subject": "精准直塞",
+            "value": 78
+          },
+          {
+            "subject": "技术盘带",
+            "value": 76
+          },
+          {
+            "subject": "前场压迫",
+            "value": 74
+          },
+          {
+            "subject": "射门威胁",
+            "value": 72
+          },
+          {
+            "subject": "位置感",
+            "value": 79
+          }
+        ],
+        "stats": {
+          "出场时间": "78分钟",
+          "关键传球": "3次",
+          "传球成功率": "87%",
+          "射门": "1次",
+          "评分": "7.7分"
+        }
+      },
+      {
+        "pos": "WR",
+        "name": "希什",
+        "name_zh": "帕特里克·希什",
+        "name_en": "Patryk Szysz",
+        "number": 7,
+        "rating": 8.5,
+        "min": 84,
+        "is_mvp": true,
+        "radar": [
+          {
+            "subject": "边路突破",
+            "value": 84
+          },
+          {
+            "subject": "传中精准",
+            "value": 82
+          },
+          {
+            "subject": "快速起步",
+            "value": 85
+          },
+          {
+            "subject": "内切射门",
+            "value": 76
+          },
+          {
+            "subject": "无球跑位",
+            "value": 80
+          },
+          {
+            "subject": "防守贡献",
+            "value": 68
+          }
+        ],
+        "stats": {
+          "出场时间": "84分钟",
+          "助攻": "2次",
+          "传中": "4/7",
+          "过人成功": "4次",
+          "跑动距离": "9.8km",
+          "评分": "8.5分"
+        }
+      },
+      {
+        "pos": "WL",
+        "name": "帕拉茨",
+        "name_zh": "卡斯帕尔",
+        "name_en": "Krystian Palacz",
+        "number": 3,
+        "rating": 6.7,
+        "min": 78,
+        "is_mvp": false,
+        "radar": [
+          {
+            "subject": "边路插上",
+            "value": 74
+          },
+          {
+            "subject": "传中精准",
+            "value": 70
+          },
+          {
+            "subject": "快速起步",
+            "value": 76
+          },
+          {
+            "subject": "内切射门",
+            "value": 72
+          },
+          {
+            "subject": "无球跑位",
+            "value": 75
+          },
+          {
+            "subject": "防守贡献",
+            "value": 72
+          }
+        ],
+        "stats": {
+          "出场时间": "78分钟",
+          "助攻": "0次",
+          "传中": "3/6",
+          "过人成功": "2次",
+          "评分": "6.7分"
+        }
+      },
+      {
+        "pos": "ST1",
+        "name": "索拉迪奥",
+        "name_zh": "乔丹·索拉迪奥",
+        "name_en": "Jordy Soladio",
+        "number": 9,
+        "rating": 9.0,
+        "min": 90,
+        "is_mvp": true,
+        "goals": 2,
+        "radar": [
+          {
+            "subject": "禁区把握",
+            "value": 88
+          },
+          {
+            "subject": "高空争顶",
+            "value": 80
+          },
+          {
+            "subject": "背身拿球",
+            "value": 78
+          },
+          {
+            "subject": "快速反应",
+            "value": 84
+          },
+          {
+            "subject": "传球出球",
+            "value": 72
+          },
+          {
+            "subject": "射门力量",
+            "value": 85
+          }
+        ],
+        "stats": {
+          "进球": "2球",
+          "射门": "5次",
+          "射正": "4次",
+          "对抗胜率": "65%",
+          "跑动距离": "9.4km",
+          "评分": "9.0分"
+        }
+      },
+      {
+        "pos": "ST2",
+        "name": "迪奥内",
+        "name_zh": "巴巴卡尔·迪奥内",
+        "name_en": "Babacar Dione",
+        "number": 11,
+        "rating": 7.2,
+        "min": 76,
+        "is_mvp": false,
+        "goals": 1,
+        "radar": [
+          {
+            "subject": "技术突破",
+            "value": 78
+          },
+          {
+            "subject": "禁区射门",
+            "value": 76
+          },
+          {
+            "subject": "无球跑位",
+            "value": 80
+          },
+          {
+            "subject": "高速冲击",
+            "value": 82
+          },
+          {
+            "subject": "边路下底",
+            "value": 79
+          },
+          {
+            "subject": "传球出球",
+            "value": 70
+          }
+        ],
+        "stats": {
+          "进球": "1球",
+          "射门": "3次",
+          "射正": "2次",
+          "过人成功": "3次",
+          "助攻": "0次",
+          "评分": "7.2分"
+        }
+      }
+    ],
+    "war_report": "主场大胜！门将姆莱奇科稳守球门，后防线高效清道。希什右翼连续撕扯制造两个进球，斯皮哈瓦居中串联分球精准。索拉迪奥打入双响，全场最高9.0分摘得最佳球员，迪奥内和加伊达也各建一功。整体控球62%，16脚射门9脚射正，是本赛季最具说服力的一场主场胜利！"
+  },
+  {
+    "id": 1005,
+    "league_key": "pol_d1",
+    "league_name": "波甲",
+    "league_badge": "波甲",
+    "league_flag": "circle-flags:pl",
+    "round": 5,
+    "round_label": "第 5 轮",
+    "date": "2026-08-16 18:00",
+    "date_short": "08-16 周日",
+    "status": "FT",
+    "status_label": "完赛",
+    "is_overseas": true,
+    "home_team": "奥波莱奥德拉",
+    "home_code": "ODR",
+    "away_team": "罗兹维泽夫",
+    "away_code": "WID",
+    "score_home": 4,
+    "score_away": 0,
+    "stadium": "奥波莱市政球场",
+    "xg": "3.20 - 0.40",
+    "shots": "18",
+    "shots_on_target": "11",
+    "distance_km": "0",
+    "scorers": [
+      {
+        "minute": 22,
+        "player": "乔丹·索拉迪奥",
+        "player_zh": "索拉迪奥",
+        "assist": "卡克斯特尔·帕拉茨",
+        "assist_zh": "帕拉茨"
+      },
+      {
+        "minute": 44,
+        "player": "乔丹·索拉迪奥",
+        "player_zh": "索拉迪奥"
+      },
+      {
+        "minute": 63,
+        "player": "卡克佩尔·普日比乌科",
+        "player_zh": "卡克佩尔"
+      },
+      {
+        "minute": 78,
+        "player": "巴巴卡尔·迪奥内",
+        "player_zh": "迪奥内",
+        "assist": "弗朗契斯扎克·弗兰恰克",
+        "assist_zh": "弗兰恰克"
+      }
+    ],
+    "news": {
+      "title": "主场4-0大捷！奥波莱零封罗兹维泽夫，索拉迪奥再次双响五连不败领跑波甲",
+      "summary": "主场完胜！零封对手，索拉迪奥双响，五轮13球仅失5球，奥波莱领跑波甲升级区！",
+      "reporter": "懂球云波兰特派",
+      "dongqiudi_article": {
+        "title": "主场4-0大捷！奥波莱零封罗兹维泽夫，索拉迪奥再次双响五连不败领跑波甲",
+        "summary": "零封4-0大胜，索拉迪奥波甲7球连续双响，5轮不败13球领跑升级区！",
+        "body": "【比赛焦点】\n波甲第5轮，奥波莱坐镇主场迎战同为升级热门的罗兹维泽夫。徐指导维持高强度双翼体系，本场换上多西科特等青训力量配合首发阵容压制对手。\n\n【关键事件】\n第22分钟，帕拉茨左路快速下底传中，索拉迪奥后插上推射破门！先声夺人！\n第44分钟，补时前索拉迪奥禁区内凌空抽射！双响到手，半场已领先2-0！\n第63分钟，卡克佩尔·普日比乌科获传球后门前精准推射，扩大比分至3-0。\n第78分钟，弗兰恰克替补登场后立刻送出精准直塞，迪奥内单刀冷静推射，4-0完全锁定胜局。\n\n【战术复盘】\n本场零封展现了奥波莱完整的战术素养。高位压迫让维泽夫完全无法出球，15人阵容轮转均完成了各自任务。这是赛季最具统治力的一场胜利。",
+        "tags": [
+          "波甲",
+          "奥波莱奥德拉",
+          "主场大捷",
+          "零封",
+          "五连不败"
+        ]
+      },
+      "local_media_snippet": {
+        "outlet": "波兰足球杂志《Piłka Nożna》",
+        "country_flag": "circle-flags:pl",
+        "journalist": "Marcin Lepa",
+        "quote": "奥波莱令人窒息的高位压迫完全压制了罗兹维泽夫的出球路线，中国主帅的战术布置无可挑剔。这支球队以冠军级别的强度在踢波甲！"
+      },
+      "hupu_thread": {
+        "coach_score": 9.5,
+        "comments": [
+          {
+            "username": "西里西亚铁血军",
+            "tag": "主场铁杆",
+            "likes": 445,
+            "content": "4-0！零封！五连不败！我在现场！这根本不像在踢甲级联赛，更像在踢欧洲赛！"
+          },
+          {
+            "username": "奥波莱分析师",
+            "tag": "数据控",
+            "likes": 356,
+            "content": "15轮13球失5球，索拉迪奥个人7球。这个数据放在整个欧洲小联赛里都是顶级了。"
+          },
+          {
+            "username": "跨国看球记",
+            "tag": "海外华人",
+            "likes": 287,
+            "content": "徐指导这赛季打法太流畅了！多条进攻线全部激活，对方完全不知道防哪里。"
+          },
+          {
+            "username": "足球理工男",
+            "tag": "FM战术师",
+            "likes": 198,
+            "content": "换人时机完美，弗兰恰克替补进场直接助攻，徐指导对球员状态的感知力一流。"
+          }
+        ]
+      }
+    },
+    "formation": "4-1-1-4 (双翼齐飞)",
+    "lineup": [
+      {
+        "pos": "GK",
+        "name": "姆莱奇科",
+        "name_zh": "米沃什·姆莱奇科",
+        "name_en": "Miłosz Mleczko",
+        "number": 1,
+        "rating": 7.5,
+        "min": 90,
+        "saves": 1,
+        "is_mvp": false,
+        "radar": [
+          {
+            "subject": "极限扑救",
+            "value": 78
+          },
+          {
+            "subject": "防守选位",
+            "value": 76
+          },
+          {
+            "subject": "出击果断",
+            "value": 72
+          },
+          {
+            "subject": "禁区制空",
+            "value": 80
+          },
+          {
+            "subject": "防线指挥",
+            "value": 75
+          },
+          {
+            "subject": "心理抗压",
+            "value": 76
+          }
+        ],
+        "stats": {
+          "关键扑救": "1次",
+          "禁区内救险": "1次",
+          "传球成功率": "82%",
+          "长传到位": "7次",
+          "失球": "0球",
+          "评分": "7.5分"
+        }
+      },
+      {
+        "pos": "DR",
+        "name": "多恩科尔",
+        "name_zh": "贾基·多恩科尔",
+        "name_en": "Jacky Donkor",
+        "number": 14,
+        "rating": 7.4,
+        "min": 90,
+        "is_mvp": false,
+        "radar": [
+          {
+            "subject": "边路插上",
+            "value": 76
+          },
+          {
+            "subject": "抢断拦截",
+            "value": 74
+          },
+          {
+            "subject": "边路传中",
+            "value": 72
+          },
+          {
+            "subject": "回追速度",
+            "value": 79
+          },
+          {
+            "subject": "防守纪律",
+            "value": 77
+          },
+          {
+            "subject": "对抗成功",
+            "value": 74
+          }
+        ],
+        "stats": {
+          "出场时间": "90分钟",
+          "助攻": "1次",
+          "传中": "3/6",
+          "成功抢断": "2次",
+          "跑动距离": "9.3km",
+          "评分": "7.4分"
+        }
+      },
+      {
+        "pos": "DC1",
+        "name": "伊安诺尼",
+        "name_zh": "伊安诺尼",
+        "name_en": "Edoardo Iannoni",
+        "number": 4,
+        "rating": 7.0,
+        "min": 90,
+        "is_mvp": false,
+        "radar": [
+          {
+            "subject": "高空争顶",
+            "value": 76
+          },
+          {
+            "subject": "正面拦截",
+            "value": 80
+          },
+          {
+            "subject": "禁区解围",
+            "value": 78
+          },
+          {
+            "subject": "身体对抗",
+            "value": 79
+          },
+          {
+            "subject": "出球传导",
+            "value": 74
+          },
+          {
+            "subject": "位置感",
+            "value": 77
+          }
+        ],
+        "stats": {
+          "高空争顶": "3/4",
+          "关键解围": "3次",
+          "封堵射门": "2次",
+          "传球成功率": "80%",
+          "犯规": "0次",
+          "对抗胜率": "77%"
+        }
+      },
+      {
+        "pos": "DC2",
+        "name": "希尔马",
+        "name_zh": "希尔马",
+        "name_en": "Jilmar",
+        "number": 6,
+        "rating": 7.6,
+        "min": 90,
+        "is_mvp": false,
+        "radar": [
+          {
+            "subject": "正面防守",
+            "value": 76
+          },
+          {
+            "subject": "禁区争顶",
+            "value": 74
+          },
+          {
+            "subject": "补位意识",
+            "value": 75
+          },
+          {
+            "subject": "贴身逼抢",
+            "value": 78
+          },
+          {
+            "subject": "长传发起",
+            "value": 68
+          },
+          {
+            "subject": "回追速度",
+            "value": 70
+          }
+        ],
+        "stats": {
+          "关键解围": "4次",
+          "成功拦截": "3次",
+          "身体拼抢": "5/6",
+          "争顶胜率": "72%",
+          "犯规": "0次",
+          "黄牌": "0"
+        }
+      },
+      {
+        "pos": "DL",
+        "name": "帕拉茨",
+        "name_zh": "帕拉茨",
+        "name_en": "Krystian Palacz",
+        "number": 3,
+        "rating": 8.7,
+        "min": 90,
+        "is_mvp": true,
+        "radar": [
+          {
+            "subject": "边路插上",
+            "value": 84
+          },
+          {
+            "subject": "抢断拦截",
+            "value": 76
+          },
+          {
+            "subject": "边路传中",
+            "value": 80
+          },
+          {
+            "subject": "回追速度",
+            "value": 78
+          },
+          {
+            "subject": "防守纪律",
+            "value": 77
+          },
+          {
+            "subject": "对抗成功",
+            "value": 73
+          }
+        ],
+        "stats": {
+          "出场时间": "90分钟",
+          "助攻": "2次",
+          "传中": "5/8",
+          "成功抢断": "3次",
+          "跑动距离": "10.2km",
+          "评分": "8.7分"
+        }
+      },
+      {
+        "pos": "DM",
+        "name": "苏基恩尼茨基",
+        "name_zh": "苏基恩尼茨基",
+        "name_en": "Alan Sukiennicki",
+        "number": 20,
+        "rating": 6.9,
+        "min": 90,
+        "is_mvp": false,
+        "radar": [
+          {
+            "subject": "传球节奏",
+            "value": 74
+          },
+          {
+            "subject": "防守覆盖",
+            "value": 78
+          },
+          {
+            "subject": "高空争顶",
+            "value": 70
+          },
+          {
+            "subject": "技术盘带",
+            "value": 68
+          },
+          {
+            "subject": "前场压迫",
+            "value": 76
+          },
+          {
+            "subject": "体能跑动",
+            "value": 82
+          }
+        ],
+        "stats": {
+          "出场时间": "90分钟",
+          "传球成功率": "80%",
+          "关键传球": "1次",
+          "成功抢断": "3次",
+          "跑动距离": "9.8km",
+          "评分": "6.9分"
+        }
+      },
+      {
+        "pos": "AM",
+        "name": "斯皮哈瓦",
+        "name_zh": "斯皮哈瓦",
+        "name_en": "Mateusz Spychała",
+        "number": 10,
+        "rating": 6.9,
+        "min": 90,
+        "is_mvp": false,
+        "radar": [
+          {
+            "subject": "传球视野",
+            "value": 80
+          },
+          {
+            "subject": "精准直塞",
+            "value": 78
+          },
+          {
+            "subject": "技术盘带",
+            "value": 76
+          },
+          {
+            "subject": "前场压迫",
+            "value": 74
+          },
+          {
+            "subject": "射门威胁",
+            "value": 72
+          },
+          {
+            "subject": "位置感",
+            "value": 79
+          }
+        ],
+        "stats": {
+          "出场时间": "90分钟",
+          "关键传球": "2次",
+          "传球成功率": "85%",
+          "射门": "1次",
+          "评分": "6.9分"
+        }
+      },
+      {
+        "pos": "WR",
+        "name": "库普奇克",
+        "name_zh": "库普奇克",
+        "name_en": "Filip Kupczyk",
+        "number": 17,
+        "rating": 6.7,
+        "min": 90,
+        "is_mvp": false,
+        "radar": [
+          {
+            "subject": "边路突破",
+            "value": 76
+          },
+          {
+            "subject": "传中精准",
+            "value": 74
+          },
+          {
+            "subject": "快速起步",
+            "value": 78
+          },
+          {
+            "subject": "内切射门",
+            "value": 70
+          },
+          {
+            "subject": "无球跑位",
+            "value": 75
+          },
+          {
+            "subject": "防守贡献",
+            "value": 70
+          }
+        ],
+        "stats": {
+          "出场时间": "90分钟",
+          "传中": "3/7",
+          "过人成功": "3次",
+          "跑动距离": "9.5km",
+          "评分": "6.7分"
+        }
+      },
+      {
+        "pos": "WL",
+        "name": "帕拉茨",
+        "name_zh": "卡斯帕尔",
+        "name_en": "Krystian Palacz",
+        "number": 3,
+        "rating": 8.7,
+        "min": 90,
+        "is_mvp": true,
+        "radar": [
+          {
+            "subject": "边路插上",
+            "value": 84
+          },
+          {
+            "subject": "传中精准",
+            "value": 80
+          },
+          {
+            "subject": "快速起步",
+            "value": 78
+          },
+          {
+            "subject": "内切射门",
+            "value": 72
+          },
+          {
+            "subject": "无球跑位",
+            "value": 75
+          },
+          {
+            "subject": "防守贡献",
+            "value": 72
+          }
+        ],
+        "stats": {
+          "出场时间": "90分钟",
+          "助攻": "2次",
+          "传中": "5/8",
+          "过人成功": "4次",
+          "评分": "8.7分"
+        }
+      },
+      {
+        "pos": "ST1",
+        "name": "索拉迪奥",
+        "name_zh": "乔丹·索拉迪奥",
+        "name_en": "Jordy Soladio",
+        "number": 9,
+        "rating": 8.3,
+        "min": 90,
+        "is_mvp": true,
+        "goals": 2,
+        "radar": [
+          {
+            "subject": "禁区把握",
+            "value": 88
+          },
+          {
+            "subject": "高空争顶",
+            "value": 80
+          },
+          {
+            "subject": "背身拿球",
+            "value": 78
+          },
+          {
+            "subject": "快速反应",
+            "value": 84
+          },
+          {
+            "subject": "传球出球",
+            "value": 72
+          },
+          {
+            "subject": "射门力量",
+            "value": 85
+          }
+        ],
+        "stats": {
+          "进球": "2球",
+          "射门": "6次",
+          "射正": "5次",
+          "对抗胜率": "68%",
+          "跑动距离": "9.6km",
+          "评分": "8.3分"
+        }
+      },
+      {
+        "pos": "ST2",
+        "name": "卡克佩尔",
+        "name_zh": "卡克佩尔·普日比乌科",
+        "name_en": "Kacper Przybyłko",
+        "number": 11,
+        "rating": 7.6,
+        "min": 90,
+        "is_mvp": false,
+        "goals": 1,
+        "radar": [
+          {
+            "subject": "技术突破",
+            "value": 76
+          },
+          {
+            "subject": "禁区射门",
+            "value": 80
+          },
+          {
+            "subject": "无球跑位",
+            "value": 78
+          },
+          {
+            "subject": "高速冲击",
+            "value": 74
+          },
+          {
+            "subject": "边路下底",
+            "value": 72
+          },
+          {
+            "subject": "传球出球",
+            "value": 72
+          }
+        ],
+        "stats": {
+          "进球": "1球",
+          "射门": "4次",
+          "射正": "3次",
+          "过人成功": "2次",
+          "助攻": "0次",
+          "评分": "7.6分"
+        }
+      }
+    ],
+    "war_report": "主场完胜！门将姆莱奇科稳操胜券，全场仅遭受一次危险冲击便顺利化解。左路帕拉茨全场最佳8.7分，两次致命传中创造两球。索拉迪奥波甲个人进球达到7球，再次双响后势如破竹。整体控球率65%，高位压迫让罗兹维泽夫几乎全场无法出球。五连不败，奥波莱是本赛季波甲的绝对主角！"
+  },
+  {
+    "id": 1006,
+    "league_key": "pol_d1",
+    "league_name": "波甲",
+    "league_badge": "波甲",
+    "league_flag": "circle-flags:pl",
+    "round": 6,
+    "round_label": "第 6 轮",
+    "date": "2026-08-23 16:00",
+    "date_short": "08-23 周日",
+    "status": "FT",
+    "status_label": "完赛",
+    "is_overseas": true,
+    "home_team": "弗罗茨瓦夫西里西亚",
+    "home_code": "SLA",
+    "away_team": "奥波莱奥德拉",
+    "away_code": "ODR",
+    "score_home": 0,
+    "score_away": 1,
+    "stadium": "塔尔奇纳运动场",
+    "xg": "0.90 - 1.30",
+    "shots": "14",
+    "shots_on_target": "5",
+    "distance_km": "72.4",
+    "scorers": [
+      {
+        "minute": 61,
+        "player": "卡克佩尔·普日比乌科",
+        "player_zh": "卡克佩尔",
+        "assist": "阿德里安·利贝尔",
+        "assist_zh": "利贝尔"
+      }
+    ],
+    "news": {
+      "title": "客场1-0险胜西里西亚！卡克佩尔下半场世界波，奥波莱六连不败独跑波甲榜首",
+      "summary": "高难度客场，全场仅一脚射正，卡克佩尔61分钟世界波一球定音，奥波莱六连不败登顶！",
+      "reporter": "懂球云波兰特派",
+      "dongqiudi_article": {
+        "title": "客场1-0险胜西里西亚！卡克佩尔下半场世界波，奥波莱六连不败独跑波甲榜首",
+        "summary": "高难度客场，卡克佩尔61分钟世界波一球定鼎，姆莱奇科稳守关键扑救，六连不败登顶！",
+        "body": "【比赛焦点】\n波甲第6轮，奥波莱客场挑战传统豪强弗罗茨瓦夫西里西亚。对方主场氛围狂热，徐指导选择稳守反击，以高强度压迫限制主队进攻节奏。\n\n【关键事件】\n上半场双方势均力敌，姆莱奇科数次关键扑救将比赛拖入平局。\n第61分钟，利贝尔右路斜传入禁区，卡克佩尔普日比乌科接球后禁区弧顶不停球直接怒射，皮球划弧入门，完美世界波！\n此后奥波莱成功顶住西里西亚的反扑，以1-0完成客场告捷！\n\n【战术复盘】\n本场是典型的低位防反战术成功案例。徐指导选择在客场收缩防线，依靠高速反击和个人能力赢得比赛。姆莱奇科本场是当之无愧的英雄，全场7次扑救让西里西亚无功而返。",
+        "tags": [
+          "波甲",
+          "奥波莱奥德拉",
+          "客场告捷",
+          "卡克佩尔",
+          "六连不败",
+          "榜首"
+        ]
+      },
+      "local_media_snippet": {
+        "outlet": "弗罗茨瓦夫《Gazeta Wrocławska》",
+        "country_flag": "circle-flags:pl",
+        "journalist": "Krzysztof Nowak",
+        "quote": "奥波莱奥德拉今日展现了冠军级别的防反能力。在西里西亚主场巨大压力下，他们仅靠一脚世界波完成了高质量的客场告捷。这支球队的抗压能力令人叹服。"
+      },
+      "hupu_thread": {
+        "coach_score": 9.0,
+        "comments": [
+          {
+            "username": "波兰追球人",
+            "tag": "西里西亚球迷",
+            "likes": 523,
+            "content": "客场1-0！六连不败！姆莱奇科今天真的封神了，7次扑救一球不失！"
+          },
+          {
+            "username": "战术观察站",
+            "tag": "FM战术师",
+            "likes": 398,
+            "content": "徐指导今天的客场布置教科书级别：收缩防线、高速反击、一击制敌，完美防反。"
+          },
+          {
+            "username": "卡克佩尔真爱粉",
+            "tag": "普日比乌科球迷",
+            "likes": 312,
+            "content": "那脚世界波！！！！禁区弧顶不停球直接抽射，这就是波甲级别的技术！"
+          },
+          {
+            "username": "足球移民日记",
+            "tag": "波兰华人",
+            "likes": 234,
+            "content": "六连不败！独跑榜首！中国教练组在欧洲写下传奇！身边的波兰朋友都在聊奥波莱！"
+          }
+        ]
+      }
+    },
+    "formation": "4-1-1-4 (双翼齐飞)",
+    "lineup": [
+      {
+        "pos": "GK",
+        "name": "姆莱奇科",
+        "name_zh": "米沃什·姆莱奇科",
+        "name_en": "Miłosz Mleczko",
+        "number": 1,
+        "rating": 7.3,
+        "min": 90,
+        "saves": 7,
+        "is_mvp": true,
+        "radar": [
+          {
+            "subject": "极限扑救",
+            "value": 82
+          },
+          {
+            "subject": "防守选位",
+            "value": 80
+          },
+          {
+            "subject": "出击果断",
+            "value": 75
+          },
+          {
+            "subject": "禁区制空",
+            "value": 80
+          },
+          {
+            "subject": "防线指挥",
+            "value": 75
+          },
+          {
+            "subject": "心理抗压",
+            "value": 84
+          }
+        ],
+        "stats": {
+          "关键扑救": "7次",
+          "禁区内救险": "4次",
+          "传球成功率": "74%",
+          "长传到位": "5次",
+          "失球": "0球",
+          "评分": "7.3分"
+        }
+      },
+      {
+        "pos": "DR",
+        "name": "铃木淳也",
+        "name_zh": "铃木淳也",
+        "name_en": "Junya Suzuki",
+        "number": 2,
+        "rating": 6.8,
+        "min": 78,
+        "is_mvp": false,
+        "radar": [
+          {
+            "subject": "边路插上",
+            "value": 78
+          },
+          {
+            "subject": "抢断拦截",
+            "value": 72
+          },
+          {
+            "subject": "边路传中",
+            "value": 70
+          },
+          {
+            "subject": "回追速度",
+            "value": 81
+          },
+          {
+            "subject": "防守纪律",
+            "value": 75
+          },
+          {
+            "subject": "对抗成功",
+            "value": 71
+          }
+        ],
+        "stats": {
+          "出场时间": "78分钟",
+          "传中": "1/3",
+          "成功抢断": "2次",
+          "跑动距离": "7.8km",
+          "评分": "6.8分"
+        }
+      },
+      {
+        "pos": "DC1",
+        "name": "伊安诺尼",
+        "name_zh": "伊安诺尼",
+        "name_en": "Edoardo Iannoni",
+        "number": 4,
+        "rating": 7.4,
+        "min": 90,
+        "is_mvp": false,
+        "radar": [
+          {
+            "subject": "高空争顶",
+            "value": 76
+          },
+          {
+            "subject": "正面拦截",
+            "value": 80
+          },
+          {
+            "subject": "禁区解围",
+            "value": 78
+          },
+          {
+            "subject": "身体对抗",
+            "value": 79
+          },
+          {
+            "subject": "出球传导",
+            "value": 74
+          },
+          {
+            "subject": "位置感",
+            "value": 77
+          }
+        ],
+        "stats": {
+          "高空争顶": "6/8",
+          "关键解围": "7次",
+          "封堵射门": "3次",
+          "传球成功率": "77%",
+          "犯规": "1次",
+          "对抗胜率": "80%"
+        }
+      },
+      {
+        "pos": "DC2",
+        "name": "米尤什科维奇",
+        "name_zh": "米尤什科维奇",
+        "name_en": "Nemanja Mijušković",
+        "number": 15,
+        "rating": 7.0,
+        "min": 90,
+        "is_mvp": false,
+        "radar": [
+          {
+            "subject": "正面防守",
+            "value": 78
+          },
+          {
+            "subject": "禁区争顶",
+            "value": 76
+          },
+          {
+            "subject": "补位意识",
+            "value": 77
+          },
+          {
+            "subject": "贴身逼抢",
+            "value": 80
+          },
+          {
+            "subject": "长传发起",
+            "value": 70
+          },
+          {
+            "subject": "回追速度",
+            "value": 72
+          }
+        ],
+        "stats": {
+          "关键解围": "5次",
+          "成功拦截": "3次",
+          "身体拼抢": "6/8",
+          "争顶胜率": "75%",
+          "犯规": "1次",
+          "黄牌": "0"
+        }
+      },
+      {
+        "pos": "DL",
+        "name": "希尔马",
+        "name_zh": "希尔马",
+        "name_en": "Jilmar",
+        "number": 6,
+        "rating": 7.1,
+        "min": 90,
+        "is_mvp": false,
+        "radar": [
+          {
+            "subject": "正面防守",
+            "value": 76
+          },
+          {
+            "subject": "禁区争顶",
+            "value": 74
+          },
+          {
+            "subject": "补位意识",
+            "value": 75
+          },
+          {
+            "subject": "贴身逼抢",
+            "value": 78
+          },
+          {
+            "subject": "长传发起",
+            "value": 68
+          },
+          {
+            "subject": "回追速度",
+            "value": 70
+          }
+        ],
+        "stats": {
+          "关键解围": "3次",
+          "成功拦截": "2次",
+          "身体拼抢": "4/5",
+          "争顶胜率": "70%",
+          "犯规": "0次",
+          "黄牌": "0"
+        }
+      },
+      {
+        "pos": "DM",
+        "name": "库普奇克",
+        "name_zh": "库普奇克",
+        "name_en": "Filip Kupczyk",
+        "number": 17,
+        "rating": 6.1,
+        "min": 90,
+        "is_mvp": false,
+        "radar": [
+          {
+            "subject": "传球节奏",
+            "value": 70
+          },
+          {
+            "subject": "防守覆盖",
+            "value": 74
+          },
+          {
+            "subject": "高空争顶",
+            "value": 68
+          },
+          {
+            "subject": "技术盘带",
+            "value": 66
+          },
+          {
+            "subject": "前场压迫",
+            "value": 72
+          },
+          {
+            "subject": "体能跑动",
+            "value": 80
+          }
+        ],
+        "stats": {
+          "出场时间": "90分钟",
+          "传球成功率": "76%",
+          "关键传球": "0次",
+          "成功抢断": "2次",
+          "跑动距离": "10.1km",
+          "评分": "6.1分"
+        }
+      },
+      {
+        "pos": "AM",
+        "name": "希什",
+        "name_zh": "帕特里克·希什",
+        "name_en": "Patryk Szysz",
+        "number": 7,
+        "rating": 6.9,
+        "min": 78,
+        "is_mvp": false,
+        "radar": [
+          {
+            "subject": "传球视野",
+            "value": 78
+          },
+          {
+            "subject": "精准直塞",
+            "value": 76
+          },
+          {
+            "subject": "技术盘带",
+            "value": 74
+          },
+          {
+            "subject": "前场压迫",
+            "value": 74
+          },
+          {
+            "subject": "射门威胁",
+            "value": 72
+          },
+          {
+            "subject": "位置感",
+            "value": 77
+          }
+        ],
+        "stats": {
+          "出场时间": "78分钟",
+          "关键传球": "1次",
+          "传球成功率": "82%",
+          "射门": "1次",
+          "评分": "6.9分"
+        }
+      },
+      {
+        "pos": "WR",
+        "name": "利贝尔",
+        "name_zh": "阿德里安·利贝尔",
+        "name_en": "Adrian Liber",
+        "number": 8,
+        "rating": 7.1,
+        "min": 90,
+        "is_mvp": false,
+        "radar": [
+          {
+            "subject": "边路突破",
+            "value": 76
+          },
+          {
+            "subject": "传中精准",
+            "value": 78
+          },
+          {
+            "subject": "快速起步",
+            "value": 74
+          },
+          {
+            "subject": "内切射门",
+            "value": 70
+          },
+          {
+            "subject": "无球跑位",
+            "value": 73
+          },
+          {
+            "subject": "防守贡献",
+            "value": 72
+          }
+        ],
+        "stats": {
+          "出场时间": "90分钟",
+          "助攻": "1次",
+          "传中": "4/7",
+          "过人成功": "2次",
+          "跑动距离": "9.2km",
+          "评分": "7.1分"
+        }
+      },
+      {
+        "pos": "WL",
+        "name": "帕拉茨",
+        "name_zh": "卡斯帕尔",
+        "name_en": "Krystian Palacz",
+        "number": 3,
+        "rating": 6.6,
+        "min": 78,
+        "is_mvp": false,
+        "radar": [
+          {
+            "subject": "边路插上",
+            "value": 74
+          },
+          {
+            "subject": "传中精准",
+            "value": 70
+          },
+          {
+            "subject": "快速起步",
+            "value": 76
+          },
+          {
+            "subject": "内切射门",
+            "value": 72
+          },
+          {
+            "subject": "无球跑位",
+            "value": 75
+          },
+          {
+            "subject": "防守贡献",
+            "value": 72
+          }
+        ],
+        "stats": {
+          "出场时间": "78分钟",
+          "传中": "2/5",
+          "过人成功": "1次",
+          "评分": "6.6分"
+        }
+      },
+      {
+        "pos": "ST1",
+        "name": "索拉迪奥",
+        "name_zh": "乔丹·索拉迪奥",
+        "name_en": "Jordy Soladio",
+        "number": 9,
+        "rating": 6.4,
+        "min": 90,
+        "is_mvp": false,
+        "radar": [
+          {
+            "subject": "禁区把握",
+            "value": 88
+          },
+          {
+            "subject": "高空争顶",
+            "value": 80
+          },
+          {
+            "subject": "背身拿球",
+            "value": 78
+          },
+          {
+            "subject": "快速反应",
+            "value": 84
+          },
+          {
+            "subject": "传球出球",
+            "value": 72
+          },
+          {
+            "subject": "射门力量",
+            "value": 85
+          }
+        ],
+        "stats": {
+          "进球": "0球",
+          "射门": "2次",
+          "射正": "0次",
+          "对抗胜率": "58%",
+          "跑动距离": "8.6km",
+          "评分": "6.4分"
+        }
+      },
+      {
+        "pos": "ST2",
+        "name": "卡克佩尔",
+        "name_zh": "卡克佩尔·普日比乌科",
+        "name_en": "Kacper Przybyłko",
+        "number": 11,
+        "rating": 7.6,
+        "min": 90,
+        "is_mvp": false,
+        "goals": 1,
+        "radar": [
+          {
+            "subject": "技术突破",
+            "value": 76
+          },
+          {
+            "subject": "禁区射门",
+            "value": 80
+          },
+          {
+            "subject": "无球跑位",
+            "value": 78
+          },
+          {
+            "subject": "高速冲击",
+            "value": 74
+          },
+          {
+            "subject": "边路下底",
+            "value": 72
+          },
+          {
+            "subject": "传球出球",
+            "value": 72
+          }
+        ],
+        "stats": {
+          "进球": "1球",
+          "射门": "3次",
+          "射正": "1次",
+          "过人成功": "1次",
+          "助攻": "0次",
+          "评分": "7.6分"
+        }
+      }
+    ],
+    "war_report": "客场铁桶阵成功！门将姆莱奇科今晚化身球队救星，7次扑救封锁西里西亚所有威胁，零封对手当之无愧本场最佳。后防线在利贝尔和米尤什科维奇的铁闸组合下坚不可摧。卡克佩尔61分钟一脚禁区弧顶世界波一球定鼎，客场1-0登顶波甲！六连不败、领跑升级区！"
+  },
+  {
+    "id": 1007,
+    "league_key": "pol_d1",
+    "league_name": "波甲",
+    "league_badge": "波甲",
+    "league_flag": "circle-flags:pl",
+    "round": 7,
+    "round_label": "第 7 轮",
+    "date": "2026-08-30 18:00",
+    "date_short": "08-30 周日",
+    "status": "FT",
+    "status_label": "完赛",
+    "is_overseas": true,
+    "home_team": "奥波莱奥德拉",
+    "home_code": "ODR",
+    "away_team": "扎布热戈尔尼克",
+    "away_code": "ZAG",
+    "score_home": 4,
+    "score_away": 3,
+    "stadium": "奥波莱市政球场",
+    "xg": "3.10 - 2.40",
+    "shots": "17",
+    "shots_on_target": "9",
+    "distance_km": "0",
+    "scorers": [
+      {
+        "minute": 11,
+        "player": "乔丹·索拉迪奥",
+        "player_zh": "索拉迪奥",
+        "assist": "卡克佩尔·普日比乌科",
+        "assist_zh": "卡克佩尔"
+      },
+      {
+        "minute": 29,
+        "player": "伊多阿多·伊安诺尼",
+        "player_zh": "伊安诺尼",
+        "assist": "贾基·多恩科尔",
+        "assist_zh": "多恩科尔"
+      },
+      {
+        "minute": 58,
+        "player": "卡克佩尔·普日比乌科",
+        "player_zh": "卡克佩尔",
+        "assist": "乔丹·索拉迪奥",
+        "assist_zh": "索拉迪奥"
+      },
+      {
+        "minute": 83,
+        "player": "乔丹·索拉迪奥",
+        "player_zh": "索拉迪奥",
+        "assist": "贾基·多恩科尔",
+        "assist_zh": "多恩科尔",
+        "is_mvp_goal": true,
+        "is_stoppage": false
+      }
+    ],
+    "news": {
+      "title": "主场惊天4-3大战！奥波莱逆转告捷七连不败，索拉迪奥双响普日比乌科7轮10球大爆发",
+      "summary": "七轮最激烈之战！奥波莱领先、被追平、再反超，九场不败波甲升级区第一！",
+      "reporter": "懂球云波兰特派",
+      "dongqiudi_article": {
+        "title": "主场惊天4-3大战！奥波莱逆转告捷七连不败，索拉迪奥双响普日比乌科7轮10球大爆发",
+        "summary": "7进4-3战胜扎布热，索拉迪奥双响，七连不败依然领跑！本赛季最具观赏性的一役！",
+        "body": "【比赛焦点】\n波甲第7轮，奥波莱坐镇主场迎战欲打破其不败的扎布热戈尔尼克。本场进行了多达7球的超级大战，扣人心弦至最后一刻。\n\n【关键事件】\n第11分钟，卡克佩尔精准直塞，索拉迪奥禁区内单刀推射破门！1-0！\n第29分钟，多恩科尔右路传中，伊安诺尼禁区内争顶头球破门！2-0！\n上半场结束后客队两度扳平，奥波莱一度领先又被追平，下半场精彩继续。\n第58分钟，索拉迪奥禁区左侧打门被扑出后反弹，卡克佩尔补射入网！3-2反超！\n第83分钟，多恩科尔右路斜传，索拉迪奥后插上推射锁定4-3！\n客队最后时刻再次扳回一城，4-3惊险告捷！\n\n【战术复盘】\n本场展示了奥波莱在逆境中的大心脏。多次被追平后仍能找到进球，徐指导的换人调度功不可没。索拉迪奥双响、卡克佩尔助攻+进球，前场组合配合日臻成熟。7连不败，奥波莱是本赛季波甲最强的升级候选！",
+        "tags": [
+          "波甲",
+          "奥波莱奥德拉",
+          "主场激战",
+          "七连不败",
+          "索拉迪奥",
+          "普日比乌科"
+        ]
+      },
+      "local_media_snippet": {
+        "outlet": "波兰体育周刊《Przegląd Sportowy》",
+        "country_flag": "circle-flags:pl",
+        "journalist": "Tomasz Włodarczyk",
+        "quote": "七球大战！奥波莱用七轮不败证明了自己是本赛季波甲最有资格冲超的球队。索拉迪奥与普日比乌科的前锋组合，将是整个赛季甲级联赛最锋利的双箭头！"
+      },
+      "hupu_thread": {
+        "coach_score": 9.2,
+        "comments": [
+          {
+            "username": "西里西亚铁血军",
+            "tag": "主场铁杆",
+            "likes": 678,
+            "content": "4-3！七球大战！最后一脚索拉迪奥推射进去的时候全场炸了！我在现场见证！"
+          },
+          {
+            "username": "卡克佩尔真爱粉",
+            "tag": "普日比乌科球迷",
+            "likes": 512,
+            "content": "七轮10球！这赛季卡克佩尔真的完全被激活了！中国教练的战术让他找到了真正的位置！"
+          },
+          {
+            "username": "奥波莱分析师",
+            "tag": "数据控",
+            "likes": 423,
+            "content": "7连不败，20得分，17进球6失球。这个数据放欧洲各国甲级里都是顶级。徐指导真的厉害！"
+          },
+          {
+            "username": "足球理工男",
+            "tag": "FM战术师",
+            "likes": 334,
+            "content": "被追平两次还能重新拿回比赛，心态和阵型调整都很关键。徐指导临场能力被证明了。"
+          },
+          {
+            "username": "海外奥波莱迷",
+            "tag": "海外球迷",
+            "likes": 267,
+            "content": "7轮全不败！这就是我关注的球队！在波兰写下中国足球留洋的最好故事！"
+          }
+        ]
+      }
+    },
+    "formation": "4-1-1-4 (双翼齐飞)",
+    "lineup": [
+      {
+        "pos": "GK",
+        "name": "姆莱奇科",
+        "name_zh": "米沃什·姆莱奇科",
+        "name_en": "Miłosz Mleczko",
+        "number": 1,
+        "rating": 6.6,
+        "min": 90,
+        "saves": 5,
+        "is_mvp": false,
+        "radar": [
+          {
+            "subject": "极限扑救",
+            "value": 78
+          },
+          {
+            "subject": "防守选位",
+            "value": 76
+          },
+          {
+            "subject": "出击果断",
+            "value": 72
+          },
+          {
+            "subject": "禁区制空",
+            "value": 80
+          },
+          {
+            "subject": "防线指挥",
+            "value": 75
+          },
+          {
+            "subject": "心理抗压",
+            "value": 76
+          }
+        ],
+        "stats": {
+          "关键扑救": "5次",
+          "禁区内救险": "3次",
+          "传球成功率": "72%",
+          "长传到位": "5次",
+          "失球": "3球",
+          "评分": "6.6分"
+        }
+      },
+      {
+        "pos": "DR",
+        "name": "多恩科尔",
+        "name_zh": "贾基·多恩科尔",
+        "name_en": "Jacky Donkor",
+        "number": 14,
+        "rating": 7.3,
+        "min": 75,
+        "is_mvp": false,
+        "radar": [
+          {
+            "subject": "边路插上",
+            "value": 76
+          },
+          {
+            "subject": "抢断拦截",
+            "value": 74
+          },
+          {
+            "subject": "边路传中",
+            "value": 74
+          },
+          {
+            "subject": "回追速度",
+            "value": 79
+          },
+          {
+            "subject": "防守纪律",
+            "value": 77
+          },
+          {
+            "subject": "对抗成功",
+            "value": 74
+          }
+        ],
+        "stats": {
+          "出场时间": "75分钟",
+          "助攻": "2次",
+          "传中": "4/7",
+          "成功抢断": "2次",
+          "跑动距离": "8.4km",
+          "评分": "7.3分"
+        }
+      },
+      {
+        "pos": "DC1",
+        "name": "伊安诺尼",
+        "name_zh": "伊安诺尼",
+        "name_en": "Edoardo Iannoni",
+        "number": 4,
+        "rating": 6.8,
+        "min": 90,
+        "is_mvp": false,
+        "goals": 1,
+        "radar": [
+          {
+            "subject": "高空争顶",
+            "value": 76
+          },
+          {
+            "subject": "正面拦截",
+            "value": 80
+          },
+          {
+            "subject": "禁区解围",
+            "value": 78
+          },
+          {
+            "subject": "身体对抗",
+            "value": 79
+          },
+          {
+            "subject": "出球传导",
+            "value": 74
+          },
+          {
+            "subject": "位置感",
+            "value": 77
+          }
+        ],
+        "stats": {
+          "进球": "1球",
+          "高空争顶": "5/7",
+          "关键解围": "4次",
+          "封堵射门": "1次",
+          "传球成功率": "76%",
+          "对抗胜率": "74%"
+        }
+      },
+      {
+        "pos": "DC2",
+        "name": "米尤什科维奇",
+        "name_zh": "米尤什科维奇",
+        "name_en": "Nemanja Mijušković",
+        "number": 15,
+        "rating": 6.6,
+        "min": 90,
+        "is_mvp": false,
+        "radar": [
+          {
+            "subject": "正面防守",
+            "value": 78
+          },
+          {
+            "subject": "禁区争顶",
+            "value": 76
+          },
+          {
+            "subject": "补位意识",
+            "value": 77
+          },
+          {
+            "subject": "贴身逼抢",
+            "value": 80
+          },
+          {
+            "subject": "长传发起",
+            "value": 70
+          },
+          {
+            "subject": "回追速度",
+            "value": 72
+          }
+        ],
+        "stats": {
+          "关键解围": "3次",
+          "成功拦截": "2次",
+          "身体拼抢": "5/7",
+          "争顶胜率": "71%",
+          "犯规": "2次",
+          "黄牌": "1"
+        }
+      },
+      {
+        "pos": "DL",
+        "name": "希尔马",
+        "name_zh": "希尔马",
+        "name_en": "Jilmar",
+        "number": 6,
+        "rating": 6.6,
+        "min": 90,
+        "is_mvp": false,
+        "radar": [
+          {
+            "subject": "正面防守",
+            "value": 76
+          },
+          {
+            "subject": "禁区争顶",
+            "value": 74
+          },
+          {
+            "subject": "补位意识",
+            "value": 75
+          },
+          {
+            "subject": "贴身逼抢",
+            "value": 78
+          },
+          {
+            "subject": "长传发起",
+            "value": 68
+          },
+          {
+            "subject": "回追速度",
+            "value": 70
+          }
+        ],
+        "stats": {
+          "关键解围": "2次",
+          "成功拦截": "1次",
+          "身体拼抢": "3/5",
+          "争顶胜率": "65%",
+          "犯规": "1次",
+          "黄牌": "0"
+        }
+      },
+      {
+        "pos": "DM",
+        "name": "帕拉茨",
+        "name_zh": "帕拉茨",
+        "name_en": "Krystian Palacz",
+        "number": 3,
+        "rating": 7.0,
+        "min": 90,
+        "is_mvp": false,
+        "radar": [
+          {
+            "subject": "传球节奏",
+            "value": 76
+          },
+          {
+            "subject": "防守覆盖",
+            "value": 74
+          },
+          {
+            "subject": "高空争顶",
+            "value": 72
+          },
+          {
+            "subject": "技术盘带",
+            "value": 70
+          },
+          {
+            "subject": "前场压迫",
+            "value": 78
+          },
+          {
+            "subject": "体能跑动",
+            "value": 80
+          }
+        ],
+        "stats": {
+          "出场时间": "90分钟",
+          "传球成功率": "80%",
+          "关键传球": "1次",
+          "成功抢断": "2次",
+          "跑动距离": "9.5km",
+          "评分": "7.0分"
+        }
+      },
+      {
+        "pos": "AM",
+        "name": "希什",
+        "name_zh": "帕特里克·希什",
+        "name_en": "Patryk Szysz",
+        "number": 7,
+        "rating": 7.2,
+        "min": 75,
+        "is_mvp": false,
+        "radar": [
+          {
+            "subject": "传球视野",
+            "value": 80
+          },
+          {
+            "subject": "精准直塞",
+            "value": 78
+          },
+          {
+            "subject": "技术盘带",
+            "value": 76
+          },
+          {
+            "subject": "前场压迫",
+            "value": 74
+          },
+          {
+            "subject": "射门威胁",
+            "value": 72
+          },
+          {
+            "subject": "位置感",
+            "value": 79
+          }
+        ],
+        "stats": {
+          "出场时间": "75分钟",
+          "关键传球": "2次",
+          "传球成功率": "84%",
+          "射门": "1次",
+          "评分": "7.2分"
+        }
+      },
+      {
+        "pos": "WR",
+        "name": "斯皮哈瓦",
+        "name_zh": "斯皮哈瓦",
+        "name_en": "Mateusz Spychała",
+        "number": 10,
+        "rating": 7.1,
+        "min": 75,
+        "is_mvp": false,
+        "radar": [
+          {
+            "subject": "边路突破",
+            "value": 74
+          },
+          {
+            "subject": "传中精准",
+            "value": 72
+          },
+          {
+            "subject": "快速起步",
+            "value": 76
+          },
+          {
+            "subject": "内切射门",
+            "value": 70
+          },
+          {
+            "subject": "无球跑位",
+            "value": 75
+          },
+          {
+            "subject": "防守贡献",
+            "value": 70
+          }
+        ],
+        "stats": {
+          "出场时间": "75分钟",
+          "传中": "2/5",
+          "过人成功": "2次",
+          "跑动距离": "7.8km",
+          "评分": "7.1分"
+        }
+      },
+      {
+        "pos": "WL",
+        "name": "卡克佩尔",
+        "name_zh": "卡克佩尔·普日比乌科",
+        "name_en": "Kacper Przybyłko",
+        "number": 11,
+        "rating": 9.4,
+        "min": 88,
+        "is_mvp": true,
+        "goals": 1,
+        "radar": [
+          {
+            "subject": "技术突破",
+            "value": 82
+          },
+          {
+            "subject": "禁区射门",
+            "value": 88
+          },
+          {
+            "subject": "无球跑位",
+            "value": 84
+          },
+          {
+            "subject": "高速冲击",
+            "value": 80
+          },
+          {
+            "subject": "边路下底",
+            "value": 78
+          },
+          {
+            "subject": "传球出球",
+            "value": 76
+          }
+        ],
+        "stats": {
+          "进球": "1球",
+          "助攻": "2次",
+          "射门": "5次",
+          "射正": "4次",
+          "过人成功": "3次",
+          "评分": "9.4分"
+        }
+      },
+      {
+        "pos": "ST1",
+        "name": "索拉迪奥",
+        "name_zh": "乔丹·索拉迪奥",
+        "name_en": "Jordy Soladio",
+        "number": 9,
+        "rating": 9.2,
+        "min": 90,
+        "is_mvp": true,
+        "goals": 2,
+        "radar": [
+          {
+            "subject": "禁区把握",
+            "value": 90
+          },
+          {
+            "subject": "高空争顶",
+            "value": 80
+          },
+          {
+            "subject": "背身拿球",
+            "value": 80
+          },
+          {
+            "subject": "快速反应",
+            "value": 86
+          },
+          {
+            "subject": "传球出球",
+            "value": 74
+          },
+          {
+            "subject": "射门力量",
+            "value": 88
+          }
+        ],
+        "stats": {
+          "进球": "2球",
+          "助攻": "1次",
+          "射门": "6次",
+          "射正": "5次",
+          "对抗胜率": "70%",
+          "跑动距离": "10.1km",
+          "评分": "9.2分"
+        }
+      },
+      {
+        "pos": "ST2",
+        "name": "卡西奥",
+        "name_zh": "卡西奥",
+        "name_en": "Cássio",
+        "number": 18,
+        "rating": 6.3,
+        "min": 90,
+        "is_mvp": false,
+        "radar": [
+          {
+            "subject": "技术突破",
+            "value": 72
+          },
+          {
+            "subject": "禁区射门",
+            "value": 74
+          },
+          {
+            "subject": "无球跑位",
+            "value": 76
+          },
+          {
+            "subject": "高速冲击",
+            "value": 78
+          },
+          {
+            "subject": "边路下底",
+            "value": 70
+          },
+          {
+            "subject": "传球出球",
+            "value": 68
+          }
+        ],
+        "stats": {
+          "进球": "0球",
+          "射门": "1次",
+          "射正": "0次",
+          "过人成功": "1次",
+          "跑动距离": "7.5km",
+          "评分": "6.3分"
+        }
+      }
+    ],
+    "war_report": "七球大战！门将姆莱奇科虽然失了3球，但5次关键扑救防住了更多威胁。多恩科尔右翼两次送出致命传中，伊安诺尼头球功不可没。卡克佩尔9.4分全场最高，助攻加进球双料贡献；索拉迪奥双响、9.2分，本赛季已轰入9球！七轮保持不败，奥波莱是本赛季波甲头号冲超热门！"
+  },
+  {
     "id": 1003,
     "league_key": "pol_d1",
     "league_name": "波甲",
@@ -624,161 +2985,6 @@
         "rating": 6.5
       }
     ]
-  },
-  {
-    "id": 1004,
-    "league_key": "pol_d1",
-    "league_name": "波甲",
-    "league_badge": "波甲",
-    "league_flag": "circle-flags:pl",
-    "round": 3,
-    "round_label": "第 3 轮",
-    "date": "2026-08-01 17:30",
-    "date_short": "08-01 周六",
-    "status": "FT",
-    "status_label": "完赛",
-    "is_overseas": false,
-    "home_team": "乔治罗尼亚",
-    "home_code": "JAG",
-    "away_team": "华沙莱吉亚",
-    "away_code": "LEG",
-    "score_home": 0,
-    "score_away": 0,
-    "stadium": "比亚韦斯托克市立球场",
-    "xg": "1.10 - 1.25",
-    "shots": "11",
-    "shots_on_target": "3",
-    "distance_km": "117.8",
-    "scorers": [],
-    "news": {
-      "title": "波甲天王山：卫冕冠军乔治罗尼亚0-0闷平华沙莱吉亚，两队防线滴水不漏",
-      "summary": "榜首强强对话拼抢激烈，主裁出示6张黄牌，双方互交白卷各取1分。",
-      "reporter": "Przegląd Sportowy"
-    }
-  },
-  {
-    "id": 1005,
-    "league_key": "pol_d1",
-    "league_name": "波甲",
-    "league_badge": "波甲",
-    "league_flag": "circle-flags:pl",
-    "round": 3,
-    "round_label": "第 3 轮",
-    "date": "2026-08-01 17:30",
-    "date_short": "08-01 周六",
-    "status": "FT",
-    "status_label": "完赛",
-    "is_overseas": false,
-    "home_team": "波兹南莱赫",
-    "home_code": "LPO",
-    "away_team": "拉多米亚克",
-    "away_code": "RAD",
-    "score_home": 4,
-    "score_away": 2,
-    "stadium": "波兹南市政球场",
-    "xg": "2.85 - 1.40",
-    "shots": "19",
-    "shots_on_target": "9",
-    "distance_km": "114.5",
-    "scorers": [
-      {
-        "minute": 12,
-        "player": "伊沙克",
-        "player_zh": "伊沙克"
-      },
-      {
-        "minute": 27,
-        "player": "罗恰",
-        "player_zh": "罗恰"
-      },
-      {
-        "minute": 45,
-        "player": "苏斯洛夫",
-        "player_zh": "苏斯洛夫"
-      },
-      {
-        "minute": 63,
-        "player": "伊沙克",
-        "player_zh": "伊沙克"
-      },
-      {
-        "minute": 78,
-        "player": "阿尔维斯",
-        "player_zh": "阿尔维斯"
-      },
-      {
-        "minute": 89,
-        "player": "瓦尔斯特伦",
-        "player_zh": "瓦尔斯特伦"
-      }
-    ],
-    "news": {
-      "title": "进球大战！波兹南莱赫4-2大胜拉多米亚克，伊沙克梅开二度领跑前场",
-      "summary": "莱赫主场狂轰4球打出极致攻势足球，全场球迷起立鼓掌欢庆大捷。",
-      "reporter": "波兰体育评论报"
-    }
-  },
-  {
-    "id": 1006,
-    "league_key": "pol_d1",
-    "league_name": "波甲",
-    "league_badge": "波甲",
-    "league_flag": "circle-flags:pl",
-    "round": 3,
-    "round_label": "第 3 轮",
-    "date": "2026-08-01 15:00",
-    "date_short": "08-01 周六",
-    "status": "FT",
-    "status_label": "完赛",
-    "is_overseas": false,
-    "home_team": "GKS卡托维兹",
-    "home_code": "KAT",
-    "away_team": "弗罗茨瓦夫西里西亚",
-    "away_code": "SLA",
-    "score_home": 4,
-    "score_away": 2,
-    "stadium": "卡托维兹球场",
-    "xg": "2.20 - 1.60",
-    "shots": "15",
-    "shots_on_target": "7",
-    "distance_km": "112.0",
-    "scorers": [
-      {
-        "minute": 19,
-        "player": "贝格尔",
-        "player_zh": "贝格尔"
-      },
-      {
-        "minute": 38,
-        "player": "克卢斯卡",
-        "player_zh": "克卢斯卡"
-      },
-      {
-        "minute": 54,
-        "player": "萨姆塞克",
-        "player_zh": "萨姆塞克"
-      },
-      {
-        "minute": 72,
-        "player": "罗加拉",
-        "player_zh": "罗加拉"
-      },
-      {
-        "minute": 85,
-        "player": "加尔万",
-        "player_zh": "加尔万"
-      },
-      {
-        "minute": "90+1",
-        "player": "马科夫斯基",
-        "player_zh": "马科夫斯基"
-      }
-    ],
-    "news": {
-      "title": "卡托维兹进攻狂潮4-2力克弗罗茨瓦夫，迅速走出上轮惜败阴霾",
-      "summary": "上轮惜败奥波莱的卡托维兹本轮主场发威，全场连下四城拿下关键3分。",
-      "reporter": "波兰足球在线"
-    }
   },
   {
     "id": 1002,

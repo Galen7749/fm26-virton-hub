@@ -11,33 +11,60 @@
     "league_key": "pol_d1",
     "league_name": "波兰甲级联赛 (波甲)",
     "league_short": "波甲",
-    "rank": 2,
-    "rank_desc": "第 2 名 (直接升级区)",
-    "standing_summary": "2胜 1平 0负 · 积7分 · 进7球失5球 · 净胜+2",
+    "rank": 1,
+    "rank_desc": "第 1 名 (直接升级区 · 领跑)",
+    "standing_summary": "6胜 1平 0负 · 积19分 · 进19球失10球 · 净胜+9",
     "manager": "耶稣·徐",
     "manager_nationality": "中国",
     "manager_flag": "circle-flags:cn",
-    "market_value": "€465万",
+    "market_value": "€520万",
     "stadium": "奥波莱市政球场 (Stadion Miejski w Opolu)",
     "capacity": "4,560",
     "founded": 1945,
     "form": [
       "W",
       "W",
-      "D",
-      "D",
-      "L"
+      "W",
+      "W",
+      "W"
     ],
     "stats": {
-      "played": 3,
-      "won": 2,
+      "played": 7,
+      "won": 6,
       "drawn": 1,
       "lost": 0,
-      "gf": 7,
-      "ga": 5,
-      "points": 7
+      "gf": 19,
+      "ga": 10,
+      "points": 19
     },
     "dynamics": [
+      {
+        "id": "dyn_odra_7",
+        "type": "news",
+        "tag": "联赛战报",
+        "title": "七球大战！奥波莱4-3逆转扎布热，索拉迪奥双响七连不败领跑波甲",
+        "date": "2026-08-30",
+        "summary": "卡克佩尔9.4分传射两项，索拉迪奥双响9.2分，七轮不败稳居波甲榜首！",
+        "source": "懂球云 · 特派记者"
+      },
+      {
+        "id": "dyn_odra_6",
+        "type": "news",
+        "tag": "客场告捷",
+        "title": "客场1-0险胜西里西亚！姆莱奇科7扑卡克佩尔世界波，六连不败登顶！",
+        "date": "2026-08-23",
+        "summary": "高难度客场，姆莱奇科7次扑救零封对手，卡克佩尔61分世界波一球定鼎！",
+        "source": "波兰足球杂志《Piłka Nożna》"
+      },
+      {
+        "id": "dyn_odra_5",
+        "type": "news",
+        "tag": "主场大捷",
+        "title": "主场4-0零封罗兹维泽夫！索拉迪奥双响帕拉茨2助，五连不败独跑榜首",
+        "date": "2026-08-16",
+        "summary": "主场完胜零封，索拉迪奥波甲7球领跑射手榜，5轮不败13球！",
+        "source": "懂球云 · 特派记者"
+      },
       {
         "id": "dyn_odra_1",
         "type": "news",
@@ -77,6 +104,34 @@
     ],
     "matches": {
       "completed": [
+        {
+          "date": "2026-08-30",
+          "opponent": "扎布热戈尔尼克",
+          "home": true,
+          "score": "4-3",
+          "result": "W"
+        },
+        {
+          "date": "2026-08-23",
+          "opponent": "弗罗茨瓦夫西里西亚",
+          "home": false,
+          "score": "0-1",
+          "result": "W"
+        },
+        {
+          "date": "2026-08-16",
+          "opponent": "罗兹维泽夫",
+          "home": true,
+          "score": "4-0",
+          "result": "W"
+        },
+        {
+          "date": "2026-08-09",
+          "opponent": "琴斯托霍瓦",
+          "home": true,
+          "score": "4-1",
+          "result": "W"
+        },
         {
           "id": 1003,
           "round_label": "波甲第 3 轮",
