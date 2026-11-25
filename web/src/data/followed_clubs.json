@@ -13,7 +13,7 @@
     "league_short": "波甲",
     "rank": 1,
     "rank_desc": "第 1 名 (直接升级区 · 领跑)",
-    "standing_summary": "6胜 1平 0负 · 积19分 · 进19球失10球 · 净胜+9",
+    "standing_summary": "6胜 1平 0负 · 积19分 · 进20球失9球 · 净胜+11",
     "manager": "耶稣·徐",
     "manager_nationality": "中国",
     "manager_flag": "circle-flags:cn",
@@ -33,8 +33,8 @@
       "won": 6,
       "drawn": 1,
       "lost": 0,
-      "gf": 19,
-      "ga": 10,
+      "gf": 20,
+      "ga": 9,
       "points": 19
     },
     "dynamics": [
